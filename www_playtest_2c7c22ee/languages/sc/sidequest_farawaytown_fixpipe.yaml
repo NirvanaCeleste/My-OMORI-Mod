@@ -1,0 +1,244 @@
+# =========================================================================================
+# Sidequest: Fix Pipe
+# =========================================================================================
+
+#Fix Pipe 1: Find in hardware store
+
+message_1:
+  text: \n<粗犷的男人>嘿，陌生人！你今天过得怎样呀？\!<br>我今天过得可棒了！
+
+message_2:
+  text: \n<粗犷的男人>想知道是为什么吗？\!因为今天我总算要去把家里漏水的地方给修好啦！
+
+message_3:
+  text: \n<粗犷的男人>我的问题是在两个星期前出现的……\!<br>我发现在客厅的角落有处水管十分顽固地漏着水……\!<br>我也不太清楚为什么会漏水……
+
+message_4:
+  text: \n<粗犷的男人>一开始并不起眼，但随着日子一天天过去，漏水越来越严重。
+
+message_5:
+  text: \n<粗犷的男人>实话说吧，我都已经习惯了滴水的声音还有地毯潮湿的感觉！
+
+message_6:
+  text: \n<粗犷的男人>但你猜怎么着？\!今天就是一切改变的日子……\!是的！\!<br>我终于来到了\c[11]修它家居店！\c[0]\!我工具都准备好了……\!<br>然后我就……\!我就要把它修好！
+
+message_7:
+  text: \n<粗犷的男人>呼……\!不好意思跟你们念叨了这么多。\!<br>可能我在不知不觉间已经被漏水给逼疯了……
+
+message_8:
+  text: \n<粗犷的男人>我家就在西南边的\c[11]教堂\c[0]旁。\!<br>如果你想来见证这场重大的盛事，还请自便啦！
+
+# EXAMINE VANCES HOUSE DOOR AFTER TALKING TO HIM IN HARDWARE STORE
+
+message_9:
+  text: \n<粗犷的男人>嘿，孩子们！\!你们正好来见证我把这根水管一劳永逸地修好！\!快进来，进来！
+
+#Go in Vance's Dad's HOUSE
+
+# Cutscene: Is it fixed? 1
+
+message_10:
+  text: \n<粗犷的男人>只要最后再调整一下，我就能让它别再折腾我啦……
+
+#Fixing Noise
+
+message_11:
+  text: \n<粗犷的男人>\SINV[1]啊……\!终于，美妙的静谧之声……\SINV[0]
+
+#Water Spout
+
+message_12:
+  text: \n<粗犷的男人>\sinv[1]嘟囔、嘟囔……
+
+message_13:
+  text: \n<粗犷的男人>可恶……\!我看我还是明天再试试吧……
+
+#============================================
+#Fix Pipe 2
+#============================================
+
+#Talk to Vances dad at hardware store
+
+message_14:
+  text: \n<粗犷的男人>\sinv[1]嘟囔……嘟囔……
+
+message_15:
+  text: \n<粗犷的男人>嘿，孩子们……你们今天过得怎样呀？\!<br>我今天过得还行……
+
+message_16:
+  text: \n<粗犷的男人>这顽固的漏水弄得我像是活在地狱里一样。\!昨晚我又试着捣鼓了一下，结果只是让情况变得更糟！\!也许是时候向专业人士求助了……
+
+message_17:
+  text: \n<粗犷的男人>唔呃……\!不……\!我在说什么呢？！\!我的自尊心不允许我这么做！\!<br>我必须把它亲自修好！
+
+message_18:
+  text: \n<粗犷的男人>\Com[2]这该死的漏水问题，我会再回来对付你的！
+
+message_19:
+  text: \n<粗犷的男人>\Com[2]\quake[1]呃啊\{啊\{啊啊\{啊啊！！
+
+#Vance's dad runs out the DOOR
+
+#Examine Vance's House Door after talking to him in Hardware STORE
+
+message_20:
+  text: \n<粗犷的男人>嘿，又是你们呀！\!<br>你们是来提供道义援助还是来干嘛的？
+
+message_21:
+  text: \n<粗犷的男人>嘿嘿……\!我感激不尽。
+
+message_22:
+  text: \n<粗犷的男人>快进来！\!我马上就要解决这见鬼的漏水啦！
+
+#Cutscene: Is it fixed? 2
+
+#Fixing noises
+
+message_23:
+  text: \n<粗犷的男人>\Com[2]\SINV[2]嘎哈\{哈哈\{哈哈\{哈哈！！！\SINV[0]
+
+message_24:
+  text: \n<粗犷的男人>一路好走吧！
+
+message_26:
+  text: \n<粗犷的男人>……
+#Water Spout
+
+#Vance's dad begins shaking
+
+message_25:
+  text: \n<粗犷的男人>\quake[1]啊啊\{啊呃\{嗷嗷\{嗷嗷\{嗷嗷！\quake[0]
+
+#Vance's Dad runs through the wall
+
+#============================================
+#Fix Pipe 3
+#============================================
+
+#Talk to Vance's dad (Hardware)
+
+message_30:
+  text: \n<粗犷的男人>\sinv[1]嘟囔……嘟囔……
+
+message_31:
+  text: \n<粗犷的男人>唉……
+
+message_32:
+  text: \n<粗犷的男人>嘿，又是你们几个孩子……
+
+message_33:
+  text: \n<粗犷的男人>你们今天过得怎样？\!我过得糟透了……
+
+message_34:
+  text: \n<粗犷的男人>你猜怎么着？\!水管又破了……
+
+message_35:
+  text: \n<粗犷的男人>而且不知怎么的……\!我已经给房子造成了不可逆转的损害……
+
+message_36:
+  text: \n<粗犷的男人>我又怎么能想到事情会这样呢？
+
+message_37:
+  text: \n<粗犷的男人>唉……\!我真是太失败了……
+
+message_38:
+  text: \n<粗犷的男人>\}我只是……\!呜……\!我只是想让他们自豪……
+
+message_39:
+  text: \n<粗犷的男人>……
+
+message_40:
+  text: \n<粗犷的男人>\Com[2]呃！\!我得振作起来！\!<br>只是一根小小的管子而已！我能解决它的！
+
+message_41:
+  text: \n<粗犷的男人>我准备好了新的工具，准备要再试一次！
+
+message_42:
+  text: \n<粗犷的男人>我一定要昂首挺胸！\!<br>\Com[2]没错！我能做到的！
+
+message_43:
+  text: \n<粗犷的男人>你给我等着，可恶的漏水……\!<br>我要把你一劳永逸地解决掉！
+
+#Examine Vance's House Door after talking to him in Hardware Store:
+
+message_44:
+  text: \n<粗犷的男人>呼……\!呼……\!呼……\!呼……
+
+message_45:
+  text: \n<粗犷的男人>嘿、嘿呀……\!又是你们……
+
+message_46:
+  text: \n<粗犷的男人>你们都来了，是因为你们担心我吗？
+
+message_47:
+  text: \n<粗犷的男人>呜呜……\!你们真贴心……
+
+message_48:
+  text: \n<粗犷的男人>进来吧！\!我想我这回真的能搞定了！\!<br>我发自内心这么觉得！
+
+#Cutscene: It's Finally Fixed
+
+#Fixing Noises
+
+message_50:
+  text: \n<粗犷的男人>它现在就要被修好了！\!一定会被修好的！
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \n<奥布里>……\!来……\!让我来……
+#Aubrey goes to the Pipe
+
+#Fixed Noise
+
+message_52:
+  text: \n<粗犷的男人>噢？
+
+message_53:
+  text: \n<粗犷的男人>我不敢相信……\!修好了！\!真的修好了！\!<br>\Com[2]我太开心了，我都要哭了！
+
+message_54:
+  text: \n<粗犷的男人>你太厉害了！\!比厉害还厉害！\!厉害得超凡脱俗！\!<br>我要怎样才能报答你？！
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \n<奥布里>这……\!呃……\!不足挂齿……\!别太在意。
+
+message_56:
+  text: \n<粗犷的男人>呜呜……\!各位……\!<br>谢谢你们在这里陪我度过了如此艰难的一段时间……
+
+message_64:
+  text: \n<粗犷的男人>作为回报，请收下这张\c[4]CD\c[0]。\!是我在墙上的一个洞里发现的！
+
+message_57:
+  text: \n<粗犷的男人>你们知道吗，我儿子和女儿也差不多是你们这个年纪呢。\!<br>他们分别叫万斯和小金哦！
+
+message_58:
+  text: \n<粗犷的男人>在小金还是个婴儿的时候，我就跟他们的妈妈分开了……
+
+message_59:
+  text: \n<粗犷的男人>我们平时见面的次数也不多，<br>所以我一有机会就使劲给他们塞\c[3]糖果\c[0]哦！哈哈……
+
+message_60:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \n<奥布里>噢，你是小金和万斯的爸爸？
+
+message_61:
+  text: \n<粗犷的男人>我当然是了，对此我很自豪呢！\!<br>虽然他们经常惹上麻烦……但至少他们会相互照应！
+
+message_62:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: \n<奥布里>哈哈……\!是啊……\!挺不错的……
+
+message_65:
+  text: \n<粗犷的男人>总之，我觉得自己是时候在没有漏水声的情况下好好放松休息了！
+
+message_66:
+  text: \n<粗犷的男人>再次谢谢你们。\!这里随时欢迎你们！
+
+message_67:
+  text: \n<粗犷的男人>今晚我和孩子们要去参加邻居的乔迁聚会！\!免费的食物可太好啦！
+

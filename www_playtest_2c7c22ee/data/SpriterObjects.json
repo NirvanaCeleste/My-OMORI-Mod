@@ -1,0 +1,28 @@
+[
+	{
+		"_name": "Nose",
+		"_spriter": {
+			"_skeleton": "Nose",
+			"_skin": "Skinset/Nose",
+			"_skinParts": [],
+			"_spriteChildren": [],
+			"_speed": 4,
+			"_cellX": 32,
+			"_cellY": 48,
+			"_recovery": "snap",
+			"tag": null,
+			"var": null,
+			"_stop": false,
+			"_spriteMask": false,
+			"_spriteMaskX": 0,
+			"_spriteMaskY": 0,
+			"_spriteMaskW": 32,
+			"_spriteMaskH": 48
+		},
+		"_direction": 2,
+		"_stepAnime": true
+	}
+]
+	
+
+

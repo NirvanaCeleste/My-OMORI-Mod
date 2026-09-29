@@ -1,0 +1,467 @@
+# =========================================================================================
+# Dreamworld Extras
+# =========================================================================================
+
+#Waking up in White Space on Night 1:
+
+message_0:
+  text: 你翻了翻你的口袋……\!<br>但黑色钥匙不在里面。
+
+#After completing all 3 slime girls routes:
+
+message_1:
+  text: \swh\Com[2]\{这里就没人能做点什么吗？！？！
+
+#Before putting together Basil's photo album:
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas唔……麻烦了……\!<br>我好像不记得这些照片的顺序了……
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her完全不用担心，贝瑟尔。\!<br>OMORI 的记忆力很好的，我们马上就能解决这个问题！
+
+# Examining Mirror when Alone
+
+message_4:
+  text: 镜中的你独身一人。\!<br>你不喜欢这种感觉。
+
+# Picking up knife in white space:
+
+message_5:
+  text: 刀身映照出你的面庞。\!<br>它很了解你。
+
+#When checking out a telescope
+message_6:
+  text: 一架闪亮的望远镜。\!你想往外看看吗？
+
+# =========================================================================================
+# Rain town
+# =========================================================================================
+
+message_20:
+  text: \c[11]落雨镇\c[0]的居民们身处危险中！\!<br>这里的雨下的太大了，这让他们很不舒服！
+
+message_21:
+  text: 找到并检查地图左上方的喷嘴。
+
+message_22:
+  text: 雨渐渐变小，\c[11]落雨镇\c[0]的居民们又感到了舒适。
+
+# =========================================================================================
+# WEEPING WILLOW
+# =========================================================================================
+
+#WEEPING WILLOW rises from the lake.
+
+message_40:
+  text: \n<哭泣柳娘>唉……\!是我啦，哭泣柳娘，这片湖泊的神明。\!<br>呃，谢谢你的蚌币。
+
+message_41:
+  text: \n<哭泣柳娘>人们都说，钱可以买到快乐，<br>但很显然并不是这样的……
+
+message_42:
+  text: \n<哭泣柳娘>你们可以逗我开心吗？\!<br>比如讲个笑话之类的？
+
+#If Player does not have Joke Book or has no Jokes
+
+message_43:
+  text: \n<哭泣柳娘>……\!看来你们一个笑话都憋不出来。\!<br>等你们收集几个再回来找我吧。
+
+#[IF PLAYER HAS JOKE BOOK WITH AT LEAST 1 JOKE]
+
+message_44:
+  text: \n<哭泣柳娘>唉……\!好吧，说来听听？
+
+message_45:
+  text: 你想从\c[4]笑话书\c[0]里选个笑话讲给哭泣柳娘听吗？
+
+#yes/no
+
+#yes (if Hero)
+message_46:
+  text: 你想讲哪个笑话？
+
+#List of jokes appear
+
+#Badumtss! SFX plays. (Party member except HERO will face forward at the same time, or none of them face forward.)
+
+#Depending on the joke that is told, WEEPING WILLOW will cry with an intensity of 1, 2, or 3.
+
+
+
+#yes (if not Hero)
+message_47:
+  text: 你打开了\c[4]笑话书\c[0]……
+
+message_48:
+  text: 书里的内容实在是太羞耻了，你根本没法大声读出来。\!或许你得找个年龄大一点的人读。
+
+message_49:
+  text: \n<哭泣柳娘>你认真的？\!什么都没准备还把我叫出来？
+
+message_50:
+  text: \n<哭泣柳娘>唉……\!真是浪费时间……
+
+#WEEPING WILLOW sinks back down into the lake.
+
+
+#================================ JOKES ==================================
+
+#Every time a PLAYER finds a joke on a poster, a badumtss! SFX will play and the party members will all face forward at the same time.
+
+#JOKE 1: Location: OTHERWORLD stuck on a storage unit
+
+message_60:
+  text: “你听说过月球上的餐厅吗？”
+
+message_61:
+  text: “那里食物不错，但环境让人窒息。”
+
+#JOKE 2: Location: CATTAIL FIELD stuck on the OLD BARN.
+
+message_62:
+  text: “稻草人参军会去哪个部队？”
+
+message_63:
+  text: “野‘站’部队。”
+
+
+#JOKE 3: Location: SPROUT MOLE TOWN next to a bike.
+
+message_64:
+  text: “为什么自行车没法自己立起来？”
+
+message_65:
+  text: “因为它‘胎’累了。”
+
+#JOKE 4: Location: FROZEN FOREST in an igloo.
+
+message_66:
+  text: “企鹅怎么造冰屋？”
+
+message_67:
+  text: “举‘企’冰块往上盖。”
+
+#JOKE 5: Location: ORANGE OASIS on a cave wall.
+
+message_68:
+  text: “不知道是谁买的芝士叫什么？”
+
+message_69:
+  text: “无名‘士’。”
+
+#JOKE 6: Location: DEEP WELL in UNDERWATER HIGHWAY.
+
+message_70:
+  text: “北极的井里有什么？”
+
+message_71:
+  text: “深井冰。”
+
+#JOKE 7: Location: DEEP WELL in the CONSTRUCTION SITE.
+
+message_72:
+  text: “想听个建筑设计的笑话吗？”
+
+message_73:
+  text: “抱歉，目前还在构思阶段。”
+
+message_74:
+  text: 你把这个笑话记在了\c[4]笑话书\c[0]里。
+
+message_75:
+  text: 你获得了一本\c[4]笑话书\c[0]！
+
+#================================ CRYING RESPONSES ==================================
+
+# Crying level 1
+
+message_90:
+  text: \n<哭泣柳娘>呜呜……\!这个笑话……\!这个笑话好烂啊……\!<br>它只让我觉得……
+
+message_91:
+  text: \n<哭泣柳娘>呜呜……\!呜呜……\!\SINV[1]呜哇啊啊啊啊啊……\SINV[0]
+
+#WEEPING WILLOW sinks back down into the lake.
+
+# Crying Level 2
+
+message_92:
+  text: \n<哭泣柳娘>\SINV[1]呜呜哇啊啊啊……\SINV[0]\!\Com[2]\SINV[2]呜呜啊\{啊啊\{啊啊啊！！！\SINV[0]
+
+#WEEPING WILLOW sinks back down into the lake.
+
+# Crying Level 3
+
+message_93:
+  text: \n<哭泣柳娘>\Com[2]\Quake[1]呜\{\Com[2]哇啊啊\{\Com[2]啊啊\{啊\{啊！！\Quake[0]
+
+# Tolerable Joke:
+
+message_94:
+  text: \n<哭泣柳娘>呜呜……\!呜呜……\!哈哈……
+
+message_95:
+  text: \n<哭泣柳娘>哈、哈……\!这笑话还挺搞笑的……
+
+message_96:
+  text: \n<哭泣柳娘>\sinv[1]哈哈哈哈……
+
+#WEEPING WILLOW transforms to happy WEEPING WILLOW
+
+message_97:
+  text: \n<柳娘>啊……\!我现在感觉好点了。
+
+#GOD RAYS appeared
+#A sword floats down in front of Party
+
+message_98:
+  text: \n<柳娘>谢谢你们让我开心起来，旅行者们。
+
+message_99:
+  text: \n<柳娘>这是给你们付出努力的奖赏。
+
+message_100:
+  text: \n<柳娘>一把蕴含了远古神力的武器。
+
+message_101:
+  text: \n<柳娘>只有真正的英雄才能使用它。
+
+#God SFX
+
+message_102:
+  text: \n<柳娘>啊……别的神明在叫我了。\!<br>恐怕我得先行离开了。
+
+message_103:
+  text: \n<柳娘>虽然我们才见面没多久，但这至少……\!<br>还算是……\!一段愉快的经历。
+
+message_104:
+  text: \n<柳娘>或许我们来世还能再见。\!<br>再见了，旅行者们！和你们相处我挺开心的！
+
+#God rays disappear
+
+#Examine sword
+
+message_110:
+  text: 你获得了\c[13]哈哈剑\c[0]。
+
+# =========================================================================================
+# Hide and Seek with yourself
+# =========================================================================================
+
+#Night 3, upon entering FOREST PLAYGROUND, no one will be there.
+#If PLAYER examines the tetherball pole, it will prompt the message:
+
+message_120:
+  text: 你想玩捉迷藏吗？
+
+#yes
+#Screen turns black.
+
+message_121:
+  text: 5……\!4……\!3……\!2……\!1……
+
+#The mirror will appear on a random location on the map.
+#If you examine the mirror, the mirror slide will show. (Only OMORI is in the mirror)
+
+message_122:
+  text: 找到你啦！
+
+#Then the mirror slide will fade out.
+
+message_123:
+  text: 你还想再玩一次吗？
+
+#no
+#Mirror disappears
+
+# =========================================================================================
+# Deep Well
+# =========================================================================================
+
+#Taxi Ride-
+
+message_140:
+  text: \n<出租车司机>嘿，孩子！想不想去很\SINV[1]酷\SINV[0]的地方玩玩？\!<br>那你们的目的地正是\c[11]最后度假村\c[0]！<br>这可是当下最热门，最流行的度假胜地！
+
+message_141:
+  text: \n<出租车司机>如果你们想去的话可以搭我的车，孩子们！\!那里可是风靡全世界啊。
+
+message_142:
+  text: \n<出租车司机>来嘛……\!别害羞啊！\!我不会咬人的……\!大概。
+
+message_143:
+  text: \n<出租车司机>嘿，孩子们！你们想坐车回\c[11]深井\c[0]吗？\!<br>有什么要求我都会尽量满足你们的！\!<br>不用太顾虑我……毕竟我是领薪水的！哈哈！
+
+message_144:
+  text: \n<出租车司机>嗯嗯……\!看起来你们手头的钱不太够啊……\!<br>不过没关系。\!你们有多少我就收多——
+
+message_145:
+  text: \n<出租车司机>嘿，等等！你们一分钱都没有了！\!<br>你们的钱肯定都被骗走了……我真同情你们。
+
+#after Ride
+
+message_150:
+  text: \n<出租车司机>路上有点抖，不过也还行。\!随时再来搭我的车啊，孩子们。
+
+message_151:
+  text: \n<出租车司机>随时再来搭我的车啊，孩子们。
+
+#If HERO is in party
+message_152:
+  text: \n<出租车司机>需要搭车回\c[11]最后度假村\c[0]吗？\!<br>您可是老板的心腹，我随叫随到！
+
+#If HERO is manager
+message_153:
+  text: \n<出租车司机>需要搭车回\c[11]最后度假村\c[0]吗？\!<br>我随叫随到，老板！
+
+#If HERO is in party
+message_154:
+  text: \n<出租车司机>需要搭车回\c[11]深井\c[0]吗？\!<br>您可是老板的心腹，我随叫随到！
+
+#If HERO is manager
+message_155:
+  text: \n<出租车司机>需要搭车回\c[11]深井\c[0]吗？\!<br>我随叫随到，老板！
+
+
+# =========================================================================================
+# First Time In OTHERWORLD
+# =========================================================================================
+
+
+message_200:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\Com[2]\{\{我是第一名！！！\}\}
+
+message_201:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呼哧……呼哧……\!这梯子……
+
+message_202:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her这梯子……\!呼哧……呼哧……\!高得离谱……
+
+message_203:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\sinv[1]\{\{叭哈哈哈哈哈哈！！！\}
+
+message_204:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel\Com[2]这是凯的一小步……\.<br>但却是凯人族的一大步！！
+
+message_205:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub原话可不是这么说的！
+
+message_206:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel话怎么说又轮不到你来决定……<br>毕竟我才是第一个登上这里的人！
+
+message_207:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub喂，等一下……\!<br>\Com[2]\{那不是我的\c[4]屁股认证书\c[0]吗？？\}\!
+
+message_208:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\{赶紧给我把它拿下来！\}
+
+message_209:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub要是有人看见了可怎么办呀？
+
+message_210:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel天啊！<br>它竟然能随风飘扬。
+
+message_211:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel\sinv[1]如此壮观……\|如此美丽……
+
+message_212:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \aub\Com[2]\{英雄！你管管他！\}
+
+message_213:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\}呼哧……呼哧……\!\{稍等……一下……\!\}呼哧……呼哧……\!\{让……\}呼哧……呼哧……\!\{让我缓缓……\}呼哧……呼哧……
+
+message_214:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her说实话……\!\}呼哧……呼哧……\{\!可能要多等一会儿……
+
+message_215:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub…… …… ……\!当我没说。
+
+message_216:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯，我们从来没有爬过这个梯子应该是有什么理由的，<br>但我怎么也想不起来了……
+
+message_217:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her到底是因为什么来着……
+
+message_218:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her啊，算了……\!无所谓了！
+
+message_219:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel嘿 OMORI，去贝瑟尔家不是走这条路啊！
+
+
+# =========================================================================================
+# MOONWALK
+# =========================================================================================
+
+message_250:
+  text: 你想表演月球步吗？
+
+#YES/NO
+
+#back of sign
+
+message_252:
+  text: 牌子后面写了点什么。
+
+message_253:
+  text: “请……不要犯下和我一样的错误……<br>\!——M”
+
+# =========================================================================================
+# BATTLE: THE WORLD
+# =========================================================================================
+
+message_300:
+  text: 地球看上去很平静。\!<br>你想惊扰它吗？
+
+# =========================================================================================
+# PYREFLY IX WEB
+# =========================================================================================
+
+message_400:
+  text: 这个蜘蛛网太强韧了，你切不开。
+

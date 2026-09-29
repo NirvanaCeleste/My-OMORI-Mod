@@ -1,0 +1,175 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============Orange Oasis========================================
+
+                        #====NIGHT 2====
+
+#CROSSANT
+#Location: Oasis: Flip him
+#DINO 1: Dino's Dig - Excavation Mini-Game
+#DINO 2: Dino's Dig - Excavation Shop
+#DINO 3: Dino's Dig
+#DINO 4: Dino's Dig - Itch Quest
+
+#DONUT GRANDMA 1
+#GRANDMA DONUT HOUSE
+message_0:
+  text: \n<甜甜圈奶奶>我孙女很少来看我，但是经常给我寄明信片！\!<br>看来她日子过得还挺不错的！
+
+message_1:
+  text: \n<甜甜圈奶奶>虽然我眼睛不好使了，但还是能模模糊糊看见人影的。\!<br>我看……\!你们几个呀，就是长得奇形怪状的甜甜圈！
+
+message_2:
+  text: \n<甜甜圈奶奶>\com[2]啊？\!你说什么，孩子？\!你刚刚说了什么吗？
+
+#DONUT HOLE
+#GRANDMA DONUT HOUSE
+message_3:
+  text: \n<甜甜圈洞>\sinv[1]呜啊啊啊！
+
+#HECTOR THE ROCK: Excavation Quest
+#HECTOR JR: Excavation site quest
+#Jelly: Dream world P&J Quest
+#After Peanut and Jelly quest: (Palmie's House)
+message_4:
+  text: \n<果酱>诶嘿嘿……\!要是我把<br>这张\c[4]写着“谢谢你，帕尔米小姐！”的化石贺卡\c[0]送给帕尔米小姐，她肯定会吓一跳的！\!<br>你说对吧，花生？
+
+message_5:
+  text: \n<花生>嗯哼！
+
+#MAN ON FIRE
+#Location: Orange Oasis
+
+message_6:
+  text: \n<火男>……\!你的眼睛里透着一股子忧愁……\!嗯，我看出来了，你肯定是遇到什么事了，所以才一脸苦相……
+
+message_7:
+  text: \n<火男>孩子，你听我跟你说啊。\!<br>要是你已经知道未来的日子充满了艰辛……\!<br>你只需要一样东西，那就是希望！
+
+message_8:
+  text: \n<火男>你要对自己抱有希望，也要对未来抱有希望！\!没错！\!只要你相信自己，那么一切皆有可能！<br><br>不过……\!如果你努力了，但还是失败了，你记着，就算全世界的人都不相信你，那我也会相信你的！
+
+#Yes/No
+#Yes
+message_9:
+  text: \n<火男>很好！\!来，我教你一招，就当是送给你的礼物了。
+
+message_12:
+  text: 英雄习得了\c[1]辛辣食物\c[0]！
+
+message_11:
+  text: \n<火男>好了，如果可以的话我得先走一步了，拜。
+#MAN ON FIRE continues running
+message_10:
+  text: \n<火男>那……\!我就得把说过的话再说一遍了！
+
+message_13:
+  text: \n<火男>很好！\!好了，如果可以的话我得先走一步了，拜。
+#repeat message 7 and 8
+
+#MINA: Lcation: MINA'S CAVE: Ingredients quest
+#MINA'S KID 1: Mina's CAVE
+#MINA'S KID 2: Mina's CAVE
+#MINA'S KID 3: Mina's CAVE
+#MINA'S KID 4: Mina's CAVE
+#MINA'S KID 5: Mina's CAVE  #Mentions shadowy chasm in dreamworld blackspace references
+#MINA'S KID 6: MINA'S CAVE
+#ORANGE JOE: Orange Oasis- Long Lost Brother Quest
+#After lost brothers quest:
+message_20:
+  text: \n<香橙乔和香澄乔>\sinv[1]希望与活力！\!希望与活力！
+#PALMIE
+#Location: Palmie's HOUSE
+message_21:
+  text: \n<帕尔米>欢迎！\!这些孩子都是无家可归的，所以我一直在照顾他们。
+
+message_22:
+  text: \n<帕尔米>不过，这里的人最近越来越少了，<br>我总担心留下来的孩子会觉得孤单……
+
+message_23:
+  text: \n<帕尔米>其他人也会给我送礼物，\!<br>但花生和果酱送我的礼物总是最奇怪的那个……\!<br>诶，真想知道这次他们又会给我送什么呢？
+
+
+                        #====NIGHT 3====
+#Other chars: Same as Night 2
+#MAN ON FIRE: N/A
+
+
+#TOFU CONCONNAADJFKALSF
+
+#intro:
+message_50:
+  text: \n<豆腐行家>我是豆腐行家！\!<br>不管什么\c[3]豆腐\c[0]我都喜欢！
+
+message_51:
+  text: \n<豆腐行家>每一块\c[3]豆腐\c[0]都是独一无二的，应该一块一块地品！
+
+message_52:
+  text: \n<豆腐行家>提到\c[3]豆腐\c[0]，可能不是每个人都会喜欢，但对我来说，听到这两个字我就只想要更多的\c[3]豆腐\c[0]啊！
+
+message_53:
+  text: \n<豆腐行家>我在我的\c[3]豆腐\c[0]之旅中找到了不少零食，要是你拿 10 块\c[3]豆腐\c[0]跟我换，我就可以挑一样送给你！
+
+message_54:
+  text: \n<豆腐行家>你要拿 10 块\c[3]豆腐\c[0]跟我换一样零食吗？
+#[YES/NO]
+
+#[YES]
+message_55:
+  text: 你给了豆腐行家 10 块\c[3]豆腐\c[0]。
+
+message_56:
+  text: \n<豆腐行家>太棒了！喏，拿着吧，不过它没有豆腐那么好吃！
+
+message_59:
+  text: 你获得了\c[3]\itemget\c[0]！
+
+message_58:
+  text: \n<豆腐行家>我会好好享用这 10 块风味各异的\c[3]豆腐\c[0]的，\!<br>也希望你能吃得跟我一样开心！
+
+#[NO] doesn't need text
+
+#default after:
+
+#message_50
+#message_53
+#message_54
+
+
+message_57:
+  text: \n<豆腐行家>嘿！你并没有 10 块\c[3]豆腐\c[0]……
+
+message_60:
+  text: \n<真正的鼹鼠>你身上有我父亲的味道！\!自从他意外掉进有召唤魔法阵的地下墓穴里之后，我就再也没见过他了……\!<br>难道，他还活着？
+
+message_61:
+  text: \n<真正的鼹鼠>\com[2]有人闯进来了！\!你这会动的吐司，快给我滚出去！
+
+message_62:
+  text: \n<真正的鼹鼠>主人们还没休息，我们自然也不能休息。\!每天……每天……工作永不停歇……为了制作\sinv[1]新鲜面包……新鲜面包……\c[0]
+
+message_63:
+  text: \n<真正的鼹鼠>主人们最近的订单比以前多多了，\!我看他们过不了多久就要撑不住了。
+
+
+#After biscuit and doughie defeated
+message_65:
+  text: \n<真正的鼹鼠>父亲怎么样了？\!他是不是很快就会回来了？
+
+message_66:
+  text: \n<真正的鼹鼠>\com[2]有人来啦！\!欢迎你，会动的吐司！
+
+message_67:
+  text: \n<真正的鼹鼠>主人们不在了，我们也就自由了！\!我们要把这里弄成自己的新家！
+
+message_68:
+  text: \n<真正的鼹鼠>主人们一直对我们很好……\!呜呜……\!我会怀念小饼干主人的笑话的……
+
+message_70:
+  text: \n<小小仙人掌>你好。\!谢谢你跟我说话。
+
+message_71:
+  text: 你获得了 100 蚌币！
+

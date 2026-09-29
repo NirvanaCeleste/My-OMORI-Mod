@@ -1,0 +1,629 @@
+# =========================================================================================
+# Cutscene: Sweetheart's Leave
+# =========================================================================================
+
+#Trigger: Enter proximity of Slime Girls Lobby.
+
+#SWEETHEART is walking toward the open elevator.
+
+message_0:
+  text: \{站住！！\!\}<br>小妞，你别想就这样离开。\n<美杜莎>
+
+message_1:
+  text: 亲爱的，我们只想拿回应有的报酬。<br>你就没看到玛丽娜有多生气吗？\n<莫莉>
+
+message_2:
+  text: \{\quake[1]小姐，我钱呢？！？！<br>快给钱！！！！\n<玛丽娜>
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 啊噢……是甜心和那几个海底女巫！\her
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 我们可千万别被牵连进去。\!<br>大家快跑！\kel
+
+message_5:
+  text: 站在原地别动哦，孩子们。\!<br>我必须纠正你们……\!因为你们大错特错了。\! <br>我们不是女巫……\!我们信奉科学！\n<莫莉>
+
+#MEDUSA turns to MOLLY.
+
+message_6:
+  text: 很遗憾，这也算是人们常见的误区吧。\!<br>人类往往对他们无法理解的事情感到恐惧。\n<美杜莎>
+
+message_7:
+  text: 何况……\!我想我也能理解，人们为什么觉得我们是女巫……\n<美杜莎>
+
+#MEDUSA turns to MOLLY.
+
+message_8:
+  text: 喂！你们瞅我干啥？！\n<玛丽娜>
+
+message_9:
+  text: 这个先暂且不提，我们现在有更大的问题要解决。\n<美杜莎>
+
+#MEDUSA turns to SWEETHEART.
+
+message_10:
+  text: 说得对呢！\!你这是想去哪儿呀……\!<br>\sinv[1]亲爱的甜心？\n<莫莉>
+
+message_11:
+  text: 你可是欠了我们一大包蚌币！\n<玛丽娜>
+
+#SWEETHEART turns to SLIME GIRLS.
+
+message_12:
+  text: \com[2]哼！你们三个贱民也配要钱！\swh
+
+message_13:
+  text: 我的要求如此简单，只是要你们制造出一个完美伴侣……\!<br>但是你们三个居然变着花样来让我失望！\swh
+
+#SWEETHEART turns to elevator.
+
+message_14:
+  text: 你们要是这么想拿到那些一文不值的蚌币……\!<br>就问这几个小孩要吧！\swh
+
+message_15:
+  text: \Com[2]\sinv[2]哦嚯嚯\{嚯嚯嚯\{嚯嚯嚯\{嚯嚯！！\swh
+
+#SWEETHEART walks into elevator. Elevator doors close.
+
+message_16:
+  text: \{站住！！你想去哪儿？！\n<玛丽娜>
+
+message_17:
+  text: \quake[1]\{汉弗莱！\!别让她逃了！！\n<玛丽娜>
+
+#Screen shakes, and a burp is heard.
+#HUMPHREY appears in front of MARINA.
+
+message_18:
+  text: \sinv[1]哟吼！\sinv[0]\!报告一下，甜心已经被处理掉了。\n<汉弗莱>
+
+message_19:
+  text: 还好你开口了。\!我一直都在抑制着自己，没敢动手呢。\n<汉弗莱>
+
+message_20:
+  text: 还有……\!你们多少已经猜到了吧……\!甜心身上一共有零个蚌币。\!<br>零个！\!她根本身无分文！\n<汉弗莱>
+
+message_21:
+  text: 这就……\!非常遗憾了……<br>因为我正好……\!\quake[1]肚子饿了……\quake[0]\n<汉弗莱>
+
+#MARINA is surprised.
+
+message_22:
+  text: \{那个臭女人骗了我们！！\!\}<br>我就知道她有猫腻。\n<玛丽娜>
+
+#MEDUSA looks at MARINA.
+
+message_23:
+  text: 哼嗯……也不一定。\!<br>她确实说过这些孩子会承担她的费用。\n<美杜莎>
+
+#MARINA is surprised.
+
+message_24:
+  text: 啊，对哦！\!既然这样的话，她钱确实付清了。\n<玛丽娜>
+
+#MARINA walks up to party.
+
+message_25:
+  text: 应该先卖他们的哪个身体部位呢？\n<玛丽娜>
+
+#MEDUSA jumps.
+
+message_26:
+  text: 不要这么野蛮嘛，玛丽娜！\!<br>甜心的意思应该是这些小孩子会付钱……<br>而不是让我们卖掉他们！\n<美杜莎>
+
+#MOLLY turns to children and walks up.
+
+message_27:
+  text: 好啦，宝贝们……\!<br>乖乖把一大袋蚌币交出来吧！\n<莫莉>
+
+#KEL, AUBREY, and HERO are nervous.
+
+message_28:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 哎、哎？\!这……\!呃……\!说到这个……\!<br>我先问一下……\!她到底欠你们多少钱？\kel
+
+message_29:
+  text: 哦……让我们来看看！\n<莫莉>
+
+#MOLLY turns around. MEDUSA and MARINA join to discuss.
+
+message_30:
+  text: \}咨询费……初始费……设置费……检查费……服务费……材料费……保修费……处理费……邮费和手续费……小费……取消费……损失赔偿……滞纳金……\n<莫莉>
+
+#MOLLY turns around.
+
+message_31:
+  text: 全部加起来大概是……<br>\!1000000 蚌币。\n<莫莉>
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \quake[1]\com[2]\{1000000 蚌币？！？！\!\}<br>\quake[0]我们哪有这么多钱！\aub
+
+#if you somehow have 634626246329 clams
+
+message_150:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \quake[1]\com[2]\{1000000 蚌币？！？！\!\}<br>\quake[0]这么多钱，我们怎么可能就这样给你们！\aub
+
+message_33:
+  text: ……\!哦？\n<莫莉>
+
+message_34:
+  text: ……\. ……\. ……\n<美杜莎>
+
+message_35:
+  text: ……\. ……\. ……\. ……\. ……\n<玛丽娜>
+
+message_36:
+  text: 啊啦……\!真是太可惜了。\n<莫莉>
+
+message_37:
+  text: \quake[1]\Com[2]\{汉弗莱！！！出口给我堵上！！！\n<玛丽娜>
+
+
+#Lights go off. When returned SLIME GIRLS are in their battle sprites.
+
+message_39:
+  text: 你们倒大霉了，小鬼们……\!你们来错鲸鱼了。\n<玛丽娜>
+
+message_40:
+  text: 总得有人为这一切买单吧。\n<玛丽娜>
+
+#MARINA walks up.
+
+
+message_42:
+  text: 毕竟，特殊情况，特殊处理嘛。\n<玛丽娜>
+
+message_43:
+  text: 我说的对吧，姐妹们？\n<玛丽娜>
+
+#MARINA goes up to HERO.
+
+message_44:
+  text: \sinv[1]噢噢……\!这个帅小伙儿，卖了可惜了……对吧，莫莉？\n<美杜莎>
+
+#MOLLY goes up to OMORI.
+
+message_45:
+  text: \sinv[1]怎么说呢……我喜欢安静的这只。\!当成宠物养一定很不错哦。\n<莫莉>
+
+#AUBREY jumps.
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{不准你碰他！\}\!<br>让我们走！我们什么也没有做！\aub
+
+message_47:
+  text: \sinv[1]哦，真是精力充沛呀！\!你肯定喜欢这一只，玛丽娜！\sinv[1]呼呼呼……\sinv[0]\n<莫莉>
+
+message_48:
+  text: 呵。\!行吧……\!卖掉一只应该也够了。\n<玛丽娜>
+
+#MARINA grabs KEL.
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 喂、喂！\!放开我！\kel
+
+#SLIME GIRLS float in air, lifting KEL up.
+
+message_50:
+  text: 既然你们给不起蚌币……<br>\!那就用身体来偿还吧！\n<玛丽娜>
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \{凯！！不要啊\{啊啊\{啊啊！！\her
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \{快放开我！！\kel
+
+message_116:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \{\quake[1]放我下来！！\!放我下来！！！\kel
+
+message_66:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: ……\|\quake[1]\Com[2]\{姆呜啊\Com[2]\{啊啊\Com[2]\{啊嗯姆！！！\kel
+
+#KEL bites MARINA.
+
+message_53:
+  text: 呃啊！\!搞什么？！他竟然咬我！\n<玛丽娜>
+
+#SLIME GIRLS float back down.
+
+message_54:
+  text: 哦，冷静一点，玛丽娜……\sinv[1]呼呼呼～！\sinv[0]\!<br>不过是啃你一小口嘛！\n<莫莉>
+
+message_55:
+  text: \quake[1]\{你会付出代价的，臭小子！！！\n<玛丽娜>
+
+#MEDUSA looks at party.
+
+message_56:
+  text: 啊呀，居然把玛丽娜惹怒了！\! <br>我们可爱的小猎物正在努力反抗呢。\n<美杜莎>
+
+#HERO jumps.
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 大家……\!看来一场战斗无法避免了！\her
+
+#KEL runs behind HERO.
+#Camera pans to SLIME GIRLS.
+
+message_58:
+  text: 啊啦……\!所以你们想打一架，对吗？\n<莫莉>
+
+#MOLLY takes step toward party.
+
+message_59:
+  text: 正好有一阵子没打猎了！\n<莫莉>
+
+#MEDUSA takes step toward party.
+
+message_60:
+  text: 是呢……看来要好好管教我们的猎物才行。\!<br>有人需要给这些孩子们上一堂礼仪课！\n<美杜莎>
+
+message_61:
+  text: 做个猎物还挑三拣四的……\!<br>\sinv[1]又不想被卖掉……\!又不想做宠物……\!<br>拜托你们搞清楚自己的身份……\n<玛丽娜>
+
+message_62:
+  text: 嗯……\!随便吧……\!我们又无所谓。\n<玛丽娜>
+
+message_63:
+  text: 总有别的方法嘛。\sinv[1]呼呼呼～\n<莫莉>
+
+message_64:
+  text: 如果你们坚持抵抗……<br>我们就别无选择了。<br>\!恐怕，我们只能……\n<美杜莎>
+
+message_65:
+  text: \{把你们碾成肉酱喂鱼！！！\n<玛丽娜>
+
+# =========================================================================================
+# Cutscene: Sweetheart's Leave
+# =========================================================================================
+
+#Trigger: Defeat Slime Girls.
+
+message_90:
+  text: 呼……\!呼……\!<br>我们……\!都怎么了？\!<br>这场战斗，明明应该是小菜一碟啊。\n<玛丽娜>
+
+message_91:
+  text: 呼……\! 再也不打猎了……\!我天生就不是干这个的料。\!我……还是……\!老老实实去做研究吧。\n<莫莉>
+
+message_92:
+  text: 啊呀，姑娘们……\!我们早就过了全盛时期了。\!<br>我们再年轻个两百岁就好了。\n<美杜莎>
+
+#Screen shakes.
+
+message_93:
+  text: 我不是想让你们惊慌啊……\!<br>不过我的胃口已经……\n<汉弗莱>
+
+message_117:
+  text: \quake[1]越来…\!\{越来…\!\{越来…\!\{越大了！\n<汉弗莱>
+
+message_94:
+  text: 知道了，知道了，汉弗莱……别担心。\n<玛丽娜>
+
+#MARINA turns to MOLLY.
+
+message_95:
+  text: 莫莉，给汉弗莱喂点蚌币。\n<玛丽娜>
+
+#MOLLY turns to MARINA.
+
+message_96:
+  text: 嗯？我上次已经喂过他了呀！\!而且……<br>我打上一份工的时候，买软件把蚌币都花光了！\n<莫莉>
+
+#Screen shakes.
+
+message_97:
+  text: \sinv[1]我越来越……\quake[1]\{饿了！\n<汉弗莱>
+
+#MARINA is sweaty.
+#MARINA turns to MEDUSA.
+
+message_98:
+  text: 好，行吧。\!你呢，美杜莎？\n<玛丽娜>
+
+message_99:
+  text: 呃，我……\!我没预料到这么快就要喂汉弗莱。\!<br>如果我的记忆没有出差错，不是轮到你喂了吗，玛丽娜？\n<美杜莎>
+
+#Screen shakes.
+#MARINA is nervous.
+
+message_100:
+  text: 咦，轮到我了吗？\n<玛丽娜>
+
+#MARINA turns around.
+
+message_101:
+  text: 我记得是轮到莫莉了吧。\n<玛丽娜>
+
+#MOLLY walks one step toward MARINA.
+
+message_102:
+  text: 我没记错这次是美杜莎哦。\n<莫莉>
+
+#HUMPHREY appears in front of SLIME GIRLS.
+
+message_103:
+  text: \sinv[1]鲸了，鲸了，鲸了……\sinv[0]<br>看来你们遇到了一点小小的麻烦。\n<汉弗莱>
+
+message_104:
+  text: 你们若是不能填饱我的肚子……\!<br>\quake[1]那我就只好亲自解决啦！\n<汉弗莱>
+
+#Screen shakes.
+#HUMPHREY's interior swallows a potted plant.
+#SLIME GIRLS are sweaty.
+
+message_105:
+  text: \{\quake[1]不——————！！我的家具啊！！\n<美杜莎>
+
+message_106:
+  text: 我们这下怎么办？\!汉弗莱会把一切都消化掉的！\n<玛丽娜>
+
+message_107:
+  text: 哼嗯……\!或许……我们应该计划逃跑？\n<美杜莎>
+
+message_108:
+  text: 但我们三个精力都耗尽了。\!看来，这回终于轮到我们和鱼儿同游了……\n<莫莉>
+
+#HUMPHREY's face appears below SLIME GIRLS.
+
+message_109:
+  text: \sinv[1]\{哟\{—\{吼—\{——！！！\n<汉弗莱>
+
+#HUMPHREY swallows SLIME GIRLS.
+
+message_110:
+  text: \quake[1]\{啊啊\{啊啊\{啊啊\{啊啊！！\n<史莱姆女孩们>
+
+message_111:
+  text: 哼姆……\!\com[538]海鲜……\n<汉弗莱>
+
+message_112:
+  text: \sinv[1]\{真……\{\Com[2]好吃！！\n<汉弗莱>
+
+#Camera pans to party.
+
+message_113:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 汉弗莱失控啦！\kel
+
+message_114:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \{我们现在怎么逃出去呀？！\aub
+
+message_115:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 大家冷静下来。我们去寻找出口！\her
+
+# =========================================================================================
+# Cutscene: Humphrey Hungry (Cont.)
+# =========================================================================================
+
+#Trigger: Enter proximity of big Humphrey. (Elevator)
+#Elevator turns his head
+
+message_130:
+  text: \sinv[1]我的朋友们！我能说一句你们看起来有多么美味吗？\n<汉弗莱>
+
+#KEL jumps.
+
+message_131:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \Com[2]汉弗莱，别这样！\!你还没吃够吗？\!我们答应你，等会儿就来喂你！\aub
+
+message_132:
+  text: 但是……\!你们现在就可以喂饱我啊！\!<br>只要……\!\quake[1]让我吃掉你们就可以了。\n<汉弗莱>
+
+#Multiple HUMPHREY appear and surround party.
+
+message_133:
+  text: \sinv[1]开饭时间到！\!开饭时间到！\!<br>\{你们全都死翘翘！\n<汉弗莱>
+
+#Party looks around.
+#AUBREY is sweating.
+
+message_134:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: 求求你别吃我们，汉弗莱！<br>我们不想被吃掉呀！\kel
+
+message_135:
+  text: 哎呀，现在才说这个有点迟了，对吧？\!<br>你们走进我嘴巴之前，就该想到这一点的啊！\quake[1]捏哈哈！\quake[0]\n<汉弗莱>
+
+#HERO looks back.
+
+message_136:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 不好了，大家……\!<br>我们好像出不去了。\her
+
+message_137:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 别说泄气话，英雄！\aub
+
+message_138:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 对呀，我们怎么可以就这样放弃呢！\kel
+
+message_139:
+  text: \quake[1]捏哈哈！！捏哈哈！！捏哈哈！！捏哈哈！\quake[0]\n<汉弗莱>
+
+message_140:
+  text: \sinv[1]没有必要再挣扎了，孩子们！\n<汉弗莱>
+
+message_141:
+  text: 话又说回来……\!<br>果然自己动手准备食物，会令人更加满足啊！\n<汉弗莱>
+
+message_142:
+  text: 好了啊，你们乖乖坐好……\n<汉弗莱>
+
+message_143:
+  text: \sinv[1]准备工作已经完成……\n<汉弗莱>
+
+message_144:
+  text: \sinv[1]晚餐现已开始供应……\!<br>\quake[1]\{主菜就是……\.你们！！\n<汉弗莱>
+
+#Uvula
+
+# =========================================================================================
+# Cutscene: Before Uvula
+# =========================================================================================
+
+message_180:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呼……\!呼……\!不行，没用……
+
+message_181:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her汉弗莱一直把我们往下吞，<br>怎么可能逃得出去啊？
+
+message_182:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aubOMORI……\!我好害怕呀……\!我们为什么会惹上这种麻烦？
+
+message_183:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel别担心啦，奥布里。我们会没事的！\!<br>我们又不是第一次碰上这种棘手事儿！
+
+message_184:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her对……我们现在不能放弃！\!<br>一定会有出路的……
+
+message_145:
+  text: \sinv[1]要去哪里啊？\.\quake[1]捏哈哈！\quake[0]\n<汉弗莱>
+
+# =========================================================================================
+# Cutscene: Last Blackletter
+# =========================================================================================
+
+#Trigger: Defeat Humphrey.
+#HUMPHREY blows party and Blackletter out of blowhole.
+
+message_160:
+  text: \quake[1]噗咧\{咧\{咧！\！！\}\}\quake[0]<br>嗝……\!真是的，根本咽不下去啊！\n<汉弗莱>
+
+#HUMPHREY rumbles.
+#Screen shakes.
+#HUMPHREY burps, then closes back mouth.
+
+message_161:
+  text: 哼嗯……\!突然……\!好困啊……\!<br>\}我还是……\!\}\sinv[1]去打个盹吧。\n<汉弗莱>
+
+#HUMPHREY sinks into lake.
+#Camera pans to party.
+
+message_162:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 呼……\!呼……\!这也……呼……\!太惊险了。\her
+
+message_163:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 哈……\!对呀。\!<br>真不能小瞧一个饥饿的胃袋……\kel
+
+#AUBREY walks one step away.
+
+message_164:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: 真是的，太吓人了啦……\}呼……\aub
+
+message_165:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 不过呀……\}呼……\aub
+
+#AUBREY turns to party.
+
+message_166:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: 至少我们一起渡过难关了！\}呼……\aub
+
+#AUBREY turns around.
+
+#message_167:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 5
+#      text: Wherever BASIL is...\! he's probably all alone.\aub
+
+#AUBREY turns to party.
+
+#message_168:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 5
+#      text: We need to hurry and find him!\! I bet he could use a big hug right now!\aub
+
+#message_169:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 18
+#      text: Yeah, I bet he could!\! When we're all together again, we should all give him a big ol' hug! Heh, heh!\kel
+
+#message_170:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 37
+#      text: Aww...<br>It's nice to see you two getting along so well for a change.\!<br>I could hug both of you right now!\her
+
+#AUBREY and KEL are surprised and start sweating, and look away from each other.
+
+#message_171:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 6
+#      text: H-Huh!?\! Me and KEL...\! G-Get along?\aub
+
+#message_172:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 30
+#      text: W-What are you talking about, HERO?\! Stop being weird!\kel
+
+#message_173:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 38
+#      text: Haha...\! Relax you two. I'm just playing around...\her
+
+#HERO looks out the cave.
+
+#message_174:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 36
+#      text: Hold on, BASIL... We're almost there. I can feel it.\her
+
+#message_175:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 36
+#      text: We'll all be together soon...\her
+

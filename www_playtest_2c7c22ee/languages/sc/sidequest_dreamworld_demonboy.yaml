@@ -1,0 +1,66 @@
+# =========================================================================================
+# Book to Read
+# ========================================================================================
+
+#DEMI is facing a book shelf.
+
+message_0:
+  text: \n<德米>唔……\!读什么呢……\!读什么呢……\!唉……
+
+message_1:
+  text: \n<德米>这书架上的每一本书我都已经至少读了二十遍了……\!要是有什么更有趣的书给我读就好了……
+
+#Examine Interesting book
+
+message_2:
+  text: 你获得了一本\c[4]有趣的书\c[0]！\!<br>它……\!真有趣……
+
+#Talk to DEMI
+
+message_3:
+  text: \n<德米>唔……\!读什么呢……\!读什么呢……\!唉……
+
+message_4:
+  text: \n<德米>这书架上的每一本书我都已经至少读了二十遍了……\!要是有什么更有趣的书给我读就好了……
+
+#DEMI turns around.
+
+message_5:
+  text: \n<德米>\Com[2]哇！你从哪冒出来的？
+
+#You gave an INTERESTING BOOK to DEMI.
+message_13:
+  text: 你把\c[4]有趣的书\c[0]交给了德米。
+
+message_6:
+  text: |
+    \n<德米>哇……\!这本书……\!真是……\!有趣……\|<br>唔……\|唔姆……\|唔姆唔姆唔姆……
+
+
+message_7:
+  text: \n<德米>哦！\!不好意思，我刚刚有点出神了。\!<br>谢谢你给我这本\c[4]有趣的书\c[0]。\!<br>我一定要给你点回礼……
+
+#DEMI turns to Bookshelf
+
+message_8:
+  text: \n<德米>我看看……\!要不……\!这个怎么样？
+
+#DEMI turns to party
+
+message_9:
+  text: \n<德米>给。\!这本诗集里收录了有史以来最为悲伤的一些诗歌。\!<br>希望你读得开心！
+
+#DEMI gave you a POETRY Book
+
+message_10:
+  text: \n<德米>好了，我刚刚读到哪里来着……
+
+message_11:
+  text: \n<德米>唔……\|唔姆……\|唔姆唔姆唔姆……
+
+#Quest complete
+
+#Afterquest, talk to DEMI
+message_12:
+  text: \n<德米>唔……\|唔姆……\|唔姆唔姆唔姆……\!太有趣了……
+

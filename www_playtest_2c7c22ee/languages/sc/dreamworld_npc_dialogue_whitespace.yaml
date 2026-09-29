@@ -1,0 +1,22 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============WHITE SPACE / Neighbors Room ========================================
+                        #====NIGHT 1-1====
+
+#Black Cat
+#Location: White Space, asleep
+message_0:
+  text: 黑猫很快就睡着了。
+
+#EYE in the shelf
+#Location: Neighbors room, inthe shelf
+message_1:
+  text: 你感觉有谁在监视你。
+
+#SNAKE
+#Location: Neighbor's Room, on the staircase
+message_2:
+  text: \n<蛇>\sinv[1]嘶嘶嘶嘶嘶嘶？\sinv[0]（正在等待某件事情的发生吗？）
+

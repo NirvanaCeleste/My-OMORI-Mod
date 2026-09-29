@@ -1,0 +1,380 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============SLIME GIRLS LAIR (HUMPHREY)========================
+
+
+                        #====NIGHT 3====
+
+#CLEANING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_0:
+  text: \hum扫……\扫……\扫……
+
+#FIGHTING 1/2 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_1:
+  text: \hum举起拳头来吧，我自己！
+
+message_2:
+  text: \hum不，是你要把拳头举起来！
+
+#FLOATING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_3:
+  text: \hum\sinv[1]耶————————————————！！
+
+#GAMBLER 1 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_4:
+  text: \hum你少虚张声势了！\!你骗不到我的，我自己！
+
+#GAMBLER 2 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_5:
+  text: \hum我这牌赢定了，我自己！\!我全押了！
+
+#GAMER HUMPHREY
+#Location:Slime Girls Lair / Humphrey
+message_6:
+  text: \hum待会再来找我吧，我现在在玩游戏，没空！
+
+#PAINTING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_7:
+  text: \hum哇，不得了……\!我这辈子最伟大的杰作……\!吼吼！
+
+#READING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_8:
+  text: \hum根据我的计算，你读的书越多就越聪明！
+
+#RUNNING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_9:
+  text: \hum呼……\!呼……\!呼……\!为了保持身材，我一直在努力健身！
+
+#TANNING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+message_10:
+  text: \hum啊啊……\!人生就该如此……\!古铜色的皮肤，我来了！
+
+#SNALEY
+#Location: Slime Girls Lair / Medusa River 1 (228)
+message_50:
+  text: \n<斯纳里>好漂亮的池子啊！
+
+#WATERFALL HUMPHRIES 1
+message_11:
+  text: \hum好呀！我喜欢搭桥！
+
+message_12:
+  text: \hum好吧！如果其他鲸都这么做的话，那我也……
+
+message_13:
+  text: \hum哎呀……又是让我搭桥吗？\!<br>我什么时候才能吃上东西啊？
+
+message_22:
+  text: \hum你是说南边的那个大瀑布吗？\!好！那我要跟你比一比看谁先到！
+
+#WATERFALL HUMPHRIES 2
+
+message_16:
+  text: \hum你说桥吗？
+
+message_21:
+  text: \hum我已经到了！
+
+message_14:
+  text: \hum你想利用我作为垫脚石，推进你那个稀里糊涂的计划？\!嗯，听上去挺靠谱！
+
+message_15:
+  text: \hum到搭桥的点了吗？\!哎，时间过得可真快啊，是不是？
+
+message_17:
+  text: \n<汉弗莱·桥桥，桥梁专家>我鲸生的大好时机终于来临啦！
+
+message_18:
+  text: \n<汉弗莱·梯梯，电梯专家>电梯比桥好多了，不过我就勉强配合一下你吧。
+
+message_19:
+  text: \hum嗯……\!……\!好吧！
+
+message_20:
+  text: \hum有一头睿智的鲸鱼曾经说过……“好，没问题！”
+
+message_27:
+  text: \hum我们美杜莎区域的汉弗莱可是精英中的精英，我们为自己感到骄傲！
+
+message_23:
+  text: \hum美杜莎对我们很好，还定时给我们带吃的来……\!<br>玛丽娜或者莫莉可就做不到这样哦！
+
+message_24:
+  text: \hum玛丽娜区的汉弗莱一个接一个地消失了，所以她一直要求从美杜莎区送更多的汉弗莱过去……\!<br>哈啊……\!希望下一个消失的不会是我……
+
+message_25:
+  text: \hum如果你看到美杜莎不停地走来走去，她肯定是在生闷气。\!虽然她不会对你大吼大叫什么的，但是……\!还是很可怕啦。
+
+message_26:
+  text: \hum小心脚下！\!地上洒了很多液体，有些液体人类是不能碰的！
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub汉弗莱！你能不能帮我们搭个桥呀？
+
+message_30:
+  text: 晦涩难懂的科研书籍。
+
+#==
+
+#spikes DIALOGUE
+
+message_31:
+  faceset: 01_OMORI_BATTLE
+  faceindex: 0
+  text: \n<OMORI>……
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub小心点哦！\!我一点也不相信这家伙……
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel呼……\!我还以为你们一定会选我呢……
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her你千万要小心脚下哦。<br>要是太危险了，就由我来吧。
+
+
+#==
+
+#MEDUSA area
+
+message_40:
+  text: \n<汉弗莱>我在读一本讲空调的书！\!<br>这本书真的让我涨了好多知识啊！
+
+message_41:
+  text: \n<汉弗莱>我在努力让自己放松下来……\!但是我脑子里一直在想这几天读的那本讲空调的书，那本书真的很有意思，我控制不住自己……
+
+message_42:
+  text: \n<汉弗莱>你知道我最近喜欢什么吗？\!是空调哦。\!<br>空调难道不是世界上最伟大的发明吗？
+
+
+#Humphrey PUZZLE HINT Guy
+
+message_45:
+  text: \n<睿智的汉弗莱>\sinv[1]鲸了，朋友们，你们好啊！\!\sinv[0]<br>想听听看“汉弗莱人生秘诀”吗？300 蚌币一条哦。\$
+
+#HARD PUZZLE HINT
+message_46:
+  text: \n<睿智的汉弗莱>一位智鲸曾经说过……\!<br>“数一数你的敌人有多少……\!然后，顺序将带领你走向胜利。”
+
+message_110:
+  text: \n<睿智的汉弗莱>\com[2]什么？！你还没想出来？\!<br>呃……好吧。\!那你再听好了。
+
+message_111:
+  text: \n<睿智的汉弗莱>一位智鲸曾经说过……\!<br>“数清楚你有多少个敌人，即可走上正确的道路……\!<br>一路上，观察落下的水。”
+
+
+#EASY PUZZLE HINT
+
+message_47:
+  text: \n<睿智的汉弗莱>一位智鲸曾经说过……\!<br>“如果其他方法都行不通，就试试看从左到右读一遍吧！”
+
+#MED PUZZLE HINT
+message_48:
+  text: \n<睿智的汉弗莱>一位智鲸曾经说过……\!<br>“有时候，后面比前面更有意思哦！”
+
+#NOT ENOUGH CLAMS
+message_49:
+  text: \n<睿智的汉弗莱>抱歉，不行哦！\!<br>给我 300 蚌币我才能告诉你一条“汉弗莱人生窍门”，\!<br>少一个子也不行！
+
+message_51:
+  text: \n<睿智的汉弗莱>\{\{\Com[2]\sinv[1]太、太、太好吃了！！
+
+message_52:
+  text: \n<睿智的汉弗莱>好，这就给你一个小窍门！\!你可要听好了，我只说一次哦！
+
+message_53:
+  text: \n<睿智的汉弗莱>好吧……那随便你咯！
+
+#WITHOUT PUZZLE ACTIVATION
+message_54:
+  text: \n<睿智的汉弗莱>\sinv[1]鲸了，朋友们，你们好啊！\!\sinv[0]哎呀，也不是人人都擅长解谜的。\!要是你觉得自己卡关了，那就来找我吧，我能稍微帮你们一把……\!不，说不定能帮你们一个大忙哦！
+
+message_56:
+  text: \n<汉弗莱>啊……我怎么没想到呢！\!你这样说的话，那计算起来就简单了……
+
+message_57:
+  text: \n<汉弗莱>那么，只要我把结果乘以……\!减去无穷……\!<br>然后再除以零……\!再进一位……\!我就会得到……\!<br>一个虚数！
+
+message_58:
+  text: \n<睿智的汉弗莱>\sinv[1]鲸了，朋友们，你们好啊！\!\sinv[0]哎呀，也不是人人都擅长解谜的。不过，看来你们也不再感到困扰了。
+
+
+#WATERFALL HUMPHRIES 2
+
+#===
+#MUTANTHEART
+
+message_60:
+  text: \n<异变甜心>\}尼、尼嚎……
+
+message_61:
+  text: \n<异变甜心>\}尼、尼嚎！
+
+message_62:
+  text: 异变甜心也戳了你一下。
+
+message_63:
+  text: \n<异变甜心>\sinv[1]\}尼嚎～
+
+message_64:
+  text: 异变甜心似乎很高兴！
+
+message_65:
+  text: \n<异变甜心>\}尼……\!尼嚎？
+
+message_66:
+  text: 你想要做些什么？
+
+message_67:
+  text: 戳戳
+
+message_68:
+  text: 摸摸
+
+message_69:
+  text: 战斗
+
+message_70:
+  text: 什么也不做
+
+message_71:
+  text: 你戳了戳异变甜心。
+
+message_72:
+  text: 你摸了摸异变甜心。
+
+message_73:
+  text: 你摸了摸这个可怕的怪物。
+
+message_74:
+  text: 你戳了戳这个可怕的怪物。
+
+message_100:
+  text: \n<汉弗莱>唉……\!听听，他们在上面玩得多开心啊。\!兼职的日子就是比全职的好过。
+
+message_101:
+  text: \n<汉弗莱>几个世纪以来，美杜莎和她的几个姐妹一直在研究这个世界。\!这些书就是她们的劳动成果！
+
+message_102:
+  text: \n<汉弗莱>这个实验不管做多少次，都得不出我想要的结果。\!或许我现在应该回过头来看看指南手册了……
+
+message_103:
+  text: \n<汉弗莱>\sinv[1]Zzzzzzzzzzzzzzzzzzzzz……
+
+message_104:
+  text: \n<汉弗莱>这些史莱姆都成安全隐患了。\!我们应该考虑一下从莫莉区里雇个汉弗莱过来，好好打扫一下。
+
+#MARINA
+#Location: Slime Girls Lair / Humphrey
+#[Main Quest]
+
+#MEDUSA
+#Location: Slime Girls Lair / Humphrey
+#[Main Quest]
+
+#MOLLY
+#Location: Slime Girls Lair / Humphrey
+#[Main Quest]
+
+#MUTANTHEART
+#Location: N/A
+
+#PERFECTHEART
+#Location: N/A
+
+#ROBOHEART
+#Location: Slime Girls Lair / Humphrey
+#[Main Quest]
+
+
+                        #====NIGHT 4====
+#CLEANING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#FIGHTING 1/2 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#FLOATING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#GAMBLER 1 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#GAMBLER 2 HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#GAMER HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#PAINTING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#READING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#RUNNING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#TANNING HUMPHREY
+#Location: Slime Girls Lair / Humphrey
+#Same as NIGHT 3.
+
+#MARINA (Head Only)
+#Location: Slime Girls Lair / Humphrey - Marina's Body Quest
+#Sidequest: Marina
+
+#MEDUSA (Head Only)
+#Location: Slime Girls Lair / Humphrey - Medusa's Body Quest
+#Sidequest: Medusa
+
+#MOLLY (Head Only)
+#Location: Slime Girls Lair / Humphrey - Molly's Body Quest
+#Sidequest: Molly
+
+#MUTANTHEART
+#Location: Slime Girls Lair / Humphrey
+
+#PERFECTHEART
+#Location: Slime Girls Lair / Humphrey
+#Dreamworld_extras_slimegirls
+
+#ROBOHEART
+#Location: N/A
+
+
+#--- WATERFALL HUMPHRIES
+
+message_200:
+  text: \n<汉弗莱>天……我刚还在修这根管子呢，你忽然就出现了！
+
+message_201:
+  text: \n<汉弗莱>啊啊……终于给我找到了！一个没有瀑布的房间……\!我刚好想要晒出古铜色的皮肤，这里亮堂堂的白光真是再合适不过了！
+

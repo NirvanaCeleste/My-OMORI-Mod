@@ -1,0 +1,66 @@
+# =========================================================================================
+# Slimegirls: MOLLY's Body
+# ========================================================================================
+
+#Talk to Molly:
+
+message_0:
+  text: \n<莫莉>小宝贝们你们好呀～你们还活着真是太好了。\!我为我先前的行为道歉。\!我和我妹妹们经常一不小心就做得过火了。\!你们一定可以理解的。
+
+message_1:
+  text: \n<莫莉>你们能帮我一个小忙吗？\!<br>我想给自己造一具新身体，但如你所见……\!我现在有点无法行动。
+
+message_2:
+  text: \n<莫莉>我需要你们从我实验室里那些游荡的蠕虫机器人身上收集一点\c[4]金属碎片\c[0]来。<br>\!\sinv[1]谢谢啦，小宝贝们～
+
+#Talk to Molly with Scrap Metal:
+
+message_3:
+  text: \n<莫莉>啊！你们把我要的材料带来了！\!<br>这样应该就行了。\!好了，我看看……
+
+#FADE IN FADE OUT WITH SFX
+
+message_4:
+  text: \n<莫莉>\sinv[1]哼～\sinv[0]
+
+#[Molly turns left]
+
+message_5:
+  text: \n<莫莉>\sinv[1]哼——嗯～\sinv[0]
+
+#[Molly turns back]
+
+message_6:
+  text: \n<莫莉>\sinv[1]哼——嗯——嗯～\sinv[0]
+
+#[Molly turns right]
+
+message_7:
+  text: \n<莫莉>……
+
+#[Molly turns front]
+
+message_8:
+  text: \n<莫莉>\Com[2]呸！\!这具金属身体真是太笨重了……\!<br>我觉得我还是当一个脑袋比较开心！
+
+#MOLLY HEAD JUMPS OFF ROBOT Body
+
+message_9:
+  text: \n<莫莉>不过嘛……我还是应该回报你们……\!<br>啊，我想到了！来吧，拿上这些！\!
+
+message_10:
+  text: 你获得了\c[13]高跟鞋\c[0]。
+
+message_12:
+  text: \n<莫莉>我没有身体的话就不需要它们啦！
+
+#QUEST complete
+
+#AFTER-QUEST Dialogue talk to Molly
+
+message_11:
+  text: \n<莫莉>没有身体真是太方便了！\!<br>我为什么不早点想到这点呢！<br>\sinv[1]呼呼呼～
+
+message_13:
+  text: 一具坚硬的，沉重的身体。
+

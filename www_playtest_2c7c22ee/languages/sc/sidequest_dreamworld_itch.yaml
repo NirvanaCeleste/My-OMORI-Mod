@@ -1,0 +1,43 @@
+# =========================================================================================
+# Itch
+# ========================================================================================
+
+#Talk to Dino 4's Top Half
+
+message_1:
+  text: \n<斯科特>\sinv[1]你们好啊，年轻人们！\sinv[0]\!<br>愿不愿意帮我做个事啊？\!<br>我想让你们帮我挠挠痒……
+
+message_2:
+  text: \n<斯科特>痒的地方在我的屁股那边，所以我自己还真挠不着。\!<br>呃……\!真的是\sinv[1]痒死\sinv[0]我了！
+
+#Talk to Dino 4's Bottom Half
+
+message_3:
+  text: 你挠了挠斯科特的屁股。
+
+#Screen shakes
+
+message_4:
+  text: \n<斯科特>\sinv[1]啊……\!舒服多了……\sinv[0]
+
+#Talk to Dino 4's Top Half
+
+message_5:
+  text: \n<斯科特>嘿！你们不就是帮我挠了痒痒的小孩吗。\!<br>真是\sinv[1]舒服多了\sinv[0]……
+
+message_6:
+  text: \n<斯科特>给，拿上这个。\!<br>这玩意在我们这儿多了去了。\!<br>肯定能派上点什么用场的啦！
+
+message_7:
+  text: 你获得了\c[13]安全帽\c[0]。
+
+message_10:
+  text: \n<斯科特>要安全啊，孩子们！\!真是太谢谢你们啦！
+
+#Quest complete
+
+#After quest dialogue
+
+message_8:
+  text: \n<斯科特>嘿！是你们啊，帮我挠了痒痒的小孩。\!<br>那真是\sinv[1]太舒服了！\sinv[0]
+

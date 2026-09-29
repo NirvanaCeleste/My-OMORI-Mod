@@ -1,0 +1,117 @@
+# =========================================================================================
+# Farawaytown: Kels Room
+# =========================================================================================
+
+#=========================Kels Room==============================
+
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel怎么了，英雄？
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her……
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel哦……我懂了……\!肯定是房间里有只蜘蛛啦。\!<br>别担心，英雄！交给我啰！
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel唔，那个讨厌的小东西在……
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \kel啊——哈！抓到你了！
+
+#*squish SFX*
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel好了英雄，没事啦！\!你可以喘口气了。\!<br>那只蜘蛛已经没啦！
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her\}……\!给我看看。
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel哈？\!英雄，你说啥？
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her我说给我看看那只蜘蛛。
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel啊，对哦。
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel这儿呢。\!看到没？\!它真的归西了啦。
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her……
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel好了，我现在要把它扔进马桶冲走咯？
+
+#*KEL LEAVES THE ROOM*
+#*Toilet flush SFX*
+#*KEL comes back*
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel\sinv[1]好……我回来了！\sinv[0]\!瞧，蜘蛛不见了吧！\!就像变魔术一样哦！
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her…………
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 36
+  text: \her……………………
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her哈啊……\!谢天谢地……
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel英雄……\!我感觉你越来越怕蜘蛛了诶……
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel你还是要努力克服一下吧！\!<br>要是我不在的时候有蜘蛛冒出来了，那你怎么办？
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 35
+  text: \her天、天呐……你、你觉得有可能发生这种事？
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel拜托啦，英雄……\!<br>你现在这样会让我觉得自己才是哥哥！我平时都没这种感觉的……

@@ -1,0 +1,76 @@
+# =========================================================================================
+# Blackspace around dreamworld
+# =========================================================================================
+
+#otherworld
+
+#CAPT. SPACEBOY mentions the existence of a BLACK HOLE when he travels too far in the Universe.
+
+
+#PINWHEEL FOREST: KITE KID mentions that sometimes when his eye follows his kite, he catches a glimpse of a DARK VOID in the sky.
+
+message_5:
+  text: \n<风筝男孩>有件事我从来没跟别人提起过……\!当我抬头看风筝时，有时余光会瞥见\c[11]黑暗虚空\c[0]出现在天空中。
+
+message_6:
+  text: \n<风筝男孩>我以前很少看见它，但最近它出现的越来越频繁了。\!这意味着什么呢……
+
+#SPROUT MOLE legend states that there used to be more SPROUT MOLES, but many of them were curious and dug too deep into the ground,
+#reaching a mystical realm we now call the  DEEP PIT. It seems that the location has been lost for centuries.
+#Some say that it mysteriously vanished without a trace.
+
+message_7:
+  text: \n<树苗鼹鼠老师>在树苗鼹鼠的传说中，我们一族曾经遍布整个世界，但我们的祖先在好奇心的驱使下往地下挖得太深。
+
+message_8:
+  text: \n<树苗鼹鼠老师>他们发掘出了一个神秘的洞穴。其将我们成百上千的族人都吸入其中，再也没有出现过。
+
+message_9:
+  text: \n<树苗鼹鼠老师>我们将其命名为\c[11]深坑\c[0]。<br>而它的具体位置已被大家遗忘，也有传言说它凭空消失了。
+
+#ORANGE OASIS: One of MINA's kids mentions the story of the SHADOWY CHASM, a place where all bad kids go.
+
+message_10:
+  text: \n<米娜的孩子>妈妈告诉我不要离洞穴太远，不然\c[11]阴影裂隙\c[0]就会把我……\!<br>她说坏孩子们都被它吞掉了。
+
+#Hitchhiker tells you of a place of no return called THE ABYSS.
+
+message_11:
+  text: \n<便车旅者>你好啊，孩子。 \SINV[1]唔呼呼呼……\SINV[0]\! 你对奇异之事感兴趣吗？\!<br>我知道一处地方……你或许听说过。
+
+message_12:
+  text: \n<便车旅者>它拥有很多名字……\!<br>\c[11]黑暗虚空\c[0]……\!\c[11]深坑\c[0]……\!\c[11]阴影裂隙\c[0]……
+
+message_13:
+  text: \n<便车旅者>而\c[11]深井\c[0]这里的居民则称它为\c[11]深渊\c[0]。
+
+message_14:
+  text: \n<便车旅者>它就坐落于这高速公路的尽头。\!想让我带你去看看吗？
+
+#FORGOTTEN PIER: Inhabitants from the FORGOTTEN PIER are speaking from another realm which they call BLACK HOLE, DARK VOID, DEEP PIT,
+#SHADOWY CHASM, or ABYSS. They escape for a bit, but it will always pull them back.
+
+#Common SOMETHINGs are Dream World NPCs that have stayed in BLACK SPACE for a long time.
+
+#message_15:
+#      text: \n<LOST SOUL>\fn<OMORI_GAME>When I was young, my mother told me to beware of a place called the \c[11]SHADOWY CHASM\c[0], but I didn't listen...\!<br>Now I'm stuck here forever...
+
+#message_16:
+#      text: \n<LOST SOUL>\fn<OMORI_GAME>I can linger for a while, but...\!<br>\quake[1]it\quake[0] will always pull me back...
+
+#message_17:
+#      text: \n<LOST SOUL>\fn<OMORI_GAME>I used to have a friend...\! but the longer we stayed here, he started to...\! turn into something else...\! Oh, how I miss my friend...
+
+#HITCHHIKER AT ABYSS
+message_20:
+  text: \n<便车旅者>我们到了……
+
+message_21:
+  text: \n<便车旅者>你想回到\c[11]深井\c[0]吗？
+
+message_22:
+  text: \n<大黄猫>睡吧，小不点。\!有我在，你很安全。
+
+message_23:
+  text: 已经没有回头路了。
+

@@ -1,0 +1,535 @@
+# =========================================================================================
+# Cutscene: Stolen PHOTO ALBUM
+# =========================================================================================
+
+#Trigger: Examine BASIL's House Door.
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 呃……\!谢谢你们陪我走回家。\bas
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 没——问题！\!<br>有什么需要帮忙的就跟我说，知道了吗？<br>\!那就之后见啦，贝瑟尔！\kel
+
+#KEL and PLAYER begin walking.
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 嗯、嗯……\!……\bas
+
+#BASIL walks one step forward.
+
+message_3:
+  faceset: MainCharacter_Basil
+  faceindex: 41
+  text: \Com[2]\{等等！！请不要走！！！\bas
+
+#KEL turns around.
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 35
+  text: 啊……\!不是……\!我……我很抱歉。\!其实我想请你们帮个忙。\bas
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 当然没问题了，贝瑟尔。要帮你什么呢？\kel
+
+message_6:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 怎么说呢……\!就是……\!<br>他们拿走了我很重要的东西。\bas
+
+#BASIL walks one step back.
+
+message_7:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: …… …… ……\bas
+
+message_8:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 当……\!我们……\!还是朋友的时候……\!<br>我经常给大家拍照，你还记得吗？\bas
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 我当然记得啦。\!<br>那些相片对你来说比什么都重要啊！\kel
+
+message_10:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: 啊……\!对的……\!然后就是……\!奥布里她……\! <br>她把我的\c[4]相册\c[0]拿走了，而且……\bas
+
+#KEL walks one step forward.
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]\{奥布里偷走了你的\c[4]相册\c[0]？！\kel
+
+message_12:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: 怎、怎么说呢……\!她……\!她不肯还给我……\bas
+
+#KEL turns around.
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]\{真是个混蛋！！\}\kel
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你什么都不用担心，贝瑟尔。<br>\!这事就包在我和 \n[8] 身上了。\kel
+
+message_15:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 啊……\!好的……\!谢谢你们……\bas
+
+#KEL turns toward BASIL.
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 顺带一提啊……\!关于你之前所说的……\kel
+
+#KEL walks up to BASIL.
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 我们现在也依然是朋友。\!好好记住这一点哦？\kel
+
+message_18:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: ……\!嗯，好。\bas
+
+#KEL walks back to PLAYER.
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]该出发了，\n[8]！我们可没时间慢慢耗！\!我们有一本\c[4]相册\c[0]要找呢。\!<br>我们这就去\c[11]遥远公园\c[0]找找线索！\kel
+
+message_20:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 那……\!之后再见啦。\bas
+
+# =========================================================================================
+# Cutscene: Charlie & Angel Intro
+# =========================================================================================
+
+#Trigger: Walk in proximity of Charlie.
+
+#KEL looks around.
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 唔，似乎奥布里不在附近……\kel
+
+#KEL is surprised and walks up to CHARLIE.
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 哎，等等！我认识你，你是叫查理，对吧？\! <br>我有时会看到你和奥布里她们一起。\kel
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 你知道她去哪儿了吗？\kel
+
+#CHARLIE turns to face KEL.
+
+message_43:
+  text: ……\cha
+
+#CHARLIE turns away.
+
+message_44:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 你知道吗，查理……<br>我看的出来，你不是那种坏家伙。\kel
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 奥布里拿走了贝瑟尔很重要的东西，而我们要把它拿回来。\!你有什么办法可以帮帮我们吗？\kel
+
+message_46:
+  text: ……\cha
+
+#CHARLIE shakes a nearby tree.
+#ANGEL comes out of the tree and poses.
+
+message_47:
+  text: \{\Com[2]谁做的、为了啥、这是哪儿？！\}<br>你那是想要干嘛？！？！\who
+
+#ANGEL turns to KEL.
+
+message_48:
+  text: 啊！\!这不是凯和那个拿小刀的怪人吗？\!<br>不错，是我非凡的安吉尔值得一战的对手！\who
+
+#ADD FWEFWEFWEFWE
+
+message_49:
+  text: 终于，是时候让你们迎接你们的厄运了！\ang
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 安吉尔，我们没时间陪你玩……\! <br>我们只是想找到奥布里。\! <br>你知道她在哪里吗？\kel
+
+message_51:
+  text: 你们在打听奥布里的下落，是么？\! \Com[2]有意思！\! <br>我可以告诉你们我知道的一切……\!<br>但首先，你们必须要战胜我！\ang
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 战、战胜？！\!但……\!我不想……\!揍一个小孩啊……\kel
+
+#ADD FWEFWEFWEFWE
+
+message_53:
+  text: 你们连一根手指头都碰不着我的！\!<br>\Com[2]\{来吧查理！\!\Com[2]我们把他们打个落花流水！\ang
+
+#CHARLIE sighs and walks toward ANGEL and poses.
+
+# =========================================================================================
+# Cutscene: Charlie & Angel's Loss
+# =========================================================================================
+
+#ANGEL falls to the floor.
+
+#ADD FWAAAAAAAAAAAAAA
+
+message_70:
+  text: 怎么会这样？！我的训练都是无用功吗！\ang
+
+#CHARLIE looks at ANGEL.
+
+message_71:
+  text: ……\cha
+
+message_72:
+  text: 嗷嗷，我的头好痛……\ang
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 谁让你先挑事的。\kel
+
+#ANGEL jumps up.
+
+message_74:
+  text: \Com[2]\{你欺负人！！！\ang
+
+#KEL is frustrated.
+
+message_75:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 唉……\!好啦，安吉尔，你该认真回答我了。\!<br>我们打败了你和查理，所以快点告诉我们，奥布里去了哪儿？\kel
+
+message_76:
+  text: 哼！\!既然我事先承诺过你，那我绝不会食言。\!<br>我就告诉你们吧。\ang
+
+#LOSE CONDITION
+
+message_95:
+  text: \ang\com[2]\{\{哈！凯，你这个大蠢货！
+
+message_96:
+  text: \ang一切尽在我预料之中！我和查理取得了胜利！
+
+message_97:
+  text: \ang师父一定会为我感到骄傲。
+
+message_98:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: \kel\}呃……\!谁让我好心向一个小孩放水呢。
+
+message_99:
+  text: \ang\com[2]嗯？你说啥？！\!丧家犬就别乱吠好不好啊，凯！<br>我们可是赢得光明正大，\!是吧，查理？
+
+message_100:
+  text: \n<查理>……
+
+message_101:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 唉……\!好啦，安吉尔，你该认真回答我了。\!<br>快点告诉我们，奥布里去了哪儿？\!已经玩够了吧！\kel
+
+message_102:
+  text: \ang噫……\!真是令人扫兴的家伙……\!怪不得奥布里让我们离你远点。
+
+message_103:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \kel喂，安吉尔，我们可是在讨论很严肃的事情！\!成年人的严肃事情！\!再这样，我就向大人们告你的状咯？
+
+message_104:
+  text: \ang唉……\!别……\!好吧，算了。我一切都告诉你，但你肯定不会满意的。
+
+#BOTH
+
+message_77:
+  text: 真相就是……\ang
+
+message_78:
+  text: 奥布里她……\!就在……\!\c[11]遥远镇\c[0]的某个地方……\!大概吧。\ang
+
+#KEL jumps.
+
+message_79:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 什么鬼啊，安吉尔！\!你别再胡闹了，不然我——\kel
+
+message_80:
+  text: 我确实说了我会告诉你我所知道的一切啊！\! <br>问题是……我其实什么都不知道！\ang
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 安吉尔……\!你最好现在就告诉我们她在哪儿……\!<br>不然我就要把你在夏令营尿床的事情公诸于世了。\kel
+
+#ANGEL is surprised, and jumps.
+
+message_82:
+  text: \Com[2]诶诶？！什、什、什、什么？！<br>你不能这样！这太犯规了！\ang
+
+#ANGEL turns around.
+
+message_83:
+  text: 总、总之，我真的不知道！\ang
+
+message_84:
+  text: 要不你可以问问我师父独行侠。\!他可是知识殿堂的守门人！\!<br>他跟我这么说的！\ang
+
+message_85:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 独、独行侠？\!<br>我的天……\!你是说那个怪小孩米凯尔吗？\kel
+
+message_86:
+  text: \Com[2]不允许你用那个名字称呼他！\! <br>他特别讨厌别人这么喊他。\ang
+
+message_87:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 呃……\!行吧……果然是他……\!<br>那，米凯——我是说，呃，独行侠他现在在哪儿呢？\kel
+
+message_88:
+  text: 我会告诉你们我知道的一切……\!但……\!你们首先要战胜我！\ang
+
+message_89:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 行吧……那我就去和大家说你那次夏令营——\kel
+
+message_90:
+  text: \{\{\quake[1]嘎啊！！\ang
+
+message_91:
+  text: 好好好，我说我说。\!师父去了\c[11]遥远广场\c[0]的喷泉。<br>\!他说他要去和女孩子见面……\!然后跟她们约会什么的。\ang
+
+message_92:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 呃……\!真恶心。\kel
+
+message_93:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 走吧，\n[8]。我们去\c[11]遥远广场\c[0]吧……<br>这里应该没什么事情好做了。\kel
+
+message_94:
+  text: \ang\sinv[1]\{呜哇\{哇哇\{哇哇哇！！！
+
+# =========================================================================================
+# Cutscene: The Maverick Intro
+# =========================================================================================
+
+#Trigger: Walk in proximity of The Maverick.
+
+#MAVERICK is at the fountain, with one girl on each arm.
+
+message_110:
+  text: 然后我告诉他……独行侠的独不是孤独的独。\! <br>是\Com[2]独一无二的独！\mav
+
+message_111:
+  text: 噢，\Com[2]独行侠，你说话好风趣噢！\n<女孩>
+
+message_112:
+  text: 嚯嚯！哇，真是个令人惊叹的故事，\Com[2]独行侠！\n<女孩 2>
+
+message_113:
+  text: \sinv[1]姑娘们、姑娘们……淡定！不用赶着投怀送抱，我的爱意人人有份……\sinv[2]\mav
+
+#KEL walks up.
+
+message_114:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 米凯尔……\!你在干嘛呢？\kel
+
+message_115:
+  text: \Com[2]啊！\mav
+
+#THE MAVERICK walks toward KEL and flips his hair.
+
+message_116:
+  text: 这不是凯吗！\!我的……\!\Com[2]天命宿敌！\mav
+
+#THE MAVERICK does a lame pose.
+
+message_117:
+  text: 你终于肯向我投降了，我没猜错吧？\mav
+
+message_118:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 米凯尔，我没时间扯这些。\!<br>我们在找奥布里。你见到过她吗？\kel
+
+#THE MAVERICK starts to sweat.
+
+message_119:
+  text: 不、不准你这么称呼我！\! <br>那个名字我很久以前就抛弃掉了！\mav
+
+message_120:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 米凯尔，你究竟知不知道她在哪儿？\kel
+
+message_121:
+  text: 你还用那个讨人嫌的名字叫我！\! <br>你、你竟然敢让我出丑！！\mav
+
+message_122:
+  text: 我，\Com[2]独行侠，绝不会忍气吞声！\! <br>\Com[2]\{准备迎接你们的毁灭吧！！\mav
+
+message_123:
+  text: \{\Com[2]看好了，女士们！\!\}<br>看我把这废物的头按到地板上摩擦！\mav
+
+message_124:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 拜托了，米凯尔……\!别做对不起自己的事。\! <br>我再问最后一次——\kel
+
+message_125:
+  text: \{\Com[2]跟我战一场吧，你个纸老虎！！<br>别做个懦夫！！！\mav
+
+message_126:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 唉……\!我们真的要这么做吗？\kel
+
+message_127:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 好吧，那……\!上吧，\n[8]……我们把他拿下。\kel
+
+# =========================================================================================
+# Cutscene: The Maverick's Loss
+# =========================================================================================
+
+#Defeated by THE Maverick
+
+message_149:
+  text: \mav你是个可敬的对手，凯……\!但是，是时候把你彻底解决掉了。
+
+#Trigger: Defeat THE MAVERICK
+
+#THE MAVERICK is defeated on the floor.
+
+message_150:
+  text: 不……\!我怎么能在这里倒下。\mav
+
+message_151:
+  text: 地球之民啊……\mav
+
+message_152:
+  text: \{借给我你们的力量吧！！\mav
+
+#THE MAVERICK strikes his final pose.
+
+message_153:
+  text: \Com[2]\sinv[1]嗨～\Com[2]\{～～\Com[2]\{呀～～\Com[2]\{～～！！！\mav
+
+message_154:
+  text: 呃，这人怎么回事？他好逊哦。\n<女孩>
+
+message_155:
+  text: 我才不想为了 $10.00 被迫留在这儿。我们快走吧……\n<女孩 2>
+
+#The girls walk O.S.
+#THE MAVERICK looks where the girls left and walks 1 step forward.
+
+message_156:
+  text: 姑、姑娘们！\!求你们了，回来！\mav
+
+message_157:
+  text: 我还有更多的钱！\mav
+
+message_158:
+  text: ……\!唉……\mav
+
+#His wig falls off, but he fixes it.
+
+message_159:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 米凯尔……\kel
+
+#THE MAVERICK turns away from KEL.
+
+message_160:
+  text: \Com[2]\{这里没有人叫这个名字！！\mav
+
+message_161:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 拜托了……我一辈子都不会再问你任何问题了。\!<br>只要告诉我们奥布里在哪儿，我们立刻走人！\kel
+
+message_162:
+  text: ……\mav
+
+#THE MAVERICK turns to KEL.
+
+message_163:
+  text: 好吧好吧。\!<br>我确实知道她在哪里，我也可以告诉你……\!<br>但有个条件……\mav
+
+message_164:
+  text: 你必须称呼我的真名，\Com[2]独行——\mav
+
+#KEL turns to PLAYER.
+
+message_165:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 算了，当我没说。\kel
+
+message_166:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 我们去找金吧。<br>她或许知道奥布里在哪儿。\kel
+
+message_167:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 金和万斯都是甜食控，所以……\!我有预感他们就在\c[3]糖果店\c[0]那边。\kel
+

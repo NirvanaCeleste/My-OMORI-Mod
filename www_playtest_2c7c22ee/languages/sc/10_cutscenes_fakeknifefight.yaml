@@ -1,0 +1,345 @@
+# =========================================================================================
+# Cutscene: Go to the Park
+# =========================================================================================
+
+#Trigger: Exit Hobby Shop after purchasing Hero's Gift.
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 所以……\!现在你想去哪里呢，\n[8]？\kel
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 郊区这一带确实没什么新鲜事可做，是吧？\kel
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 哦，去\c[11]遥远公园\c[0]怎么样？\!对啊，公园！\kel
+
+#KEL walks towards FARAWAY PARK.
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 来这里的路上我们有路过那儿的。\kel
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 想想应该挺有意思的，不是吗？\kel
+
+# =========================================================================================
+# Cutscene: Aubrey and the Hooligans
+# =========================================================================================
+
+#Trigger: Enter proximity in FARAWAY PARK.
+
+
+#BASIL, talking to Kim
+message_20:
+  text: 等等，别走！\!求你们了！\who
+#Kim talking:
+
+message_21:
+  text: 对不起了，哥们。这忙帮不了。你自己想办法吧！\who
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 哎呀……\!那里有人在吵架。\kel
+
+#KEL walks up.
+
+message_23:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 我们去看看情况吧。\kel
+
+#Camera pans to KIM and BASIL talking.
+#KIM turns away from BASIL.
+#Kim talking:
+message_24:
+  text: 这又不关我的事。\!<br>你和她有什么恩怨就自己去找她啊，你这个怪人！\who
+
+#BASIL walks up to KIM.
+
+#Basil talking:
+message_25:
+  text: 当我求求你了。\!求你让她还给我吧。\who
+
+#Basil talking:
+message_26:
+  text: 她都不肯听我说话……\who
+
+#KEL is surprised.
+
+message_27:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 等一下……\!那不是……？\kel
+
+#KEL walks forward one step.
+
+message_28:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 那是贝瑟尔！\!你个欺负人的家伙，离他远点！\kel
+
+#KIM looks around.
+#KIM is surprised.
+
+#KIM talking:
+
+message_29:
+  text: 哈？\!是谁啊？\who
+
+#KIM is frustrated.
+
+message_30:
+  text: 哦，我说谁呢，是凯啊……\!嘟囔、嘟囔……\who
+
+message_31:
+  text: 你能不能管好你自己，别多管闲事？\who
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 是吗？那为什么你不去烦别人呢，金？\kel
+
+message_33:
+  text: 啧。\!你是不是以为你很了不起啊？\kim
+
+message_34:
+  text: 这里的规矩可不是你定的！\kim
+
+#Aubrey talking:
+message_35:
+  text: \Com[2]\{发生什么事了？！\who
+
+#AUBREY & the rest of the HOOLIGANS scooter in behind KIM.
+#AUBREY walks to KIM's side and faces her.
+
+message_36:
+  text: 哦，你来了奥布里……\!<br>凯这个呆子突然冒了出来，还想对我指手画脚！\!<br>我说，我们得给他点颜色瞧瞧！\kim
+
+#AUBREY get off scooter, and turns to KEL.
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 凯……\!你想怎么样？\aub
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 别再欺负贝瑟尔了！\!你怎么能这样呢？！\!<br>我们曾经都是朋友啊，你难道忘了？\!<br>你也说说她啊，\n[8]！\kel
+
+#AUBREY is surprised.
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: ……\!\n[8] 来了？\aub
+
+#AUBREY walks up to PLAYER.
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 哇，真的是你。\!<br>很久没见了，但你倒是一点都没变。\aub
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 10
+  text: 你有多久没踏出家门了？\!<br>三年……？\!还是四年？\!<br>呆在自己的小小空间里，一定很不错吧？\aub
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 注意你的言辞，奥布里！\!<br>你根本不知道他经历了什么。\kel
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: 哼……\!管他的呢。\aub
+
+message_44:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: 奥布里！\!求求你了……\!听我说……\bas
+
+#BASIL walks toward AUBREY. KIM gets in BASIL's way. BASIL falls over.
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 喂，住手！\kel
+
+#KEL attempts to run to KIM, but AUBREY blocks his path.
+
+message_46:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: 离远点，凯。别多管闲事。\aub
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 你究竟是有什么毛病啊，奥布里？！\kel
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 呃……\n[8]！\!快来！我们得做点什么！\kel
+
+message_49:
+  faceset: MainCharacters_Faraway
+  faceindex: 10
+  text: 哈哈……\!你们是想干一架吗？\aub
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 11
+  text: 好啊，没问题呀？\!<br>你们两个人对付我一个！怎么样？\!<br>\Com[2]你们尽管上啊！\!我一个人就能单挑你们两个！\aub
+
+# =========================================================================================
+# Cutscene: Fake Knife Fight
+# =========================================================================================
+
+#Trigger: Attack AUBREY in battle.
+
+#AUBREY falls to the floor.
+#KIM runs to AUBREY.
+
+message_70:
+  text: 可、可恶……\!奥布里，你还好吧？\!<br>你……你受伤了……\kim
+
+message_71:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: 我、我没事……\aub
+
+message_72:
+  text: 才不是没事啊！你都在流血了！\!<br>走了，我们得带你离开这儿！\kim
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: 呃……\!你们给我等着……\aub
+
+#AUBREY and HOOLIGANS run away.
+
+message_74:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 哇，刚才真的是太险了。\!<br>还好你带了把刀，不然我们——\kel
+
+message_75:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]慢、慢着！\!把那个给我！\kel
+
+message_76:
+  text: 凯拿走了你的\c[13]牛排刀\c[0]。
+
+message_77:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 你不应该随身带着这种东西啊，\n[8]……\!很危险的！\kel
+
+message_78:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 唉……\!奥布里和上次你见到她的时候相比真的变了好多。\!<br>她和她的新朋友们整天只会惹麻烦。\kel
+
+#KEL looks at BASIL.
+
+message_79:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 可怜的贝瑟尔……\kel
+
+message_80:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 我们去看看他的情况吧。\kel
+
+# =========================================================================================
+# Cutscene: Faraway Basil
+# =========================================================================================
+
+#Trigger: Talk to BASIL.
+
+message_100:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 嘿，贝瑟尔。你还好吗？\kel
+
+message_101:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 啊……\!我还好……\!谢谢你……\!凯……\bas
+
+message_102:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 我不知道你有没有注意到哦，不过 \n[8] 也来了！\!<br>打声招呼吧，\n[8]！\kel
+
+message_103:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 噢……\!你好啊，\n[8]。\!真是好久没见了，对吧？\!<br>哈哈……\bas
+
+message_104:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{\sinv[1]呀——呼——！\!开心大团圆啦！\kel\}
+
+message_105:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 所以，你想不想今天和我们一起玩啊？\kel
+
+message_106:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 噢、噢……\!对不起……\!我也想陪你们，可是……\!<br>我……\!我也许该回家了。\bas
+
+message_107:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 诶？真的吗？你确定吗？\kel
+
+message_108:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: 我、呃……\!我奶奶最近身体不是太好。\bas
+
+message_109:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 啊，抱歉抱歉。\kel
+
+message_110:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 至少让我们送你回家吧。\!<br>毕竟我们很久没有一起出来过了！\kel
+
+message_111:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 噢、噢……\!好、好的……\!谢谢你们。\bas
+
+message_112:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 那个就是贝瑟尔家啦！\!绿色屋顶的！\kel
+
+message_123:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 呃……\!你们不是要送我回家吗？\bas
+

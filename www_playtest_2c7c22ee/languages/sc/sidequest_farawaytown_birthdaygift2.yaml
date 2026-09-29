@@ -1,0 +1,241 @@
+# =========================================================================================
+# Sidequest: Birthday Gift 2
+# =========================================================================================
+
+#Talking to Jesse
+message_0:
+  text: 你能听见耳机小孩的耳机里传来震耳欲聋的音乐声。
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel戳戳……
+
+message_2:
+  text: \n<耳机小孩>\Com[2]呃啊！\!你们是谁？！\!你们想干什么？
+
+message_3:
+  text: \n<耳机小孩>……
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel噢……\!嘿！\!杰西，你是杰西吧？\!<br>我们是……\!呃……\!我们是你爸的朋友……
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel他让我们喊你下楼去客厅吃蛋糕！
+
+message_6:
+  text: \n<耳机小孩>老爸跟一伙青少年交朋友？\!真怪……
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel别摆出那样的表情嘛！今天难道不是你的生日吗？\!<br>下楼来庆祝吧？\!<br>你爸还给你准备了一份很酷的礼物哦！
+
+message_8:
+  text: \n<耳机小孩>\quake[1]呃呃呃呃呃……\quake[0]\!<br>\Com[2]我都跟老爸说过不要给我准备东西了！
+
+message_9:
+  text: \n<耳机小孩>\Com[2]你们去让他把东西都退了，从我的房间里滚出去！
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 21     #insert number here
+  text: \kel嘿！我可不太喜欢你这态度……\!<br>\Com[2]你干嘛要跟自己的爸爸过不去呢？
+
+message_11:
+  text: \n<耳机小孩>……
+
+message_12:
+  text: \n<耳机小孩>唉……\!你看到了吗，我放在这里的各种酷炫东西？
+
+message_13:
+  text: \n<耳机小孩>这……\!这些都是妈妈送给我的。
+
+message_14:
+  text: \n<耳机小孩>妈妈不再住这里了，可是她总会送这些东西给我……
+
+message_15:
+  text: \n<耳机小孩>然而老爸……\!老爸太落伍了……\! <br>他给我的东西，永远比不上我已经拥有的东西。\!所以……\!<br>不管他准备什么，都只是浪费钱而已……
+
+message_16:
+  text: \n<耳机小孩>因此哪怕是我的生日……\!<br>\Com[2]他也用不着给我准备任何东西！
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel但是……他心甘情愿帮你做这一切呀！\!<br>你应该下楼去庆祝的。\!<br>这对他真的很重要，比你想象得还要重要！
+
+message_18:
+  text: \n<耳机小孩>但……\!我……
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 23     #insert number here
+  text: \kel\Com[2]去就好啦！
+
+#KEL SHAKES CHAIR
+
+message_20:
+  text: \n<耳机小孩>\Com[2]喂！你们要干什么？！
+
+#JESSE gets off the chair
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 21     #insert number here
+  text: \kel你其实很关心他，所以才摆出这副样子，对吧？！\!<br>他也是关心你才会为你做这么多的呀！
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 22     #insert number here
+  text: \kel就算你要把他晾在一边，那你也至少该向他解释一番吧！
+
+message_23:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel现在就去客厅，跟他聊一聊！\!<br>你不这么做的话，我是不会让你继续坐在这张椅子上的！
+
+message_24:
+  text: \n<耳机小孩>……
+
+message_25:
+  text: \n<耳机小孩>哼……\!你这人真是死缠烂打……
+
+message_26:
+  text: \n<耳机小孩>……\!不过……\!我想，我会去看看老爸的……
+
+message_60:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her天啊，凯……\!你真是成熟了好多哦……
+
+message_61:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel你这么觉得吗？
+
+message_62:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her是的……\!我能看出来，你真的长大了。\!这大概说明你不再是个小孩了吧。
+
+message_63:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel哇……为什么不再是了呢？\!大人不好玩……\!当小孩要好多了！
+
+message_64:
+  faceset: MainCharacters_Faraway
+  faceindex: 41
+  text: \her……\|别在意……\!当我没说吧……
+
+#JESSE leaves the room
+
+#=======================
+#Cutscene: Jesse's Birthday Gift:
+#=======================
+
+
+message_28:
+  text: \n<抬头纹老爷爷>\{\{\Com[2]\SINV[1]儿子，生日快乐！！！
+
+message_29:
+  text: \n<抬头纹老爷爷>我知道我们不是很宽裕，但……\!<br>我去买了个东西，我觉得你会喜欢……
+
+message_30:
+  text: \n<耳机小孩>老爸……\!你犯不着……
+
+message_31:
+  text: \n<抬头纹老爷爷>看啊！\!<br>是个新游戏，叫做\c[4]《超级无敌树苗鼹鼠吞噬者——鼹鼠的复仇 3》\c[0]！
+
+message_32:
+  text: \n<抬头纹老爷爷>我不是很懂现在的各种新玩意，但我觉得你可能会喜欢这个！
+
+message_33:
+  text: \n<耳机小孩>老爸……\!我……\!我没有能玩它的游戏主机……
+
+message_34:
+  text: \n<抬头纹老爷爷>游戏……\!主机？\!<br>啊……\!对不起，我不明白……
+
+message_35:
+  text: \n<耳机小孩>老爸……\!我……
+
+message_36:
+  text: \n<抬头纹老爷爷>儿子！\!我知道的，你妈不在，一切都变得很艰难……\!<br>但我想让你知道，我也能为你撑腰的！
+
+message_37:
+  text: \n<耳机小孩>\com[2]老爸！别老担心我了！\!<br>我没事的！\!多担心一下你自己就好了！
+
+message_38:
+  text: \n<抬头纹老爷爷>噢，杰西……你不能要求我那样做。\!<br>再怎么说，你都是我儿子啊！\!我不可能不担心你的！
+
+message_39:
+  text: \n<抬头纹老爷爷>就算我没法像你妈那样，送你那么好的东西……\!<br>但我总得努力尝试一下，对吧？
+
+message_40:
+  text: \n<抬头纹老爷爷>每次我看着你，都会想到你成长的速度是如此之快……
+
+message_41:
+  text: \n<抬头纹老爷爷>等你再长大一点……\!你可能就再也不需要我了……\!所以，暂时先让我成为你人生的一部分，好吗？
+
+message_42:
+  text: \n<抬头纹老爷爷>然后……\!我知道今天是你的生日……\!但我也知道，现在你更喜欢自己一个人待着……\!所以，要不然你拿\c[3]一块蛋糕\c[0]，然后回房间去吃？
+
+message_43:
+  text: \n<抬头纹老爷爷>是草莓的……\!是你最喜欢的……
+
+message_44:
+  text: \n<耳机小孩>……
+
+message_45:
+  text: \n<耳机小孩>没……\!没关系的，老爸……\!我在这里吃也可以。
+
+message_46:
+  text: \n<抬头纹老爷爷>噢！你确定吗？\!<br>你一般都会把吃的拿回房间……
+
+message_47:
+  text: \n<耳机小孩>……
+
+message_48:
+  text: \n<耳机小孩>\}呜呜……\!呜呜……\!老爸……\!我……\!我很抱歉……
+
+message_49:
+  text: \n<抬头纹老爷爷>\Com[2]怎、怎么了儿子？！\!\Com[2]你、你还好吗？\!<br>我做错什么了吗？！
+
+message_50:
+  text: \n<耳机小孩>\}没、没有……\!我没事……\!<br>老爸，谢谢你的礼物……\!我……\!呜……\!我真的很喜欢……
+
+#Talk to Jesse/Jesse's DAD
+
+message_51:
+  text: \n<抬头纹老爷爷>谢谢你们说服我儿子下楼。\!你们都是真朋友啊！
+
+message_52:
+  text: \n<抬头纹老爷爷>请和我们一起享用蛋糕吧！\!蛋糕是我从折价商品区买来的，因为它明天就要过期了……\!但还是挺好吃的！
+
+message_53:
+  text: \n<耳机小孩>\}呜呜……\!呜呜……\!老爸……
+
+
+#intro text
+
+
+message_55:
+  text: \n<抬头纹老爷爷>今天是我儿子的十岁生日！\!……\!但他不愿意离开自己的房间，所以就让我们来庆祝吧！
+
+message_56:
+  text: \n<抬头纹老爷爷>唉……\!我还给他买了个蛋糕……
+
+message_57:
+  text: 你获得了\c[3]一块蛋糕\c[0]！
+
+message_58:
+  text: 令人伤心的\c[3]一块蛋糕\c[0]。
+
+message_59:
+  text: 苦甜参半的\c[3]一块蛋糕\c[0]。
+

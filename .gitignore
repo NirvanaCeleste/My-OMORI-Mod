@@ -1,0 +1,18 @@
+# 旧版本快照分支的 .gitignore（与 main 同策略）
+www_playtest_2c7c22ee/audio/
+www_playtest_2c7c22ee/fonts/
+www_playtest_2c7c22ee/movies/
+www_playtest_2c7c22ee/render/
+www_playtest_2c7c22ee/save/
+www_playtest_2c7c22ee/scaled/
+www_playtest_2c7c22ee/icon/
+www_playtest_2c7c22ee/js/libs/
+www_playtest_2c7c22ee/img/*
+!www_playtest_2c7c22ee/img/pictures/
+www_playtest_2c7c22ee/img/pictures/*
+!www_playtest_2c7c22ee/img/pictures/Unwritten/
+*.bak
+*.bak_switch
+*.bak_2026*
+Thumbs.db
+desktop.ini

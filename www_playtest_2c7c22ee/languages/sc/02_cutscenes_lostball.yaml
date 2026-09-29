@@ -1,0 +1,244 @@
+# =========================================================================================
+# Cutscene: LOST BALL
+# =========================================================================================
+
+#TRIGGER: OMORI talks to VAN
+#BERLY is pacing back and forth in frustration.
+
+message_0:
+  text: 嘟囔、嘟囔……\!嘟囔、嘟囔、嘟囔……\ber
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 嘿，阿万，波利她还好吗？\!<br>她似乎有点……\!心烦意乱。\her
+
+message_2:
+  text: 噢……\!这个嘛……\!是这样的……\n<阿万>
+
+#BERLY walks up to party
+
+message_3:
+  text: 唉……\!我来告诉你们好了。\ber
+
+#BERLY turns to the pole.
+
+message_4:
+  text: \{\Com[2]看看这根杆子吧！！\}\!<br>\Com[2]你们敢相信吗？！\ber
+
+#Camera centers on POLE
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 是要我们看什么呢？\kel
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 对啊，我什么也没看到。\aub
+
+#Camera centers on scene
+#BERLY turns to the party
+
+message_7:
+  text: 没看到就对了！\!绳球不见了。\!<br>阿万的大臂挥得太使劲，球直接扯断了绳，冲上云霄了……\ber
+
+#BERLY looks in the distance
+
+message_8:
+  text: 然后再也没人见过那颗球。\ber
+
+#BERLY turns to VAN.
+
+message_9:
+  text: 阿万，我跟你说过不要用手臂。\!<br>你得用你的额头……\!看好了！像这样！\ber
+
+#BERLY headbutts VAN
+
+message_10:
+  text: 不好意思……波利……\!<br>一直用额头的话，我会头疼的。\n<阿万>
+
+message_11:
+  text: 都是因为你的脑壳不够硬啊！不像我！\ber
+
+#VAN remembers something.
+
+message_12:
+  text: 噢！我突然想起来了！\!<br>我肯定是看到球飞往那个方向了！\n<阿万>
+
+#Everyone turns their head to Vast Forest Entrance.
+#Camera pans to Vast Forest Entrance.
+
+message_13:
+  text: 你是说，飞到\c[11]辽阔森林\c[0]里了？\!啧……\!我们这辈子都别想找到它了。\!<br>下辈子都不一定找得到了！\ber
+
+#HERO turns to BERLY.
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 嘿，别紧张，波利。我们会帮你找到球的！\her
+
+message_15:
+  text: 哼。\!你们确定真的要这么做么？\!<br>\c[11]辽阔森林\c[0]可是个相当危险的地方啊，你们知道的吧？\ber
+
+message_16:
+  text: 那次啊，我遇到个丑兮兮的植物家伙，和它打得天昏地暗。<br>那家伙的眼睛空洞无神，嘴巴还呆呆地张着。\ber
+
+message_17:
+  text: 当然，我轻易就智胜了它，毕竟我可是又帅又聪明。\!<br>没错，论逃跑速度，整个宇宙没怪物能追得上我！\ber
+
+message_18:
+  text: \Com[2]\SINV[2]\{哇哈哈\{哈哈哈\{哈哈哈！！\ber\}\}\LECLEAR
+
+#VAN turns to OMORI
+
+message_19:
+  text: OMORI 啊，你和你的朋友们能不能跟着波利，好好看着她呢？\!<br>本来应该是我陪她去的，但是……\n<阿万>
+
+message_20:
+  text: \Com[2]\SINV[1]阿万万\{万万万！！\}\!<br>\Com[2]眉毛又从刘海身上踩过去了！\SINV[0]\hap
+
+#VAN looks toward the noise and is surprised.
+
+message_21:
+  text: 你看，我得走了……\!<br>我这就来，开心！\n<阿万>
+
+#VAN turns towards party.
+
+message_22:
+  text: 注意安全喔，各位。那就稍后再见！\n<阿万>
+
+#VAN walks off screen
+#HERO turns to BERLY
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 走吧，波利。我们去找你\c[4]遗失的球\c[0]。\!<br>只要我们待在一起，就没什么好担心的！\her
+
+message_24:
+  text: 呵，好啊。\!只要你们别挡着我，影响我发动我超绝一流的\c[1]头槌\c[0]就行！\ber
+
+message_25:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 呃……\!我们赶快搞定这事吧。\aub
+
+message_26:
+  text: 波利加入了你的小队。
+
+# =========================================================================================
+
+message_100:
+  text: 你们准备好出发寻找我\c[4]遗失的球\c[0]了吗？！\!<br>\}并不是说我真的需要你们帮忙什么的……\ber
+
+message_38:
+  text: 确实是时候了！\!我们出发吧。\!我都闲到发慌了！\ber
+
+message_101:
+  text: \com[2]什么？为什么啊？！\!我都无聊到要睡着了！\ber
+
+message_102:
+  text: 一根孤单的绳球杆。
+
+# =========================================================================================
+
+message_39:
+  text: 我闻……\!我闻……\ber
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 22
+  text: 波利啊，波利……我今天是洗了澡才出门的。\kel
+
+message_41:
+  text: 我闻到了……\!……\!……\!我\c[4]遗失的球\c[0]的味道！<br>\!应该没错。\ber
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: “应该”？\kel
+
+message_43:
+  text: 我的预感告诉我，它一定就在这附近！\!<br>都知道该怎么做吧！我们得把这个地方翻个底朝天！\ber
+
+# =========================================================================================
+# Cutscene: FOUND BALL
+# =========================================================================================
+
+message_27:
+  text: \{\com[2]太赞了！那就是我\c[4]遗失的球\c[0]！！\ber
+
+message_28:
+  text: \{\sinv[1]我拿！\ber
+
+message_29:
+  text: 终于找到了！\!咱们把这个坏小子带回游乐场吧！\!<br>我已经迫不及待想玩上几局绳球了！\ber
+
+message_30:
+  text: 喂，去游乐场不是这个方向！\!你走错路啦！\ber
+
+message_31:
+  text: 你找到了\c[4]遗失的球\c[0]。
+
+message_32:
+  text: 好吧，和你们找球还挺有意思的……\!才怪咧！\!<br>我要去玩绳球了！\ber
+
+message_33:
+  text: 再见再见，再也不见！好啦，我该溜了！\ber
+
+message_34:
+  text: 波利离开了你的小队。
+
+message_35:
+  text: 不过说真的啊，你们走之前先来找我一下吧。\!<br>我给你们准备了一些特别的东西。\ber
+
+message_36:
+  text: 嘿，我\c[4]遗失的球\c[0]可不是落在这个方向！\!<br>你们是赶着要去别的地方之类的吗？\ber
+
+message_37:
+  text: 有事要去别的地方就早说啊！\!<br>我会在游乐场等你们回来的。\ber
+
+# =========================================================================================
+# Cutscene: OMORI's CUT TAG SKILL
+# =========================================================================================
+
+#Aubrey walks up to a root.
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: 有一个小枝条，不过看起来可以砍掉。\!<br>这就交给你啦，OMORI！\aub
+
+# =========================================================================================
+# Cutscene: MARI FINDS THE BALL
+# =========================================================================================
+
+#TRIGGER: Enter Mari's Picnic
+
+#MARI walks one step towards OMORI.
+
+message_78:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: 噢，又见面了，大家伙儿！\!<br>我猜，你们探索\c[11]辽阔森林\c[0]一定很累了吧。\mar
+
+message_79:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 不如来我的野餐点吃点东西吧？\!<br>吃完又能精神饱满地出发啦！\mar
+
+#[OMORI examines Fruit Basket and heals.]
+
+message_80:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 是吧，感觉好多了吧。\!需要别的就跟我说哦。\mar
+
+message_81:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 噢，还有，迷路或者不知道该做什么才好的时候，<br>就来和我聊聊吧。\!我可以帮助你们重回正轨哦！\mar
+

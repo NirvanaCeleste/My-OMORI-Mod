@@ -1,0 +1,115 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============FROZEN FOREST====================================
+
+
+                        #====NIGHT 1-2 and Night 2====
+
+#FISHING BEAR
+#Location: Frozen Lake
+message_0:
+  text: \n<渔夫熊熊>我在等下一波大丰收！
+
+#SNOW CONE JASH
+#FROZEN Lake
+#DREAMWORLD Shop yaml
+
+                        #====NIGHT 3 and 4====
+#FISHING BEAR
+#Location: Frozen Lake
+#Same as NIGHT 1-2.
+
+#SNOW CONE JASH
+#Location: Frozen Lake
+#Same as NIGHT 1-2.
+
+#SNOWGLOBE 1
+#Location: Frozen Forest
+message_1:
+  text: 你往雪花球里看。\!你看到有一辆车陷进了积雪里。\!车子后窗玻璃上起了一层雾，有几个孩子在上面画画。
+
+#SNOWGLOBE 2
+#Location: Frozen Forest
+message_2:
+  text: 你往雪花球里看。\!你看到白雪覆盖的山顶上有一座小房子。\!屋子里看起来很暖和的样子。
+
+#SNOWGLOBE 3
+#Location: Frozen Forest
+message_3:
+  text: 你往雪花球里看。\!你看到有几个小孩从陡峭的小山坡上滑了下来。\!他们看起来玩得很开心。
+
+#MOUNTAIN
+message_10:
+  text: 你发现自己站在了山脚下。
+
+message_11:
+  text: 你发现自己回到了起点。
+
+#====
+
+#FISHING
+
+message_20:
+  text: 你钓到了一只树苗鼹鼠！<br>\!你把它扔回了湖里。
+
+message_21:
+  text: 你钓到了一只旧靴子……<br>\!你把它扔回了湖里。
+
+message_23:
+  text: 你钓到了一只螃蟹！<br>\!你把它扔回了湖里。
+
+message_24:
+  text: 你钓到了一只章鱼！<br>\!你把它扔回了湖里。
+
+message_25:
+  text: 你钓到了一桶核废料……<br>\!你把它扔回了湖里。
+
+message_26:
+  text: 你钓到了一台自动贩卖机！
+
+message_27:
+  text: 你钓到了一个字母\"O\"。<br>\!你把它扔回了湖里。
+
+message_29:
+  text: 你钓到了一个橘子。<br>\!你把它扔回了湖里。
+
+message_30:
+  text: 你钓到了一个装着信的漂流瓶！
+
+message_31:
+  text: \n<瓶中信>\“好一朵美丽的茉莉花～<br>好一朵美丽的____花～\”
+
+#Show Choices OMORI, AUBREY, KEL, HERO
+
+message_32:
+  text: 你钓到了一条塑料做的鱼……<br>\!你把它扔回了湖里。
+
+message_33:
+  text: 你钓到了一条真正的鱼！<br>\!你把它扔回了湖里。
+
+message_34:
+  text: 你钓到了\c[3]豆腐\c[0]！
+
+message_35:
+  text: 你钓到了\c[3]生命果酱\c[0]！
+
+message_36:
+  text: 这次运气不好……
+
+message_40:
+  text: OMORI
+
+message_41:
+  text: 奥布里
+
+message_42:
+  text: 凯
+
+message_43:
+  text: 英雄
+
+message_44:
+  text: 你把瓶子扔回了湖里。
+

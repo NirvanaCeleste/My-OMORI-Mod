@@ -1,0 +1,1504 @@
+# =========================================================================================
+# ALL MIRROR
+# =========================================================================================
+
+message_0:
+  text: 一面浮空的镜子。\!<br>朋友们在你身后露出了温暖的微笑。
+
+message_1:
+  text: 一面浮空的镜子。
+
+
+# =========================================================================================
+# CATTAIL FIELD ENTRANCE (118)
+# =========================================================================================
+
+#Butt Certificate Flag
+
+message_50:
+  text: \n[2]的\c[4]屁股认证书\c[0]。\!<br>\sinv[1]如此威风……\|如此美丽……
+
+#============================
+
+#White Space - Map 87:
+
+#NEUTRAL ROUTE ONLY
+
+#Day 1 - Lightbulb:
+#[Open Slide]
+message_51:
+  text: 头顶上垂下的黑色灯泡。\!你不想碰它。
+#[Close Slide]
+
+#Day 2 - Lightbulb:
+#[Open Slide]
+message_52:
+  text: 头顶上垂下的黑色灯泡。\!你觉得自己必须保护它。
+#[Close Slide]
+
+#Day 3 - Lightbulb:
+#[Open Slide]
+message_53:
+  text: 头顶上垂下的黑色灯泡。\!你必须保护它。
+#[Close Slide]
+
+#============================
+
+#North Coast - Map 90:
+
+#Sand Castle:
+message_60:
+  text: 一座沙堡。
+
+#Pail and Shovel:
+message_61:
+  text: 桶和铲子。
+
+#============================
+
+#Map 92:
+
+#Jungle Gym:
+#message_70:
+#      text: A jungle gym.
+
+#Puzzle:
+message_71:
+  text: 非常烧脑的拼图。\!每一块都是空白的。
+
+#Puzzle:
+message_72:
+  text: 一堆玩具小车。
+
+#Cards:
+message_73:
+  text: 卡牌都散在地上。
+
+#Egg:
+message_74:
+  text: 鸡蛋。
+
+#Yoyo:
+message_75:
+  text: 溜溜球。
+
+#Banana:
+message_76:
+  text: 永恒的香蕉。
+
+message_77:
+  text: 公园长椅。
+
+message_78:
+  text: 积木。
+
+message_79:
+  text: 雨伞。
+
+#============================
+
+#Path to Basil - Map 95:
+
+#Watering Pail
+message_84:
+  text: 洒水壶。
+
+message_85:
+  text: 你想给植物浇水吗？
+
+#Sunflower:
+message_86:
+  text: 向日葵。
+
+#Lily of the Valley:
+message_87:
+  text: 铃兰。
+
+#Roses:
+message_88:
+  text: 玫瑰。
+
+#Gladiolus:
+message_89:
+  text: 剑兰。
+
+#Cactus:
+message_90:
+  text: 仙人掌。\!坚韧不拔的植物。
+
+#White Tulip:
+message_91:
+  text: 白色郁金香。
+
+message_92:
+  text: 一朵花。
+
+message_93:
+  text: 一朵花？
+
+#============================
+
+#Old Shoe Entrance - Map 97:
+
+#Flowers:
+message_100:
+  text: 许多盆栽和鲜花。\!<br>贝瑟尔很喜欢照顾它们。
+
+#Bone:
+message_101:
+  text: 大骨头。
+
+message_102:
+  text: 小骨头。
+
+message_103:
+  text: 饲料。
+
+message_104:
+  text: 小窝。
+
+#============================
+
+#Old Shoe Interior - Map 98:
+
+#Bed:
+message_110:
+  text: 看起来很舒服的床。
+
+#Fireplace:
+message_111:
+  text: 壁炉。\!炉火暖暖的。
+
+#Photo:
+message_112:
+  text: 陌生人的照片。
+
+message_113:
+  text: 一堆书。\!大部分是关于植物栽培的。
+
+#============================
+
+#Train Station - Map 105:
+
+#Streetlamp:
+message_115:
+  text: 路灯。
+
+#Lemonade Cups:
+message_116:
+  text: 几杯柠檬水。
+
+#============================
+
+#Train Station - Map 106:
+
+#Construction Stuff:
+message_120:
+  text: 建筑材料。
+
+#============================
+
+#Train Station - Map 107:
+
+message_125:
+  text: 来自不同地区的奇特文物。
+
+message_126:
+  text: 小糖果。\!非卖品。
+
+message_127:
+  text: 恐龙提示……<br>“这是能发掘出的宝藏的优秀实例。\!<br>用\c[4]勺子\c[0]挖掘，揭开无限的可能性吧！”
+
+message_128:
+  text: 恐龙展品……<br>“这些是我们祖先的遗骸。”
+
+message_129:
+  text: 恐龙小知识……<br>“从这里开始排队！”
+
+message_130:
+  text: 恐龙声明……<br>“文物仅供展示，恐龙挖掘区中可发掘物品请以实物为准！”
+
+message_131:
+  text: 能发掘出的宝藏的实例。
+
+#============================
+
+#Rain Town - Map 111:
+
+message_135:
+  text: 一些花盆。\!有些是空的，有些不是。
+
+message_136:
+  text: 植物幼儿园，里面都是蔬菜宝宝！
+
+#============================
+
+#Map 112:
+
+message_140:
+  text: 火堆。
+
+message_141:
+  text: 提灯。
+
+message_142:
+  text: 大面包。
+
+message_143:
+  text: 大甜甜圈。
+
+message_144:
+  text: 书架。\!<br>其中一本书中还插着张照片……
+#[Show SW Postcard Slide]
+message_145:
+  text: ……\!你把照片重新夹回了书里。
+
+message_146:
+  text: 橙子床。
+
+message_147:
+  text: 橙子桌。
+
+message_148:
+  text: 橙色的灯。
+
+message_149:
+  text: 一个橙子。
+
+message_150:
+  text: 几个橙子。
+
+message_151:
+  text: 普通的盆栽植物。\!没什么特别的。
+
+message_152:
+  text: 一台小电视。
+
+message_153:
+  text: 照片上是像橙子一样的生物。
+
+message_154:
+  text: 像橙子一样的床。
+
+message_155:
+  text: 一张床。\!有股陈面包的味道。
+
+message_156:
+  text: 一杯橙色的果汁。
+
+message_157:
+  text: 一张出乎意料地正常的床。
+
+message_158:
+  text: 一张床。\!有股农场的味道。
+
+message_159:
+  text: 看着像天书。
+
+message_177:
+  text: 介绍热门旅游地的小册子。\!其中一篇广告介绍了名为\c[11]最后度假村\c[0]的地方。
+
+message_178:
+  text: “\c[11]最后度假村\c[0]将在风景优美\c[11]深井\c[0]盛大开幕！欢迎前来体验！\!这处豪华度假胜地距离城市仅有几英里，快来享受一番。”
+
+message_188:
+  text: “在我们的私人度假胜地享受世界上最好的设施，让您真正焕然一新！”
+
+message_179:
+  text: 正常大小的水果。
+
+#============================
+
+#Map 114:
+
+message_160:
+  text: 面包石。
+
+message_161:
+  text: 大面包石。
+
+#============================
+
+#Map 115:
+
+message_165:
+  text: 填充玩偶。
+
+message_166:
+  text: 一张大床。
+
+message_167:
+  text: 一张小床。
+
+message_168:
+  text: 拼图。
+
+#============================
+
+#Map 119:
+
+message_175:
+  text: 破破烂烂的旧车。
+
+message_176:
+  text: 旧扶手椅。
+
+#============================
+
+#Map 120:
+
+message_180:
+  text: 墙上有某种奇特文明残存的痕迹。
+
+#============================
+
+#Map 123:
+
+message_181:
+  text: 一台旧电视。\!好像已经坏掉了。
+
+message_182:
+  text: 旧纸箱。
+
+message_183:
+  text: 一些旧纸箱。
+
+message_184:
+  text: 旧衣柜。
+
+message_185:
+  text: 陈旧的落地钟。\!<br>细看之下，它似乎已经坏掉了。
+
+message_186:
+  text: 旧轮胎。
+
+message_187:
+  text: 一些旧轮胎。
+
+#============================
+
+#Map 124:
+
+message_194:
+  text: 水槽。
+
+message_195:
+  text: 一个公交站点。\!<br>似乎已经不再使用了。
+
+message_196:
+  text: 冥王特快的站点。\!你想在这里等冥王星吗？
+
+message_197:
+  text: 一台旧电视。\!你听见里面传来了在电脑上打字的声音。
+
+message_198:
+  text: 这座雕像看起来很像某个令人讨厌的家伙。
+
+
+#Changes to this after entering SW castle
+
+message_199:
+  text: 这幅画上有个令人讨厌的家伙。
+
+message_200:
+  text: 手提音响正放着一首非常难听的歌。
+
+message_201:
+  text: 书架上装满了与某个讨厌鬼有关的书。
+
+message_202:
+  text: 桌子上放满了某个讨厌鬼的周边产品。
+
+message_203:
+  text: 显示器上有一堆奇怪的符号。
+
+message_204:
+  text: 空杯子。
+
+message_205:
+  text: 幸福的一家。
+
+message_206:
+  text: 书架。
+
+message_207:
+  text: 超级宽的床……非常适合三口之家。
+
+message_208:
+  text: 书架上放满了 DVD。\!这家人不管做什么都爱录像。
+
+#============================
+
+#Map 125:
+
+message_210:
+  text: “马身比例奖——第二名”
+
+message_211:
+  text: “最小人马奖——第一名”
+
+message_212:
+  text: “袖珍人马奖——第一名”
+
+message_213:
+  text: “迷你人马奖——第一名”
+
+message_214:
+  text: “马身占比奖——第一名”
+
+message_450:
+  text: “小型人马奖——第一名”
+
+message_451:
+  text: “矮小人马奖——第一名”
+
+message_452:
+  text: “玲珑人马奖——第一名”
+
+message_453:
+  text: “浓缩人马奖——第一名”
+
+message_454:
+  text: “Q 版人马奖——第一名”
+
+message_455:
+  text: “小巧人马奖——第一名”
+
+message_456:
+  text: “尛尛人马奖——第一名”
+
+message_457:
+  text: “指尖人马奖——第一名”
+
+message_458:
+  text: “人身比例奖——安慰奖”
+
+message_459:
+  text: “不大人马奖——第一名”
+
+
+#============================
+
+#Map 126:
+
+message_220:
+  text: 梳妆台。
+
+message_221:
+  text: 望远镜。
+
+message_222:
+  text: 手提音响。\!里面没有磁带。
+
+message_223:
+  text: 一盏台灯。
+
+message_224:
+  text: 不错的景色。
+
+message_225:
+  text: 房子里到处都堆放着纸箱。
+
+message_226:
+  text: 书架上装满了整个宇宙的知识！
+
+message_227:
+  text: 愤怒和悲伤的印记……
+
+#============================
+
+#Map 128:
+
+message_230:
+  text: 集装箱。
+
+#============================
+
+#Map 130:
+
+message_231:
+  text: 一个酷酷的篮球框。
+
+message_232:
+  text: 一杯酷酷的汽水。
+
+message_233:
+  text: 几瓶酷酷的运动饮料。
+
+message_234:
+  text: 一个酷酷的健身包。
+
+
+#============================
+
+#Map 131:
+
+message_235:
+  text: \c[3]雪糕筒\c[0]售货机。\!<br>看起来可以在这里使用\c[4]雪糕筒兑换券\c[0]。
+
+message_236:
+  text: “抱歉，糖浆不足。”
+
+message_237:
+  text: \c[3]雪糕筒\c[0]售货机。\!<br>你想要使用\c[4]雪糕筒兑换券\c[0]吗？
+
+message_238:
+  text: \c[3]雪糕筒\c[0]售货机制作了一支\c[3]雪糕筒\c[0]。
+
+
+#============================
+
+#Map 132:
+
+message_240:
+  text: 冰箱。\!有必要吗？
+
+message_241:
+  text: 地板上铺着冷冰冰的床。
+
+message_242:
+  text: 冷冰冰的汤。\!有必要吗？
+
+message_243:
+  text: 几根鱼竿。\!看起来经常使用。
+
+message_244:
+  text: 放满冰块的冷藏箱。\!有必要吗？
+
+message_245:
+  text: 冰冷的提灯。
+
+message_246:
+  text: 冰层上凿了个洞，方便钓鱼！
+
+
+#============================
+
+#Map 149:
+
+message_250:
+  text: 提醒你回收利用的海报。
+
+#============================
+
+message_251:
+  text: 发光的植物。\!摸起来冰冷的。
+
+message_252:
+  text: 一本无聊的书。
+
+#Map 182:
+
+message_253:
+  text: 太空男孩船长的画像。\!<br>上面撒满了\c[3]果汁\c[0]。
+
+#============================
+
+#Map 184:
+
+message_254:
+  text: 奇怪的装置。
+
+message_255:
+  text: 衣柜里装满了奇怪的装置。
+
+message_256:
+  text: 地上到处都是未拆封的礼物。
+
+message_257:
+  text: 巨大的甜心雕像。
+#[SW statue face changes to evil one]
+#HEY, EYES UP HERE!!!! ← This message is in XX_MELON
+#[SW statue face changes back to default]
+
+message_258:
+  text: 精心设计的插花。\!<br>效果稍微有点浮夸。
+
+message_259:
+  text: 精致的落地灯。
+
+message_260:
+  text: 粉色的陶瓷茶具。
+
+message_261:
+  text: 一颗完美的草莓。
+
+message_262:
+  text: 鸟舍。
+
+message_263:
+  text: 甜心的雕像。\!你仿佛仍然能听到她的笑声。
+      #[Play Oohoho SFX softly]
+
+message_264:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心吞噬卷饼”。
+
+message_265:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜甜时光”。
+
+message_266:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心的诞生”。
+
+message_267:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心的呐喊”。
+
+message_268:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“蒙娜甜心”。
+
+message_269:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“创造甜心”。
+
+message_270:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心横渡特拉华河”。
+
+message_271:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“戴珍珠耳环的甜心”。
+
+message_272:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心的午后”。
+
+message_273:
+  text: 一篇长文章，介绍了此处展示的某件艺术品。\!<br>这篇介绍的是“甜心夜”。
+
+message_274:
+  text: “甜心沵是我De女王！\!无论沵做什庅，莪都永遠追随你……\!求回信”
+
+message_275:
+  text: “初次伣面，莪就堔堔嬡仩了沵！！\!请永远啝莪在①起！！！！\!好吗？”
+
+message_276:
+  text: 收藏了大量书籍……但没什么有趣的书。
+
+message_277:
+  text: “亲爱De甜心，wo真的好爱沵……\!想和沵造宝宝，①起共度余生。\!<br>那一定非常镁好。\!么么哒。”
+
+message_278:
+  text: “可嗳De甜心小宝贝。\!请来wo傢玩吧。\!<br>等沵喔。”
+
+message_279:
+  text: 甜心的王座。
+
+message_280:
+  text: 大屏幕上正在播放电影。
+
+message_281:
+  text: 这个有一部分是空的。\!你想透过它看看另一边吗？
+
+message_282:
+  text: 甜心最喜欢的茶具。
+
+message_283:
+  text: 海洋球池。
+
+message_284:
+  text: 空瓶子。
+
+message_285:
+  text: \c[3]“果汁”\c[0]。小朋友不能喝哦。
+
+message_286:
+  text: 衣帽架。
+
+message_287:
+  text: 箱子。
+
+message_288:
+  text: 股价在上涨。
+
+message_289:
+  text: 股价在下跌。
+
+message_290:
+  text: 储物柜。
+
+message_291:
+  text: 台球，也叫桌球。
+
+message_292:
+  text: 架子上放满了各种各样的 \c[3]“果汁”\c[0]。
+
+message_293:
+  text: 垃圾桶。
+
+message_294:
+  text: 台球桌。
+
+message_295:
+  text: 一个“O”。
+
+message_296:
+  text: 美味佳肴已经准备好上桌了！
+
+message_297:
+  text: 木桶。
+
+message_298:
+  text: 饲喂区。
+
+message_299:
+  text: 一桶牛奶。
+
+message_300:
+  text: 奇怪的机器。
+
+message_301:
+  text: 某些可疑的设备。
+
+message_302:
+  text: 装满液体的大瓶子。
+
+message_303:
+  text: 粗管子。
+
+message_304:
+  text: 坏掉的试管。
+
+message_305:
+  text: 一个怪异生物。
+
+message_306:
+  text: 一些垃圾。
+
+message_307:
+  text: 一些箱子。
+
+message_308:
+  text: 玛丽娜的雕像。
+
+message_309:
+  text: 美杜莎的雕像。
+
+message_310:
+  text: 莫莉的雕像。
+
+message_311:
+  text: 几个小试管。
+
+message_312:
+  text: 放满烘焙材料的架子。
+
+message_313:
+  text: 面粉袋。
+
+message_314:
+  text: 全家福。
+
+message_315:
+  text: 空罐子。
+
+message_316:
+  text: 简简单单的被褥。\!床品很廉价，布料粗糙，上面还有很多洞。
+
+message_317:
+  text: 简简单单的被褥。\!床品还凑合，但算不上舒服。
+
+message_318:
+  text: 简简单单的被褥。\!床品很柔软，但有点薄。
+
+message_319:
+  text: 简简单单的被褥。\!床品很柔软。\!质量上佳。
+
+message_320:
+  text: 简简单单的被褥。\!床品蓬松而柔软。\!比你平时用的要好多了。
+
+message_321:
+  text: 简简单单的被褥。\!丝绸床品十分柔软，还带有加热功能。\!真是太舒服了。\!你也想有一张这样的床铺。
+
+message_322:
+  text: 简简单单的被褥。\!床品由最优质的面料制成，还带有加热和降温功能。\!这真是世界上最好的床品。
+
+#Cactus:
+
+message_350:
+  text: \n<陌生人>家不在这里。
+
+message_352:
+  text: \n<陌生人>这里不是家。
+
+message_353:
+  text: \n<陌生人>家不在这个地方。
+
+message_354:
+  text: \n<陌生人>这个地方不是家。
+
+message_355:
+  text: \n<陌生人>这里不是家，可是家在哪里？
+
+message_356:
+  text: \n<陌生人>家不在这里，可是这是哪里？
+
+message_357:
+  text: \n<陌生人>家在哪里？
+
+
+#Sign:
+message_365:
+  text: “不要和植物说话，他们会迷惑你。”
+
+#Lighthouse binoculars:
+message_366:
+  text: 一架望远镜。\!你想往外看看吗？
+
+message_367:
+  text: 屏幕对面有什么在盯着你。
+
+message_368:
+  text: 碎掉的陶罐。
+
+message_369:
+  text: 凌乱的床铺。\!已经很多年没有人睡过了。
+
+message_370:
+  text: 旧壁炉。\!里面只有一片黑暗。
+
+message_371:
+  text: 坏掉的台灯。
+
+message_372:
+  text: 脏兮兮的衣柜。\!里面什么都没有。
+
+message_373:
+  text: 衣帽架。
+
+message_374:
+  text: 普通的盆栽植物。\!叶片干枯而脆弱。
+
+message_375:
+  text: 空罐子。
+
+message_376:
+  text: 对着墙的椅子。
+
+message_377:
+  text: 倒下的高脚凳。
+
+message_378:
+  text: 没有一丝光线。
+
+message_379:
+  text: 你找到了\c[4]废电池\c[0]。
+
+message_380:
+  text: 小抽屉。
+
+#Memories
+message_400:
+  text: 一只塑料火烈鸟。\!看起来它很享受下雨天。
+
+message_401:
+  text: 漂亮的白色信箱。
+
+message_402:
+  text: \c[11]遥远镇\c[0]的标志俯瞰着湖泊。
+
+message_403:
+  text: 玛里的野餐篮。\!<br>今天篮子里装满了花生酱果酱三明治。
+
+message_404:
+  text: 奥布里的填充玩偶。\!她去哪儿都带着它。
+
+#SW ROOM
+
+message_420:
+  text: 诗集。\!作者：甜心。
+
+message_421:
+  text: “啊。\|一天。\|这样的一天。\|是美好的一天。”
+
+message_422:
+  text: 你找到了\c[13]等身抱枕\c[0]。
+
+
+#RED liquid
+
+message_423:
+  text: 这可不是果汁。
+
+message_424:
+  text: 这可不是草莓糖浆。
+
+message_425:
+  text: 这可不是\c[3]西瓜汁\c[0]。
+
+#SPROUT MOLE
+
+message_426:
+  text: \sinv[1]嗡……嗡……嗡……\sinv[0]
+
+message_427:
+  text: 脏衣服。
+
+#SIGNS
+
+message_500:
+  text: “这里是高速公路的尽头。”
+
+message_501:
+  text: “皇家浴池”
+
+message_502:
+  text: “专为你准备的地狱”
+
+
+message_503:
+  text: “注意——泳池正在施工”
+
+message_504:
+  text: “注意——泳池闹鬼”
+
+#LAST RESORT
+
+message_505:
+  text: 账单，账单，还是账单……
+
+message_506:
+  text: 你找到了\c[3]鱼肉卷饼\c[0]。
+
+message_507:
+  text: 小麦汁。\!小朋友不能喝哦。
+
+message_508:
+  text: 一根烟。
+
+message_509:
+  text: 用作装饰的昂贵书籍
+
+message_510:
+  text: 一件昂贵又饱受争议的艺术品。
+
+message_511:
+  text: 它已经没命了。
+
+message_512:
+  text: 一张\c[4]持·无·昂\c[0]。\!<br>又称\c[4]持续无力昂扬器\c[0]。
+
+message_513:
+  text: 电梯门打不开。
+
+
+#DEAD SPROUT MOLE
+
+message_520:
+  text: \n<树苗鼹鼠>……
+
+message_521:
+  text: \n<树苗鼹鼠>……\!\}\quake[1]快……\|逃……
+
+#INFOMERCIALS
+
+message_530:
+  text: \n<电视广告>\}集齐一套，欢乐加倍……\|兔兔、蜜蜂、小熊……\|我超爱这只新宠物的！它能陪我去任何地方……\|不要忘记分享……\|挤一挤，再挤一挤……\|只要他们喜欢，我就满足了……
+
+message_531:
+  text: \n<电视广告>\}无比舒适……\|给你温暖……\|我甚至能用两只手……\|即刻拥有……\|富含绵密泡沫……\|真是太棒了……\|现在仅需 3000
+    蚌币，赶快拨打电话订购吧……
+
+message_532:
+  text: \n<电视广告>\}纯天然成分……\|仅需按照说明使用……\|看看使用前后对比……\|我的腹肌感觉超棒……\|别再使用无效产品了……\|我喜欢自己的新生活……
+
+message_533:
+  text: \n<电视广告>\}等一等！还有更好的方法……\|现在终于有安全有效的解决方案了……\|绝对不忽悠……\|还附赠配套包装哦……\|只是这样可不够……\|快拿起电话……
+
+message_534:
+  text: 黏糊糊的电话。
+
+#BALLROOM INSTRUMENTS
+
+message_540:
+  text: 发出了鼓声。
+
+message_541:
+  text: 发出了低音大号的声音。
+
+message_542:
+  text: 发出了小号的声音。
+
+message_543:
+  text: 放音乐的机器。
+
+#===
+
+message_550:
+  text: 你想玩老虎机吗？
+
+
+message_552:
+  text: 五彩缤纷的轮盘。
+
+#---
+
+message_551:
+  text: 无脸娃娃审视着你。
+
+#---
+
+message_553:
+  text: 这台机器正在使用中。
+
+#---
+
+message_554:
+  text: 一架望远镜……<br>\!但镜头被胶带遮住了。
+
+message_555:
+  text: 一面化妆镜……<br>\!但镜中的你看起来格外碍眼。
+
+message_556:
+  text: 一大堆书……<br>\!但书页全都被粘住了。
+
+message_557:
+  text: 纸板箱……<br>\!除了占用空间外没有别的意义。
+
+message_58:
+  text: 一副美丽的星空画……<br>\!但它散发着塑料熔化的难闻气味。
+
+message_59:
+  text: 超大的化妆镜，只为呈现出甜心绝美的容颜。
+
+message_590:
+  text: 甜心独享的休闲区。
+
+# JAWSUM portraits
+
+message_560:
+  text: “鲨赞勋爵”<br>“189X-192X”
+
+message_561:
+  text: “鲨赞爵士”<br>“192X-195X”
+
+message_562:
+  text: “鲨赞教授”<br>“195X-197X”
+
+message_563:
+  text: “鲨赞博士”<br>“197X-198X”
+
+message_564:
+  text: “鲨赞先生”<br>“198X-”
+
+message_565:
+  text: “英雄”<br>“199X-”
+
+message_580:
+  text: 鲨赞先生最喜欢的马克杯。
+
+message_582:
+  text: “鲨赞先生”<br>“198X-199X”
+
+#---
+#LOCKER ROOMS
+
+message_558:
+  text: 橱柜。
+
+message_559:
+  text: 你找到了\c[3]瓶装水\c[0]。
+
+message_566:
+  text: 你找到了\c[3]变质的牛奶\c[0]。
+
+message_567:
+  text: 你找到了\c[3]果汁？\c[0]。
+
+message_568:
+  text: 你找到了\c[5]诗集\c[0]。
+
+message_569:
+  text: 储物柜。
+
+message_670:
+  text: 壁炉。\!炉火是湿的。
+
+#---
+
+message_581:
+  text: 超酷的摩托车。
+
+
+#---
+
+#snowflakes
+
+#+1 EXP
+message_570:
+  text: 你觉得自己更强大了一点。
+
+#+1 CLAM
+message_571:
+  text: 你觉得自己更富有了一点。
+
+#+1 JUICE
+message_572:
+  text: 你觉得自己更快活了一点。
+
+#+1 HEART
+message_573:
+  text: 你觉得自己更健康了一点。
+
+message_666:
+  text: 贝瑟尔的\c[4]相册\c[0]。
+
+message_667:
+  text: 你想上火车吗？
+
+message_668:
+  text: 行李箱。
+
+message_669:
+  text: 火车正在行驶。
+
+
+
+#---
+
+message_680:
+  text: “要剂药剂”\!<br>“今日特选——香橙汁、桃子汽水、牛奶”
+
+message_681:
+  text: “今日菜单……\!现烤面包”\!<br>“明日菜单……\!现烤面包”
+
+message_193:
+  text: 烘焙用品。
+
+message_209:
+  text: 甜甜蛋糕卷。
+
+message_682:
+  text: 粉红色的滑梯。\!闻起来有股泡泡糖的味道。
+
+message_683:
+  text: 黄色的秋千架。\!闻起来有股香蕉味。
+
+#--- arrow cave
+
+message_685:
+  text: \n<哭脸>“你该好好听话的。”
+
+message_686:
+  text: \n<笑脸>“你成功啦！\!真棒！”
+
+message_687:
+  text: \n<哭脸>“抱歉。没忍住。”
+
+#--- treasure Map
+
+message_690:
+  text: 你获得了\c[4]藏宝图\c[0]！
+
+#clams
+message_691:
+  text: 你找到了 1 蚌币！
+
+message_700:
+  text: 一个绳球，位置很奇怪。
+
+#--- treasure Map
+
+
+
+#Orange Oasis
+
+message_800:
+  text: 这串香蕉可真大。
+
+message_801:
+  text: 这个苹果可真大。
+
+message_802:
+  text: 这串葡萄可真大。
+
+#Orange Oasis
+
+message_805:
+  text: 一幢双层楼房的蓝图。
+
+message_806:
+  text: 一幢两百层的摩天大楼的蓝图。
+
+message_807:
+  text: 被盗家具和乱七八糟的小玩意儿。
+
+
+message_808:
+  text: 金色的英雄三明治。
+
+message_809:
+  text: “O”。
+
+message_810:
+  text: 幽灵派对！
+
+message_811:
+  text: 盛满\c[3]柠檬水\c[0]的纸杯。
+
+#SPROUT MOLE COLONY
+
+message_820:
+  text: 古怪的柜子。
+
+message_821:
+  text: 古怪的台灯。
+
+message_823:
+  text: 古怪的落地灯。
+
+message_824:
+  text: 古怪的桌椅。
+
+message_825:
+  text: 超大的沙发椅。
+
+message_826:
+  text: 超大的电视。
+
+message_830:
+  text: 装满了鱼……骨头。
+
+message_831:
+  text: 小渔夫的被褥。\!闻起来有股海草和醋的味道。
+
+message_832:
+  text: 介绍了鱼类、鱼露、鱼油和鱼胶多种用途的书籍。\!还有不少烹饪书。
+
+message_833:
+  text: 小小的海洋植物。
+
+message_834:
+  text: 五颜六色的药水，还有形状各异的烧瓶。
+
+message_835:
+  text: 几页研究报告，但你看不懂这种语言。
+
+message_836:
+  text: 可疑的混合物，最好别碰它。
+
+message_837:
+  text: 用于研究的植物。
+
+message_838:
+  text: 显微镜。
+
+message_839:
+  text: 写满知识的书籍，但你看不懂这种语言。
+
+message_840:
+  text: 花生的床。
+
+message_841:
+  text: 果酱的床。
+
+message_842:
+  text: 帕尔米的床。
+
+message_843:
+  text: 旧画作和小摆设。
+
+message_844:
+  text: 面包主题的冰箱，里面装满了面包。
+
+message_845:
+  text: 帕尔米的书柜。
+
+message_846:
+  text: 果酱的书柜。
+
+message_847:
+  text: 花生的书柜。
+
+message_848:
+  text: 吐司。
+
+message_849:
+  text: 神秘的汤。
+
+#CASINO
+
+message_850:
+  text: 幸运和不幸的人都爱这种游戏。
+
+message_851:
+  text: 一面化妆镜……<br>\!但镜中里的你看起来格外迷人。
+
+message_852:
+  text: “本月最佳员工”\!<br>哇哦……
+
+#Molly
+
+message_855:
+  text: 垃圾。
+
+message_856:
+  text: 核废料。
+
+message_857:
+  text: 工具，用于……研究。
+
+
+#Sculptor
+
+message_860:
+  text: 各种雕刻用具。
+
+
+#Yellow Sub
+
+message_900:
+  text: “享受镇上最美味的\c[3]芝士汉堡\c[0]\!<br>\c[3]薯条\c[0]、\c[3]美味汽水\c[0]、\c[3]生命果酱\c[0]，应有尽有……\!<br>或者干脆……\!搭配一份\c[4]套餐\c[0]吧！”
+
+message_901:
+  text: 广告。
+
+message_902:
+  text: “\c[11]深井\c[0]年度合唱大赛——<br>休憩回旋荣获第一”
+
+message_903:
+  text: 放满鲜花的架子。\!有股春天的气息。
+
+
+#SW Gallery
+
+message_910:
+  text: 从上到下分别是……
+
+message_911:
+  text: “甜心的星期天下午”
+
+message_912:
+  text: “甜心夜”
+
+message_913:
+  text: “蒙娜甜心”
+
+message_914:
+  text: “呐喊甜心”
+
+message_915:
+  text: “创造甜心”
+
+message_916:
+  text: “甜心尼卡”
+
+message_917:
+  text: “甜心的诞生”
+
+message_918:
+  text: “戴心形耳环的甜心”
+
+message_919:
+  text: “甜心横渡特拉华河”
+
+message_920:
+  text: “甜心吞噬卷饼”
+
+message_921:
+  text: “秋千（甜甜时光）"
+
+#======== ORANGE JOE'S Cliff ======
+
+message_922:
+  text: 橙汁池。
+
+#======== Train Baggage ======
+
+message_923:
+  text: 一个装满小骨头的箱子。
+
+message_924:
+  text: 一个装满水晶的箱子。
+
+message_925:
+  text: 一个装满十字架的箱子。
+
+message_926:
+  text: 一个装满蜘蛛网的箱子。
+
+message_927:
+  text: 一个装满浆果的包。
+
+message_928:
+  text: 一个装满尘土的包。
+
+#======== Train Baggage ======
+
+message_930:
+  text: \c[3]甜甜圈\c[0]的床。
+
+#LAST RESORT Concierge
+
+message_931:
+  text: 奥布里的手帐本。\!上面用铅笔和蜡笔整整齐齐地记录着未来几周的紧凑日程，还有不同颜色的标记。
+
+#ORANGES
+
+message_932:
+  text: 写着笔记的橙子。
+
+message_933:
+  text: “我亲爱的兄弟，香澄乔。\!希望你能收到这条消息。\!请回家吧。”
+
+message_934:
+  text: 像橙子一样的果实。
+
+message_935:
+  text: 几杯橙色、橙味的果汁。
+
+#tire SWING
+
+message_936:
+  text: 只是个轮胎秋千而已。
+
+#PANTRY
+message_937:
+  text: 大罐蜂蜜。
+
+message_938:
+  text: 神圣的厨房。
+
+#Quarters
+
+message_939:
+  text: 树苗鼹鼠的床铺。\!闻起来有股脏衣服的味道。
+
+#LAST RESORT OUTSIDE
+
+message_940:
+  text: 精致的休闲度假桌。
+
+#MARINA office
+
+message_941:
+  text: 一次成功实验背后的计划。
+
+message_942:
+  text: 装满了粘稠物质的箱子。
+
+message_943:
+  text: 洒满了粘稠物质的桌子。
+
+message_944:
+  text: 坏掉的电脑。
+
+message_945:
+  text: 一次失败实验背后的计划。
+
+message_946:
+  text: 旧办公室遗留的家具。
+
+
+#poKE
+
+message_950:
+  text: 你想戳一下玻璃吗？
+
+message_951:
+  text: 你想戳一下大吐司吗？
+
+#orange Oasis
+
+message_952:
+  text: 牛啊！
+
+#girls bathroom
+
+message_953:
+  text: \n<粉色镜子>我是墙上的镜子，\|我认定你为……\|<br>这群人中颜值最高的一个！
+

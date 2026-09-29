@@ -1,0 +1,158 @@
+# =========================================================================================
+# Sidequest: Gino's Jukebox
+# =========================================================================================
+
+#Examine the Jukebox
+
+message_1:
+  text: 一台点唱机。\!看起来它可以播放\c[4]CD\c[0]！
+
+#If CD is in inventory
+message_2:
+  text: 一台旧点唱机。\!<br>你想要把自己的\c[4]\v[829]\c[0]捐赠给点唱机吗？
+
+message_3:
+  text: 你将\c[4]\v[829]\c[0]插进了吉诺的点唱机。
+
+message_4:
+  text: 你想用点唱机播一首歌吗？
+
+message_5:
+  text: 你想用点唱机播一首歌吗？
+
+message_6:
+  text: 你想播哪一首歌？
+
+message_7:
+  text: 一台旧点唱机。\!<br>你想要把自己所有的\c[4]CD\c[0]都捐赠给点唱机吗？
+
+# Filenames
+message_20:
+  text: jb_slimegirls
+
+message_21:
+  text: jb_clover
+
+message_22:
+  text: jb_toby
+
+message_23:
+  text: jb_lumena
+
+message_24:
+  text: jb_samm
+
+message_25:
+  text: jb_tofie
+
+message_26:
+  text: jb_banshee
+
+message_27:
+  text: jb_madeleine
+
+message_28:
+  text: jb_shirpower
+
+message_29:
+  text: jb_james
+
+message_30:
+  text: jb_omniboi
+
+message_31:
+  text: jb_voia
+
+message_32:
+  text: jb_secret
+
+# Song names
+message_200:
+  text: 怀旧的 CD
+
+message_201:
+  text: 天外的 CD
+
+message_202:
+  text: 愉快的 CD
+
+message_203:
+  text: 邪恶的 CD
+
+message_204:
+  text: 异世的 CD
+
+message_205:
+  text: 活泼的 CD
+
+message_206:
+  text: 野性的 CD
+
+message_207:
+  text: 空灵的 CD
+
+message_208:
+  text: 惊悚的 CD
+
+message_209:
+  text: 安宁的 CD
+
+message_210:
+  text: 放松的 CD
+
+message_211:
+  text: 动感的 CD
+
+message_212:
+  text: 秘密的 CD
+
+#[yes/no]
+
+#if yes
+#Changes BGM to CD
+
+#if no
+#Exit Jukebox
+
+# Jukebox NPC
+# Chatting about currently playing music/artist
+message_50:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 SLIME GIRLS 创作的 “HANGING WITH THE BOYS”。
+
+message_60:
+  text: \n<拉伊>我听过这首歌！\!这是 CLOVER & SEALIFE 创作的 “WHITE SPACE”。
+
+message_70:
+  text: \n<拉伊>我听过这首歌！\!这是 TOBY FOX 写的原创歌曲。
+
+message_80:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 LUMENA_TAN 创作的 “WORLD'S END VALENTINE”。
+
+message_90:
+  text: \n<拉伊>我听过这首歌！\!这是 SAMM NEILAND 创作的 “STARDUST DIVING”。
+
+message_100:
+  text: \n<拉伊>我听过这首歌！\!这是 TOFIE 创作的 “NOT-SO-EMPTY-HOUSE”。
+
+message_110:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 BANSHEEBEAT 创作的 “UNDERWATER PROM QUEENS”。
+
+message_120:
+  text: \n<拉伊>我听过这首歌！\!这是 MADELEINE GLENN 创作的<br> “SNOW FOREST - A SINGLE FLOWER BLOOMS”。
+
+message_130:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 SHIRPOWER 创作的 “NOT-SO-EMPTY-HOUSE”。
+
+message_140:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 JAMES ROACH 创作的 “PYREFLY FOREST - CAT'S CRADLE”。
+
+message_150:
+  text: \n<拉伊>我听过这首歌！\!这是 OMNIBOI 创作的 “LOST AT A SLEEPOVER”。
+
+message_160:
+  text: \n<拉伊>我听过这首歌！\!<br>这是 VOIA 创作的 “GOOD FOR HEALTH BAD FOR IMAGINATION”。
+
+#secret track
+message_170:
+  text: \n<拉伊>嗯……\!我完全不知道这首歌。
+

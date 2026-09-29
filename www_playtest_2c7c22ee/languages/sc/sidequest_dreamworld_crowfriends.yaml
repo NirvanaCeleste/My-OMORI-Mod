@@ -1,0 +1,116 @@
+# =========================================================================================
+# Crow Friends
+# ========================================================================================
+
+message_1:
+  text: \n<稻草人先生>啊，一个陌生人。\!<br>谢谢你愿意花时间跟我聊天……
+
+message_2:
+  text: \n<稻草人先生>真的非常抱歉，但我确实有一项自己力所不能及之事，可能要烦请你们帮忙了。
+#original line was about being "in a rut", which means something else entirely
+message_3:
+  text: \n<稻草人先生>就在最近，突然之间，有一颗叛逃的星球划破天际，飞行速度快得惊人。\!我最亲爱的三位密友因此受到惊吓，向着不同的方向四散飞去……
+
+message_4:
+  text: \n<稻草人先生>你瞧，我的三位密友都是乌鸦——既谈不上友善，也称不上是受欢迎。
+
+message_5:
+  text: \n<稻草人先生>要拜托彻头彻尾的陌生人去完成如此艰巨的任务，<br>我本是有些不情愿的，但会路过这片田野的行人实在是寥寥无几。
+
+message_6:
+  text: \n<稻草人先生>因此，恕我冒昧了……\!<br>请问你愿意帮我去找找我亲爱的朋友们吗？
+
+message_7:
+  text: \n<稻草人先生>噢，谢谢你，陌生人！\!<br>我的感激之情难以言表。
+
+message_8:
+  text: \n<稻草人先生>那我就静候他们归来吧。\!毕竟，如你所见……\!没了他们，\!我不过是光杆司令罢了。
+
+message_9:
+  text: \n<稻草人先生>我明白了……\!我完全理解你的决定。\!<br>我确实不该如此劳烦毫无交集的路人。
+
+# Talking to Crow WITHOUT Hero as Leader
+
+message_10:
+  text: \n<乌鸦>……
+
+message_11:
+  text: 乌鸦不想跟你说话。\!<br>也许需要换一个人来交涉……\!换一个更加风度翩翩的人？
+
+message_12:
+  text: 乌鸦不想跟你说话。\!<br>也许需要换一个人来交涉……\!换一个更加英俊帅气的人？
+
+message_13:
+  text: 乌鸦不想跟你说话。\!<br>也许需要换一个人来交涉……\!换一个更加善于言表的人？
+
+
+# Talking to Crow 1 with Hero as Leader
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her嘿，小家伙，你好啊。\!<br>你的朋友稻草人先生真的很想念你喔，你知道吗？\!<br>如果你愿意的话，我可以带你去找他呢。
+
+message_15:
+  text: \n<乌鸦>呱，呱！\!<br>（不麻烦你的话，请务必带我去。我也很想念他！）
+# Crows caw, not squawk
+# Talking to Crow 2 with Hero as Leader
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her嘿，小家伙。\!<br>你想不想让我带你去找你的朋友，稻草人先生呀？
+
+message_17:
+  text: \n<乌鸦>呱！！！\!（想！想！想！我的朋友在哪里？带我去他那里！！）
+
+# Talking to Crow 3 with Hero as Leader
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her日安呀，我亲爱的有翼朋友。\!<br>你想不想回到稻草人先生身边呀？\!<br>他已经等不及想要再见到你了。
+message_19:
+  text: \n<乌鸦>呱，呱。\!（啊，当然了。那就再好不过了。）
+
+# Talking to MR. SCARECROW before finding his friends
+
+message_20:
+  text: \n<稻草人先生>我的朋友们……\!他们能飞到哪儿去呢？\!<br>但愿他们一切安好……
+
+# Talking to MR. SCARECROW before finding his friends
+
+message_21:
+  text: \n<稻草人先生>噢，谢谢你，陌生人！\!<br>我的感激之情依然难以言表。
+
+message_22:
+  text: 乌鸦离开了队伍，回到了他的朋友身边。
+
+message_23:
+  text: \n<稻草人先生>我会继续等着剩下的朋友们归来。\!毕竟，如你所见……\!没了他们，\!我不过是光杆司令罢了。
+
+# Talking to MR. SCARECROW after finding his friends
+
+message_24:
+  text: \n<稻草人先生>我的朋友们！他们全都回来了！
+
+message_25:
+  text: \n<稻草人先生>太谢谢你帮忙了，真是感激不尽！\!<br>那么，我也该告辞了。
+
+message_26:
+  text: \n<稻草人先生>再见了，善良的陌生人。\!希望有朝一日我们能再相见。
+
+message_29:
+  text: 你获得了\c[13]五叶草\c[0]。
+
+# Talking to Crows before Quest is Accepted
+
+
+message_27:
+  text: 一只乌鸦独自啄着泥土。<br>\!它似乎没有注意到你。
+
+# Talking to Crows at MR. SCARECROW before Quest is Fully Completed
+
+message_28:
+  text: 乌鸦看上去心满意足。
+

@@ -1,0 +1,146 @@
+# =========================================================================================
+# Sidequest: Tutoring Joy
+# =========================================================================================
+
+#Examine and take language Tutor Flyer:
+
+message_0:
+  text: 墙上贴着一张招聘海报。\!读读看？
+
+#Yes/No
+
+#Yes
+
+message_1:
+  text: “急寻家教一名！\!为我女儿乔伊寻找一名本地的语文家教！\!<br>每天薪酬 $20.00！\!请带上这张传单来我家，进行简单的面试！”
+
+message_2:
+  text: 从墙上把\c[4]蓝色传单\c[0]拿下来吗？
+
+#Yes/No
+
+#Yes
+message_3:
+  text: 传单背后有一张去乔伊家的地图。
+#Show map
+
+#Examine Joy's House Door
+
+message_4:
+  text: \n<粗眉毛>你们好啊！\!有什么能帮你们的吗？
+
+message_100:
+  text: 你把\c[4]蓝色传单\c[0]给了粗眉毛。
+
+message_101:
+  text: \n<粗眉毛>啊，你们一定就是乔伊新来的语文家教了吧！
+
+message_5:
+  text: \n<粗眉毛>嗯……\!面试真是太麻烦了！\! <br>二年级的语文内容你们还是知道的，对吧？
+
+message_7:
+  text: \n<粗眉毛>那快进来吧！\!我女儿乔伊在她房间等你们！
+
+#Talk to Joy
+
+message_8:
+  text: \n<小女孩>你，你们好……我是乔伊。很高兴见到你们！\!<br>你们一定就是我的新家教吧。\!那我们开始吗？
+
+message_9:
+  text: \n<小女孩>这些就是我做不来的习题……
+
+#Language worksheet
+
+message_10:
+  text: \n<小女孩>这道题有点难倒我了……
+
+message_11:
+  text: 我的铅笔放在桌子__。
+
+message_12:
+  text: A) 中
+
+message_13:
+  text: B) 间
+
+message_14:
+  text: C) 上
+
+message_15:
+  text: \n<小女孩>那这一题呢？
+
+message_16:
+  text: “请马上离开。”中的“马上”一词是什么词性？
+
+message_17:
+  text: A) 形容词
+
+message_18:
+  text: B) 副词
+
+message_19:
+  text: C) 介词
+
+message_20:
+  text: \n<小女孩>这题是最难的……
+
+message_21:
+  text: 下列哪一句不是病句？
+
+message_22:
+  text: A) 估计茄子煮熟了肯定很好吃。
+
+message_23:
+  text: B) 它肯定比豆腐最好吃。
+
+message_24:
+  text: C) 我认为茄子是口味更佳的软蔬菜。
+
+#Correct choice:
+
+message_25:
+  text: \n<小女孩>噢，好的！\!我懂了……
+
+#Incorrect choice:
+
+message_26:
+  text: \n<小女孩>等等……\!我觉得 A 才是正确答案？
+
+message_27:
+  text: \n<小女孩>嗯……\!但……\!难道 B 不是正确的吗？
+
+message_28:
+  text: \n<小女孩>嗯……\!等一下……\!难道 C 不是正确的吗？
+
+message_29:
+  text: \n<小女孩>噢，我懂了！\!你一定是想考考我……
+
+message_30:
+  text: \n<小女孩>抱歉，我还是第一次接受家教辅导，所以我不知道怎么做才好！
+
+#After Completing Language Worksheet:
+
+message_31:
+  text: \n<小女孩>谢谢！\!我觉得自己更好地理解了……\!嘿嘿……
+
+message_32:
+  text: \n<粗眉毛>你好！你好！\!乔伊！怎么样啦？\! <br>家教辅导对你有帮助吗？
+
+message_33:
+  text: \n<粗眉毛>啊！\!看来你已经把习题纸都做完了……
+
+message_34:
+  text: \n<粗眉毛>太棒了！\!你应该考虑当全职家教！\!<br>这是你的报酬！
+
+message_35:
+  text: \n<粗眉毛>请明天再来！
+
+message_36:
+  text: \n<粗眉毛>你好啊。\!你是看了招家教的海报才来这里的吗？\!不是？噢……
+
+message_37:
+  text: \n<粗眉毛>乔伊现在应该是在她自己的房间里。\!多谢你帮忙啦！
+
+message_1000:
+  text: 呃……\!语文……
+

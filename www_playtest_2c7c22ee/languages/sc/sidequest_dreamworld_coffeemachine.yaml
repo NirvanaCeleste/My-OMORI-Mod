@@ -1,0 +1,92 @@
+# =========================================================================================
+# Coffee Machine
+# ========================================================================================
+
+message_1:
+  text: \tvg\quake[1]噗——\{\Com[2]哇——\{\Com[2]啊\{啊啊啊！
+
+message_2:
+  text: \tvg天哪！至少先提醒咱一声，行不？\!<br>要知道，咱可不常有访客呐！
+
+message_3:
+  text: \tvg哦，嘿！你们来都来了，那就帮咱一个忙，<br>把这列表上的东西给咱拿过来呗？
+
+message_4:
+  text: \tvg听明白了吗？
+
+message_5:
+  text: \tvg你们要找的东西应该都在\c[11]垃圾场\c[0]里。\!<br>谢啦伙计们！算我欠你们一个人情喔。
+
+message_6:
+  text: \tvg哈？\!你说什么，太快了没看清？
+
+message_7:
+  text: \tvg呃……好吧。\!<br>这个清单给你，这样你们想看多久就能看多久了。
+
+message_8:
+  text: \tvg这次记下来了吗？\!希望咱能很快再见面喔。
+
+# TVGIRL - DEFAULT
+
+message_10:
+  text: 电视妹全神贯注地看着剧，完全没有注意到你。
+
+# TVGIRL - QUEST COMPLETE
+
+message_20:
+  text: \tvg哦真棒，你们把咱列表上的东西都拿来了！\!<br>看来咱应该多干点这种让路人帮忙的事情。
+
+message_21:
+  text: \tvg\sinv[1]嘟……\|嘟嘟嘟……\|嘟！\|嘟……嘟！\sinv[0]
+
+message_22:
+  text: \tvg\sinv[1]嘟……\|嘟嘟嘟……嘟……嘟！\|嘟嘟……\|嘟……\|嘟嘟嘟嘟……\sinv[0]
+
+message_23:
+  text: \tvg然后……\!\{\SINV[1]搞\{定\{啦！！\SINV[0]\}\}
+
+message_24:
+  text: \tvg\sinv[1]啊……这下就完美了！\sinv[0]
+
+message_25:
+  text: \tvg咱的旧咖啡机好久好久以前就坏掉了，<br>但咱一直没空去捡那些丢失的零件。
+
+message_26:
+  text: \tvg既然现在这个新的已经修好了，咱就不用再委屈自己喝那个难喝到死的速溶咖啡了。
+#maybe crap instead of stuff? lol
+message_27:
+  text: \tvg谢谢你们帮忙，这是咱的一点心意。
+
+message_28:
+  text: 你获得了\c[5]炸药\c[0]。\!<br>这确实看上去有点危险……
+
+message_37:
+  text: \tvg好了，不好意思，但咱还有重要的事情要做。
+
+message_29:
+  text: \n<咖啡机>你——你——你正在煮\c[3]咖啡\c[0]！\!<br>广告之后就能享用了哦！
+
+message_30:
+  text: \n<咖啡机>\Com[2]\{\Sinv[1]恭——恭——恭——恭喜！！\!\Sinv[1]\}<br>你的\c[3]咖啡\c[0]已经准备好了！
+
+message_31:
+  text: \n<咖啡机>你——你——你——你现在就想喝\c[3]咖啡\c[0]吗？
+
+message_32:
+  text: 有一个声音从咖啡机里传了出来。
+
+message_33:
+  text: \n<咖啡机>这——这——这是送你的\c[3]咖啡\c[0]，免费哦……
+
+message_34:
+  text: 一台全新的咖啡机。
+
+message_35:
+  text: 一台坏掉的咖啡机。
+
+message_36:
+  text: 你获得了\c[3]咖啡\c[0]。
+
+message_38:
+  text: 你获得了\c[4]奇怪的清单\c[0]。
+

@@ -1,0 +1,217 @@
+# =========================================================================================
+# Cutscene: Space Ex-Boyfriend
+# =========================================================================================
+
+#Trigger: Entering SBF's House with SWEETHEART MIXTAPE.
+
+message_0:
+  text: 真够绝的！你们这群小孩真的做到了！\!<br>虽然有点脏，但那肯定就是我们弄丢的\c[4]特制混音带\c[0]了！\!<br>太感谢了，老铁们。\spg
+
+message_1:
+  text: 有了这个，我们终于能够叫太空男友起床了！\spg
+
+#KEL walks up to you.
+
+message_2:
+  text: 凯伸手从你的口袋中<br>拿出了\c[4]特制混音带\c[0]。
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 其实，说到这个……\!我们可能有个坏消息。\!<br>我们听到有传言说，太空男友和甜心……\!怎么说呢……\!他们已经分手了。\aub
+
+#KEL slowly walks to SPACE BOYFRIEND.
+
+message_4:
+  text: \Com[2]什、什么？是真的吗？\!<br>他们这次真的分手了？\!<br>哦我的天……\!但这意味着……\spg
+
+message_5:
+  text: 给他播放这盒\c[4]特制混音带\c[0]也没有意义了……\!一切的希望……\!都破灭了。\spg
+
+#KEL jumps.
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \Com[2]嘿，太空男友！我们把你的\c[4]特制混音带\c[0]带回来了！\kel
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: ……\kel
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 喂……至少你也感谢下我们吧。\kel
+
+#AUBREY jumps.
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 噢，别这么沮丧嘛，太空海盗老铁！那只是个传言而已……\!<br>就算传言是真的，这也不是世界末日。\aub
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 能从失恋的阴霾中走出来的人多了去了！\! <br>我相信太空男友很快就会振作过来、下床活动的。\!<br>他只是需要一点自我调整的时间。\aub
+
+#KEL slowly walks to cassette player.
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 喔我想到了！<br>我要用他的手提音响播放这盒\c[4]特制混音带\c[0]，然后音量开到超大。\!<br>这一定可以把他吵醒！\kel
+
+#HERO jumps.
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 这样的话，我们还是把那盒\c[4]特制混音带\c[0]扔了最好。\!<br>听那些歌反而会更加刺激到他。\her
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 给我吧，OMORI。我会好好保管的。\her
+
+message_14:
+  text: 英雄将手伸进了你的口袋。
+
+#HERO is confused.
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 嗯？怎么翻不到了？\her
+
+#KEL opens cassette player.
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \{凯！！你在做什么？！\her\}
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \Com[2]\quake[1]\{不不\{不不\{不\{不不！！\SINV[0]\her
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \SINV[1]\{该起床喽，太空男友！！\kel\}\}\SINV[0]
+
+#KEL puts the SWEETHEART MIXTAPE in the cassette player.
+#SWEETHEART MIXTAPE song plays.
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 哎呀……\!这下感觉不妙了呀……\her
+
+message_20:
+  text: \Com[2]\quake[1]这……\| \Com[2]都是……\| \Com[2]什么……\sbf\quake[0]
+
+message_21:
+  text: \Com[2]\quake[1]\{\{地狱般的……\sbf\quake[0]
+
+message_22:
+  text: \Com[2]\quake[1]\{\{\{喧嚣啊？！？！\sbf\quake[0]
+
+#Screen shakes. SPACE PIRATE guy flies O.S. at an alarming speed.
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 可恶，凯！看看你干的好事！\aub
+
+message_24:
+  text: \Com[2]\{\quake[1]哇哈哈哈\{哈哈\{哈哈！！\sbf\sinv[0]
+
+message_25:
+  text: \Com[2]\quake[1]\{为我的觉醒而恐惧吧！！\sbf\quake[0]
+
+message_26:
+  text: ……\!哼……\!<br>慢着。\sbf
+
+#SPACE BOYFRIEND teleports to front of cassette player and changes the song to pre-battle music.
+
+message_27:
+  text: 哼哼哼哼……\|<br>\Com[2]\{\quake[1]哇哈哈哈\{哈哈哈哈！！\sbf\sinv[0]
+
+message_28:
+  text: 这下好多了！\!我刚才说到哪了？\!啊，对！\sbf
+
+message_29:
+  text: \Com[2]愚蠢的小孩子们啊！\!<br>我得好好谢谢你们才行，是你们让我脱离了那可悲的境地。\!<br>我已经受够躺在床上装病了。\sbf
+
+message_30:
+  text: 正如我经常说的那样……\! <br>\{\quake[1]感情是败者的专利！！\sbf\}
+
+message_31:
+  text: 那个叫甜心的女人……\!<br>她会为了离开我而付出代价的！\sbf
+
+message_32:
+  text: 我什么都为她做了！我什么都给她了！\!<br>\{有求必应啊！你听到没？！？！\sbf\}
+
+message_33:
+  text: 而那个不知感恩的小……\!呃啊啊啊啊……\sbf
+
+message_34:
+  text: \quake[1]啊啊啊呜\Com[2]\{呜呜呃\Com[2]\{呃呃啊\Com[2]\{啊啊！\sbf\quake[0]
+
+message_35:
+  text: \quake[1]\{算了吧！！\!这一切我都要忘掉！！\sbf\quake[0]
+
+message_37:
+  text: 我要找到甜心……\sbf
+
+message_38:
+  text: \{然后让她付出代价！！\sbf\quake[0]
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 抱歉，但我们不会让你这么做的，太空男友……\!<br>不对，现在应该称呼你……\aub
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{\{\Com[2]太空前男友！！\aub
+
+message_41:
+  text: 有意思。\!你是想挑衅我吗？\!<br>\{真是初生牛犊不怕虎啊？！\sxbf
+
+message_42:
+  text: \{我是太空海盗的首领！\sxbf
+
+message_43:
+  text: 太阳系所有的行星尽在我的掌控之中，太空穿梭也全在我的一念之间！\sxbf
+
+message_44:
+  text: \Com[2]整个宇宙的力量皆由我支配！\sxbf
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 是啊是啊你就瞎扯吧！\!管你怎么说……我们才不怕你！\kel
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 如果你想出去四处闯祸的话，<br>就得先过我们这一关！\her
+
+message_47:
+  text: ……\sxbf
+
+message_48:
+  text: 哼……\!果然如此吗。\!<br>如果你们坚持要阻止我……\!<br>那我就只能来硬的了。\sxbf
+
+message_49:
+  text: \{\quake[1]我会只身打败你们所有人的！！\quake[0]\sxbf
+
+message_50:
+  text: \{\{\quake[1]面对我，俗世的渣滓！！\quake[0]\sxbf
+

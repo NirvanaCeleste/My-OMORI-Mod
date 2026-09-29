@@ -1,0 +1,3634 @@
+defaults:
+  speed: 4
+  mode: sequential
+  allowExit: false
+order:
+- musicroom
+- plan
+- christmas
+- reaction
+- practice
+- ending
+- confirm
+states:
+- id: s0
+  editable: gA
+  pages:
+    musicroom:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gA
+        variants:
+        - “那把旧琴，修一修还能用吧。”
+        - “别急，等Sunny生日再说吧。”
+      text: 'Mari开始认真练习钢琴。
+
+
+        琴声从二楼传下来，落在走廊上，又落进树屋里。Sunny坐在琴房角落，抱着膝盖，安安静静地听。他不说话，也不走。Mari练多久，他就坐多久。
+
+
+        后来，朋友们发现了Sunny的一个秘密。
+
+
+        他有一把琴。
+
+
+        那是一把迷你小提琴，尺寸小得不像话——琴身比正常的小提琴短了一大截，琴弓也短，像是给小孩子玩的。Kel是在树屋里撞见的：Sunny把它藏在书包里，拉了一小段，又飞快地塞回去。
+
+
+        “嘿——那不是……你有一把小提琴？”Kel说。
+
+
+        Sunny点了点头。
+
+
+        “哇！这也太小了吧！你平时就用这个练琴？”Kel叫起来。
+
+
+        “……Kel，小声点。”Basil说。
+
+
+        “你有点礼貌行不行。”Aubrey说。
+
+
+        Sunny没有说话。他把琴拿出来，又拉了一小段。声音很细，像一只鸟在很远很远的地方叫。
+
+
+        “那首曲子……”Kel眨了眨眼，“是Mari最近一直在练的吧！”
+
+
+        Sunny没有点头，也没有摇头。他把琴飞快地塞回了书包里。
+
+
+        Basil看着他，看了很久。
+
+
+        那天晚上，Basil把大家叫到树屋里。
+
+
+        “Sunny他……其实一直想和Mari一起拉琴。”Basil说。“我见过他偷偷练。”
+
+
+        “那咱们帮他不就完了！”Kel说。
+
+
+        Basil点了点头。他张了张嘴，那句话在嘴边停了一下，才说出口。
+
+
+        **“给Sunny买一把琴吧。”**
+
+        '
+    reaction:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      readonly: true
+      text: 'Sunny即将在新小提琴上拉出第一个音。
+
+
+        琴弓悬在半空。他的心里，涌起一阵焦急的感觉——像站在很高很高的地方，风从耳边吹过。
+
+
+        那种焦急使他不安，但是他并不介意。
+
+
+        因为他们相信着他。
+
+
+        而且，无论发生什么事情……
+
+
+        他不想让他们失望。
+
+
+        因为他们是他的朋友。
+
+
+        琴弓落下去。
+
+
+        门外，有人站了一会儿，没有进去。
+
+        '
+    practice:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      readonly: true
+      text: '那之后，Sunny开始和Mari一起练习。
+
+
+        Mari弹钢琴，Sunny拉小提琴。同一首曲子，一遍，又一遍，像两条小溪慢慢汇成一条河。
+
+
+        “你进步得很快。”Mari说。
+
+
+        Sunny没有回答。他低着头，看自己的手指。
+
+
+        “音乐会之前，”Mari说，“我们一定能合得很好。”
+
+
+        Sunny点了点头。
+
+
+        琴声从房间里传出来，飘过走廊，飘得很远很远。
+
+        '
+    ending:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      readonly: true
+      text: '琴声从二楼传下来，落在走廊上，又落进树屋里。
+
+
+        Sunny坐在琴房角落，抱着膝盖，听。
+
+
+        这一次，是他自己在拉琴。
+
+
+        Mari坐在钢琴前，偶尔停下来，回头看他一眼。
+
+
+        Sunny没有抬头。
+
+
+        光落在琴弦上。'
+    confirm:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      readonly: true
+      confirm: true
+      doneSwitchId: 1001
+      confirmChoices:
+      - 确定
+      - 否
+      text: '故事讲完了。
+
+        要合上书吗？'
+- id: s1
+  parent: s0
+  trigger:
+    sentence: gA
+    action: variant
+    value: 0
+  editable: gB
+  pages:
+    musicroom:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那把旧琴，修一修还能用吧。”
+
+
+        Basil说。他自己也没想到自己会这么说。
+
+
+        树屋里安静了一拍。
+
+
+        “……能修吗？”Kel挠了挠头。“它那么小。”
+
+
+        “去琴行问问就知道了。”Basil说。“先问了再说。”
+
+
+        Aubrey没说话。她看了Basil一眼，又看了一眼窗外的琴房方向。
+
+
+        “那就先去问问。”Hero合上书。“修得好就修，修不好再想别的办法。”
+
+
+        Basil点了点头。
+
+
+        那天晚上他睡得不太好。他一直在想，那把琴到底还能不能修。
+
+        '
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gB
+        variants:
+        - “先卖旧书旧玩具，凑一点是一点。”
+        - “那……先由我一个人送报纸。”
+      text: '第二天，Basil一个人去了琴行。
+
+
+        店员把那把小提琴拿出来，翻来覆去看了很久。
+
+
+        “太小了。”店员说。“这种是玩具琴，没有配件能修。就算修好了，Sunny也拉不了了。”
+
+
+        Basil站在柜台前，没有动。
+
+
+        “……那买一把新的呢？”他问。
+
+
+        店员报了价。Basil安静了很久。
+
+
+        “谢谢。”他说。“我再想想。”
+
+
+        他走出琴行，在门口站了一会儿。
+
+
+        他想起Sunny把琴藏在书包里的样子。
+
+
+        “修不了。”他回到树屋，对大家说。“太小了，没有配件。”
+
+
+        “……那怎么办？”Kel问。
+
+
+        “买。”Basil说。“买一把新的。慢慢攒。”
+
+
+        **“如果我们都付出一点努力，说不定……真的能实现。”**
+
+        '
+- id: s2
+  parent: s0
+  trigger:
+    sentence: gA
+    action: variant
+    value: 1
+  editable: gB
+  pages:
+    musicroom:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“别急，等Sunny生日再说吧。”
+
+
+        Basil说。声音不大。
+
+
+        树屋里安静了一下。
+
+
+        “……生日？”Kel眨了眨眼。“那不是还有半年？”
+
+
+        “嗯。”Basil说。“反正也不急这一天两天。先把礼物的事想好，到时候再告诉他。”
+
+
+        Aubrey看了他一会儿。“……行吧。那就先不说。”
+
+
+        “先不说。”Basil说。
+
+
+        那天晚上他们聊了别的事。谁也没再提琴。
+
+
+        可Basil回家之后，在床边坐了很久。
+
+
+        他翻出自己存零钱的盒子，打开看了看，又合上了。
+
+        '
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gB
+        variants:
+        - “他一个人，悄悄把零钱存进铁盒。”
+        - “那天之后，Basil开始每天路过琴行。”
+      text: '那个夏天，没有人提起琴的事。
+
+
+        树屋照常热闹。西瓜、海边、萤火虫。Kel缠着Hero打篮球，Aubrey在一边看，一边说自己不玩。
+
+
+        Basil每次都笑着说好，笑得比谁都轻。
+
+
+        但他一个人路过琴行的时候，会放慢脚步，在橱窗前站一会儿。
+
+
+        他没有告诉任何人。
+
+
+        **他一个人，悄悄把零钱存进铁盒。**
+
+
+        他把自己存零钱的盒子放在架子上，每天往里放几枚硬币。
+
+        '
+- id: s3
+  parent: s0
+  trigger:
+    sentence: gA
+    action: keep
+  editable: gB
+  pages:
+    musicroom:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Basil说完，没有人立刻接话。
+
+
+        阳光落在地板上，慢慢移动。
+
+
+        “……行啊。”Kel说。“那去看看呗！”
+
+
+        “嗯。”Aubrey说。
+
+
+        Hero点了点头。“明天先去琴行看看，一把琴要多少钱。看了再说。”
+
+
+        “那就这么定了。”Basil说。
+
+
+        那天下午他们聊了很多。钱的事，谁做什么，还有什么。
+
+
+        Basil没有再说话。他靠着门框，看着窗外。Sunny从远处走过，低着头。
+
+
+        他看着Sunny走远。
+
+        '
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gB
+        variants:
+        - “先卖旧书旧玩具，凑一点是一点吧……”
+        - “那……先由我一个人送报纸试试？”
+      text: '第二天，他们一起去了琴行。
+
+
+        橱窗里摆着一排小提琴。最便宜的那把，标价也比他们想象的高。
+
+
+        “贵是贵了点……”Kel说，“不过包在我们身上！”
+
+
+        “你早上送报纸？”Aubrey问。
+
+
+        “对啊！送报纸我可熟了！”Kel说。
+
+
+        “我和贝瑟尔可以先摆摊，卖曲奇和柠檬水。”Aubrey说。“夏天嘛，大家都想喝点凉的。”
+
+
+        “那我和Mari……等秋天再说。”Hero说。“夏天面包店不太缺人。”
+
+
+        Basil没有立刻说话。他低头想了想，才小声开口。
+
+
+        “Sunny他……值得一把好琴。如果我们也都能……尽一点力的话。”
+
+
+        **“如果我们都付出一点努力，说不定……真的能实现。”**'
+- id: s4
+  parent: s0
+  trigger:
+    sentence: gA
+    action: erase
+  editable: gB
+  pages:
+    musicroom:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '树屋里很安静。
+
+
+        Basil张了张嘴。那句话没有说出口。
+
+
+        阳光从窗口落在地板上，灰尘在光里浮着。Kel在翻一本漫画。Aubrey靠着柱子。Hero在窗台边坐着，书摊在膝盖上，没有翻。
+
+
+        没有人说话。
+
+
+        Basil把叶子放在窗台上。他站起来，走到门口，又停下来。
+
+
+        Sunny从远处走过，低着头。
+
+
+        Basil看着他的背影，没有说话。
+
+
+        那句话还压在喉咙里。他没有说出来。
+
+
+        那个夏天就这样过去了。
+
+        '
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gB
+        variants:
+        - “那枚硬币，Basil后来又掏出来看了很久。”
+        - “那个夏天快结束的时候，铁盒里还是空的。”
+      text: '那个夏天，树屋里多了很多笑声。
+
+
+        西瓜、海边、萤火虫。Kel在草地上翻跟头，Aubrey嘴上嫌他吵，还是给他递了水。Hero烤棉花糖烤糊了三根，Mari在旁边笑。
+
+
+        没有人提琴的事。
+
+
+        Basil路过琴行，放慢了脚步，又走过去了。
+
+
+        有一天下午，他自己坐在树屋里，手里捏着一枚硬币，翻来覆去地转。
+
+
+        “贝瑟尔？”Aubrey探头进来。“你干嘛呢？”
+
+
+        “……没什么。”Basil把硬币收进口袋。
+
+
+        “走吧，去买汽水。”Aubrey说。“Kel请客。”
+
+
+        “他请客？”Basil笑了。
+
+
+        “他说他赢了一局篮球，开心。”
+
+
+        Basil站起来，跟着她走了。
+
+
+        **那枚硬币，Basil后来又掏出来看了很久。**
+
+        '
+- id: s5
+  parent: s1
+  trigger:
+    sentence: gB
+    action: variant
+    value: 0
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“先卖旧书旧玩具，凑一点是一点。”Basil说。
+
+
+        第二天，他们把各自不用的东西搬到了树屋门口。
+
+
+        Kel抱来一摞旧漫画。Aubrey拿来一个用不上的旧台灯。Basil翻出几本看过的书。
+
+
+        “就这些？”Kel问。
+
+
+        “就这些。”Basil说。
+
+
+        他们在街角摆了一下午。卖掉了一本漫画、一个台灯，换回来几枚硬币。
+
+
+        Basil把钱放进铁盒，数了数。
+
+
+        “……太少了。”他说。
+
+
+        “差的远呢。”Aubrey说。
+
+
+        他们看着那个空荡荡的铁盒，沉默了一会儿。
+
+
+        “……还是得打工。”Basil说。“光靠卖旧东西，攒到圣诞节也不够。”
+
+
+        “那就打工！”Kel说。“送报纸、摆摊——我们都能行！”
+
+
+        “我和Mari等秋天去面包店。”Hero说。“到时候也能添一份。”
+
+
+        “好。”Basil说。“那就……一点一点来。”
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - “拆开试试吧，这是你的琴。”
+        - “把琴放在树屋里，等他自己去发现。”
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。
+
+
+        **“这是来自我们所有人的心意。”**
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        Sunny没有说话。
+
+
+        他把盒子抱起来，拆开。
+
+
+        琴身泛着光。新的。
+
+        '
+- id: s6
+  parent: s1
+  trigger:
+    sentence: gB
+    action: variant
+    value: 1
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那……先由我一个人送报纸。”Basil说。
+
+
+        “你？”Aubrey瞪大了眼睛。“你起得来吗？你每天早上都要赖床！”
+
+
+        “……我起得来。”Basil说。
+
+
+        第一天早上，天还没亮，闹钟响的时候，Basil在黑暗里坐了很久，才爬起来。
+
+
+        报纸很重。他一家一家送，送到最后一条街的时候，太阳已经升起来了。
+
+
+        他坐在路边的台阶上喘了很久。
+
+
+        第二天，第三天。他每天都会路过琴行，看一眼橱窗里的琴，再接着走。
+
+
+        第四天早上，Aubrey出现在街角。
+
+
+        “……你怎么来了？”Basil问。
+
+
+        “路过。”Aubrey说。“顺便看看你死没死。”
+
+
+        “没死。”Basil说。
+
+
+        “那就好。”Aubrey说。“明天我跟你一起送。”
+
+
+        “……嗯。”Basil说。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - “这是大家的心意，收下吧。”
+        - “把琴放在树屋里，等他自己去发现。”
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        Mari说：**“这是我们大家一起送给你的。”**
+
+
+        Sunny没有说话。他拆开了盒子。
+
+        '
+- id: s7
+  parent: s1
+  trigger:
+    sentence: gB
+    action: keep
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“从现在开始，大家一起攒钱吧。”Basil说。
+
+
+        从那天起，每个人都开始忙起来。
+
+
+        Kel每天天没亮就去送报纸。第一周他差点迟到三次，被Aubrey嘲笑了整整一周。
+
+
+        Aubrey和Basil在街角支起了摊子。曲奇饼干是Mari烤的，柠檬水是Basil调的。第一天只卖出去几杯，但他们没有收摊。
+
+
+        夏天先这样。
+
+
+        秋天一到，是Mari先提起的。
+
+
+        “我和Hero去面包店问问吧。”Mari在厨房里说。“下午的班，应该能排上。”
+
+
+        “会不会太辛苦？”Basil问。
+
+
+        “不会。”Mari说。“我们想去。多一个人，就多一份力。”
+
+
+        Hero点了点头。“面包店的老板人很好。你们放心，我们俩能行。”
+
+
+        铁盒里的硬币一天比一天多。
+
+
+        那个秋天快结束的时候，Basil把铁盒放在桌上，打开。
+
+
+        “够了。”他说。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - “盒子不起眼，里面的琴是最好的。”
+        - “把琴放在树屋里，等他自己去发现。”
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        **“虽然包装看上去很普通……”**Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        Sunny没有说话。他拆开了盒子。
+
+        '
+- id: s8
+  parent: s1
+  trigger:
+    sentence: gB
+    action: erase
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人再说那句“一起攒钱”的话。
+
+
+        但第二天早上，Kel还是出门了。报纸很重，他没有告诉任何人。
+
+
+        Aubrey和Basil支起了摊子。Kel在送报纸。
+
+
+        秋天的时候，Hero和Mari也默默加入了。
+
+
+        “我们在面包店排上了下午的班。”Mari轻描淡写地说。
+
+
+        “老板人很好，还让我们带卖剩的面包回来。”Hero补了一句。
+
+
+        Basil张了张嘴，想说谢谢，又咽了回去。
+
+
+        铁盒放在架子上，没有人说那是干什么用的。但硬币一天比一天多。
+
+
+        Basil没有问是谁放的。
+
+
+        他只知道，有一天他打开铁盒，里面已经满了。
+
+
+        他不记得是谁放进去的。可能是Aubrey。可能是他自己。也可能是Mari回来的时候放了一些。
+
+
+        他不记得桌子是谁搬的。不记得纸板是谁写的。不记得冰桶是谁买的。
+
+
+        铁盒满了。他记得这件事。不记得它是怎么满的。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - Sunny打开了那个盒子。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说。
+
+
+        他没有说下去。
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        **Sunny打开了小提琴琴盒。**
+
+        '
+- id: s9
+  parent: s2
+  trigger:
+    sentence: gB
+    action: variant
+    value: 0
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“他一个人，悄悄把零钱存进铁盒。”
+
+
+        Basil没有告诉任何人。他把零钱放进一个铁盒，放在架子上。每次路过琴行，他都会在橱窗前站一会儿。
+
+
+        后来，Aubrey发现了那个铁盒。
+
+
+        “这是什么？”她问。
+
+
+        “……没什么。”Basil说。
+
+
+        Aubrey看了他一会儿，没有追问。第二天，她把几枚硬币放了进去。
+
+
+        再后来，Kel、Hero、Mari也知道了。
+
+
+        没有人提起那件事。但铁盒里的钱，一天比一天多。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 没有人说这是礼物。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        盒子放在他面前。包装纸有些皱了。
+
+
+        “今年，你的礼物只有一份。”Mari说。
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        **没有人说这是礼物，但大家都看着Sunny。**
+
+        '
+- id: s10
+  parent: s2
+  trigger:
+    sentence: gB
+    action: variant
+    value: 1
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那天之后，Basil开始每天路过琴行。”
+
+
+        他站在橱窗前，看那一排琴。他认得最便宜的那一把——它总是在同一个位置。
+
+
+        他没有进去过。他只是在外面看。
+
+
+        有一天，琴行老板娘推门出来。
+
+
+        “小伙子，你天天来，是想买琴吗？”她问。
+
+
+        “我……”Basil的脸一下子红了。“我看看。”
+
+
+        “看可以。”老板娘说。“要买的话，跟我说一声，我给你留着。”
+
+
+        “……嗯。”Basil说。
+
+
+        他回家之后，把零钱从口袋里全倒出来，数了数，又放回去了。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 琴盒里躺着一把琴，琴弦泛着光。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        Sunny拆开盒子。
+
+
+        **琴盒里躺着一把新琴。**
+
+        '
+- id: s11
+  parent: s2
+  trigger:
+    sentence: gB
+    action: keep
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“他一个人，悄悄把零钱存进铁盒。”Basil后来想，其实那不算什么秘密。
+
+
+        因为没过多久，每个人都在往里放硬币。
+
+
+        Kel放零钱的时候大大咧咧：“买汽水的！少买一瓶！”
+
+
+        Aubrey放硬币的时候什么也不说，放了就走。
+
+
+        Hero和Mari会定期放一些纸币，折得整整齐齐。
+
+
+        Basil把铁盒放在架子上，越来越重。
+
+
+        没有人问那是为了什么。好像大家都默认了。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 光落在琴弦上，亮亮的。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        Sunny拆开盒子，把琴拿出来，架到肩上。
+
+
+        冬天的阳光从窗外照进来。
+
+
+        **阳光落在琴弦上。**
+
+        '
+- id: s12
+  parent: s2
+  trigger:
+    sentence: gB
+    action: erase
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        但铁盒里的钱，一天比一天多。
+
+
+        Basil没有告诉任何人，为什么攒钱。Aubrey没有问。
+
+
+        她只是每天往铁盒里放几枚硬币。Kel也是。Hero和Mari也是。
+
+
+        铁盒放在架子上，越来越重。
+
+
+        Basil偶尔会打开它，数一遍，再合上。
+
+
+        他没有对任何人说“谢谢”。
+
+
+        他不知道自己该谢谁。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 他把琴握在手里，没有动。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        Sunny拆开盒子，把琴拿出来。
+
+
+        **他把琴拿在手里，很久没有动。**
+
+        '
+- id: s13
+  parent: s3
+  trigger:
+    sentence: gB
+    action: variant
+    value: 0
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“先卖旧书旧玩具，凑一点是一点。”Basil说。
+
+
+        第二天，他们把各自不用的东西搬到了树屋门口。
+
+
+        Kel抱来一摞旧漫画：“这些我都看过三遍了！”
+
+
+        Aubrey拿来一个旧台灯：“我妈说要扔的，我说等等。”
+
+
+        Basil翻出几本看过的书。
+
+
+        他们在街角摆了一下午。卖掉了一本漫画、一个台灯，换回来几枚硬币。
+
+
+        Basil把钱放进铁盒，数了数。
+
+
+        “……太少了。”他说。
+
+
+        “差的远呢。”Aubrey说。
+
+
+        “那就打工。”Kel说。“走！明天我送报纸的时候，你也一起来！”
+
+
+        “我……也去？”Basil问。
+
+
+        “对啊！两个人送得快！”Kel说。“反正夏天嘛，起早一点也没关系！”
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 这么大的礼物，Sunny第一次收到。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        **这大概是Sunny第一次收到这么大的礼物。**
+
+        '
+- id: s14
+  parent: s3
+  trigger:
+    sentence: gB
+    action: variant
+    value: 1
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那……先由我一个人送报纸。”Kel说。
+
+
+        “你？”Aubrey瞪大了眼睛。“你早上起得来吗？”
+
+
+        “当然起得来！送报纸我可熟了！”Kel说。
+
+
+        第一天早上，闹钟响的时候，Kel在床上坐了整整十分钟。
+
+
+        “……我是谁……我在哪……”他嘟囔着爬起来。
+
+
+        报纸很重。他第一天送完最后一家，坐在路边的台阶上喘了很久。
+
+
+        第二天，他差点迟到。第三天，他准时了。
+
+
+        Aubrey站在街角等他：“哟，没迟到。”
+
+
+        “我厉害吧！”Kel说。
+
+
+        “……还行吧。”Aubrey说。“明天我也来。”
+
+
+        “你来干嘛？”
+
+
+        “帮忙啊。你一个人送，得送到中午去。”
+
+
+        “……哦。”Kel说。“那行！”
+
+
+        后来那个夏天，送报纸的变成了两个人。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - Sunny把盒子放在膝盖上，一层一层拆开。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        **Sunny把盒子抱起来，拆开。**
+
+        '
+- id: s15
+  parent: s3
+  trigger:
+    sentence: gB
+    action: keep
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那我们……从明天开始，一点一点地攒。”Basil说。
+
+
+        第二天早上，天还没亮，Kel就出门了。
+
+
+        “我出发了！”他喊着，声音消失在清晨的街道上。
+
+
+        Aubrey和Basil在街角支起了摊子。曲奇饼干是Mari烤的，柠檬水是Basil调的。
+
+
+        “曲奇！柠檬水！第一天开张，买一送一！”Aubrey吆喝起来。
+
+
+        “第一天就送，那我们赚什么？”Basil小声说。
+
+
+        “你闭嘴。”Aubrey说。
+
+
+        秋天一到，是Mari先提起的。
+
+
+        “我和Hero去面包店问问吧。”Mari说。“下午的班，应该能排上。”
+
+
+        “会不会太辛苦？”Basil问。
+
+
+        “不会。”Mari说。“我们想去。多一个人，就多一份力。”
+
+
+        Hero点了点头。“面包店的老板人很好。你们放心，我们俩能行。”
+
+
+        日子一天天过去。铁盒里的硬币一天比一天多。
+
+
+        那个秋天快结束的时候，Basil把铁盒放在桌上，打开。
+
+
+        “够了。”他说。
+
+
+        大家围过来看。铁盒里，硬币叠着硬币。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - “是你专属的小提琴噢！”
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        Sunny没有说话。他拆开了盒子。
+
+
+        **“是你专属的小提琴噢！”**
+
+
+        琴身泛着光。新的。
+
+        '
+- id: s16
+  parent: s3
+  trigger:
+    sentence: gB
+    action: erase
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人再说那句“打工攒钱”的话。
+
+
+        但第二天早上，Kel还是出门了。
+
+
+        “你去哪？”Aubrey问。
+
+
+        “……去送报纸。”Kel说。“就……送着玩。”
+
+
+        “送着玩？”Aubrey看着他。
+
+
+        “嗯。锻炼身体！”Kel说着，跑远了。
+
+
+        Aubrey站在原地，看了一会儿。
+
+
+        那天下午，她在街角支了一个摊子，摆上曲奇和柠檬水。
+
+
+        Basil路过的时候，愣了一下。
+
+
+        “……这是干嘛？”他问。
+
+
+        “卖东西。”Aubrey说。“你要买吗？”
+
+
+        “……”
+
+
+        “不买就帮忙。”Aubrey说。
+
+
+        Basil在摊子后面站住了。
+
+
+        没有人说“为了给Sunny买琴”。没有人说“一起攒钱”。
+
+
+        但铁盒里的硬币，一天比一天多。
+
+
+        Basil没有问。他只是每天来。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - Sunny没有说话，很久。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说。
+
+
+        他没有说下去。
+
+
+        “是呀！暑假的时候，我和贝瑟尔为了攒钱，甚至去摆摊卖曲奇饼和柠檬水呢。”Aubrey说。
+
+
+        “如果你还有印象的话，玛里和我之前在一家面包店工作过一段时间。”Hero说。
+
+
+        “而我呢，每天早上去送报纸，送了整整三个月……”Kel说，“你也知道我有多讨厌早起！”
+
+
+        **Sunny没有说话。**
+
+        '
+- id: s17
+  parent: s4
+  trigger:
+    sentence: gB
+    action: variant
+    value: 0
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那枚硬币，Basil后来又掏出来看了很久。”
+
+
+        那天下午，他一个人坐在树屋里，把那枚硬币翻来覆去地转。
+
+
+        后来他把硬币放进了铁盒。
+
+
+        后来铁盒里又多了几枚。
+
+
+        他不知道是谁放的。他只知道，有一天他打开铁盒，里面已经有了浅浅一层。
+
+
+        他没有问。
+
+
+        他路过琴行的时候，会停下来看一会儿。
+
+
+        老板娘推门出来：“小伙子，又来看琴？”
+
+
+        “……嗯。”Basil说。“随便看看。”
+
+
+        “看中哪把，跟我说。”老板娘说。“我给你留着。”
+
+
+        Basil点了点头。
+
+
+        他回家之后，把铁盒里的钱倒出来，数了数，又放了回去。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 没有人说这是礼物。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        盒子放在他面前。包装纸有些皱了。
+
+
+        “今年，你的礼物只有一份。”Mari说。
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        **没有人说这是礼物，但大家都看着Sunny。**
+
+        '
+- id: s18
+  parent: s4
+  trigger:
+    sentence: gB
+    action: variant
+    value: 1
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“那个夏天快结束的时候，铁盒里还是空的。”
+
+
+        Basil偶尔会把它拿下来，打开，看看，再放回去。
+
+
+        有一次Aubrey看见了。
+
+
+        “你老看那个空盒子干嘛？”她问。
+
+
+        “……没什么。”Basil说。
+
+
+        “空的有什么好看的。”Aubrey说。
+
+
+        Basil没有说话。
+
+
+        秋天到了。叶子落下来。
+
+
+        有一天，Basil在树屋的窗台上发现了一枚硬币。
+
+
+        他不知道是谁放的。
+
+
+        第二天，又有一枚。
+
+
+        第三天，有三枚。
+
+
+        他没有问。他把它们放进了铁盒。
+
+
+        铁盒不再是空的了。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 光落在琴弦上，亮亮的。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        Sunny拆开盒子，把琴拿出来，架到肩上。
+
+
+        冬天的阳光从窗外照进来。
+
+
+        **阳光落在琴弦上。**
+
+        '
+- id: s19
+  parent: s4
+  trigger:
+    sentence: gB
+    action: keep
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Basil把那枚硬币放进了铁盒。
+
+
+        他告诉自己,这就是个存钱罐。
+
+
+        后来 Kel 路过树屋,看见了铁盒:“哟,你还有存钱罐?”
+
+
+        “嗯。”Basil说。
+
+
+        “存钱干嘛?”Kel问。
+
+
+        “……不干嘛。”Basil说。“就存着。”
+
+
+        “哦!”Kel说。他掏了掏口袋,放进去几枚硬币。“那我也存点!”
+
+
+        “你存干嘛?”Basil问。
+
+
+        “好玩啊!”Kel说。
+
+
+        后来 Aubrey 也放了几枚。她说:“反正留着也是买汽水。”
+
+
+        再后来 Hero 和 Mari 路过,也放了。
+
+
+        没有人说那是为了什么。
+
+
+        Basil也没有说。
+
+
+        他只是每天路过琴行的时候,会多看一会儿。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 他把琴握在手里，没有动。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        “今年，你的礼物只有一份。”Mari说。“这是我们所有人的心意哦。”
+
+
+        “虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        Sunny拆开盒子，把琴拿出来。
+
+
+        **他把琴拿在手里，很久没有动。**
+
+        '
+- id: s20
+  parent: s4
+  trigger:
+    sentence: gB
+    action: erase
+  editable: gC
+  pages:
+    plan:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        铁盒放在架子上，一直空着。
+
+
+        Basil偶尔会看看它。
+
+
+        “你到底想放什么进去？”Aubrey有一天问。
+
+
+        “……不知道。”Basil说。“大概什么也不放。”
+
+
+        “那你老看它干嘛？”
+
+
+        Basil没有回答。
+
+
+        那个夏天过去了。秋天过去了。
+
+
+        圣诞节前几天，Basil路过琴行，在橱窗前站了很久。
+
+
+        老板娘出来，看见他。
+
+
+        “你站了快半年了。”她说。
+
+
+        Basil的脸红了。“……我想买那把琴。”
+
+
+        “那把最便宜的？”老板娘问。
+
+
+        “嗯。”
+
+
+        “钱够了吗？”
+
+
+        Basil沉默了一下。“……快了。”
+
+
+        “那把琴我给你留着。”老板娘说。“你放心。”
+
+
+        Basil点了点头。他不知道自己为什么会说“快了”。
+
+        '
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      edits:
+      - id: gC
+        variants:
+        - 那个盒子，Sunny拆得很慢。
+        - 把琴放在树屋里，等他自己去发现。
+      text: '圣诞节，Sunny坐在客厅地板上。
+
+
+        他面前只有一个盒子。蓝色包装纸，白色的绳。
+
+
+        没有人说它是什么时候出现的。
+
+
+        “今年，你的礼物只有一份。”Mari说。
+
+
+        “虽然包装看上去很普通……”Basil说。
+
+
+        他没有说下去。
+
+
+        **那个盒子，Sunny拆了很久。**'
+- id: s21
+  parent: s5
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“拆开试试吧，这是你的琴。”Mari说。
+
+
+        Sunny抬起头，看了她一会儿。又看了Basil、Aubrey、Kel、Hero——每个人都安安静静地站在那里，像一排等他开口的树。
+
+
+        他没有说话。
+
+
+        他把盒子放在膝盖上，拆开。琴身泛着光。
+
+
+        他把它拿起来，握了很久。
+
+        '
+- id: s22
+  parent: s5
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“把琴放在树屋里，等他自己去发现。”Basil说。
+
+
+        圣诞那天，他们没有把琴送到Sunny面前。
+
+
+        琴被放在树屋的窗台上，用一块布盖着。
+
+
+        第二天下午，Sunny推开门，看见了那块布。
+
+
+        他走过去，掀开。
+
+
+        琴身泛着光。新的。
+
+
+        他站在原地，站了很久。
+
+        '
+- id: s23
+  parent: s5
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“这是来自我们所有人的心意。”Mari说。
+
+
+        她没有再解释。Sunny也没有问。
+
+
+        他打开琴盒，把琴拿出来，放在膝盖上。
+
+
+        客厅里很安静。只有包装纸轻轻响了一声，像在说“收下吧”。
+
+        '
+- id: s24
+  parent: s5
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        客厅里安静了一瞬。Mari把盒子往Sunny面前推了推。
+
+
+        Sunny看了她一眼，又看了看大家。
+
+
+        他打开琴盒。琴身泛着光。
+
+
+        没有人解释这是什么。但Sunny知道。
+
+        '
+- id: s25
+  parent: s6
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“这是大家的心意，收下吧。”Mari说。
+
+
+        Sunny点了点头。他拆开盒子，动作很轻，像怕吵醒什么。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴握在手里，指尖搭在弦上，没有动。
+
+        '
+- id: s26
+  parent: s6
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，他们没有把琴送到Sunny面前。
+
+
+        琴被放在树屋的窗台上，用一块布盖着。
+
+
+        第二天，Sunny推开门，看见了那块布。
+
+
+        他掀开。琴身泛着光。
+
+
+        他把琴拿起来，抱在怀里，很久没有松开。
+
+        '
+- id: s27
+  parent: s6
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“这是我们大家一起送给你的。”Mari说。
+
+
+        Sunny没有说话。他把盒子抱起来，拆开。
+
+
+        琴身泛着光。
+
+
+        他把琴架到肩上，试了试重量。然后放下了。
+
+
+        “谢谢。”他说。声音很轻，像一片叶子落在地上。
+
+        '
+- id: s28
+  parent: s6
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        盒子放在Sunny面前。他看了看盒子，又看了看大家。
+
+
+        他拆开了。琴身泛着光。
+
+
+        他什么也没有说，只是把琴抱在怀里。
+
+        '
+- id: s29
+  parent: s7
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“盒子不起眼，”Hero说，“里面的琴是最好的。”
+
+
+        “我们比了很久。”Aubrey说。“在琴行里，把每把都试了一遍。”
+
+
+        Sunny把盒子放在膝盖上，拆开。
+
+
+        琴身泛着光。他摸了摸琴颈，又收回了手。
+
+
+        “谢谢你们。”他说。
+
+        '
+- id: s30
+  parent: s7
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，他们没有把琴送到Sunny面前。
+
+
+        琴被放在树屋的窗台上。
+
+
+        第二天，Sunny发现了它。
+
+
+        他拆开布，看见琴身泛着光。
+
+
+        他把它拿起来，架到肩上，拉了一个音。
+
+
+        树屋外面没有人。只有他自己。
+
+
+        他拉完了一个音，又拉了一个。
+
+        '
+- id: s31
+  parent: s7
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“虽然包装看上去很普通……”Basil说，“不过，我们大家一起攒钱，才把它买下来的。”
+
+
+        Sunny看了他一会儿。
+
+
+        他拆开盒子。琴身泛着光。
+
+
+        他把它拿出来，架到肩上，拉了一个音。不太准。
+
+
+        但所有人都安静了。
+
+        '
+- id: s32
+  parent: s7
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        盒子放在Sunny面前，包装纸有些皱了。
+
+
+        Sunny拆开它。琴身泛着光。
+
+
+        他把它拿出来，放在膝盖上，看了一会儿。
+
+
+        “谢谢。”他说。
+
+        '
+- id: s33
+  parent: s8
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny打开了那个盒子。
+
+
+        琴身泛着光。新的。琴颈上没有裂痕，琴弦绷得很紧，像新的一天。
+
+
+        他把琴拿出来，握在手里。
+
+
+        客厅里很安静。
+
+        '
+- id: s34
+  parent: s8
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        琴放在窗台上，用布盖着。
+
+
+        他掀开布。琴身泛着光。
+
+
+        他把琴拿起来，握在手里。
+
+
+        他不知道它是什么时候放在那里的。
+
+        '
+- id: s35
+  parent: s8
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny打开了小提琴琴盒。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴拿出来，架到肩上，做好了开始演奏的准备。
+
+
+        指尖有一点酥麻，像有什么东西在皮肤下面轻轻醒来。
+
+        '
+- id: s36
+  parent: s8
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        Sunny打开琴盒。琴身泛着光。
+
+
+        他把琴拿出来，握在手里，很久没有动。
+
+
+        没有人说话。只有包装纸轻轻响着。
+
+        '
+- id: s37
+  parent: s9
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人说这是礼物。
+
+
+        盒子放在Sunny面前。他拆开，琴身泛着光。
+
+
+        他把琴拿出来，放在膝盖上。没有架到肩上。
+
+
+        客厅里安静了一会儿。然后Kel说：“快点试试嘛！”
+
+
+        Sunny看了他一眼，把琴架了起来。
+
+        '
+- id: s38
+  parent: s9
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他掀开布。琴身泛着光。
+
+
+        他把它拿起来，抱在怀里。
+
+
+        他不知道它是谁的。他只知道，它像是给他准备的。
+
+        '
+- id: s39
+  parent: s9
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人说这是礼物，但大家都看着Sunny。
+
+
+        他拆开盒子。琴身泛着光。
+
+
+        他把它拿出来，握在手里，指尖轻轻拨了一下琴弦。
+
+
+        声音很轻。但所有人都听到了。
+
+
+        “谢谢你们。”他说。
+
+        '
+- id: s40
+  parent: s9
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        大家都看着Sunny。他拆开盒子，琴身泛着光。
+
+
+        他把琴拿出来，放在膝盖上，看了一会儿。
+
+
+        然后他抬起头，看着大家。
+
+
+        “谢谢。”他说。
+
+        '
+- id: s41
+  parent: s10
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '琴盒里躺着一把琴，琴弦泛着光。
+
+
+        Sunny把它拿出来。琴身比他的旧琴大得多，也重一些。
+
+
+        他试着架到肩上，调整了一下姿势。
+
+
+        然后他放下了。“……谢谢。”他说。
+
+        '
+- id: s42
+  parent: s10
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他掀开布。琴身泛着光。
+
+
+        他把它拿起来，架到肩上，拉了一个音。
+
+
+        琴声在空荡荡的树屋里响起来。
+
+        '
+- id: s43
+  parent: s10
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '琴盒里躺着一把新琴。
+
+
+        Sunny看了很久，才伸出手，把它拿出来。
+
+
+        “试试看吧。”Basil说。
+
+
+        Sunny摇了摇头。他把琴放回琴盒，合上。
+
+
+        “我回去再试。”他说。
+
+        '
+- id: s44
+  parent: s10
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        琴盒放在Sunny面前。他打开，看了一眼，又合上了。
+
+
+        琴身泛着光。他已经记住了它的样子。
+
+
+        “……谢谢。”他说。
+
+        '
+- id: s45
+  parent: s11
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '光落在琴弦上，亮亮的。
+
+
+        Sunny把琴拿出来，放在光里。琴身泛着光。
+
+
+        他低头看了一会儿，然后架到肩上，拉了一个音。
+
+
+        “好听！”Kel说。
+
+
+        Sunny没有回答。他又拉了一个音。
+
+        '
+- id: s46
+  parent: s11
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        阳光从窗外照进来，落在琴弦上。
+
+
+        他把它拿起来，架到肩上，拉了一个音。
+
+
+        琴声和阳光一起，落在地上。
+
+        '
+- id: s47
+  parent: s11
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '阳光落在琴弦上。
+
+
+        Sunny把琴拿出来，架到肩上。
+
+
+        他没有立刻拉。他闭了一下眼睛。
+
+
+        然后他拉了一个音。不太准。
+
+
+        但所有人都安静了。阳光落在琴弦上，没有动。
+
+        '
+- id: s48
+  parent: s11
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        阳光落在琴弦上。Sunny把琴拿出来。
+
+
+        他把它握在手里，很久没有动。
+
+
+        他没有说话。他把它架到肩上，拉了一个音。
+
+
+        声音在光里散开。
+
+        '
+- id: s49
+  parent: s12
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '他把琴握在手里，没有动。
+
+
+        他想起那把旧的迷你小提琴。它太小了，他一直偷偷地拉。
+
+
+        他手里有一把真正的琴。
+
+
+        他低下头，把琴架到肩上，拉了一个音。
+
+
+        声音很亮。他在心里发了一个誓。
+
+        '
+- id: s50
+  parent: s12
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他把琴拿起来，握在手里。
+
+
+        他不知道它是什么时候放在那里的。
+
+
+        他低下头，把琴架到肩上，拉了一个音。
+
+        '
+- id: s51
+  parent: s12
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '他把琴拿在手里，很久没有动。
+
+
+        他没有拉。他坐在那里，看着琴，看着大家。
+
+
+        “怎么了？”Kel问。
+
+
+        Sunny摇了摇头。他把琴放回琴盒，又打开，又看了一眼。
+
+
+        “……谢谢你们。”他说。
+
+        '
+- id: s52
+  parent: s12
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        Sunny把琴拿在手里，没有动。
+
+
+        他低着头。没有人说话。
+
+
+        最后他把琴架到肩上，拉了一个音。
+
+
+        他没有说谢谢。他拉了一整首曲子。
+
+        '
+- id: s53
+  parent: s13
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '这么大的礼物，Sunny第一次收到。
+
+
+        他拆得很慢。一层一层，没有撕。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴拿出来，放在膝盖上。
+
+
+        “谢谢你们。”他说。
+
+        '
+- id: s54
+  parent: s13
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他拆开布。琴身泛着光。
+
+
+        他把它拿起来，抱在怀里。
+
+
+        他想说谢谢，但他不知道对谁说。
+
+        '
+- id: s55
+  parent: s13
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '这大概是Sunny第一次收到这么大的礼物。
+
+
+        他拆开包装纸。琴身泛着光。
+
+
+        他没有说话。他把琴拿出来，架到肩上，拉了一个音。
+
+
+        声音在客厅里响起来，很轻，像第一片雪花。
+
+        '
+- id: s56
+  parent: s13
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        盒子放在Sunny面前。他看了很久，才伸出手。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴抱在怀里，没有动。
+
+        '
+- id: s57
+  parent: s14
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny把盒子放在膝盖上，一层一层拆开。
+
+
+        包装纸很普通。里面的琴很好。
+
+
+        他把琴拿出来，架到肩上。琴弓搭上琴弦。
+
+
+        他拉了一个音。不太准。但所有人都安静了。
+
+        '
+- id: s58
+  parent: s14
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他掀开布。琴身泛着光。
+
+
+        他把它拿出来，架到肩上，拉了一个音。
+
+
+        树屋外面很安静。琴声飘出去，飘得很远。
+
+        '
+- id: s59
+  parent: s14
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny把盒子抱起来，拆开。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴拿出来，放在膝盖上。他低着头，看着琴弦。
+
+
+        “喜欢吗？”Mari问。
+
+
+        他没有回答。他把琴架到肩上，拉了一个音。
+
+
+        声音在客厅里响起来。所有人都笑了。
+
+        '
+- id: s60
+  parent: s14
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        Sunny把盒子抱起来，拆开。琴身泛着光。
+
+
+        他把琴拿出来，握在手里，很久没有动。
+
+
+        最后他把琴放回琴盒，合上，抱在怀里。
+
+
+        “谢谢你们。”他说。
+
+        '
+- id: s61
+  parent: s15
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“是你专属的小提琴噢！”Aubrey说。
+
+
+        Sunny看了她一眼，又看了看手里的琴。
+
+
+        “我们挑了很久。”Aubrey补了一句。“在琴行里，把每一把都试过了。”
+
+
+        Sunny低下头。他把琴架到肩上，拉了一个音。
+
+
+        “……谢谢。”他说。
+
+        '
+- id: s62
+  parent: s15
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，他们没有把琴送到Sunny面前。
+
+
+        琴被放在树屋的窗台上。
+
+
+        第二天，Sunny发现了它。
+
+
+        他把琴拿出来，架到肩上，拉了一个音。
+
+
+        树屋里只有他一个人。
+
+
+        他拉完了一整首曲子。
+
+        '
+- id: s63
+  parent: s15
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '“是你专属的小提琴噢。”Aubrey说。
+
+
+        Sunny没有说话。他把琴拿出来，握在手里。
+
+
+        他低头看着琴，很久。
+
+
+        然后他把琴架到肩上，试了一个音。
+
+
+        客厅里很安静。只有琴声。
+
+        '
+- id: s64
+  parent: s15
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        盒子放在Sunny面前。他拆开，琴身泛着光。
+
+
+        他把琴拿出来，握在手里。没有架到肩上。
+
+
+        他低着头，看着琴弦。
+
+
+        “……谢谢你们。”他说。
+
+        '
+- id: s65
+  parent: s16
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny没有说话，很久。
+
+
+        他拆开盒子，把琴拿出来，放在膝盖上。
+
+
+        他没有拉。他只是看着它。
+
+
+        Mari没有催他。大家都没有说话。
+
+
+        过了很久，Sunny把琴架到肩上，拉了一个音。
+
+
+        声音很轻。但所有人都听到了。
+
+        '
+- id: s66
+  parent: s16
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他把它拿起来，握在手里，很久没有动。
+
+
+        他不知道它是谁的。
+
+
+        他把它架到肩上，拉了一个音。
+
+        '
+- id: s67
+  parent: s16
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: 'Sunny没有说话。
+
+
+        他拆开盒子。琴身泛着光。新的。
+
+
+        他把琴拿出来，放在膝盖上，看了一会儿。
+
+
+        然后他把它架到肩上，拉了一个音。
+
+
+        不太准。但所有人都安静了。
+
+        '
+- id: s68
+  parent: s16
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        Sunny拆开盒子，把琴拿出来。
+
+
+        他把它握在手里，很久没有动。也没有说话。
+
+
+        客厅里很安静。
+
+
+        最后他把琴架到肩上，拉了一个音。
+
+        '
+- id: s69
+  parent: s17
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人说这是礼物。
+
+
+        盒子放在Sunny面前。他拆开，琴身泛着光。
+
+
+        他把琴拿出来，放在膝盖上。没有架到肩上。
+
+
+        客厅里安静了一会儿。然后Kel说：“快点试试嘛！”
+
+
+        Sunny看了他一眼，把琴架了起来。
+
+        '
+- id: s70
+  parent: s17
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他掀开布。琴身泛着光。
+
+
+        他不知道它是谁的。
+
+
+        他把它抱在怀里，坐了很久。
+
+        '
+- id: s71
+  parent: s17
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '没有人说这是礼物，但大家都看着Sunny。
+
+
+        他拆开盒子。琴身泛着光。
+
+
+        他把它拿出来，握在手里，指尖轻轻拨了一下琴弦。
+
+
+        声音很轻。但所有人都听到了。
+
+
+        “谢谢你们。”他说。
+
+        '
+- id: s72
+  parent: s17
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        大家都看着Sunny。他拆开盒子，琴身泛着光。
+
+
+        他把琴拿出来，放在膝盖上，看了一会儿。
+
+
+        然后他抬起头，看着大家。
+
+
+        “谢谢。”他说。
+
+        '
+- id: s73
+  parent: s18
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '光落在琴弦上，亮亮的。
+
+
+        Sunny把琴拿出来，放在光里。琴身泛着光。
+
+
+        他低头看了一会儿，然后架到肩上，拉了一个音。
+
+
+        “好听！”Kel说。
+
+
+        Sunny没有回答。他又拉了一个音。
+
+        '
+- id: s74
+  parent: s18
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        阳光落在琴弦上。
+
+
+        他把它拿起来，架到肩上，拉了一个音。
+
+
+        琴声飘出窗外，飘进冬天里。
+
+        '
+- id: s75
+  parent: s18
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '阳光落在琴弦上。
+
+
+        Sunny把琴拿出来，架到肩上。
+
+
+        他没有立刻拉。他闭了一下眼睛。
+
+
+        然后他拉了一个音。不太准。
+
+
+        但所有人都安静了。阳光落在琴弦上，没有动。
+
+        '
+- id: s76
+  parent: s18
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        阳光落在琴弦上。Sunny把琴拿出来。
+
+
+        他把它握在手里，很久没有动。
+
+
+        他没有说话。他把它架到肩上，拉了一个音。
+
+
+        声音在光里散开。
+
+        '
+- id: s77
+  parent: s19
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '他把琴握在手里，没有动。
+
+
+        他想起那把旧的迷你小提琴。它太小了，他一直偷偷地拉。
+
+
+        他手里有一把真正的琴。
+
+
+        他低下头，把琴架到肩上，拉了一个音。
+
+
+        声音很亮。他在心里发了一个誓。
+
+        '
+- id: s78
+  parent: s19
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他把琴拿起来，握在手里。
+
+
+        他不知道它是什么时候放在那里的。
+
+
+        他低下头，把琴架到肩上，拉了一个音。
+
+        '
+- id: s79
+  parent: s19
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '他把琴拿在手里，很久没有动。
+
+
+        他没有拉。他坐在那里，看着琴，看着大家。
+
+
+        “怎么了？”Kel问。
+
+
+        Sunny摇了摇头。他把琴放回琴盒，又打开，又看了一眼。
+
+
+        “……谢谢你们。”他说。
+
+        '
+- id: s80
+  parent: s19
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        Sunny把琴拿在手里，没有动。
+
+
+        他低着头。没有人说话。
+
+
+        最后他把琴架到肩上，拉了一个音。
+
+
+        他没有说谢谢。他拉了一整首曲子。
+
+        '
+- id: s81
+  parent: s20
+  trigger:
+    sentence: gC
+    action: variant
+    value: 0
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那个盒子，Sunny拆得很慢。
+
+
+        他没有撕包装纸。一层一层，小心地揭开。纸很普通，折过很多次。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴拿出来，放在膝盖上，看了很久。
+
+
+        “喜欢吗？”Mari问。
+
+
+        他点了点头。
+
+        '
+- id: s82
+  parent: s20
+  trigger:
+    sentence: gC
+    action: variant
+    value: 1
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '圣诞那天，没有人把琴送到Sunny面前。
+
+
+        第二天，他在树屋里发现了它。
+
+
+        他拆开布。琴身泛着光。
+
+
+        他不知道它是什么时候放在那里的。
+
+
+        他把它抱在怀里，很久没有松开。
+
+        '
+- id: s83
+  parent: s20
+  trigger:
+    sentence: gC
+    action: keep
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那个盒子，Sunny拆了很久。
+
+
+        他把包装纸整整齐齐地叠好，放在一边，才打开琴盒。
+
+
+        琴身泛着光。新的。
+
+
+        他把琴拿出来，架到肩上，拉了一个音。
+
+
+        “以后可以一起合奏了。”Mari说。
+
+
+        Sunny低着头，没有回答。但他点了点头。
+
+        '
+- id: s84
+  parent: s20
+  trigger:
+    sentence: gC
+    action: erase
+  pages:
+    christmas:
+      write:
+        origin:
+        - 48
+        - 56
+        speed: 4
+      text: '那句话没有被说出来。
+
+
+        那个盒子，Sunny拆了很久。
+
+
+        他打开它的时候，客厅里很安静——安静得像是所有人都在等这一刻。
+
+
+        琴身泛着光。
+
+
+        Basil站在门边，看着那道落在琴弦上的光。
+
+
+        他不知道自己是什么时候开始看它的。
+
+
+        他也不知道，这把琴是什么时候，来到了这里。
+
+
+        没有人说这是礼物。没有人说这是谁买的。
+
+
+        Sunny把琴拿出来，握在手里，很久没有松开。
+
+
+        他没有说谢谢。
+
+
+        他也不知道该对谁说。'

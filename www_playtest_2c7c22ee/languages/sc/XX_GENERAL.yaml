@@ -1,0 +1,372 @@
+# -----------------------------------------------
+# - FOUND CONSUMABLE
+# -----------------------------------------------
+message_0:
+  text: 你获得了\v[49]！
+
+# -----------------------------------------------
+# - FOUND TOYS
+# -----------------------------------------------
+message_1:
+  text: 你获得了\v[49]！
+
+# -----------------------------------------------
+# - FOUND PRESENT
+# -----------------------------------------------
+message_2:
+  text: 是\v[49]！\!你想拿走它吗？
+
+# -----------------------------------------------
+# - JOINS YOUR PARTY
+# -----------------------------------------------
+message_3:
+  text: \v[49]加入了小队！
+
+# -----------------------------------------------
+# - YES/NO
+# -----------------------------------------------
+message_4:
+  text: 是
+message_5:
+  text: 否
+
+# -----------------------------------------------
+# - X LEFT THE PARTY
+# -----------------------------------------------
+message_6:
+  text: \v[49]离开了小队。
+
+# -----------------------------------------------
+# - BLACKLETTER
+# -----------------------------------------------
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 等等，\n[1]！那边的地上有一个字母。我们应该先去看看。\her
+
+# -----------------------------------------------
+# - GO OUTSIDE / CLOSE DOOR
+# -----------------------------------------------
+message_8:
+  text: 打开门
+message_9:
+  text: 什么也不做
+
+# -----------------------------------------------
+# - NOD / SHAKE
+# -----------------------------------------------
+message_10:
+  text: 是
+message_11:
+  text: 否
+
+# -----------------------------------------------
+# - FOUND ITEM
+# -----------------------------------------------
+message_12:
+  text: 你获得了\itemget。
+
+message_612:
+  text: 你获得了一个\itemget。
+
+message_613:
+  text: 你获得了一个\itemget。
+
+message_610:
+  text: 回收机吐出了\c[13]\itemget\c[0]。
+
+message_611:
+  text: 回收机吐出了一个\c[13]\itemget\c[0]。
+
+# -----------------------------------------------
+# - AUBREY GOLD
+# -----------------------------------------------
+message_13:
+  text: 你获得了 \v[19] 蚌币！
+
+# -----------------------------------------------
+# - SWEETHEART DUNGEON: GUEST LIST
+# -----------------------------------------------
+message_30:
+  text: 你要请这个人离开吗？
+
+# -----------------------------------------------
+# - SHOP DEFAULTS
+# -----------------------------------------------
+
+message_40:
+  text: 购买
+
+message_41:
+  text: 卖出
+
+message_42:
+  text: 离开
+
+#data.texts.maxItemMessage
+message_50:
+  text: maxItemMessage
+
+#data.texts.notEnoughMoneyMessage
+message_51:
+  text: notEnoughMoneyMessage
+
+#data.texts.onItemListBuyOkMessage
+message_52:
+  text: onItemListBuyOkMessage
+
+#data.texts.onItemListSellOkMessage
+message_53:
+  text: onItemListSellOkMessage
+
+#data.texts.itemBuyingPromptMessage
+message_54:
+  text: itemBuyingPromptMessage
+
+#data.texts.itemSellingPromptMessage
+message_55:
+  text: itemSellingPromptMessage
+
+#data.texts.itemBuyingConfirmationMessage
+message_56:
+  text: itemBuyingConfirmationMessage
+
+#data.texts.itemSellingConfirmationMessage
+message_57:
+  text: itemSellingConfirmationMessage
+
+#data.texts.itemBuyingCancelMessage
+message_58:
+  text: itemBuyingCancelMessage
+
+#data.texts.itemSellingCancelMessage
+message_59:
+  text: itemSellingCancelMessage
+
+# -----------------------------------------------
+# - DREAMWORLD SHOP DEFAULTS
+# -----------------------------------------------
+
+#data.texts.maxItemMessage
+message_60:
+  text: DW maxItemMessage
+
+#data.texts.notEnoughMoneyMessage
+message_61:
+  text: DW notEnoughMoneyMessage
+
+#data.texts.onItemListBuyOkMessage
+message_62:
+  text: DW onItemListBuyOkMessage
+
+#data.texts.onItemListSellOkMessage
+message_63:
+  text: DW onItemListSellOkMessage
+
+#data.texts.itemBuyingPromptMessage
+message_64:
+  text: DW itemBuyingPromptMessage
+
+#data.texts.itemSellingPromptMessage
+message_65:
+  text: DW itemSellingPromptMessage
+
+#data.texts.itemBuyingConfirmationMessage
+message_66:
+  text: DW itemBuyingConfirmationMessage
+
+#data.texts.itemSellingConfirmationMessage
+message_67:
+  text: DW itemSellingConfirmationMessage
+
+#data.texts.itemBuyingCancelMessage
+message_68:
+  text: DW itemBuyingCancelMessage
+
+#data.texts.itemSellingCancelMessage
+message_69:
+  text: DW itemSellingCancelMessage
+
+# -----------------------------------------------
+# - BATTLE SYSTEM LOG MESSAGES
+# -----------------------------------------------
+
+message_100:
+  text: '%1 和朋友们要做什么？'
+
+message_101:
+  text: \n[8] 要做什么？
+
+message_102:
+  text: '%1和%2要做什么？'
+
+message_103:
+  text: \n[8] 和朋友们要做什么？
+
+message_104:
+  text: '%1要做什么？'
+
+message_105:
+  text: 在谁身上使用？
+
+message_106:
+  text: 按下\DII[shift]即可换边。
+
+message_107:
+  text: PLACEHOLDER TEXT ALT SOMETHING OMORI FIGHT
+
+# -----------------------------------------------
+# - FEARS DIALOGUE
+# -----------------------------------------------
+message_200:
+  text: 你害怕高处。
+
+message_201:
+  text: 你害怕蜘蛛。
+
+message_202:
+  text: 你害怕溺水。
+
+message_210:
+  text: 你紧紧握住了刀，向前看去。
+
+message_220:
+  text: 你盯着水面，感到一丝平静。\!波浪看起来柔和又吸引人。
+
+# -----------------------------------------------
+# - FLAG CHECKERS
+# -----------------------------------------------
+message_300:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her\Com[2]等一下，OMORI！<br>我们晚点再去探索，现在还是去看看贝瑟尔的情况吧！
+
+# -----------------------------------------------
+# - Can't leave house
+# -----------------------------------------------
+message_301:
+  text: 你现在不能离开。
+
+# -----------------------------------------------
+# - Break Time
+# -----------------------------------------------
+
+message_399:
+  text: 你想和朋友们一起玩吗？
+
+message_400:
+  text: 你想和朋友们一起玩牌吗？
+
+message_401:
+  text: 你想和朋友们一起搭沙堡吗？
+
+message_402:
+  text: 你想和朋友们一起放风筝吗？
+
+message_403:
+  text: 你想和朋友们一起钓鱼吗？
+
+message_404:
+  text: 你想和朋友们一起坐在这里吗？
+
+#frozen forest
+message_405:
+  text: 你想和朋友们一起取暖吗？
+
+message_406:
+  text: 你想和朋友们一起看电影吗？
+
+message_407:
+  text: 你想和朋友们一起喝茶吗？
+
+message_408:
+  text: 你想和朋友们一起吃饭吗？
+
+message_409:
+  text: 你想和朋友们在波波池里玩吗？
+
+message_410:
+  text: 你想和朋友们一起锻炼身体吗？
+
+message_411:
+  text: 你想和朋友们一起喝点东西吗？
+
+message_412:
+  text: 你想和朋友们一起看漫画吗？
+
+message_420:
+  text: 你想和朋友们一起野餐吗？
+
+#====
+#FA DOORS
+
+message_430:
+  text: 咚，咚……
+
+message_431:
+  text: 没有回应。
+
+message_432:
+  text: ……\!这扇门被锁上了。
+
+#==
+
+message_500:
+  text: 你现在可以查看\c[4]吊死鬼菜单\c[0]了。
+
+message_501:
+  text: 你获得了\c[4]脑内空间地图\c[0]。
+
+#==
+
+message_510:
+  text: 这扇门纹丝不动。
+
+#===
+
+message_600:
+  text: 你和朋友之间的牵绊加深了。\!<br>所有人的连携技都得到了强化！
+
+#===
+
+message_644:
+  text: 还剩 12 个按键……
+
+message_645:
+  text: 还剩 11 个按键……
+
+message_646:
+  text: 还剩 10 个按键……
+
+message_647:
+  text: 还剩 9 个按键……
+
+message_648:
+  text: 还剩 8 个按键……
+
+message_649:
+  text: 还剩 7 个按键……
+
+message_650:
+  text: 还剩 6 个按键……
+
+message_651:
+  text: 还剩 5 个按键……
+
+message_652:
+  text: \fn<OMORI_GAME>还剩 4 个按键……
+
+message_653:
+  text: \fn<OMORI_GAME>还剩 3 个按键……
+
+message_654:
+  text: \fn<OMORI_GAME>还剩 2 个按键……
+
+#message_655:
+#    text: UNUSED
+
+message_656:
+  text: \fn<OMORI_GAME>还剩 1 个按键……
+
+message_657:
+  text: \fn<OMORI_GAME>还剩 0 个按键……

@@ -1,0 +1,179 @@
+# =========================================================================================
+# Farawway town Conditional changes
+# =========================================================================================
+
+# =========================================================================================
+#If opened door on Day 1 of Faraway town
+# =========================================================================================
+
+#Cutscene: Pyrefly Intro
+#Enter Pyrefly Forest
+#KEL: Ugh... I hate this place... It gives me the heebie-jeebies...
+#AUBREY: Don't be such a baby, KEL. They're just bugs!
+#KEL: Aaaah! There's a huge bug in your hair!
+#AUBREY: W-What? Where? Get it off! Get it off!
+#KEL: Haha! Just kidding! Look who's the scared one now.
+#AUBREY: Hmph! That's not very funny, KEL...
+                    #>>>>>> changes to >>>>>>
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel呃啊……\!我好讨厌这里……进来以后我整个人都焦虑起来了……
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub凯，你能不能不要跟个小孩子一样呀！不就只是几只虫子而已嘛！
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\{\Com[2]\QUAKE[1]啊啊啊啊！！\}\!<br>\Com[2]你头发上有好大一只虫子！！\QUAKE[0]
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\{\Com[2]\QUAKE[1]什、什么？！\!在哪里？！<br>\!\Com[2]快把它弄下来啦！！\}\QUAKE[0]
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\Com[2]\QUAKE[1]你快把它给我弄掉！不然我就踹你屁股啦！\QUAKE[0]
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel呜啊……\!冷静点啦，奥布里……\!我就是跟你开个玩笑……
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub我的天！\!对不起！\!我这是怎么了，忽然那么激动……
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub不过，凯，你这个玩笑可一点都不好笑……\!<br>你最好现在跟我道歉，不然——
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel啊、嗯……对不起……
+
+#TVGIRL:
+#TVGIRL: Dang... All they've been showing lately is re-runs... When is something interesting going to show up?
+                                      #>>>>>> changes to >>>>>>
+message_10:
+  text: \n<电视妹>电视刚刚播出了一档新节目！\!<br>内容有点夸张，不过还挺有意思的……<br>\!我已经看上瘾了！
+
+
+# =========================================================================================
+#If opened door on Day 2 of Faraway town
+# =========================================================================================
+
+#I LOVE PICKLES!
+#MARI'S PICNIC
+#Location: SWEETHEART'S CASTLE - PRISON B1
+#In MARI's Intro Dialogue,
+#KEL: Awww... Yuck! I hate pickles! Next time, can you sneak in some jam instead?
+                        #>>>>>> changes to >>>>>>
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel\{\Com[2]呣！！\Com[2]我爱腌黄瓜！\}
+
+#BERLY PUNCH:
+#Only triggers once.
+#Before playing her usual dialogue, BERLY punches leader.
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\Com[2]嘿！你这是要干嘛呀？！
+
+message_22:
+  text: \ber我也不知道……\!我就是想这么做而已。
+
+#SAD EXPRESSION (DAY 3 ONLY):
+#MARI'S PICNIC
+#Only triggers once.
+#After playing her usual dialogue, MARI says:
+
+message_23:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar那个……OMORI……你还好吗？
+
+message_24:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar我发现你最近总是一副有点悲伤的表情……\!<br>出什么事了吗？
+
+
+# =========================================================================================
+#After entering piano room in FARAWAY TOWN
+# =========================================================================================
+#Grand Pianos appear all over DREAM WORLD.
+#Grand Pianos can be played in any order.
+
+#Locations:
+
+#VAST FOREST: Forest Playground
+#SWEETHEART'S CASTLE: In the Ballroom
+#JUNKYARD: Near the Couch? Somewhere that looks cool
+#LAST RESORT: Mr Jawsum's Room
+#ORANGE OASIS: In the middle of the desert
+#FROZEN FOREST ENTRANCE: In the middle of the snow-covered field
+
+#Upon examining a piano:
+
+message_40:
+  text: 一架三角钢琴。\!<br>中间刻着“OMORI”这个词。
+
+message_41:
+  text: 你想要坐下来吗？
+#yes/no
+#PIANO (1)
+
+message_42:
+  text: 你的脑中回响起了两个音符……<br>\!你的双手摆出了准备弹琴的架势。
+
+#PIANO (2)
+message_43:
+  text: 你的脑中回响起了好几个音符……<br>\!你的双手摆出了要弹琴的架势。
+
+#PIANO (3)
+message_44:
+  text: 你脑海中浮现出了一部分旋律……<br>\!你的双手摆出了要弹琴的架势。
+
+#PIANO (4)
+#same text as Piano 3
+
+#PIANO (5)
+#same text as Piano 3
+
+#PIANO (6)
+message_45:
+  text: 你想起了一段熟悉的旋律……\!<br>你的手自己动了起来。
+
+#After playing the piano, it will disappear.
+
+
+
+#Finding all the Pianos will trigger Cutscene: Piano and Violin
+
+#OMORI sitting at the piano.
+#Camera zooms to MARI at entrance of room. MARI walks up to him.
+#MARI turns over to face PLAYER on the chair.
+
+message_46:
+  text: \mar噢！\n[8]……\!<br>我发现你五线谱认得越来越熟了呢，嘻嘻。
+
+message_47:
+  text: \mar这首曲子是我新学的……\!你喜欢吗？
+
+message_48:
+  text: \mar唔，这首曲子肯定有钢琴和小提琴的合奏版……
+
+message_49:
+  text: \mar怎么样，你想学吗？这样我们就能一起演奏这首曲子啦。
+

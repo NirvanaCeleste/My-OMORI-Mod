@@ -1,0 +1,339 @@
+# =========================================================================================
+# Cutscene: Errand List
+# =========================================================================================
+
+#DAY 2 PART 1: FARAWAY TOWN
+#Trigger: Examine Front Door and open.
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{\com[2]嗨，\n[8]！！\}\!<br>早安呀，嘿嘿。\kel
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 好吧……\!其实应该说午安才对。\!原来英雄要到晚饭的时候才回来，所以我就想着迟一点再来找你。\kel
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 妈妈叫我在他回来之前去\c[11]遥远广场\c[0]买点东西，然后……\!我觉得我们一起去的话，会更有意思一点！\kel
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你想跟我一起去吗，\n[8]？\!<br>你当然想啦！\!拜托啦……\kel
+
+#Upon entering Town PLAZA
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 我看看……\!我们得去\c[11]吉诺披萨店\c[0]还有\c[11]异家超市\c[0]的面包店……\!<br>你带路咯，\n[8]！\kel
+
+
+# =========================================================================================
+# Cutscene: secret lake Day
+# =========================================================================================
+
+#Trigger: Enter GINO's Pizza.
+
+message_20:
+  text: \c[11]吉诺披萨店\c[0]就是劲爆！\!瞧瞧这恶心肮脏又油腻的芝士披萨……我就喜欢这样的！\kim
+
+message_21:
+  text: \Com[2]\{开吃了！！\kim
+
+message_22:
+  text: 所以……\!嚼……\!嚼……\!嚼……\!待会儿还是去我们那个秘密基地，对吧？\ang
+
+message_23:
+  text: 我要把我的钓鱼竿带上！\!嚼……\!我昨天亲手做的……\!……用了一根超酷的棍子和跳绳。\!<br>你觉得会好使不，查理？\ang
+
+message_24:
+  text: ……\cha
+
+message_25:
+  text: 呵。\!所以我们要去秘密基地？\!嚼……\!<br>那可是完美的约会地点啊！\!嚼……\!我一定会把那位特别的姑娘给带上。\mav
+
+message_26:
+  text: 游泳……\!嚼、嚼、嚼、嚼……\!应该……\!<br>嚼、嚼、嚼、嚼、嚼、嚼、嚼、嚼……\!<br>会挺有趣。\van
+
+message_27:
+  text: 呵！\!嚼……\!你们还在傻乎乎地玩这些幼稚把戏吗，<br>我可要忙着打水漂了！\kim
+
+message_28:
+  text: 我这一整周……\!嚼……\!都在找一块完美的石头呢！\kim
+
+message_29:
+  text: 哈。\!嚼……\!<br>你想试就试个够吧，小金，但你绝对无法打破奥布里的纪录！\mav
+
+message_30:
+  text: 闭嘴吧，米凯尔！\!哪有妹子会心甘情愿跟你去湖边……\!嚼……\!她们只是图你的钱！\kim
+
+message_31:
+  text: 跟你说过多少次，要喊我独行——<br>\{\Com[2]\quake[1]夹！！\!\Com[2]啊啊啊我嗷到舌头了！！\mav
+
+message_32:
+  text: \{\sinv[2]哇哈哈哈哈哈哈哈！！\!\}<br>真是个废物！\kim
+
+message_33:
+  text: \quake[1]\{呜哇哇哇！！师父，你没事吧？！\ang
+
+message_34:
+  text: \quake[1]\{你费付粗代价的，金！\mav
+
+#SWITCH TO BAHAHAHA
+message_35:
+  text: \{\Com[2]\sinv[2]哇哈哈\{哈哈哈\{哈哈哈哈！\!\kim
+
+# =========================================================================================
+# Cutscene: We Got the Stuff
+# =========================================================================================
+
+#Trigger: Complete Mini-Game: Shopping and talk to PIZZA MAN in GINO'S PIZZA.
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 我们去面包店吧！\!我妈在那儿订了东西！\kel
+
+message_60:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 面包店……\!去过了！\!三明治……\!也拿到了！\kel
+
+message_61:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 嗯，需要的东西都齐了！时间也刚好。\!<br>太阳正好快下山了！\kel
+
+message_62:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 走，回我家吧。<br>英雄应该很快就到家了！\kel
+
+message_63:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 接下来我们只需要去\c[11]异家超市\c[0]的面包店拿曲奇饼！\kel
+
+message_64:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 接下来只要去\c[11]吉诺披萨店\c[0]拿我们订的东西就行啦！\kel
+
+# =========================================================================================
+# Cutscene: Beware of MOM
+# =========================================================================================
+
+#Trigger: Enter proximity of KEL's House.
+
+message_80:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 在进屋之前……\!得先提醒你一下，我买东西花了这么长时间，我妈估计会有点生气。\kel
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 我本来应该中午就把东西买好的，<br>结果却跑去做别的事情了……\!<br>哎呀，你懂的嘛。\kel
+
+message_82:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 不过总而言之，我想到一个好主意！\kel
+
+message_83:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 简单来说……\!我的想法就是……\!你先进去。\!<br>这样的话，她先见到你一定会特别激动。\! <br>最重要的是……\!这样一来她就会忘记要吼我啦！\kel
+
+message_84:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 看吧？完全是双赢！嘿嘿！\!<br>懂了吗？\!懂了我们就进去吧！\kel
+
+# =========================================================================================
+# Cutscene: Dropping off Stuff at Kel's
+# =========================================================================================
+
+#Trigger: Enter KEL's Living Room.
+
+
+message_100:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{\{\sinv[1]老妈，\n[8] 来了！\kel
+
+message_101:
+  text: \Com[2]凯！你跑到哪里闲逛去了？我几个小时前就让你出门了！<br>只是拿点三明治，至于花这么久——\n<凯的妈妈>
+
+message_102:
+  text: 天呐，这是 \n[8] 吗？\!啊，一定是了！\n<凯的妈妈>
+
+message_103:
+  text: 哎呀，能再见到你真是太开心了！\!不过亲爱的……你怎么这么瘦呀……有没有好好吃饭啊？\n<凯的妈妈>
+
+#KEL drops off groceries near KEL'S MOM.
+
+message_104:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 老妈，你要我买的东西在这儿！\kel
+
+#KEL turns to PLAYER.
+
+message_105:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 快走，\n[8]！上楼去我的房间！\kel
+
+#KEL pushes PLAYER toward the hallway.
+
+message_106:
+  text: \Com[2]臭小子，你先给我慢着——\n<凯的妈妈>
+
+message_107:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 拜咯，老妈！晚餐好了再叫我们！\kel
+
+# =========================================================================================
+# Cutscene: Kel's Bedroom
+# =========================================================================================
+
+#Trigger: Enter KEL's Room.
+
+
+message_120:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 嗯，就是这儿了……你当成是自己家就行！\!<br>看！我梦寐以求的篮球架，还有手提音响，<br>现在我都有啦。\!来，给你放一首歌吧！\kel
+
+#KEL walks up to BOOMBOX. BOOMBOX plays fish song.
+
+message_121:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 嗯，听上去真不赖。\kel
+
+#KEL looks at PLAYER.
+
+message_122:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 不过老妈不让我开得太大声，她说这样对萨丽不好。\kel
+
+#KEL has an idea.
+
+
+message_123:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 噢，慢着！\!你还没见过萨丽呢，对吧？\kel
+
+#KEL puts hand behind head.
+
+message_124:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 嘿嘿！\!你猜怎么着，\n[8]！\!<br>我现在也当哥哥啦！\kel
+
+message_125:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 萨丽是我的小妹妹。\!等会儿晚餐的时候，老妈应该会把她抱下来。\!<br>她呀，超小只超可爱，嘿嘿！\kel
+
+message_126:
+  text: \Com[2]凯！\!有个女孩儿来了！<br>她说是来找你的！\n<凯的妈妈>
+
+#KEL is confused.
+
+message_127:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 诶？会是谁呢？\kel
+
+# =========================================================================================
+# Cutscene: Polly's Worry
+# =========================================================================================
+
+#Trigger: Talk to POLLY.
+
+message_140:
+  text: 你好，凯……你好，\n[8]……\!抱、抱歉打扰你们。\n<波莉>
+
+message_141:
+  text: 我只是想问问，你们知不知道贝瑟尔去了哪里？\!<br>我以为他会和你们在一起。\n<波莉>
+
+message_142:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 贝瑟尔？\!唔……\!不知道哦，抱歉。\!我们今天没有见到过他。\kel
+
+message_143:
+  text: 噢，没关系的！\!我……\!我相信他肯定会露面的。\!<br>他之前从家里跑出去了，到现在都还没回来……\n<波莉>
+
+message_144:
+  text: 如果你们看到他，能不能叫他快点回家呢？\!<br>我真的非常担心他。\n<波莉>
+
+message_145:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 当然啦，波莉！\!我们会好好留意的。\kel
+
+message_146:
+  text: 谢谢……\!我就知道你们靠得住！\n<波莉>
+
+#POLLY walks O.S. through front door.
+
+message_147:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: ……\kel
+
+message_148:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 贝瑟尔今天失踪了？\!我有种不祥的预感……\!<br>尤其是之前看到奥布里和滑板车帮在附近出没。\!<br>或许我们应该趁天黑之前去找找他。\kel
+
+#KEL turns around.
+
+message_149:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 我们可以去找他吗，老妈？\!求求你啦？\kel
+
+message_150:
+  text: 嗯……\!那个女孩儿看着确实很着急。\!<br>\sinv[1]唉……\sinv[0]\!行吧。\!记得晚饭前一定要回来啊！\n<凯的妈妈>
+
+message_154:
+  text: 晚饭前一定要回来啊！\!我可不想又像去年一样！\n<凯的妈妈>
+
+
+
+# =========================================================================================
+# Cutscene: Polly's Worry v2
+# =========================================================================================
+
+#Trigger: Talk to POLLY, if you have already seen Basil at the park
+
+message_151:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 贝瑟尔？\!唔……\!<br>我们早些时候确实在公园见到他了，但那已经有段时间了。\kel
+
+message_152:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 贝瑟尔今天失踪了？\!我有种不祥的预感……\!<br>尤其是之前看到奥布里和滑板车帮在附近出没。\!\kel
+
+message_153:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 唔……贝瑟尔会不会就在\c[11]遥远公园\c[0]的某个地方呢？\kel
+
+#KEL turns around.
+

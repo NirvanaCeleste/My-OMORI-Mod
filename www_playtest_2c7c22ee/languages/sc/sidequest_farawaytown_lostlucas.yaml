@@ -1,0 +1,36 @@
+# =========================================================================================
+# Sidequest: Lost Lucas
+# =========================================================================================
+
+message_1:
+  text: \art\com[2]哇！我的狗卢卡斯又跑出门了。\!他总是想要离开房子……\!<br>我有时会想，他还住在这里是不是只为了有口饭吃。
+
+message_2:
+  text: \art唉……\!这回他会去哪呢？
+
+#Lucas is playing with some birds
+
+message_3:
+  text: \n<乖狗狗>\com[2]汪……\! \{汪，汪！
+
+#Cutscene: Lucas leaves
+
+#Talk to artist after cutscene:
+
+message_4:
+  text: \art唉……\!卢卡斯……\!别这样让我担心啊。
+
+message_5:
+  text: \art嘿，是你把卢卡斯送回这里的吗？\!<br>真不好意思麻烦你了。\!来，拿着这个。
+
+message_6:
+  text: 你获得了\c[13]画笔\c[0]。
+
+#Talk to Lucas after Cutscene
+
+message_7:
+  text: \n<乖狗狗>\{\com[2]汪，汪！\!\{汪！
+
+message_8:
+  text: 你获得了\c[4]垃圾\c[0]……
+

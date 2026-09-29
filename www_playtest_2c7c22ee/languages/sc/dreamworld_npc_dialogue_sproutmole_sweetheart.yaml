@@ -1,0 +1,680 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============Sproutmole Village / Sweetheart's Castle====================================
+
+
+                        #====NIGHT 2====
+
+#BANDITO MOLE
+#Location: Sprout Mole village
+
+message_0:
+  text: \who\}哈、哈、哈……\!呼、呼、呼……
+
+#Beautiful Mole
+#Location: Sproutmole Village
+message_1:
+  text: \n<漂亮的鼹鼠>你瞧……\!<br>我就是世界上最漂亮的树苗鼹鼠啦，对不对呀？
+
+#BOX Mole
+#Location: Sproutmole Village
+
+message_221:
+  text: \n<方形树苗鼹鼠>一年到头，我最喜欢也最期待的就是圣诞节了。所以我想啊，我们干脆天天都过圣诞节不就好了吗？
+
+
+message_2:
+  text: \n<方形树苗鼹鼠>圣诞节……被毁了……
+
+#BUTLER Mole
+#Location: Check Dream world -dungeon dialogue
+
+#CHEF Mole
+#Location: Sprout Mole Village
+#(TOFU TRIVIA copy)
+message_3:
+  text: \n<厨师鼹鼠>啊，欢迎！\!自白切面包之后，如今世上最棒的料理就是……\!\Com[2]\c[3]豆腐\c[0]！\!<br>想必，你们也是来学豆腐的做法的吧？
+
+message_4:
+  text: \n<厨师鼹鼠>妙极了！\!<br>来，听好了，这是今天的\c[3]豆腐\c[0]小知识。
+
+message_5:
+  text: \n<厨师鼹鼠>\Com[2]你竟敢瞧不起伟大的\c[3]豆腐\c[0]？！\!<br>滚出去！\!令人作呕的家伙！
+
+message_6:
+  text: \n<厨师鼹鼠>两万零三百九十四块\c[3]豆腐\c[0]整齐排列在一起，就有一公里长了！
+
+message_7:
+  text: \n<厨师鼹鼠>\c[3]豆腐\c[0]分为四种……\!<br>老豆腐，干豆腐，嫩豆腐，以及內酯豆腐！
+
+message_8:
+  text: \n<厨师鼹鼠>老\c[3]豆腐\c[0]可以炒、烤，以及切成小方块等等。\!因为这种豆腐能在不变形的情况下，吸收其他的味道！
+
+message_9:
+  text: \n<厨师鼹鼠>嫩\c[3]豆腐\c[0]最好是用生的，或者已经榨干了水分的。\!这种豆腐做甜点、冰沙、蘸酱和调味汁都很合适！
+
+message_10:
+  text: \n<厨师鼹鼠>內酯\c[3]豆腐\c[0]特别丝滑，拿来烘焙，做调味汁，酱汁，冰沙和甜点之类的都很合适哦！
+
+message_11:
+  text: \n<厨师鼹鼠>熏\c[3]豆腐\c[0]用来代替肉真是再合适不过了！
+
+message_12:
+  text: \n<厨师鼹鼠>\c[3]豆腐\c[0]的大豆含量很高，如果你有肾结石的话，就吃少点哦！
+
+message_13:
+  text: \n<厨师鼹鼠>想给\c[3]豆腐\c[0]调味，最好的方法就是先给它刷上一层酱汁，刷到金黄，再放到腌汁里腌一段时间。<br><br>这样一来，豆腐就能吸收所有的味道了。等豆腐上的酱汁变成了糖浆一样黏糊糊的东西，能粘在你的锅子上，那就说明大功告成了！
+
+message_14:
+  text: \n<厨师鼹鼠>还想要再了解一下伟大的\c[3]豆腐\c[0]的小知识吗？想的话就随时来这找我吧。\!嚯嚯！
+
+#DOUBLE MOLE
+#Location: Sprout Mole Village
+message_20:
+  text: \n<双鼹鼠>我们一分为二！\!我们合二为一！\!我们的言行也统一？
+
+#DUNCE MOLE
+#Location: Sprout Mole Village
+message_21:
+  text: \n<戴着傻瓜帽的鼹鼠>这堵墙超级冷！
+
+#ELDER MOLE
+#Location: Sprout Mole Village
+message_22:
+  text: \n<鼹鼠村长>我在研究一种革命性的技术，它能够改变聚居区里……\!不……\!是全世界鼹鼠的生活！
+
+#ELDER MOLE JR.
+#Location: Sprout Mole Village
+message_23:
+  text: \n<鼹鼠村长二世>我最近晚上总是睡不好！\!<br>要是有什么东西能让我睡得更舒服点就好了……
+
+#Fall mole: Location Sprout Mole village Note: Check Season mole yaml
+#Family Mole 1: Check Delivery for brother yaml
+
+#Family Mole 2
+#Location: Sprout Mole Village
+message_24:
+  text: \n<家庭鼹鼠>我讨厌星期一。
+
+#FAMILY MOLE 3
+#Location: Sprout Mole Village
+message_25:
+  text: \n<家庭鼹鼠>经过“树苗鼹鼠大迁徙”后，我们树苗鼹鼠就不敢离开聚居区了。\!唉，之前的大迁徙可真是太惨烈了……
+
+message_26:
+  text: \n<家庭鼹鼠>有很多树苗鼹鼠都死在了路上……\!<br>还有好多鼹鼠东窜西窜的，都走丢了……\!更别提，还有那么多鼹鼠小小年纪就跟家人走散了！\!唉，真是太恐怖了！
+
+message_27:
+  text: \n<家庭鼹鼠>不过……至少我们现在的生活好多了……\!大部分情况下是吧。
+
+#FLAMINGO MOLE
+#Location: Sprout Mole Village
+
+message_30:
+  text: \n<家庭鼹鼠>树苗鼹鼠虽然聪明，但也很容易走火入魔。\!<br>你瞧，我就一点自制力都没有。
+
+#GUARD MOLE
+#Location: Sweetheart's Castle
+#Check DREAM WORLD - DUNGEON DIALOGUE.
+
+#MAID MOLE
+#Location: Sweetheart's Castle
+#Check DREAM WORLD - DUNGEON DIALOGUE.
+
+#OFFICER MOLE
+#Location: Sprout Mole Village
+message_32:
+  text: \n<警察鼹鼠>作为警察，我们有责任把这些坏蛋关在这里，维护好社会治安！
+
+#ROSA
+#Location: N/A
+
+#SPORT MOLE
+#Location: Sprout Mole Village
+message_33:
+  text: \n<运动鼹鼠>呼……\!呼呼……
+
+#SPRING MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Check DREAM WORLD QUEST DIALOGUE.
+
+#SPROUT MOLE MIKE
+#Location: Sweetheart's Castle
+#[Main Story]
+
+#STUDENT MOLE 1
+#Location: Sprout Mole Village
+message_40:
+  text: \n<学生鼹鼠>嘿，你瞧我画的这个！很厉害吧！
+
+#STUDENT MOLE 2
+#Location: Sprout Mole Village
+message_41:
+  text: \n<学生鼹鼠>你、你觉得我们毕业以后还能继续做好朋友吗？
+
+#STUDENT MOLE 3
+#Location: Sprout Mole Village
+message_42:
+  text: \n<学生鼹鼠>不管我再怎么\QUAKE[1]愤怒\QUAKE[0]，我也只不过是一只笼中鼹鼠。
+
+#SUE CHEF MOLE 1 & SUE CHEF MOLE 2
+#Location: Sprout Mole Village
+message_43:
+  text: \n<副厨鼹鼠>你怎么敢说这种大逆不道的话！\!<br>是个鼹鼠都知道，\c[3]豆腐\c[0]当然是热的好吃！
+
+message_44:
+  text: \n<副厨鼹鼠>你疯了吗？\!<br>只要是个神经正常的树苗鼹鼠都知道，\c[3]豆腐\c[0]当然是凉的好吃！
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her嘿，你们也没必要吵成这样吧。\!为什么你们不能相互妥协一下呢？
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her说不定你们两个都是对的，\!谁知道呢？\!啊，或者，你们可以用一种前所未有的方法来做\c[3]豆腐\c[0]……\!就是，让豆腐介于热和冷之间啦，比如说……
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her温、温的豆腐？\!我也不知道诶……
+
+message_48:
+  text: \n<副厨鼹鼠>……
+
+message_49:
+  text: \n<副厨鼹鼠>\sinv[1]噫……………………
+
+message_50:
+  text: \n<副厨鼹鼠>温\c[3]豆腐\c[0]？\!这是我听过的最垃圾的提议了！\!<br>凉\c[3]豆腐\c[0]都好过什么温豆腐……
+
+message_51:
+  text: \n<副厨鼹鼠>温\c[3]豆腐\c[0]？\!听着我都想吐了。\!<br>热\c[3]豆腐\c[0]都好过什么温豆腐……
+
+#SUE CHEF MOLE 3
+#Location: Sprout Mole Village
+message_60:
+  text: \n<副厨鼹鼠>我完全不知道我在干什么！
+
+#SUMMER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Check DREAM WORLD QUEST DIALOGUE.
+
+#SWEETHEART
+#Location: N/A
+
+#TEACHER MOLE
+#Location: Sprout Mole Village
+message_61:
+  text: \n<老师鼹鼠>我完全不知道我在干什么！
+
+#TOFU JASH
+#Location: Sprout Mole Village - Tofu Shop (Jash Quest)
+#Check SHOP DIALOGUE GUIDE
+
+#WALL MOLE
+#Location: Sprout Mole Village
+
+message_62:
+  text: 这只树苗鼹鼠被强力胶贴在了墙上。
+
+#WINTER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Check DREAM WORLD QUEST DIALOGUE.
+
+
+                        #====NIGHT 3====
+
+
+#BANDITO MOLE
+#Location: Sprout Mole Village - B.E.D Trade Quest 1
+#Refer to SIDEQUEST: B.E.D.
+
+#BEAUTIFUL MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#BOX MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#BUTLER MOLE
+#Location: Sweethearts Castle
+message_80:
+  text: \n<管家鼹鼠>唉……\!甜心离开之后，我活着也没什么意义了……
+
+#CHEF MOLE
+#Location: Sprout Mole Village - B.E.D. Trade Quest 3
+#Same as NIGHT 2.
+
+#DOUBLE MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#DUNCE MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#ELDER MOLE
+#Location: Sprout Mole Village- B.E.D. Trade Quest 2
+#Refer to SIDEQUEST: B.E.D.
+
+#ELDER MOLE JR.
+#Location: Sprout Mole Village- B.E.D. Trade Quest 5
+#Refer to SIDEQUEST: B.E.D.
+
+#FALL MOLE
+#Location: Sprout Mole Village- Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#FAMILY MOLE 1
+#Location: Sprout mole Village- Delivery for Brother Quest
+#Same as NIGHT 2.
+
+#FAMILY MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#FAMILY MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#FLAMINGO MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#GUARD MOLE
+#Location: Sweetheart's Castle
+message_81:
+  text: \n<守卫鼹鼠>甜心离开之后，我活着也没什么意义了。
+
+#MAID MOLE
+#Location: Sweetheart's Castle
+message_82:
+  text: \n<女仆鼹鼠>甜心离开之后，我活着也没什么意义了。
+
+#OFFICER MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#ROSA
+#Location: Sprout Mole Village
+message_83:
+  text: \n<罗莎>那场一塌糊涂的婚礼结束以后，甜心就走了，再也没回来过！\! \Com[2]这全都是你的错！
+
+#SPORT MOLE
+#Location: Sprout Mole Village- B.E.D. Trade Quest 4
+#Refer to sidequest_BED
+
+#SPRING MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#SPROUT MOLE MIKE
+#Location: Sweetheart's Castle
+message_84:
+  text: \n<树苗鼹鼠麦克>唉……\!<br>甜心走了，我也不知道自己要做什么好了……她就是我的白月光啊……
+
+#STUDENT MOLE 1
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#STUDENT MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#STUDENT MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 1
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUMMER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#SWEETHEART
+#Location: N/A
+
+#TEACHER MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#TOFU JASH
+#Location: Sprout Mole Village - Tofu Shop (Jash Quest)
+#Same as NIGHT 2.
+
+#WALL MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#WINTER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+
+                        #====NIGHT 4====
+
+
+#BANDITO MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 3.
+
+#BEAUTIFUL MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#BOX MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#BUTLER MOLE
+#Location: Last Resort
+message_85:
+  text: \n<管家鼹鼠>听他们说这里在招工，我就来了……
+#After Mr.Jawsum leaves Last Resort
+#Location: Sweetheart's Castle
+
+#CHEF MOLE
+#Location: Sprout Mole Village - B.E.D. Trade Quest 3
+#Same as NIGHT 3.
+
+#After B.E.D Trade Quest
+#Same as NIGHT 2.
+
+#DOUBLE MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#DUNCE MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#ELDER MOLE
+#Location: Sprout Mole Village- B.E.D. Trade Quest 2
+#Same as NIGHT 3.
+
+#After B.E.D Trade Quest
+#Same as NIGHT 2.
+
+#ELDER MOLE JR.
+#Location: Sprout Mole Village- B.E.D. Trade Quest 5
+#Same as NIGHT 3.
+
+#After B.E.D Trade Quest
+#Same as NIGHT 2.
+
+#FALL MOLE
+#Location: Sprout Mole Village- Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#FAMILY MOLE 1
+#Location: Sprout mole Village- Delivery for Brother Quest
+#Same as NIGHT 2.
+
+#FAMILY MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#FAMILY MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#FLAMINGO MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#GUARD MOLE
+#Location: LAST RESORT
+message_86:
+  text: \n<守卫鼹鼠>听他们说这里在招工，我就来了……
+#After Mr.Jawsum leaves Last Resort
+#Location: Sweetheart's Castle
+
+#MAID MOLE
+#Location: LAST RESORT
+message_87:
+  text: \n<女仆鼹鼠>听他们说这里在招工，我就来了……
+#After Mr.Jawsum leaves Last Resort
+#Location: Sweetheart's Castle
+
+#OFFICER MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#ROSA
+#Location: Sprout Mole Village
+#[Incomplete]
+
+#SPORT MOLE
+#Location: Sprout Mole Village- B.E.D. Trade Quest 4
+#Same as NIGHT 3.
+
+#After B.E.D Trade Quest
+#Same as NIGHT 2.
+
+#SPRING MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#SPROUT MOLE MIKE
+#Location: Sweetheart's Castle
+#Same as NIGHT 2.
+
+#STUDENT MOLE 1
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#STUDENT MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#STUDENT MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 1
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 2
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUE CHEF MOLE 3
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#SUMMER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#SWEETHEART
+#Location: N/A
+#After Mr.Jawsum leaves Last Resort
+#Location: Slime Girl's Lair
+#Check dreamworld extras slimegirls
+
+#TEACHER MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#TOFU JASH
+#Location: Sprout Mole Village - Tofu Shop
+#Same as NIGHT 2.
+
+#WALL MOLE
+#Location: Sprout Mole Village
+#Same as NIGHT 2.
+
+#WINTER MOLE
+#Location: Sprout Mole Village -Seasonal Gifts Quest
+#Same as NIGHT 2.
+
+#===
+
+#THEATER
+
+message_100:
+  text: \n<树苗鼹鼠>身为著名影评人，我敢说，甜心的所有作品都已经超出了我们的理解范围！我们的智力实在太低下了！
+
+message_101:
+  text: \n<树苗鼹鼠>兄弟……\!你看起来很眼熟诶。\!<br>我是不是在电视上见过你？！
+
+message_102:
+  text: \n<树苗鼹鼠>安静点！这是我最喜欢的电影！
+
+message_103:
+  text: \n<树苗鼹鼠>哦，甜心……\!你太好了，是这个世界配不上你。
+
+message_104:
+  text: \n<树苗鼹鼠>《甜心的爱心冒险》每一集我都看了至少六遍！
+
+message_105:
+  text: \n<树苗鼹鼠>我不管去哪里都带着甜心！\!<br>来，甜心，说“你好”！
+
+message_106:
+  text: \n<树苗鼹鼠>这世上只有甜心懂我……
+
+message_107:
+  text: \n<树苗鼹鼠>甜心不管做什么都很完美！\!<br>为了她，我做\quake[1]什么\quake[0]都愿意……
+
+message_108:
+  text: \n<树苗鼹鼠>我太爱甜心了，我都不记得见到她之前我是怎么过的了。\!我说真的……我真想不起来了！
+
+message_109:
+  text: \n<树苗鼹鼠>\}甜心……\!你以后会属于我的……\{
+
+#AFTER SW WEDDING
+
+message_110:
+  text: \n<树苗鼹鼠>呜呜……\!甜心再一次征服了观众的心。\!我真的好感动啊！
+
+message_111:
+  text: \n<树苗鼹鼠>你是英雄吗？就是在《甜心的爱心冒险》里出现的那个\sinv[1]英雄\sinv[0]？！\!我都以为你是真的拒绝了甜心！\!你的演技真是太厉害了！
+
+message_114:
+  text: \n<树苗鼹鼠>《甜心的爱心冒险》完结了……\!我的人生也完结了……
+
+message_120:
+  text: 一个逼真到让人不舒服的甜心娃娃。
+
+#SKELETON
+
+message_121:
+  text: 它已经没命了。
+
+message_122:
+  text: 各种致命的武器……\!<br>其中一件武器不见了。
+
+
+message_130:
+  text: 哟，吉姆，好久不见了啊兄弟！<br>\!你周末过得怎么样？\n<树苗鼹鼠>
+
+message_131:
+  text: 你好呀，玲达！我真感觉自己已经好久好久没在这附近碰见你了！\!<br>你家里的老头子还好吗？\!我真的很想他。\n<树苗鼹鼠>
+
+message_132:
+  text: 嘿，萨尔！你瘦下来了耶！真是太好了！\n<树苗鼹鼠>
+
+message_133:
+  text: 杰弗里！我的老朋友！\!我们真的好久不见了！\!<br>我们得找个时间好好聊聊。\n<树苗鼹鼠>
+
+
+#SPROUT CROWD
+
+message_200:
+  text: \spr这个座位是我拿手上的所有\c[3]豆腐\c[0]换来的！
+
+message_201:
+  text: \spr这个座位是我拿攒着读大学的钱换来的！
+
+message_202:
+  text: \spr这个座位是我拿我的房子换来的！
+
+message_203:
+  text: \spr这个座位是我出卖了灵魂换来的！
+
+#REST OF CROWD
+
+message_204:
+  text: \spr\sinv[1]甜心啊……甜心……<br>我眼里只有她一个人！\sinv[0]
+
+message_205:
+  text: \spr甜心太完美了！\!她从来不犯错！
+
+message_206:
+  text: \spr我对甜心的爱永无止境！
+
+message_207:
+  text: \spr甜心……\!她简直就是行走在人间的女神……<br>\!能遇见她，我们可真有福气！
+
+#UNIQUE SPROUT CROWD
+
+message_208:
+  text: \spr演出还没开始，我就已经抖个不停了！\!\quake[1]<br>我为什么会抖个不停呢？！\quake[0]
+
+message_209:
+  text: \spr“特”是“特别美丽”的“特”，\!“一”是……\!<br>“一块豆腐”的“一”……\!嗯……\!很好吃的\c[3]豆腐\c[0]……\!<br>“安”是“安安静静”的“安”……
+
+message_210:
+  text: \spr“希”是“希望满满”的“希”，\!“英”是“英俊潇洒”的“英”，\!<br>“最”是“最棒”的“最”，\!“棒”就是……\!<br>“最棒”的“棒”啦！不然还能是哪个“棒”啊！
+
+message_211:
+  text: \spr\}耶！特一安——甜！希英——心！甜心最棒！
+
+message_212:
+  text: \spr我听说这里以前是个图书馆……\!<br>但是甜心直接在上面搭了个舞台……\!<br>不过也是，有甜心在，谁还想看书啊？！
+
+message_213:
+  text: \spr不管叫什么，反正西红柿吃起来都一样多汁。
+
+message_214:
+  text: \spr我是来这里享受的！
+
+message_215:
+  text: \spr我以前明明是甜心的反串黑……\!<br>但现在我却跑到这里来了……\!我究竟是怎么了？
+
+message_216:
+  text: \spr我一开始还不懂为什么大家对甜心这么着迷，\!<br>不过我现在多少能够理解了……
+
+message_217:
+  text: \spr我是跟家里人一起来的，但是我们在路上走散了……\!可能我再也见不到他们了。
+
+message_218:
+  text: \spr听说甜心其实是一个\c[3]甜甜圈\c[0]……\!<br>不知道这个传闻是不是真的……
+
+#Elevator
+message_220:
+  text: 嗯，气氛有点尴尬。
+
+
+#Doors
+message_225:
+  text: \n<？？？>房间里有鼹鼠！
+
+message_226:
+  text: \n<？？？>我忙着呢，别来打扰我！
+
+message_227:
+  text: \n<？？？>人类止步！
+
+message_228:
+  text: \n<？？？>这是树苗鼹鼠专用房间！
+
+message_250:
+  text: \spr随身带着\c[3]豆腐\c[0]又没害处。\!我一直都带着\c[3]豆腐\c[0]，它陪我一起度过了各种各样的难关！
+

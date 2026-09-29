@@ -1,0 +1,96 @@
+# =========================================================================================
+# UNTIL NEXT TIME
+# =========================================================================================
+
+#pluto.message_18
+
+message_28:
+  text: >
+    \plu刚刚这一程很不错吧？
+
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: >
+    \her舒适的环境和放松的音乐。<br>我肯定会给五星好评。
+
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: >
+    \kel呼哧……呼哧……\!说的真好听！我的胳膊都酸了。
+
+
+message_31:
+  text: >
+    \plu你知道吗，凯。你刚刚为了保住性命做的真不错。
+
+
+message_32:
+  text: >
+    \plu我能看到你变强大的潜质！\!<br>让我来教你一个\c[1]技能\c[0]，或许能在未来<br>帮到你。
+
+
+message_33:
+  text: >
+    \plu咳咳……\!跟着我说。
+
+
+message_34:
+  text: >
+    \plu\Com[2]\{\Sinv[1]论\c[1]秀肌肉\c[0]，我最拿手！！\}
+
+
+message_35:
+  text: >
+    \plu你试试。
+
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: >
+    \kel\Com[2]\{\Sinv[1]论\c[1]秀肌肉\c[0]，\}我\}最……
+
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: >
+    \kel\Sinv[1]拿手？
+
+
+message_38:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: >
+    \kel\Com[2]\{哈！这是怎么做到的！？\!<br>耶！！我感觉充满了力量！！
+
+
+message_39:
+  text: >
+    \plu\}嗯……还有一些改进的空间。\!但——但是……尽管如此……\{
+
+
+message_40:
+  text: >
+    \plu你的身体中肯定蕴含着力量。<br>记住这节课，好好使用它。
+
+
+message_41:
+  text: >
+    \plu再见了，孩子们。我们下次再见。
+
+
+message_42:
+  text: >
+    凯习得了\c[1]秀肌肉\c[0]！
+
+
+message_43:
+  text: >
+    OMORI 习得了\c[1]观察\c[0]！
+
+

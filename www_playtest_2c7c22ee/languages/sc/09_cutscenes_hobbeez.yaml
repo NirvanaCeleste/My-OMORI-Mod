@@ -1,0 +1,266 @@
+# =========================================================================================
+# Cutscene: Kel at the Door
+# =========================================================================================
+
+#Trigger: Defeating SPACE EX-BOYFRIEND
+
+message_0:
+  text: \who\Sinv[1]你好～～～\!有人吗～～～～～～？\!<br>\n[8]？\!你在家吗？\who\sinv[0]
+
+message_1:
+  text: 你还记得我吗？\!我是你的老朋友，凯！\who
+
+message_2:
+  text: 是这样的，我……\!呃……\!看到你家门口“房屋待出售”的牌子……\!<br>然后……\!怎么说呢……\!我从妈妈那里听说，你很快就要搬走了。\kel
+
+message_3:
+  text: 所以我就在想……\!你走之前会不会想出来玩一会儿……之类的……\!<br>就，一起重温下旧日时光嘛，对吧？\kel
+
+message_4:
+  text: …… …… ……\! <br>\sinv[1]你好～～～？\! \n[8]？\!你在吗？\kel
+
+#Switch to PLAYER'S LIVING ROOM REVERSE (map780)
+#[OPEN THE DOOR / DO NOTHING]
+
+# =========================================================================================
+# Cutscene: First Day with Kel
+# =========================================================================================
+
+#Trigger: Choose [OPEN THE DOOR or DO NOTHING]
+
+message_5:
+  text: 你确定吗？\!<br>你无法撤销这一决定。
+
+#YES/NO
+
+message_6:
+  text: 你真的确定吗？
+
+#YES/NO
+
+#Trigger: Choose [OPEN THE DOOR]
+#OMORI opens the door.
+#OMORI walks out
+#Screen flashes white
+#Kel intro animation
+
+#Switch to FARAWAY TOWN - PLAYER'S STREET
+#PLAYER is standing on his porch.
+
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \Com[2]哇，你居然真的应门了！\kel
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 呃……\!我、我的意思是……\kel
+
+#KEL puts his hand behind his head.
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 好吧，我就老实跟你交代了吧，\n[8]。\!<br>我没想到你真的会走出家门，所以我完全没有安排之后的行程。\kel
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: ……\kel
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 哦，我想到了！我们去\c[11]蜂玩堂\c[0]吧！\!<br>就是\c[11]遥远广场\c[0]的那个模型玩具店。\kel
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 你还记得怎么去吧？\!<br>我们小的时候可是每天都去呢。\kel
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 所以，还在等什么呢？\kel
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \Com[2]\{出发啦！！\}\kel
+
+#Trigger: Choose [DO NOTHING]
+#Switch to original living room map
+#Walk 3 steps any direction
+
+message_19:
+  text: 噢……\!这样啊……好的，我理解了。\!<br>……\!嗯，我也算是努力了一把了……\kel
+
+
+# =========================================================================================
+# Cutscene: Scooter Gang
+# =========================================================================================
+
+#Trigger: Enter proximity in Crossroads
+
+
+message_30:
+  text: \{\{\Com[2]别挡路，呆子们！！\who
+
+#The Scooter Gang passes through.
+
+message_31:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: 呃，是……他们啊。\!<br>希望我们不会再碰上这群家伙了。\kel
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 这些人只会惹是生非，<br>我可不希望他们搞砸我们美好的一天。\kel
+
+
+# =========================================================================================
+# Cutscene: This is Hobbeez
+# =========================================================================================
+
+#Trigger: Enter Hobby Shop
+
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 好啦……\!我们到了，\c[11]蜂玩堂\c[0]！\kel
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 你上次来这里已经是很久以前了吧……\!但这里其实也没有多大改变！\kel
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 还是以前的那些……\! <br>太空男孩船长的游戏呀、甜心的电影呀、一些\c[13]宠物石头\c[0]之类的……\!<br>要说有什么不同，那就是他们现在都变成古董啦！\kel
+
+#KEL has an idea.
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 话说……\!难得来这里一趟，我得给英雄买份礼物！\!<br>他现在还在大学那边，不过明天就回来了哦。\kel
+
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 他在读医，所以或许我应该给他买点……\!<br>药之类的？\kel
+
+#KEL puts his hand behind his head.
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 当我没说，这主意也太馊了。\kel
+
+message_56:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 你也来帮忙挑选礼物吧，\n[8]。\!<br>我们到处逛逛看看有些什么吧！\kel
+
+# =========================================================================================
+# Cutscene: Buying Hero's Gift
+# =========================================================================================
+
+message_57:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \{\Com[2]等、等等，\n[8]！！\}\kel
+
+message_58:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 我知道你好久没来过我家了，但现在真的不太方便啦……嘿嘿……\!\kel
+
+
+#Trigger: Examine book in Hobby Shop.
+
+message_70:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 这个……\!对对！\!简直完美！\!<br>《老奇普老字号老食谱》！\kel
+
+message_71:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 哇，跟绕口令似的。\kel
+
+message_72:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 这本书呀，我们以前小的时候，英雄就有一本。<br>不过我家的狗赫克托尔把书给咬烂了。\kel
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 他见到这本书的时候一定会很开心……\kel
+
+message_74:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 不过在那之前……\!<br>我们需要回答一个最最重要的问题！\!<br>那就是……\! 这本书多少钱？\kel
+
+message_75:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: ……\kel
+
+message_76:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \Com[2]$20.00？！\!这是在敲诈勒索吧！\kel
+
+message_77:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 可恶！我钱包落在家里了……\!<br>呃……\!你能先帮我垫着吗，\n[8]？\!<br>我会把钱还给你的，我保证。\kel
+
+message_78:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 谢啦，好友！我就知道你靠得住！\kel
+
+message_79:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 喂，店长！我们想买这本烹饪书，麻烦结个账！\kel
+
+message_80:
+  text: 凯！最近过得怎么样啊，伙计？\!<br>上次见到你已经是挺久以前了吧？\n<店长>
+
+#Pedro hair flip
+
+message_81:
+  text: 啊，这不是《老奇普老字号老食谱》嘛！\!<br>还挺有品位的你们！\n<店长>
+
+message_82:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 是啊，我哥他一直都跟着这个食谱做吃的！\!<br>我最喜欢他做的曲奇饼了。\kel
+
+message_83:
+  text: 老奇普系列丛书居然还有别的粉丝，可真是稀奇啊。\!<br>一共 $20.00，谢谢！\n<店长>
+
+#Currency noise
+message_84:
+  text: 感谢惠顾，先生们！\!祝你们愉快！\n<店长>
+
+message_85:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 帮大忙啦，\n[8]！我敢说英雄绝对喜欢这个的！\kel
+
+message_100:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel评级是 M 级限制级吗？\!对英雄来说太暴力了啦！\!他肯定不会喜欢这样的。
+

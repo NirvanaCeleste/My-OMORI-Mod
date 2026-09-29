@@ -1,0 +1,458 @@
+# =========================================================================================
+# Cutscene: Basil is Still Missing
+# =========================================================================================
+
+#Trigger: Examine bed and choose to sleep.
+#OMORI is on the floor, and gets up. He is surrounded by KEL, AUBREY, and HERO.
+
+#HERO jumps.
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: OMORI！欢迎回来！\aub
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 看吧，英雄？我跟你说了不用担心的。\!<br>OMORI 总是在我们需要他的时候就来了！\kel
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 你没事吧，OMORI？<br>我们好担心你……\aub
+
+#KEL walks towards staircase.
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 既然你来了，我们快出发去找贝瑟尔吧！\!<br>他能指望的只有我们了！\kel
+
+#AUBREY jumps.
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 你别急嘛，凯！<br>我们得先确定 OMORI 没事了才行！\aub
+
+#AUBREY has an idea.
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 又或者……你和英雄两个人可以自己先去啊。\aub
+
+#AUBREY looks at OMORI.
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 来吧，OMORI！我们一起去探险吧……\aub
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 就我们俩！\aub
+
+#KEL jumps.
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 喂，别把我们落下！\kel
+
+#HERO looks at AUBREY.
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 他说的对呀，奥布里。我们得团队合作，共同行动才行。\her
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 你永远无法预料到什么时候会需要别人的帮助。\!<br>正所谓人多力量大嘛！\her
+
+#AUBREY looks away.
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 哼！有 OMORI 和我就够了。\aub
+
+#AUBREY looks at OMORI.
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 你会保护我的，对吧，OMORI？\aub
+
+#KEL looks at AUBREY.
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 噫……恶心……你们开个房得了。\kel
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 好了，奥布里。该说正事儿了。\!<br>我们去找玛里吧，告诉她 OMORI 已经没事了。\!<br>你知道她总是很担心 OMORI……\her
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 好啦好啦……知道啦……\!<br>我只是想开开玩笑嘛……\aub
+
+
+# =========================================================================================
+# Cutscene: Sweetheart's Quest for Hearts
+# =========================================================================================
+
+#Trigger: Walk to Stump Entrance
+#A line of four SPROUT MOLES are walking toward PYREFLY FOREST.
+
+message_30:
+  text: 噢伙计，噢伙计！\!这次演出我已经等了好久啦！\!<br>多么令人愉悦的一天啊！\n<树苗鼹鼠>
+
+message_31:
+  text: 哦是的，哦是的！\!我们光芒万丈的甜心公主终于要亮相了！\n<树苗鼹鼠>
+
+message_32:
+  text: 喔天哪，喔天哪！\!我抑制不住我的兴奋之情了。\!<br>这场演出肯定是有史以来最令人心动的一场演出！\n<树苗鼹鼠>
+
+message_33:
+  text: 啊糟糕，啊糟糕！\!我们必须赶紧了！\!<br>这里可有四张前排\c[4]演出门票\c[0]！\!<br>我们即将迎接生命中最重要的时刻，一定不能迟到！\n<树苗鼹鼠>
+
+message_34:
+  text: 所以……我们应该走哪个方向来着？\n<树苗鼹鼠>
+
+#Before Cutscene block
+message_43:
+  text: \n<树苗鼹鼠>噢伙计，噢伙计！
+
+message_44:
+  text: \n<树苗鼹鼠>哦是的，哦是的！
+
+message_45:
+  text: \n<树苗鼹鼠>喔天哪，喔天哪！
+
+message_46:
+  text: \n<树苗鼹鼠>啊糟糕，啊糟糕！
+
+#KEL is surprised and walks forward.
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 啊！是一群迷路的树苗鼹鼠！\!\Com[2]我们快上！\kel
+
+#[4 LOST SPROUT MOLES BATTLE]
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 嘿，赞啦！这些树苗鼹鼠掉了几张门票！\kel
+
+#AUBREY jumps.
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 我来看看！\!<br>噢，好像是什么演出的前排门票……\aub
+
+message_38:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: 主角是……\!甜心？\aub
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 那不是太空男孩船长的前女友吗？\her
+
+#AUBREY looks at HERO.
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 对耶！看起来好像还是个什么比赛！\aub
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 如果碰巧路过那里，我们就进去看一下吧！\!<br>毕竟我们手上有前排的\c[4]演出门票\c[0]呀！\aub
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 那……\!好吧。\!<br>如果刚好路过就顺便去看看吧。\her
+
+# =========================================================================================
+# Cutscene: Pyreflies Intro
+# =========================================================================================
+
+#Trigger: Enter Pyrefly Forest
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 呃……\!仔细想想……我们还是去别的地方找贝瑟尔吧。\!这地方真是令人毛骨悚然。\kel
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 凯，你可真是个幼稚鬼。\!<br>不过是到处都有蜘蛛网而已嘛！\aub
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \{\quake[1]啊啊啊啊啊！！\!<br>有只蜘蛛在你头上！！\kel\quake[0]
+
+message_63:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \{\Com[2]什、什么？\Com[2]哪里？\Com[2]快把它赶跑！！\aub\quake[0]
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 哈哈！开玩笑啦！<br>你自己胆子也没大到哪里嘛！\kel
+
+message_65:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 哼！一点都不好笑，凯……\aub
+
+# =========================================================================================
+# Cutscene: Sweetheart's Bachelor Contest
+# =========================================================================================
+
+#Trigger: Walk in proximity of SWEETHEART stage.
+
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 哇，快看这个超大的舞台！<br>和我想象中一样棒！\aub
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 我们快去座位上坐好。<br>似乎演出就要开始了！\aub
+
+# =========================================================================================
+# Cutscene: Sweetheart's Bachelor Contest (Cont.)
+# =========================================================================================
+
+#Trigger: Examine Front Row Seats.
+
+#Camera pans to stage.
+#Spot light moves around.
+#SMM walks onto the stage.
+
+message_100:
+  text: 女鼠们，先鼠们……\!<br>欢迎来到……\!<br>《甜心的爱心冒险》特别篇！\smm
+
+#Applause
+
+message_101:
+  text: 演出开始之前，我们想花点时间悼念一位逝者，他的事迹一直深深激励着我们。\!<br>沉痛缅怀我们敬爱的领袖，上古树苗。\smm
+
+#The curtain opens and a portrait of YE OLD SPROUT is shown.
+
+message_102:
+  text: 他真是一位伟大的先辈，我们对他无以为报。\! <br>请大家一同为他默哀片刻。\smm
+
+message_103:
+  text: ……\|……\|……\|……\|……\smm
+
+message_104:
+  text: 愿他在天之灵安息。\smm
+
+#Curtains close.
+
+message_105:
+  text: \sinv[1]\{那么现在……\.演出开始！！\smm
+
+#Curtains open, changing the graphic behind to SWEETHEART'S Show Graphic.
+
+message_106:
+  text: 在上一场《甜心的爱心冒险》里……\!<br>我们挚爱的公主……\!<br>又一次……\!没能和任何一位参赛的单身者坠入爱河！\smm
+
+message_107:
+  text: 而这一次……\!我们新找来了三位魅力十足的参赛者！\!他们之中是否有人能够俘获甜心的芳心呢？\!让我们现在就有请他们出场！\smm
+
+#Contestant #1 comes out and makes a circle around the stage.
+
+message_108:
+  text: 一号参赛者是树苗鼹鼠村土生土长的！\smm
+
+message_109:
+  text: 这位身高 0.9 米的参赛者登场了！\!他最喜欢的食物是\c[3]豆腐\c[0]。还收藏了极其多的塑料火烈鸟……而他的爱好是钻过又窄又长的隧道！\smm
+
+message_110:
+  text: \Com[2]\{掌声欢迎一号参赛者！\smm
+
+#Applause.
+#Contestant #2 comes out and makes a circle around the stage.
+
+message_111:
+  text: 二号参赛者……是的，你没猜错！\!<br>他同样来自树苗鼹鼠村！\smm
+
+message_112:
+  text: 小心了！身高整整 0.94 米的他劲爆登台！\!<br>他的爱好是走路、跑步还有蠕动前进！\smm
+
+message_113:
+  text: 他最喜欢的颜色组合是棕色和绿色，而他周末常在脏衣服里打滚！<br>\!嗯嗯……有那味儿了。\smm
+
+message_114:
+  text: \Com[2]\{掌声欢迎二号参赛者！\smm
+
+#Applause.
+
+message_115:
+  text: 接下来的这位参赛者与前两位迥然不同！\smm
+
+#Contestant #3 comes out and makes a circle around the stage.
+
+message_116:
+  text: 三号参赛者从\c[11]异世界\c[0]远道而来！\smm
+
+message_117:
+  text: 他仿佛是从天而降……而事实也的确如此！\!<br>他和我们一致认为，这正是他的魅力之处。\! <br>请为斯纳里鼓掌！\smm
+
+#Scattered applause.
+
+message_118:
+  text: 现在……\!终于到了万众期待的时刻……\smm
+
+message_119:
+  text: \{\sinv[1]灯光师！！请调暗灯光！！\smm
+
+#Lights dim.
+
+message_120:
+  text: \sinv[1]她的一举一动……\|散发着美丽……\|她的一言一行……\|流露出优雅……\|<br>她确实拥有……\|艳美绝俗的月貌花庞……\smm
+
+message_121:
+  text: 没错！\!你们都知道她是谁！<br>\!她就是一切魅力与美好的化身，而她即将踏上这个舞台！\smm
+
+message_122:
+  text: 请……\!掌声热烈欢迎……<br>\!独一无二的……\!空前绝后的……\!美丽动人的……\smm
+
+message_123:
+  text: \{\{\{\Com[2]甜——\smm
+
+#Lightning strikes and hits SNALEY. He gets fried and turns into ashes, then blows away.
+#There is a blackout.
+
+#Screen goes black and re-centers around party.
+message_124:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 噢不！停电了！\!<br>这可怎么办是好？我好想知道接下来会发生什么呀！\aub
+
+message_125:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 我们就等等看吧……我相信树苗鼹鼠们很快就能恢复供电的！\her
+
+#Camera pans to area side of stage..
+#SPROUT MOLE runs in.
+
+message_126:
+  text: 救命！我们该怎么办呀！\n<树苗鼹鼠>
+
+#SPROUT MOLE runs in from the other side.
+
+message_127:
+  text: 救命！我们也不知道该怎么办呀！\n<树苗鼹鼠>
+
+#SPROUT MOLE jumps.
+
+message_128:
+  text: 救命！\n<树苗鼹鼠>
+
+#Other SPROUT MOLE jumps.
+
+message_129:
+  text: \{救命！！\n<树苗鼹鼠>
+
+#SPROUT MOLE jumps.
+
+message_130:
+  text: \Com[2]\{\{救命！！！\n<树苗鼹鼠>
+
+#Other SPROUT MOLE jumps.
+
+message_131:
+  text: \Com[2]\{\{救命！！！！\n<树苗鼹鼠>
+
+#Both SPROUT MOLE jump.
+
+message_132:
+  text: \quake[1]\{救救\{\Com[2]救救\Com[2]\{命命命命！！\quake[0]\n<树苗鼹鼠>
+
+#Camera pans to party.
+
+message_133:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: ……\!呃……\!保险起见，我们还是到处看看吧。\her
+
+# =========================================================================================
+# Cutscene: Sweetheart's Bachelor Contest (Cont.)
+# =========================================================================================
+
+#     - Upon exiting SW Stage:
+
+message_150:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 哇……看来整个\c[11]树苗鼹鼠村\c[0]都停电了！\her
+
+message_151:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 英雄，我们现在该怎么办？\aub
+
+message_152:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 别担心，奥布里。我的杂工技能这时就派上用场啦！\!这种情况下，我们就应该去找找看……\!有没有备用发电机！\her
+
+#    - There's a room full of treadmills in bottom floor. Map 166
+
+message_153:
+  text: \n<鼹鼠督导员>伙计们，加快步伐！别偷懒啦！
+
+message_154:
+  text: \n<树苗鼹鼠>我们在尽力了，督导员！
+
+message_155:
+  text: \n<树苗鼹鼠>这个速度已经是我们的极限了！
+
+message_156:
+  text: \n<树苗鼹鼠>为什么还是不起作用？！我都头晕了。
+
+message_157:
+  text: \n<树苗鼹鼠>跑就对了，鼹鼠们！\!有志者事竟成！
+
+message_158:
+  text: 这条电线没有插进插座。\!要把它插上吗？
+
+#YES/NO
+
+message_159:
+  text: \n<鼹鼠督导员>\Com[2]我没说错吧，鼹鼠们？天道酬勤！<br>\!继续给我跑！
+
+message_160:
+  text: \n<树苗鼹鼠>呼……呼……呼……呼……
+
+message_161:
+  text: \n<鼹鼠督导员>再快点，伙计们！\!我们必须超越自我，才能开创美好的明天！
+
+message_162:
+  text: 一个巨大的、快乐的插座。
+

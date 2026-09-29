@@ -1,0 +1,157 @@
+# =========================================================================================
+# Sidequest: Seashells
+# =========================================================================================
+
+#intro
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel嘿，邻居！还好吗？
+
+message_1:
+  text: \n<蓝发女孩>嘿，凯！\!噢，跟你在一起的是谁？
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel我把哥哥还有朋友带来啦！
+
+message_33:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel这位是奥布里！
+
+message_34:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel这是我哥哥英雄！
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel这位是我朋友 \n[8]！
+
+message_2:
+  text: \n<蓝发女孩>噢，等一下！我认得你！\!你是 \n[8]，对不对？\!<br>不好意思，有段时间没见了。\!我记得我们好像只见过几次面……
+
+message_3:
+  text: \n<蓝发女孩>我家一直住在这里，不过我去寄宿学校上了几年学，大概三年前才回到了这里，我应该没记错？
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel嘿，\n[8]！克里斯住在我家隔壁，她超酷的哦！<br>\!她是学校里游泳最快的人呢！
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel\sinv[1]人们都说她在水里头就像是美人鱼……\!也像是鲨鱼……\!甚至像是鱼雷！\sinv[0]
+
+message_6:
+  text: \n<蓝发女孩>哎呀，凯……你可真会夸人，哈哈……
+
+message_7:
+  text: \n<蓝发女孩>你今年不是想挑战加入篮球后备队吗？<br>\!我觉得那名额非你莫属啦……嘿嘿……
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel嗯，我会努力的！\!我一有机会就在公园跟陌生人打球！<br>\!我觉得自己进步了，但是也没有很显著……\!哈……
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 15     #insert number here
+  text: \kel要是我练球能有你练游泳那么努力，我应该更有机会成功啦……
+
+message_10:
+  text: \n<蓝发女孩>噢，我也没那么勤奋啦……\!对我来说，游泳更像是一种消遣！\!而且……\!虽然我也喜欢在游泳池里游泳，但我更喜欢在大海里游泳！
+
+message_11:
+  text: \n<蓝发女孩>我喜欢关于大海的一切……\!沙滩……\! <br>浪涛声……\!甚至包括海草的气味……\!<br>啊……\!嘿嘿……\!不好意思，我可能显得有点着魔了。
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel没关系的！\! <br>有热爱的东西是好事，不是吗？
+
+message_13:
+  text: \n<蓝发女孩>嘿嘿……\!我想是吧……\!我去的寄宿学校是在一座岛上，<br>我非常享受那段时光，也许这才是一切的开端吧！
+
+message_14:
+  text: \n<蓝发女孩>大海会让我记起自己在那里交到的朋友……\!<br>我希望自己未来还有机会再跟他们见面。
+
+message_15:
+  text: \n<蓝发女孩>但……\!就目前来说，我只能收集\c[4]海贝\c[0]之类的东西啦。
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel其实……你说的事情提醒了我一点，嗯……\!<br>\n[8] 很快就要从这里搬走了！
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 13     #insert number here
+  text: \kel也许你可以给他些建议，教他在搬去新地方的时候该如何适应！
+
+message_18:
+  text: \n<蓝发女孩>噢，\n[8] 要搬走了？\!嗯……\!是这样的，刚开始的时候，与我的朋友们分开是最让我难受的……\!但生活难免总会有改变嘛！
+
+message_19:
+  text: \n<蓝发女孩>与朋友的回忆才是我们应该珍惜的东西。
+
+message_20:
+  text: \n<蓝发女孩>你猜怎么着……\!我决定了。<br>\!要是你们发现了\c[4]海贝\c[0]，能不能拿来给我？
+
+message_21:
+  text: \n<蓝发女孩>虽然在这附近不太容易找到，但我保证不会让你们失望的！
+
+#Talk to Cris with SEASHELLS
+
+message_22:
+  text: \n<蓝发女孩>哦，嘿！你找到了\c[4]海贝\c[0]诶！
+
+message_23:
+  text: 你把\c[4]海贝\c[0]给了蓝发女孩。
+
+message_24:
+  text: \n<蓝发女孩>哇，这个好可爱……\!嘿嘿……谢谢！
+#Talk to cris after collecting some seashells (before leaving room)
+
+
+message_25:
+  text: 蓝发女孩手中在摆弄着什么。
+
+message_26:
+  text: \n<蓝发女孩>\com[2]嘿！不许偷看！
+
+#Talk to Cris after collecting all SEASHELLS
+
+message_27:
+  text: \n<蓝发女孩>\com[2]然后……好了！\!终于做完了！
+
+message_28:
+  text: \n<蓝发女孩>谢谢你为我收集了那么多可爱的\c[4]海贝\c[0]！\!<br>来，我给你做了这个。
+
+message_29:
+  text: \n<蓝发女孩>我要离开岛上的寄宿学校的时候，我的朋友也给我做过一个……\!<br>所以我想让别人也体验一下这种心情！
+
+message_30:
+  text: 你获得了\c[13]海贝项链\c[0]。
+
+message_31:
+  text: \n<蓝发女孩>希望你看到这个，就能想起你在这个镇子上的日子！\!<br>祝你好运！相信你会顺顺利利的！
+
+message_107:
+  text: \n<蓝发女孩>希望你看到\c[13]海贝项链\c[0]，就能想起你在这个镇子上的日子！<br>\!祝你好运！相信你会顺顺利利的！
+
+message_100:
+  text: 你找到了\c[4]海贝\c[0]！
+
+
+message_105:
+  text: \n<蓝发女孩>凯和\n[8]，你们好呀！<br>\!要是你们发现了\c[4]海贝\c[0]，能不能拿来给我？
+
+message_106:
+  text: \n<蓝发女孩>虽然在这附近不太容易找到，但我保证不会让你们失望的！
+

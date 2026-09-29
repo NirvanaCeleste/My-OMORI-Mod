@@ -1,0 +1,585 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============LAST RESORT / UNDERWATER HIGHWAY / ABYSS========================
+
+
+                        #====NIGHT 3====
+
+#ABBI
+#Location:Abyss
+#Abyss (Boss) - Tentacle Quest
+#Check sidequest_dreamworld_tentacle
+
+#DEALER JASH
+#Location: LAST RESORT
+#SHOP QUEST yaml
+
+#PINKBEARD
+#Location: Last Resort
+
+#ADD ARG!!!!!!!
+message_0:
+  text: \n<粉胡子>这破地方根本就没有他们说的那么好！\!<br>\Com[2]把我的蚌币还来啊，听见没有？！
+
+#FISHBOY
+#Location: Last Resort
+message_1:
+  text: \n<小渔夫>我喜欢把鱼抓回来养着，\!<br>不仅可以打发时间，还能有所收获。
+
+
+#GOYLE THE CRAB
+#Location: Last Resort
+#Faces up, faces down when talked to
+message_3:
+  text: \n<螃蟹高尔>我长得很吓人！不要看我！
+
+#HITCHHIKER
+#Location: Underwater Highway
+#Check DREAM WORLD EXTRAS BLACKSPACE yaml
+
+#HOT DOG GUY
+#Location: Last Resort
+message_4:
+  text: \n<热狗男>\SINV[1]\c[3]热狗\c[0]啊……\!来点\c[3]热狗\c[0]吧，这里有香喷喷的热狗啊……\SINV[0]
+
+message_5:
+  text: \$\n<热狗男>你想来一根\c[3]热狗\c[0]吗？100 蚌币一根……\!<br>买一根吧……很好吃的哦！\$
+
+message_6:
+  text: 你获得了\c[3]热狗\c[0]。
+
+message_7:
+  text: \n<热狗男>好吧……\!不过我的热狗真的很好吃哦！
+
+message_36:
+  text: \n<热狗男>诶呀，你的蚌币不够……
+
+#LAMB
+#Location: Last Resort
+message_8:
+  text: \n<小羊>他们答应给我们免费开一间房，还说这里是个豪华的度假胜地，能给我们不一样的体验，所以我们就决定来这里度蜜月啦！
+
+message_9:
+  text: \n<小羊>\Com[2]结果呢，豪华个屁呀！\!这地方真是够烂的！\!<br>我都能看得到墙上的油漆在一点点往下掉了啦！
+
+#WOLF
+#Location: Last Resort
+message_10:
+  text: \n<狼人>说实话，我根本就不在乎这些东西。\!<br>喏，外面的儿童游泳池还闹鬼呢，\!<br>但是反正也不用花一分钱，不要白不要……
+
+#ELEANOR
+#Location: MUSTARD SUBMERSIBLE
+message_11:
+  text: \n<莎蒂>你好，我叫莎蒂……\!这家小餐馆是我跟我的姐妹们一起开的……\!但是最近我们手头有点紧，所以我其他姐妹就跑去\c[11]最后度假村\c[0]打工了。
+
+message_12:
+  text: \n<莎蒂>现在店里只剩下我和艾利诺了……
+
+message_13:
+  text: \n<莎蒂>\sinv[1]唉……\sinv[0]\!好希望她们能回来啊。\!<br>只要能再次听到她们的歌声，我什么都愿意做！
+
+#JULIA
+#Location: Last Resort
+message_14:
+  text: \n<朱莉娅>因为他们给我开的薪水很高，所以我才跑来这里打工的。但是我现在连第一份薪水都还没领到诶！
+
+#LUCY
+#Location: Last Resort
+message_15:
+  text: \n<露西>\}我好想\c[11]黄芥末潜艇\c[0]的姐妹啊……
+
+#PAM
+#Location: Last Resort
+message_16:
+  text: \n<帕姆>抱歉，我不能给未成年人提供\c[3]果汁\c[0]哦。
+
+#RITA
+#Location: Last Resort
+message_17:
+  text: \n<丽塔>东边有条高速公路，我和我的姐妹们在那开了一家小餐馆。\!<br>我跟你们说，那里的东西很好吃哦！\!你们应该过去瞧瞧！
+
+#SADIE
+#Location: MUSTARD SUBMERSIBLE
+#Check SHOP DIALOGUE GUIDE. (Mustard Submersible)
+
+#SHARK PICKLE
+#Location: Last Resort
+message_18:
+  text: \n<腌黄瓜鲨鱼>你们想不想了解关于鲨鱼和（或者）腌黄瓜的小知识呢？\!<br>给我一份\c[3]套餐\c[0]，我就会把我知道的告诉你们哦！
+#yes/no (only if combo meal is in inventory)
+
+#yes
+message_19:
+  text: \n<腌黄瓜鲨鱼>哇，谢谢啦！\!<br>那你们是想了解关于鲨鱼，还是腌黄瓜的知识呢？
+
+message_20:
+  text: 鲨鱼
+
+message_21:
+  text: 腌黄瓜
+
+message_22:
+  text: \n<腌黄瓜鲨鱼>好诶！\!你们听好咯……
+
+
+#Shark
+
+message_23:
+  text: \n<腌黄瓜鲨鱼>鲨鱼只能往前游。<br>\!怎么样，是不是很励志呀？\!我觉得好励志哦……
+
+message_100:
+  text: \n<腌黄瓜鲨鱼>鲨鱼有很多排牙齿……\!等吃腌黄瓜的时候，这样的牙齿构造说不定就能派上用场啦！
+
+message_101:
+  text: \n<腌黄瓜鲨鱼>鲨鱼没有骨头！\!我们实际上是由人类的耳朵和鼻子构成的哟。
+
+message_102:
+  text: \n<腌黄瓜鲨鱼>大家都觉得鲨鱼喜欢吃人，其实大多数鲨鱼都对吃人没兴趣……\!不过虎鲨除外哦……\!那些家伙什么都吃……
+
+
+#PICKLES
+message_24:
+  text: \n<腌黄瓜鲨鱼>11 月 14 日是腌黄瓜节。<br>\!每年的这个时候大家都要吃腌黄瓜！别忘了吃哦！
+
+message_104:
+  text: \n<腌黄瓜鲨鱼>腌黄瓜太多了？\!你可以先把它们埋进土里，等过段时间再回来看！\!<br>不过，你要记得自己把它们埋在哪里了……
+
+message_105:
+  text: \n<腌黄瓜鲨鱼>在某些文化里，人们求婚的时候会用到腌黄瓜！\!<br>嗯，我要说的就这些啦！
+
+message_106:
+  text: \n<腌黄瓜鲨鱼>你觉得自己可能会得坏血病？\!那你或许应该吃一根腌黄瓜！
+
+
+
+
+
+#SEACOW
+#Location:Underwater Highway
+message_25:
+  text: \n<海牛>呃……\!哞？
+
+#SEACOW FARMER
+#Location:Underwater Highway- Hunt Squizzards Quest
+#Check Seacow farmer (Hunt Squizzards) yaml
+
+#GATOR GUY
+#Location: Last Resort - Break Room
+message_26:
+  text: \n<鳄鱼男>嘿，我给大家点了披萨！
+
+#GATOR GUY
+#Location: Last Resort - Construction
+message_27:
+  text: \n<鳄鱼男>呼……\!呼……\!我的背好痛啊……\!我年纪大了，干不了这个活了。
+
+#GATOR GUY
+#Location: Last Resort - Break Room
+message_28:
+  text: \n<鳄鱼男>我们的股票在下跌……\!<br>啊那个，我是说股票在涨，在以惊人的速度上涨！
+
+#GATOR GUY
+#Location: Last Resort - Casino
+#GATOR GUY is on his tiny phone.
+message_29:
+  text: \n<鳄鱼男>\}不……\!你认真的吗……？\!哦不，怎么又来了……\!<br>不用担心……\!这不是问题……
+
+#GATOR GUY
+#Location: Last Resort- Bathroom (Looking at Mirror)
+message_30:
+  text: \n<鳄鱼男>嘿兄弟，你还是那么帅……
+
+#GATOR GUY
+#Location: Last Resort Entrance
+#GATOR GUY is on his tiny phone.
+message_31:
+  text: \n<鳄鱼男>\}嗯哼……\!嗯……\!好的……\!是谁……？\!马上照办！
+
+#GATOR GUY
+#Location: Last Resort Entrance
+#GATOR GUY is on his tiny phone.
+message_32:
+  text: \n<鳄鱼男>\}没错……\!没错……\!没错……\!没错……\!收到……\!收到……
+
+#SLIME 1
+#Location:
+#[INCOMPLETE]
+
+#SLIME 2
+#Location:
+#[INCOMPLETE]
+
+#SLIME 3
+#Location:
+#[INCOMPLETE]
+
+#SLIME 4
+#Location:
+#[INCOMPLETE]
+
+#SLIME 5
+#Location:
+#[INCOMPLETE]
+
+                        #====NIGHT 4====
+
+#ABBI
+#Location: Abyss
+#Abyss (Boss) - Tentacle Quest
+#Same as NIGHT 3.
+
+#DEALER ASH
+#Location: Last Resort
+#Same as NIGHT 3.
+
+#PINKBEARD
+#Location: Space Captains House- Bring Boy Home Quest
+#Check DREAM WORLD SIDEQUEST PINKBEARD
+
+#FISHBOY
+#Location: Underwater Highway
+#Same as NIGHT 3.
+
+#GOYLE THE CRAB
+#Location: Underwater Highway
+#Same as NIGHT 3.
+
+#HITCHHIKER
+#Location: Underwater Highway
+#Same as NIGHT 3.
+
+#HOT DOG GUY
+#Location: Underwater Highway
+#Same as NIGHT 3.
+
+#LAMB
+#Location: ORANGE OASIS
+message_33:
+  text: \n<小羊>我们本来是要去\c[11]最后度假村\c[0]度蜜月的……<br>不过那地方不太行，所以我们就坐火车到\c[11]橙子绿洲\c[0]来啦！
+
+message_34:
+  text: \n<小羊>我也不知道我自己在期待些什么……\!这里，呃……\!<br>除了橙色还是橙色。
+
+#WOLF
+#Location: ORANGE OASIS
+message_35:
+  text: \n<狼人>呼……呼……\!这也太热了。\!这附近连个旅馆都没有吗？
+
+#ELEANOR
+#Location: MUSTARD SUBMERSIBLE
+message_80:
+  text: \n<莎蒂>你好，我叫莎蒂！\!这家小餐馆是我跟我的姐妹们一起开的！
+
+message_81:
+  text: \n<莎蒂>艾利诺负责点单和收银！<br>如果您想来一份美味的\c[3]套餐\c[0]，直接跟她说就好！
+
+message_82:
+  text: \n<莎蒂>对了，我的姐妹们就在那边唱歌！\!<br>怎么样，她们的歌声是不是很好听呀？
+
+
+#JULIA
+#Location: Mustard Submersible
+message_85:
+  text: \n<朱莉娅>我离开了\c[11]最后度假村\c[0]，回到我们的小餐馆来啦！\!嘘，不要告诉我的姐妹我一直很想她们哦！\! \SINV[1]呜呼呼！\SINV[0]
+
+#LUCY
+#Location: Mustard Submersible
+message_90:
+  text: \n<露西>\}你好……我终于回来了，真是太好了……\!希望你喜欢这里！
+
+#PAM
+#Location: Mustard Submersible
+message_95:
+  text: \n<帕姆>我从\c[11]最后度假村\c[0]跑回来了，因为我实在是太想莎蒂和艾利诺了……\!不过看起来我是最后一个回来的呀。
+
+message_96:
+  text: \n<帕姆>唉，我猜我现在应该担心一下手头的蚌币了……但是……\!<br>我们大家又聚在一起了，我真的好高兴呀！\!蚌币的事就回头再说吧，我们总有办法熬过去的！
+
+#SADIE
+#Location: Mustard Submersible
+#[Incomplete]
+
+#SHARK PICKLE
+#Location:Underwater Highway
+#Same as NIGHT 3.
+
+#POKER FACE
+#Location: Last Resort
+#POKER FACE: I got a mean poker face...
+
+#SEACOW
+#Location: Underwater Highway
+#Same as NIGHT 3.
+
+#SEACOW FARMER
+#Location: Underwater Highway - Hunt Squizzards Quest
+#Same as NIGHT 3.
+
+#MR. JAWSUM
+#Location: Last Resort
+#Check DREAM WORLD QUEST DIALOGUE.
+#After Cutscene: Feed Humphrey 1
+#Location: N/A
+
+#GATOR GUY
+#Location: Forest Playground
+message_60:
+  text: \n<鳄鱼男>\SINV[1]跳！\!\}我——\{跳！\!\}我——\{跳！\!\}我——\{跳！\SINV[0]
+
+#GATOR GUY
+#Location: Mustard Submersible
+#GATOR GUY is on his tiny phone.
+message_61:
+  text: \n<鳄鱼男>\}嗯哼……\!三份订单……\!嗯哼……\!嗯哼……\!我不知道……\!不过我会问的……\!<br>好，那么您现在是要下四份订单了……
+
+#GATOR GUY
+#Location: Last Resort
+message_62:
+  text: \n<鳄鱼男>老板最近没有以前那么精神了……\!<br>不知道是不是出什么事了……
+#After Cutscene: Feed Humphrey 1
+message_63:
+  text: \n<鳄鱼男>\Com[2]英雄先生，您好！\!\Com[2]祝您今天过得愉快，先生！
+
+#GATOR GUY
+#Location: Last Resort - Break Room Stock Guy
+#Same as DAY 3.
+#After Cutscene: Feed Humphrey 1
+message_64:
+  text: \n<鳄鱼男>英雄刚当上新老板没多久，我们的总收入就成倍成倍地涨！
+
+message_65:
+  text: \n<鳄鱼男>要是继续按照这个速度涨下去……\!说不定我们这个度假村哪天就真的能赚到钱了！
+
+#GATOR GUY
+#After Cutscene: Feed Humphrey 1
+#Location: Last Resort
+message_66:
+  text: \n<鳄鱼男>英雄当老板真的很有一套！<br>在他的指挥下，我们的商业模式优化了，企业效率也上去了！\!<br>哇哦，宝贝，我们在成为顶尖企业的道路上一路狂奔啊！
+
+#GATOR GUY
+#After Cutscene: Feed Humphrey 1
+#Location: Last Resort
+message_67:
+  text: \n<鳄鱼男>老板，你是不是走累了？\!<br>要不要我背你走？
+
+#GATOR GUY
+#After Cutscene: Feed Humphrey 1
+#Location: Last Resort
+message_68:
+  text: \n<鳄鱼男>\}所以你之前在说……\!嗯哼……\!不，你漏了一点……\!但是从目前的经济状况来看，这是不可能的……\!我说的是经济状况，不是紧急状况！
+
+#GATOR GUY
+#Location: Last Resort
+message_69:
+  text: \n<鳄鱼男>老板，你今天怎么样？\!你想要一根免费的\c[5]橡皮筋\c[0]？\!<br>不用担心，\!包我身上了！
+
+message_70:
+  text: \n<鳄鱼男>老板，你还想要一根\c[5]橡皮筋\c[0]对不对？\!<br>给！\!只要你开口，我什么都能给你弄来！
+
+message_71:
+  text: \n<鳄鱼男>老板，你和你的朋友肯定都喜欢\c[5]橡皮筋\c[0]吧……\!<br>没事，\!我会把全世界的\c[5]橡皮筋\c[0]都给你弄来的！小菜一碟！
+
+message_72:
+  text: \n<鳄鱼男>我认出来了！老板！\!你还想要一根\c[5]橡皮筋\c[0]对吧！\!给！\!你帮我们做了这么多事情，不就是想要一根橡皮筋嘛！那肯定能给你弄来啊！
+
+message_73:
+  text: \n<鳄鱼男>老板好！\!我送你的\c[5]橡皮筋\c[0]你还喜欢吗？\!<br>都很不错，对吧？\!要是你还想要的话，我可以再给你弄点来……
+
+#Repeats infinitely:
+message_74:
+  text: \n<鳄鱼男>老板，来！\!再拿一根\c[5]橡皮筋\c[0]吧！\!<br>祝你玩得开心，用得满意！
+
+message_75:
+  text: 你获得了\c[5]橡皮筋\c[0]！
+
+#SLIME 1
+#Location:
+#extras_shop
+
+message_120:
+  text: 你想听听这个音乐蛤蜊在唱什么吗？
+
+message_121:
+  text: 要合上这个音乐蛤蜊吗？
+
+#BIKER gang
+
+message_125:
+  text: \n<都市老滑头>你应该尊重社区里的其他人！
+
+message_126:
+  text: \n<暴走族>要爱自己哦！
+
+message_127:
+  text: \n<头颅破坏者>要善待他人啊！
+
+message_128:
+  text: \n<阿砖>我给慈善机构捐款了！
+
+message_130:
+  text: \n<青蛙>\}\quake[1]呱……\quake[0]\!（正在等待某件事情的发生吗？）
+
+#MUSCLE Sign
+
+#OMORI
+message_150:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kelOMORI，你看起来好帅哦！
+
+message_151:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub哇！是猛男！好帅！
+
+message_152:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \herOMORI，你最近是在健身吗？
+
+#AUBREY
+message_153:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\sinv[1]哇哦，奥布里……你好迷人呀……
+
+message_154:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her先生，你需要什么服务吗？\! 想喝杯\c[3]果汁\c[0]？\!来一次背部\c[1]按摩\c[0]？\!还是来点油炸面包丁呢？
+
+message_155:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub哇哦！\!我还挺喜欢这样的！
+
+#KEL
+message_156:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel这就是未来的我！\!我会长很～多肌肉，壮得都快走不动道啦！
+
+message_158:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我来摆个 pose 瞧瞧！嘿——呀！\!<br>所有的女孩子都会爱死我的，你们等着瞧吧。
+
+message_159:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub才不会呢。
+
+#HERO
+message_160:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: 各位女士们，大家稍安勿躁……\!<br>我就在这儿，你们每个人都有机会跟我说上话。\her
+
+message_161:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\sinv[1]呃啊啊啊！\sinv[0]英雄，你再这样的话，\!我就要告诉玛里了！
+
+message_162:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her抱、抱歉……
+
+#phone
+
+message_170:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\com[2]\{你好？我是凯！
+
+message_171:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: \kel\{\com[2]\{客房服务呢？<br>\{\com[2]\{怎么还没来？
+
+message_172:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\{\com[2]\{已经过了 45 分钟了诶！
+
+message_174:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel\}……\!嗯……\!嗯哼……\!嗯哼……\!哦，这……\!对、对不起，\!都、都是我的错。\!再见。
+
+message_175:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel……
+
+message_176:
+  text: \n<树苗鼹鼠>你好，请问是谁？
+
+message_177:
+  text: \n<树苗鼹鼠>抱歉，我想你是打错了。
+
+message_178:
+  text: \n<树苗鼹鼠>\com[2]小孩，你觉得这样很好玩吗？！
+
+message_179:
+  text: \n<树苗鼹鼠>我妈妈跟我说，让我要小心你这种人！
+
+message_180:
+  text: \n<鼻子>\}鼻子飞飞！\!\quake[1]哔……
+
+#HERO BOSS
+message_200:
+  text: 老板，你今天的发型好帅！再见！\n<鳄鱼男>
+
+message_201:
+  text: 嘿，老板，你身上那套衣服挺帅的！\n<鳄鱼男>
+
+#POTHOLE GUYS
+message_220:
+  text: \n<鳄鱼男>往前走，往前走……这没什么好看的。
+
+message_221:
+  text: \n<鳄鱼男>每天都有新的坑要挖……\!希望我能有加班费。
+
+message_233:
+  text: \n<鳄鱼男>我一直都在努力填坑……\!但是坑怎么填不完啊！老是又冒出来！
+
+#HERO BOSS
+message_222:
+  text: \n<鳄鱼男>老板，你今天怎么样？\!希望你不会因为工作搞得很累。
+
+message_223:
+  text: \n<鳄鱼男>老板，你这是专门跑过来看我们有没有好好干活的吗？\!哇，这才叫真正的领导嘛！
+
+message_234:
+  text: \n<鳄鱼男>怎么了，老板？\!哦对了，非常感谢你接手整个最后度假村！\!听说你让公司起死回生了啊！
+
+message_224:
+  text: \n<鳄鱼男>呃……我过来的时候碰到了妈妈，她一路上都在我耳边唠叨……\!<br>说什么“你在屋子里还戴墨镜，小心把眼睛搞瞎！”之类的。
+
+message_225:
+  text: \n<鳄鱼男>我摘不了啊！\!墨镜已经成了我身体的一部分了！
+
+message_226:
+  text: \n<鳄鱼男>啊……妈妈又来了？\!她肯定是一个人在家里待着太无聊了。
+
+message_227:
+  text: \n<鳄鱼男>什么？妈妈来了？\!那我得过去跟她打个招呼才行！
+
+message_228:
+  text: \n<鳄鱼男>耶！妈妈来咯！
+
+message_229:
+  text: \n<鳄鱼男>呃……\!妈妈。
+
+message_230:
+  text: \n<鳄鱼男>在屋子里戴墨镜明明很酷啊。
+
+message_231:
+  text: \n<鳄鱼男>我们楼都还没建完，游客就已经来了。\!<br>唉，不知道这算是好事还是坏事……
+
+message_232:
+  text: \n<鳄鱼男>修东西真有意思！
+

@@ -1,0 +1,1332 @@
+#DREAM WORLD MAP EXPANSION DETAIL:
+
+##------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#PARTY STAT BOOSTS
+
+##------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Omori ALL Buff --- Branch Coral:
+#Map: Deeper Well Whirlpool
+#New Assets: Omori sinking into a pool
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Kel HEART Buff --- Pluto in the Wall:
+#Talk to Pluto in Construction alcove after defeating him in Mr. Jawsum's Room.
+
+message_0:
+  text: \plu啊。真是出乎意料啊，孩子们。\!<br>你们又要来挑战我吗？
+
+#*Pluto laughs*
+
+message_1:
+  text: \plu\Com[2]\sinv[2]\{嘎哈\{哈哈\{哈哈哈哈！！\}
+
+
+message_2:
+  text: \plu我非常能理解你们……\!<br>刚才的一番激烈酣战实在后劲太足了，我甚至现在都没缓过神来。<br>\!这么宝贵的回忆我会珍藏一辈子的！
+
+
+message_3:
+  text: \plu虽说你们几个已经很厉害了，<br>但正如世间万物总会有进步的空间，你们还可以变得更加强大。
+
+
+#*Pluto walks in front of KEL*
+
+message_4:
+  text: \plu\Com[2]向我\c[1]秀肌肉\c[0]吧，凯！<br>让我看看你学得怎么样了！
+
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel收到，师傅！冥王星师傅！
+
+
+#*Kel flexes*
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\{\com[2]嚯——哈！！\}
+
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel凯准备完毕！要让我揍谁？！
+
+
+#*Wait*
+
+message_8:
+  text: \plu……
+
+
+#*Pluto faces away*
+
+message_9:
+  text: \plu不，恐怕你误会了。
+
+
+#*Pluto turns to KEL and walks forward 1 step*
+
+message_10:
+  text: \plu在这场挑战里，我不会测试你的力量。\!<br>我要测试的……\!是你的忍耐力。
+
+
+#*PLUTO flexes*
+
+message_11:
+  text: \plu做好准备吧，凯！我可不会手下留情。
+
+
+#*Screen turns black*
+#*Wait*
+
+message_12:
+  text: 凯永久获得了 50 心心。<br>\!……并且失去了一颗牙。
+
+
+#*Wait*
+#*Screen returns*
+
+#Talk to PLUTO:
+message_13:
+  text: \plu\Com[2]\sinv[2]\{嘎哈\{哈哈\{哈哈哈哈！！\}
+
+
+#*Pluto laughs*
+#*Pluto launches off*
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Aubrey JUICE Buff --- Smashing \n<VAN>
+#Talk to BERLY after completing Lost Ball Quest after DAY 1 - SW
+#Note: This is not available during Deep Well night, but should be available again in epilogue.
+
+#*Party needs to be placed to the left bottom side.*
+#*Maybe playing cards or something.*
+
+#*VAN is talking to HAPPY, BROWS, and BANGS about something.*
+
+#BERLY looks around and is frustrated because no one is paying attention to her.
+message_20:
+  text: \n<波利>嘟囔……嘟囔……
+
+#BERLY hops.
+message_21:
+  text: \n<波利>嘿，阿万！你过来一下！
+
+
+#*HAPPY hops and then HAPPY, BROWS, and BANGS walk off---screen.*
+
+message_22:
+  text: \n<阿万>嗯？你要干啥啊，波利？
+
+
+message_23:
+  text: \n<波利>对，就站在那儿，然后朝向那边。
+
+
+message_24:
+  text: \n<阿万>好好好。
+
+#*VAN turns right from AUBREY*
+
+message_25:
+  text: \n<波利>奥布里，过来！
+
+
+#*AUBREY gets up.*
+message_26:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub你这次又要干嘛，波利？
+
+
+message_27:
+  text: \n<波利>奥布里！\! \sinv[1]奥布里，奥布里，奥布里……\sinv[0]\!<br>别这样说嘛。\!我们可是好朋友呀！
+
+
+message_28:
+  text: \n<波利>好了，你看到那个大块头了吗？
+
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub我知道阿万是谁……
+
+
+message_30:
+  text: \n<波利>好极了！\!现在去把他狠狠地揍一顿！
+
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]什——什么？！为什么呀？！\!如果他受伤了怎么办？
+
+
+message_32:
+  text: \n<波利>你怎么问题这么多！你就不能不经大脑思考直接上吗？！
+
+
+#*BERLY jumps.*
+message_33:
+  text: \n<波利>上啊！揍他！
+
+
+#Talk to VAN as not---\aub
+#*BERLY jumps.*
+message_34:
+  text: \n<波利>喂！我是问奥布里！不是问你！
+
+
+#Talk to VAN as \aub
+#*AUBREY smashes VAN.*
+#*VAN does not move.*
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub行了。我做完了。然后呢？
+
+
+message_36:
+  text: \n<波利>再来一次！打到我喊停为止！
+
+
+#*AUBREY smashes VAN.*
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub好吧……\!可是……\!这到底是为了什么？
+
+
+message_38:
+  text: \n<波利>不准问问题！你只管打就行了！
+
+
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+
+message_39:
+  text: \n<波利>嗯！初见成效了！\!<br>加油，你能做到的！\!坚持就是胜利！
+
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \aub呼……呼……\!<br>我到底还要打多久啊！？
+
+
+message_41:
+  text: \n<波利>打到我说停为止！不准慢下来！
+
+
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub呼……呼……\!救命！我的胳膊都要断了！
+
+
+message_43:
+  text: \n<波利>继续努力！快要成功了！
+
+
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+#*AUBREY smashes VAN.*
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub我觉得……\!我快要晕过去了。
+
+
+message_45:
+  text: \n<波利>拜托……\!再打最后一下……
+
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \aub呼……呼……呼……
+
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\sinv[2]\{嘿\{呀呀\{啊啊啊啊！！！
+
+
+#*AUBREY smashes VAN.*
+
+message_48:
+  text: 奥布里永久获得了 50 活力！
+
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub呼……\!所以……呼……\!我到底在做什么啊？
+
+
+message_50:
+  text: \n<波利>……
+
+
+#BERLY is frustrated.
+
+message_51:
+  text: \n<波利>嗨呀，其实没什么。我就是有点无聊了。\!<br>不过说实话……\!刚刚那一出也挺无聊的。
+
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\Com[2]\{\quake[1]什么？！\!呼……\!就为了这？！\quake[0]
+
+
+message_53:
+  text: \n<波利>嘿，反正你赚到了不是吗！\!<br>你看我，现在还是无聊得要死！\!嘟囔……嘟囔……
+
+
+message_54:
+  text: \n<波利>来吧，阿万……\!我们来玩绳球吧。
+
+
+#BERLY and VAN walk to the tetherball pole area
+
+message_55:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub呼……\!呼……\!<br>我……\!呼……\!我真是搞不懂波利……
+
+
+
+#---- If you try to leave
+
+message_56:
+  text: \n<波利>嘿，快回来！我还没说你能走呢！
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Hero ATTACK Buff --- \n<MR. SCAREBRO>
+#New Assets: Scarebro and knocked---over Scarebro
+#In CLUB SANDWICH in LAST RESORT
+
+message_70:
+  text: \n<稻草仁兄先生>嘿，兄弟们。\!<br>你们在\c[11]三明治俱乐部\c[0]里玩得还愉快吗？\!<br>至少我挺愉快的……
+
+
+message_71:
+  text: \n<稻草仁兄先生>我的朋友们都告诉我，我看人性格还挺准的。
+
+
+message_72:
+  text: \n<稻草仁兄先生>啊。\!我有头绪了……\!那边的，一身条纹的那个！\!<br>你知道你的问题在哪吗，兄弟？\!<br>你对别人太好了。
+
+
+message_73:
+  text: \n<稻草仁兄先生>我可以辱骂你，辱骂你的朋友们，甚至辱骂令堂，<br>但你仍然不会动我一根手指。\!我说得没错吧，兄弟？
+
+
+message_74:
+  text: \n<稻草仁兄先生>你现在要怎么做呢，兄弟？就这么忍气吞声吗？\!<br>不……你不会这样放过我的，兄弟。
+
+
+message_75:
+  text: \n<稻草仁兄先生>狠狠揍我一拳吧，兄弟。\!<br>来啊。打我，兄弟。
+
+
+#Talk to SCAREBRO as not---\n<HERO>
+message_76:
+  text: \n<稻草仁兄先生>嘿，我不是叫你，兄弟。我是叫那个一身条纹的兄弟！
+
+
+#Talk to SCAREBRO as \n<HERO>
+message_77:
+  text: 你想给稻草仁兄先生一拳吗？
+
+#[YES/NO]
+
+#---
+#[YES]
+#*HERO softly rams into SCAREBRO*
+message_78:
+  text: \n<稻草仁兄先生>刚才那算啥啊，兄弟？\!<br>你别告诉我你手下留情了啊？
+
+
+message_79:
+  text: \n<稻草仁兄先生>真正的兄弟可不会就这样算了。<br>\!再来一次。你能做到的，兄弟。
+
+
+message_80:
+  text: 你想给稻草仁兄先生一拳吗？
+
+#[YES/NO]
+
+#*HERO rams into SCAREBRO*
+#*SCAREBRO falls over*
+
+message_81:
+  text: 英雄永久获得了 20 攻击。
+
+
+message_82:
+  text: \n<稻草仁兄先生>兄弟……
+
+
+message_83:
+  text: \n<稻草仁兄先生>没错，兄弟。\!正是这样……
+
+
+#Talk to \n<MR. SCAREBRO>
+
+message_84:
+  text: \n<稻草仁兄先生>没错，兄弟。\!正是这样……
+
+
+#---
+
+#[NO]
+message_85:
+  text: \n<稻草仁兄先生>来啊，兄弟！\!狠狠给我来一拳！
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Omori Mushrooms --- Mushroom Man:
+#New Assets: Mushroom Man Turnaround, Mushroom Open, Mushroom Closed
+
+#Mushroom Man can be found by eating the mushrooms in the water in SW Library.
+
+message_100:
+  text: 看上去很可疑的蘑菇。\!<br>你想尝一口吗？
+
+#Bulbs before learning skill:
+
+message_101:
+  text: 一朵硬花苞。\!你听见里面有什么东西在挣扎。
+
+#Intro:
+
+#*MUSHROOM MAN pops out of crater when you go close to it*
+
+message_102:
+  text: \n<老致幻菇>你！\!圆头圆脑的那个！\!<br>你的眼神……告诉我你渴望学习！
+
+message_103:
+  text: \n<老致幻菇>棒极了！\!棒极了，棒极了，棒极了……\!<br>让我来教你吧。\!来。
+
+#*MUSHROOM MAN walks to purple bud behind him*
+
+#Talk to MUSHROOM MAN.
+message_104:
+  text: \n<老致幻菇>嗯……你的眼神中没有圆头圆脑眼中的那种火花！\!我只教他一个！
+
+message_105:
+  text: \n<老致幻菇>你来了！\!棒极了！\!<br>现在仔细观察。\!这个硬花苞里面有和我同族的生物。<br>不过，我们自己无法从中出来。
+
+message_106:
+  text: \n<老致幻菇>只有掌握一种格外精妙的切割技巧，<br>才能把我们从永远含苞待放的命运中解放出来。
+
+message_107:
+  text: \n<老致幻菇>然而，要完全掌握这门技术，必须年久日深地修行！\!<br>如果你决意要学会，那你要花的时间不可估量！
+
+message_108:
+  text: \n<老致幻菇>但我相信，只要时间足够，你就一定能做到！\!<br>那么，你是否要接受挑战，成为我的弟子？
+#[YES/NO]
+
+#[YES]
+#*Screen turns black*
+
+message_109:
+  text: OMORI 训练了很长一段时间。
+
+#*Screen returns*
+
+message_110:
+  text: \n<老致幻菇师傅>棒极了！棒极了，棒极了，棒极了……\!<br>你成长了不少啊！\!不像……我身后的这个花苞……<br><br>那么，用你炉火纯青的技术切开它吧！
+
+#Talk to MASTER
+
+message_111:
+  text: \n<老致幻菇>棒极了！棒极了，棒极了，棒极了……
+
+
+message_112:
+  text: \n<年轻致幻菇>我终于自由啦！\!棒极了，棒极了，棒极了……
+
+message_113:
+  text: \n<年轻致幻菇>请收下这个！我给你的礼物！
+
+message_114:
+  text: 你获得了\c[5]蒲公英\c[0]！
+
+message_115:
+  text: \n<年轻致幻菇>棒极了！棒极了，棒极了，棒极了……
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Aubrey Loot --- \n<LARGE FACE>
+#Somewhere in excavation
+#New Assets: Face Guy Turnaround, Wall Face, Cave Hole
+
+#Faces before learning skill: A peculiar face is indented into the wall.\!<br>You are not sure what this means.
+
+#Intro:
+
+message_119:
+  text: 墙上有一处奇特的人脸凹痕。\!<br>你不太确定它代表什么。
+
+message_120:
+  text: \n<大脸>这些……\!空心墙，我标记。\!<br>在里面……\!藏了我最宝贵的东西……\!没错。
+
+message_121:
+  text: \n<大脸>为了记住……我把脸砸了上去……\!轻轻砸。\!<br>砸得太用力，就会碎。
+
+message_122:
+  text: \n<大脸>砸得……\!太用力……\!就会碎。
+
+#After smashing wall next to \n<LARGE FACE>
+
+message_123:
+  text: \n<大脸>我最宝贵的东西……
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Club Sandwich:
+#map439
+#New Assets: Reuben at Counter, Hoagie Turnaround
+
+#You can enter CLUB SANDWICH after getting HERO back from LAST RESORT.
+
+#Last Resort:
+#Scarebro
+#Sprout Mole Mike
+#Gator Guy (Multiple)
+#Earth
+
+#Pyrefly Forest:
+#Pinkbeard
+#Sir Maximus IV
+#Actual Mole
+#Rosa
+
+#Otherworld:
+#Ems
+#Nose
+#Space Pirate (Multiple)
+#Rare Rare Bear
+
+#Club doors before learning skill:
+#*CLUB DOOR slit opens*
+
+message_130:
+  text: \n<？？？>密码是什么？
+
+message_131:
+  text: \n<？？？>……
+message_132:
+  text: \n<？？？>没有密码，不得入内。
+
+#*CLUB DOOR slit closes*
+
+#Intro:
+
+#If HERO is not leader:
+#*CLUB DOOR slit opens*
+
+message_133:
+  text: \n<？？？>密码是什么？
+
+message_134:
+  text: \n<？？？>……
+
+message_135:
+  text: \n<？？？>没有密码，不得入内。
+
+#*CLUB DOOR slit closes*
+
+message_136:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her啊！是这个地方！\!大家想进去吗？\!<br>有一次为了完成鲨赞先生的工作，他把密码告诉了我哦。
+
+message_137:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her我超喜欢这些家伙的！他们可有趣了。
+
+#If HERO is leader:
+message_138:
+  text: \n<？？？>密码是什么？
+
+message_139:
+  text: \n<？？？>……
+
+message_140:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，霍吉！是我，英雄！\!<br>密码是 ☐☐☐☐☐☐☐。
+
+message_141:
+  text: \n<霍吉>英雄，我的好兄弟！欢迎，欢迎！\!<br>门开了，快进来吧！
+
+#---------------
+
+#Talk to REUBEN at 1ST location:
+
+message_150:
+  text: \n<鲁本>我和霍吉是这个酒吧的负责人……\!<br>他是这里的肌肉担当……我也是这里的肌肉担当。
+
+#Talk to REUBEN again.
+
+message_151:
+  text: \n<鲁本>不能给未成年人上\c[3]果汁\c[0]。你懂的，这是规定！\!<br>但欢迎你们留下来享受音乐。
+
+#Talk to REUBEN again.
+
+message_152:
+  text: \n<鲁本>人生总会有烦恼。\!<br>如果需要放松身心，来这儿就对了。\!<br>给，我请你一杯\c[3]葡萄汽水\c[0]！
+
+message_153:
+  text: 你获得了\c[3]葡萄汽水\c[0]！
+
+#Talk to REUBEN at 2ND and 3RD location:
+
+message_154:
+  text: \n<鲁本>不能给未成年人上\c[3]果汁\c[0]。你懂的，这是规定！\!<br>但欢迎你们留下来享受音乐。
+
+#Talk to REUBEN again.
+
+message_155:
+  text: \n<鲁本>人生总会有烦恼。\!<br>如果需要放松身心，来这儿就对了。\!<br>给，我请你一杯\c[3]葡萄汽水\c[0]！
+
+message_156:
+  text: 你获得了\c[3]葡萄汽水\c[0]！
+
+#Talk to REUBEN at 4TH location:
+
+message_157:
+  text: \n<鲁本>我和霍吉是这个酒吧的负责人……\!<br>他是这里的肌肉担当……我也是这里的肌肉担当。
+
+#Talk to REUBEN again.
+message_158:
+  text: \n<鲁本>我和霍吉白手起家，一起创办了这个俱乐部。\!<br>而如今我们的客人遍布世界各地！\!<br>没什么比这种感觉更美妙了。
+
+#Talk to REUBEN again.
+message_159:
+  text: \n<鲁本>当然啦，时不时会有一些千奇百怪的客人，不过正常情况下，<br>我们俱乐部就是个放松的好地方，仅此而已。<br><br>在这里的大部分时间甚至都不像在工作，哈哈！<br>除了脏盘子堆成山的时候……
+
+message_160:
+  text: \n<鲁本>霍吉常说我俩是天生一对。\!<br>他做事有点毛毛躁躁，但他还是挺懂我的，你知道吧？
+
+#Talk to REUBEN again.
+message_161:
+  text: \n<鲁本>人生总会有烦恼。\!<br>如果需要放松身心，来这儿就对了。\!<br>给，我请你一杯\c[3]葡萄汽水\c[0]！
+
+message_162:
+  text: 你获得了\c[3]葡萄汽水\c[0]！
+
+#Talk to HOAGIE at all locations:
+
+message_163:
+  text: \n<霍吉>放轻松，孩子们，你们可以随意一点。<br>英雄的朋友就是我的朋友。
+
+#Talk to HOAGIE after talking to REUBEN at 4TH location (once only):
+
+message_164:
+  text: \n<霍吉>鲁本是不是又在跟人聊我了？\!我都跟他说过别这样了。\!……\!不过，哎……\!无所谓了……\!我就是对那家伙生不起气来。
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#VAST FOREST
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Barking Dog:
+#New Assets: Barking Dog
+#map426
+
+
+#Every time you enter the dog house, there will be a barking noise.
+#There is a 30% chance of seeing the dog in a few random locations around the map (maybe 3-4).
+
+#When you see the dog, you can walk into it. When you do this, it barks and then fades away. When the dog is fading, Player cannot move. There is no dialogue.
+
+#If you see the dog 3 times in a row (i.e. get lucky) and walk into him all three times, on the last time, when he fades away he'll bark 3 times, then give you an item.
+
+message_175:
+  text: 你感觉有什么东西在你手里。
+
+message_176:
+  text: 你获得了\itemget。
+
+#Items you can get from dog:
+#Can
+#Rubber Band
+#Hot Dog
+#Life Jam
+#Cherry Soda
+#Sparkler
+
+#This can be repeated indefinitely. (Rate can be adjusted based on testing. If the rate is too high, maybe after X times, the dog doesn't come back.)
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Budgirls:
+#map426
+#When examining a bud, it opens and makes a noise, then withdraws into its bulb.
+#Sometimes, after it opens, it gives you an item before it withdraws.
+#There is no dialogue.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#PYREFLY FOREST
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Waterfall:
+#map160
+#Examining the waterfall in Pyrefly Forest will allow Omori to teleport to a map behind it. (Club Sandwich Alcove --- Map 433)
+
+#Before overcoming Fear of Drowning, it shows the fear border.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#SPROUT MOLE COLONY
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Whack---A---Sprout---Mole:*Optional
+#Aubrey can whack sprout moles that pop out of the holes in this map.
+#If she whacks all the sprout moles in a certain time period, a watermelon falls from the sky.
+
+#Every time you enter the room, the sprout moles refresh their configuration. Maybe 5 or so instances.
+
+#The prizes are distributed at % chance.
+#50%: TOFU
+#50%: LIFE JAM
+#After you have won LIFE JAM four times, you can only win TOFU.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#SWEETHEART'S CASTLE
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#SW Statue Pose Change:
+#New Assets: SW Statue Poses, SW Statue Change Transition Animation
+
+#When examining any statue in SW Castle, it will change to one of these poses at random.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Fanmail Graveyard:
+#While traveling through the fanmail graveyard, there is some shaking happening that stops the party from moving. SFX should accompany this to make it seem like they're setting up for something upstairs. Maybe you can also hear the sprout moles rehearsing the wedding song for a few seconds.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Pet Jail:
+
+#When examining the gates, random chance of one of these messages:
+
+message_185:
+  text: 被困住的生物看起来很焦躁。
+
+message_186:
+  text: 被困住的生物看起来很悲伤。
+
+message_187:
+  text: 被困住的生物想要自由。
+
+message_188:
+  text: 被困住的生物需要你的帮助。
+
+#Switch:
+message_190:
+  text: 你想释放这些生物吗？
+
+#[YES/NO]
+
+#[YES]
+message_191:
+  text: 你真的确定吗？
+
+#[YES/NO]
+
+#[YES]
+#*The gates go up and the creatures swarm the party*
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Magic Cake Slices:
+
+message_199:
+  text: 一个草莓蛋糕。\!<br>你想要尝一口吗？
+#[YES/NO]
+
+#Library Cake:
+message_200:
+  text: 一个闻起来像甜菜的草莓蛋糕。\!<br>你想要尝一口吗？
+#[YES/NO]
+
+#SW Room Cake:
+message_201:
+  text: 一个闻起来像迷迭香的草莓蛋糕。\!<br>你想要尝一口吗？
+#[YES/NO]
+
+#Servant's Room Cake:
+message_202:
+  text: 一个闻起来像垃圾的草莓蛋糕。\!<br>你想尝一口吗？
+#[YES/NO]
+
+#Ballroom Cake:
+message_203:
+  text: 一个闻起来像大海的草莓蛋糕。\!<br>你想要尝一口吗？
+#[YES/NO]
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#\n<KEEPER OF THE CASTLE>
+#New Assets: Keeper, Keeper Touch
+
+#Enter through the wall. You can just run into it.
+
+#Intro:
+message_204:
+  text: \n<城堡看守者>年轻人啊，你们竟然有勇气和我交谈。\!<br>告诉我，你们在甜心城堡玩得开心吗？
+
+message_205:
+  text: \n<城堡看守者>那个女孩啊。\!她是个复杂的人。\!<br>这处居所的形态会根据一个人最深层的欲望而改变。\!<br>变成一个可以归来的地方。\!一个可以称之为家的地方。
+
+message_206:
+  text: \n<城堡看守者>那个来自沙漠的可怜女孩，甜心，在很久以前来到了这里……\!<br>她跪在地上恳求我，让我把这里变成她的东西。
+
+message_207:
+  text: \n<城堡看守者>我满足了她的渴望。\!<br>我赐予了她富丽堂皇的城堡，任由她驱使的仆人，<br>以及能让她肆意炫耀权力的舞台。
+
+message_208:
+  text: \n<城堡看守者>然而……她仍不满足于此。\!想必这便是诅咒的力量吧。
+
+message_209:
+  text: \n<城堡看守者>不久之后她便会离去，再也不会回来。\!我非常清楚。
+
+message_210:
+  text: \n<城堡看守者>而当我确定她在别处安家落户后，我便会寻找新的主人。
+
+message_211:
+  text: \n<城堡看守者>到那个时候，再回来找我吧。\!你，眼神空洞的那个。\!<br>你的灵魂已被一分为二，但你只能选择一条道路。\!<br>你又会将这里变成什么样子呢？真令人好奇。
+
+#Return in Epilogue after Intro:
+
+message_212:
+  text: \n<城堡看守者>你们竟然有勇气再和我交谈，年轻人。
+
+message_213:
+  text: \n<城堡看守者>时间飞逝。\!<br>甜心已经离开，再也不会回来了。\!我非常清楚。\!<br>而现在的我，是时候寻找一个新的主人了。
+
+message_214:
+  text: \n<城堡看守者>你，眼神空洞的那个。\!你来到了这里。\!<br>你的灵魂已被一分为二，但你只能选择一条道路。\!<br>你又会将这里变成什么样子呢？真令人好奇。
+
+message_215:
+  text: \n<城堡看守者>你想拥有这个权力吗？
+#[YES/NO]
+
+#---
+
+#[YES]
+
+message_230:
+  text: \n<城堡看守者>\c[11]甜心城堡\c[0]将不复存在。\!<br>你确定这是你想要的吗？
+#[YES/NO]
+
+#*Keeper extends tendril to OMORI's head*
+message_231:
+  text: \n<城堡看守者>既然如此，我便将这里的所有权授予你。
+
+#*Screen turns white*
+#Player and party are ported to Sprout Mole Colony outside of SW Stage door, but now the door is replaced with an FA door.
+#Entering door will port Player and party to Boring Room --- map449.
+
+#---
+
+#[NO]
+message_240:
+  text: \n<城堡看守者>你很快就会改变主意的。\!<br>世上所有的灵魂都渴望落叶归根。
+
+#Intro (If you speak to the Keeper for the first time in epilogue):
+
+message_241:
+  text: \n<城堡看守者>年轻人啊，你们竟然有勇气和我交谈。\!<br>告诉我，你们在甜心城堡玩得开心吗？
+
+message_242:
+  text: \n<城堡看守者>那个女孩啊。\!她是个复杂的人。\!<br>这处居所的形态会根据一个人最深层的欲望而改变。\!<br>变成一个可以归来的地方。\!一个可以称之为家的地方。
+
+message_243:
+  text: \n<城堡看守者>那个来自沙漠的可怜女孩，甜心，在很久以前来到了这里……\!<br>她跪在地上恳求我，让我把这里变成她的东西。
+
+message_244:
+  text: \n<城堡看守者>我满足了她的渴望。\!<br>我赐予了她富丽堂皇的城堡，任由她驱使的仆人，<br>以及能让她肆意炫耀权力的舞台。
+
+message_245:
+  text: \n<城堡看守者>然而……她仍不满足于此。\!想必这便是诅咒的力量吧。
+
+message_246:
+  text: \n<城堡看守者>如今，甜心已经离开，再也不会回来了。\!我非常清楚。\!<br>而现在的我，是时候寻找一个新的主人了。
+
+message_247:
+  text: \n<城堡看守者>你，眼神空洞的那个。\!你来到了这里。\!<br>你的灵魂已被一分为二，但你只能选择一条道路。\!<br>你又会将这里变成什么样子呢？真令人好奇。
+
+message_248:
+  text: \n<城堡看守者>你想拥有这个权力吗？
+#[YES/NO]
+
+#---
+
+#[YES]
+
+message_255:
+  text: \n<城堡看守者>甜心城堡将不复存在。\!<br>你确定这是你想要的吗？
+#[YES/NO]
+
+#*Keeper extends tendril to OMORI's head*
+message_256:
+  text: \n<城堡看守者>既然如此，我便将这里的所有权授予你。
+
+#*Screen turns white*
+#Player and party are ported to Sprout Mole Colony outside of SW Stage door, but now the door is replaced with an FA door.
+#Entering door will port Player and party to Boring Room --- map449.
+
+#---
+
+#[NO]
+message_257:
+  text: \n<城堡看守者>你很快就会改变主意的。\!<br>世上所有的灵魂都渴望落叶归根。
+
+#Note: Boring room will have the same flavor text play as the ones in BASIL's memories. (The smell of laundry fills the air, etc.) PLAYER and party can stop moving when the dialogue pops up.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Portal to Heaven or Hell:
+#New Assets: White Shine, Red Shine
+
+#Stand still on vent as Omori for 9 seconds.
+
+#White light shines from the bottom of the vent if Heaven.
+#Red light shines if Hell.
+
+#While walking through Heaven, Something appears.
+#The camera pans to it, then it quickly runs into you and dissipates. Then camera returns to party.
+
+#While walking through Hell, Player appears.
+#The camera pans to Player, then Player stares, then walks away off screen. Then camera returns to party.
+
+#Happens only once.
+#Camera lock on both maps. Only of needed.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Popcorn Girl:
+#New Assets: Popcorn Girl Turnaround
+
+#There's a girl selling popcorn in Sweetheart's Theater Room.
+
+message_270:
+  text: \$\n<爆米花女孩>嗨呀，你想来点爆米花吗？只需要 80 蚌币哦。
+#[YES/NO]
+
+message_271:
+  text: \n<爆米花女孩>耶！拿好！这是你的\c[3]爆米花\c[0]！
+
+message_272:
+  text: \n<爆米花女孩>啊，好吧。没关系的。
+
+message_273:
+  text: 你获得了\c[3]爆米花\c[0]。
+
+message_274:
+  text: \n<爆米花女孩>嘿，这些蚌币可不够买\c[3]爆米花\c[0]。
+
+#Note: I think this is set up as a shop. Ask Ocean how he did it.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#FORGOTTEN PIER
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Ghosts Walking on Water:
+#New Assets: Ghosts Turnarounds
+
+
+#While swimming with MARI through Forgotten Pier, ghosts should be walking along the water every now and then. When you get into proximity of them, they disappear.
+#Maybe add Ghosts in house
+
+#Note: If walking looks funny, try to make them levitate instead.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Ghosts Hiding behind Trees:
+
+#While going through map209, there should be ghosts hiding behind the trees that appear and laugh (like children playing) only when PLAYER isn't looking directly at them. When PLAYER looks away, the children go back to hiding behind the trees and the laughing stops.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#LAST RESORT
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Lost Keycard:
+#New Assets: Keycard (Recolor SGL one)
+
+
+message_280:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel这电梯很酷吧？\!<br>闻起来有香水混合香烟的味道！
+
+#KEL turns to MARI.
+#KEL Exclamation
+
+message_281:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哦，你好呀玛里！
+
+message_282:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar你们两个好呀！
+
+#KEL walks to Elevator.
+
+message_283:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel我看看啊……<br>\!如果没记错的话，奥布里就在第五层。
+
+#*KEL tries to press elevator button*
+
+message_284:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel……\!为什么电梯不动啊？
+
+#KEL presses the button a bunch of times
+
+message_285:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel啊对！我都忘了！\!我们要有\c[4]炫酷钥匙卡\c[0]才行！
+
+message_286:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel他们把我的卡没收了，因为我老是弄丢……\!<br>可是，它们真的是自己凭空消失的啊！
+
+message_287:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我们去其他楼层找找看吧。<br>\!肯定在哪儿有张\c[4]炫酷钥匙卡\c[0]！
+
+#*Find KEY CARD next to Creepy Doll in a Hotel Room*
+
+#You found a KEY CARD.\!
+#You can now access the 5TH FLOOR of the LAST RESORT.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Haunted Hotel Doll:
+#New Assets: Creepy Doll, Omori Doll
+
+
+#Examine doll:
+message_300:
+  text: 一个没有五官的玩偶。\!<br>它看起来并不属于这里。\!<br>你想把它扔掉吗？
+#[YES/NO]
+
+#If you throw away, when you exit the room, the lights go off and on. If you go back into the room, the doll is back on the bed.
+
+#If you do this 3 times, the next time you enter the room, the doll turns into an OMORI doll.
+
+#Examine OMORI doll:
+message_301:
+  text: 一个有着熟悉五官的玩偶。
+
+message_302:
+  text: 它的眼睛被挖了出来。\!你想看看里面吗？
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#UNDERWATER HIGHWAY
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Rope Bridge:
+#Top of Map215
+
+#Examine bridge:
+message_310:
+  text: 一座横跨了海沟的木桥。\!<br>你想要上桥吗？
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Alternate Toll Booth Dialogue:
+
+#If you say “NO” to any Toll Booth payment dialogue:
+
+message_320:
+  text: \n<鳄鱼男>嘿，慢着！\!你是……英雄，对吧？\!<br>您是老板最喜欢的下属！
+
+message_321:
+  text: \n<鳄鱼男>抱歉，先生，我差点没认出您。\!这副墨镜有点太黑了，您懂我意思吧？
+
+message_322:
+  text: \n<鳄鱼男>规矩就是规矩，就算是老板的心腹也一样。\!<br>不过，或许我可以给您开个更公道的价格……
+
+message_323:
+  text: \n<鳄鱼男>\v[1012] 蚌币，怎么样？\$
+
+message_326:
+  text: \n<鳄鱼男>\v[1012] 蚌币，怎么样？\$
+
+message_327:
+  text: \n<鳄鱼男>\v[1012] 蚌币，怎么样？\$
+#[YES/NO]
+
+#[YES]
+message_324:
+  text: \n<鳄鱼男>谢啦，兄弟。\!<br>记得帮我向老板多美言几句，好吗？
+
+#[NO]
+message_325:
+  text: \n<鳄鱼男>兄弟，你认真的？\!我可不是谁都开这么优惠的价格，你知道吧？
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#DEEPER WELL
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Map BGM bs_nawa
+#Branch Coral Facts:
+
+#Talk to BRANCH CORAL as not-OMORI:
+message_330:
+  text: 轴孔珊瑚在喃喃自语些什么。
+
+#Talk to BRANCH CORAL as OMORI.
+
+message_331:
+  text: \n<轴孔珊瑚>你许久未曾长途跋涉至此了。<br><br><br>当造梦者变得愈加绝望，他世界的更深层也随之开启。<br><br><br>即便想象力也是有极限的。
+
+#*wait*
+message_332:
+  text: \n<轴孔珊瑚>你心中有疑虑，我这里则有答案。\!<br>那是你早已遗忘的答案。
+
+message_333:
+  text: \n<轴孔珊瑚>我将为你一一解答。\!<br>作出选择吧，如果你感到好奇的话。
+
+#---
+
+#[MY LOST FRIEND]
+message_335:
+  text: 我消失的朋友
+#[THE BIG YELLOW CAT]
+message_336:
+  text: 大黄猫
+#[WHITE SPACE]
+message_337:
+  text: 白色空间
+
+#---
+
+message_340:
+  text: \n<轴孔珊瑚>你想要了解你消失的朋友的事情吗？
+#[YES/NO]
+
+#[YES]
+#*Everything except for the BRANCH CORAL, OMORI, and a small pool under the BRANCH CORAL are blacked out.*
+
+message_341:
+  text: \n<轴孔珊瑚>你失去的那个朋友已不再处于这个世界。\!<br>在他被抹除的那一天，他在另一处重生了。
+
+message_342:
+  text: \n<轴孔珊瑚>他对你而言很特殊。\!命运的丝线将你们紧紧缠绕在一起。\!他独自一人无法离开那个地方。
+
+message_343:
+  text: \n<轴孔珊瑚>要找回他，你必须同样抹除自己。但你得用一种自然的方式。\!你需要遵循\c[11]脑内空间\c[0]的自然规律。
+
+message_344:
+  text: \n<轴孔珊瑚>你的旅途即将迎来终点。\!<br>你已经知道你接下来要做什么了，造梦者。
+
+#---
+
+message_350:
+  text: \n<轴孔珊瑚>你想要了解大黄猫的事情吗？
+
+#[YES]
+#*Everything except for the BRANCH CORAL, OMORI, and a small pool under the BRANCH CORAL are blacked out.*
+
+message_351:
+  text: \n<轴孔珊瑚>在这个世界被创造出来之前，曾有三个伟大的生物……\!最年长者，最具智慧者，和最受喜爱者。
+
+message_352:
+  text: \n<轴孔珊瑚>最年长者仍然健在，但他已经变得与当初完全不同。
+
+message_353:
+  text: \n<轴孔珊瑚>岁月抹去了他的良知，他成为了寄居在自己体内的寄生虫。\!他就住在这里，住在这洞窟之上。
+
+message_354:
+  text: \n<轴孔珊瑚>最具智慧者，背离了她的理智，做出了违背造梦者意志的行为。\!那项行为究竟为何，就连我也无从知晓。
+
+message_355:
+  text: \n<轴孔珊瑚>于是，她被剥夺了智慧，被流放至孤寂之地……\!那是位于无底深渊，用来专门关押她的监狱。
+
+message_356:
+  text: \n<轴孔珊瑚>而最受喜爱者，也就是大黄猫，则被选中去照看造梦者最珍贵的房间。
+
+message_357:
+  text: \n<轴孔珊瑚>时至今日仍受造梦者宠爱的他……\!细心照看着房间……\!等待着某件事情的发生。
+
+#---
+
+message_365:
+  text: \n<轴孔珊瑚>你想要了解\c[11]白色空间\c[0]的事情吗？
+
+#[YES]
+#&Everything except for the BRANCH CORAL, OMORI, and a small pool under the BRANCH CORAL are blacked out.*
+
+message_366:
+  text: \n<轴孔珊瑚>身处\c[11]白色空间\c[0]即位于虚无。
+
+message_367:
+  text: \n<轴孔珊瑚>\c[11]白色空间\c[0]是空无，是冷冰冰的家。<br>是苟延残喘的地方，不是安度日常的地方。
+
+message_368:
+  text: \n<轴孔珊瑚>即便如此，你的良知是无法被抹除的。\!<br>它一直伺机而动，等待趁虚而入。
+
+message_369:
+  text: \n<轴孔珊瑚>即便是在\c[11]白色空间\c[0]，它也会悄然滋生……\!<br>若想阻止，牵制它的事物便会形成。
+
+message_370:
+  text: \n<轴孔珊瑚>悬挂着的黑色灯泡……\!那便是对某种想法的压抑。
+
+message_371:
+  text: \n<轴孔珊瑚>……
+
+message_372:
+  text: \n<轴孔珊瑚>是的。\!造梦者，或许是时候该承认你是人类了。
+
+#---
+
+#After any selection:
+message_373:
+  text: \n<轴孔珊瑚>你还想要了解别的事情吗？
+
+#---
+
+#After choosing all 3 selections and attempting to exit out of menu:
+
+#*Wait*
+message_374:
+  text: \n<轴孔珊瑚>你听得很仔细。\!我已传授给你知识，但我亦可赐予你力量。
+
+message_375:
+  text: \n<轴孔珊瑚>此处有一考验，可为你在这世上带来极大帮助。\!<br>它简单到甚至无需思考……若你成功，我便将消失。
+
+message_376:
+  text: \n<轴孔珊瑚>我向你献上这份祭品。\!你愿意接受吗？
+#[YES/NO]
+
+#[YES]
+message_377:
+  text: \n<轴孔珊瑚>我明白了。\!站在原地，造梦者。
+
+#*wait*
+#*OMORI sinks into the floor*
+#*OMORI teleports to a dark cave with the branch with PLAYER's head at the end*
+
+#As OMORI walks closer, the head turns into an apple.
+
+#Examine tree:
+message_378:
+  text: 一个通红多汁的\c[3]苹果\c[0]挂在这棵树上。
+
+message_379:
+  text: 你想要吃下这颗\c[3]苹果\c[0]吗？
+#[YES/NO]
+
+#*Screen turns black*
+#*Crunch noises*
+
+message_380:
+  text: OMORI 永久获得了 50 心心。<br>\!OMORI 永久获得了 50 活力。
+
+
+message_381:
+  text: OMORI 永久获得了 10 点攻击。<br>\!OMORI 永久获得了 10 点防御。<br>\!OMORI 永久获得了 10 点速度。
+
+#*Screen returns to OMORI in front of BRANCH CORAL*
+
+#BRANCH CORAL is grayed out/dead.
+
+#Examine BRANCH CORAL:
+message_382:
+  text: 一丛轴孔珊瑚。\!它已经凋亡了。
+
+#[NO]
+#nothing
+
+#Attempt to leave room
+#*Screen turns black*
+#*Screen returns to OMORI in front of BRANCH CORAL*
+
+message_388:
+  text: \n<轴孔珊瑚>你想要放弃这个考验吗？
+#[YES]
+
+message_383:
+  text: \n<轴孔珊瑚>看来你选择了另一条道路。\!<br>但我的提议仍将有效。
+
+message_384:
+  text: \n<轴孔珊瑚>若你想变得更强大，就回来找我。
+
+#Talk to BRANCH CORAL again:
+
+message_385:
+  text: \n<轴孔珊瑚>看来你又回来了。<br>\!我再问你一次……
+
+message_386:
+  text: \n<轴孔珊瑚>此处有一考验，可为你在这世上带来极大帮助。\!<br>它简单到甚至无需思考……若你成功，我便将消失。
+
+message_387:
+  text: \n<轴孔珊瑚>我向你献上这份祭品。\!你愿意接受吗？
+
+#*Follow same sequence as above.*
+
+
+#CLUB SANDWICH JUICE
+
+message_390:
+  text: 所有人永久获得了 5 活力！
+

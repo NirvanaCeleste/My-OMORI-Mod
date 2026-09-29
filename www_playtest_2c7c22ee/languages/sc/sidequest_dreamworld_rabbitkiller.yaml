@@ -1,0 +1,61 @@
+# =========================================================================================
+# RABBIT KILLER
+# ========================================================================================
+
+message_1:
+  text: \n<叶子>你知道我平生最恨的是什么吗？\!<br>\quake[1]兔兔。\quake[0]\!没错。\!\quake[1]兔兔。\quake[0]
+
+message_2:
+  text: \n<叶子>我就是好恨兔兔啊。\!<br>我有且仅有的愿望，<br>就是消灭世界上所有的\quake[1]兔兔。\quake[0]
+
+#If you killed at least 1 bunny
+
+message_3:
+  text: \n<叶子>嘿，看上去你好像已经击败了一些\quake[1]兔兔\quake[0]嘛！\!<br>是啊，没错。\!只要看着你，我就知道你击败了多少\quake[1]兔兔\quake[0]。
+
+message_4:
+  text: \n<叶子>我就是这么恨\quake[1]兔兔\quake[0]。
+
+message_5:
+  text: \n<叶子>这样吧。\!我们做个交易。\!<br>你如果再击败至少5只\quake[1]兔兔，\quake[0]回来跟我报告……\!我会给你点好东西。
+
+message_6:
+  text: \n<叶子>去吧，消灭那些\quake[1]兔兔\quake[0]吧！
+
+#MEETING GOALS
+
+#Set variable for number of bunnies defeated and the next count
+
+message_7:
+  text: \n<叶子>\Com[2]太棒了！\!我看得出你已经消灭了更多的\quake[1]兔兔。\quake[0]\!<br>已经有\v[615]只\quake[0]兔兔被毁灭了\quake[0]！\!<br>太感谢你了，亲爱的兔兔仇恨者同志。
+
+message_8:
+  text: \n<叶子>现在……\!如果你能再杀\v[1001]只\quake[1]兔兔\quake[0]，<br>我会再给你一份奖赏！
+
+#DEFAULT TEXT:
+
+message_9:
+  text: \n<叶子>你好啊，亲爱的兔兔仇恨者同志！\!<br>看着你的眼睛，我就知道你已经杀死了\v[615]只\quake[1]兔兔\quake[0]。
+
+message_10:
+  text: \n<叶子>你还要再杀死\v[1001]只\quake[1]兔兔\quake[0]才能拿到你的下一份奖赏。\!<br>好了，出去吧，去摧毁那些\quake[1]兔兔\quake[0]吧！
+
+#PRIZES: COTTON BALL, BUNNY EARS, RABBIT FOOT, CONSUMABLES
+
+message_11:
+  text: 你获得了\c[13]棉花球\c[0]。
+
+message_12:
+  text: 你获得了\c[13]兔兔耳\c[0]。
+
+message_13:
+  text: 你获得了\c[13]兔子脚\c[0]。
+
+#After defeating 50 bunnies
+
+message_15:
+  text: \n<叶子>\Com[2]太棒了！\!我已经不需要你再做什么了，兔兔仇恨者同志！
+
+message_16:
+  text: \n<叶子>去吧，消灭更多的\quake[1]兔兔\quake[0]吧！
+

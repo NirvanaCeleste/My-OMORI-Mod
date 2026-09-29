@@ -1,0 +1,213 @@
+# =========================================================================================
+# Cutscene: CAPT. SPACEBOY
+# =========================================================================================
+
+#Trigger: Defeating SPACE EX-BOYFRIEND
+
+message_0:
+  text: 嗯？诶？发生了什么？\!我、我在哪里？\!你、你们是谁？\who
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 你好呀！你感觉怎么样？\her
+
+message_2:
+  text: 哦，你好……\!我是太空男孩船长！\!<br>很高兴认识——\cap
+
+message_3:
+  text: \quake[1]唔唔，我的胸口！\quake[0]\cap
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 天哪，没事吧？\!<br>你刚刚有点动怒，所以我们不得不……\aub
+
+message_5:
+  text: 啊……\!是这样啊……\!一定是另一个我控制了这具身体吧。\cap
+
+message_6:
+  text: 我必须表示歉意。你们的行为很可能是合乎情理的。\!<br>我只是希望没有给你们带来太多麻烦。\cap
+
+message_7:
+  text: 最近这段时间，我一直无法好好控制自己的情绪。\!<br>虽然我有在尽全力忍耐，但变得越来越困难了。\cap
+
+message_8:
+  text: 甜心……\!她是我一生的挚爱……\!<br>我几乎无法想象，没有了她的人生该如何度过。\cap
+
+message_9:
+  text: 我想，我可能有点失魂落魄吧。\cap
+
+message_10:
+  text: 这盒\c[4]特制混音带\c[0]收录的都是我和甜心最喜欢的歌曲。\!这是我倾尽了心血为她制作的。\cap
+
+message_11:
+  text: 谢谢你们把它归还给我。\!<br>毕竟这盒录音带还是承载了许多珍贵的回忆啊。\cap
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 只是举手之劳啦……呃……\!大概吧。\kel
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 嗯，能帮上你的忙真是太好了！\aub
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 你只管去好好休息一下吧。\her
+
+message_15:
+  text: 不管我怎么休息，也无法真正治愈一颗破碎的心。\!<br>我必须找到别的出路……\cap
+
+message_16:
+  text: 太空男孩船长——不对，太空男友！\spb
+
+message_17:
+  text: 真的非常、非常、非常抱歉，但我要报告一个非常、非常糟糕的消息。\!<br>您最喜欢的行星冥王星逃跑了，而且我们怎么找都找不到他。\spb
+
+message_18:
+  text: 别对我们发火。我们真的很抱歉！\spd
+
+message_19:
+  text: 请、请温柔一点……\spb
+
+message_20:
+  text: 啊，这样啊。\cap
+
+message_21:
+  text: 没事的，你们俩。\!行星们整天在原地慢悠悠地自转，时间久了也会感到无聊的吧。\!或许冥王星他本来就不是当行星的料。\cap
+
+message_22:
+  text: 嗯、嗯？\!真的吗？？\!所以您不生我们的气？\spb
+
+message_23:
+  text: 您是真的这么想的吗，太空男孩船长——不对，太空男友？\spd
+
+message_24:
+  text: 当然了。\!去召集其余的船员。\!<br>我们去\c[11]结冰湖\c[0]买点\c[3]雪糕筒\c[0]吃吧。\cap
+
+message_25:
+  text: 卧床休息无法治愈破碎的心，<BR>但是和朋友们吃\c[3]雪糕筒\c[0]说不定管点用！\cap
+
+message_26:
+  text: 还有，你们不用再叫我太空男友了。\!<br>我是太空男孩船长！\cap
+
+message_27:
+  text: 慢、慢着，难道说？\spd
+
+message_28:
+  text: \{\sinv[1]\Com[2]太、太……\|\{太太\{太好了！\sinv[0]\spd
+
+message_29:
+  text: 我们的船长回来了！我等不及告诉所有人了！\!<br>走了，兄弟！\spd
+
+message_30:
+  text: 跟着你呢，伙伴！\spb
+
+message_31:
+  text: 再多的致谢之词也不足以表达我的感激之情。\cap
+
+message_32:
+  text: 如果你们没有来的话，天知道我和我的船员会遭遇些什么。\cap
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 噢，不值一提啦！\!<br>你能找回自我，我们真的很高兴。\aub
+
+message_34:
+  text: 我向你们表示感谢。\!若之后需要我或者太空海盗的帮忙，请务必告诉我。\cap
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her其实……\!真不敢相信我居然都忘了，不过……\!<br>我们其实在寻找我们的朋友，贝瑟尔。
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her他头上戴着一顶\c[4]花冠\c[0]，而且总随身带着一本\c[4]相册\c[0]。\!<br>你有没有在附近看到过他呢？
+
+message_41:
+  text: ……\!不，恐怕没有……\!<br>不过，如果有消息的话，我会第一个让你们知道的。\cap
+
+#AUBREY looks away.
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 贝瑟尔……\!他到底会去了哪儿呢？\aub
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: 呜……\!呜、呜……\aub
+
+#CAPT. SPACEBOY is surprised.
+
+message_48:
+  text: \Com[2]啊……\!请不要哭泣，小姑娘！\cap
+
+#CAPT. SPACEBOY walks up to AUBREY.
+
+message_49:
+  text: 来，这个给你。\cap
+
+#AUBREY turns back.
+
+message_50:
+  text: 你获得了\c[4]雪糕筒兑换券\c[0]！
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 12
+  text: 呜……\!呜……呜……\!呜……\!\quake[1]呜哇哇哇……\quake[0]\aub
+
+#Everyone turns to AUBREY and is surprised.
+
+message_52:
+  text: 诶，啊……\!求你了，小姑娘……不要再哭了！\!<br>呃……\!来，这个也给你！\cap
+
+#CAPT. SPACEBOY walks to book shelf.
+#CAPT. SPACEBOY walks to AUBREY.
+
+message_53:
+  text: 你获得了\c[4]火车票\c[0]。
+
+message_54:
+  text: 我还是小孩子的时候，我总会拿着这张票搭乘火车、四处旅行……\!<br>当然，那是在我成为太空船长前的事了。\cap
+
+message_55:
+  text: 如果连那个搭乘火车旅行的我，都有驾驶自己宇宙飞船的一天，那么你也一定可以找到你的朋友的。\cap
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 12
+  text: 呜……呜……\!嗯……\!<br>呜……\!知、知道了……\aub
+
+message_57:
+  text: 嘿，船长！你准备好出发了吗？\!<br>大伙儿都等着你呢！\spg
+
+message_58:
+  text: 啊！当然了，让他们等等。我这就来！\cap
+
+#CAPT. SPACEBOY walks to door, but turns back.
+
+message_59:
+  text: 你必须时刻保有希望，小姑娘！\!<br>如果痛楚难以承受，就吃个\c[3]雪糕筒\c[0]吧！\!<br>那样应该会让你好受一些。\cap
+
+#CAPT. SPACEBOY turns toward the door.
+
+message_60:
+  text: 我不能再让我的船员等下去了。\!<br>祝你们一切好运！再次感谢你们！\cap
+
+message_61:
+  text: 看起来像是\c[3]果汁\c[0]，但是超难喝！
+
+
+message_100:
+  text: 这里什么也没有。
+

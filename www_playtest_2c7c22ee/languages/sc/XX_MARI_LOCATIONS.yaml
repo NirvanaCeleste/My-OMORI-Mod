@@ -1,0 +1,604 @@
+# =========================================================================================
+#                                 - MARI LOCATIONS -
+# =========================================================================================
+
+# =========================================================================================
+# FOREST PLAYGROUND - UPON RETURNING
+# =========================================================================================
+
+message_1:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嘿，OMORI！你们好呀。
+
+
+message_2:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar就在前几天，鼻子告诉我她遇到一个可爱的小叶子……\!<br>可是……\!当她想和小叶子交朋友的时候，它却只是不停地在抱怨有多么多么讨厌兔兔……
+
+
+message_3:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar\Com[2]怎么可以有人讨厌兔兔呢？！\!<br>有些人啊，我真的无法理解……
+
+
+# =========================================================================================
+# PINWHEEL FOREST
+# =========================================================================================
+
+message_10:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嗨，大家！你们来得正好，可以享受野餐了！
+
+
+message_11:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar好好休息一下吧！\!<br>我把东西都布置好了，还特意带了一些水果来呢！
+
+
+#After using fruit to heal:
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel嚼嚼，嚼嚼，嚼嚼……\!<br>\Com[2]呀——呼！谢谢你，玛里！你最好了！
+
+
+message_13:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar没什么没什么……\!毕竟要好好照顾你们嘛……
+
+
+message_14:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas啊，玛里……真希望我能变得像你一样！\!<br>似乎一切都在你的掌控之中。
+
+
+message_15:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar当然不是这样啦！\!<br>看上去是这样而已！
+
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her可不管怎么说，你确实做什么事情都应付自如啊。
+
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub没错，我同意！\!玛里仿佛天生就这么优雅……
+
+
+#AUBREY DOES A TWIRL
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub你觉得呢，OMORI？
+
+
+#NOD/SHAKE
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aubOMORI，别开这种玩笑！\!<br>你就这么对待你的姐姐吗？
+
+
+message_20:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar\sinv[1]噢噢噢噢……\sinv[0]\!既然你们都这么说，那我姑且就当是这么一回事儿吧！
+
+
+#Basil moves a step down
+
+message_21:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas沿这条路继续走就到我家了……\!<br>大家都休息好了吗？
+
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub我准备好啦，就等你们了！
+
+
+message_24:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel那过一会儿见，玛里！
+
+
+message_25:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar嗯，有什么需要的就跟我说！\!<br>晚点见啦！
+
+
+message_26:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar快来，OMORI！吃点水果吧！\!多吃水果有益健康哦！
+
+
+#Trying walk past
+
+message_27:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aubOMORI……\!玛里辛辛苦苦为我们准备水果，你就打算这样走了吗？
+
+
+# =========================================================================================
+# FLOATING FOREST
+# =========================================================================================
+
+
+message_30:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar噢，你好呀，OMORI！能在这里看到你真是稀奇。
+
+
+message_31:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar这里的风比地上要大很多。\!<br>嗯，为什么会这样呢……
+
+
+message_32:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar似乎是个放风筝的好天气哦！
+
+
+
+# =========================================================================================
+# CAMPSITE
+# =========================================================================================
+
+message_40:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar欢迎来到\c[11]异世界\c[0]……\!这里是风尘仆仆的太空旅客们歇脚的好地方，也是备受欢迎的亲子露营地点！
+
+
+message_41:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar\sinv[1]啊啊……\!\sinv[0]<br>闻着空气中柴火的味道……\!听着流水潺潺的声音……\!感受拂面而来的太空微风……\!一切都是如此地美妙。
+
+
+message_42:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar就连太空世界的空旷和寂寞，也变得让人好受一些了，对吧？
+
+
+
+# =========================================================================================
+# FROZEN LAKE
+# =========================================================================================
+
+message_50:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嘿，OMORI……这地方真的很漂亮，对吧？\!<br>雪花如此缓缓飘下，可是每一片雪花最后总会落到它们合适的位置。
+
+
+message_51:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar这提醒了我，凡事都要有耐心。
+
+
+message_52:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar说到这个！\!我们找天一起去溜冰吧！\!<br>听上去就很有意思，对不对，OMORI？
+
+
+# =========================================================================================
+# JUNKYARD
+# =========================================================================================
+
+message_60:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar大家好呀！你们玩得尽兴吗？\!<br>我在清理附近垃圾的时候，居然找到了一只烘烤得恰到好处的烤鸡。
+
+
+message_61:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar看到了吗，OMORI？这就是打扫卫生的好处哦！\!<br>嗯！\!弟弟呀，你有时真的蛮邋遢的，所以我得树立个好榜样！
+
+
+# =========================================================================================
+# PYREFLY FOREST-  BEFORE BOSS
+# =========================================================================================
+
+
+message_70:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar啊，你们来了我就放心了！
+
+
+message_71:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar这片森林满是可怕的虫子在到处爬……\!<br>弄得我都起鸡皮疙瘩了！
+
+
+message_72:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar而且呀，我听到前面有什么东西在草丛里窜动……\!<br>前面可能有很危险的生物，你们最好先休整一下比较好哦。
+
+
+message_73:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar没错！\!你们的大姐姐总是有备而来！<br>\!偶尔也依赖我一下吧，OMORI！
+
+
+message_74:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar这地方可真是杂草丛生呀！\!你们敢穿越这片森林，真的很勇敢！
+
+
+message_75:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar这里甚至还有一个废弃的矿车轨道……\!真好奇它以前是用来运输什么的。
+
+
+
+# =========================================================================================
+# SPROUTMOLE VILLAGE - ENTRANCE
+# =========================================================================================
+
+message_80:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar这些树苗鼹鼠真是有意思的小生物啊……\!<br>好想捡起一只，狠狠捏一捏！嘻嘻！
+
+
+message_81:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar你们知道吗？树苗鼹鼠特别喜欢\c[3]豆腐\c[0]！\!<br>我刚刚在一个\c[3]豆腐\c[0]摊买了些\c[3]豆腐\c[0]……<br>你们也来尝尝吧！
+
+
+# =========================================================================================
+# SWEETHEART'S CASTLE - PRISON B1
+# =========================================================================================
+
+message_90:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嘿，伙计们……\!你们就像猫咪看到小黄瓜一样束手无策……
+
+
+message_91:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar所以呢，我偷偷给你们带了些酸黄瓜进来！嘻嘻……
+
+
+message_92:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel呃呃呃……呸！\!我讨厌酸黄瓜！\!<br>下次能偷偷带些果酱进来吗？
+
+
+# KEL will not allow you to examine Pickles.
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel可是……\!我讨厌酸黄瓜……
+
+
+# =========================================================================================
+# DESERT OASIS
+# =========================================================================================
+
+message_95:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嘿，OMORI！你猜怎么着！\!<br>这里的沙子……\!根本就不是沙子！\!其实是红糖哦！
+
+
+message_96:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar是不是觉得美滋滋的呀？嘻嘻！
+
+
+message_97:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar不过这里确实很热啊……\!<br>大家记得多补充水分呀！
+
+
+
+# =========================================================================================
+# RAIN TOWN
+# =========================================================================================
+
+message_100:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar在\c[11]落雨镇\c[0]里，小雨总是下个不停……
+
+
+message_101:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar虽然算不上是野餐的好天气，不过我是不会罢休的！
+
+
+message_102:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel没错！任何时间都是野餐的好时间！
+
+
+message_103:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar嘻嘻……说得对，凯！<br>\!任何时间都是好时间，特别是和朋友一起的时候！
+
+
+# =========================================================================================
+# DOUGH DUNGEON
+# =========================================================================================
+
+message_110:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嘿，朋友们……\!看样子你们有点“果”足不前，所以……
+
+
+message_111:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar我给你们带来了果酱哦！
+
+
+message_112:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\Com[2]果酱？！\! \Com[2]我爱果酱！！\}
+
+
+message_113:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\Com[2]凯你个没心眼的家伙！也给我们留一点呀！
+
+
+message_114:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel\sinv[1]噢噢噢噢……我干嘛要分给你们？\sinv[0]
+
+
+# =========================================================================================
+# LAST RESORT OUTSIDE + ELEVATOR
+# =========================================================================================
+
+message_120:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar嗨，弟弟！\!你感觉好点了吗？
+
+
+message_121:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar来和我一起享受野餐怎么样？\!<br>希望能给你鼓鼓劲儿。
+
+
+# =========================================================================================
+# LAST RESORT CONSTRUCTION
+# =========================================================================================
+
+#MARI turns up at HERO statue.
+
+message_125:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar嗨，弟弟！\!我们最近经常会碰到呢。
+
+
+message_126:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar总之，快坐下吧！\!拒绝野餐可不是你的风格。
+
+
+#MARI looks up at giant HERO statue
+
+message_127:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar还有，你快看那个！\!不得不说……\!<br>这里的风景\sinv[1]确实\sinv[0]挺不错的。
+
+
+
+# =========================================================================================
+# Before Trench
+# =========================================================================================
+
+#MARI is in the end of the underwater highway before the trench
+
+message_130:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar嘿，OMORI，看样子我们已经到达了道路的尽头。
+
+
+message_131:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar前面好像有一座特别长的桥。
+
+
+message_132:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar无论如何都别往下看哦！
+
+
+message_133:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \marOMORI！你真的付钱给那些收费站鳄鱼男了？\!<br>你怎么能助长他们犯罪的嚣张气焰呢？
+
+
+message_134:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar你的蚌币肯定不够了吧。\!<br>给，这是我的一点积蓄。\!希望能帮到你，就算只有一点点也好。
+
+
+message_135:
+  text: 你获得了 500 蚌币。
+
+
+message_137:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar那些收费站鳄鱼男没有刁难你吧？
+
+
+
+
+# =========================================================================================
+# SLIME GIRL'S LAIR - ENTRANCE
+# =========================================================================================
+
+message_140:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \marOMORI 呀……\!我知道你正在想什么……\!<br>你脑子里肯定在想……\!<br>“哇哦，姐姐。这可真是个奇怪的野餐地点啊。”
+
+
+message_141:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嗯……\!我这么说吧……\!
+
+
+message_142:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar人们都觉得要在森林或者露营地之类的地方野餐……\!<br>可是……这样的乐趣在哪里呢？
+
+
+message_143:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar如果我想要一边吃东西，一边研究鲸鱼的身体构造呢？\!<br>那该怎么办，对吧？
+
+
+message_144:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar开阔你的思维吧，OMORI！\!<br>弟弟呀，你有时真的蛮没劲的，我得树立个好榜样才行！
+
+
+# =========================================================================================
+# FROZEN FOREST - BEFORE SNOW ANGELS
+# =========================================================================================
+
+message_150:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar\quake[1]抖抖抖……\quake[0]\!只有我觉得这上面冷飕飕的吗？\!<br>感觉这一整片地方都人迹罕至呀……
+
+
+message_151:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar来到这里的人，大概都只想自己一个人待着吧。
+
+
+# =========================================================================================
+# SPROUT MOLE SERVANT'S QUARTERS
+# =========================================================================================
+
+message_155:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar这里真的到处都是树苗鼹鼠。\!<br>当然啦，每一只树苗鼹鼠都爱甜心！
+
+
+
+message_156:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar我之前想给一只树苗鼹鼠一些食物，但她却管我叫“贱民”，还把食物朝我扔了回来……
+
+
+
+message_157:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar树苗鼹鼠真是种奇特的生物呀，不是吗？
+
+
+# =========================================================================================
+# JUNKYARD 2 - ROSA
+# =========================================================================================
+
+message_160:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar看样子你们都没有闲着。\!希望你们这段冒险玩得开心。
+
+
+message_161:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar感觉累了的话，别忘了来我这里休息哦！\!<br>大姐姐会时刻为你们准备好野餐！
+
+
+
+# =========================================================================================
+# MARI EPILOGUE
+# =========================================================================================
+
+message_170:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar嗨，弟弟。\!今天又是适合探索的一天！
+
+
+message_171:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar现在没有什么要紧的事情，这种感觉是不是很棒呀？\!自由地去做你想做的事吧！这个世界正是你尽情挥洒的舞台。
+
+
+message_172:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar只要你需要我，我一直都在。
+
+

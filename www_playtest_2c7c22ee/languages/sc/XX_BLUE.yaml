@@ -1,0 +1,458 @@
+#=========================================================================================
+# Updated at 06/25/2021
+# This file has been created by BLUEMOON for exporting all the hardcoded strings 
+# from JS files.
+#
+# Just for a good memo, some strings are incapsulated in "" quotes because they have 
+# : inside the string. 
+#=========================================================================================
+
+# =========================================================================================
+# OMOCAT
+# Put the name "OMOCAT" in the Steam version of the game, It will unlock a discount code
+# for the OMOCAT shop.
+#
+# WARNING! This feature is not available for console releases for rights problems.
+# =========================================================================================
+
+OMOCAT:
+  text: omocat
+
+# =========================================================================================
+# World Currency Unit
+# Those chars are the symbols of the currencies used inside shops and such. Originally,
+# they were hardcoded inside OMORI BASE
+# =========================================================================================
+
+World_Currency_Unit:
+  clams: 蚌币
+  dollars: $
+
+
+# =========================================================================================
+# SUMMONING CIRCLE MAP
+# =========================================================================================
+
+item_loaf:
+  text: 面包
+item_SPAGHETTI:
+  text: 意面
+item_LIFEJAM:
+  text: 生命果酱
+item_COOKIES:
+  text: 曲奇饼
+item_OATMEALCOOKIES:
+  text: 燕麦曲奇饼
+item_FORESTBUNNY:
+  text: 森林兔兔
+item_STRAYCAT:
+  text: 流浪猫
+item_RECIPEFORDISASTER:
+  text: 灾难的配方
+
+# =========================================================================================
+# Common Event 3 - Game Chapters Names
+# Originally, those texts where hardcoded inside Common Event 3. Added a configuration here.
+# =========================================================================================
+
+Chapter_Names:
+  unknown: ？？？
+  moving_day: 搬家当天
+  one_day_left: 还有一天……
+  two_days_left: 还有两天……
+  three_days_left: 还有三天……
+  prologue: 序章
+
+# =========================================================================================
+# Map Display Names
+# Those are the display names of the game map extracted with a tool I have made. Those
+# names will directly applied on the map.
+#
+# THIS WILL NOT AFFECT OLD SAVE FILES, THEY WILL ALWAYS SHOW THE LAST SAVED STRING :(
+# =========================================================================================
+
+Map_Display_Names:
+  13: 外面
+  14: 妈妈的房间
+  18: 妈妈的房间
+  46: 贝瑟尔家
+  50: 贝瑟尔家
+  63: 遥远公园
+  73: 遥远公园
+  74: 秘密湖泊
+  78: 妈妈的房间
+  80: 贝瑟尔家
+  83: 遥远公园
+  92: 森林游乐场
+  96: 辽阔森林
+  100: 风车森林
+  106: 橙子绿洲
+  111: 落雨镇
+  124: 异世界
+  131: 结冰湖
+  140: 雪花球山
+  145: 垃圾场
+  150: 垃圾场
+  158: 焚火虫森林
+  162: 迷失森林
+  164: 焚火虫森林
+  165: 树苗鼹鼠村
+  180: 甜心城堡
+  183: 甜心城堡
+  185: 甜心城堡
+  191: 最后度假村
+  197: 最后度假村
+  202: 最后度假村
+  215: 水下高架
+  216: 深井深处
+  223: 汉弗莱
+  236: 汉弗莱
+  244: 头目反击战
+  249: 汉弗莱
+  250: 汉弗莱
+  252: 最后度假村
+  258: 深渊
+  264: 黑色空间
+  310: 贝瑟尔的草地
+  340: 失落图书馆
+  341: 回收教徒总部
+  345: 面包天堂
+  347: 雪花球山
+  356: 后台
+  380: 后台
+  383: 回忆小道
+  384: 回忆小道
+  455: 黑色空间
+  466: 邻居的卧室
+  497: 辽阔森林
+
+# =========================================================================================
+# Pluto Ride Names
+# Those are the names of the locations shown in the Pluto's ride event
+# =========================================================================================
+
+Pluto_Ride_Names:
+  otherworld: 异世界
+  orange_oasis: 橙子绿洲
+  vast_forest: 辽阔森林
+  pyrefly: 焚火虫森林
+  deep_well: 深井
+  snowglobe_mountain: 雪花球山
+
+# =========================================================================================
+# QUEST NAMES
+#
+# Those are the quest names in-game. Originally, those names were taken from the 
+# XX_QUEST.YAML file. However, I have decided to NOT EDIT it as I fear problems with
+# other stuff I may not know. So, I have decided to apply Quest Names here and to make
+# a small edito to OMORI QUEST MENU.
+# =========================================================================================
+
+Quest_Names:
+  Aubergine: 填充玩偶
+  LostBall: 波利遗失的球
+  Hector: 赫克托尔
+  FlowerPuzzle: 黛西的困境
+  KiteKid: 精神弱小
+  Duckie: 小鸭鸭在哪里
+  StickInTheMud: 恋旧之人
+  StrangeRequest: 奇怪的要求
+  Itchy: 痒痒
+  Orange: 香橙乔的执念
+  PresentForPalmie: 给帕尔米的礼物
+  FascinatingLiterature: 精彩的书籍
+  Candlie: 倾听者
+  CarePackage: 爱心包裹
+  BED: 持·无·昂
+  Sweaty: 流汗零食
+  Pessi: 佩西的宝贝
+  GhostParty: 幽灵派对
+  PoolNoodle: 灵感的召唤
+  Willow: 哭泣柳娘
+  Pinkbeard: 太空海盗之子
+  Humphrey: 喂饱汉弗莱
+  Marina: 玛丽娜的手术
+  Medusa: 美杜莎的实验
+  Molly: 莫莉的分析
+  Missing: 贝瑟尔
+  Mixtape: 太空海盗的首领
+  FrontRow: 前排票
+  Alone: 朋友们不见了
+  BasilHouse: 贝瑟尔
+  Leafie: 兔子杀手
+  Raintown: 落雨镇
+  Squizzards: 墨鱼巫贼
+  Rest: 在邻居的房间休息
+  Abandoned: 空屋子
+
+# =========================================================================================
+# Map_Character_Tag
+# Those texts are for the MAP TAG SYSTEM
+# =========================================================================================
+
+Map_Character_Tag:
+  leader: 领队
+  tag_who: 和谁交换？
+
+# =========================================================================================
+# OMORI BATTLE SYSTEM
+# =========================================================================================
+
+Omori_Battle_System:
+  hold: 持有：x%1   # This is for the hold item on item window of battle scene. %1 is the number of items
+  cost: 花费：   # Those are the MP cost of a skill in battle
+
+# =========================================================================================
+# OMORI BLACK LETTER MENU
+# =========================================================================================
+
+Omori_Blackletter_Menu:
+  hangman: 吊死鬼
+  collect_desc: 收集按键来填补空缺。
+  incorrect_desc: 错误的按键会被丢弃在右侧。
+
+# =========================================================================================
+# OMORI ITEM SHOP
+# =========================================================================================
+
+Omori_Item_Shop:
+  total_price: 总价：
+  amount: 数量：
+
+# =========================================================================================
+# OMORI MAIN MENU SCENE SKILL
+# =========================================================================================
+
+Omori_Mainmenu_Sceneskill:
+  do_what: 做什么？
+  use_on_who: 对谁使用？
+  use_on_all: 对所有人使用吗？
+  use: 使用
+  swap: 交换
+
+# =========================================================================================
+# OMORI MAIN MENU 
+# =========================================================================================
+
+Omori_Mainmenu:
+  lvl: LVL.
+  select_who: 选择谁？
+
+# =========================================================================================
+# OMORI MAIN MENU SCENE OPTIONS
+# =========================================================================================
+
+Omori_Mainmenu_Sceneoptions:
+  commands: [通用, 音频, 控制, 系统]
+
+# =========================================================================================
+# OMORI NAME INPUT
+# =========================================================================================
+
+Omori_Name_Input:
+  nameask: 他叫什么名字？
+  defaultname: SUNNY
+  max_chars: 6
+
+# =========================================================================================
+# OMORI SAVE AND LOAD
+# =========================================================================================
+
+Omori_Save_Load:
+  file: 文件 %1：   # This is the file number entry on save/load scene. %1 is the file index
+  level: 等级
+  playtime: 游玩总时长：
+  location: 地点：
+  overwrite_file: 是否覆盖此文件？
+  load_file: 是否加载此文件？
+  save_command: 保存
+  load_command: 加载
+
+# =========================================================================================
+# YIN BLACKJACK
+# =========================================================================================
+
+Yin_Blackjack:
+  bets: [$5, $25, $100, 退出] # Those are the strings in the bet commands
+  jack_commands: [停牌, 拿牌] # Those are the commands for blackjack. They will be uppercased.
+  dealer_streak: 庄家 %1 # %1 is streak string
+  player_streak: 玩家 %1 # %1 is streak string
+  streak_string: ' - 连胜 - %1' # %1 is the player/dealer streak value
+  score: 分数：庄家 - %1   你 - %2   # %1 and %2 are dealer and player scores
+  bet: 赌注：$%1 x%2   总现金 - $%3   # Format numbers references to wagerAmount, playerBonus and currentEarnings
+  maincommands: [新游戏, 继续, 退出] # Blackjack commands. They will be uppercased.
+
+# =========================================================================================
+# YIN OMORI FIXES
+# =========================================================================================
+
+Yin_Omori_Fixes:
+  # Final Battle Strings
+  continue: 你是否想要继续？ # This message is returned on the scripted Game Over during the final OMORI BATTLE
+  retry: 你是否想要重试？
+
+# =========================================================================================
+# OMORI TITLE SCREEN
+# =========================================================================================
+
+Omori_Title_Screen:
+  commands: [新游戏, 继续, 选项]
+
+# =========================================================================================
+# YIN PIZZA MINIGAME
+# As I have not coded this plugin myself, I'm trying to imagine the logic of the 
+# original coder. - BLUEMOON
+# =========================================================================================
+
+Yin_Pizza_Delivery:
+  houseHints:
+    1: [院子里有罐头, 停了辆红色皮卡, 门垫绿色, 垃圾箱旁有罐头, 破旧的棕色屋顶, 窗户钉上木板, 前墙是砖做的, 没有围栏, 后院里有树根, 车道摆了几盆植物,
+      垃圾箱前门排成一排]
+    2: [停了辆深绿色皮卡, 门垫紫色, 黄色屋顶上是灰色烟囱, 门是黄色并且有窗户, 门上有窗户]
+    3: [门垫白色, 门深粉色的, 后院里有绳球, 屋顶粉色, 有个粉色的窗户, 窗旁放着紫花]
+    4: [门垫灰色, 门棕色的, 车道前摆着三角锥, 屋顶浅蓝色, 树旁有梯子]
+    5: [停了辆灰色的车, 后院里有大石头, 大石头旁有花, 门垫紫色, 屋顶橙色, 前墙是砖做的, 没有垃圾箱]
+    6: [门白色的, 屋顶是深蓝色并且有石烟囱, 前墙破旧, 后院里有画架, 后院里有植物]
+    7: [停了辆红色皮卡, 门是淡黄色并且有窗户, 侧院里有箱子, 有个黄色的窗户, 窗旁放着紫花, 门垫深紫色, 没有垃圾箱, 屋顶红色, 没有围栏]
+    8: [紫色屋顶上有烟囱, 院子满是野草, 门垫棕色, 没有围栏, 门旁有梯子, 前门外有消防龙头, 门浅棕色]
+    9: [屋顶浅棕色, 门粉色, 停了辆灰色皮卡, 没有围栏]
+    10: [屋顶黄色, 后院里有轮胎, 门是黄色带窗的, 路旁有野餐桌, 后院里有烤架]
+    11: [屋顶蓝色, 门浅棕色, 门垫棕色, 有狗屋, 后院里有树根]
+    12: [屋顶浅绿色, 后院里有玩具, 白色围栏旁有罐头, 门垫白色, 一扇绿色窗户, 后院里有大石头, 前门外有消防龙头]
+    13: [车道有灯, 门垫深绿色, 停了辆蓝色皮卡, 棕色围栏旁有灌木丛, 前门外有消防龙头, 深绿色屋顶上是紫砖烟囱]
+    14: [屋顶棕色, 后院里有树根和花, 树在前门排成一排, 门垫深黄色, 门深红色, 车库门白色]
+    15: [蓝色屋顶上是蓝砖烟囱, 前墙是白色的砖做的, 停了辆绿色皮卡, 左侧有垃圾箱, 后院里有篮球架, 有绳球, 棕色车库门旁有灌木丛]
+    16: [车道里停了辆粉色的车, 棕色屋顶上是深绿色烟囱, 门是浅棕色并且没有窗户, 灌木丛上有黄花]
+    17: [停了辆白色的车, 车库门浅粉色, 门垫浅粉色, 门是粉色没有窗户, 围栏旁是泥土, 屋顶浅灰色, 后院里有花, 车库门旁有箱子]
+    18: [屋顶是深棕色的砖做的, 车库门没有窗, 围栏断了一截, 停了辆绿色皮卡, 前门外有垃圾箱, 灌木丛上有黄花, 后院里有树, 垃圾箱旁有沙发]
+    19: [屋顶红色, 左侧有一堆垃圾, 门垫蓝色, 门红色的, 车道旁两排石头, 后院有瓶子和罐子, 门边有树, 车库门没有窗户, 红砖烟囱]
+    20: [屋顶浅棕色, 门浅棕色, 车道旁有垃圾箱, 停了辆灰色的车, 烟囱棕色, 车道旁有两排开花灌木]
+    21: [屋顶紫色, 烟囱紫色, 门紫粉色, 车库门深红色, 前门外有消防龙头, 门垫深蓝色, 停了辆粉色的车, 右侧有烤架, 前门外有邮箱, 后院里很多花,
+      右侧有烤架, 树旁有木板]
+    22: [门深棕色, 屋顶深绿色, 前墙是白砖做的, 门旁有植物, 后院一侧有堆肥, 围栏旁有垃圾箱, 有狗屋, 烟囱是紫砖做的, 有篮球架]
+    23: [屋顶黄色, 侧面有工作台, 后院里有工具, 门垫黄色, 停了辆灰色皮卡, 车库门是白色并且有窗户, 后院里有轮胎]
+    24: [停了辆红色皮卡, 屋顶蓝色, 前门外有三角锥, 门是黄色并且有窗户, 有火烈鸟, 有鸟巢屋, 烟囱是蓝砖做的]
+    25: [屋顶紫色, 门垫白色, 车道上有火烈鸟和树, 左侧有棕色围栏, 烟囱是灰石做的, 有一扇粉色窗户, 野餐桌旁有烤架]
+    26: [屋顶浅棕色, 门棕色, 棕色围栏旁有篮球架, 门垫紫色, 有两个黑色的垃圾箱, 后院里有玩具, 前墙是浅棕色砖做的, 前门外有三角锥]
+    27: [屋顶深棕色, 前门外有告示牌, 后院里有树根, 黄色窗户旁有红花]
+    28: [路边种着一排花, 左右两侧有垃圾箱, 右侧有两个绿色的垃圾箱, 屋顶白色, 前门外有消防龙头, 烟囱是白石头做的]
+    29: [屋顶黄色, 门浅棕色, 门垫棕色, 前门外有垃圾箱, 后院里有轮胎, 门旁有梯子, 停了辆灰色皮卡, 停了辆蓝色皮卡, 侧面有木板]
+    30: [围栏白色, 停了辆粉色的车, 车道旁花排成两排, 屋顶浅棕色, 左侧有烤架, 门深粉色]
+    31: [屋顶深棕色, 有秋千, 有绳球, 后院有花, 垃圾箱放在砂砾上, 有一条小土路, 院子里有玩具]
+    32: [屋顶红色, 门垫灰色, 门灰色, 后院里有树根, 有两个绿色的垃圾箱, 前墙破旧, 前门外有消防龙头, 木板上放着梯子, 烟囱是灰石头做的]
+    33: [屋顶灰色, 前墙是砖做的, 门垫紫色, 门旁有梯子, 有两个垃圾箱, 垃圾箱旁有瓶子, 有狗屋, 后院有木板, 没有围栏, 前门外停了辆灰色的皮卡]
+    34: [前门外停了辆白色的车, 前门外有邮箱, 前门外的垃圾箱旁有罐头, 屋顶浅蓝色, 入口处有树, 门浅灰色, 有篮球架, 门垫浅绿色]
+    35: [前门外停了辆黄色的车, 窗户旁有红色的花, 小路旁有花, 后院里有堆肥, 屋顶蓝色, 门垫深蓝色, 白色围栏前面有树]
+    36: [前门外有消防龙头, 没有围栏, 粉色窗户旁有紫色的花, 右侧的垃圾箱旁有玩具, 门粉色, 屋顶白色, 停了辆灰色的车, 后院里有车子玩具]
+
+  partPool: ['请帮我把披萨送到一个{1}并且{2}的房子', '你找找那个{1}还有{2}的房子送过去就行', '这份披萨要送到{1}和{2}的房子',
+    '把披萨送到{1}和{2}的房子', '找到{1}和{2}的房子', '请去寻找一栋{1}并且{2}的房子', '把披萨带到{1}而且{2}的房子', '沿着这条街把披萨送到{1}还有{2}的房子',
+    '请找到{1}并且{2}的房子', '这份披萨要送到{1}还有{2}的房子', '请去寻找一栋{1}另外{2}的房子']
+
+  descriptionLink: '' # This part of the string seems to be used to link the description of the House Pools -> var text = part + $gameSystem.pizza[0] + " And The " + $gameSystem.pizza[1];
+
+  #==========================
+  # In the original code, there is this line
+  #     if (text.contains("The No")) {
+  #      text = text.replace("The No", "No");
+  #  }
+  #
+  # I'm not sure why the original programmer added this, probably to prevent
+  # some kind of mispelling/grammar problem. If you think that this is not
+  # needed in the localization by any chance, just leave void the strings
+  # this way ["", ""]
+  theNo: [The No, No]
+
+# =========================================================================================
+# UI_CONFIGURATION
+# In the object below, you can edit some settings related to some UI parts of the game
+# that were originally edited directly in the source code. 
+# =========================================================================================
+# LanguageManager.getMessageData("XX_BLUE.Window_Base")
+
+Sprite_MapCharacterTagFace:
+  setText_fontsize: 18 # MAP CHARACTER TAG line 622
+
+Window_Base:
+  drawShortActorHP_contents_fontsize: 18 # OMORI BASE line 3514
+  processDrawIconOffset: [0, 0] # This adds a offset when the escape character \i[x] is used. The format is [x,y]
+  processDrawInputIconOffset: [0, 0] # This adds an offset when the escape character \DII[x] is used for drawing inputs images. The format is [x,y]
+
+Window_OmoMenuHelp:
+  refresh_contents_fontsize: 18 # OMORI BASE line 3868
+  refresh_description_fontsize: 18 # OMORI BASE line 3870
+  refresh_position: [6, 28] # OMORI BASE line 3872
+
+Window_OmoWindowIndexCursor:
+  refresh_contents_fontsize: 16 # OMORI BASE line 3969
+  refresh_draw_text_position: [0, -10] # OMORI BASE line 3976
+
+Window_NameBox:
+  refresh_draw_text_position: [padding, -4]   # OMORI BASE line 4634
+  standardFontSize: $gameSystem.getMessageFontSize()   # YEP MESSAGE CORE line 1094
+
+Window_OmoriBattleActorStatus:
+  drawHP_contents_fontsize: 14 # OMORI BATTLE SYSTEM line 2537
+  drawHP_contents_clearRect_position: [0, y + 10]   # OMORI BATTLE SYSTEM line 2539
+  drawMP_contents_fontsize: 14 # OMORI BATTLE SYSTEM line 2551
+
+Window_ScrollingTextSource:
+  standardFontSize: 18 # OMORI BATTLE SYSTEM line 4124
+
+Window_OmoMenuOptionsCategory:
+  standardFontSize: 18 # OMORI MAIN MENU SCENE OPTIONS line 698
+
+Window_MenuCommand:
+  standardFontSize: 18 # OMORI MAIN MENU line 259
+
+Window_Gold:
+  drawCurrencyValue_position: [x, 0]   # OMORI MAIN MENU line 334
+
+Window_OmoMainMenuActorStatus:
+  refresh_contents_fontsize: 16 # OMORI MAIN MENU line 604
+  refresh_drawText_position: [12, -3] # OMORI MAIN MENU line 606
+  refresh_contents_fontsize2: 16 # OMORI MAIN MENU line 607
+  refresh_drawTextHP_position: [12, 44] # OMORI MAIN MENU line 626
+  refresh_drawTextMP_position: [12, 72] # OMORI MAIN MENU line 631
+
+Window_OmoriFileInformation:
+  refresh_contents_fontsize: 20 # OMORI SAVE AND LOAD LINE 608
+  refresh_drawText_position: [150, 4] # OMORI SAVE AND LOAD line 613
+  file_position: [40, -5] # OMORI SAVE AND LOAD line 610
+  level_position: [345, 30] # OMORI SAVE AND LOAD line 632
+  playtime_position: [350, 55] # OMORI SAVE AND LOAD line 637
+
+Scene_OmoriTitleScreen:
+  commandHints_fontsize: 16 # OMORI TITLE SCREEN line 208
+  commandHints_confirm_position: [iconSize + 5, paddingY + 2]     # OMORI TITLE SCREEN line 211
+  commandHints_cancel_position: [iconSize*2 + 20 + this._commandHints.bitmap.measureTextWidth(confirm),
+    paddingY]                                                                                                         # OMORI TITLE SCREEN line 214
+  gameVersion_position: [5, 5] # OMORI TITLE SCREEN line 234
+  gameVersion_fontsize: 16 # OMORI TITLE SCREEN line 235
+Window_OmoTitleScreenBox:
+  refresh_contents_fontsize: 18 # OMORI TITLE SCREEN line 1134
+  refresh_drawText_position: [0, -9] # OMORI TITLE SCREEN line 1140
+
+Window_OmoMenuItemCategory:
+  standardFontSize: 18 # OMORI MAIN MENU SCENE ITEM line 620
+
+Window_OmoMenuItemList:
+  drawItem_contents_fontsize: 18 # OMORI MAIN MENU SCENE ITEM line 794
+  drawItem_drawText_position: [rect.x + rect.width - 18, rect.y]     # OMORI MAIN MENU SCENE ITEM line 800
+
+Window_OmoMenuItemConfirmation:
+  standardFontSize: 18 # OMORI MAIN MENU SCENE ITEM line 832
+
+Window_OmoMenuItemTrashPromptWindow:
+  standardFontSize: 18 # OMORI MAIN MENU SCENE ITEM line 893
+  itemRectForText_rectx: this.textPadding() + 35   # OMORI MAIN MENU SCENE ITEM line 925
+
+Window_ChoiceList:
+  standardFontSize: 18 # OMORI BASE LINE 4665
+
+Window_OmoMenuActorSkillEquip:
+  skillsFontSize: 16 # OMORI MAIN MENU SCENE SKILL LINE 701
+
+Window_OmoriShopItemList:
+  transactionHeaderFontSize: 16 # OMORI ITEM SHOP LINE 910
+  itemFontSize: 16 # OMORI ITEM SHOP LINE 892

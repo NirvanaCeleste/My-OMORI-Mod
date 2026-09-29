@@ -1,0 +1,715 @@
+# =========================================================================================
+# SOMETHING BATTLE
+# ========================================================================================
+
+message_100:
+  text: 你感觉自己命悬一线。
+
+message_101:
+  text: 你获得了\c[4]灯泡\c[0]。
+
+# =========================================================================================
+# THE LIGHT
+# ========================================================================================
+
+message_110:
+  text: \n<？？？>承认真相让你付出了巨大的代价……\!然而，迷途知返还为时未晚。\!所幸……\!你还记得回家的路。
+
+# =========================================================================================
+# CHILDHOOD HOME
+# ========================================================================================
+
+message_120:
+  text: 你不能不带\c[4]小提琴\c[0]离开。
+
+message_122:
+  text: 妈妈让我把这台电话装在房间。\!<br>墙上是详细的日程表。\!<br>玛里总是把所有的事情都安排妥当。
+
+#Player's Room
+
+message_123:
+  text: 篮子里装满了婴儿玩具。\!我还没能抽出时间把它们扔掉。
+
+
+message_124:
+  text: 寻常的盆栽植物。\!没什么特别的。
+
+
+message_125:
+  text: 衣柜……<br>不过，如今变成了放旧玩具和糖果的地方。
+
+
+message_126:
+  text: 一盏台灯。<br>\!玛里总是失眠，所以会在睡前读书。<br>\!我常常在她入睡后为她关掉台灯。
+
+
+message_127:
+  text: 爸爸的旧电脑。<br>\!他买了台工作用的笔记本电脑后，就把这台电脑给了我们。
+
+
+message_128:
+  text: 我和玛里的课本。\!<br>玛里最近在补习，总是很晚才回来。\!<br>她一定很累……
+
+
+message_129:
+  text: 一张非常、非常舒服的床……\!<br>这张床本来是玛里的，不过她注意到我睡不好之后，就和我换了。
+
+
+message_130:
+  text: 玛里的床……\!我做噩梦的时候也会钻进来和她一起睡。
+
+
+message_444:
+  text: 玛里的衣物。\!闻起来有股干净的味道。
+
+
+#piano Room
+
+message_131:
+  text: 两台旧落地钟之一。\!这台似乎总是走快一些。
+
+
+message_132:
+  text: 两台旧落地钟之一。\!这台似乎总是走慢一些。
+
+
+message_134:
+  text: 一架三角钢琴。\!<br>中间刻着“OMORI”这个词。
+
+
+message_135:
+  text: 玛里的乐谱收藏。\!<br>尽管玛里平时做事很有条理，她的乐谱却是一塌糊涂。<br>\!几乎每一页上都有草草写下的笔记。
+
+
+message_136:
+  text: 爸爸和妈妈的旅游纪念品。<br>\!我从来不喜欢去旅游，不过……<br>\!现在回想起来……其实也没有那么糟。
+
+
+message_137:
+  text: 爸爸和妈妈多年来收集的书籍。\!<br>至今仍然在书柜上吃灰。
+
+#closet
+
+message_138:
+  text: 一个上锁的玩具箱。\!你想打开它吗？
+#Yes/No
+
+#kitchen
+
+message_139:
+  text: 一块切菜板。\!玛里曾经不小心切到了手指。\!那是我第一次看见她哭。
+
+message_140:
+  text: 一个冰箱。\!里面都是妈妈做的饭菜和爸爸留的剩饭……
+
+message_141:
+  text: 一台旧烤面包机。\!妈妈说它年纪比我还大。
+
+message_142:
+  text: 一台微波炉。\!我用它加热了很多好吃的。
+
+message_143:
+  text: 一杯喝剩下的咖啡。\!<br>每当妈妈感到焦虑的时候，家里就到处都是喝剩的咖啡。
+
+message_144:
+  text: 一些脏衣服。\!<br>玛里总是让我和她一起叠衣服。
+
+#parents room
+
+message_145:
+  text: 一个闹钟……专为有责任感的人服务。\!<br>它被调快了五分钟。
+
+message_146:
+  text: 爸爸的盆景树。\!比印象中长大了不少。
+
+message_147:
+  text: 爸爸和妈妈的床。\!妈妈睡在左边，爸爸睡在右边。
+
+message_148:
+  text: 爸爸和妈妈的衣柜。\!<br>他们不允许我往里看。
+
+message_149:
+  text: 一大堆书……\!感觉我们搬进来之前，它们就在这里了。
+
+message_150:
+  text: 妈妈的陶瓷花瓶。\!<br>曾经不止这几个，有一个被我打破了。\!<br>不过，当时玛里却把过错揽到了自己身上……
+
+message_151:
+  text: 家庭照片。\!有些亲戚只在照片里见到，现实中很少与他们见面。
+
+message_152:
+  text: 一篮子水果。\!玛里坚决要在家里随时备好新鲜水果。
+
+message_153:
+  text: 一个衣帽架。\!<br>这是爸爸的帽子，但我从未见他戴过。
+
+message_154:
+  text: 一台电视遥控器。\!遥控器不见的时候，爸爸会特别生气……\!<br>虽然大多数时候都是卡在沙发里。
+
+message_155:
+  text: 一台不错的大电视。\!在这里看周六早上的动画片最棒不过了。
+
+message_156:
+  text: 一盏落地灯。\!凯和我不小心把之前那盏撞翻在地了。<br>\!妈妈当时可不太高兴……
+
+message_157:
+  text: 一个温暖的壁炉。\!<br>壁炉上放着我婴儿时期的照片。\!我从小就不爱笑……\!<br>照片里自然也是如此。
+
+message_158:
+  text: 妈妈的私人座机。\!曾经放在爸爸和妈妈的房间里，现在放在这里。
+
+message_159:
+  text: \sinv[1]\}咕噜咕噜……\n<喵乌>
+
+message_160:
+  text: 好猫咪。
+
+message_161:
+  text: 我的全家福……
+
+message_162:
+  text: 一个鸟屋。\!我经常看到鸟儿给它们的宝宝喂食。
+
+message_163:
+  text: 家里空无一人。
+
+message_164:
+  text: 妈妈的插花。\!<br>妈妈和玛里最近在上插花课。\!<br>有时候她们会拉着我一起去。
+
+message_167:
+  text: 一个垃圾桶。\!喵乌喜欢躲在这里。
+
+message_168:
+  text: 一些小玩具车。\!一定是凯又忘记把它们带回家了。
+
+message_169:
+  text: 一堆俗气的装饰。\!妈妈特别喜欢买这些……\!她甚至让爸爸建几个架子，这样她就可以买更多然后把装饰放上去了。
+
+message_170:
+  text: 一株仙人掌。\!是我们搬家到这里时，凯的爸爸送给我们的。<br>\!它已经存活了漫长的岁月……
+
+message_171:
+  text: 一个鞋架。\!妈妈的鞋子一如既往地乱七八糟。
+
+message_172:
+  text: 一张不错的大沙发，非常适合入睡。<br>\!我似乎永远无法坐在沙发上坚持看完一整部电影。
+
+message_173:
+  text: 一盏台灯。\!大概我们搬进来之前就有了。
+
+message_174:
+  text: 一叠软木杯垫。\!爸爸从公司带回来的。
+
+message_175:
+  text: 一个小抽屉。\!妈妈没能决定在里面放什么。
+
+message_176:
+  text: 厨房柜台。\!玛里和英雄喜欢在这里一起做作业。
+
+message_177:
+  text: 厨房水槽。\!我最讨厌洗碗了。
+
+message_178:
+  text: 炉灶。\!玛里经常恳求英雄为她做饭……\!<br>不过每次他都做得太多，所以就变成人人有份了。
+
+message_179:
+  text: 这是我经常坐的椅子。
+
+message_187:
+  text: 这是贝瑟尔经常坐的椅子。
+
+message_188:
+  text: 一个马桶。\!十分可靠。
+
+message_189:
+  text: 一些洗漱用品。<br>\!按理来说，每个人的洗漱用品应该是分开的……<br>\!但是乍一看也没人分得清楚。
+
+message_190:
+  text: 一面镜子。\!我不喜欢盯着镜子看太久。
+
+message_191:
+  text: 一个浴缸。\!我对洗澡没有太多的看法。
+
+message_192:
+  text: 小小的植物。\!据说放在这里会让浴室闻起来更香。<br>\!我也不确定它们是否真的有用。
+
+message_193:
+  text: 地板上到处堆放着纸箱。
+
+message_194:
+  text: 一个空的衣帽架。
+
+message_230:
+  text: 一盏台灯。\!妈妈趁打折买的。\!我之所以记得那么清楚，是因为她那天把我也拉出门了……\!明明是周日诶……
+
+message_201:
+  text: 用来装饰楼梯的观赏植物。<br>\!妈妈后来把它们收走了，因为喵乌总是想吃它们。
+
+message_202:
+  text: 一把木椅子。\!我喜欢坐在这里听玛里弹琴。
+
+message_203:
+  text: 一堆板凳。\!是贝瑟尔和英雄搬过来的，这样大家就能看我练琴了……
+
+message_204:
+  text: 用来装饰走廊的人造植物。\!奥布里特别喜欢它们。
+
+message_205:
+  text: 用来装饰走廊的人造植物。\!我没有特别留意过它们。
+
+message_206:
+  text: 一个打开的玩具箱。
+
+message_207:
+  text: 又是剩饭……
+
+message_208:
+  text: 我们家的后院挺大的，所以能够利用空地搭建起树屋，真是太好了。<br>\!虽然站在这里看不到树屋……\!不过能看到我最喜欢的那棵树。
+
+message_209:
+  text: 不要忘记……\|东西在玩具箱里。
+
+#REMEMBER TO ADD FAMILY PHOTO
+
+# =========================================================================================
+# CROSSROADS STREET
+# ========================================================================================
+
+message_165:
+  text: 凯的篮球架。\!看上去像全新的。
+
+message_166:
+  text: 凯和英雄现在不在家。
+
+
+# =========================================================================================
+# PLAYER'S BACKYARD AND TREEHOUSE
+# ========================================================================================
+
+message_180:
+  text: 一根棒球棍。\!玛里曾经打过垒球，但在膝盖受伤后放弃了。
+
+message_181:
+  text: 奥布里的填充玩偶，“子茄先生”。
+
+message_182:
+  text: 英雄的烹饪书。\!<br>玛里在他过生日的时候送给他的。
+
+message_183:
+  text: 一本日历……\!<br>暑假就要结束了……
+
+#Changes after you get violin to:
+
+message_184:
+  text: 一本日历……\!演奏会的日期已经过了。
+
+message_185:
+  text: 一台旧电视。\!是凯抬上来的，不过当他发现用不了的时候相当沮丧。
+
+#Only when the tree is there as character set
+#The tree appears over the stump before you grab the broken violin, but disappears after
+#Ocean might not have set this up yet.
+
+message_186:
+  text: 我最喜欢的树。
+
+message_400:
+  text: 花花草草的折纸。\!是奥布里和贝瑟尔一起做的。
+
+message_401:
+  text: 一个悠悠球。\!你只知道遛狗的招式。
+
+message_402:
+  text: 凯的旧鞋子。\!他老是把东西落在你家。
+
+
+# =========================================================================================
+# MEMORIES
+# ========================================================================================
+
+#Beach Memory:
+message_195:
+  text: 玛里的野餐篮。\!<br>今天篮子里装满了芝士和饼干。
+
+#Rainy Memory:
+message_196:
+  text: 一只塑料火烈鸟。\!看起来它很享受下雨天。
+
+message_197:
+  text: 漂亮的白色信箱。
+
+#Picnic Memory:
+message_198:
+  text: \c[11]遥远镇\c[0]的标志俯瞰着湖泊。
+
+message_199:
+  text: 玛里的野餐篮。\!<br>今天篮子里装满了花生果酱三明治。
+
+message_200:
+  text: 一大堆玩具散落在草坪上。\!<br>它们提供了无限的可能性！
+
+message_231:
+  text: 大家的鞋子。\!不能把野餐垫踩脏……
+
+message_232:
+  text: 一个被吃了一半的西瓜。\!<br>另一半在大家的胃里。
+
+message_233:
+  text: 一个吃得干干净净的盘子。\!英雄总是确保凯把食物吃完。
+
+message_234:
+  text: 一台旧烤面包机。\!它烤不了面包。
+
+message_235:
+  text: 填充玩偶，是个粉色头发的女孩。
+
+message_236:
+  text: 一大堆玩具散落在地板上。\!<br>它们提供了无限的可能性！
+
+message_237:
+  text: 凯上周落在我家的鞋子。
+
+message_238:
+  text: 一座普通的沙堡。
+
+message_239:
+  text: 一堆沙滩玩具。\!每个人都能玩得开心！
+
+message_240:
+  text: 一个被用作垃圾桶的油桶。
+
+message_241:
+  text: 玛里的沙滩包。\!和英雄的是一对！
+
+message_242:
+  text: 英雄的沙滩包。\!和玛里的是一对！
+
+message_243:
+  text: 奥布里的小袋子。\!特别适合她！
+
+message_244:
+  text: 凯的背包。\!对他来说太大了！
+
+message_245:
+  text: 贝瑟尔的手提包。\!虽然有点小，不过他很喜欢！
+
+message_246:
+  text: 我的塑料袋。\!挺实用的。
+
+message_247:
+  text: 一个救生员瞭望台。\!看来今天没人值班。
+
+message_248:
+  text: “投入大海的怀抱吧！”
+
+message_249:
+  text: 沙滩上不能穿鞋！\!<br>要是鞋里进了沙子就糟了。
+
+message_250:
+  text: “放松、解压、享受！”
+
+message_251:
+  text: 一把沙滩椅。
+
+message_252:
+  text: 一个被吃完的西瓜。\!很好吃。
+
+
+# =========================================================================================
+# GENERAL
+# =========================================================================================
+
+message_0:
+  text: 你想整理一遍贝瑟尔的\c[4]相册\c[0]吗？
+
+message_1:
+  text: 你获得了贝瑟尔的\c[4]相册\c[0]。
+
+message_2:
+  text: 你获得了\c[4]照片\c[0]。
+
+# =========================================================================================
+# BASIL'S MEADOW
+# =========================================================================================
+
+#Shadow BASIL in front of the big tree
+
+message_9:
+  text: 我们还有希望……\!因为你来到了这里。\bas
+
+message_10:
+  text: 我一直相信着你，而你也的确回来找我了……<br>\!所以，请你……\!也相信我吧。\bas
+
+#message_10:
+#      text: \n[8]...\! You're finally here.\bas
+
+#message_11:
+#      text: I've always dreamed that you would come back for me...<br>But maybe now, it's too late.\bas
+
+#message_12:
+#      text: It's getting hard to breathe lately.\!<br>I'm not sure how much longer I can go on...\bas
+
+message_13:
+  text: 这扇大门上锁了。
+
+# =========================================================================================
+# PLAYER'S LIVING ROOM
+# =========================================================================================
+
+#Entrance
+
+message_14:
+  text: 这扇门上锁了。
+
+#Exit
+
+message_15:
+  text: 门口的四处散落着头发。
+
+message_60:
+  text: |-
+    \n<妈妈>我失去了……\!我唯一的女儿。\!<br>而你……\|你是我唯一的儿子。\|我……\|不能连你也失去。
+
+
+message_61:
+  text: \n<妈妈>乖乖听话，\n[8]……\|<br>乖乖……\|听话……
+
+message_62:
+  text: 电视里泛出阴森的红光。\!<br>你莫名地被吸引住了。
+
+# =========================================================================================
+# HOSPITAL
+# =========================================================================================
+
+#Patient
+
+message_16:
+  text: 这个人没有在呼吸。
+
+message_40:
+  text: 这个人在平稳地呼吸。
+
+#Television
+
+message_30:
+  text: 你看到四个孩子与一头鲸鱼在交谈。
+
+message_31:
+  text: 你看到四个孩子在搭乘电梯。
+
+message_32:
+  text: 你看到五个孩子在野餐。
+
+message_33:
+  text: 你看到四个孩子在爬梯子上太空。
+
+message_34:
+  text: 你看到三个孩子和一片烤面包。
+
+message_35:
+  text: 你看到四个孩子与一座巨型雕像在交谈。
+
+message_36:
+  text: 你看到四个孩子在森林里玩耍。
+
+message_37:
+  text: 你看到四个孩子在搭乘矿车。
+
+message_38:
+  text: 电视关上了。
+
+# =========================================================================================
+# RECITAL BACKSTAGE
+# =========================================================================================
+
+#Photos
+
+message_17:
+  text: 有什么东西夺走了你的一根手指。
+
+#Photos
+
+message_18:
+  text: 有什么东西在阻止你进一步靠近。
+
+# =========================================================================================
+# PLAYER'S ROOM
+# =========================================================================================
+
+#Shadow BASIL in room
+
+message_19:
+  text: \n[8]……\!别担心……\!<br>一切都会没事的。\bas
+
+#Door
+
+message_20:
+  text: 你错过了一些东西。
+
+# =========================================================================================
+# LAMP ROOM
+# =========================================================================================
+
+#Lamp
+
+message_21:
+  text: 你拧上了\c[4]灯泡\c[0]。
+
+message_22:
+  text: \c[4]灯泡\c[0]照亮了房间。
+
+message_54:
+  text: 你想捡起这张照片吗？
+
+message_23:
+  text: 你想拧上\c[4]灯泡\c[0]吗？
+
+#Happy Chair
+
+message_50:
+  text: 这里的空气感觉很不错。
+
+message_51:
+  text: 你可以听到外面鸟儿的叽喳声。
+
+message_52:
+  text: 空气中弥漫着洗干净的衣服的味道。
+
+message_53:
+  text: 你可以感受到阳光温暖着你的脸颊。
+
+message_69:
+  text: 玛里的日历。\!今天是演奏会的日子。
+
+#test in BACKSTAGE
+
+message_300:
+  faceset: MainCharacter_Mari
+  faceindex: 22
+  text: \n[8]……\!你终于来了。\aub
+
+message_301:
+  faceset: MainCharacter_Mari
+  faceindex: 23
+  text: 我们只能陪同你到这里了。\aub
+
+message_302:
+  faceset: MainCharacter_Mari
+  faceindex: 27
+  text: 你知道吗……\!我们相遇之前，我一直都很难融入周围的人……\aub
+
+message_303:
+  faceset: MainCharacter_Mari
+  faceindex: 27
+  text: 即使我们成为了朋友之后……\!我也还是觉得，你们总有一天会离开我。\aub
+
+message_304:
+  faceset: MainCharacter_Mari
+  faceindex: 23
+  text: 不过……\!当其他人各有各忙的时候……\!你却总是好像有时间陪我。\aub
+
+message_305:
+  faceset: MainCharacter_Mari
+  faceindex: 23
+  text: 你会听我说上好几个小时……\!在这点上，我一直都依靠着你。\aub
+
+message_306:
+  faceset: MainCharacter_Mari
+  faceindex: 26
+  text: 我知道过去几年里，我们都没怎么见过面……<br>\!可是，那也已经是过去的事情了。\kel
+
+message_307:
+  faceset: MainCharacter_Mari
+  faceindex: 25
+  text: 人们总是说我粗心大意，觉得我神经大条……\!<br>但只要你不介意，我以后就会一直待在你身边的！\kel
+
+message_308:
+  faceset: MainCharacter_Mari
+  faceindex: 8
+  text: \n[8]……\!我们知道你不想面对这一切。\her
+
+message_309:
+  faceset: MainCharacter_Mari
+  faceindex: 11
+  text: 要鼓起勇气前进，一定非常困难。\her
+
+message_310:
+  faceset: MainCharacter_Mari
+  faceindex: 9
+  text: 不过……\!你也应该再多信任我们一点。\her
+
+message_312:
+  faceset: MainCharacter_Mari
+  faceindex: 24
+  text: 仅仅因为你做了坏事……并不代表你就是坏人。\kel
+
+message_313:
+  faceset: MainCharacter_Mari
+  faceindex: 11
+  text: 你与内心的这份痛苦共处了这么久……\!你从来没有和别人提起过。\her
+
+message_314:
+  faceset: MainCharacter_Mari
+  faceindex: 8
+  text: 你当然可以试着不去想那些痛苦的事情。但其实，大哭一场也没有关系。\her
+
+message_315:
+  faceset: MainCharacter_Mari
+  faceindex: 10
+  text: 未来一定有更多的好时光等着我们。<br>\!生活总会变好的……\!一切只取决于你的行动。\her
+
+message_316:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 接下来会发生什么，只能由你来决定了。\aub
+
+message_317:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: 不过，正因为你希望有我们在，我们才会在这里。\her
+
+message_318:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 而且……\!我们也希望这不会是我们最后一次见面。\kel
+
+message_319:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 你能做到的，\n[8]！\!我保证会陪你走到最后的！\kel
+
+message_320:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 嗯……\!我觉得我们永远都会是最好的朋友，只要你愿意的话。\!你肯定愿意的，对吧？\kel
+
+message_321:
+  faceset: MainCharacters_Faraway
+  faceindex: 42
+  text: 无论你最后如何抉择……\!我们都希望这一切能有最好的结果。\her
+
+message_322:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 时刻记着我们吧。\!我们会为你加油的。\her
+
+message_323:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: 不管你怎样压抑自己的感情……\!它们还是会萦绕在你的心头。<br>\!你如何对待那些感情……\!那便是你的真相。\aub
+
+message_324:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 嘿，\n[8]……\aub
+
+message_325:
+  faceset: MainCharacters_Faraway
+  faceindex: 11
+  text: 演出一定要成功哦，听明白了吗？\aub
+
+message_330:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 我们相信你……\|\n[8]。\aub
+

@@ -1,0 +1,82 @@
+# =========================================================================================
+# Pet Rock
+# ========================================================================================
+
+#Cutscene: KEL loses HECTOR in Otherworld Ladder II
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel等——等等……大家，等一下！\!……\!该死……\!<br>他去哪里了？\!刚刚还在我这呢！
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her谁去哪里了？
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel\c[13]赫克托尔\c[0]，我的宠物石头啊！\!明明刚才还在我口袋里的。
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\sinv[1]\Com[2]不\{—\{呜呜—\{呜呜呜呜！！
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\{\Com[2]\sinv[1]\c[13]赫克\{——\{托尔——\c[0]！！！
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 21
+  text: \kel他一定是从我的口袋里掉出去了……<br>在我没注意的时候……
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel对不起，\c[13]赫克托尔\c[0]……我应该更小心一点的……
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub你干嘛反应那么大？不就是块石头吗？
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel你怎么敢说这种话！\!<br>他才不只是一块石头呢……
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\Com[2]\{他是我的家人！！！
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her别担心！他肯定一会儿就会又冒出来的啦，凯。
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her\}大概吧……
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 22
+  text: \kel希望如此……
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel等着我，\c[13]赫克托尔\c[0]！\!<br>我会找到你的……\!我发誓！
+
+message_15:
+  text: \n<希瑟>你永远是我们的骄傲，儿子。
+
+message_16:
+  text: \n<小希瑟>去追逐你的梦想吧，兄弟！
+

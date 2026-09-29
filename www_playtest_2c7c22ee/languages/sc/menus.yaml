@@ -1,0 +1,126 @@
+ # ===========================================
+ # Menu scenes and translations
+ # ===========================================
+
+plugins:
+  mainMenu:
+    commands:
+    - [？？？, 换人, 戳刺]
+    - 装备
+    - 口袋
+    - 技能
+    - 选项
+    status:
+      tag: 和谁交换？
+      select: 选择谁？
+
+  equipMenu:
+    weapon: 武器
+    charm: 护身符
+    replace: 换成哪个？
+
+  skillMenu:
+    skills: 技能
+    replace: 换成哪个？
+    DoWhat: 做什么？
+    use: 使用
+    swap: 交换
+    useon: 对谁使用？
+
+  pocketMenu:
+    consumables: 消耗品
+    toys: 玩具
+    important: 重要
+    trash: 垃圾
+    use: 使用
+    sure: 你确定吗？
+    useon: 对谁使用？
+
+  optionsMenu:
+    general:
+      screenResolution:
+        text: 屏幕分辨率
+        options: [X1, X2, X3, X4]
+        help: 改变屏幕的分辨率。
+        spacing: 80
+
+      fullScreen:
+        text: 全屏
+        options: [开, 关]
+        help: 使游戏全屏。
+        boolIndex: true
+        spacing: 80
+
+      commandRemember:
+        text: 记住选择的战斗指令
+        options: [开, 关]
+        help: 在战斗中记住选定的命令。
+        boolIndex: true
+        spacing: 80
+
+      battleAnimations:
+        text: 战斗动画
+        options: [开, 关]
+        help: 帮助信息
+        boolIndex: true
+        spacing: 80
+
+      battleAnimationSpeed:
+        text: 战斗动画速度
+        options: [普通, 快, 更快, 最快]
+        help: 帮助信息
+        spacing: 130
+
+      battleLogSpeed:
+        text: 战斗记录速度
+        options: [普通, 自动]
+        help: 帮助信息
+        spacing: 130
+
+      alwaysDash:
+        text: 角色移动
+        options: [冲刺, 步行]
+        help: 帮助信息
+        boolIndex: true
+        spacing: 130
+
+    audio:
+      bgmVolume:
+        text: 背景音乐音量
+        help: 改变背景音乐的音量。
+
+      bgsVolume:
+        text: 背景音效音量
+        help: 改变背景音乐的音量。
+
+      meVolume:
+        text: 效果音乐音量
+        help: 改变效果音乐的音量。
+
+      seVolume:
+        text: 音效音量
+        help: 改变声音效果的音量。
+
+    controls:
+      keyboardHeader: 键盘
+      gamepadHeader: 控制器
+      pressKeyPrompt: 请按键
+      resetAll: 重置所有
+      help: 请按键来改变输入。
+      inputNames:
+        up: 上 (↑)
+        down: 下 (↓)
+        left: 左 (←)
+        right: 右 (→)
+        ok: 确认
+        escape: 取消
+        shift: 逃跑
+        tag: 换人
+        tab: 平移
+        pageup: LB
+        pagedown: RB
+
+    system:
+      load:
+        text: 读取存档文件
+        help: 读取存档文件。

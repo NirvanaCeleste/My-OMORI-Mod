@@ -1,0 +1,100 @@
+# =========================================================================================
+# MINI-GAME: Hardware Store
+# =========================================================================================
+
+
+message_19:
+  text: 你看到一张写着“需要人手”的招工海报，<br>是一份分类摆放五金制品的零工。
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel喔！你要接下这份工作吗，\n[8]？\!<br>这样的话，那我之后再回来找你。\!工作加油咯！
+
+#Intro
+message_0:
+  text: \n<“修它”老板>哟，小子！我看你盯着我们这张招工海报嘛！\!<br>要不要来打份零工啊？
+
+#[Nod/Shake]
+#[Nod]
+message_1:
+  text: \n<“修它”老板>太棒了，小子！\!我来帮你准备准备。
+#[Shake]
+message_2:
+  text: \n<“修它”老板>好吧好吧。<br>\!你要是想挣点零花钱的话，随时找我。
+
+#Tool Names
+message_3:
+  text: 电钻
+
+message_4:
+  text: 卷尺
+
+message_5:
+  text: 铲子
+
+message_6:
+  text: 锯子
+
+message_7:
+  text: 锤子
+
+message_8:
+  text: 扳手
+
+message_9:
+  text: 你想把\v[815]放在这里吗？
+
+message_10:
+  text: 你想用它替换什么？
+
+message_11:
+  text: 你把\v[813]放在了之前\v[815]在的地方。
+
+message_12:
+  text: 你手里拿着\v[815]。
+
+message_13:
+  text: 你把\v[815]放在了这里。
+
+message_14:
+  text: 你想拿起什么？
+
+message_15:
+  text: 你拿起了\v[815]。
+
+# Trying to leave the shop without finishing your job
+message_16:
+  text: \n<“修它”老板>嘿！你这是要去哪？
+
+message_17:
+  text: \n<“修它”老板>我们不是说好了吗！\!把陈列架摆好，你就能挣到钱了！
+
+# Complete
+message_18:
+  text: 一切终于都归位了。
+
+#Rule Explanation
+message_23:
+  text: \n<“修它”老板>好了，小子。\!仔细看看身后这些架子，<br>你就会发现所有东西都摆得乱七八糟！
+
+message_24:
+  text: \n<“修它”老板>按理说，有了架子上的标签，人们就应该知道东西要放在哪儿，但现在的人完全不在乎，只会随手乱放……\!唉……\!我讨厌零售行业……
+
+message_21:
+  text: \n<“修它”老板>不管怎样，架子上的标签告诉了你产品都该放在哪儿。\!你的工作就是把所有东西归回原位，懂了吧？\!这事儿就指望你了啊，孩子。
+
+#Quest Finish
+
+message_22:
+  text: \n<“修它”老板>\sinv[1]呼噜……\|呼噜……\!\sinv[0]嗯——嗯？什么？你终于做完了？\!<br>做得好啊，小子！\!给你 $30.00！\!<br>别一口气全花光了啊！
+
+#Return to Party:
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \Kel嘿，\n[8]！打工怎么样？\!<br>我刚刚去公园里打了会儿篮球！\!<br>哎呀，真好玩……\!总之……\!你好了的话我随时可以走喔！
+
+message_30:
+  text: \n<“修它”老板>嗯……\!我看看……\!呃……不错！你快完工了！\!找到感觉就好！
+

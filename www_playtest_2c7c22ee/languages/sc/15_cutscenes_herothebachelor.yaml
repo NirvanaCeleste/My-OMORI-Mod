@@ -1,0 +1,569 @@
+# =========================================================================================
+# Cutscene: Hero the Bachelor / To THE DUNGEON With You!
+# =========================================================================================
+
+#Trigger: Enter SWEETHEART'S CASTLE ENTRANCE.
+
+message_0:
+  text: 有人吗！拜托帮帮我！\! <br>我急需一位年轻英俊的绅士！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE jumps
+
+message_1:
+  text: 你……不错！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE walks one step forward.
+
+message_2:
+  text: 对，就是你，穿条纹裤子的。\!你这\quake[1]迷人的野兽！\quake[0]\!<br>没错……哦嚯嚯嚯……没错没错，你肯定能满足要求！\n<小胡子鼹鼠>
+
+#HERO sweats.
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 哈、哈？\!哇哦……呃……\!这还真、真是谢谢你夸奖！<br>我、我都不知道说什么好了……\her
+
+#MUSTACHE MOLE walks up to HERO.
+
+message_4:
+  text: 拜托了，好心的先生。你可以向一只可怜又低贱的鼹鼠伸出援手吗？\! <br>我迫切需要你的帮助。\n<小胡子鼹鼠>
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 好吧，既然你问得这么有诚意……我又怎么肯拒绝呢？\her
+
+#MUSTACHE MOLE jumps.
+
+message_6:
+  text: 谢谢你！谢谢你，小伙子！你真是太善良了。\! <br>请跟着我来。快点！快点！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE attempts to push HERO O.S. toward stage.
+#HERO sweats.
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 慢、慢着，等一下！我的朋友们也可以跟着来吗？\her
+
+#MUSTACHE MOLE is confused, then surprised.
+
+message_8:
+  text: 啊，当然了！你的朋友们！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE turns to party.
+
+message_9:
+  text: 你们都是来看《甜心冒险》的，没错吧？\!<br>既然如此，你们很快就会再见面的。\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE turns to HERO.
+
+message_10:
+  text: 快来吧，先生！我们不能再耽搁了，时间紧迫！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE and HERO walk O.S.
+
+message_11:
+  text: 英雄离开了小队。
+
+#Take seats
+
+message_12:
+  text: 你准备好在前排就座了吗？
+
+# =========================================================================================
+# Cutscene: Hero the Bachelor / To THE DUNGEON With You! (Cont.)
+# =========================================================================================
+
+#Trigger: Examine Front Row Seats.
+message_30:
+  text: 甜心的粉丝们，你们好。<br>我们对短暂的中场休息表示歉意。\!<br>欢迎回到我们的定期节目！\smm
+
+message_31:
+  text: 我们遗憾地通知各位，中场休息期间，这个舞台上发生了一场悲剧事故。\smm
+
+#Curtain opens, revealing a portrait of SNALEY.
+
+message_32:
+  text: 我们在此沉痛宣布，<br>虽然事发突然，但是三号参赛者永远离开了我们……\smm
+
+message_33:
+  text: 我们会深深地怀念他在舞台上与我们共同度过的那数秒时光……\!啊，他真是一个独特又无可替代的灵魂。\smm
+
+#Curtains close and open, changing the graphic behind to SWEETHEART'S Show Graphic. SPROUT MOLE #1 and #2 are already in their right spots.
+
+message_34:
+  text: \Com[2]\{\sinv[1]但是演出必须继续！！\smm
+
+message_35:
+  text: 请热烈欢迎我们新的三号参赛者……\!<br>从\c[11]辽阔森林\c[0]千里迢迢赶来……\!<br>盔甲熠熠发亮的英雄！\smm
+
+message_36:
+  text: 听好了，各位。\!<br>英雄是实实在在的大块头，他的身高达到了惊人的一米七！\smm
+
+#Someone whistles.
+
+message_37:
+  text: 他热衷于烘焙、烹饪和打扫卫生……\!<br>这听起来还不够完美的话，别忘了他那迷死人的笑容，还有那温文尔雅的性格！\smm
+
+#Wild applause.
+
+message_38:
+  text: 那么现在，再一次……<br>是时候请我们的明星出场了！\smm
+
+message_39:
+  text: \{\sinv[2]灯光师！！请调暗灯光！！\smm
+
+#The lights dim.
+
+message_40:
+  text: \sinv[1]她的一举一动……\|散发着美丽……\|她的一言一行……\|流露出优雅……\|<br>她确实拥有……\|艳美绝俗的月貌花庞……\smm
+
+message_41:
+  text: 没错！\!你们都知道她是谁！<br>\!她就是一切魅力与美好的化身，而她即将踏上这个舞台！\smm
+
+message_42:
+  text: 她是独一无二的……\!空前绝后的……\!美丽动人的……\smm
+
+message_43:
+  text: \Com[2]\sinv[2]哦嚯嚯\{嚯嚯\{嚯嚯\{嚯嚯！！\swh
+
+#The stage curtain opens revealing SW on a lounge chair.
+
+message_44:
+  text: \Com[2]\sinv[2]\{哦嚯嚯\{嚯嚯嚯\{嚯嚯嚯！！\swh
+
+#Fan laugh
+
+message_45:
+  text: \Com[2]\sinv[2]\{\{哦\Com[2]嚯嚯\{嚯\Com[2]嚯\Com[2]\{嚯\Com[2]嚯嚯！\swh
+
+message_46:
+  text: 多么华丽的登场，我的陛下！\smm
+
+#Wild applause.
+#SWEETHEART jumps off from cake.
+
+message_47:
+  text: \sinv[2]\{\{啊没错！\!甜心本人就是我！\swh
+
+message_48:
+  text: 你们好呀，我愚蠢而忠实的粉丝们！\swh
+
+message_49:
+  text: \sinv[1]我们爱你，甜心！<br>你就是最棒的！\n<愚蠢而忠实的粉丝们>
+
+message_50:
+  text: \Com[2]\sinv[2]\{\{哦\Com[2]嚯嚯\{嚯\Com[2]嚯\Com[2]\{嚯\Com[2]嚯～！\swh
+
+message_51:
+  text: 甜心……\!我们把世界上最优秀的三位单身者带到了这个舞台上。\!今天，他们之中有谁能夺走你的心呢？\smm
+
+#SMM and SWEETHEART turn to face the CONTESTANTs.
+
+message_52:
+  text: 我们先大家问几个问题吧。\! <br>甜心最看重的配偶品质，就是对她彻底而绝对的服从！\smm
+
+message_106:
+  text: 你，一号参赛者，是否同意……\!宣誓终生效忠于甜心？\!<br>一号参赛者！你的答案是？\smm
+
+#CONTESTANT #1 is confused.
+
+message_53:
+  text: 呃……\!可以啊。\!我也不确定……\!也许吧……\n<一号参赛者>
+
+#SMM turns to SWEETHEART.
+
+message_54:
+  text: 是想欲擒故纵吗，原来如此！\!你认为他的答复如何，甜心？\smm
+
+#SWEETHEART is annoyed.
+
+message_55:
+  text: 哼姆……身高才一米不到？\!哦呀，这也太矮了！\! <br>送他上路吧……\!\Com[2]把他打进\c[11]地牢\C[0]！\swh
+
+#CONTESTANT #1 starts sweating.
+
+message_56:
+  text: 嘿……你、你说什么？\!\c[11]地、地牢\c[0]？\n<一号参赛者>
+
+#Guards come out and escort CONTESTANT #1 to THE DUNGEON.
+
+message_57:
+  text: \{\sinv[1]救\{救\{救命啊！！！\sinv[0]\n<一号参赛者>
+
+#CONTESTANT #2 is sweating.
+#SMM turns to CONTESTANT #2.
+
+message_58:
+  text: 现在轮到二号参赛者了。\!我们会问你相同的问题。\! <br>答案没有正确或者错误之分。你只需要如实回答！\smm
+
+message_59:
+  text: 二号参赛者……\!<br>你是否同意宣誓终生效忠于甜心？\smm
+
+#CONTESTANT #2 is sweating.
+
+message_60:
+  text: 这，呃……\!当然了！<br>如果这样回答就不用进\c[11]地牢\C[0]的话……\n<二号参赛者>
+
+#SWEETHEART is annoyed.
+
+message_61:
+  text: 啊呀！这家伙……\!他的存在就是对我的冒犯。\!<br>把他带走，小的们！\swh
+
+#Guards come out and escort CONTESTANT #2 to THE DUNGEON.
+#HERO starts sweating.
+#SMM turns to HERO.
+
+message_62:
+  text: 三号参赛者！看起来你是唯一剩下的参赛者了。\!<br>我还是会问你相同的问题。<br>再次强调，千万不要感到有压力。\smm
+
+message_63:
+  text: 那么，英雄，你是否同意宣誓终生效忠于甜心？\smm
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: ……\her
+
+message_65:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 嗯……我拒绝，这完全不合理啊。\!<br>我凭什么要同意呢？\her
+
+#SWEETHEART is in love.
+
+message_66:
+  text: 哦呀……\!这这这。\!他简直是完美无瑕！\!<br>难道说？\!甜心终于坠入了……\!\sinv[1]爱河？\swh
+
+message_67:
+  text: \{\Com[2]多么激动人心的转折啊！\!\}<br>这一定是命运的安排！天作之合！\smm
+
+message_68:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 等、等等，但我明明说的是——\her
+
+message_69:
+  text: \sinv[1]\{啊，对、对！我们会很般配的。\!\}<br>好了，你的名字是什么来着？\swh
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 诶、诶？\!是、是，呃……\!我叫英雄，女士……\her
+
+message_71:
+  text: 英雄！\!\Com[2]我的英雄！\!我们必须即刻前往我的寝宫！\swh
+
+message_72:
+  text: 守卫们！我选好我的另一半了。\!<br>\{把他带走！\swh
+
+#Guards come out and walk toward HERO.
+#HERO takes a step back and sweats.
+#HERO turns to the audience.
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \{伙伴们！拜托你们……做点什么啊！\her
+
+message_74:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 哇！英雄要嫁给甜心了？\!<br>完全是意料之外的展开耶！\kel
+
+#AUBREY turns to KEL.
+
+message_75:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 凯，你在说什么呢？！我们得去帮他！\aub
+
+#KEL turns to AUBREY.
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 你想让我怎么帮呀？<br>我可不想被打进\c[11]地牢\c[0]！\kel
+
+message_77:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 呃……凯……你真的有够没用的。\aub
+
+#AUBREY turns to HERO.
+#AUBREY jumps.
+
+message_78:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 英雄！\!你要回绝掉甜心！\aub
+
+#HERO takes a step back.
+
+message_79:
+  text: \sinv[1]是时候了哦，英雄！你的公主还在等着呢！\swh
+
+#ADD Ohohoho
+
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 呃……我不觉得她会好好听我说。\her
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \Com[2]\{赶紧照做就是了！！\aub
+
+#HERO takes a step back and turns around.
+
+message_82:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: ……\her
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 44
+  text: 好吧，那我试试。\her
+
+#HERO turns to SWEETHEART.
+
+message_84:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 不好意思……\!甜心……\!女士？\her
+
+message_85:
+  text: \sinv[1]啊，不错……我可爱的英雄！<br>我是多么渴望听到你甜美的声音啊！<br>再叫一次我的名字！\sinv[0]\swh
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 哇哦，哈哈……你真是太过奖了……\!我是想说——\her
+
+message_87:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \}唉……为什么我非得这么做不可呢？\her
+
+message_88:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 咳咳……\!<br>我很抱歉，甜心，但是……\!我对这……\!不是……\!很感兴趣……\her
+
+message_89:
+  text: 怎么……你这是什么意思，我的王子？\swh
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 我……\!呃……\!这一切都让我受宠若惊啦，但是，怎么说呢……<br>我们才……刚刚见面，所以……\her
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 嗯……\!我不得不拒绝你的……\!呃……\!提议？\her
+
+#Audience gasps.
+
+message_92:
+  text: 噢，瞎说什么呢！噢，别犯傻了，英雄！<br>我从没听过比这更傻的傻话！\swh
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 我……\!我是认真的。\!<br>我很抱歉，甜心，但是……\her
+
+message_94:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 我……\!不……\!想……\!和你结婚。\her
+
+message_95:
+  text: …… …… …… …… …… …… …… …… …… …… …… …… …… …… ……\swh
+
+message_96:
+  text: 这……\!简直是荒唐无稽……\!……\!<br>不……\!这……\!\Com[2]这完全是亵渎！\swh
+
+message_97:
+  text: \{\Com[2]\QUAKE[1]你竟然有胆量拒绝甜心？！？！\swh
+
+message_98:
+  text: \{\Com[2]所有人都爱甜心！！<br>你听到了吗？！是所有人！！\swh
+
+message_99:
+  text: \{把他送去\c[11]地牢\C[0]！！\swh
+
+
+#Guards close in on HERO.
+#AUBREY jumps.
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 嘿！住手！\!<br>不准带走英雄。他是我们的人！\aub
+
+message_101:
+  text: 这又是在搞什么？\!<br>观众席里怎么会有人不是甜心的粉丝呢？\swh
+
+message_102:
+  text: 啊……\!我懂了……\!你们一定是英雄的粉丝！\swh
+
+message_103:
+  text: 你们这些家伙真有种……<br>先是让我出丑……现在，竟然还敢打断我的节目？！\swh
+
+message_104:
+  text: 这里的规矩都是我定的！\swh
+
+message_105:
+  text: \{\Com[2]守卫们！把他们带走！！\swh
+
+#Guards appear from everywhere and pose to arrest.
+
+message_107:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 瞧你干的好事，奥布里……\kel
+
+#Guards surround party and screen turns black.
+
+# =========================================================================================
+# Cutscene: Escape THE DUNGEON
+# =========================================================================================
+
+#Trigger: Sent to Sweetheart DUNGEON
+
+
+message_130:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: 哎呀……\!现在我们都被困在\c[11]地牢\C[0]里了……\kel
+
+message_131:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 抱歉了，大家。都是因为我，现在情况才变得一团糟。\her
+
+message_132:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 不，英雄，不是你的错……\!<br>没有人能够预料到会发生这种情况呀。\aub
+
+message_133:
+  text: 哦嚯嚯嚯嚯……\who
+
+#KEL, AUBREY, and HERO are surprised.
+
+#MUSTACHE MOLE walks in front of jail cell.
+#HERO is surprised and walks up.
+
+message_134:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 嘿，我记得你！<br>你是那个叫我去参加节目的树苗鼹鼠！<br>\!你能不能帮我们逃出去？\her
+
+message_135:
+  text: 哦嚯嚯嚯嚯……\n<小胡子鼹鼠>
+
+message_136:
+  text: \sinv[2]哦嚯嚯\{嚯嚯\{嚯嚯\{嚯嚯～！！\n<小胡子鼹鼠>
+
+message_137:
+  text: \{你们这群蠢货！\n<小胡子鼹鼠>
+
+message_138:
+  text: 你们不会不认得我了吧？！\n<小胡子鼹鼠>
+
+#MUSTACHE MOLE takes off MUSTACHE.
+
+message_139:
+  text: \{\Com[2]是我啊！\!罗莎！！\!\}<br>天下第一的甜心粉丝！\ros
+
+message_140:
+  text: 我告诉过你们，惹上我早晚得付出代价！\ros
+
+message_141:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 靠！我们被她忽悠了！\kel
+
+message_142:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 我早就该知道你是幕后黑手，罗莎！\kel
+
+message_143:
+  text: 大家都说复仇的滋味甜美无比……<br>\{现在看来果然如此！！\ros
+
+message_144:
+  text: 在这自生自灭吧，贱民们！在\c[11]地牢\C[0]里永远腐烂下去吧！\ros
+
+#ROSA walks O.S.
+
+message_145:
+  text: \sinv[2]\{\Com[2]哦嚯\{嚯嚯\{嚯嚯\{嚯嚯～！\ros
+
+message_146:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 要命……我们怎样才能离开这里呢？\her
+
+message_147:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 我们会找到方法的！\!<br>来吧，大伙儿……我们好好想想。\aub
+
+message_148:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 我们该从哪里开始想呢？\! <br>他们总不可能不锁门吧……\!<br>对吧？\her
+
+# =========================================================================================
+# Cutscene: The Ugliest
+# =========================================================================================
+
+#Trigger:
+
+message_170:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 快，看那里！\aub
+
+#AUBREY does a twirl.
+
+message_171:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 我们终于找到出口了！\aub
+
+message_172:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{\sinv[1]呀——呼——！！终于自由啦！！\sinv[0]\kel
+
+message_173:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: 我们快走吧……\!<br>我这辈子都不想再见到树苗鼹鼠了。\her
+
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+#Trigger: Trying to leave after AUBREY says the show is about to start
+
+message_200:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 你要去哪儿呀，OMORI！我们得看演出呀！\aub
+
+#Trigger: Trying to leave after ROSA takes HERO
+
+message_201:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 等一等，OMORI！\!我们不能就这样把英雄丢下！\aub
+

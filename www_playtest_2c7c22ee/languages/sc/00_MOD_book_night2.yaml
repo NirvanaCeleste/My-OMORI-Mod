@@ -1,0 +1,5610 @@
+# ============================================================================
+# 《未竟之事》第二夜 —— 《那一天》
+# 作者：NirvanaCeleste
+# ============================================================================
+# 原创。Basil 反复改写"那一天"。
+# 房间 → 楼梯 → 门。
+# 但越改越不对劲：字迹渗墨、重复、消失、爬出纸面。
+# 门后什么都没有——因为 Basil 从来就没有进去过。
+# 最后一页：Basil也在房间里。
+# ============================================================================
+
+defaults:
+  speed: 4
+  mode: sequential
+  allowExit: false
+
+order:
+  - room
+  - stairs
+  - door
+  - ending
+  - confirm
+
+states:
+  - id: s0
+    editable: gA
+    pages:
+      room:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gA
+            variants:
+              - "“房间里没有人。”"
+              - "“房间是空的。”"
+        text: |
+          Basil翻开那本书。
+
+          书页是白的。
+
+          但这一次，白得有点不对劲。
+
+          像是被人擦了很多遍。
+
+          第一页写着一行字：
+
+          **“房间里只有两个人。”**
+
+          Basil看着这行字。
+
+          他想不起来这是哪一天。
+
+          但他知道这是哪一天。
+
+          “只有两个人。”他读了一遍。
+
+          “……只有两个人。”
+
+          他拿起笔。
+
+          他想把这行字改掉。
+
+          他想写——
+
+          房间里没有人。
+
+          房间里没有那两个人。
+
+          **“房间里只有两个人。”**
+      ending:
+        write:
+          origin: [48, 56]
+          speed: 4
+        readonly: true
+        text: |
+          Basil合上书。
+
+          天亮了。
+
+          他低头，看见自己的手上全是墨。
+
+          他擦了擦，擦不掉。
+
+          他翻开书——
+
+          最后一页，不知道什么时候多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+      confirm:
+        write:
+          origin: [48, 56]
+          speed: 4
+        readonly: true
+        confirm: true
+        doneSwitchId: 1003
+        confirmChoices:
+          - "确定"
+          - "否"
+        text: |
+          书在这里合上了。
+          要合上书吗？
+  - id: s1
+    parent: s0
+    trigger: { sentence: "gA", action: variant, value: 0 }
+    editable: gB
+    pages:
+      room:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          房间里没有人。
+
+          Basil写完这行字。
+
+          墨迹很重。
+
+          纸有点皱了。
+
+          他盯着这行字，看了很久。
+
+          “没有人。”他说。
+
+          “……没有人。”
+
+          他翻到第二页。
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Basil没有听见任何声音。”"
+              - "“Basil站在原地，没有动。”"
+        text: |
+          第二页写着一行字：
+
+          **“Basil听见脚步声。”**
+
+          Basil的手停住了。
+
+          他记得这一天。
+
+          他记得楼梯。
+
+          他记得自己站在楼下，听见楼上的声音。
+
+          “不要上楼。”Basil想。
+
+          “不要上楼。”
+
+          他拿起笔。
+  - id: s2
+    parent: s0
+    trigger: { sentence: "gA", action: variant, value: 1 }
+    editable: gB
+    pages:
+      room:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          房间是空的。
+
+          Basil写完。
+
+          纸皱得更厉害了。
+
+          他用手掌压了压，压不平。
+
+          字迹在纸上，有点发灰。
+
+          “空的。”他说。
+
+          “……是空的。”
+
+          他翻到第二页。
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Basil没有听见任何声音。”"
+              - "“Basil站在原地，没有动。”"
+        text: |
+          第二页写着一行字：
+
+          **“Basil听见脚步声。”**
+
+          Basil看着这行字。
+
+          他想起那天下午。
+
+          阳光很好。
+
+          楼上的声音，他以为只是普通的动静。
+
+          “那天下午。”Basil想。
+
+          “如果我没有上楼——”
+
+          他拿起笔。
+  - id: s3
+    parent: s0
+    trigger: { sentence: "gA", action: keep }
+    editable: gB
+    pages:
+      room:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          房间里只有两个人。
+
+          Basil看着这行字。
+
+          他没有改。
+
+          他改不掉。
+
+          “只有两个人。”他又读了一遍。
+
+          “……只有两个人。”
+
+          他翻到第二页。
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Basil没有听见任何声音。”"
+              - "“Basil站在原地，没有动。”"
+        text: |
+          第二页写着一行字：
+
+          **“Basil听见脚步声。”**
+
+          Basil停住了。
+
+          他记得。
+
+          他当然记得。
+
+          “那天下午，我听见了。”他想。
+
+          “我听见了，然后我上楼了。”
+
+          他拿起笔，又放下。
+
+          他拿起笔。
+  - id: s4
+    parent: s0
+    trigger: { sentence: "gA", action: erase }
+    editable: gB
+    pages:
+      room:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil把"房间里只有两个人"划掉了。
+
+          墨迹很重。
+
+          划完一遍，又划了一遍。
+
+          纸被划破了。
+
+          他翻到第二页。
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Basil没有听见任何声音。”"
+              - "“Basil站在原地，没有动。”"
+        text: |
+          第二页写着一行字：
+
+          **“Basil听见脚步声。”**
+
+          Basil看着这行字。
+
+          字迹开始模糊。
+
+          他眨了眨眼。
+
+          字迹还在。
+
+          “听见……脚步声。”他读道。
+
+          他拿起笔。
+  - id: s5
+    parent: s1
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil没有听见任何声音。
+
+          他写完这行字。
+
+          楼梯安静下来。
+
+          楼下很安静。
+
+          楼上也很安静。
+
+          “没有声音。”Basil说。
+
+          “……我什么都没有听见。”
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          他的笔悬在纸上。
+
+          “不要写。”他对自己说。
+
+          “不要推开那扇门。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s6
+    parent: s1
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil站在原地，没有动。
+
+          他写完这行字。
+
+          楼梯很长。
+
+          他站在楼梯中间。
+
+          不上，不下。
+
+          “站着就好。”Basil想。
+
+          “站着，就什么都不会发生。”
+
+          他站了很久。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          他没有动。
+
+          “我不推。”他说。
+
+          “我不上去。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s7
+    parent: s1
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil听见脚步声。
+
+          他写完这行字。
+
+          字迹开始渗墨。
+
+          他擦了擦，擦不掉。
+
+          “……我听见了。”他说。
+
+          “我听见了，我上楼了。”
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我推开了。”他说。
+
+          “……我推开了。”
+
+          他伸出手。
+
+          纸上的墨，顺着他的手指往上爬。
+  - id: s8
+    parent: s1
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil看着空白的第二页。
+
+          楼梯很安静。
+
+          楼下很安静。
+
+          楼上也很安静。
+
+          “……什么都没有。”他说。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          字迹在动。
+
+          不是他在动。
+
+          是字在动。
+
+          “我没有推开。”他说。
+
+          “我没有……”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s9
+    parent: s2
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil没有听见任何声音。
+
+          他写完这行字。
+
+          楼梯很安静。
+
+          “什么都没有。”他说。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “不要推开。”他说。
+
+          “不要推开。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s10
+    parent: s2
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil站在原地，没有动。
+
+          他写完这行字。
+
+          楼梯很长。
+
+          他站在楼梯中间。
+
+          站了很久。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我不推。”他说。
+
+          “我不上去。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s11
+    parent: s2
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil听见脚步声。
+
+          他写完这行字。
+
+          字迹开始渗墨。
+
+          “我听见了。”他说。
+
+          “我上楼了。”
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我推开了。”他说。
+
+          他伸出手。
+
+          纸上的墨，顺着他的手指往上爬。
+  - id: s12
+    parent: s2
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil看着空白的第二页。
+
+          楼梯很安静。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          字迹在动。
+
+          “我没有推开。”他说。
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s13
+    parent: s3
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil没有听见任何声音。
+
+          他写完这行字。
+
+          楼梯很安静。
+
+          安静得不像话。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          他的笔在发抖。
+
+          “不要推开。”他说。
+
+          “不要推开。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s14
+    parent: s3
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil站在原地，没有动。
+
+          他写完这行字。
+
+          楼梯很长。
+
+          他站在中间。
+
+          不上，不下。
+
+          站了很久。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我不推。”他说。
+
+          “我不上去。”
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s15
+    parent: s3
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil听见脚步声。
+
+          他写完这行字。
+
+          字迹开始渗墨。
+
+          渗得很厉害。
+
+          纸快要黑了。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我推开了。”他说。
+
+          他伸出手。
+
+          纸上的墨，顺着他的手指往上爬。
+
+          爬进他的袖子。
+  - id: s16
+    parent: s3
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil看着空白的第二页。
+
+          楼梯很安静。
+
+          安静得能听见纸的声音。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          字迹在动。
+
+          在纸上爬。
+
+          “我没有推开。”他说。
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+  - id: s17
+    parent: s4
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil没有听见任何声音。
+
+          他写完这行字。
+
+          楼梯很安静。
+
+          纸上的划痕还在。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          字迹在渗。
+
+          他拿起笔。
+
+          他写不下去。
+
+          门已经在那里了。
+  - id: s18
+    parent: s4
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil站在原地，没有动。
+
+          他写完这行字。
+
+          楼梯很长。
+
+          他站在中间。
+
+          纸上的划痕，像一道裂缝。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          他没有动。
+
+          门已经在那里了。
+
+          他伸出手。
+
+          纸上的墨，顺着他的手指往上爬。
+  - id: s19
+    parent: s4
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil听见脚步声。
+
+          他写完这行字。
+
+          字迹开始渗墨。
+
+          渗得很厉害。
+
+          纸快要黑了。
+
+          划痕裂开。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          “我推开了。”他说。
+
+          他伸出手。
+
+          纸上的墨，顺着他的手指往上爬。
+
+          爬进他的袖子。
+
+          爬进他的皮肤。
+  - id: s20
+    parent: s4
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stairs:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil看着空白的第二页。
+
+          楼梯很安静。
+
+          纸上的划痕，像一道裂缝。
+
+          裂缝在变大。
+
+          他继续往上走。
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“Basil在门前停住了。”"
+              - "“那扇门没有打开。”"
+        text: |
+          第三页写着一行字：
+
+          **“Basil推开那扇门。”**
+
+          Basil看着这行字。
+
+          字迹在动。
+
+          在纸上爬。
+
+          爬出纸的边缘。
+
+          爬向他。
+
+          “我没有推开。”他说。
+
+          可是字已经在那里了。
+
+          门已经在那里了。
+
+          门已经在他面前了。
+  - id: s21
+    parent: s5
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s22
+    parent: s5
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s23
+    parent: s5
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s24
+    parent: s5
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s25
+    parent: s6
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s26
+    parent: s6
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s27
+    parent: s6
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s28
+    parent: s6
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s29
+    parent: s7
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s30
+    parent: s7
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s31
+    parent: s7
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s32
+    parent: s7
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s33
+    parent: s8
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s34
+    parent: s8
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s35
+    parent: s8
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s36
+    parent: s8
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s37
+    parent: s9
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s38
+    parent: s9
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s39
+    parent: s9
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s40
+    parent: s9
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s41
+    parent: s10
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s42
+    parent: s10
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s43
+    parent: s10
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s44
+    parent: s10
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s45
+    parent: s11
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s46
+    parent: s11
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s47
+    parent: s11
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s48
+    parent: s11
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s49
+    parent: s12
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s50
+    parent: s12
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s51
+    parent: s12
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s52
+    parent: s12
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s53
+    parent: s13
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s54
+    parent: s13
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s55
+    parent: s13
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s56
+    parent: s13
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s57
+    parent: s14
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s58
+    parent: s14
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s59
+    parent: s14
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s60
+    parent: s14
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s61
+    parent: s15
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s62
+    parent: s15
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s63
+    parent: s15
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s64
+    parent: s15
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s65
+    parent: s16
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s66
+    parent: s16
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s67
+    parent: s16
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s68
+    parent: s16
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s69
+    parent: s17
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s70
+    parent: s17
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s71
+    parent: s17
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s72
+    parent: s17
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s73
+    parent: s18
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s74
+    parent: s18
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s75
+    parent: s18
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s76
+    parent: s18
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s77
+    parent: s19
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s78
+    parent: s19
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s79
+    parent: s19
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s80
+    parent: s19
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s81
+    parent: s20
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil在门前停住了。
+
+          他站在门前。
+
+          门没有开。
+
+          他站着。
+
+          “不进去。”Basil想。“不进去就没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……然后他听见里面有人叫他。
+
+          “Basil。”
+
+          是Mari的声音。
+
+          Basil的手，搭上门把。
+
+          “不要进去。”他对自己说。
+
+          “不要进去。”
+
+          可是他的手指已经收紧了。
+
+          门开了。
+
+          门后是——
+
+          门后是——
+
+          Basil睁大眼睛。
+
+          门后什么都没有。
+
+          空的。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          没有楼梯。
+
+          没有楼下。
+
+          什么都没有。
+
+          Basil站在门口。
+
+          他看着空房间。
+
+          他忽然明白——
+
+          不是房间里没有人。
+
+          是他从来就没有进去过。
+
+          他回头看。
+
+          楼梯也不见了。
+
+          他站在一个什么都没有的地方。
+
+          书页上，最后一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s82
+    parent: s20
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那扇门没有打开。
+
+          Basil站在门前。
+
+          门没有开。
+
+          他站着，等着。
+
+          门没有开。
+
+          “好。”Basil想。“门没有开。没事了。”
+
+          他站着。
+
+          门还是没有开。
+
+          ……但门缝里，有什么东西在渗出来。
+
+          墨。
+
+          黑墨。
+
+          从门缝里渗出来，流到地板上。
+
+          流到他的脚边。
+
+          Basil往后退。
+
+          墨跟着他。
+
+          “不要过来。”Basil说。
+
+          墨没有停。
+
+          墨爬上了他的鞋。
+
+          Basil低头看。
+
+          墨已经漫过了他的脚踝。
+
+          他抬头，想喊人。
+
+          他看见门上，多了一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s83
+    parent: s20
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Basil推开了那扇门。
+
+          门开了。
+
+          门后是——
+
+          Basil没有看清。
+
+          他只记得光线很暗。
+
+          暗得像是傍晚。
+
+          他站在门口。
+
+          他看见房间里的东西，轮廓模模糊糊的。
+
+          他想看清。
+
+          他往前迈了一步。
+
+          门在他身后关上了。
+
+          房间里很暗。
+
+          Basil伸手，摸不到墙。
+
+          他回头，摸不到门。
+
+          他站在黑暗里。
+
+          他听见自己的呼吸声。
+
+          然后他听见，黑暗里有人说话。
+
+          “你来了。”
+
+          是Mari的声音。
+
+          Basil站在原地。
+
+          “我……”他说。
+
+          他说不下去。
+
+          黑暗里，Mari的声音又问了一遍。
+
+          “你来了。”
+
+          Basil低下头。
+
+          他看见自己手里，握着一本书。
+
+          书页是白的。
+
+          最后一页写着一行字：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+  - id: s84
+    parent: s20
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      door:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Basil站在门前。
+
+          门没有开。
+
+          “我没有推开。”Basil想。
+
+          “我没有推开，所以没事。”
+
+          他站着。
+
+          门还是关着的。
+
+          他站着。
+
+          ……门自己开了。
+
+          门自己开了。
+
+          Basil没有动。
+
+          门自己开了。
+
+          门后是——
+
+          Basil没有看。
+
+          他没有看。
+
+          他一直低着头。
+
+          直到他看见，门后伸出一只手。
+
+          手把他拉了进去。
+
+          Basil跌进房间里。
+
+          房间里没有人。
+
+          没有Sunny。
+
+          没有Mari。
+
+          只有他。
+
+          Basil站在空房间里。
+
+          他低头，看见自己手里，握着一本书。
+
+          书页是白的。
+
+          他翻开。
+
+          每一页都是白的。
+
+          最后一页，有一行字在慢慢浮现：
+
+          Basil也在房间里。
+
+          Basil也在房间里。
+
+          Basil也在房间里。

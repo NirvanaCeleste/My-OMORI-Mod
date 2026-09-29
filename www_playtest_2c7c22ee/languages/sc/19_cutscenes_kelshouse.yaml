@@ -1,0 +1,315 @@
+# =========================================================================================
+# Cutscene: Kel's MOM
+# =========================================================================================
+
+#Trigger: Enter KEL's House.
+
+message_0:
+  text: 凯！\!英雄！\!你们俩去哪儿了？\!<br>这么晚了……我可担心死了！\n<凯的妈妈>
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 抱歉，妈妈……我们耽搁了点时间……\!<br>不过有个好消息，我们找到了贝瑟尔，他平安无事。\her
+
+message_2:
+  text: \Com[2]哼！\!我告诉你们……我可是花了整整一周时间准备今晚的烤鸡大餐……\n<凯的妈妈>
+
+#KEL'S MOM looks in direction of dining room.
+
+message_3:
+  text: 但是……\!呜呜……\!等你们等得饭菜都凉了。\n<凯的妈妈>
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 噢，妈妈……\!不要哭了……\her
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 别担心啦，老妈。这不是有微波炉吗！\kel
+
+message_6:
+  text: \com[2]\sinv[1]呜呜呜\{呜呜！\!我可怜的晚餐啊！！\n<凯的妈妈>
+
+#KEL'S DAD walks up to KEL'S MOM.
+
+message_7:
+  text: 好了，好了，亲爱的……振作一点……\n<凯的爸爸>
+
+message_8:
+  text: 今天可是个好日子……别再难过啦。\n<凯的爸爸>
+
+#KEL'S DAD looks at HERO.
+
+message_9:
+  text: 你看！英雄从大学回来了！\n<凯的爸爸>
+
+#KEL'S DAD walks up to HERO.
+
+message_10:
+  text: 好小子，看到你回来可真开心。\n<凯的爸爸>
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 谢了，爸。\her
+
+message_12:
+  text: 呜……\n<凯的妈妈>
+
+message_13:
+  text: 噢，你爸爸说得对。我可不能再哭哭啼啼的了。\n<凯的妈妈>
+
+#KEL'S MOM walks up to HERO.
+
+message_14:
+  text: 见到你回来真好，英雄！<br>我们大家可想你了！\n<凯的妈妈>
+
+#Screen shakes. Everyone is surprised.
+
+message_15:
+  text: \sinv[1]\Com[2]呜呜\{呜呜\{啊啊\{啊啊\{嗷嗷！\who
+
+message_16:
+  text: 啊呀，萨丽好像醒了！\!我去抱她下来。\n<凯的妈妈>
+
+#KEL'S MOM walks toward the staircase entrance and walks O.S.
+#KEL'S DAD walks to Dining Room then turns back.
+
+message_17:
+  text: 来吧，小伙子们。你们一定都饿了。\! <br>准备吃晚饭吧！\n<凯的爸爸>
+
+#KEL'S DAD walks O.S.
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 好耶！我们去把食物加热一下吧！\kel
+
+# =========================================================================================
+# Cutscene: Sleepover at Player's
+# =========================================================================================
+
+#Trigger: Examine Microwave with food.
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 呼……\!<br>看来事情都搞定了……<br>我们终于可以休息一会儿了。\her
+
+#HERO turns to PLAYER.
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 很高兴能再见到你，\n[8]！\!<br>真的是好——久没见了！\her
+
+#HERO turns to KEL.
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 噢，也很高兴再见到你，凯。\her
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 所以，\n[8]，听妈妈说你很快就要搬家了！这可真是让人激动！\her
+
+message_44:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 是啊，他是要搬家了。\!明天就是他在这里的最后一天了。\kel
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 搬家可能会有点折腾人，不过等你习惯下来就好啦。\!<br>我觉得这对你来说也是好事，\n[8]。\her
+
+message_46:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 搬到其他地方可以让你学到很多新东西，而且也能为你带来<br>一个崭新的开始！\!虽然你离开我会有点难过，<br>不过我们只要保持联络就好啦。\her
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 唉……\!我们确实有好多共同的回忆啊。\!<br>有的时候我真的很怀念那段时光……\!<br>整天懒洋洋的……\!吃好吃的……\!喝好喝的……\kel
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 是啊，那时我们无时无刻都在一起。\!<br>我们去过公园、湖边、沙滩……\!不过说真的，我最怀念的是还是在你家一起玩的时候，\n[8]！\her
+
+message_49:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 你们家什么都有……\!<br>有一台大电视，有最新的玩具，还有一台三角钢琴……\!<br>当然啦，还有那间属于我们的树屋！\her
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 对哦！那间树屋超棒的！\!<br>话说树屋还在吗？\!在吗，\n[8]？\kel
+
+#Microwaved food is done.
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 看样子晚饭都热好了！\!去客厅里吃吧。\!<br>我们可以在那儿接着聊！\her
+
+# =========================================================================================
+# Cutscene: Convincing Kel's MOM
+# =========================================================================================
+
+#Enter KEL'S Living Room.
+
+message_70:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 顺带一提哦，英雄……\!<br>贝瑟尔昨天把他的\c[4]相册\c[0]给了 \n[8]！\!<br>你想翻翻看吗？\kel
+
+message_71:
+  faceset: MainCharacters_Faraway
+  faceindex: 42
+  text: 你带了贝瑟尔的\c[4]相册\c[0]？\!<br>好呀，我们边吃晚饭边看吧！\her
+
+#Slide: Basil's PHOTO ALBUM (Faraway - Missing Photos)
+
+message_72:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 可惜有些相片不见了……\!<br>奥布里把贝瑟尔的相册偷走了，又被我们找了回来。\!剩下的相片大概在她那儿吧。\kel
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: …… …… ……\her
+
+message_74:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 喂，英雄，怎么了？你还好吧？\kel
+
+message_75:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: 我还好……\!只是……\!嗯……\!<br>这些相片里都没有玛里。\her
+
+#KEL is surprised.
+
+message_76:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 噢，你说得对……确实没有她。\kel
+
+message_77:
+  faceset: MainCharacters_Faraway
+  faceindex: 42
+  text: 唉……\!就算是这样，这本相册还真是勾起了不少美好的回忆呀。\!当我们都还是孩子的时候，一切都是那么单纯美好……哈哈……\her
+
+#HERO turns to PLAYER.
+
+message_78:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \n[8]，我有个请求。\her
+
+message_79:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 在你走之前，可以让我们再去一次你家吗？\her
+
+message_80:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 哦，这主意不错！\!<br>不过你得说服老妈才行。\kel
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 她可能会生气的，说什么<br>你回来了也不多花点时间陪陪她。\!你也知道，她就是那样……\kel
+
+#KEL'S MOM comes in with SALLY.
+
+message_82:
+  text: \Com[2]呼！闹腾了老半天！\!<br>萨丽拉了点臭臭，不过已经清理干净啦！\n<凯的妈妈>
+
+message_83:
+  text: \sinv[1]哔\{——！\!\}噗\}噗……？\n<萨丽>
+
+#KEL gets up and goes to SALLY.
+
+message_84:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 嗨，小萨丽……\!<br>你看不见我……你看不见我……\{\sinv[1]哇！\kel
+
+message_85:
+  text: \sinv[1]\Com[2]呜呜\{呜呜\{啊啊\{啊嗷\{嗷！！\n<萨丽>
+
+message_86:
+  text: 别闹了，凯！你吓到她了！\n<凯的妈妈>
+
+#HERO is sweating and looks at KEL'S MOM.
+
+message_87:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: 咳咳……\!我说……\!呃……\!嘿……\!妈妈……\!我们在想今晚能不能去 \n[8] 家玩，因为他很快就要搬走了。\her
+
+#KEL'S MOM is surprised.
+
+message_88:
+  text: 喔？\!可你才刚刚回来呀！\!而且已经这么晚了。\!<br>就不能陪一陪你老妈吗？\n<凯的妈妈>
+
+message_89:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 可是 \n[8] 后天就要走了，而我整个暑假都会在家呢！\!<br>有大把时间可以陪你啦……\her
+
+#KEL'S DAD walks up to KEL'S MOM.
+
+message_90:
+  text: 亲爱的，就让英雄去陪陪凯和 \n[8] 吧。\!<br>我也已经好久没见到 \n[8] 了！\n<凯的爸爸>
+
+message_91:
+  text: 孩子们很久没有聚在一起了。\!要我说，我们就让他们去吧。\n<凯的爸爸>
+
+#KEL'S MOM turns around.
+
+message_92:
+  text: \sinv[1]唉……\sinv[0]\!行吧，行吧。\!你们这群男孩子就玩个尽兴吧……\n<凯的妈妈>
+
+message_93:
+  text: 不过，英雄，你接下来一整周都要帮我洗碗！\n<凯的妈妈>
+
+#HERO is surprised.
+
+message_94:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: 好——好吧……\!知道了……我会洗的啦。\her
+
+message_95:
+  text: \Com[2]哼！\!好啦……你们走吧！\n<凯的妈妈>
+
+#KEL'S MOM turns to the side.
+
+message_96:
+  text: 我们走，萨丽，不管那些坏哥哥了。\!<br>他们都不想理我们，对不对，萨丽？\n<凯的妈妈>
+
+#KEL'S MOM walks O.S.
+
+message_97:
+  faceset: MainCharacters_Faraway
+  faceindex: 35
+  text: 噢，妈妈……\her
+
+message_98:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel出门前，我得先准备点东西！\!我们先去我房间一趟！
+

@@ -1,0 +1,36 @@
+# =========================================================================================
+# PERFECT WIND
+# ========================================================================================
+
+message_0:
+  text: 一个男孩正盯着他的风筝陷入沉思。\!<br>你想打扰他吗？
+
+message_1:
+  text: \kit我只是一个带着风筝的男孩。\! <br>虽然可能看上去没什么，但我们有着深厚的羁绊。\!<br>这不是一般人能理解的。
+
+message_2:
+  text: \kit就让你见识一下我们齐心协力时的强大吧！
+
+message_3:
+  text: \kit唉……我就知道。\!天气情况不完美，我们没法发挥出十成的实力。
+
+# KITE KID - DEFEAT - IF PINWHEEL ISNT FIXED
+
+message_4:
+  text: \kit今天的风力好弱……\!<br>也许是因为有个风车出问题了。
+
+# KITE KID - DEFEAT - IF PINWHEEL IS FIXED BY CLIMBING IT WITH KEL. WATERMELON FALLS. GET SILLY STRING FROM WATERMELON.
+
+message_5:
+  text: \kit也许我和我的风筝应该试着飞向别处……
+
+# TAG DIALOGUE
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel哈？\!它怎么跑到上面去的？
+
+message_7:
+  text: 这座风车好像没有正常工作。\!<br>如果能有人朝它扔点什么的话……
+

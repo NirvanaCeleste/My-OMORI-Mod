@@ -1,0 +1,95 @@
+# =========================================================================================
+# Sidequest: Sneaking Out Joy
+# =========================================================================================
+
+#Talking to JOY
+
+message_1:
+  text: \n<小女孩>噢、噢，嗨，家教先生……
+
+#Talk to Joy / Cutscene: Joy Leaves
+
+message_2:
+  text: \n<小女孩>嗯……\!不好意思……\!这可能显得我太自私了，但是……
+
+message_3:
+  text: \n<小女孩>你看，今天我爸不在家，因为他要去外面忙。\!我已经在自己房间里学习了一整个夏天，我只是想去公园里玩一天。
+
+message_4:
+  text: \n<小女孩>你能不能帮我完成今天份的习题纸，这样他就不会发现了？<br>\!我保证我会在天黑前回家的，所以请不要告诉他！
+
+# yes /no
+
+#if yes
+
+
+message_5:
+  text: \n<小女孩>啊……\!我想也是呢——
+
+message_6:
+  text: \n<小女孩>等、等一下……\!你是说，你会放我走？\!<br>噢，谢谢你，家教先生！你最棒了！
+
+message_8:
+  text: \n<小女孩>好耶！我真的能去公园了！\!我在想我应该先做什么……<br>\!我知道了！\!我想去沙坑里玩！\!<br>\sinv[1]嘿嘿……我等不急啦！
+
+message_9:
+  text: \n<小女孩>先生，再次感谢！\!我准备去开心一下啦！
+
+#JOY runs out.
+
+#if no
+
+message_10:
+  text: \n<小女孩>啊……\!我想也是呢……\!没事的！\!<br>反正，我可能还是要更加用功学习才行……
+
+message_1000:
+  text: \n<小女孩>又是学习的一天……\!<br>唉……不知道我哥哥正在干什么呢……
+
+#if yes, complete worksheet without prompts from JOY
+#if no, complete worksheet with prompts from Joy
+
+message_11:
+  text: 乔伊的语文练习纸。\!要把它做完吗？
+
+message_12:
+  text: 请填空：“这杯柠檬水真是____。”
+
+message_13:
+  text: A) 津津有味
+
+message_14:
+  text: B) 饮鸩止渴
+
+message_15:
+  text: C) 沁人心脾
+
+message_16:
+  text: “熠熠生辉”一词的拼音是？
+
+message_17:
+  text: A) zhé zhé shēng huī
+
+message_18:
+  text: B) yì yì shēng huī
+
+message_19:
+  text: C) yè yè shēng huī
+
+message_20:
+  text: 成语“差强人意”的意思是？
+
+message_21:
+  text: A) 不够使人满意
+
+message_22:
+  text: B) 大体上还能使人满意
+
+message_23:
+  text: C) 非常使人满意
+
+message_24:
+  text: 你完成了乔伊的语文习题纸。
+
+message_25:
+  text: 你需要先完成习题纸才能离开。
+

@@ -1,0 +1,242 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============PINWHEEL========================================
+                        #====NIGHT 1-1====
+
+#LEMON JASH
+#Shop dialogue guide
+
+#HOT DIGGITY DOG
+#Location: TRAIN STATION
+message_0:
+  text: \n<热滴狗>热……\!滴……\!狗！\!就是我啦！\!我就是一个热滴狗！
+
+#KITE KID
+#REFER TO PERFECT WIND SIDEQUEST
+
+#LEAFIE
+#REFER TO RABBITKILLER SIDEQUEST
+
+#SPELLING BEE
+#Location: Train station
+message_1:
+  text: \n<拼写蜂>n\!ǐ、\!h\!ǎo、\!y\!ā！\!<br>w\!ǒ、\!sh\!ì、\!p\!īn、\!x\!iě、\!f\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!<br>ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——！
+
+#Gator Guy 1
+#Location: Train Station
+message_2:
+  text: \n<鳄鱼男>哈哈哈……\!\}哈哈……\!\{哈……\!\}哈……\{
+
+#Gator Guy 2
+#Location: Train Station
+message_3:
+  text: \n<鳄鱼男>蛤蛤蛤……\!\}蛤蛤……\!\{蛤……\!\}蛤……\{
+
+message_4:
+  text: \n<鳄鱼男>完毕。
+
+#GIBS
+#Location: Train Station
+message_5:
+  text: \n<常驻吉他手吉布斯>孩子们，你们好啊！\!我是常驻吉他手吉布斯！\!<br>其实我以前是个街头吉他手，不过那已经是好久以前的事啦。
+
+message_6:
+  text: \n<常驻吉他手吉布斯>话说，你们身上有没有 5 蚌币呀？\!<br>我现在是常驻在这儿的，哪都去不了，要是你们能给我 5 蚌币，\!<br>那真是帮了大忙了。\!<br>当然了，作为回报，我也给你们准备了一点\SINV[1]女子\SINV[0]东西哦！\$
+
+message_7:
+  text: \n<常驻吉他手吉布斯>感谢支持！\!那么按照说好的……<br>就让我给你们弹一首好听的曲子吧！
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: |
+    \aub哇，先生！\.实在是太棒——\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|
+
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub……
+
+message_10:
+  text: 你觉得这首歌很\SINV[1]女子\SINV[0]听。
+
+message_51:
+  text: 是
+
+message_52:
+  text: 你没有足够的蚌币。
+
+
+#WISE ROCK
+#Location: East Coast
+message_11:
+  text: \wis嗨，我是贤者石！\!<br>给我蚌币，我就能给你们提几条有用的建议哦！
+
+message_12:
+  text: \wis你们想让我提哪种建议呢？\$
+
+message_13:
+  text: \wis……\!我明白了！\!听好了，我的建议如下。
+
+message_14:
+  text: \wis……\!希望我的建议对你们有所帮助！
+
+# =========================================================================================
+# BAD ADVICE
+# =========================================================================================
+
+message_20:
+  text: \wis只要你别被抓到，做什么都没关系哦！
+
+message_21:
+  text: \wis\QUAKE[1]\{生命\Com[2]\{不息\Com[2]\{尖叫\Com[2]不止！！\}\}\}\QUAKE[0]
+
+message_22:
+  text: \wis生活给了你酸溜溜的柠檬……\!你就把它做成\c[3]柠檬水\c[0]，在\c[11]火车站\c[0]前面支个摊摆着卖吧。要是有人买了你的\c[3]柠檬水\c[0]，你就送他一张\c[4]火车票\c[0]。
+
+message_23:
+  text: \wis要用心倾听所有人给你的建议。
+
+message_24:
+  text: \wis不要露出一副丑陋的嘴脸。
+
+# =========================================================================================
+# OK ADVICE
+# =========================================================================================
+
+message_25:
+  text: \wis这世上也有没什么价值的建议。
+
+message_26:
+  text: \wis吃香蕉的时候不要有眼神交流。
+
+message_27:
+  text: \wis听一块石头给你提的建议可不怎么明智。
+
+message_28:
+  text: \wis你一直在逃避的问题最后一定会追上你。
+
+message_29:
+  text: \wis地球和月球大约相隔了 385000 公里。
+
+# =========================================================================================
+# GOOD ADVICE
+# =========================================================================================
+
+message_30:
+  text: \wis在遵从内心想法的同时，也别忘了要带上脑子！
+
+message_31:
+  text: \wis今天要多做一些有意义的事，让明天的你感谢今天的自己！
+
+message_32:
+  text: \wis痛苦总有结束的一天。
+
+message_33:
+  text: \wis人生短暂，所以趁你现在牙齿还没掉光，记得多笑一笑！
+
+message_34:
+  text: \wis要是机会没来敲门，你也可以给自己做一扇门！
+
+message_35:
+  text: 你没有足够的蚌币。
+
+# =========================================================================================
+# NO ADVICE
+# =========================================================================================
+
+message_36:
+  text: \wis要是你们需要实用的建议，欢迎随时回来找我！
+
+message_37:
+  text: 有价值的建议（30 蚌币）
+
+message_38:
+  text: 糟糕的建议（3 蚌币）
+
+message_39:
+  text: 还行的建议（10 蚌币）
+
+message_41:
+  text: 不需要建议
+                        #====NIGHT 1-2====
+
+#Lemon Jash: Same as Night 1-1
+#Hot Diggity Dog: Same as Night 1-1
+#Kite Kid: Same as Night 1-1
+#LEAFIE: Same as Night 1-1
+#Spelling Bee:
+message_40:
+  text: \n<拼写蜂>n\!ǐ、\!m\!en、\!h\!ǎo、\!y\!ā！\!zh\!ēn、\!sh\!ì、\!g\!è、\!f\!ēng——\!ēng——\!ēng——\!<br>ch\!áng、\!m\!ěi、\!m\!iào、\!d\!e、\!y\!è、\!w\!ǎn！<br><br>\!t\!iān、\!q\!ì、\!y\!ě、\!f\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!<br>ch\!áng、\!b\!ù、\!c\!uò、\!n\!e，\!w\!ǒ、\!sh\!uō、\!d\!é、\!d\!ùi、\!b\!a？
+#Wise Rock: Same as Night 1-1
+#Gator Guy 1: Same as Night 1-1
+#Gator Guy 2: Same as Night 1-1
+#Gibs: Same as Night 1-1
+
+                        #====NIGHT 2====
+
+#Lemon Jash: Same as Night 1-1
+#Hot Diggity Dog: Same as Night 1-1
+#Kite Kid: Dialogue is in dreamworld_extras_blackspace yaml
+#LEAFIE: Same as Night 1-1
+#Spelling Bee:
+message_50:
+  text: \n<拼写蜂>w\!ā、\!o\!！\!y\!òu、\!sh\!ì、\!n\!ǐ、\!m\!en、\!y\!a！<br>\!n\!ǐ、\!m\!en、\!g\!uò、\!d\!é、\!h\!ái、\!h\!ǎo、\!m\!a、\!f\!ēng——\!ēng——\!ēng——\!<br>ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!？
+
+#Wise Rock: Same as Night 1-1
+#Gator Guy 1: N/A
+#Gator Guy 2: N/A
+#Gibs: Same as Night 1-1
+
+                        #====NIGHT 3====
+
+#Lemon Jash: Same as Night 1-1
+#Hot Diggity Dog: Same as Night 1-1
+#Kite Kid: N/A
+#LEAFIE: Same as Night 1-1
+#Spelling Bee:
+message_60:
+  text: \n<拼写蜂>f\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——\!ēng——！
+
+#Wise Rock: Same as Night 1-1
+#Gator Guy 1: N/A
+#Gator Guy 2: N/A
+#Gibs: Same as Night 1-1
+
+
+message_61:
+  text: \n<鹦鹉先生>\quake[1]嘎！\quake[0]（队伍是从这里开始排的。）
+                        #====NIGHT 4====
+
+#Lemon Jash: Same as Night 1-1
+#Hot Diggity Dog: Same as Night 1-1
+#Kite Kid: N/A
+#LEAFIE: Same as Night 1-1
+#Spelling Bee:
+#message_70:
+#      text: \n<SPELLING BEE>Dialogue goes here
+
+#Wise Rock: Same as Night 1-1
+#Gator Guy 1: N/A
+#Gator Guy 2: N/A
+#Gibs: Same as Night 1-1
+
+#TRAIN Jash
+message_100:
+  text: \n<火车站贾什>\com[2]站住！\!想过去就拿\c[4]火车票\c[0]给我看看！\!呵！
+
+message_101:
+  text: \n<火车站贾什>\com[2]站住！\!想过去，就拿——
+
+message_102:
+  text: \n<火车站贾什>哇哦……\!是……是\c[4]火车票\c[0]……\!看来，你们肯定就是这趟列车的最后几位乘客了！\!哎呀，真是让我们好等啊！
+
+message_103:
+  text: \n<火车站贾什>唔……\!可以放行了！\!各位乘客，欢迎搭乘本次列车！
+
+message_104:
+  text: \n<火车站贾什>各位乘客，欢迎搭乘本次列车！
+

@@ -1,0 +1,170 @@
+# =========================================================================================
+# B.E.D. Trade Quest
+# ========================================================================================
+
+#B.E.D. Trade Quest 1
+
+message_0:
+  text: \may可恶！\!我那一无是处的儿子在哪里？
+
+message_1:
+  text: \may昨天晚上，我派他去分析我的最新发明—— \c[4]持·无·昂\c[0]的效果，我现在等不及想听结果了！
+
+message_2:
+  text: \may希望他没有在做我觉得他会做的事情……
+
+message_3:
+  text: 一只睡在一张\c[4]持·无·昂\c[0]上的树苗鼹鼠。\!<br>如果你有可以把他叫醒的道具就好了……
+
+#B.E.D. Trade Quest 2
+
+message_10:
+  text: \n<运动鼹鼠>呼……呼，呼……
+
+message_11:
+  text: \n<运动鼹鼠>训练了这么久，我好饿啊！\!<br>真希望我现在能吃点\c[3]豆腐\c[0]……
+
+message_12:
+  text: 要把一块\c[3]豆腐\c[0]交给这只大汗淋漓的运动鼹鼠吗？
+
+message_13:
+  text: \n<运动鼹鼠>哇，谢谢你给我\c[3]豆腐\c[0]！我真的很需要它。\!<br>作为回报，给你我最宝贵的东西。<br>要好好珍惜啊！
+
+#Bandito mole
+
+message_20:
+  text: \who\}嘘……嘿，孩子们！\!不是我有意偷听啊……\!那个叫佩西的丢了什么很重要的东西，对吧？\!说不定是什么……稀有的宝贝？\!<br>我也许可以帮上你们的忙哦……
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10   #needs appropriate faceset
+  text: \aub唔，这家伙看起来超级可疑的……\!<br>你到底有什么企图，\! \com[2]可疑的鼹鼠！？
+
+message_22:
+  text: \n<可疑的鼹鼠>\}咳……咳咳！\!你们应该已经知道了，\!我们树苗鼹鼠一族是智商超高的高功能生物。
+
+message_23:
+  text: \n<可疑的鼹鼠>\}我们之中最聪明的便是村长，而他正在制造一种设备，能在现有基础上大大提高树苗鼹鼠的工作效率。
+
+message_24:
+  text: \n<可疑的鼹鼠>\}那是一种传说中很神奇的设备，一旦问世，将会让现代世界发生彻底的、革命性的变化！\!村长称之为……\!\c[4]持·无·昂\c[0]！
+
+message_25:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11   #needs appropriate faceset
+  text: \aub\c[4]持·无·昂\c[0]？\!你要它做什么？
+
+message_26:
+  text: \n<可疑的鼹鼠>\}\Com[2]嘿，别问了！\!先给我找张\c[4]持·无·昂\c[0]来再说。
+
+message_27:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17   #needs appropriate faceset
+  text: \kel你说要\c[4]持·无·昂\c[0]，是吗？\!这听上去够简单的啊！
+
+message_28:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4   #needs appropriate faceset
+  text: \aub等等，凯！我不确定……\!我感觉他超级……\!不靠谱……
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her要不我们就按他说的给他找一张\c[4]持·无·昂\c[0]，看看会怎么样。
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub要是你觉得这样没问题的话……那好吧，英雄……\!<br>但我还是觉得他有些地方让我很不舒服……
+
+
+#B.E.D. Trade Quest 3
+
+message_40:
+  text: \sle\Com[2]噫噫噫噫噫\{噫噫噫噫噫\{噫噫噫噫噫！
+
+message_41:
+  text: \sle你是谁！？
+
+message_42:
+  text: \sle\Com[2]哦不，我迟到了！\!难道我……\!不会吧……
+
+message_43:
+  text: \sle我肯定是睡过头了！\!……\!<br>但……\!树苗鼹鼠不会睡过头啊！
+
+message_44:
+  text: \sle这张\c[4]持·无·昂\c[0]……\!它……\quake[1]太强大了。\quake[0]\!也许甚至是……\quake[1]过于强大了。\quake[0]
+
+message_45:
+  text: \sle我最好把这件事情告诉父亲！
+
+#B.E.D. Trade Quest 4
+
+message_50:
+  text: \sle\Com[2]父亲！父亲！我在这里！
+
+message_51:
+  text: \may天哪，儿子！你到哪里去了？
+
+message_52:
+  text: \sle我……\!我有可怕的消息要告诉你……
+
+message_53:
+  text: \may怎么了，儿子？\!不管是什么事你都能跟我说的！
+
+message_54:
+  text: \sle昨晚，我在测试那张\c[4]持·无·昂\c[0]的时候……\!<br>我……\!我……\!我……\!我\quake[1]睡过头了……\quake[0]
+
+message_55:
+  text: \may不，不可能！\!如果你说的是真的，那么……
+
+message_56:
+  text: \may我所有的研究……\!这件发明……\!这张\c[4]持·无·昂\c[0]……\!<br>这种威力……\!\quake[1]过于强大了。\quake[0]
+
+message_57:
+  text: \may是这样的，我的理论是\c[4]持·无·昂\c[0]能让树苗鼹鼠晚上好好休息，这样就能提高他们在白天的效率了，但是……
+
+message_58:
+  text: \may但要是树苗鼹鼠的效率却反而因此降低了，那这个发明还有什么用呢？
+
+message_59:
+  text: \may\c[4]持·无·昂\c[0]确实蕴藏着无穷的潜力，但目前它的风险还是太高了！
+
+message_60:
+  text: \may\Com[2]天啊，我都做了什么？！
+
+message_61:
+  text: \may我可不能让这么危险的技术降临于世，<br>否则我们渺小的村落将陷入永眠啊！
+
+message_62:
+  text: \may\Com[2]嘿，那边的！\!孩子！\!把这张\c[4]持·无·昂\c[0]带走，越远越好！\!<br>我们不需要这样的力量！
+
+message_63:
+  text: \may退下吧，务必对今日之事守口如瓶！
+
+message_64:
+  text: \n<运动鼹鼠>啊，行啊。\!<br>你想要分我一点\c[3]豆腐\c[0]的话，我随时欢迎……
+
+message_65:
+  text: 你获得了\c[4]持·无·昂\c[0]！
+
+message_66:
+  text: \n<可疑的鼹鼠>\}\Com[2]我——我看错了吗？
+
+message_67:
+  text: \n<可疑的鼹鼠>\}真不敢相信……\!这是……一张\c[4]持·无·昂\c[0]！\!货真价实的、彻头彻尾的\c[4]持·无·昂\c[0]！\!<br>我现在立刻就要用用看！
+
+message_68:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub嘿，你做什么呢？\!<br>我们帮了你，现在轮到你帮我们了！
+
+message_69:
+  text: \n<可疑的鼹鼠>\}\Com[2]哇，别别别！\}\!<br>你态度这么凶干嘛？\!<br>虽然你可能看不出来，但我可是诚实守信的鼹鼠啊。
+
+message_70:
+  text: 对睡着的鼹鼠使用\c[4]大空气喇叭\c[0]吗？
+
+message_71:
+  text: \sle但……\!我喜欢那张\c[4]持·无·昂\c[0]……
+

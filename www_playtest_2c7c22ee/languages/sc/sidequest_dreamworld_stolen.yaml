@@ -1,0 +1,112 @@
+# =========================================================================================
+# STOLEN
+# ========================================================================================
+
+#SAVE FOR IMPLEMENTATION:
+
+
+#IF STOLEN QUEST WAS COMPLETED:
+
+#Location: Last Resort entrance
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her嘿，又是你！
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: \kel你就是那个把罗莎的\c[4]威胁信\c[0]交给我们的那个！
+
+message_82:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub你现在又有什么打算……\! \Com[2]可疑的鼹鼠？\!我猜你又没安好心吧！
+
+message_83:
+  text: \n<可疑的鼹鼠>\}呜哇！\!你们误会我了，孩子！\!<br>你们可能不信，但我真的是善良仁慈的大好人啊！
+
+message_84:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub这我可看不出来……
+
+message_85:
+  text: \n<可疑的鼹鼠>\}来，我证明给你们看。\!一般来说，可疑的鼹鼠难道会给你们提供非常有帮助、非常关键、能颠覆你们人生的信息吗？\!肯定不会吧！
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: \kel唔……\!好吧，我们听听你要说什么……
+
+message_87:
+  text: \n<可疑的鼹鼠>\}你们愿意听真是太好了！\!那么……\!是这样的，最近有流言说蚌币很快就要被弃用了，取而代之的是一种更好的新型货币，名为……\!蛙币！
+
+message_88:
+  text: \n<可疑的鼹鼠>\}我有可靠的信源，\.可以向你们保证这场革命随时可能发生，到时候你们手中的蚌币全会变得一文不值！\!你们可不希望发生这种事情，对吧？
+
+message_89:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her嗯，我……
+
+message_90:
+  text: \n<可疑的鼹鼠>\}没错！那样可就太糟糕了，是不是？\!不过真正劲爆的是……
+
+message_91:
+  text: \n<可疑的鼹鼠>\}因为我对此事早有耳闻，所以我已经悄悄地进了一批宝贵的新型蛙币！
+
+message_92:
+  text: \n<可疑的鼹鼠>\}而且因为我是善良仁慈的大好人，<br>所以我愿意把所有的蛙币拿来跟你们手中的蚌币交换哦！
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel哇，真的吗？！\!你会为我们这么做吗？
+
+message_94:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub凯！不要听他的。\!<br>这已经……\!不只是可疑了……\!这简直是……\!犯罪行为……
+
+message_95:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel但奥布里……你没听到他说的吗？\!<br>他们要把蚌币都换成蛙币诶！\!<br>我们要是没有钱了该怎么办啊！？
+
+message_96:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel你怎么想呢，OMORI？\!<br>我们应不应该把蚌币都换成蛙币呢？
+
+#yes/no
+
+message_97:
+  text: \n<可疑的鼹鼠>\}太棒了……\!你们不会后悔的。\!<br>谢谢你们的蚌币……\!<br>来……\!这些是和你们交换的蛙币……
+
+message_98:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aubOMORI！你为什么同意凯的话啊？\!<br>我敢肯定这根本都不是真钱……
+
+message_99:
+  text: \n<可疑的鼹鼠>\}你们为什么还要留着自己过时的蚌币呢？\!<br>蛙币才是未来的大势所趋啊！\!你一定要三思啊！
+
+message_100:
+  text: \n<可疑的鼹鼠>\}好好享受你们的蛙币吧！\!<br>我现在要去帮助别的需要蛙币的人了！\!回见啦！
+
+message_102:
+  text: 你获得了\c[4]蛙币\c[0]……\!未来的货币……
+
+message_103:
+  text: 你找到了你被盗的蚌币！
+
+#FOUND him
+
+
+message_105:
+  text: \n<鼹鼠村长>\Com[2]喔唷！小心了，孩子！\!<br>你们很可能会打破我这调配物当中及其精妙的平衡哪。
+
+message_106:
+  text: \n<鼹鼠村长>如果我这次实验当中的各项参数没有做到110%准确的话……\!<br>那化学反应可能会造成剧烈爆炸，威力足以毁掉整座村子啊！
+

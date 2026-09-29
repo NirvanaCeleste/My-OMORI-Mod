@@ -1,0 +1,313 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+#=========================================================================================
+# DAY 2 - SUNSET
+#=========================================================================================
+
+
+#=========================BASIL==============================
+
+#Location: BASIL'S ROOM IN BED
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 12
+  text: \n<贝瑟尔>\}啊，\n[8]……\!我们……\!无路可逃了……\!不是么？
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel可怜的贝瑟尔，这几天经历了那么多不好的事情……
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: \her贝瑟尔……你肯定累坏了吧。\!你就先好好休息吧……<br>\!我们明天再来看你。
+
+#=========================ANGEL==============================
+
+#Location: Angel's Bedroom
+
+#ADD FWAAAAA
+message_10:
+  text: \n<安吉尔>\Com[2]\sinv[1]\{\{啊啊啊！有人闯进来了啊！
+
+message_11:
+  text: \n<安吉尔>哦……原来是你们几个啊。
+
+message_15:
+  text: \n<安吉尔>嘿，等一下！\! \SINV[2]呼呼呼……\!\SINV[0]<br>那也就是说，现在正好是找你们俩再比一次的大好时机啦！\!<br>\Com[2]管你准没准备好，我来也！
+
+#[Battle: Angel]
+
+#player win
+message_12:
+  text: \n<安吉尔>哼……\!你们不知道吧，我这次的真正目的不是打败你们，<br>而是找机会仔细观察你们的招式……\!<br>下次你们可就不会赢得那么轻松了！
+
+#player lose
+message_13:
+  text: \n<安吉尔>哼……\!我能看出你放水了，知道吗……\!<br>虽然我是个小孩子，但我可不傻！
+
+#=========================CHARLIE==============================
+
+#Location: Charlie's Bedroom
+
+#Charlie explanation mark
+
+message_20:
+  text: \n<查琳>\}……\!你好……\!我的名字叫……\!查琳……
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel\com[2]查琳？\!我一直以为你叫查理……
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel好吧。你好呀，查琳！\!我叫凯……这是 \n[8]，这是英雄！
+
+message_23:
+  text: \n<查琳>\}……\!大家……\!好……\!呵呵……
+
+
+#=========================KIM==============================
+
+#Location: Kim's Bedroom (Mom's House) staring at the photo of AUBREY and KIM next to her bed.
+
+message_30:
+  text: \n<金>\}奥布里……\!你为什么不告诉我到底出了什么事？
+
+message_31:
+  text: \n<金>\Com[2]啊！\!嘟囔……嘟囔……\!<br>呃……是你们两个啊……\!<br>你们凭什么觉得自己可以这样随便闯进别人的房间啊？！
+
+message_32:
+  text: \n<金>啊，我知道了，你们肯定是跟我妈混熟了，对吧？\!<br>只要愿意听她唠嗑，不管是谁她都会闭着眼放进来的……
+
+#====================THE MAVERICK==============================
+
+#Location: The Maverick's Bedroom
+
+message_40:
+  text: \n<独行侠>我能感觉得到，我家里有某种邪恶的存在……\!<br>当然，也可能只是我想多了而已……\!<br>不过嘛……再怎么小心都不为过吧……
+
+message_41:
+  text: \n<独行侠>唉……\!我哥我姐都超挫的，是不是？\!这里所有人都这样！
+
+message_42:
+  text: \n<独行侠>啊……你终于战胜了邪恶幽灵。\!<br>不过，你付出的代价是什么呢？\!我看你的眼神依旧那么痛苦。
+
+
+#====================VANCE==============================
+
+#Location: Vance's Bedroom (Mom's House)
+
+message_50:
+  text: \n<万斯>嚼嚼……\!嚼嚼……\!嚼嚼……
+
+message_51:
+  text: \n<万斯>噢，你们好。\!怎么了？
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel诶？你怎么这么冷静啊……\!<br>你不是应该主动提出要跟我们打一场之类的吗？
+
+message_53:
+  text: \n<万斯>呃……\!不啊，为什么要打？我跟你们又没什么过节。\!<br>之前那是因为小金想跟你们打。<br>每次都是她要做什么，我就跟着她一起干而已。
+
+message_54:
+  text: \n<万斯>我其实就比她大了一岁而已，<br>但是因为我长了胡子，所以都没有人相信我……
+
+message_55:
+  text: \n<万斯>虽然她嘴上不饶人，但她其实心地宽广着呢。\!<br>我呢？\!我就是她的筋肉保镖咯！
+
+#====================ARTIST==============================
+
+#Location: Artist's house
+
+message_60:
+  text: \n<画家>我在给下一幅画打草稿，但不知道从哪里开始……\!<br>要想出好点子可真难啊！<br>我看我还是别当画家了，改行当动物园管理员之类的算了。
+
+#====================SHORT HAIR GIRL==============================
+
+#Location: SHORT HAIR GIRL's House
+
+message_70:
+  text: \n<短发女孩>我在想要不要给我喜欢的对象写一封信，告诉他我的心意……
+
+#====================FASHIONABLE MOM==============================
+
+#Location: SHORT HAIR GIRL's House (Pick up furniture quest)
+
+message_80:
+  text: \n<时尚的妈妈>我的咖啡机就在厨房。<br>\!不过注意哦……\!泡出来的咖啡特别浓！
+
+#====================INTIMIDATING GIRL==============================
+
+#Location: SHORT HAIR GIRL's House
+
+message_90:
+  text: \n<咄咄逼人的女孩>我今天刚从学校回来。\!<br>唉，这里实在是太～安静了，我已经开始想念大城市的生活了啦！
+
+#====================SCHOOL PRINCIPAL==============================
+
+#Location: Hardware Store looking at flowers
+
+message_100:
+  text: \n<校长>我有时候会过来这儿看看花。\!<br>唉，我真想在家里也放几盆花，不过我听说有些植物容易招蚂蚁……
+
+message_101:
+  text: \n<校长>蚂蚁简直就是我的天敌……\!<br>我打死都不想看到有蚂蚁在我家周围爬来爬去！
+
+#====================OLD BEARDY==============================
+
+#Location: Graveyard (Lost dentures quest)
+
+message_110:
+  text: \n<白胡子老爷爷>\QUAKE[1]救昧啊！\!窝牙没咯！！\!棱帮窝找咩？！\QUAKE[0]
+
+#After finding teeth:
+
+message_112:
+  text: \n<白胡子老爷爷>小伙子们，谢谢啦。\!<br>这里的幽灵啊，有时候就是喜欢跟我开玩笑！
+
+message_113:
+  text: \n<白胡子老爷爷>不过他们没有恶意的……\!是我老眼昏花了而已……
+
+#====================CRIS'S MOM==============================
+
+#Location: Supermarket
+
+message_120:
+  text: \n<标准美式母亲>\SINV[1]啦——滴——滴！\!啦——滴——哒！\!啦——滴——滴！\!啦——滴——哒！\SINV[0]
+
+#====================CURTSEY==============================
+
+#Location: Pharmacy
+
+message_130:
+  text: \n<可爱的女孩>唐果小姐头痛，让我来买点止痛药。\!<br>貌似有很多小孩儿喜欢从店里偷\c[3]糖果\c[0]……
+
+message_131:
+  text: \n<可爱的女孩>他们胆子可真大。\!唐果小姐生起气来真是超可怕的……
+
+#====================KAREN==============================
+
+#Location: Supermarket
+
+message_140:
+  text: \n<双马尾女生>唔……派对来的人太多了，我还从来没给这么多人做过饭呢……\!<br>可能我有点太高估自己了……
+
+message_141:
+  text: \n<双马尾女生>唔，我是应该选质量比较好的，还是选量比较多的呢？\!<br>还有，选哪个牌子比较好呢？
+
+message_142:
+  text: \n<双马尾女生>话说回来，葱和洋葱是同一种东西吗？
+
+message_143:
+  text: \n<双马尾女生>唉……\!早知道我们应该直接叫外卖的。
+
+message_144:
+  text: \n<格子衫男生>嘿，卡伦，别紧张嘛。你可以的！\!<br>再说……就算他们都不吃你做的菜……至少我会吃的！
+
+message_145:
+  text: \n<双马尾女生>哦，肖恩……你真会说话。<br>我做了什么才配得上你这么好的人？
+
+#====================KEL'S DAD==============================
+
+#After Cutscene: Polly's Worry:
+
+#Location: Kel's Living Room watching TV
+
+message_150:
+  text: \n<凯的爸爸>本来我说要帮忙做今天的晚饭，不过嘛，你妈看不起我的手艺……
+
+#After Cutscene: Kel's Mom
+#Location: Kel's Dining Room
+
+message_151:
+  text: \n<凯的爸爸>记住啊，一定要好好夸夸你妈做的菜！
+
+#After Cutscene: Convincing Kel's Mom:
+#Location: Kel's Living Room
+
+message_152:
+  text: \n<凯的爸爸>英雄，不用太担心你妈。<br>她也不是想闹脾气，就是太想你了！\!<br>等她冷静下来就好了……
+
+message_153:
+  text: \n<凯的爸爸>行了，你们走吧，该干嘛干嘛！<br>我会看着她的。
+
+#KEL'S DAD leaves to KEL'S PARENT'S ROOM.
+#Examine KEL'S PARENT'S ROOM.
+
+message_154:
+  text: 这扇门上锁了。
+
+#====================KEL'S MOM==============================
+
+#After Cutscene: Polly's Worry:
+
+#Location: Kel's Living Room
+
+message_160:
+  text: \n<凯的妈妈>好啦，你们去吧……\!记得晚饭前回家！
+
+message_161:
+  text: \n<凯的妈妈>
+
+#====================Kim and Vance's Mom==============================
+
+#Location: Kim's House
+
+
+message_171:
+  text: \n<戴红眼镜的女士>我儿子女儿现在应该回家了啊！有什么事情那么重要，重要得让他们不愿意回家好好陪陪自己老妈呢？！
+
+
+
+#====================Polly==============================
+
+#Location: Basil's House
+message_180:
+  text: \n<波莉>我知道贝瑟尔平时喜欢去公园玩，<br>所以我就跑去公园找，但是没找见他……
+
+message_181:
+  text: \n<波莉>他奶奶今天的身体状况不太好……\!<br>我不想让他太激动，但是我刚告诉他这个消息，他就浑身发抖，然后头也不回地跑掉了……\!唉……\!希望他没事吧……
+
+#====================SARAH==============================
+
+#Location: Sarah's House
+
+message_190:
+  text: \n<马尾女孩>天色有点晚了……\!<br>但是爸妈还没回家。他们去哪儿了呢？
+
+#talk again
+
+message_191:
+  text: \n<马尾女孩>我想吃得健康一点，但家里没有沙拉酱了……\!<br>现在我要怎么吃胡萝卜和芹菜啊？
+
+message_192:
+  text: \n<马尾女孩>爱情好恶心喔……
+
+#====================SARAH'S DAD==============================
+
+#Location: Candy Shop (Anniversary chocolate quest)
+
+message_200:
+  text: \n<笨拙的男人>\sinv[1]噢，你真是太美了，我好想吻你！\sinv[0]
+
+#====================SARAH'S MOM=============================
+
+#Location: Gino's Pizza (Anniversary Pizza quest)
+
+message_210:
+  text: \n<马尾女士>哦天哪，亲爱的！你弄得我好害羞哦……\!<br>我会永远记得这次结婚纪念日的！
+
+#====================SEAN=============================
+
+#Location: Supermarket
+#ref 140 - 145
+

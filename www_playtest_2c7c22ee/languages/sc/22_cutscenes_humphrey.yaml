@@ -1,0 +1,245 @@
+# =========================================================================================
+# Cutscene: Sweetheart's Last Resort
+# =========================================================================================
+
+#Trigger: Enter proximity of Sweetheart.
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 嘿……\!那不是……\!甜心吗？\aub
+
+#KEL jumps.
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{喂，甜心！！还记得我们吗？！\!\}<br>就是那群差点把你婚礼毁了的小孩儿！\kel
+
+#SWEETHEART looks at party.
+#SWEETHEART is surprised, then frustrated.
+
+message_2:
+  text: \Com[2]什么？又是你们四个？！\!为什么你们总是出现在我面前？\swh
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 所以……\!婚姻生活美满幸福吗？\kel
+
+message_4:
+  text: 哈！\!婚姻生活就是个笑话！\!我和那个可怜可悲的船长早就断绝来往了！\swh
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: 但是……\!你昨天才举办完婚礼呀。\kel
+
+#AUBREY is worried.
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 不会吧……\!难道说你和太空丈夫已经……\aub
+
+message_7:
+  text: 哼！\!他已经是太空前夫了，这个人与我无关！\swh
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \}哎呦喂……那个可怜的家伙……\kel
+
+#SWEETHEART looks away.
+
+message_9:
+  text: 哀哉！我的旅途又回到了原点。\!<br>现在我比以往任何时候都确信，完美的追求者根本不存在！\swh
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 别轻易下结论呀，甜心！<br>这世界上某个地方一定有你的灵魂伴侣！\her
+
+#SWEETHEART turns to HERO.
+
+message_11:
+  text: \sinv[1]哦，我可爱的英雄啊！\!我多么渴望听到你的声音！\swh
+
+message_12:
+  text: 但是……我必须克制自己。\!我已经决定好了未来的方向。\!<br>寻找理想伴侣对我来说太俗套了……\swh
+
+message_13:
+  text: \sinv[1]所以我决定了，只要自己制造出完美的追求者就好了！\swh
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 什——什么？\!制造出追求者？\!这怎么可能呢？！\her
+
+message_15:
+  text: 正常来说当然做不到！\!但是，我这样的有钱人怎么会遵循凡人的规则！\swh
+
+message_16:
+  text: 我现在要去的地方，只有我这样肮脏的有钱人承受得起……\!那里住着海底女巫一族，她们擅长解决客户的……\!特殊需求。\swh
+
+message_17:
+  text: 拜拜啰，贱民们！\!我预约要迟到了！\swh
+
+#SWEETHEART leaves O.S.
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 所以……\!我们要跟着她吗……\!还是啥？\kel
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 我感觉每次甜心一出现，就会有坏事发生。\aub
+
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 是呀……\!说到惹祸招灾……\!<br>她和其他人完全不是一个级别的。\her
+
+# =========================================================================================
+# Cutscene: Humphrey
+# =========================================================================================
+
+#Trigger: Enter Humphrey's Cave.
+
+
+#[Trigger: Enter proximity of Humphrey]
+
+#Humphrey speaking:
+message_42:
+  text: 鲸了，朋友们！你们好啊！\!我叫汉弗莱。\!是什么风把你们吹到我这寒碜的小山洞来了？\who
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 噢，你好呀汉弗莱！我们只是在找人。\!不好意思打扰到你了。\aub
+
+message_44:
+  text: 没有没有，怎么会呢，孩子们！我可喜欢招待客人了。\n<汉弗莱>
+
+message_45:
+  text: 实际上，你们是今天来这里的第二组客人了！\!<br>之前来了一个女孩……她戴着大大的红色蝴蝶结，还有一副大嗓门。\n<汉弗莱>
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 听起来就像是我们认识的人耶。\kel
+
+#HERO is surprised and begins to look around frantically.
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 诶？甜心来了吗？\!她在哪儿？\her
+
+message_48:
+  text: 呼……\!她在哪里呢？她在哪里呢？\!<br>呼……答案“呼”之欲出哦……\!……\!\quake[1]捏哈哈！\quake[0]\!<br>开个玩笑！\!她其实……\!就在我身体里，懂了吗？\n<汉弗莱>
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 她、她在……你身体里？\aub
+
+message_50:
+  text: 是的，没错！\!她是来拜访我的客人的，<br>因为海底女巫一族也住在我这里！\n<汉弗莱>
+
+message_51:
+  text: 我们经常一起谈笑风生，打发时间。\!<br>听她们整天胡闹真是太有意思了。\!<br>有时，她们甚至会好心地给我送饭呢！\n<汉弗莱>
+
+message_52:
+  text: 毕竟啊，她们离我肚子更近，所以给我送饭更轻松。<br>\!说真的，要是再多来几个客人她们肯定会更开心的！\!\n<汉弗莱>
+
+message_55:
+  text: 来！\!我帮你们把桥放下来。\n<汉弗莱>
+#HUMPHREY's mouth opens.
+
+message_53:
+  text: \quake[1]捏\{呃\{呃呃……\quake[0]\n<汉弗莱>
+
+#HUMPHREY's tongue creates pathway.
+#HUMPHREY burps.
+
+message_54:
+  text: 请见谅……\!<br>前一位客人似乎让我有些消化不良。\n<汉弗莱>
+
+# =========================================================================================
+# Cutscene: Where do we start?
+# =========================================================================================
+
+#Trigger: Enter Humphrey.
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 哇，汉弗莱肚子里真大呀！\kel
+
+message_71:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 看起来就很容易迷路……\aub
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 我要是大喊的话，是不是就会有\sinv[1]回音\{啊——！\kel
+
+#HUMPHREY appears as a lump in front of party.
+
+message_73:
+  text: \sinv[1]回\{音\{啊啊啊……\}回音啊啊……\}回音啊……\}回音……\n<汉弗莱>
+
+message_74:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \Com[2]啊！\!你从哪儿钻出来的？\kel
+
+
+message_75:
+  text: 欢迎来到我的小窝，朋友们！\!见到我是不是很“鲸”讶？<br>\!我一直在呢。\!我在我体内，又包围着你！\n<汉弗莱>
+
+#HUMPHREY lumps appear all around.
+
+message_76:
+  text: 我可以无处不在！\n<汉弗莱>
+
+#HUMPHREY lumps disappear and one HUMPHREY lump appears in front KEL.
+
+message_77:
+  text: 也可以仅此一只！\n<汉弗莱>
+
+message_78:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 哇哦，帅爆了，汉弗莱！<br>\!要是我也有这本事就好了。\kel
+
+message_79:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 要我说的话，蛮恶心的诶。\aub
+
+#HUMPHREY appears in front of AUBREY.
+
+message_80:
+  text: 哇哦……\!真没礼貌……\n<汉弗莱>
+
+#HERO walks toward the center of the map and looks around.
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 唔……\!这么多条路……\!<br>该先去哪个方向呢？\her
+
+#HUMPHREY appears in front of HERO.
+
+message_82:
+  text: 左边……\!右边……\!上面……\!周围……\!<br>又有什么关系呢？\!反正都是前进，对吧？\!<br>随便选一条路，就是这么简单！\n<汉弗莱>
+
+message_83:
+  text: \n<汉弗莱>\{\sinv[1]哟～～吼～～～～～！！
+

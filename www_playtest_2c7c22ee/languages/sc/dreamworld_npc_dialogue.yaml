@@ -1,0 +1,157 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============WHITE SPACE / Neighbors Room ========================================
+                        #====NIGHT 1-1====
+
+#Black Cat
+#Location: White Space, asleep
+message_0:
+  text: 黑猫很快就睡着了。
+
+#EYE in the shelf
+#Location: Neighbors room, inthe shelf
+message_1:
+  text: 你感觉有谁在监视你。
+
+#SNAKE
+#Location: Neighbor's Room, on the staircase
+message_2:
+  text: \sinv[1]嘶嘶嘶嘶嘶嘶嘶嘶？\sinv[0]\!（正在等待某件事情的发生吗？）
+
+# ==============FOREST PLAYGROUND========================================
+                        #====NIGHT 1-1====
+
+#Bangs
+#Location: Forest Playground
+message_10:
+  text: \ban跟朋友一起玩太累了，我只要看着他们玩就满足了。
+
+#Bun
+#Location: Forest Playground
+message_11:
+  text: \bun鼻子是我最好的朋友哦！\!<br>虽然她会说的话不多，但她真的很聪明的！
+
+message_12:
+  text: \dai抱、抱歉，你能让一下吗？<br>我想摘几朵花\}送给一个对我来说很重要的人……
+
+message_13:
+  text: \dai我摘了几朵花，\}打算送给一个对我来说很重要的人……<br>希望他会喜欢……
+
+#After Headbutt Quest
+message_14:
+  text: \ber加把劲儿，阿万！\!把头狠狠撞上去！
+
+message_15:
+  text: \n<眉毛>\Com[2]啊啊啊\{啊啊啊啊\{啊啊啊啊！！！
+
+message_16:
+  text: \hap跳！\}我——\{跳！\}我——\{跳！跳！跳！
+
+# ==============HEADBUTT=======================================
+
+message_20:
+  text: \ber嘿，各位！谢谢你们帮我把球找回来！\!<br>你们看，我现在又可以继续玩球了！
+
+message_21:
+  text: \n<阿万>没错。
+
+message_22:
+  text: \ber嗯，我在想……\!既然你们都帮我把球找回来了，<br>那我也要大方一点，把我的独家\c[1]技能\c[0]传授给你们！
+
+message_23:
+  text: \ber但是我要先问一个问题……
+
+message_24:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \kel\{这还用说嘛！\}那肯定就是\n[2]了！
+
+message_25:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub\Com[2]\{你说什么？！
+
+message_26:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \kel唔哦，冷静点啦！\!<br>我没有\{硬\}要说你的意思哦……你懂我意思吧？
+
+message_27:
+  text: \ber哈，\!说得也没错！
+
+message_28:
+  text: \ber好，\n[2]，我的独家\c[1]技能\c[0]就传授给你了。这可是只有像我们这样脑壳够硬的人才能学会的。
+
+message_29:
+  text: \ber看好啦，这就是我的独门绝技……\c[1]头槌\c[0]！<br>\!其实很简单的。你只要朝着目标冲过去，然后……
+
+message_30:
+  text: \Com[2]\{砰\{\Com[2]—\{—\{\Com[2]—！！！
+
+message_31:
+  text: \ber好，轮到你了。
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub看起来会很痛的样子……\!<br>而且我的发型肯定会变得乱糟糟的。\!<br>蝴蝶结也会撞坏。
+
+message_33:
+  text: \ber哎呀，\n[2]！偶尔放纵一点有什么关系嘛！<br>头发乱一点又不会怎么样。你看，\!<br>\n[4]不就是活生生的例子。
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \her没错！
+
+message_35:
+  text: \ber你就试一下嘛。
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: \aub哼！好吧……
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub不过，让我来的话……我可是会用尽全力撞过去的哟！
+
+message_38:
+  text: \Com[2]\{砰\{\Com[2]—\{—\{\Com[2]——！！！
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub呜呃……
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub呜、哦……\!我感觉……头晕晕的……
+
+message_41:
+  text: \ber\{哇哦！干得漂亮！！\}<br>我就知道我没看走眼，你超有天分的。
+
+message_42:
+  text: \ber\{恭喜！！\}<br>我宣布，你满分通过测试了！
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub……啊？\!发生什么事了？
+
+message_44:
+  text: \ber我在此宣布……<br>从今天起，你就是货真价实的\c[1]头槌家\c[0]。
+
+message_45:
+  text: \ber来，这是你的证书，拿好咯。<br>拿去给你的朋友们看看吧。他们肯定会为你感到骄傲！
+
+message_46:
+  text: 奥布里习得了\c[1]头槌\c[0]。
+
+message_47:
+  text: 你获得了\c[4]屁股认证书\c[0]。
+

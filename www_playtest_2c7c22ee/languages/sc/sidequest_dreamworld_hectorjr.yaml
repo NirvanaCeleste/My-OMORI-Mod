@@ -1,0 +1,105 @@
+# =========================================================================================
+# Take my son
+# ========================================================================================
+
+#Collect Hector for Excavation Lv1
+
+
+message_18:
+  text: 你找到了\c[13]赫克托尔\c[0]。
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel哦！\!\c[13]赫克托尔\c[0]！\!真的是你吗？\!真的是你！\!<br>快过来，\c[13]赫克托尔\c[0]！快到我的口袋里来！\!<br>就像以前的美好时光一样！
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>……\!啊……\!凯……\!我的老朋友……\!太对不起了。\!时过境迁，恐怕我现在已经不能陪伴你了。\!你看……
+
+# More pet rocks appear in their holes
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>我已经成家了。
+
+#[HECTOR JR. hops out of his hole.]
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>\Com[2]等等！\!\c[13]小赫克托尔\c[0]！\!你在做什么？\!<br>……\!你是说你想加入他们吗？\!<br>你说比起留在这里，石生还有更多值得一看之事？
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>哦，\c[13]小赫克托尔\c[0]……\!我……\!我完全理解你的心情……\!<br>我虽然已经是块老石头了，但也曾有过纵情享乐的青春啊。\!<br>祝你们一同留下令人难忘的冒险回忆！
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>去吧，加入他吧，\c[13]小赫克托尔\c[0]……\!到他的口袋里去吧！
+
+message_6:
+  text: 你获得了\c[13]小赫克托尔\c[0]。
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>对……\!就是那样。\!<br>呜呜……\!看来我们就此分别了。\!<br>你一直没有放弃找我，谢谢你，凯。
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>\c[13]小赫克托尔\c[0]……\!你要乖乖听话，好吗？\!<br>不要忘了你的家人！\!我们永远在这里支持你。
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>希望我们下次见到你的时候，你已经长成了一块出色的石头！
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17     #replace
+  text: \kel别担心，赫克托尔！\!<br>我一定会好好照顾\c[13]小赫克托尔\c[0]的！
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>我很了解你的，凯……\!<br>这次不要再失去它了，好吗？
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16     #replace
+  text: \kel不会了……\!我保证！
+
+#[Quest Complete]
+#After-Quest Dialogue:
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>\c[13]小赫克托尔\c[0]……\!你要乖乖听话，好吗？\!<br>不要忘了你的家人！\!我们永远在这里支持你。
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>希望我们下次见到你的时候，你已经长成了一块出色的石头！
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17     #replace
+  text: \kel别担心，\c[13]赫克托尔\c[0]！\!<br>我一定会好好照顾\c[13]小赫克托尔\c[0]的！
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>我很了解你的，凯……\!<br>这次不要再失去它了，好吗？
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16     #replace
+  text: \kel不会了……\!我保证！
+

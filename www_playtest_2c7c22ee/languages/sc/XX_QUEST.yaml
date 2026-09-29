@@ -1,0 +1,1161 @@
+# =========================================================================================
+# QUEST TRACKER
+# =========================================================================================
+
+#Intro 1:
+#MARI says this as her first message depending on who is LEADER:
+#Note: The first time you talk to a new MARI, she'll have an intro message that takes priority over this message.
+
+# =========================================================================================
+
+#If OMORI is leader:
+message_0:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar嗨，OMORI！嗯，还是和往常一样的扑克脸啊。\!<br>你真应该多笑一笑！我很喜欢你的笑容哦。
+
+
+#If AUBREY is leader:
+message_1:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar哦，你好呀，奥布里！你今天看上去真可爱。<br>\!你的头发一直都保养得很好呢。
+
+
+#If KEL is leader:
+message_2:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar哟，凯，过得怎么样！看起来你又长高了一些。\!<br>说不定有一天就比英雄还高了，嘻嘻……
+
+
+#If HERO is leader:
+message_3:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: \mar你好呀帅哥！\.或者换个说法……\!<br>遇到了什么美差呀，美男？
+
+
+# =========================================================================================
+
+#Intro 2:
+#MARI says this after Intro 1.
+
+# =========================================================================================
+
+message_10:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar所以说……需要帮忙吗？<br>“付出”真心的爱就行了哦！
+
+
+# =========================================================================================
+
+#Outro:
+#MARI says this after you exit the QUEST TRACKER menu.
+
+# =========================================================================================
+
+message_15:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar希望我有帮到你。<br>要是还需要我的话，跟我说就好啦。
+
+
+# =========================================================================================
+
+#Outro 2 - Scarecrow Gift: - UNUSED
+#If you complete the STICK IN THE MUD SIDE QUEST, MR. SCARECROW will give extra gifts to you through MARI.
+
+# =========================================================================================
+
+message_20:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar再见了，稻草人先生……祝你冒险愉快！\.\^
+
+
+#message_21:
+#    text: You got \c[3]\itemget\c[0]!
+
+#message_22:
+#    faceset: MainCharacter_Mari
+#    faceindex: 6
+#    text: \marEnjoy it, OMORI! You deserve it!
+
+#[RANDOM ITEM LIST / % CHANCE]
+#Tofu 15%
+#Cherry Soda 15%
+
+#Fries 10%
+#Ramen 10%
+#Tasty Soda 10%
+#Blueberry Smoothie 10%
+#Rubberband 10%
+#Air Horn 10%
+
+#Life Jam 5%
+#Watermelon Juice 5%
+
+# =========================================================================================
+
+#Quest Completed:
+
+# =========================================================================================
+
+#message_25:
+#    faceset: MainCharacter_Mari
+#    faceindex: 6
+#    text: \marYou completed this quest already!<br>Looks like you don't need my help after all, hehe...\.\^
+
+# =========================================================================================
+
+#Quest Name: STUFFED TOY
+
+# =========================================================================================
+
+#This quest never has a Quest Accepted message, as you have to complete it before you have access to the Quest Tracker.
+#However, it still appears in the COMPLETE category with the Quest Completed message.
+
+message_26:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar嘿，你找到了奥布里的\c[13]填充玩偶\c[0]！\.不过凯可能会不太开心吧。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: BASIL'S HOUSE
+
+# =========================================================================================
+
+message_30:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar你们不是要去贝瑟尔家吗？\.我这次就不去了，你们好好去玩吧！\.\^
+
+
+message_31:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar好啦，快点出发去吧！\.有需要就来找我哦。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: MISSING
+
+# =========================================================================================
+
+#Quest Accepted 1:
+
+#message_35:
+#      faceset: MainCharacter_Mari
+#      faceindex: 4
+#      text: \marOh, no... BASIL suddenly disappeared...<br>I can't find a trace of him anywhere!\.\^
+
+#message_36:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marThere must be a way to find BASIL...<br>Is there something you know that we don't, OMORI?\.\^
+
+#Quest Accepted 2 (Night 2: Deep Well+):
+
+#message_37:
+#      faceset: MainCharacter_Mari
+#      faceindex: 4
+#      text: \marAhh... What was this one again?<br>Ah, right! Of course! Our friend, BASIL, is missing!\.\^
+
+#message_38:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marThere must be a way to save him...<br>Do you have any ideas of where to start, OMORI?\.\^
+
+#Quest Completed: !!![QUEST IS DELETED FROM QUEST TRACKER]!!!
+
+
+# =========================================================================================
+
+#Quest Name: CAPTAIN OF THE SPACE PIRATES
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_40:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar哎呀！看起来太空男友的特制混音带被不小心丢走了。\.它会不会被丢在\c[11]垃圾场\c[0]里了？\.\^
+
+
+#After getting SBF'S MIXTAPE:
+
+message_41:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar好了！你们终于把\c[4]特制混音带\c[0]拿到手啦。\.现在你们把它还给太空男友就行了！\.\^
+
+
+#Quest Completed:
+
+message_42:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar呼……刚才的情况还真是惊险……不过至少现在一切都没事了。\.希望太空男孩船长能找到些许安宁吧。\.\^
+
+
+message_43:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar快点，OMORI！罗莎拿到了\c[4]特制混音带\c[0]！\.你不能就这样放她走！\^
+
+
+# =========================================================================================
+
+#Quest Name: FRONT-ROW TICKETS
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_45:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar你们似乎碰巧拿到了一个看起来很有意思的舞台剧的\c[4]演出门票\c[0]。\.如果你们有时间的话，就去看看吧！\.\^
+
+
+#After being thrown in SW Dungeon:
+
+message_50:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar虽然\c[11]甜心城堡\c[0]戒备森严，不过别放弃希望。\.肯定有办法逃出去的！\.\^
+
+
+#After reaching SW Garden:
+
+message_55:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar树苗鼹鼠们似乎在准备什么盛大演出……\.甜心到底在计划些什么呢？\.\^
+
+
+#message_56:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marAll the SPROUT MOLES blocking the entrance earlier must have gone somewhere! You should ask around and see if anyone knows of a hidden exit...\.\^
+
+#Quest Completed:
+
+message_60:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar你们想尽办法，总算从甜心的魔爪中逃出来了……\.真的好惊险啊。希望我们别再遇到她了。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: MISSING FRIENDS
+
+# =========================================================================================
+
+#After getting Kel:
+
+message_75:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar看到你和凯团聚了，真好！<br>\.奥布里和英雄一定就在这里的什么地方。<br><br>凯，你说我们能在第五层找到奥布里，对吗？\.<br>嗯，你们应该从那里开始找起！\.\^
+
+
+#Quest Completed:
+
+message_80:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar耶！真高兴看到大家又团聚了！\.\^
+
+
+# =========================================================================================
+
+#Quest Name: HECTOR THE ROCK
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_85:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar哎呀……凯的宠物石头\c[13]赫克托尔\c[0]从他口袋里掉出去了。\.抱歉呀，凯，我也不知道它掉去哪儿了。不过，不能轻言放弃哦！\.\^
+
+
+message_86:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar虽然赫克托尔已经成家了，但\c[13]小赫克托尔\c[0]似乎很高兴跟我们待在一起。\.这次不要再弄丢了哦，凯。\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: DAISY'S DILEMMA
+
+# =========================================================================================
+
+#Quest Accepted:
+
+
+message_90:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar呀……黛西想用\c[4]花朵拼图\c[0]引起她喜欢的人的注意。\.真可爱！\.我之前看到米凯扔掉了一个。\.你们说不定能在哪儿找到它！\^
+
+
+#After getting FLOWER PUZZLE:
+
+message_95:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar噢，你们拿到了\c[4]花朵拼图\c[0]！\.黛西不是想把它送给喜欢的人吗？\.你们也知道她的心上人是谁吧？\.\}<br>咳咳，小提示……是内布哦……嘻嘻……\.\^
+
+
+message_96:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar耶！黛西如愿以偿，得到了给内布的\c[4]花朵拼图\c[0]。不过，她是否能鼓起勇气送出去呢？\.预知后事如何，请听下回分解！\.\^
+
+
+# =========================================================================================
+
+#Quest Name: STICK IN THE MUD
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_100:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar稻草人先生的朋友们四散在\c[11]猫尾田\c[0]里。\.你们应该让他们团聚。他看上去有点孤单……\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: STRANGE REQUEST
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_105:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar电视妹让你们照着\c[4]奇怪的清单\c[0]去找一些奇怪的东西。\.真奇怪啊！\.\^
+
+
+#After getting DOOHICKEY, THINGAMABOB, and WHATCHAMACALLIT:
+
+message_110:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嘿！你似乎已经找全了电视妹\c[4]奇怪的清单\c[0]上的东西。\.去交给她吧。\.我很确定她会做出很奇妙……\.也很奇怪的东西。\.\^
+
+
+message_111:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar原来电视妹只是想修好她的咖啡机。\.她请你们喝\c[3]咖啡\c[0]了吗？\.\^
+
+# =========================================================================================
+
+#Quest Name: THE B.E.D.
+
+# =========================================================================================
+
+#Quest Accepted
+
+message_115:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嗯，所以说，可疑的鼹鼠正在寻找\c[4]持·无·昂\c[0]，对吗？\.鼹鼠村长应该略知一二。\.他一般都在学校的地下室里和儿子一起做实验。\.\^
+
+
+#After talking to MAYOR MOLE:
+
+message_120:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar鼹鼠村长因为担心他的儿子而心事重重……\.如果我们帮他找到儿子，他或许就会帮我们了。\.\^
+
+
+#After getting B.E.D.:
+
+message_125:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar在一连串奇妙的事件后，你们获得了\c[4]持·无·昂\c[0]！<br>\.把它交给可疑的鼹鼠真的没问题吗？\.\^
+
+
+message_126:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar好了，我们让可疑的鼹鼠拿到了\c[4]持·无·昂\c[0]……\.不知道他打算用它计划什么邪恶的事情。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: SWEATY SNACK
+
+# =========================================================================================
+
+#Quest Accepted w/o TOFU:
+
+message_130:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar一只满身大汗的运动鼹鼠正在寻找\c[3]豆腐\c[0]……\.你们身上应该有\c[3]豆腐\c[0]，对吗？\.它们到处都是！\.\^
+
+
+message_131:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar我真不觉得\c[3]豆腐\c[0]能提供足够的营养给那只高强度锻炼的运动鼹鼠。\.怪不得他这么累。\.\^
+
+
+#message_132:
+#      text: You got \c[3]TOFU\c[0]!
+
+#Quest Accepted W/ TOFU:
+
+#message_135:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marA very sweaty SPROUT MOLE is looking for some \c[3]TOFU\c[0]... You should already have \c[3]TOFU\c[0], right? It's everywhere!\.\^
+
+# =========================================================================================
+
+#Quest Name: FASCINATING LITERATURE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_140:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar德米表示手头的书都读腻了，想找一本更有意思的书来读……\.或许你们能在某个图书馆找到本他感兴趣的书。\.\^
+
+
+#After getting INTERESTING BOOK:
+
+message_146:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar哇！那本\c[4]有趣的书\c[0]看上去真的很有趣。\.德米肯定想要好好读一读！\.\^
+
+
+message_145:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar德米要一门心思都放在那本书上了。\.你们给他的那本书实在是太有趣了。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: SON OF A SPACE PIRATE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_150:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar经过甜心这一整场的闹剧，太空海盗的船长好像又消失了……\.<br>谁知道呢，或许这些\c[4]电池\c[0]能帮助你们找到他。\.\^
+
+
+#message_151:
+#      faceset: MainCharacter_Mari
+#      faceindex: 4
+#      text: \marWhere could he have gone? I sure hope he's okay...
+
+#After defeating SPACE EX-HUSBAND:
+
+message_155:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar哇哦！你们和太空前夫在山顶上大战了一场？\.<br>真是……\.惊心动魄……\.<br>他现在应该正在回家的路上。\.你们应该去拜访他一下！\.\^
+
+
+message_156:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar太空男孩船长人生的意义远远不止甜心一个人。\.我相信他很快就能振作起来，继续探索宇宙的！\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: CARE PACKAGE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_160:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar你们肩负神圣的职责，要把这份珍贵包裹送给\c[11]树苗鼹鼠聚居区\c[0]的鼹鼠兄弟。\.可不能辜负他的心意哦！\.\^
+
+
+message_161:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar\c[4]爱心包裹\c[0]里是 99 块\c[3]豆腐\c[0]？\.鼹鼠兄弟真的很懂鼹鼠兄弟啊。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: GHOST PARTY
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_165:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar高礼帽幽灵在客人到齐之前是不会开始派对的，所以要由你们来召集客人们。\.你们也想看看\c[11]幽灵派对\c[0]是什么样子，对吗？\.\^
+
+
+message_166:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar多亏了你们帮忙，所有客人都来出席幽灵派对了……\.虽然不太准时，不过至少他们最后都到了！\.你们也去加入他们的狂欢吧？\.\^
+
+
+message_167:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar你们肯定在\c[11]幽灵派对\c[0]上玩得很开心吧。\.<br>你们什么时候学会跳舞的呀？\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: Itchy
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_170:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar腕龙斯科特说他没办法挠到痒痒……\.嗯……\.那就交给……\.你们了……\.\^
+
+
+message_171:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar你们帮他挠痒痒了！\.斯科特最好对你们表示感谢。\.可不是所有人都愿意这样帮他的。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: BERLY'S LOST BALL
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_175:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar阿万把波利\c[4]遗失的球\c[0]扔到\c[11]辽阔森林\c[0]的深处了。\.球应该不会飞得太远才对。\.\^
+
+
+#After getting BERLY'S BALL:
+
+message_180:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar太好了！你们把波利\c[4]遗失的球\c[0]找了回来。\.我听说她想给你们一些谢礼。\. <br>真是稀奇呀！\.\^
+
+
+message_181:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar哇哦！波利给了你一张\c[4]屁股认证书\c[0]？\.她肯定花了一整晚才琢磨出这个点子。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: THE CONVICTION OF ORANGE JOE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_185:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar过去了这么久，香橙乔一直没有放弃寻找自己失散多年的兄弟。\.他的锲而不舍真值得我们学习……\.不过，有没有一种可能——\.他的兄弟其实近在咫尺呢？\.\^
+
+
+message_186:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar\sinv[1]希望与活力！希望与活力！\sinv[0]\.<br>跟我一起说，OMORI！\.\sinv[1]希望与活力！希望与活力！\sinv[0]\.\^
+
+
+# =========================================================================================
+
+#Quest Name: A GOOD LISTENER
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_190:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar烛小莉弄丢了她的\c[4]泰迪熊\c[0]，而且哪儿都找不到。\.唉……\.她现在要向谁倾诉烦恼呢？\.\^
+
+
+#After getting \c[4]TEDDY BEAR\c[0]:
+
+message_195:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嘿！你手上的\c[4]泰迪熊\c[0]好像就是烛小莉的那一只。\.你应该还给她……\.<br>她肯定很想念这只泰迪熊。\.\^
+
+
+message_196:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar烛小莉拿回了\c[4]泰迪熊\c[0]一定很开心。\.现在她不再孤单一人了。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: THE WHEREABOUTS OF DUCKIE JR.
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_200:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar噢不！小鸭鸭不见了！<br>\.他的父母一定担心死他了……\.\^
+
+
+#After talking to DUCKIE JR.:
+
+message_205:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar呼……原来小鸭鸭只是仰望星空走了神。\.你有时候也会这样哦，OMORI。\.你们快去看看小鸭鸭有没有安全到家吧！\.\^
+
+
+message_206:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar原来小鸭鸭只是仰望星空走了神。\.你有时候也会这样哦，OMORI！\.\^
+
+
+# =========================================================================================
+
+#Quest Name: MARINA'S OPERATION
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_210:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar玛丽娜让你们帮她找一些\c[4]老鼠肉\c[0]，这样她就能制造出一副新身体了……\.虽然听上去不怎么靠谱，不过她应该知道自己在做什么吧……\.我猜……\.\^
+
+
+#After getting RAT MEAT:
+
+message_215:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar你们找到玛丽娜想要的\c[4]老鼠肉\c[0]了！\.<br>快在\c[4]老鼠肉\c[0]腐烂之前交给玛丽娜吧……\.\^
+
+
+message_216:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar希望玛丽娜喜欢她的新身体。\.<br>不过……\.她的实验体喜不喜欢就不好说了……\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: MEDUSA'S EXPERIMENT
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_220:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar美杜莎让你们帮她找一些\c[4]鼻涕\c[0]，这样她就能制造出一副新身体了……\.虽然听上去不怎么靠谱，不过她应该知道自己在做什么吧……\.大概。\.\^
+
+
+#After getting SNOT:
+
+message_225:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar你们找到美杜莎想要的\c[4]鼻涕\c[0]了！\.快在\c[4]鼻涕\c[0]流得满地都是之前交给美杜莎吧……\.\^
+
+
+message_226:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar美杜莎的身体原来是自己做的呀，嗯……\.怪不得她的身材这么完美。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: MOLLY'S ANALYSIS
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_230:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar莫莉让你们帮她找一些\c[4]金属碎片\c[0]，这样她就能制造出一副新身体了……\.虽然听上去不怎么靠谱，不过她应该知道自己在做什么吧……\.我估计。\.\^
+
+
+#After getting SCRAP METAL:
+
+message_235:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar你们找到莫莉想要的\c[4]金属碎片\c[0]了！\.她真的想要一副金属做的身体吗……\.<br>感觉听上去好笨重啊。\.\^
+
+
+message_236:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar看起来莫莉非常满意像这样子只剩一个头的生活。\.我能理解她的想法。\.毕竟她现在要担心的事变少了嘛。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: PRESENT FOR PALMIE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_240:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar我希望帕尔米喜欢她的\c[4]谢谢你化石\c[0]。\.嗯，真的……很独特。\.\^
+
+
+message_241:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar花生和果酱想给帕尔米送一份礼物，感谢她照顾他们。\.\c[11]橙子绿洲\c[0]不是正好有个地方能找到各种稀奇百怪的东西吗？\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: WEAK MINDS
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_245:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar风筝男孩认为\c[11]漂浮森林\c[0]里其中一个风车坏了。\.有没有办法修好它呢。\.\^
+
+
+message_246:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar现在风车又转了起来。\.你知道凯经常说的那句话。\.如果有东西不工作了……\.那就朝它扔点东西吧！\.\^
+
+
+# =========================================================================================
+
+#Quest Name: THE CALL OF INSPIRATION
+
+# =========================================================================================
+
+#Quest Accepted:
+
+#whats this for?
+message_250:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar波利说她要干一票大的……\.她要打造出一把终极武器，为此正在寻找一种完美的材料！\.\^
+
+
+message_251:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar哇哦，这根\c[13]炫酷浮力棒\c[0]比普通的\c[13]泳池浮力棒\c[0]要炫酷多了！\.<br>它肯定也变强了。\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: PESSI'S THING
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_255:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar佩西似乎弄丢了她宝贵的东西。\.<br>或许你们可以在\c[11]树苗鼹鼠村\c[0]四处看看，说不定能找到线索。\.\^
+
+
+
+#After getting PESSI'S THING:
+
+message_261:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar耶！你们从罗莎那里取回了\c[4]佩西的宝贝\c[0]。\.<br>啊……我懂了……\.原来是这种东西啊。\.好吧，人各有志嘛。\.快去还给他吧。\.\^
+
+
+message_260:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar这样下去佩西要排一辈子队了……\.或许我们应该找人告诉他，活动已经结束了？\.\^
+
+
+# =========================================================================================
+
+#Quest Name: WEEPING WILLOW
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_265:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar湖中的女神最近不太开心啊。\.也许说几个笑话能让她振作起来！\.记得要先获得\c[4]笑话书\c[0]才能把找到的笑话记录下来哦。\.\^
+
+
+message_266:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar虽说我看过的笑话大部分都挺烂的……\.但总该有个还行的吧。\.\^
+
+
+message_267:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar天下那么多笑话，唯独那个让她笑了？\.<br>好吧，我猜每个人的笑点都不一样。\.\^
+
+
+# =========================================================================================
+
+#Quest Name: MISSING
+
+# =========================================================================================
+
+#MARI's dialogue for the BASIL IS MISSING quest will first display this text if you talk to her directly after the cutscene at the picnic:
+
+#Forest Playground
+message_270:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar贝瑟尔到底去哪了？\.我还以为他和你在一起呢，OMORI……\.你最后一次看到他是在他家里，对吧？\.或许你应该再去他家看看。\.\^
+
+
+#Path to Basil (II)
+message_271:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar沿着这条路走就是贝瑟尔家了。\.希望贝瑟尔没事……\.他不喜欢一个人待着……\.\^
+
+
+#==========================
+#After you visit BASIL's house (after getting Hangman), MARI's dialogue for the BASIL IS MISSING quest changes depending on the map you are in.
+
+#Forest Playground
+message_272:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar贝瑟尔去哪了呢？\.会不会在\c[11]辽阔森林\c[0]里呢？\.贝瑟尔不会一个人轻易跑去那儿的……\.难道说他出了什么事吗……\.\^
+
+
+#Path to Basil (II)
+message_273:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar看起来贝瑟尔并不在\c[11]辽阔森林\c[0]里……\.他究竟去哪儿了呀？\.\^
+
+
+#Kite Kid
+message_274:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar贝瑟尔会一个人跑上来吗？我看这里也没有什么特别的地方啊。\.只有树、风车、还有风。\.\^
+
+
+#Orange Oasis
+message_275:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar你觉得贝瑟尔误打误撞来了这里？\.嗯……要是他看到我，一定会和我打招呼的。\.到时候，就算他不喜欢吃甜点，我也要喂他吃很多焦糖苹果！\.\^
+
+
+#Rain town
+message_276:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar贝瑟尔似乎不在附近，不过如果他在，他肯定会很喜欢这里。\.蔬菜宝宝们也会喜欢他的。<br>想象一下……\.贝瑟尔给这些蔬菜宝宝们讲故事……\.那该有多么可爱呀！\.\^
+
+
+#Otherworld campsite
+message_277:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar贝瑟尔不会爬了一路梯子来到了\c[11]异世界\c[0]吧？\.你们要不问问周围有没有人见过他。\.<br>我觉得，可以先去问一问北边的太空海盗们哦。\.\^
+
+
+#Frozen Lake
+message_278:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar我没在附近看到贝瑟尔，我也不觉得他会一个人来到这里。\.这里这么冷，他一定不会喜欢的……\.\^
+
+
+
+#Junkyard IV
+message_279:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar这里可以看到整个\c[11]垃圾场\c[0]的全貌……\.不过貌似没见着贝瑟尔。<br><br><br>真奇怪啊……\.我明明在露营地附近看到了贝瑟尔的身影……\.难道是我看错了吗。\.\^
+
+
+#Junkyard IX  (Same as Junkyard IV)
+message_280:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar这里可以看到整个\c[11]垃圾场\c[0]的全貌……\.不过貌似没见着贝瑟尔。<br><br><br>真奇怪啊……\.我明明在露营地附近看到了贝瑟尔的身影……\.难道是我看错了吗。\.\^
+
+
+#Pyrefly IV
+message_281:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar我一直在思考……\.或许贝瑟尔匆匆离开是有原因的……\.但他到底去哪儿了呢？为什么他没有事先告诉我们呢？\.<br>希望他不要有个三长两短……现在待在一个安全的地方。\.\^
+
+
+#Pyrefly to SM town
+message_282:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar\sinv[1]唉……\sinv[0]\.这附近我也看过了，贝瑟尔貌似不在这里……\.我们不能放弃……\.贝瑟尔需要我们！\.\^
+
+
+#Sproutmole Town I
+message_283:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嘿！你们找到的\c[4]演出门票\c[0]好像可以用在这里。\.不过去之前最好先在附近找找贝瑟尔。<br><br>树苗鼹鼠们会不会知道些什么呢？\.问一下总没错！\.\^
+
+
+#Underground Dungeon
+message_284:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar会不会是贝瑟尔惹怒了甜心，然后被她关起来了呢？\.<br>这个地方好大啊……\.肯定能在某个地方找到线索！\.\^
+
+
+#Servant's Quarter (Same as Underground Dungeon)
+message_285:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar会不会是贝瑟尔惹怒了甜心，然后被她关起来了呢？\.<br>这个地方好大啊……\.肯定能在某个地方找到线索！\.\^
+
+
+#==========================
+#After the Swim switch, MARI will play the same dialogue across all picnics. This should override any previous unique dialogue.
+
+#The following picnics will only ever play this new generic dialogue:
+message_286:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嗯……贝瑟尔不见了，对吗？\.他会不会在这附近呢？\.你比我们更了解他哦，OMORI！\.\^
+
+
+message_287:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar唉……\.看来贝瑟尔也不在甜心城堡里。\.他还能去哪儿呢？\.\^
+
+
+#Last Resort
+#Last Resort Elevator
+#Construction
+#End of the Highway
+#Baking Room
+
+#==========================
+#After going into SGL, the entire quest string will disappear across all picnics, so these MARI will never display the quest.
+
+#Marina Room 3
+#Medusa Maze 1
+#Molly Main Room
+#Path to Basil (BS)
+#Frozen Forest VII
+#Frozen Forest IX
+
+# =========================================================================================
+
+#Quest Name: LEAFIE
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_400:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \marOMORI……\.你……你答应了帮叶子杀兔兔吗？\.奥布里会很难过的哦。\.\^
+
+
+#Quest Complete:
+
+message_401:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar虽然高兴不起来……\.不过恭喜你……\.你现在是兔兔杀手了。\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: Rain town
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_402:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar这雨下得有点大。\.肯定有什么方法能帮到蔬菜宝宝们才对。\.\^
+
+
+#Quest Complete:
+
+message_403:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar你不用因为\c[11]落雨镇\c[0]的事情责怪自己。\.你也只是想帮上忙……\.对吗？\.\^
+
+
+#Quest Complete II:
+
+message_408:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar蔬菜宝宝们的生活变得舒适了起来。\.<br>希望它们快快长大，变成出色的蔬菜大人！\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: Squizzards
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_404:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar农夫吉姆肯定被这些讨厌的墨鱼巫贼搞得焦头烂额。\.帮他清理掉这些恶心的生物吧！\.\^
+
+
+#Quest Complete:
+
+message_405:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar海牛们太可爱了！\.农场里少了墨鱼巫贼以后，海牛们就能哞哞叫着到处走动啦，嘻嘻。\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: Feed Humphrey
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_406:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar哇哦！你手上拿着一张面额 1000000 蚌币的\c[4]巨额支票\c[0]！\.虽然我不知道这附近哪儿有银行，不过我知道有谁会对蚌币感到饥渴……字面意义上的“饥渴”哦。\.\^
+
+
+#Quest Complete:
+
+message_407:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar汉弗莱饱餐了一顿，心满意足了。\.一切又恢复正常了！\.<br>人呐，就是这样，肚子饿的时候就会丧失理智哦。\.\^
+
+
+
+# =========================================================================================
+
+#Quest Name: Mari after collecting black letters
+
+# =========================================================================================
+
+#Quest Accepted:
+
+#message_410:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marYou've been quite busy! Let's go back to \c[14]NEIGHBORS ROOM\c[0] and play cards! You deserve a break!\.\^
+
+#Quest Complete:
+
+#message_411:
+#      faceset: MainCharacter_Mari
+#      faceindex: 2
+#      text: \marGlad you could get to play a bit of cards, did you win? Hope you had fun!\.\^
+
+# =========================================================================================
+
+#Quest Name: Mari after collecting black letters in the fog
+
+# =========================================================================================
+
+#Quest Accepted:
+
+message_420:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: \mar我听传言说，游乐场的南边有一栋空房子。\.嗯……\.我很好奇，它真的是空房子吗？嘻嘻……\.\^
+
+

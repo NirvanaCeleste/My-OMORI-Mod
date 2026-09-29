@@ -1,0 +1,69 @@
+# =========================================================================================
+# Sidequest: Agree with me!
+# =========================================================================================
+
+#TRIGGER: Talk to Artist
+#Note: Player must talk to ARTIST 3 times consecutively to complete the quest
+
+#          [[[First conversation:]]]
+message_0:
+  text: \art帮我看看这张速写。\!<br>你觉得怎样？\!画得太僵硬了，是不是？
+#[Nod (Yes) / Shake (No)]
+# [Nod]
+message_1:
+  text: \art谢谢，我也这么觉得。
+#[Animation: ARTIST Painting]
+#message_20
+message_2:
+  text: \art啊……这样看起来好多了。
+# [Shake]
+message_3:
+  text: \art真的吗？\!嗯……\!我不知道……\!看起来有点僵硬。
+
+#         [[[Second conversation:]]]
+message_4:
+  text: \art嘿，我可以占用你一点时间吗？\!<br>我觉得这幅画少了点什么。\!<br>也许应该给角色加点细节？
+
+message_5:
+  text: \art……\!噢，我知道了！\!<br>我可以在这里、这里、这里还有这里加点细节！\!<br>这样不错吧，对吧？
+#[Nod (Yes) / Shake (No)]
+# [Nod]
+message_6:
+  text: \art当然……太明显了，你不觉得吗？
+#[Animation: ARTIST Painting]
+#message_20
+message_7:
+  text: \art啊，漂亮。\!<br>加了这些细节果然显得不同了！
+# [Shake]
+message_8:
+  text: \art嗯……\!你确定吗？\!<br>我觉得应该是缺了点细节……
+
+#          [[[Third conversation:]]]
+message_9:
+  text: \art嘿，我可以打扰一下你，问问你的意见吗？\!<br>你觉得这里的颜色怎么样？\!<br>我应该把背景涂成红色还是蓝色？
+
+message_10:
+  text: \art……\!等一下，先别说。\!<br>红色背景一定会显得更好看，对吧？
+#[Nod (Yes) / Shake (No)]
+# [Nod]
+message_11:
+  text: \art我完全同意！\!<br>在这里用红色绝对没错。\!<br>红色能让这幅画升华到另一个境界！
+#[Animation: ARTIST Painting]
+#message_20
+message_12:
+  text: \art终于画完了！
+#looks at PLAYER
+message_13:
+  text: \art谢谢。\!要是没你帮忙，我不可能画完这幅画。
+
+# [Shake]
+message_14:
+  text: \art真的吗？\!我以为红色的效果会非常好……
+
+
+message_19:
+  text: \art好啊……感觉全来了！\!<br>\sinv[1]\{仿若醍醐灌顶！！
+#VOILA
+message_20:
+  text: \art然后……\! \{\SINV[1]搞\{定\{啦！！\SINV[0]\}\}
+

@@ -1,0 +1,2630 @@
+# =========================================================================================
+# Battle Quotes
+# =========================================================================================
+
+# Plot Armor
+
+message_1000:
+  text: >
+    OMORI 没有屈服。
+
+message_1001:
+  text: >
+    OMORI 不会屈服。
+
+message_1002:
+  text: >
+    你昏了过去……
+
+# ============Enemy:
+
+# COMMENT
+
+message_1:
+  text: >
+    太空前男友无法变得更开心了！
+# COMMENT
+
+message_2:
+  text: >
+
+# GETTING WEAKER (25%)
+
+message_3:
+  text: >
+
+# AFTER DEFEAT
+
+message_4:
+  text: >
+
+# AFTER VICTORY
+
+message_5:
+  text: >
+
+
+# ============Enemy:  KITE KID
+
+# Before Kid's Kite "FLY- Part 2"
+
+message_10:
+  text: >
+    \>风筝男孩：\<让你们见识一下我和我风筝的真正力量！
+
+# Before Kid's Kite "Repair"
+
+message_11:
+  text: >
+    \>风筝男孩：\<<br>你真以为能打败我们？
+
+message_12:
+  text: >
+    \>风筝男孩：\<<br>再好好想想吧！
+
+# GETTING WEAKER (25%)
+
+message_13:
+  text: >
+    \>风筝男孩：\<<br>不……这不可能……
+
+message_14:
+  text: >
+    \>风筝男孩：\<风……\!<br>正在变弱！
+
+
+# AFTER DEFEAT
+
+message_15:
+  text: >
+    \>风筝男孩：\<但我和我的风筝之间有坚不可摧的牵绊……
+
+message_16:
+  text: >
+    \>风筝男孩：\<<br>我们怎么可能会输？
+
+
+# AFTER VICTORY
+
+message_17:
+  text: >
+    \>风筝男孩：\<<br>哈哈！就如同风所预料的一样！\!我和我的风筝是不可战胜的。
+
+
+# ============Enemy:  PLUTO
+
+# Before Strong Attack
+
+#message_18:
+#   text: >
+#    \>PLUTO: \<\<<br>\sinv[2]WOEWO\{EWEOWEOWEOW!!!
+
+# Getting Weaker
+
+message_19:
+  text: >
+    \>？？？：\<\<<br>\sinv[2]嘎哈\{哈哈\{哈哈！！
+
+message_20:
+  text: >
+    \>？？？：\<\<<br>真是令人惊叹的力量！
+
+# After Defeat
+
+message_21:
+  text: >
+    \>？？？：\<\<嗯……\!<br>你们几个孩子打的不错。
+
+message_22:
+  text: >
+    \>？？？：\<\<但是……\!呼哧……\!呼哧……\!<br>我可不会轻易倒下……
+
+# After Victory
+
+message_23:
+  text: >
+    \>？？？：\<\<嗯……\!<br>你们几个打的不错……\!但还是缺乏训练。
+
+
+
+# ============Enemy:  Space Ex-Boyfriend
+
+# Getting Weaker (50%, Before Enraged):
+
+message_25:
+  text: >
+    \>太空前男友：\<<br>嘎啊！\!你们怎么还能动！？
+
+message_26:
+  text: >
+    \>太空前男友：\<<br>我……\!我不会被你们打败！
+
+# Before ‘Bullet Hell' (25%):
+
+message_27:
+  text: >
+    \>太空前男友：\<<br>别挡道，你们这些地球的渣滓！
+
+message_28:
+  text: >
+    \>太空前男友：\<<br>这是你最后的机会！
+
+# After Defeat:
+
+message_29:
+  text: >
+    \>太空前男友：\<<br>呃啊……\!我的心……
+
+message_30:
+  text: >
+    \>太空前男友：\<<br>它……\!好痛……
+
+# After Victory:
+
+message_31:
+  text: >
+    \>太空前男友：\<<br>你们挑战我之前真该好好考虑考虑。
+
+message_32:
+  text: >
+    \>太空前男友：\<<br>你们不过是一群地球的渣滓！
+
+# ============Enemy: SPROUT MOLE EATER
+
+# Before ‘Ram':
+
+message_33:
+  text: >
+    \>帝王爬虫：\<<br>\quake[1]\}窸窸窣窣窸窸窣窣……
+
+# Getting Weaker:
+
+message_34:
+  text: >
+    \>帝王爬虫：\<<br>\quake[1]\}嘶嘶嘶嘶嘶嘶嘶嘶嘶嘶嘶嘶……
+
+# After Victory:
+
+message_35:
+  text: >
+    \>帝王爬虫：\<<br>\quake[1]\}窸窸窣窣窸窸窣窣！！
+
+# ============Enemy:  Bandito Mole
+
+# Before ‘B.E.D.':
+
+message_36:
+  text: >
+    X
+
+# Before ‘Dynamite':
+
+message_37:
+  text: >
+    X
+
+# Getting Weaker:
+
+message_38:
+  text: >
+    X
+
+# After Defeat
+
+message_39:
+  text: >
+    X
+
+# After Victory
+
+message_40:
+  text: >
+    X
+
+# ============Enemy:  Sir Maximus 1
+
+# Before Strong Attack:
+
+message_41:
+  text: >
+    \>马克西姆斯爵士：\<让你们见识一下！我们家族世世代代磨练的绝技……
+
+message_42:
+  text: >
+    \>马克西姆斯爵士：\<<br>接招，我的终极绝技！
+
+message_43:
+  text: >
+    \sinv[1]\哇呀啊\{啊啊\{啊啊呀！
+
+# Getting Weaker
+
+message_44:
+  text: >
+    \>马克西姆斯爵士：\<不……\!我……\!<br>我不能就这样倒下。
+
+message_45:
+  text: >
+    \>马克西姆斯爵士：\<我的儿子还需要我！
+
+# After Defeat
+
+message_46:
+  text: >
+    \>马克西姆斯爵士：\<不……\!<br>不能就这样结束。
+
+message_47:
+  text: >
+    \>马克西姆斯爵士：\<<br>我的儿子……\!他会为我报仇的……
+
+message_48:
+  text: >
+    \>马克西姆斯爵士：\<<br>你别以为这就结束了！
+
+# After Victory
+
+message_49:
+  text: >
+    \>马克西姆斯爵士：\<<br>我们家的祖传绝技还未尝一败！
+
+message_50:
+  text: >
+    \>马克西姆斯爵士：\<<br>你真是愚蠢，竟然敢挑战我！
+
+# ============Enemy:  Sir Maximus 2
+
+# Before Strong Attack:
+
+message_51:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>让你们见识一下我祖先的力量！
+
+message_52:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>我能感受到父亲就在我身边！
+
+message_53:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>接招，我们的终极绝技！
+
+message_54:
+  text: >
+    \sinv[1]\哇呀啊\{啊啊\{啊啊呀！
+
+# Getting Weaker
+
+message_55:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>不……我不能让父亲白白死去！
+
+# After Defeat
+
+message_56:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>父亲……请原谅我。
+
+message_57:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>我很抱歉……\!我辜负了您。
+
+# After Victory
+
+message_58:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>啊呀，我为我的父亲报仇了！
+
+message_59:
+  text: >
+    \>马克西姆斯爵士二世：\<<br>真是光宗耀祖的一天！
+
+# ============Enemy:  Sir Maximus 3
+
+# Before Strong Attack
+
+message_60:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>让你们见识一下我祖先们的力量！
+
+message_61:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>我的父亲和祖父此刻就在我的身边！<br>接招，我们的终极绝技！
+
+message_62:
+  text: >
+    \sinv[1]\哇呀啊\{啊啊\{啊啊呀！
+
+# Getting Weaker
+
+message_63:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>不……我不能让父亲和祖父白白死去！
+
+# After Defeat
+
+message_64:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>父亲……祖父……
+
+message_65:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>我很抱歉……\!我辜负了你们。
+
+# After Victory
+
+message_66:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>啊呀，我为我的家族报仇了！
+
+message_67:
+  text: >
+    \>马克西姆斯爵士三世：\<<br>真是光宗耀祖的一天！
+
+# ============Enemy:  Sweetheart
+
+# Before Strong Attack (Before Ecstatic):
+
+message_68:
+  text: >
+    \sinv[1]\{噢嚯嚯\{噢嚯嚯！\}
+
+# Getting Weaker (75%)
+
+message_69:
+  text: >
+    \>甜心：\<<br>你竟敢对我刀剑相向！？
+
+message_70:
+  text: >
+    \>甜心：\<<br>愚蠢之徒！\!你们应该向我卑躬屈膝！
+
+# Getting Weaker (50%, Ecsatatic):
+
+message_71:
+  text: >
+    \>甜心：\<噢嚯！\!我的美貌和优雅是永恒无限的……
+
+message_72:
+  text: >
+    \>甜心：\<真遗憾，你们再也无法欣赏我的美貌了！
+
+# Getting Weaker (20%, Manic):
+
+message_75:
+  text: >
+    \>甜心：\<<br>哼！你们竟然还活着。
+
+message_76:
+  text: >
+    \>甜心：\<<br>不愧是蟑螂啊，真顽强！
+
+message_77:
+  text: >
+    \sinv[1]\{噢嚯嚯\{噢嚯嚯！\}
+
+# Before Strong Attack (Manic):
+# Use 3 times
+
+message_78:
+  text: >
+    \sinv[1]\{噢嚯嚯\{噢嚯嚯！\}
+
+# After Defeat
+
+message_79:
+  text: >
+    \>甜心：\<<br>不……\!这就是……\!<br>被击败的滋味吗？
+
+message_80:
+  text: >
+    \>甜心：\<<br>我不能接受……\!<br>我不能接受啊！
+
+message_81:
+  text: >
+    \>甜心：\<<br>你们不过是一群低劣的贱民！
+
+# After Victory
+
+message_82:
+  text: >
+    \sinv[1]\{噢嚯嚯\{噢嚯嚯！\}
+
+message_83:
+  text: >
+    \>甜心：\<<br>不过是小孩子的把戏罢了！\!你们就是一群低劣的贱民！
+
+message_112:
+  text: >
+    \>甜心：\<<br>都给我滚去\c[11]地牢\c[0]吧！
+
+
+
+# ============Enemy:  Reverse Mermaid
+
+# Before Strong Attack:
+
+message_84:
+  text: >-
+    \>反向人鱼：\<<br>。量力来带你给会境困的你\n
+
+# Getting Weaker:
+
+message_85:
+  text: >-
+    \>反向人鱼：\<<br>。弃放是就点弱的大最们我\n
+
+# After Defeat:
+
+message_86:
+  text: >-
+    \>反向人鱼：\<<br>。分部一的它是而，面立对的命生是不并亡死\n
+
+# After Victory:
+
+message_87:
+  text: >-
+    \>反向人鱼：\<<br>。母之功成是败失\n
+
+# ============Enemy:  Mr. Jawsome
+
+# Intro
+
+message_88:
+  text: >
+    \>鲨赞先生：\<<br>伙计们……\!能帮我把这些小屁孩都请出去吗？
+
+
+# Before ‘Summon Henchmen':
+
+message_89:
+  text: >
+    \>鲨赞先生：\<<br>我们需要更多人手，听到了吗！？
+
+message_90:
+  text: >
+    \>鲨赞先生：\<<br>我是说\quake[1]现在就要！
+
+# Before ‘Give Orders':
+
+message_91:
+  text: >
+    \>鲨赞先生：\<<br>我想要这些小屁孩消失，懂了吗！？
+
+message_92:
+  text: >
+    \>鲨赞先生：\<<br>把这些小屁孩赶出去的鳄鱼男可以得到免费披萨……\!<br>\quake[1]我来付钱！
+
+# Getting Weaker:
+
+message_93:
+  text: >
+    \>鲨赞先生：\<<br>什么叫我们人手快不够了！？\!<br>这不可能！
+
+# After Defeat:
+
+message_94:
+  text: >
+    \>鲨赞先生：\<<br>你们就这样被一群小屁孩打败了！？
+
+message_95:
+  text: >
+    \>鲨赞先生：\<<br>那我雇你们有何用！？
+
+# After Victory:
+
+message_96:
+  text: >
+    \sinv[2]\{赞嚯\{嚯\{嚯！！
+
+message_97:
+  text: >
+    \>鲨赞先生：\<<br>这就是在鲨赞先生地盘上捣乱的下场！
+
+# ============Enemy:  PLUTO EXPANDED
+
+# Intro
+
+message_98:
+  text: >
+    \>冥王星：\<<br>让你们见识一下……\!<br>我的终极形态。
+
+message_99:
+  text: >
+    \>冥王星：\<<br>你能感受到……\!这股热量吗？
+
+# Before Strong Attack:
+
+message_100:
+  text: >
+    \>冥王星：\<<br>\<哼……\！
+
+# Getting Weaker 50%):
+
+message_101:
+  text: >
+    \>冥王星：\<<br>\<……\!啊。\!我懂了。
+
+message_102:
+  text: >
+    \>冥王星：\<<br>\<你们全都变强了。
+
+message_103:
+  text: >
+    \>冥王星：\<<br>\<但是……\!我也变强了啊。
+
+# After Defeat:
+
+message_104:
+  text: >
+    \>冥王星：\<<br>\<嗯。\!干得漂亮，孩子们。\!<br>你们成长了好多。
+
+message_105:
+  text: >
+    \>冥王星：\<<br>\<但是……\!<br>我还没结束呢。
+
+# After Victory
+
+message_106:
+  text: >
+    \>冥王星：\<<br>\<我向你们道歉，孩子们。
+
+message_107:
+  text: >
+    \>冥王星：\<<br>\<你们应该对自己的努力感到骄傲。
+
+# ============Enemy:  Abbi
+
+# Before Strong Attack:
+
+message_108:
+  text: >
+    X
+
+# Getting Weaker:
+
+message_109:
+  text: >
+    \>阿比：\<\fn<OMORI_GAME>\quake[1]呃啊……
+
+# After Defeat:
+
+message_110:
+  text: >
+    \>阿比：\<\fn<OMORI_GAME>\quake[1]求求你们……\!放过阿比吧……
+
+# After Victory:
+
+message_111:
+  text: >
+    \>阿比：\<\fn<OMORI_GAME>\quake[1]再见……
+
+# ============Enemy:  Slime Girls
+
+# Before Strong Attack:
+
+
+
+message_113:
+  text: >
+    X
+
+# Getting Weaker (75%):
+
+message_114:
+  text: >
+    \>美杜莎：\<<br>哼哼……\!你们几个孩子比我想象中的还要顽强。
+
+message_115:
+  text: >
+    \>玛丽娜：\<<br>你们都知道这意味着什么吧。\!是时候认真起来了！
+
+message_116:
+  text: >
+    \>莫莉：\<<br>哦……我还玩得挺开心的～！
+
+# Medusa's Special Move (50%):
+
+message_117:
+  text: >
+    \>玛丽娜：\<<br>嘿，美杜莎！<br>你现在是不是和我想的一样？
+
+message_118:
+  text: >
+    \>美杜莎：\<<br>没错，姐姐……\!是时候做些改变了。
+
+message_119:
+  text: >-
+    \>莫莉：\<<br>放轻松，孩子们……\!<br>这一点都不会痛的～\n
+
+# After Defeat:
+
+message_120:
+  text: >
+    \>玛丽娜：\<<br>这群孩子……比看上去的要难对付多了。
+
+message_121:
+  text: >
+    \>莫莉：\<<br>哼……\!好处没有，坏事一堆。
+
+message_122:
+  text: >
+    \>美杜莎：\<<br>唉……\!真是进退两难……\!现在我们拿什么喂汉弗莱啊？
+
+# After Victory:
+
+message_123:
+  text: >
+    \>玛丽娜：\<<br>你们现在属于我们了！
+
+message_124:
+  text: >
+    \>莫莉：\<<br>乖，乖，亲爱的……不要哭……\!你们马上就会适应新的生活了～
+
+message_125:
+  text: >
+    \>美杜莎: \<<br>是时候把小的那只给撕成碎片了。\!开始干活儿吧，玩偶们。
+
+# ============Enemy:  Roboheart
+
+# Getting Weaker
+
+message_126:
+  text: >
+    \>机械甜心：\<<br>5oiR55qE5LiA55Sf5YWF5ruh55eb6Ium77yB
+
+# Getting Weaker
+
+message_127:
+  text: >
+    \>机械甜心：\<<br>5pWR5pWR4oCm4oCm5oiR4oCm4oCm
+
+# After Defeat
+
+message_128:
+  text: >
+    \>机械甜心：\<<br>5Li65LuA5LmI77yf
+
+# After Victory
+
+message_129:
+  text: >
+    \>机械甜心：\<<br>5LiN77yM5oiR5LiN5piv5pyJ5oSP55qE77yB
+
+# ============Enemy:  Mutantheart
+
+# Before Strong Attack:
+
+message_130:
+  text: >
+    \>异变甜心：\<\}\sinv[1]噗嘞……？
+
+# Getting Weaker:
+
+message_131:
+  text: >
+    \>异变甜心：\<\}\sinv[1]噗啦……？
+
+# After Defeat:
+
+message_132:
+  text: >
+    \>异变甜心：\<\}\sinv[1]噗噜噜噜噜……
+
+# After Victory:
+
+message_133:
+  text: >
+    \>异变甜心：\<\sinv[1]噗嘞！
+
+# ============Enemy:  Perfectheart
+
+# Intro
+
+message_134:
+  text: >
+    \>完美甜心：\<<br>记住，孩子们……\!这是你们自找的！
+
+# Getting Weaker (50%):
+
+message_135:
+  text: >
+    \>完美甜心：\<<br>哦……\!你们还挺强的。
+
+message_136:
+  text: >
+    \>完美甜心：\<<br>看来我必须拿出点真本领了。
+
+# Getting Weaker (25%):
+
+message_137:
+  text: >
+    \>完美甜心：\<<br>嗯？\!这——这是什么？\!一滴汗？
+
+message_138:
+  text: >
+    \>完美甜心：\<<br>哦呀，哦呀……\!真是难以置信。
+
+# After Defeat:
+
+message_139:
+  text: >
+    \>完美甜心：\<<br>啊。\!你已经打败我了。
+
+message_140:
+  text: >
+    \>完美甜心：\<<br>好吧。\!我知道什么时候该承认失败。
+
+# After Victory:
+
+message_141:
+  text: >
+    \>完美甜心：\<<br>我已经说过你们会后悔的，孩子们。
+
+message_142:
+  text: >
+    \>完美甜心：\<<br>别再这样逼我。
+
+# ============Enemy:  Hush Puppy
+
+# Before ‘Muffled Scream':
+
+message_143:
+  text: >
+    \>寂静小狗：\<<br>\}\quake[1]嘘……\!请保持安静，非常安静……
+
+# After Defeat
+
+message_144:
+  text: >
+    \>寂静小狗：\<<br>\}\quake[1]嘘嘘嘘嘘嘘……
+
+# ============Enemy:  NEFARIOUS Chip
+
+# Before ‘Cookie Hell':
+
+message_145:
+  text: >
+    \sinv[1]\{接下来……<br>别眨眼！！！\}\sinv[0]<br>新鲜出炉！
+
+# Getting Weaker:
+
+message_146:
+  text: >-
+    \>极恶奇普：\<<br>妈妈咪呀……\n
+
+message_147:
+  text: >-
+    \>极恶奇普：\<<br>……\!是不是……\!<br>是不是越来越热了，这里？\n
+
+# After Defeat:
+
+message_148:
+  text: >
+    \>极恶奇普：\<<br>太可悲了……
+
+# After Victory:
+
+message_149:
+  text: >
+    \sinv[1]\{\{呀吼！哇—哈！\}\}
+
+# ============Enemy:  Biscuit & Doughie
+
+# Getting Weaker (75%):
+
+message_150:
+  text: >
+    \>小面团：\<<br>我们注定要在这里烤一辈子的面包……\!是这样吗，小饼干？
+
+message_151:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢噢……
+
+# Getting Weaker (50%, Depressed):
+
+message_152:
+  text: >
+    \>小面团：\<<br>我们的材料要不够了！<br>怎么办，小饼干！？
+
+message_153:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢噢噢噢！
+
+# Getting Weaker (25%, Miserable):
+
+message_154:
+  text: >
+    \>小面团：\<<br>我们所有东西都不够了！<br>\!马上就要见底了……
+
+message_155:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢噢……
+
+# After Defeat:
+
+message_156:
+  text: >
+    \>小面团：\<<br>我们的资源完全耗尽了……\!没了食材我们该怎么办？
+
+message_157:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢噢噢……
+
+# After Victory:
+
+message_158:
+  text: >
+    \>小面团：\<<br>小饼干！这真是个奇迹！\!<br>神明拯救了我们！
+
+message_159:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢噢噢！
+
+message_160:
+  text: >
+    \>小面团：\<<br>那现在我们又可以回去……\sinv[1]烤新鲜的面包……\!新鲜的面包……\!新鲜的面包……\sinv[0]
+
+message_161:
+  text: >
+    \>小饼干：\<<br>\sinv[1]噢噢……
+
+# ============Enemy:  Space Ex-Husband
+
+# Before ‘Calm Down':
+
+message_162:
+  text: >
+    \>太空前夫：\<<br>我什么都感受不到……\!我好冷……\!就像冰一样……
+
+# Getting Weaker (25%):
+
+message_163:
+  text: >
+    \>太空前夫：\<<br>
+
+# After Defeat:
+
+message_164:
+  text: >
+    \>太空前夫：\<<br>这痛苦……\!我能感受到……
+
+# After Victory:
+
+message_165:
+  text: >
+    \>太空前夫：\<<br>我什么都感受不到……\!<br>我好冷……\!就像冰一样……
+
+# ============Enemy:  Aubrey (Fake Fight):
+
+# After Attack (Knife):
+
+message_166:
+  text: >
+    \>奥布里：\<<br>\quake[1]噶啊！\quake[0]\!什么……
+
+message_167:
+  text: >
+    \>奥布里：\<<br>这……\!这是刀！？
+
+# ============Enemy:  Charlie
+
+# If Angel gets knocked out:
+
+message_168:
+  text: >
+    \>查理：\<……
+
+# ============Enemy:  Angel
+
+# Before ‘Quick Attack':
+
+message_169:
+  text: >
+    \>安吉尔：\<<br>我从师父那里学了这招……<br>\!你们两个，吃我一招！！
+
+message_170:
+  text: >
+    \sinv[1]\{嚯哇\{哇\{啊啊！
+
+# Getting Weaker:
+
+message_171:
+  text: >
+    \>安吉尔：\<<br>嘿。你真让我惊讶，凯！
+
+message_172:
+  text: >
+    \>安吉尔：\<<br>你现在有资格被我师父收拾一番了！
+
+# After Defeat:
+
+message_173:
+  text: >
+    \>安吉尔：\<<br>呜呜……\!你们……\!<br>你们会付出代价的……
+
+# After Victory:
+
+message_174:
+  text: >
+    \sinv[2]\{呼呼\{哈哈！！！
+
+message_175:
+  text: >
+    \>安吉尔：\<<br>多亏我师父教得好啊！
+
+# ============Enemy:  The Maverick
+
+# Before ‘Charm':
+
+message_176:
+  text: >
+    \>独行侠：\<<br>哦，凯，你这可怜的蠢货……\!你在我独行侠面前没有一点胜算！
+
+# Getting Weaker (75%):
+
+message_177:
+  text: >
+    \>独行侠：\<<br>哼……\!还不赖……
+
+message_178:
+  text: >
+    \>独行侠：\<<br>但这场战斗才刚刚开始！
+
+# Getting Weaker (60%):
+
+message_179:
+  text: >
+    \>独行侠：\<<br>呵，不愧是我的宿敌！
+
+message_180:
+  text: >
+    \>独行侠：\<<br>但我必须告诉你……\!你在四处撒野的时候……
+
+message_181:
+  text: >
+    \>独行侠：\<<br>我可是一直在磨练我的技巧，就为了这一刻。
+
+message_182:
+  text: >
+    \>独行侠：\<<br>我的实力令你望尘莫及！
+
+message_183:
+  text: >
+    \>独行侠：\<<br>你就快撑不住了，凯！
+
+# Getting Weaker (50%):
+
+message_184:
+  text: >
+    \>独行侠：\<<br>哈！你就这么点能耐吗！？
+
+message_185:
+  text: >
+    \>独行侠：\<<br>我才用了一成实力！
+
+message_186:
+  text: >
+    \>独行侠：\<<br>见识一下……\!我的终极形态！
+
+# Getting Weaker (40%):
+
+message_187:
+  text: >
+    \>独行侠：\<<br>我敢打赌你们已经<br>开始后悔这个决定了！
+
+message_188:
+  text: >
+    \>独行侠：\<<br>对你们来说我只是太酷了……
+
+message_189:
+  text: >
+    \>独行侠：\<<br>你们不过是一帮失败者！
+
+# Getting Weaker (30%):
+
+message_190:
+  text: >
+    \>独行侠：\<<br>你们……\!呼哧……\!你们自取灭亡只是时间问题！
+
+message_191:
+  text: >
+    \>独行侠：\<<br>胜利终将属于我！
+
+# Getting Weaker (20%):
+
+message_192:
+  text: >
+    \>独行侠：\<<br>呼哧\!我必须承认……\!我还挺惊讶的……\!但你们离打败我还有几光年之远呢！
+
+# Getting Weaker (10%):
+
+message_193:
+  text: >
+    \>独行侠：\<<br>\quake[1]呼哧……\!呼哧……
+
+message_194:
+  text: >
+    \>独行侠：\<<br>不……\!这不可能！\!不可能！
+
+message_195:
+  text: >
+    \>独行侠：\<<br>\quake[1]令人难以置信！
+
+# After Defeat:
+
+message_196:
+  text: >
+    \>独行侠：\<<br>\quake[1]呼哧……\!呼哧……\!呼哧……\!呼——哧……
+
+message_197:
+  text: >
+    \>独行侠：\<<br>\quake[1]呼哧……\!呼哧……\!呼——哧……
+
+message_198:
+  text: >
+    \>独行侠：\<<br>嘎……\!不……\!<br>就这么结束了！我不能接受！
+
+# After Victory:
+
+message_199:
+  text: >
+    \>独行侠：\<<br>等等……\!我赢了？\!<br>我是说……
+
+message_200:
+  text: >
+    \>独行侠：\<<br>就像我预料的一样！哈哈！\!<br>敬畏我吧，我可是独行侠！
+
+# ============Enemy:  Kim
+
+# Before ‘Big Punch':
+
+message_201:
+  text: >
+    \>金：\<<br>我看到你的脸就烦！
+
+# Getting Weaker:
+
+message_202:
+  text: >
+    \>金：\<<br>我要让你们知道，体型说明不了什么！\!我可不会输给你们这帮怪胎！
+
+# After Defeat:
+
+message_203:
+  text: >
+    \>金：\<<br>嘟囔……嘟囔……\!<br>你们……还是帮怪胎……
+
+# After Victory:
+
+message_204:
+  text: >
+    \>金：\<<br>呵……你们两个根本没机会赢。
+
+# ============Enemy:  Vance
+
+# Before ‘Candy Throw':
+
+message_205:
+  text: >
+    \>万斯：\<<br>尝尝这些陈年老糖果！
+
+# Getting Weaker:
+
+message_206:
+  text: >
+    \>万斯：\<<br>噢……\!好痛。
+
+# After Defeat:
+
+message_207:
+  text: >
+    \>万斯：\<<br>可恶……\!我就是想吃点太妃糖。
+
+# After Victory:
+
+message_208:
+  text: >
+    \>万斯：\<<br>那么……呃……\!<br>能把太妃糖给我们了吗？
+
+# ============Enemy:  Aubrey (Church):
+
+# Before ‘Power Hit':
+
+message_209:
+  text: >
+    \>奥布里：\<<br>凯……\! \n[8]……\!<br>你来得太迟了！
+
+message_210:
+  text: >
+    \>奥布里：\<<br>你们俩现在对我来说什么都不是！
+
+# Getting Weaker (25%):
+
+message_211:
+  text: >
+    \>奥布里：\<<br>你们为什么在这里？
+
+message_212:
+  text: >
+    \>奥布里：\<<br>为什么……\!为什么是现在？
+
+# After Defeat:
+
+message_213:
+  text: >
+    \>奥布里：\<<br>呃……
+
+message_214:
+  text: >
+    \>奥布里：\<<br>算了吧……\!<br>你们只是在浪费我的时间。
+
+# After Victory:
+
+message_215:
+  text: >
+    \>奥布里：\<<br>哼。
+
+message_216:
+  text: >
+    \>奥布里：\<<br>真是自作自受，凯。
+
+message_217:
+  text: >
+    \>奥布里：\<<br>现在……\!走开，别来烦我了。
+
+# ============Enemy:  Aubrey & Scooter Squad (Lake):
+
+# Getting Weaker (75%):
+
+message_218:
+  text: >
+    \>安吉尔：\<<br>我和我师父为了这一刻训练了很久……
+
+message_219:
+  text: >
+    \>独行侠：\<<br>你们这次不会再打赢我们了！
+
+message_220:
+  text: >
+    \>万斯：\<<br>小金……准备好大闹一场了吗？
+
+message_221:
+  text: >
+    \>金：\<<br>那当然，万斯！<br>\!这些书呆子都是自找的！
+
+# Getting Weaker (50%):
+
+message_222:
+  text: >
+    \>独行侠：\<<br>安杰尔，记住我们的训练！让你的弱点化为力量！
+
+message_223:
+  text: >
+    \>安吉尔：\<<br>师父，明白！我不会让您失望的！
+
+# Getting Weaker (25%):
+
+message_224:
+  text: >
+    \>万斯：\<<br>小金……你还好吗？
+
+message_225:
+  text: >
+    \>金：\<<br>呼哧……\!呼哧……\!哈！\!别担心，万斯……我还没倒下呢！
+
+# Before ‘Hooligan Strong Energy':
+
+message_226:
+  text: >
+    \{\sinv[2]尝尝这招，书呆子！！
+
+# After Defeat:
+
+message_227:
+  text: >
+    \>独行侠：\<<br>呼哧……\!呼哧……\!<br>我……\!我在做梦吗？
+
+message_228:
+  text: >
+    \>安吉尔：\<<br>这……\!这怎么可能！？
+
+message_229:
+  text: >
+    \>金：\<<br>真不敢相信我们输了……
+
+message_230:
+  text: >
+    \>万斯：\<<br>小金……我饿了。\!<br>我们能走了吗？
+
+message_231:
+  text: >
+    \>奥布里：\<<br>…………
+
+# After Victory:
+
+message_232:
+  text: >
+    \>独行侠：\<<br>呼哧……\!呼哧……\!<br>我……\!我在做梦吗？
+
+
+message_233:
+  text: >
+    \>安吉尔：\<<br>我们赢了，师父！我们赢了！
+
+message_234:
+  text: >
+    \>金：\<<br>真是自作自受，书呆子。
+
+message_236:
+  text: >
+    \>万斯：\<<br>小金……我饿了……我们去找点吃的吧。
+
+message_237:
+  text: >
+    \>奥布里：\<<br>……\!呵。
+
+message_238:
+  text: >
+    \>奥布里：\<<br>凯……\! \n[8]……\!<br>从这里滚出去。
+
+
+# ============Enemy:  Basil
+
+message_239:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>\n[8]……
+
+message_240:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>我们无路可逃了，不是么？
+
+message_244:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>告诉我，\n[8]……
+
+message_245:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>我这么做是不是太自私了？
+
+message_249:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>你恨我吗？
+
+message_250:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>\n[8]……
+
+message_251:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>求求你……\!快住手……
+
+message_252:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>\quake[1]为什么！？\!为什么你还不停手！？
+
+message_254:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>不要再挣扎了，\n[8]。
+
+message_255:
+  text: >
+    \>贝瑟尔：\<\fn<OMORI_GAME><br>我……\!我好累……
+
+# ============Enemy:  The Recyclepath
+
+# Before ‘Summoning':
+
+message_256:
+  text: >
+    \>回收狂人：\<<br>兄弟们！我们必须团结起来！<br>圣垃圾桶在呼唤我们！
+
+# Before ‘Throw Trash':
+
+message_257:
+  text: >
+    \>回收狂人：\<<br>快滚开，反回收者！
+
+message_258:
+  text: >
+    \>回收狂人：\<<br>让橡胶手套的力量驱逐你！
+
+# Getting Weaker:
+
+message_259:
+  text: >
+    \>回收狂人：\<<br>哦，圣垃圾桶在上……
+
+message_260:
+  text: >
+    \>回收狂人：\<<br>请赐予我回收这些敌人的力量！
+
+# After Defeat:
+
+message_261:
+  text: >
+    \>回收狂人：\<<br>哦，为什么，圣垃圾桶？
+
+message_262:
+  text: >
+    \>回收狂人：\<<br>您已经抛弃我们了吗！？
+
+# After Victory:
+
+message_263:
+  text: >
+    \>回收狂人：\<<br>呼咂！圣桶赐予我们胜利！
+
+message_264:
+  text: >
+    \>回收狂人：\<<br>圣垃圾桶在上，万岁万岁！
+
+# ============Enemy:  Extras
+
+# Space Ex-Boyfriend Return to ANGRY
+
+message_265:
+  text: >
+    \>太空前男友：\<<br>我已经怒不可遏了……<br>没人能平息我的怒火！
+
+# Sweetheart Return to HAPPY
+message_266:
+  text: >
+    \>甜心：\<<br>没用的，你们这些蠢货！\!我的正能量可不会因为你们而黯淡无光！
+
+# Biscuit and Doughie Return to SAD
+message_267:
+  text: >
+    \>小面团：\<\sinv[1]<br>新鲜的面包……\!新鲜的面包……\!每天都是新鲜的面包……
+
+message_268:
+  text: >
+    \>小饼干：\<\sinv[1]<br>噢噢噢噢噢噢噢……
+
+# Perfectheart Hitting an emotion weakness
+message_269:
+  text: >
+    \>完美甜心：\<<br>\sinv[1]啧……啧……\sinv[0]\!显露出情感只会让你们更好读懂。
+
+# Snow Angel Pierce Heart Skill
+message_270:
+  text: >
+    \>雪天使：\<\quake[1]Acta deos numquam mortalia fallunt……
+
+# Hush Puppy Muffled Scream
+message_271:
+  text: >
+    \>玉米球嘘人狗：\<<br>\quake[1]\}姆嗯……\!姆嗯嗯嗯……\!<br>噗姆姆姆……\! \quake[1]姆姆姆噗噗噗嗯嗯！！\quake[0]
+
+# ============Enemy:  Humphrey
+# Humphrey Swarm Intro
+message_272:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]开饭时间到！开饭时间到！<br>你们全都死翘翘！
+
+# Before transforming into a lump
+message_273:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]最终决战刚开始！\|如果我们合为一，你们如何能胜利？
+
+# Before swallow 1
+message_274:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]好心提醒你……最好快屏息。<br>\|开饭时间到，全部进肚里！
+
+# Before swallow 2
+message_275:
+  text: >
+    \>汉弗莱: \<<br>\sinv[1]多快多慢，都没有意义……\|你越挣扎，越白费力气！
+
+# Before Swallow 3
+message_276:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]嘿，放轻松……无需恐惧，不用害怕。\|<br>哈，OMORI……地方真小，说不出话！
+
+# Before Swallow 4
+message_277:
+  text: >
+    \>汉弗莱：\<\sinv[1]烹饪肉类真好玩！\|一分熟多汁柔软，三分熟令人惊叹，半熟肉香气满满，全熟肉烤成焦炭！
+
+# Before Swallow (Generic 1)
+message_278:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]挣扎是没有意义的。放弃吧，我的朋友。\|<br>一次又一次，循环往复如诅咒。
+
+# Before Swallow (Generic 2)
+message_279:
+  text: >
+    \>汉弗莱:\<<br>\sinv[1]没必要再挣扎了。一无所知才享乐。\|三番五次又怎样，你能奈我何？
+
+#Before Humphrey Abort
+message_323:
+  text: >
+    \>汉弗莱：\<<br>\sinv[1]随意挣扎吧，不管你们怎么做……\|困我腹中别想活！
+
+# Uvula Intro
+message_280:
+  text: >
+    \>汉弗莱：\<<br>哈！你们永远也无法打败我，失败者！
+
+#Uvula Shit Talk
+message_281:
+  text: >
+    \>汉弗莱：\<<br>哈！我是最棒的！
+
+# ============Enemy:  Fears
+
+# ============Enemy:  Fear of Heights
+
+# Getting the \n[8]s attention
+
+message_282:
+  text: >
+    \>？？？：\<<br>\n[8]……
+
+# Encouragement
+
+message_283:
+  text: >
+    \>？？？：\<<br>深呼吸……\!<br>别害怕。\!它没有你想的那么恐怖。
+
+# \n[8] gains CALM DOWN
+message_284:
+  text: >
+    你平复了心情……然后回想起了如何冷静。
+
+# CALM DOWN reminder
+
+message_285:
+  text: >
+    \>？？？：\<<br>记住哦，\n[8]……\!只要冷静下来就好……
+
+# ============Enemy:  Fear of Bugs
+
+# Getting the \n[8]'s attention
+message_286:
+  text: >
+    \>？？？：\<<br>好像没有用呢……<br>是吧，\n[8]？
+
+# Encouragement
+message_287:
+  text: >
+    \>？？？：\<<br>看样子你很辛苦呢……
+
+message_288:
+  text: >
+    \>？？？：\<<br>不要被细枝末节的事情干扰……\!想想什么才是最重要的吧！
+
+# \n[8] gains FOCUS
+message_289:
+  text: >
+    你理清了思绪……然后回想起了如何集中。
+
+# CALM DOWN before FOCUS reminder
+message_290:
+  text: >
+    \>？？？：\<<br>激动的时候是很难集中注意力的。<br>\!记住，要先深呼吸……
+
+# ============Enemy:  Fear of Drowning
+
+# CALM DOWN reminder.
+message_291:
+  text: >
+    \>？？？：\<<br>镇定下来……\!别害怕。\!<br>它没有你想的那么恐怖。
+
+# Encouragement
+message_292:
+  text: >
+    \>？？？：\<<br>你必须坚持下去。\!<br>不管看上去有多困难……\!都不要放弃。
+
+# \n[8] gains PERSIST
+message_293:
+  text: >
+    你向那个声音伸出了手……然后回想起了如何坚持。
+
+# BASIL is struggling
+message_294:
+  text: >
+    你感到贝瑟尔在水中不断挣扎……<br>而你动弹不得！
+
+# BASIL falls unconscious
+message_295:
+  text: >
+    贝瑟尔不动了。
+
+# ============Tutorial SPROUT MOLES
+# ANGRY MOLE
+message_296:
+  text: >-
+    \>英雄：\<<br>啊！看起来这只树苗鼹鼠生气了！\!就像我们一样，树苗鼹鼠们也是有情绪的。\n
+
+message_297:
+  text: >
+    \>英雄：\<<br>这只树苗鼹鼠现在很生气，因此它的攻击也会变高。
+
+message_298:
+  text: >
+    \>英雄：\<<br>但换句话说，它的防御也会降低！
+
+
+message_299:
+  text: >
+    \>奥布里：\<<br>也就是说，现在是出击的绝佳时刻嘛！\!来吧，OMORI！\!我们上！
+
+# HAPPY MOLE
+message_300:
+  text: >
+    \>英雄： \<<br>哦！ \!我明白了……\!这只树苗鼹鼠现在很开心！
+
+message_301:
+  text: >
+    \>英雄：\<<br>这种情况下，它会更容易击中我们的弱点，造成更多的伤害。
+
+message_302:
+  text: >
+    \>英雄：\<<br>但这同样意味着它的攻击更容易落空！
+
+# SAD MOLE
+message_303:
+  text: >
+    \>英雄：\<嗯……\!这只树苗鼹鼠看上去有些悲伤……\!你看到了吗？它像个小婴儿一样蜷缩起来了。
+
+message_304:
+  text: >
+    \>英雄：\<<br>这说明它造成的伤害<br>不会像平常一样多……<br>但这也意味着它受到的心心<br>伤害会变低，并且由活力<br>来承担这部分的伤害。
+
+message_305:
+  text: >
+    \>凯：\<<br>真令人伤心……\!<br>让我们结束它的痛苦吧！
+
+# YE OLD SPROUT MOLE
+message_306:
+  text: >
+    \>英雄：\<<br>你注意到些许不同了吗，OMORI？
+
+message_307:
+  text: >
+    \>英雄：\<<br>你应该能看到屏幕下方有一个边上写有数字的能量槽。
+
+message_308:
+  text: >-
+    \>英雄：\<<br>那就是我们的集体能量槽！\n
+
+message_309:
+  text: >
+    \>英雄：\<<br>运用我们的集体能量，我们可以共同击败敌人！\!先攻击看看，你就明白了！
+
+message_310:
+  text: >
+    \>英雄：\<<br>看到我们攻击时旁边冒出的气泡了吗？\!这就是我们的连携技！
+
+message_311:
+  text: >
+    \>英雄：\<<br>当你攻击后，你有一小段时间来使用能量去触发连携技。
+
+message_312:
+  text: >
+    \>英雄：\<<br>按下任意方向键，看看会发生什么！
+
+message_313:
+  text: >
+    \>英雄：\<<br>呼……\!天啊……\!<br>这家伙还真难打。
+
+message_314:
+  text: >
+    \>英雄：\<<br>当他攻击我们的时候，你注意到我们的能量上涨了吗？
+
+message_315:
+  text: >
+    \>英雄：\<<br>当我们受到伤害时，我们同时也会获得能量！\!这就是反击的机会啦！
+
+message_316:
+  text: >
+    \>英雄：\<<br>太棒了……我们的能量满了！\!是时候使用我们的特殊攻击了！
+
+message_317:
+  text: >
+    \>英雄：\<<br>OMORI……\!在你攻击之后，按下\DII[down]，释放所有能量吧！
+
+message_318:
+  text: >
+    \>英雄：\<<br>我希望你准备好了！
+
+message_319:
+  text: >
+    \>英雄：\<<br>来吧，大家……<br>让这大家伙看看我们的实力吧！
+
+# ============Fears extra
+message_320:
+  text: >
+    某个东西将你向下拖去……
+
+message_321:
+  text: >
+    你感到一股寒意涌上脊柱……
+
+message_322:
+  text: >
+    你推开黑暗，游向高处……
+
+message_340:
+  text: >
+    \>？？？：\<\n[8]……\!有时候感到害怕也是可以的。
+
+message_341:
+  text: >
+    \>？？？：\<我就在这里陪着你。\!<br>深呼吸，睁开你的眼睛。
+
+
+message_344:
+  text: 生命果酱人正等着你使用生命果酱。
+
+message_345:
+  text: 生命果酱人正等着你使用生命果酱。
+
+message_346:
+  text: 生命果酱人正等着你使用生命果酱。
+
+message_347:
+  text: >
+    \>生命果酱人：\<快试试\c[3]生命果酱\c[0]！\!<br>它真的有用！
+
+
+# =========================================================================================
+# Battle Quotes: SW
+# =========================================================================================
+
+message_350:
+  text: >
+    霍尔德获得了\v[1001]经验！
+
+message_351:
+  text: >
+    霍尔德升级了！
+
+message_352:
+  text: >
+    卢修斯获得了\v[1002]经验！
+
+message_353:
+  text: >
+    卢修斯升级了！
+
+message_354:
+  text: >
+    玛莎获得了\v[1003]经验！
+
+message_355:
+  text: >
+    玛莎升级了！
+
+message_356:
+  text: >
+    泰雷兹获得了\v[1004]经验！
+
+message_357:
+  text: >
+    泰雷兹升级了！
+
+# message_358:
+#    text: >
+#     MARSHA's party rolls initiative...
+
+# message_359:
+#    text: >
+#     LUCIUS's party rolls initiative...
+
+message_360:
+  text: >
+    \v[1003]的小队掷投了行动顺序骰子……
+
+# message_361:
+#    text: >
+#     THERESE's party rolls initiative...
+
+message_362:
+  text: >
+    投出了20点！\v[1003]的小队抢得先手！
+
+message_363:
+  text: >
+    投出了1点！OMORI 的小队抢得先手！
+
+message_364:
+  text: >
+    投出了\v[1002]！行动顺序不受影响！
+
+# =========================================================================================
+# Battle Quotes: DW
+# =========================================================================================
+
+message_400:
+  text: >
+    \>鳄鱼男：\<<br>谁说你们可以擅自离开岗位了？\!快回去工作！
+
+message_401:
+  text: >
+    \>鳄鱼男：\<<br>你们怎么又回来了？\!看来我又得给你们好好上一课了！
+
+message_402:
+  text: >
+    \>鳄鱼男：\<<br>你们不准再往前了！\!鲨赞先生再见到你们不会开心的。
+
+message_403:
+  text: >
+    \>鳄鱼男：\<<br>行吧伙计……这次你休想通过我这关。
+
+message_404:
+  text: >
+    \>鳄鱼男：\<<br>你们这帮烦人精……\!这次又想干嘛？
+
+message_405:
+  text: >
+    \>鳄鱼男：\<<br>无需多言，伙计们。\!把他们都扔出去。
+
+message_406:
+  text: >
+    \>鳄鱼男：\<<br>你们在这干什么！？<br>这样是违反合同的！
+
+message_407:
+  text: >
+    \>鳄鱼男：\<<Br>现在你们有两个人了！？得让老板来亲眼瞧瞧！
+
+message_408:
+  text: >
+    \>鳄鱼男：\<<br>现在你们有三个人了！？得让老板来亲眼瞧瞧！
+
+message_409:
+  text: >
+    \>鳄鱼男：\<<br>你们又玩忽职守了？现在你们有大麻烦了，呵呵……
+
+message_410:
+  text: >
+    \>鳄鱼男：\<你们每次都被扔出去不累吗，小鬼们！？
+
+message_411:
+  text: >
+    \>鳄鱼男：\<<br>嘿，小鬼！赶快上供\v[1001]蚌币，这次我们才会饶了你。
+
+message_412:
+  text: >
+    \>鳄鱼男：\<<br>合作愉快哦。
+
+message_413:
+  text: >
+    \>鳄鱼男：\<<br>啧啧……抱歉，伙计。<br>你交的钱不够啊！
+
+message_414:
+  text: >
+    \>鳄鱼男：\<<br>啧啧……真可惜！
+
+# ============PLUTO EXPANDED
+# =====After Using Flex
+message_415:
+  text: >
+    \>冥王星：\<<br>你的进步真是令人惊叹啊，凯！\！你\c[1]秀肌肉\c[0]秀得已经非常好了！
+
+# ============SPROUT MOLE EATER
+# =====Summoning and eating sprout moles
+message_416:
+  text: >
+    树苗鼹鼠出现了！
+
+message_417:
+  text: >
+    帝王爬虫吃掉了树苗鼹鼠！
+
+# ============JUNKYARD EXTRA
+
+message_418:
+  text: >
+    凯在垃圾堆里翻找。
+
+message_419:
+  text: >
+    凯什么都没找到。
+
+message_420:
+  text: >
+    凯找到了\c[5]易拉罐\c[0]！
+
+message_421:
+  text: >
+    凯找到了一块\c[3]豆腐\c[0]。
+
+message_422:
+  text: >
+    凯找到了一条\c[5]橡皮筋\c[0]！
+
+message_423:
+  text: >
+    凯找到了一块\c[3]巧克力\c[0]！
+
+message_424:
+  text: >
+    凯找到了一罐\c[3]樱桃汽水\c[0]！
+
+message_425:
+  text: >
+    凯正在玩老虎机。
+
+message_426:
+  text: >
+    凯赢得了\v[1002]蚌币！
+
+message_427:
+  text: >
+    凯输掉了\v[1002]蚌币……
+
+# =========================================================================================
+# Battle Quotes: DW
+# =========================================================================================
+
+
+message_446:
+  text: >
+    \>老大：\<<br>\sinv[1]嘿嘿嘿！！\sinv[0]\!<br>你们这些弱者！\!这也算攻击吗？！
+
+message_447:
+  text: >
+    \>老大：\<<br>嘿，有点痛啊！\!哼！\!这就不好玩了。
+
+message_448:
+  text: >
+    \>老大：\<<br>呃……\!你可把我惹生气了……
+
+message_449:
+  text: >
+    \>老大：\<<br>是时候使用我的独门绝技了！
+
+message_450:
+  text: >
+    \{\{\sinv[1]\quake[1]肉弹冲撞！！\sinv[0]
+
+message_445:
+  text: >-
+    \>老大：\<<br>嗯？！\!你们怎么还能动？！\n
+
+# ============SWEETHEART
+message_451:
+  text: >
+    \sinv[1]\{哦，英雄！ <br>\sinv[1]\{我的英雄！！\}
+
+message_452:
+  text: >
+    \sinv[1]\{你的笑容迷住了<br>我的心！\}
+
+message_453:
+  text: >
+    \sinv[1]\{我要让你变成<br>我的东西！！\}
+
+# ============HERO AFRAID OF SPIDER BUNNY
+message_454:
+  text: >
+    英雄害怕蜘蛛！
+
+# ============SWEETHEART DONUT
+message_455:
+  text: >
+    你怎敢在我面前吃\c[3]甜甜圈\c[0]！
+
+# ============MUSSEL KEL FLEX
+message_456:
+  text: >
+    贻贝见识到了凯的\c[1]秀肌肉\c[0]，<br>感到自愧不如……
+
+# ============HUMPHREY POISON
+message_457:
+  text: >
+    胃酸滴了下来……
+
+message_458:
+  text: >
+    胃酸涌了出来！
+
+# ============Uvula Shit Talk
+message_459:
+  text: >
+    \>汉弗莱：<br>你们不过就是块肉，快让我吃了你们。
+
+message_460:
+  text: >
+    \>汉弗莱：<br>别打我啦，食物们。\!没用的！
+
+message_461:
+  text: >
+    \>汉弗莱：<br>这就是为什么我不该玩弄食物。
+
+message_462:
+  text: >
+    \>汉弗莱：<br>嚼，嚼，嚼……\!是时候享用大餐啦！
+
+message_463:
+  text: >
+    \>汉弗莱：<br>弱肉强食。\!你难道不懂吗？\!这可是生物学基础！
+
+message_464:
+  text: >
+    \>汉弗莱：<br>请等待被消化。\!现在正在排队，你还需要等等。
+
+message_465:
+  text: >
+    \>汉弗莱：<br>你有见过别的食物挣扎吗？\!表现得好一点行不行，食物们！
+
+# ============Kite Kid Repair
+message_469:
+  text: >
+    风筝男孩修补了风筝。
+
+# ============Kite Kid Wind
+message_470:
+  text: >
+    狂风呼啸。
+
+message_471:
+  text: >
+    风很平稳。
+
+message_472:
+  text: >
+    风力变弱了。
+
+# =========================================================================================
+# HANGING BODY SOMETHING
+# =========================================================================================
+
+message_501:
+  text: >
+    你感到一阵眩晕。
+
+message_502:
+  text: >
+    你的肺部拧成一团。
+
+message_503:
+  text: >
+    你感觉你的胃里翻江倒海。
+
+message_504:
+  text: >
+    你的心快要跳出嗓子眼了。
+
+message_505:
+  text: >
+    你的手指止不住地颤抖。
+
+message_506:
+  text: >
+    你的膝盖突然一软。
+
+message_507:
+  text: >
+    汗珠从你的额头滚落。
+
+message_508:
+  text: >
+    你的眼皮很沉重。
+
+message_509:
+  text: >
+    你能听见自己的心跳。
+
+message_510:
+  text: >
+    你听到你的呼吸逐渐平稳。
+
+message_511:
+  text: >
+    你听到你的心跳逐渐平稳。
+
+message_512:
+  text: >
+    你鼓起全部的勇气……\!<br>然后学会了克服。
+
+# =========================================================================================
+# FEAR REFIGHTS
+# =========================================================================================
+
+# ============FEAR OF FALLING COUNTDOWN
+message_520:
+  text: >
+    你正在坠落。
+
+message_521:
+  text: >
+    还剩 \v[1001] 个回合……
+
+message_522:
+  text: >
+    你摔到了地上。
+
+# ============FEAR OF FALLING COUNTDOWN
+message_525:
+  text: >
+    房间里灌满了水。
+
+message_526:
+  text: >
+    你感觉不能呼吸了。
+
+
+# =========================================================================================
+# BATTLE QUOTES (FA)
+# =========================================================================================
+
+# ============AUBREY CHURCH
+
+message_540:
+  text: >
+    \}看看她的衣服……\|<br>在教堂里怎么能穿成这样……
+
+message_541:
+  text: >
+    \}她竟然带了武器来这里……\|<br>难以置信，真是太野蛮了……
+
+message_542:
+  text: >
+    \}这些不良少年知道自己在做什么吗？<br>\|这里可是祈祷的地方！
+
+message_543:
+  text: >
+    \}谁快来阻止他们……\|他们的父母呢？
+
+message_544:
+  text: >
+    \}那女孩对整个社区都是个威胁。\|她这样的罪人已经没救了！
+
+message_545:
+  text: >
+    \}我就知道她会是个麻烦……<br>\|牧师早就该把她赶出去了。
+
+message_546:
+  text: >
+    \}现在这些孩子真是不懂得尊重……\|<br>我不希望我的孩子将来变得像她一样。
+
+# ============PEPPER SPRAY
+message_547:
+  text: >
+    \>查理：\<<br>！！！
+
+message_548:
+  text: >
+    \>安吉尔：\<<br>\quake[1]啊！！我的眼睛！\!师父！我看不见了！！
+
+message_549:
+  text: >
+    \>独行侠：\<<br>\quake[1]呜呜……\!咳咳……\!这是什么把戏！？
+
+message_552:
+  text: >
+    \>万斯：\<<br>啊嗷……好痛。
+
+message_551:
+  text: >-
+    \>金：\<<br>这是什么鬼东西！？\! \c[5]防狼喷雾\c[0]？\!你来真的！？\n
+
+
+message_553:
+  text: >
+    \>奥布里：<br>嘎啊……\!你们两个真差劲……
+
+# =========================================================================================
+# Epliouge Extra Fights
+# =========================================================================================
+
+# ============PLUTO EXPANDED
+
+# Start
+message_600:
+  text: >
+    \>冥王星：\<<br>这就是我们的最终决战了。\!让我看看你们的全部实力吧。
+
+# At 50% HP
+message_601:
+  text: >
+    \>冥王星：\<<br>啊……\!看上去我又一次低估了你们。
+
+# After Earth Finale
+message_602:
+  text: >
+    \>冥王星：\<<br>很少有人能把我逼到这种地步……\!到了这一步，一般人非死即伤。
+
+message_603:
+  text: >
+    \>冥王星：\<<br>我所追求的只有胜利！\!让你们看看我的决心！
+
+# Turn 1 of charging
+message_604:
+  text: >
+    \>冥王星：\<<br>能和你们大家相遇……\!并且亲眼见证了你们的成长，我真的很开心。
+
+# Turn 2 of charging
+message_605:
+  text: >
+    \>冥王星：\<<br>我认可你们的实力……\!从今以后，我不会再把你们当成孩子看待了。
+
+message_606:
+  text: >
+    \>冥王星：\<<br>这场战斗的胜利属于我……\!你们逃不过我的最终审判！
+
+# Before Meteor
+message_607:
+  text: >
+    \>冥王星：\<<br>希望我们来生还能再会。\!永别了。
+
+# Charging
+message_608:
+  text: >
+    冥王星开始为终极一击蓄力！
+
+message_609:
+  text: >
+    冥王星继续为终极一击蓄力……
+
+message_610:
+  text: >
+    冥王星的终极一击已经蓄力完成！
+
+# Pluto Victory
+message_611:
+  text: >
+    \>冥王星：\<<br>无需伤心。\!你们到最后都是可敬的对手。
+
+# Pluto Defeat
+message_612:
+  text: >
+    \>冥王星：\<<br>真不敢相信……\!即便使出全力……\!我还是被击败了。
+
+message_615:
+  text: >
+    \>冥王星：\<<br>能和你们战斗是我的荣幸。\!你们的胜利名副其实。
+
+# Pluto's presence
+message_613:
+  text: >
+    冥王星肌肉的威压让你们颤抖！
+
+message_614:
+  text: >
+    所有悲伤的人都变弱了。
+
+# ============Kite Kid Epilouge
+message_620:
+  text: >
+    \>风筝男孩：\<<br>我们与风是一体的！
+
+message_621:
+  text: >
+    \>风筝男孩：\<<br>只要风还在，我们就是不可战胜的！
+
+# ============Space Ex-Husband
+# An image appears
+message_630:
+  text: >
+    \>太空前夫：\<<br>啊呀！我看到曾经的回忆！
+
+# Happy Memories
+message_631:
+  text: >
+    \>太空前夫：\<<br>这是我……和我的甜心……\!在她华美的舞台上相吻！
+
+message_632:
+  text: >
+    \>太空前夫：\<<br>这是我……和我的甜心……\!一起凝望夜空！
+
+message_633:
+  text: >-
+    \>太空前夫：\<<br>这是我……和我的甜心……\!凝视彼此的眼睛！\n
+
+# Sad Memories
+message_634:
+  text: >
+    \>太空前夫：\<<br>这是我……孤身一人……\!把我的\c[4]特制混音带\c[0]丢弃……
+
+message_635:
+  text: >
+    \>太空前夫：\<<br>这是我……孤身一人……\!在我的特大号床上默默流泪……
+
+message_636:
+  text: >
+    \>太空前夫：\<<br>这是我……孤身一人……\!拿着我心爱甜心的照片……
+# Angry Memories
+message_637:
+  text: >
+    \>太空前夫：\<<br>这是我的甜心……但她……\!正在向我挥来钉锤！
+
+message_638:
+  text: >
+    \>太空前夫：\<<br>这是我的甜心……但她……\!正在另一个男人的怀抱中！
+
+message_639:
+  text: >
+    \>太空前夫：\<<br>这是我的甜心……但她……\!正在房间另一头朝我扔东西！
+
+# Beggining of Fight: Mechanic indication
+message_640:
+  text: >
+    \>太空前夫：\<<br>我所剩下的只有回忆了……
+
+message_641:
+  text: >
+    \>太空前夫：\<<br>但即便是这些回忆也只能让我感到空虚。
+
+# Correct answer: Happy
+message_642:
+  text: >
+    \>太空前夫：\<<br>啊……\!我仍然很想念那段时光……
+
+# Correct answer: Sad
+message_643:
+  text: >
+    \>太空前夫：\<<br>哦……\!<br>真不敢相信她已经离我而去了……
+
+# Correct answer: Angry
+message_644:
+  text: >
+    \>太空前夫：\<<br>嘎啊！\!她怎么能这样对我！
+
+#message_645:
+#   text: >
+#    \>SPACE EX-HUSBAND: \<I GAVE HER MY HEART AND SHE THREW IT AWAY SO EASILY!
+
+# Wrong answer
+message_646:
+  text: >
+    \>太空前夫： \<<br>唉……\!没有人能理解这痛彻心扉的感觉。
+
+message_647:
+  text: >
+    \>太空前夫：\<<br>如果我不去感受任何东西……\!那痛苦也就不会找上我了。
+
+# Changing back to neutral
+message_648:
+  text: >
+    \>太空前夫：\<<br>不！我必须守护我的内心！\!我必须和冰……融为一体……
+
+# ============Mutant Heart
+# Start
+message_660:
+  text: >
+    \>异变甜心：\<<br>\}尼……\!尼壕……
+# Happy
+message_661:
+  text: >
+    \>异变甜心：\<<br>\}\sinv[1]开心……\.求求！
+# Sad
+message_662:
+  text: >
+    \>异变甜心：\<<br>\}\sinv[1]悲伤……\.请……
+# Angry
+message_663:
+  text: >
+    \>异变甜心：\<<br>\}\sinv[1]生气……\. 请。
+
+# Wrong
+message_664:
+  text: >
+    \>异变甜心：\<<br>\}\quake[1]呕呃……\|错误！
+
+# =========================================================================================
+# BROKEN FEAR SKILLS
+# =========================================================================================
+
+# ============CALM DOWN (Something)
+
+message_750:
+  text: >
+    你想冷静下来……\|<br>但你上气不接下气。
+
+# ============FOCUS (Something)
+
+message_751:
+  text: >
+    你想集中精神……\|<br>但呕吐感席卷而来。
+
+# ============PERSIST (Something)
+
+message_752:
+  text: >
+    你想坚持下去……\|<br>但你甚至站不稳脚跟。
+
+
+# =========================================================================================
+# CHERISH
+# =========================================================================================
+
+message_806:
+  text: >
+    你回想起了凯的话语。
+
+message_807:
+  text: >
+    你回想起了奥布里的心愿。
+
+message_808:
+  text: >
+    你回想起了英雄的承诺。
+
+message_809:
+  text: >
+    你回想起了贝瑟尔的祈望。
+
+message_810:
+  text: >
+    你回想起了玛里的请求。
+
+message_801:
+  text: >
+    \>凯：\<<br>朋友嘛……\!就应该互帮互助。
+
+message_802:
+  text: >
+    \>奥布里：\<<br>希望你能在新家过上平静的生活……\|总之就……\|开开心心。
+
+message_803:
+  text: >
+    \>英雄：\<那个时候……<br><br><br>\>英雄：\<明明我们最需要的就是彼此的陪伴，大家却选择了分道扬镳。<br><br>\>英雄：\<这一次……\|我们不能再犯相同的错误了。
+
+message_804:
+  text: >
+    \>贝瑟尔：\<<br>或许有一天……\|<br>一切都能回到原来的样子。
+
+message_805:
+  text: >
+    \>玛里：\<<br>你一定能够原谅自己的……\|<br>对吗……\n[8]？
+
+
+#-------
+
+message_900:
+  text: >
+    \fn<OMORI_GAME>你带来了那么多痛苦……\|<br>但你却无动于衷。
+
+message_901:
+  text: >
+    \fn<OMORI_GAME>所以你一无所获。
+
+message_902:
+  text: >
+    \fn<OMORI_GAME>你的朋友永远也不会原谅你。
+
+message_903:
+  text: >
+    \fn<OMORI_GAME>他们会像你当初抛弃他们一样<br>抛弃你……\!这一切都是你自作自受。
+
+message_904:
+  text: >
+    \fn<OMORI_GAME>你说服自己，<br>你只是不想成为别人的负担……
+
+message_905:
+  text: >
+    \fn<OMORI_GAME>但自私才是你的真面目。<br>\!你不过是不想让别人依靠你罢了。
+
+message_906:
+  text: >
+    \fn<OMORI_GAME>你何时考虑过他人？<br>\!你还要让别人照顾你多久？
+
+message_907:
+  text: >
+    \fn<OMORI_GAME>你说你关心他们，但你就是个骗子。<br>\!你从没有为任何人做过任何事。
+
+message_908:
+  text: >
+    \fn<OMORI_GAME>你真没用……\|<br>一无是处。\!令人作呕。
+
+message_909:
+  text: >
+    \fn<OMORI_GAME>像你这样的人不配活在世上。
+
+message_910:
+  text: >
+    \fn<OMORI_GAME>你的朋友们都看错你了。\!他们爱的那个人根本不是真正的你。
+
+message_911:
+  text: >
+    \fn<OMORI_GAME>你蒙骗了他们，以此来保护自己。
+
+message_912:
+  text: >
+    \fn<OMORI_GAME>你除了骗人什么都不会……\!等他们知道真相的时候……
+
+message_913:
+  text: >
+    \fn<OMORI_GAME>他们都会恨你，就如同你恨自己一样。
+
+message_914:
+  text: >
+    \fn<OMORI_GAME>一旦他们知晓了真相，就永远都不会再相信你了。
+
+message_915:
+  text: >
+    \fn<OMORI_GAME>你做什么都没有意义。
+
+message_916:
+  text: >
+    \fn<OMORI_GAME>你做什么都只会让事情变得更糟。\!<br>你还不如干脆死了算了。
+
+
+message_917:
+  text: >
+    \fn<OMORI_GAME>你还不如干脆死了算了。
+
+message_918:
+  text: >
+    \fn<OMORI_GAME>你杀了玛里。\!她爱你，而你杀了她。
+
+message_919:
+  text: >
+    \fn<OMORI_GAME>英雄爱她，而你杀了她。
+
+message_920:
+  text: >
+    \fn<OMORI_GAME>奥布里爱她，而你杀了她。
+
+message_921:
+  text: >
+    \fn<OMORI_GAME>凯爱她，而你杀了她。
+
+message_922:
+  text: >
+    \fn<OMORI_GAME>贝瑟尔爱她，而你杀了她。
+
+message_923:
+  text: >
+    \fn<OMORI_GAME>你爱她，而你杀了她。
+
+message_924:
+  text: >
+    \fn<OMORI_GAME>你就该去死。
+
+message_925:
+  text: >
+    你想逃走。
+
+
+#BATTLE EMOTION
+
+message_926:
+  text: >
+    太空前男友变得生气了！
+
+message_927:
+  text: >
+    太空前男友变得愤怒了！
+
+message_928:
+  text: >
+    太空前男友变得狂怒了！
+
+message_929:
+  text: >
+    甜心变得开心了！
+
+message_930:
+  text: >
+    甜心变得狂喜了！
+
+message_931:
+  text: >
+    甜心陷入了癫狂！
+
+message_932:
+  text: >
+    不面双胞胎变得悲伤了……
+
+message_933:
+  text: >
+    不面双胞胎变得抑郁了……
+
+message_934:
+  text: >
+    不面双胞胎感到很痛苦……
+
+message_935:
+  text: >
+    生命果酱人撒了些\c[3]生命果酱\c[0]出来！
+
+message_936:
+  text: >
+    \>生命果酱人：\<享受你们的免费样品吧！\!回见了，哈哈！
+
+message_937:
+  text: >
+
+message_938:
+  text: >
+    太空前男友无法变得开心或悲伤了！
+
+message_939:
+  text: >
+    甜心无法变得悲伤或生气了！
+
+message_940:
+  text: >
+    不面双胞胎无法变得开心或生气了！
+
+#=======
+#DOROTHI ON TRAIN
+
+message_941:
+  text: >
+    \>？？？：\<\fn<OMORI_GAME>\n[8]……
+
+message_942:
+  text: >
+    \>？？？：\<\fn<OMORI_GAME>\n[8]……\|\n[8]……\|\n[8]……
+
+message_943:
+  text: >
+    \>？？？：\<\fn<OMORI_GAME>\n[8]……\|我很……\|抱歉……
+
+message_944:
+  text: >
+    \>？？？：\<\fn<OMORI_GAME>\n[8]……\.对……不起……
+
+#=======
+#SNALEY
+
+#----------------------------
+# ** IN BATTLE: SNALEY 1
+#----------------------------
+
+message_950:
+  text: >
+    \>斯纳里：\<<br>我的第一场战斗！\!我要上了！
+
+message_951:
+  text: >
+    \>斯纳里：\<<br>哇哦，战斗好难。\!<br>再让我试试！
+
+message_952:
+  text: >
+    \>斯纳里：\<<br>不知道我适不适合干这个……
+
+message_953:
+  text: >
+    \>斯纳里：\<<br>好了，足够了。\!<br>谢谢你的教导。
+
+#----------------------------
+# ** IN BATTLE: SNALEY 2
+#----------------------------
+
+message_954:
+  text: >
+    \>斯纳里：<br>自上次以来我又学会了一些新技能！\!你们大家最好小心一点！
+
+message_955:
+  text: >
+    \>斯纳里：<br>刚刚那个不酷吗！
+
+message_956:
+  text: >
+    \>斯纳里：<br>我还学会了怎么用连携技！\!让我展示给你看看！
+
+message_957:
+  text: >
+    \>斯纳里：<br>怎么样！<br>\!现在我几乎和你们一样强大了！
+
+#----------------------------
+# ** IN BATTLE: SNALEY 3
+#----------------------------
+
+message_958:
+  text: >
+    \>斯纳里：<br>我已经等不及向你们展示我的成长了！\!放马过来吧！
+
+message_959:
+  text: >
+    \>斯纳里：<br>可不只有你们能够使用情绪 ！
+
+message_960:
+  text: >
+    \>斯纳里：<br>你们真的好强！\!<br>但我是时候使用终极攻击了！
+
+
+message_961:
+  text: >
+    斯纳里变得 悲伤 了……
+
+message_962:
+  text: >
+    斯纳里变得 开心 了！
+

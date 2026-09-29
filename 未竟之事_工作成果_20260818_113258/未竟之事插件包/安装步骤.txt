@@ -1,0 +1,32 @@
+# 安装步骤（拷到你的测试工程）
+
+## 1. 拷贝文件
+- `UnwrittenStory.js` → 测试工程 `js/plugins/`
+- `languages/sc/uw_book.yaml` → 测试工程 `languages/sc/`
+- `languages/en/uw_book.yaml` → 测试工程 `languages/en/`
+- （书数据也可以只放 sc，但 en 也放一份最稳，防止切换语言缺文件）
+
+## 2. 注册插件
+- 打开 RPG Maker MV 的插件管理器（工具 → 插件管理器）
+- 双击底部空白行 → 选择 `UnwrittenStory` → 状态设为 ON
+- **建议放在插件列表末尾**（依赖 Omori BASE / Omori Main Menu / Text_Language_Processor，靠后加载最稳）
+
+## 3. 事件里调用
+在需要打开书的事件里加【插件命令】：
+```
+UnwrittenStory Open uw_book night0
+```
+参数：`Open <yaml文件名> <起始页key>`（key 见 uw_book.yaml 的 order）
+
+## 4. 操作
+- ← → 翻页；确定＝书写快进/进入选句；↑↓ 选句；确定＝修改/擦除/封存；ESC 退出
+- 全部 `mark:true` 句子封存后自动触发戳刺演出并置 ON 对应开关（night0→1001, night1→1002, night2→1003, night3→1004）
+
+## 5. 测试清单
+- [ ] 翻页 + 书写动画（光标跟随）
+- [ ] 第一夜文字从右往左写（rtl）
+- [ ] 修改：选变体后该句替换
+- [ ] 擦除：整句压暗
+- [ ] 封存：红"封"章 + 计数
+- [ ] 全部封存后戳刺演出 + 开关置 ON
+- [ ] 存档/读档后修改状态保留

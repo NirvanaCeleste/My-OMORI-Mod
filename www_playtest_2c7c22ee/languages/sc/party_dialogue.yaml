@@ -1,0 +1,2886 @@
+#NEW DIALOGUE 2/8/20
+
+#------------------------------------------------------------------------------------------
+
+#FIRST TIME CUTTING: (UNSURE IF NEEDED)
+#Kel inspires OMORI into using CUT for the first time.
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel你看，OMORI！这个小枝条你肯定可以砍断！\!<br>来吧，试一试！
+
+
+#After cutting:
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我就知道你能做到的！<br>呵，这下它领教到你有多厉害了！
+
+
+#------------------------------------------------------------------------------------------
+
+#BLACKLETTER GET:
+
+#*After going to sleep during Prologue - Fear of Heights segment:
+
+#*Laptop is flashing.
+
+#*Examine Laptop.
+
+#*Laptop glitches out
+
+#*Laptop spreads to corners of actual game
+
+#*Blackletter UI opens
+
+#*Player must scroll to bottom
+
+#*Blackletter UI can be closed with cancel after
+
+#*Laptop glitches
+
+#*Laptop shuts off/Screen goes black
+
+#Dialogue:
+message_10:
+  text: 按\DII[pageup]打开吊死鬼菜单。
+
+    #  \c[4]  \c[0]
+message_11:
+  text: 按\DII[pagedown]打开脑内空间地图。
+
+
+message_12:
+  text: 什么都没有，只有噪点。
+
+
+#------------------------------------------------------------------------------------------
+
+#BASIL IS KIDNAPPED:
+
+#Change: As soon as you see the photo, the screen suddenly transports you to White Space.
+
+#------------------------------------------------------------------------------------------
+
+#EDIT - BASIL IS MISSING:
+
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aubOMORI！谢天谢地你来了！
+
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel你看到贝瑟尔了吗？\!我们到处找都没有找到他……
+
+
+message_22:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her我们得回去告诉玛里你没事。\!<br>她都快担心死了！
+
+
+#------------------------------------------------------------------------------------------
+
+#BEFORE BLACKHOLE:
+#Map: Forest Playground
+#Activation: Exit Stump Entrance to Forest Playground
+
+message_30:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \marOMORI！你没事呀！
+
+
+#*MARI and OMORI hug*
+message_31:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar别再这样让我担心了。
+
+
+message_32:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar贝瑟尔去哪儿了？\!他没跟你在一起吗，OMORI？
+
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……\!恐怕没有。\!<br>我记忆里最后一件事情，是在贝瑟尔家和他一起整理照片……
+
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her然后下一秒……\!我和奥布里还有凯就在\c[11]邻居的房间\c[0]醒过来了。
+
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub至少我们找到你了，OMORI……\!真希望贝瑟尔没事。\!<br>如果我们不在，谁来保护他呢？
+
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 别说丧气话了，奥布里！\!我们肯定可以找到贝瑟尔的！\kel
+
+
+message_36:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar说得没错，凯。\!<br>正是这种时候，我们更应该保持积极乐观的心态！
+
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her嗯……\!要不我们回贝瑟尔家看看？\!<br>我们可能漏掉了什么东西。
+
+
+message_38:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar这才对嘛，英雄！\!<br>和平时一样，如果你们需要我，就来跟我说一声！
+
+
+#------------------------------------------------------------------------------------------
+
+#When examining a flower patch on the way to Basil's house:
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这些花……\!已经开始枯萎了……<br>\贝瑟尔回来前，我们要尽力照顾好它们。
+
+
+#------------------------------------------------------------------------------------------
+
+#FEATURE: WATERING BASIL'S FLOWERS
+#At the beginning it's manageable, but each day BASIL goes missing, it gets worse. On the last day - Deep Well, most flowers are dead and watering a flower causes another to die in another patch.
+
+#After you have collected all the Black letters, all the flowers should be dead.
+
+#When you examine a Water pail, the screen goes black and then you will get a message that says:
+
+message_41:
+  text: 你装备了\c[13]洒水壶\c[0]。
+
+
+message_42:
+  text: 奥布里装备了\c[13]洒水壶\c[0]。
+
+
+message_43:
+  text: 凯装备了\c[13]洒水壶\c[0]。
+
+
+message_44:
+  text: 英雄装备了\c[13]洒水壶\c[0]。
+
+
+#You will enter a mode where you can only water plants in the patch.
+#Menu should be locked.
+
+#To leave the mode, attempt to leave the garden patch.
+#You will get a message that says:
+
+message_45:
+  text: 你把\c[13]洒水壶\c[0]放回了原处。
+
+
+#------------------------------------------------------------------------------------------
+
+#BLACKHOLE INTRO:
+#Map: Basil's House
+#Activation: Enter Basil's House
+
+#Something is hovering over the small hole in BASIL's floor.
+
+#Upon entering, the camera pans and it disappears.
+
+#Examine at least 3 things of these things around the house (will have unique flavor text for them):
+
+#Fireplace:
+message_51:
+  text: 壁炉里的火还燃着，就像贝瑟尔离开时一样。
+
+
+#Bed:
+message_52:
+  text: 看起来很舒服的床。
+
+
+#Bookcase:
+message_53:
+  text: 书架。\!上面落了一些灰。
+
+
+message_66:
+  text: ……\!啊……\!啊啊啊……\!\sinv[1]啊啊啊啊啊……
+
+
+message_67:
+  text: \{\sinv[1]啊——\{\啊——\{啊嚏！！\sinv[1]
+
+
+#Small plants:
+message_54:
+  text: 小小的植物。\!它们看起来有些悲伤。
+
+
+#Note: The fireplace will change flavor text later to: “The fire has gone out.” when it appears so on the map.
+
+message_64:
+  text: 壁炉里的火变得黯淡了。
+
+
+message_65:
+  text: 壁炉里的火熄灭了。
+
+
+message_55:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……好像没有什么不寻常的地方。
+
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel贝瑟尔是不是离开这里去了其他地方，然后没告诉我们？
+
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub不知道……这不像他会做的事呀。<br>\!他平时这么为我们着想，这种事情他一定会考虑得很周到的。
+
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub……\!大家……我真的好担心啊。\!我们真的什么都做不到吗？
+
+
+message_59:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 12
+  text: \aub要是真的找不到他怎么办？\!万一他真出了什么事怎么办！
+
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: \her冷静点，奥布里……\!我也很担心贝瑟尔，但担心解决不了任何问题。\!<br>我们在森林这一带找找他吧。说不定他闲逛时在森林里迷路了呢。
+
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel嗯！打起精神来，奥布里！我们会找到贝瑟尔的！
+
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub呜……\!你们说得对……
+
+
+message_63:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub好！我们得振作起来！<br>\!那我们出发去\c[11]辽阔森林\c[0]找贝瑟尔吧。
+
+
+#------------------------------------------------------------------------------------------
+
+#VAST FOREST INTRO:
+#Map: Vast Forest Maps (Have to do twice)
+#Activation: Enter East or West Forest Map
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\{\{\sinv[1]贝——瑟——尔——！！！
+
+
+message_71:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub\{\sinv[1]贝瑟尔，你在哪儿？！
+
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel我知道了！我的宠物石头肯定知道贝瑟尔在哪儿！
+
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel乖，\c[13]赫克托尔\c[0]。快去找贝瑟尔！
+
+
+#*KEL throws HECTOR*
+
+message_74:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: \n<赫克托尔>……
+
+
+#KEL picks him back up*
+
+message_75:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel……\!兄弟，你尽力了。
+
+
+#KEL equipped PET ROCK.
+
+#AUBREY hits KEL.
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub别在这儿犯傻了，凯，我们没时间了啦！
+
+
+message_77:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel嘿！你怎么……\!\c[13]赫克托尔\c[0]只是想帮忙而已呀！
+
+
+message_78:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her好了好了，你们俩……\!我们得集中注意力。
+
+
+message_79:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这梯子真的好长诶。
+
+
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel呃……是有点长……\!但没有树桩东边的那个梯子长！\!那个梯子可是直通太空呢！
+
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aubOMORI，我记得你是不是特别怕高？\!没事的……\!我们不要往上看就好了。
+
+
+#------------------------------------------------------------------------------------------
+
+#BEFORE OTHERWORLD LADDER 1:
+#Map: Forest Playground
+#Activation: Walk in proximity of top of Playground near Picnic
+
+message_90:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar大家好呀！怎么样了？\!你们有没有找到贝瑟尔呀？
+
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗨，玛里……\!我们……还没找到他……
+
+
+message_92:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar啊……\!抱歉。\!<br>真希望我能多帮上你们的忙。
+
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her没事的，玛里，我们大家都尽力了……\!<br>或许我们应该去森林以外的地方找找。
+
+
+message_94:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel我想到了！\!要不我们去爬一爬那个超长的梯子怎么样？就是在树桩东边的那个！
+
+
+message_95:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub不行的！OMORI 怕高呀！
+
+
+message_96:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel但如果贝瑟尔就在梯子那头呢？<br>我们总得去看看嘛！
+
+
+message_97:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub我知道的……\!但是……
+
+
+message_98:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \marOMORI！\!你每天都在变得更加勇敢。\!<br>爬梯子对你来说不过是小事一桩，对不对呀？\!<br>来吧，弟弟。克服你的恐惧吧！
+
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her一开始感到害怕是很正常的，不过记住，我们大家都相信你哦。
+
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel来嘛，OMORI！就是个小破梯子……\!<br>不会有事的！
+
+
+message_101:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub我不太确定耶……\!<br>你觉得你能行吗，OMORI？
+
+#[YES/NO]
+
+#[YES]
+message_102:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub嗯！如果你觉得没问题，那我也觉得没问题！\!<br>但你要是害怕了，不想爬梯子的话……我也会支持你的决定的。
+
+
+message_103:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \herOMORI，谢谢你。你真的很勇敢。
+
+
+message_104:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\{\Com[2]呀——呼——！！\}\}<br><br>快走！快走！树桩东边的梯子，出发！
+
+
+message_105:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub一会儿见啦，玛里！
+
+
+message_106:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar大家拜拜！注意安全呀！<br>\!别忘了，OMORI！你比你想象中的更勇敢哦！
+
+
+#[NO]
+message_107:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub没关系的……慢慢来就行。
+
+
+message_108:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel啊啊啊……加把劲嘛，OMORI！<br>\!贝瑟尔失踪了，我们总不能干坐着吧！
+
+
+message_109:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \herOMORI，我们得爬上那个梯子看看。\!有我们在呢……\!<br>如果发生危险，我们大家会保护你的！\!对吧，奥布里？
+
+
+message_110:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嗯……你说得对。
+
+
+message_111:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her只要我们大家待在一起，就没什么好怕的。\!而贝瑟尔现在孤身一人……\!他需要我们的帮助！
+
+
+message_112:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \marOMORI，为了贝瑟尔，你需要直面自己的恐惧……<br>\!我相信你能做到的！
+
+
+message_113:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嗯，我们可以慢慢爬！<br>\!只要最后能到达终点就可以了。
+
+
+message_114:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\{\Com[2]呀——呼——！！\}\}<br><br>快走！快走！树桩东边的梯子，出发！
+
+
+message_115:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub一会儿见啦，玛里！
+
+
+message_116:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar大家拜拜！注意安全呀！<br>\!别忘了，OMORI！你比你想象中的更勇敢哦！
+
+
+message_117:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel等一下！OMORI！不是这个梯子啦！\!我说的是树桩东边的那个梯子。
+
+
+message_118:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel你先从游乐场那边往上……呃……我的意思是往北走……\!然后在树桩那边右转，一直走啊走啊就到了！
+
+
+message_119:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel嗯，应该是这么走……的吧。\!毕竟辽阔森林挺\sinv[1]辽阔\sinv[0]的啦！
+
+
+#------------------------------------------------------------------------------------------
+
+#BEFORE OTHERWORLD LADDER 2:
+#Map: Otherworld Ladder Entrance
+#Activation: Walk in proximity of ladder
+
+message_125:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her别忘了玛里说的话哦，OMORI！<br>\!你比你想象中的更勇敢！
+
+
+message_126:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub别担心，我们就紧跟在你后面！
+
+
+message_127:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel是呀……如果你掉下来，我们都会接住你的！
+
+
+message_128:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub凯，别吓唬他啦！\!你不会掉下来的，OMORI……\!我保证！
+
+
+#*Examine Ladder*
+#*Dark border appears, then suddenly disappears/retracts*
+
+#short pause
+
+message_130:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……我们从来没有爬过这个梯子应该是有什么理由的，但我怎么也想不起来了。
+
+
+message_131:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her到底是因为什么来着……
+
+
+message_132:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her啊，算了……\!无所谓了！
+
+
+
+#------------------------------------------------------------------------------------------
+
+#JUNKYARD INTRO:
+#Map: Junkyard II
+#Activation: Walk in proximity of open crate
+#*Upon entering junkyard, kel tries digging in the first open crate he sees on the right path for cassette.*
+
+message_140:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel这儿就是\c[11]垃圾场\c[0]吧？
+
+
+message_141:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel是时候开始寻宝啦！
+
+
+#*KEL starts digging in crate*
+
+message_143:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel我们在找什么东西来着？
+
+
+message_144:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub太空男友的\c[4]特制混音带\c[0]……
+
+
+message_145:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel对——噢！
+
+
+#*pause*
+
+message_146:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel嘿，快看，我找到了一个\c[5]易拉罐\c[0]！
+
+
+message_147:
+  text: 你获得了\c[5]易拉罐\c[0]。
+
+
+message_148:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub唉……\!也行吧，就当是开了个好头。
+
+
+#------------------------------------------------------------------------------------------
+
+#LIFE JAM GUY (NOT MANDATORY):
+#Map: Junkyard III (Map 144)
+#Activation: Talk to LIFE JAM guy in front of crate below
+
+
+
+#Same dialogue as before in Hide and Seek starting with:
+#Hey! I'm the LIFE JAM guy! I sell LIFE JAM! It really works!
+
+#------------------------------------------------------------------------------------------
+
+#AFTER DEFEATING SPACE BF:
+#Map: Otherworld Town
+#Activation: Exit Space BF's House
+
+message_160:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar大家好呀！\!怎么样？找到贝瑟尔了吗？
+
+
+message_161:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her呃……玛里……\!我们好像被分散了注意力。\!<br>不过，我们只是想帮助一下那些需要帮助的人啦。
+
+
+message_162:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub快看，玛里！我拿到了一张\c[4]雪糕筒兑换券\c[0]呢！
+
+
+message_163:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar呀，真是太棒了，奥布里！
+
+
+message_164:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub谢谢！
+
+
+message_165:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel玛里！快看我！
+
+
+#*KEL flexes*
+
+message_166:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar也……\!也挺棒的，凯！
+
+
+message_167:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel对吧对吧！超厉害的对不对？！
+
+
+message_168:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her真的很奇怪……\!我们四处都找了个遍了，但连贝瑟尔的影子都没看到。
+
+
+message_169:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar唉，贝瑟尔……\!他到底去哪里了呢。
+
+
+message_170:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar我们肯定是错过了一些线索……<br>\!你有什么头绪吗，OMORI？
+
+
+#------------------------------------------------------------------------------------------
+
+#PHOTO FRAME:
+
+#*At the end of the photo frame, there should be a sheet music stand.
+#When you examine the music stand, it will say:
+
+message_175:
+  text: 谱架上有一份乐谱。\!<br>所有的音符都被涂掉了。
+
+
+message_176:
+  text: 钢琴上有一份乐谱。\!<br>所有的音符都被涂掉了。
+
+
+#*When PLAYER walks to leave, Something should come out of the sheet music and start chasing OMORI.
+
+#*The teleport to the hallway shouldn't work. It can say:
+
+message_177:
+  text: 这扇门上锁了。
+
+
+#*When Something catches OMORI, he is ported to White Space.
+#(And when he stabs himself, he will be able to continue the story on Day 1)
+
+#------------------------------------------------------------------------------------------
+
+
+#BEFORE PYREFLY FOREST:
+#Map: Forest Playground
+#Activation: Forest Playground on Night 1 - Sweetheart
+
+message_180:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub嗨，玛里！快看！OMORI 来啦！
+
+
+message_181:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \marOMORI！
+
+
+#*MARI hugs OMORI*
+
+message_182:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar\com[2]别再突然消失啦，好吗？
+
+
+message_183:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar你知道我心脏受不了的。
+
+
+message_500:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar唔……\!所以还是没找到贝瑟尔吗？<br>\!他到底会在哪里呢？
+
+
+message_185:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her我们不太确定……\!<br>我们到处都找过了，但……就是哪儿都找不到。
+
+
+message_503:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub唉……\!希望贝瑟尔没事……\!<br>我真的好想他。
+
+
+message_186:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel是啊！我好想再听他念叨那些他喜欢的东西……\!<br>花呀……\!照片呀……\!艺术呀……\!书呀什么的……
+
+
+message_187:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub我的头发都打结了。\!<br>好怀念贝瑟尔给我梳头发的日子呀。
+
+
+message_188:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aubOMORI，你可以给我梳头发吗？
+
+
+message_189:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel嗯，贝瑟尔之前还经常提醒我洗手呢。\!<br>看！它们现在都脏兮兮的了！
+
+
+message_190:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub噫，脏死了！凯！
+
+
+message_191:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her凯……无论贝瑟尔在不在，我觉得你都得洗手。
+
+
+message_502:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar大家……虽然现在情况有点棘手，但我们还是要保持积极乐观哦！\!<br>我们要像贝瑟尔一样！\!<br>贝瑟尔呀，就算是沮丧的时候，他也总能保持微笑。
+
+
+message_192:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar那……你们还有哪里没检查过吗？
+
+
+#HERO ...
+
+message_193:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……\!树桩的西边有一片森林，但是……
+
+
+message_194:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel但是那个森林特别恶心，到处都是蜘蛛在爬！
+
+
+#*HERO shudders*
+
+message_195:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呃……\!\quake[1]蜘蛛……\quake[0]
+
+
+message_196:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar这么一来……你们也知道下一步应该怎么做啦。
+
+
+message_197:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar是时候再次面对你的恐惧了，弟弟！
+
+
+message_198:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar这次还包括你哦，英雄！
+
+
+message_199:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her……
+
+
+message_200:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel来吧，老哥！你可不能反悔啊！<br>\!就像我们之前给 OMORI 鼓劲儿一样。\!<br>我们会陪你一起克服恐惧的！
+
+
+message_201:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her嗯，你说得对……\!哈哈……\!我可真不像话……
+
+
+message_202:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub大家别担心！\!如果有任何东西想伤害你们，我会把它砸个粉碎的！\!<br>尽管放心好啦！
+
+
+message_203:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar不要忘了我呀！\!<br>我也会一直帮助你们的。
+
+
+message_204:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her好……\!好的！\!我们齐心协力，一定可以做到的！
+
+
+message_205:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her我……我们走吧，去树桩西边的森林。\!<br>带路吧，OMORI！
+
+
+
+#------------------------------------------------------------------------------------------
+
+#PYREFLY ENTRANCE SPIDER WEB
+
+message_206:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 你准备好了吗，OMORI？\kel
+
+
+message_207:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 我们会一直陪在你身边的……\! 是不是呀，英雄？\aub
+
+
+message_208:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 什……什么？\! 啊……啊对！当然了！\her
+
+
+message_209:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: OMORI……\!谢谢你这么为团队着想。\her
+
+
+#*Examine Spider Web*
+#*Dark border appears, then suddenly disappears/retracts*
+#Player must use CUT to cut spider web
+
+
+#------------------------------------------------------------------------------------------
+
+#Move 4 Sprout Mole battle here
+
+#------------------------------------------------------------------------------------------
+
+#PYREFLY FOREST:
+#Map: Pyrefly Forest Boss Room
+#Activation: Enter Pyrefly Forest Boss Room for the first time
+
+message_210:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub贝瑟尔！你在这里吗？！
+
+
+message_211:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\Com[2]\sinv[1]\{贝——瑟——尔——！！你在哪里？！
+
+
+message_212:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……贝瑟尔好像也不在这里。
+
+
+message_213:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub嘿，快看，是玛里！
+
+
+message_214:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub玛里！玛里！
+
+
+message_215:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar啊，大家好呀！\!你们平安穿过森林啦！\!我真为你们感到骄傲！
+
+
+message_216:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 41
+  text: \her玛里……\!我……\!我一直都好害怕！
+
+
+#*HERO hugs MARI*
+
+message_217:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar英雄……\!你这就有点丢人了哦……
+
+
+#KEL turns to Aubrey
+
+message_218:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel唉……\!这种时候我就会想，要是贝瑟尔在就好了。<br><br><br>他可以告诉英雄，蜘蛛是一种怎么怎么无害的生物，对大自然或者其他什么东西有好处之类的。\!这样或许英雄就不会觉得蜘蛛那么恐怖了。
+
+
+#AUBREY turns to kel
+
+message_219:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub我觉得对英雄说这个也不会起到什么作用。
+
+
+message_220:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar哎呀，英雄……\!你终究还是要克服这一点的。放任不管的话，只会变得越来越害怕哦？
+
+
+message_221:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her可能吧……\!也可能等我长大了，就自然而然不害怕了！<br>你永远不知道未来会发生什么嘛！嘿嘿……
+
+
+#------------------------------------------------------------------------------------------
+
+#SPROUT MOLE TOWN INTRO:
+#Map: Sprout Mole Town
+#Activation: Reach bottom of ladder in Sprout Mole Town for first time
+
+message_230:
+  text: \n<树苗鼹鼠>啊哈！你们好啊，长相奇怪的树苗鼹鼠们。\!<br>你们是来观赏《甜心的爱心冒险》的吗？<br><br>是的话，你们可来对地方了！\!<br>这场座无虚席的盛大演出马上就要开始喽！
+
+
+message_231:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub等一下！我知道这场演出！<br>\!我们还有前排的\c[4]演出门票\c[0]呢！
+
+
+message_232:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 14
+  text: \aub啊……没错，我已经完全理解了！\!这场演出一定是在歌颂那种灿烂夺目、波澜壮阔、艰难曲折的爱情！
+
+
+message_233:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub\sinv[1]心碎……\!背叛……\!绝望……\!孤独……\!<br>哇，想想就很有看头！\sinv[0]
+
+
+message_234:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub肯定会很有趣的！\!<br>我已经等不及沉醉其中啦！
+
+
+message_235:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her唔……\!看上去……可能确实挺有趣的？\!<br>但现在不是看演出的时候呀。
+
+
+message_236:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub可你之前答应过我们的！\!<br>求你了嘛，英雄！就看一眼好不好？
+
+
+message_237:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub\sinv[2]求你了，求你了，求你了，求你了，求你了！
+
+
+message_238:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her好……\!好吧。\!希望不会花太长时间。
+
+
+#------------------------------------------------------------------------------------------
+
+#SWEETHEART'S CASTLE - DUNGEON WITH MARI
+#Map: Sweetheart's Castle Dungeon - B1
+#Activation: Enter Sweetheart's Castle Dungeon - B1 through ladder close to MARI's picnic
+
+message_240:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel嘿，是玛里！
+
+
+message_241:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel玛里！玛里！救命啊！我们被困在\c[11]地牢\C[0]里了！
+
+
+message_242:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar哎呀！怎么会这样！
+
+
+#*MARI presses a wall switch to let them through*
+
+message_243:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar这下可以啦！\!<br>快来和我一起享受愉快的野餐吧。\!<br>我保证你们马上就会感觉好起来的！
+
+
+
+#------------------------------------------------------------------------------------------
+
+#MARI BEFORE ISLANDS:
+#Map: North Coast
+#Activation: Talk to MARI at North Coast
+
+#MARI is looking around the North Coast.
+
+message_250:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \marOMORI……你来啦。\!很高兴你能找到我。
+
+
+message_251:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar凯，奥布里，英雄，还有其他小孩子都不见了。
+
+
+message_252:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar浓雾笼罩了整片森林……\!<br>\!除了这里以外。\!或许我们的朋友们就在湖的另一边。
+
+
+message_253:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar让我们一起去找他们吧。\!你想和我一起去吗？
+
+#[YES/NO]
+
+#[YES]
+message_254:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar谢啦，弟弟。我就知道我可以依靠你。\!<br>我会一直陪着你的，这样你就不会孤单了。\!<br>我知道你很讨厌独自一人。
+
+
+#[NO]
+message_255:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar我知道你很害怕……但我同样也知道你可以做到。\!你想花多长时间准备都可以。\!等你准备好了，就来这里找我吧。
+
+
+#------------------------------------------------------------------------------------------
+
+message_256:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar别害怕，OMORI。\!只要和我在一起，就没有什么东西可以伤害你。
+
+
+message_257:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar抱歉，OMORI，能走慢一点吗？\!你知道我的膝盖不太好。
+
+
+message_258:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \marOMORI！我刚才怎么和你说的？<br>\!别让我生气呀！
+
+
+#------------------------------------------------------------------------------------------
+
+#MARI DURING ISLANDS:
+#Activation: Enter Lighthouse + Island map
+
+#*Camera pans down to see ghosts walking around*
+
+message_260:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar弟弟，跟紧点。\!<br>别担心。\!只要和我在一起，它们就没有办法伤害到你。
+
+
+#------------------------------------------------------------------------------------------
+
+#MARI BEFORE FORGOTTEN PIER:
+#Map: Forgotten Pier
+#Activation: Enter Forgotten Pier
+
+message_265:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \marOMORI，我真为你感到骄傲。\!<br>尽管你很怕水，还是一路游了过来。
+
+
+#*pause*
+
+message_266:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar但还有一件事情让你感到害怕，对不对？<br>\!一件……\!更难克服的事情。
+
+
+#------------------------------------------------------------------------------------------
+
+#Examine photo in lighthouse:
+message_270:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar这张照片……\!已经破旧得不成样子了。
+
+
+#------------------------------------------------------------------------------------------
+
+#MARI BEFORE WHIRLPOOL:
+#Map: Forgotten Pier
+#Activation: Get to the curtain
+
+#*Camera pan to curtain*
+#*pause*
+
+message_275:
+  text: \mar……\!OMORI……
+
+
+message_276:
+  text: \mar你好像忘记了一些重要的事情。\!<br>这样真的好吗？
+
+
+#*pause*
+
+#NEUTRAL:
+message_277:
+  text: \mar可能是吧……
+
+
+#TRUE:
+message_278:
+  text: \mar我不太确定……
+
+
+#*MARI walks on water and walks 2 steps*
+
+message_279:
+  text: \mar你曾经见过这副窗帘。<br>\!就在上次我们一起去湖边的时候。
+
+
+#*MARI turns to OMORI*
+message_280:
+  text: \mar不过，这里就是我的终点站啦。
+
+
+#*pause*
+message_281:
+  text: \mar我知道我不该来的……<br>\!但大家都不在，果然还是有点孤单呢。
+
+
+#*pause*
+message_282:
+  text: \mar虽然轮不到我说这句话，但是……<br>\!我希望你还在那里……\!\n[8]……\!<br>我真的很想你。
+
+
+#*Window curtains open*
+#*As curtain opens screen turns white. DW MARI sprite replaced with white MARI*
+#*MARI turns to window*
+
+message_283:
+  faceset: MainCharacter_Mari
+  faceindex: 20
+  text: \mar再见了……\|弟弟。
+
+
+#*MARI walks into the window*
+
+#*A giant whirlpool appears in space of the window*
+
+#*After MARI leaves, the “Something” fear border starts appearing around the screen.*
+#*The ghosts teleport closer to you slowly as the screen gets darker. Player can either go into the whirlpool or wait until “something” covers the screen.
+
+#*If Player goes into whirlpool, he'll end up in Deep Well entrance.
+#*If Player waits for something to cover the screen, he'll “glitch” into inside of the DEEP WELL.
+
+#*Note: If you exit out of the DEEP WELL again after entering, Deep Well will transport you to the alternate version. You can swim back to Vast Forest, but there's still nothing to do there.*
+
+#------------------------------------------------------------------------------------------
+
+#LAST RESORT - MARI PICNIC:
+#Map: Last Resort Entrance
+#Activation: Reach proximity in Last Resort Entrance
+
+message_290:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel嘿，玛里！看看是谁来了！
+
+
+message_291:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \marOMORI！\!能再次见到你真是太好了！
+
+#*question mark*
+message_292:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar怎么啦，OMORI？\!<br>见到姐姐不开心吗？
+
+
+message_293:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel别担心，OMORI 就是这样的啦。\!<br>他就长成这样板着个脸，还能怎么办呐！
+
+
+message_294:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel反正，就像我刚才说的……\!打工确实可以赚钱，但还挺无聊的。\!<br>所以呢，我和 OMORI 应该先去把奥布里和英雄救出来……\!然后……
+
+
+message_850:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel然后……我们就……
+
+
+message_295:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar要去找……\!贝瑟尔？
+
+
+message_851:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\sinv[1]啊啊啊，对对对对对！\!\sinv[0]我们是要去找贝瑟尔来着！
+
+
+message_852:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar哈哈哈……\!乐意帮忙。\!如果你们还需要什么就随时告诉我，好吗？
+
+
+message_296:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel没事的啦，玛里。<br>\!老板可喜欢我了！我们去去就来。\c[11]最后度假村\c[0]嘛，小意思！
+
+
+message_297:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar既然你都这么说了……好吧，凯。
+
+
+message_298:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel走，OMORI！等不及带你见见老板啦。<br>\!他超厉害的！
+
+
+#------------------------------------------------------------------------------------------
+
+#PATH TO JAWSUM'S ROOM:
+#Map: Mr. Jawsum's Elevator
+#Activation: Enter Mr. Jawsum's Elevator for the first time
+
+#*\kelsfx whistling last resort song*
+#*AUBREY hits KEL*
+message_305:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub别吹啦。
+
+
+#------------------------------------------------------------------------------------------
+
+#AFTER YOU GET HERO BACK AND LEAVE LAST RESORT:
+#Map: Last Resort Entrance
+#Activation: Reach proximity in Last Resort Entrance
+
+message_310:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\sinv[1]\{呀——呼——！四人小队又回归喽！！
+
+
+message_311:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel大家来击个掌吧！
+
+
+#*KEL goes around bothering people.
+
+message_312:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: \aub所以说……\!还有人记得我们是怎么到这里来的吗？
+
+
+message_313:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her嗯……\!我好像做了一个超奇怪的梦。
+
+
+message_314:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her我梦见……\!我们所有人都掉进了一个无尽的黑洞。\!等醒来时，我就已经在签卖身契了！
+
+
+message_315:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel俗话说……<br>生活总会把你带到奇奇怪怪的地方去嘛！
+
+
+message_316:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel啊对，我们要干什么来着？<br>\!找贝瑟尔是吧，还是要找什么其他东西来着？
+
+
+# message_316:
+#       faceset: MainCharacter_Mari
+#       faceindex: 2
+#       text: \marYou guys said you were looking for BASIL, right?
+
+
+#------------------------------------------------------------------------------------------
+
+#DEEPER WELL:
+
+message_330:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哇哦！这个地方太棒了！
+
+
+message_332:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel这些植物好酷哦。<br>\!贝瑟尔肯定会非常喜欢这个地方的。
+
+
+#*pause*
+
+message_333:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel贝瑟尔……\!肯定会非常喜欢这个地方的……\!是不是呀，大家？
+
+
+message_334:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her对……\!他肯定会非常喜欢的。
+
+
+message_335:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub……
+
+
+message_336:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel嗯？怎么啦？
+
+
+message_337:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嘿……\!我有一个严肃的问题。\!<br>你们还记得贝瑟尔长什么样吗？
+
+
+message_338:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub你为什么这么问呀，英雄？
+
+
+message_339:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……\!我记得……\!我记得贝瑟尔喜欢照顾花花草草……\!<br>还喜欢给他的朋友们拍照。<br><br>他很温柔，也很冷静……\!即便是难过的时候……\!<br>他也总是努力微笑。
+
+
+message_340:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her其他的就……\!我的印象已经有点模糊了。
+
+
+message_342:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel没事的，英雄……\!我也有这种感觉。\!我还是非常想念他，但……\!<br>有点记不清为什么了。
+
+
+message_341:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub可是这又怎么样呢，对吧？\!就算我们对他的记忆没有那么鲜明了……\!<br>我们……我们还是得救他呀。
+
+
+message_354:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub贝瑟尔是我们的朋友……\!更重要的是，他现在需要我们的帮助！
+
+
+message_352:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her你说得对，奥布里。\!我想我们都和贝瑟尔分开太久了。
+
+
+message_353:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her但我相信，只要有 OMORI 帮我们时刻指明方向……\!<br>我们肯定会找到他的。
+
+
+message_344:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub贝瑟尔一直一直在等我们。<br>\!他可能迷了路……\!孤身一人……\!非常害怕……
+
+
+message_345:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub他现在肯定需要一个大大的拥抱！
+
+
+message_346:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel等我们重逢的时候……\!我们应该轮流给他一个大大的拥抱！嘿嘿……
+
+
+message_347:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her啊……\!看到你们俩这么情投意合，真是难得。\!<br>我现在就想好好抱抱你们俩！
+
+
+#AUBREY and KEL are surprised and start sweating, and look away from each other.
+
+message_348:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \aub什……什么？\! 我和凯……\!情、情投意合？
+
+
+message_349:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel你、你在说什么呢，英雄？！\!这说得也太奇怪了吧！
+
+
+message_350:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her哈哈……\!你俩放松点儿。我只是开个玩笑啦。
+
+
+#HERO walks up 1 step.
+
+message_351:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her坚持住，贝瑟尔。我们就快到了。\!很快我们大家又可以在一起了。
+
+
+#------------------------------------------------------------------------------------------
+
+#BASIL PLANT:
+
+message_355:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel哇哦！这些植物超酷的，大家快来看！
+
+
+#KEL runs up and looks like all the plants.
+
+message_356:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: \kel嗯……\!贝瑟尔……
+
+
+message_357:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her贝瑟尔？
+
+
+message_358:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel是这盆植物的名字啦。
+
+
+message_359:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub哇……好可爱！\!这让我想起……
+
+
+message_364:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub想起……\!想起什么呢？\!我记不太清了……
+
+
+message_361:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her那……\!谁还记得我们为什么要来这里？
+
+
+message_362:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub你问倒我了……\!凯，你知道吗？
+
+
+message_363:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel我也不知道！
+
+
+#------------------------------------------------------------------------------------------
+
+#BRUISED FLOWER CROWN:
+
+message_370:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub嘿！大家快看！这里有个\c[4]花冠\c[0]耶！
+
+
+message_389:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub……\!啊……\!上面的花都伤痕累累了……
+
+
+message_371:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这个\c[4]花冠\c[0]……\!看上去有点眼熟。\!究竟是谁的呢？\!<br>大家，我们是不是应该把它还给它的主人呀？
+
+
+message_372:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her这个\c[4]花冠\c[0]都有点破破烂烂的了。\!<br>我觉得没人会想要这样的东西吧。
+
+
+message_373:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嗯，你说的有道理……
+
+
+#*KEL throws the flower crown off the ledge.*
+
+message_374:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub凯！你干什么呀！
+
+
+message_375:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel没事啦！\!英雄都说了！<br>没人会想要这种破破烂烂的东西，对吧！
+
+
+message_376:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub可是……\!这个花冠曾经有主人的呀！\!<br>你把它踢下悬崖也太坏了。
+
+
+message_377:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel啊？我怎么就坏了？\!反正花还会再长回来的呀，不是吗？
+
+
+message_378:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: \her好啦好啦，你们两个冷静点！\!<br>凯！\!快向奥布里道歉！
+
+
+message_379:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel……\!好吧。\!<br>对不起……\!奥布里……
+
+
+message_380:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub不接受道歉！
+
+
+#*AUBREY turns away*
+
+message_381:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub哼！
+
+
+#message_382:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 40
+#      text: \herAUBREY... I understand how you feel.\! KEL shouldn't have done something so brash, but you have to let it go too, okay?
+
+#message_383:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 40
+#      text: \herIt's just some flowers...
+
+#message_384:
+  #    faceset: MainCharacters_DreamWorld
+#      faceindex: 4
+#      text: \aub...\! Yeah...\! I know...\!<br>I don't think he deserves it...\! but I'll forgive him...\!<br>for you, HERO.
+
+#message_385:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 36
+#      text: \herThanks, AUBREY.\! You're the best.
+
+#message_386:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 9
+#      text: \aubAhem...\! Fine.\! I forgive you, KEL...
+
+#message_387:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 18
+#      text: \kelYour forgiveness...\! is accepted!
+
+#message_388:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 11
+#      text: \aub...
+
+#message_390:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 42
+#      text: \herSigh...
+
+#------------------------------------------------------------------------------------------
+
+#PHOTO OP:
+
+message_400:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel嘿，快看！这台摄像机在拍我们耶。<br>\!快说茄子！
+
+
+message_401:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub哇噢……我们看上去好可爱呀！
+
+
+message_402:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her哈……\!是不是都让你想拥有一台相机啦。
+
+
+message_403:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel呃……不用担心！\!我们有一大堆我们的照片呢，不是吗？
+
+
+message_404:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub我们的照片！\!真的吗？\!在哪里在哪里？
+
+
+message_405:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel但……\!那些相片都是趁着我们最想不到的时候……
+
+
+message_406:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub你在说什么呀，凯？
+
+
+message_407:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel就是……\!每个人……\!各自做着自己的事情……\!这一点很是特别……
+
+
+message_408:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub呃……\!你怎么怪怪的。
+
+
+message_409:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel啊？\!唔……
+
+
+message_410:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel没……不用在意。\!没什么的！
+
+
+message_411:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel看，这就是为什么做人不能想太多！<br>想太多的话，人们就整天都要晕头转向啦！
+
+
+message_412:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her我们继续前进吧。\!<br>要找到谜题的答案才行。\!<br>那颗炸弹随时都有可能爆炸哦！
+
+
+message_413:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub是啊，走啦，凯！我们还有生命危险呢！
+
+
+
+#------------------------------------------------------------------------------------------
+
+#AFTER DEFEATING HUMPHREY:
+
+message_420:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 呼……\!刚才也……太惊险了。\her
+
+
+message_421:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 对呀……\!真不能小瞧一个饥饿的胃袋……\kel
+
+
+#AUBREY walks one step away.
+
+message_422:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: 真是的，太吓人了啦……\}呼……\aub
+
+
+message_423:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 不过呀……\}呼……\aub
+
+
+#AUBREY turns to party.
+
+message_424:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 至少我们一起渡过难关了！\aub
+
+
+message_425:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel那……我们现在该干点儿啥？
+
+
+message_426:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub嗯……不知道！\!我们是不是之前在找什么东西来着？
+
+
+message_427:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel等等，英雄是不是之前也提到过这件事？
+
+
+message_428:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her对的……我们本来只是跟着甜心走……然后……
+
+
+#HERO turns to lake
+
+message_429:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her然后……突然就……\!水到渠成了？
+
+
+message_430:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嗯……我感觉肯定还有别的事……
+
+
+message_431:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel奥布里，你总是在担心这些有的没的！\!<br>你呀！应该学会放松，偶尔享受一下生活。
+
+
+message_432:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嗯……或许你说得对……\!总是担心来担心去，我也有点腻了。
+
+
+message_600:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub大家……\!我还是觉得我们可能忘记了一些重要的事情。
+
+
+message_433:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel奥布里……\!你搞得我也有点神经兮兮的了。
+
+
+
+message_601:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，我有个主意！\! 咱们是不是很久没——\!打牌啦！
+
+
+message_602:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel真的诶！\!奥布里，咱们这段时间到处旅行，你可能是太累啦。
+
+
+message_603:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel感觉咱们都应该去\c[11]邻居的房间\c[0]那边好好休息一下！
+
+
+message_604:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嗯……你说得对。\!<br>感觉我们好像很久很久没回家了。
+
+
+message_605:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel哈哈哈，别太放松了！\!小心一会儿玩牌的时候我把你们虐得嗷嗷叫！\!<br>可别让我觉得太轻松了！
+
+
+message_606:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\sinv[1]呵呵……是吗？\sinv[0]\! 那……\!咱们走着瞧！
+
+
+message_607:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her你们别打啦。\!省点力气一会儿打牌吧！
+
+
+message_435:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her回去之前你还有其他想要做的事情吗，OMORI？\!我们跟你一起！
+
+
+#------------------------------------------------------------------------------------------
+
+#CARDS IN NEIGHBOR'S ROOM:
+
+#Select Playing cards breaktime
+
+#*KEL, AUBREY, HERO, and OMORI playing cards*
+
+message_440:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub玛里！
+
+
+message_441:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar嗨，大家好呀！\!你们是来休息的吗？\!玩得还开心吗？
+
+
+message_442:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel嗯，确实已经玩了好一段时间啦。\!<br>但你猜怎么着……\!我这两条腿就是闲不住！
+
+
+message_443:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar啊，你是不是开始无聊了呀，凯？\!<br>那……我确实知道一些你会感兴趣的东西。
+
+
+message_444:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: \mar据说游乐场南边浓雾弥漫的地方，有座空荡荡的老房子。
+
+
+message_445:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \aub一座……一座空荡荡的老房子？\!听上去好吓人呀……
+
+
+message_446:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her玛里……\!你好喜欢这种吓人的东西啊。\!<br>这种东西难道不很倒胃口吗？
+
+
+
+message_447:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar不知道耶……\!<br>你不觉得有时吓人的东西还挺有趣的吗？
+
+
+message_448:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我可太明白啦，玛里。\!<br>来吧，伙计们！拿出你们的冒险精神来！ \!<br>别告诉我你们不敢去！
+
+
+message_449:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub好吧……\!算我一个。
+
+
+message_450:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her唉……既然大家都去的话，那算我一个。
+
+
+message_451:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar这就对啦！\!<br>别害怕，咱们一起去！
+
+
+#MARI joined your party.
+
+#(Note: After this cutscene, Silent Cat disappears)
+
+message_455:
+  text: 打了一半的牌。
+
+
+#------------------------------------------------------------------------------------------
+
+#After this cutscene, if you try to go on another path:
+#Before climbing ladder
+#Before entering Pyrefly Forest
+#Before swimming on pier
+#Trying to enter Vast Forest (not path)
+#Trying to board pluto
+
+message_460:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar这不是去空房子的路哦！<br>\!你们还有其他事要做吗？
+
+#[YES/NO]
+
+#[YES]
+message_461:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar没问题！\!那你们准备好了就到游乐场南边的小路来找我！
+
+
+#[NO]
+message_462:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar那咱们还是到游乐场南边的……<br>森林小路去吧！
+
+
+#------------------------------------------------------------------------------------------
+
+#Upon examining flower fields:
+message_465:
+  text: 一朵枯萎的花。
+
+
+#------------------------------------------------------------------------------------------
+
+#Talking to MARI at the picnic (after leaving) or reaching the picnic here:
+
+message_470:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar太好了！大家都来啦。\!那座空房子就在这条路的尽头。
+
+
+#*Or
+
+message_471:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar太好了！咱们到啦！
+
+
+#*Then
+
+message_472:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: 那座房子就在这条路的尽头。
+
+
+message_473:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar咱们出发吧！
+
+
+#MARI joined the party. (If you reach picnic here after leaving)
+
+#Note: You cannot talk to MARI at the basil path picnic if you did not go into Neighbor's Room first because the fog will still be too thick to enter MARI's picnic map. Basil's flower path map will be foggy, but can be accessed.
+
+#------------------------------------------------------------------------------------------
+
+#Entering Basil's House Entrance:
+
+#Camera pans down with dead trees.
+
+
+#------------------------------------------------------------------------------------------
+
+#Entering Basil's House: (Void, giant black hole covering almost all of the floor)
+
+#*Upon entering, OMORI walks alone and his party members block the entrance. STAB becomes available as an option*
+
+#*A bunch of eyes open up in the darkness and close again*
+
+#Talk to HERO
+#message_490:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 46
+#      text: \herWhoa...\! What is this place?\! It's a mess...<br>\!Who do you think it belonged to?
+
+#Talk to AUBREY or KEL
+#message_491:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 10
+#      text: \aubWatch where you're stepping KEL!<br>There isn't a floor here...
+
+#message_492:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 26
+#      text: \kelIt doesn't look like there are any ghosts, either.\!<br>\Sinv[1]Maaaaaaannnnnnnnnnnnn...\Sinv[0] What a letdown!
+
+#message_493:
+#      faceset: MainCharacter_Mari
+#      faceindex: 4
+#      text: \marI don't know why, but I can't help but feel a little depressed in this place...
+
+#Talk to MARI again:
+message_494:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar唉……\!这里可能真的什么都没有吧。
+
+
+#Examine black hole:
+message_495:
+  text: 深不见底……\|你要跳下去吗？
+
+#[YES/NO]
+
+#[YES]
+
+#*Screen goes black, but then suddenly stops fading out.
+
+message_497:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \marOMORI！你在做什么呀？！<br>\!你刚刚差点就要掉下去了！
+
+
+message_498:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar留在我身边，OMORI……\!我不想再失去你了。
+
+
+#*OMORI must stab himself in front of his friends.
+#*While OMORI is stabbing, his frames switch between OMORI and PLAYER's.
+
+#*After he does so, PLAYER (not OMORI) wakes up in BASIL's house alone.
+#*His friends are frozen in time and it's glitchy.
+
+#*PLAYER can fall into the hole now that he's alone.
+
+message_499:
+  text: 深不见底……
+
+#[YES/NO]
+
+#*PLAYER falls down the hole animation.
+#*PLAYER falls in MARI's coffin map in a pool and must “face his fears” by swimming up from the pool to a forest with spider webs, then climbing a staircase.
+#*One PLAYER reaches the top of the staircase, camera pans down from top to showcase MARI's coffin before centering on PLAYER.
+
+#*When PLAYER tries to reach the coffin, PLAYER jolts back and the screen glitches out. During the glitch, PLAYER's sprite turns into OMORI's while MARI's coffin also suddenly disappears. In place of MARI's coffin is a black door.
+
+#Examine Black Door:
+message_501:
+  text: 一扇黑色的门没有投下任何影子。\!你想要做些什么？
+
+
+#STARE AT THE DOOR
+#OPEN THE DOOR
+
+#*Select OPEN THE DOOR to enter BLACK SPACE
+
+#------------------------------------------------------------------------------------------
+
+#NEUTRAL END REUNION:
+#TRIGGER: ENTER NEIGHBORS ROOM
+
+#upon seeing OMORI, AUBREY runs across the cards to greet him.
+message_520:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 嗨 OMORI！我们正盼着你快点来呢。\!<br>想和我们一起打牌吗？\!<br>我们正好快要打完这一局了呢！\aub
+
+
+#AUBREY looks behind her.
+message_521:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 啊！\!哎呀……\!当我没说。\aub
+
+
+#KEL looks at AUBREY and jumps.
+message_522:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 哎呀……你搞什么呀，奥布里？！\!<br>你把牌全都弄乱了嘛！\!<br>我明明就快赢了……\kel
+
+
+message_523:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 我说，凯，没有必要生气呀。\!<br>说到底只是一局牌而已。\her
+
+
+#KEL looks at HERO
+message_524:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 少跟我来这套，英雄！<br>你就是要输了才会说这种话。\kel
+
+
+message_525:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: ……\her
+
+
+#Talk to HERO
+message_526:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，\n[1]！我们一直在等你呢！
+
+
+message_527:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her\n[3]和\n[2]最近又经常在吵架了……\!<br>一般人会觉得怄气那么久也该累了吧，可谁让他们两个总有花不完的力气呢。
+
+
+#Talk to HERO again:
+message_528:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her你想马上出发吗？\!<br>玛里和贝瑟尔还等着和我们一起野餐呢！
+
+#[YES/NO]
+
+#[YES]
+message_529:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her太好啦……\!我们走吧！
+
+
+#[NO]
+message_530:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嗯，没事！等你好了再叫我们。
+
+
+#Talk to KEL
+
+message_531:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kelOMORI，谢谢你愿意当我最好的朋友。\!<br>作为回礼，这是我给你的礼物……
+
+
+#*KEL spits on his hand.*
+message_532:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel\Com[2]\sinv[2]咳，呸！
+
+
+message_533:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel现在你也往手心里吐口水吧。
+
+
+message_534:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel这是兄弟结盟的握手！\!<br>如果你握住我的手，我将授予你“荣誉兄弟”的称号！
+
+
+#Do you want to shake KEL's hand?
+#[YES/NO]
+
+#[YES]
+message_535:
+  text: 你握了握凯湿湿的手。\!噫……
+
+
+message_536:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\sinv[1]\com[2]呀——呼——！\sinv[0]搞定！\!现在我们就是一辈子的好兄弟啦！\!嘿嘿，英雄现在也成为了你的“荣誉兄弟”哦！
+
+
+#[NO]
+message_537:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel好、好吧……\!没关系的。
+
+#*KEL pats your shoulder with his wet hand*
+
+message_538:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel无论如何，我都会把你当作我的“荣誉兄弟”的！嘿嘿……
+
+
+message_539:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub凯老是欺负我……\!无不无聊啊！\!总有一天我要把\c[3]生命果酱\c[0]全都倒在他头上，看他怎么办！哼！
+
+
+#*If trying to not go to Playground:
+
+message_540:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 这不是去玛里野餐的路！\!玛里她在树桩南边的游乐场。\!<br>你还记得怎么走吧？\her
+
+
+#------------------------------------------------------------------------------------------
+
+#EPILOGUE - MEETING MARI
+
+#Map: Forest Playground
+#Activation: Enter Forest Playground for first time in Epilogue
+
+message_550:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 玛里！贝瑟尔！\aub
+
+
+message_551:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 啊，你好呀奥布里！大家都好呀！\!<br>今天大家过得怎么样？\mar
+
+
+message_552:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{\Com[2]凯他又欺负我！！\aub
+
+
+message_553:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: 啊不是吧！\!又来了吗……\!他怎么能这样呢？\mar
+
+
+message_554:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: 切，我才没有欺负她呢！\!只是奥布里喜欢什么事都瞎抱怨。\kel
+
+
+message_555:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: 啊呀，凯！\!你的话也很有说服力呀。\!<br>这下我可不知道该相信谁了！\mar
+
+
+message_556:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \Com[2]\{当然是相信我！！\kel\}
+
+
+message_557:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \Com[2]\{不对，应该相信我！！\aub\}
+
+
+message_558:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 唉……\!你们两个消停一点吧……\!<br>\}为什么每次都是这样子呢？\her
+
+
+message_559:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 别泄气呀，英雄！你呀，那么成熟有担当的样子。\mar
+
+
+message_560:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: 我真的很喜欢你的这一点呢……嘻嘻……\mar
+
+
+message_561:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 啊呀，玛里！\!别现在说这个啦……\her
+
+
+message_562:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 哎呀英雄，你知道我只是在开玩笑啦。<br>\!不过你慌张的样子真的很可爱呢！\mar
+
+
+message_563:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: ……\her
+
+
+message_564:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 嘻嘻嘻……\mar
+
+
+message_565:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 所以你想不想把你的\c[4]相册\c[0]给大家看呢，贝瑟尔？\mar
+
+
+message_566:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 啊，好的……\!不过真的没有什么了不起的啦。\bas
+
+message_567:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 哎呀贝瑟尔！不要这样自我怀疑嘛！<br>一定都拍得很好的。\aub
+
+
+message_568:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: 你说得对，奥布里。\!<br>对不起……\!我会试着更加相信自己一点的。\bas
+
+
+#Basil takes out PHOTO ALBUM.
+
+message_569:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 打开啦！\!这样我们大家就能一起看了。\bas
+
+
+#View PHOTO ALBUM. It has all 12 pictures instead of 11.
+
+message_570:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 这些照片都拍得好棒呀，贝瑟尔。\!<br>你真的很懂得要怎么把握住精彩的瞬间！\her
+
+
+message_571:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 谢谢……\!不过这些照片不全是我拍的，\!<br>因为玛里有时候喜欢偷拿我的相机呢。\bas
+
+
+message_572:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 只是有时候哦！\mar
+
+
+message_573:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas每次看这些照片，我都会觉得，有你们做我的朋友真是太幸运了。
+
+
+message_574:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas认识大家前，我只知道一个人寂寞的滋味。
+
+
+message_591:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas可是，和大家相遇后，我学会了好多好多……\!我懂得了怎么关心照顾别人，也懂得了怎么关心照顾自己！
+
+
+message_575:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar哇……贝瑟尔！你太会说话了。\!其实，我们也是这样想你的哦！
+
+
+message_576:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub嗯！我们愿意为彼此做任何事呢！
+
+
+message_577:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel不管发生什么，我们都会相互支持、相互帮助！
+
+
+message_578:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her哎呀呀……\!\sinv[1]我们是不是……\!该来个大大的拥抱啦？
+
+
+message_579:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嗯，英雄！\!你说得对！\!大家快来！
+
+
+message_580:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas诶、诶？大大的拥抱？现在吗？
+
+
+message_581:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\com[2]那我先来！
+
+
+#*KEL runs to BASIL*
+
+message_582:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her嘿！别落下我和玛里嘛！
+
+
+message_583:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub来吧！OMORI，你也快过来！
+
+
+message_584:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar大家靠近一点！
+
+
+#*DW Group Shot*
+
+message_585:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her哎呀，刚才要是能拍张照片就好了。
+
+
+message_586:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar没关系啦……并不一定时时刻刻都需要拍照留念。
+
+
+message_587:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub嗯！留下回忆是很重要的……\!但更重要的是……\!<br>我们一直都会是好朋友的！
+
+
+message_588:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我们会永远在一起……\!像一个开开心心的大家庭。
+
+
+message_589:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas噢……\!你们真是最棒的朋友了！
+
+
+#BASIL looks around at everyone
+
+message_590:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我会永远珍惜和你们在一起的这些日子的。
+
+
+#*Player regains control with KEL, AUBREY, HERO in party.
+
+#------------
+
+#Talking to BASIL at picnics.
+
+message_595:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas大家好呀！\!<br>想一起来翻翻我们的\c[4]相册\c[0]吗？
+
+#OPEN DW album
+
+#After closing DW ALBUM:
+#60 frame wait
+message_596:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas能有你们这样的朋友真是太幸运了。\!<br>我会永远珍惜和你们在一起的这些日子的。
+
+
+#------------
+
+#After this cutscene: PLAYER can stab himself in White Space at any point to continue to the 4th Day Neutral Ending.
+
+#--------
+#After wandering through Vast Forest
+
+message_700:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel嗯……\!我想说……\!我觉得贝瑟尔应该不在森林里。
+
+
+message_701:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub但这片森林还有好多地方我们都没去过呢！\!不能就这样放弃呀！
+
+
+message_702:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her如果还是找不到贝瑟尔，我们是不是应该和玛里在游乐场那边碰个面，一起想想办法？
+
+
+message_708:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her别担心，奥布里。\!找到贝瑟尔之前我们是不会放弃的。
+
+
+message_710:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her贝瑟尔肯定就在这附近。
+
+
+#--------
+#After wandering through Vast Forest
+
+message_703:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel嘿！你觉得贝瑟尔会在这边的森林里吗？
+
+
+#hero shakes
+message_704:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这里不都是虫子什么的吗？\!OMORI 和英雄不太应付得了蜘蛛……
+
+
+#hero shakes
+
+message_705:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呃……\!\quake[1]蜘蛛……\quake[0]
+
+
+message_706:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 喂，英雄，你没事吧？\kel
+
+
+message_707:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 啊？\!噢、\!嗯！我没事！\!我……我们……\!先去玛里那边看看她怎么说吧！\her
+
+
+
+message_1000:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿，OMORI……\!谢谢你一直陪伴在我身边。\!<br>我给你做了个小礼物！
+
+
+message_1001:
+  text: 你获得了\c[13]花冠\c[0]。
+
+
+message_1002:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas希望大小合适。\!不合适的话，跟我说就好啦。
+
+
+#JUNKYARD CONVEYOR
+
+message_1012:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: \her谢谢您，善良的先生！\!非常感谢您的协助。
+
+

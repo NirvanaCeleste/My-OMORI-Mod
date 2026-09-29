@@ -1,0 +1,338 @@
+# =========================================================================================
+# Sidequest: Company 1
+# =========================================================================================
+
+#Talk to MINCY
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel\com[2]哇啊！你这幅公园的画可真酷！
+
+message_2:
+  text: \who\Com[2]啊啊！\!噢、噢！\!嗨，你好。\!<br>谢谢你……\!我只是在练习……
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel你说这是练习？！\!你画得栩栩如生啊……\!<br>都可以拿它卖钱了！\!<br>你说是不是呀，\n[8]？
+
+#[Nod/Shake]
+#[Nod]
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel看到了吗？\!就连 \n[8] 都赞同我！
+#[Shake]
+message_5:
+  text: \who……
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel哎呀，\n[8]！你可真逗！\!他只是在开玩笑而已。\!<br>真的，你的画看起来可棒了！
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 24     #insert number here
+  text: \kel啊呀，我现在就想把它买下。\!<br>嘿，\n[8]，你能借我 $20.00 吗？
+
+message_8:
+  text: \who哈哈……\!谢谢……\!你真是太好了，但这幅画是不卖的。\!<br>这、这是为我的作品集而准备的……\!我想试着在明年入学艺术学院。
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel哎呀，太倒霉了。真是可惜……\!<br>这幅画一定非常适合挂在我卧室的墙上。
+
+message_10:
+  text: \min你真的这样觉得吗？\!<br>我叫米西，你们叫什么名字？
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel我叫凯，这位是 \n[8]！
+
+message_12:
+  text: \min凯还有 \n[8]，你们好。\!能认识你俩可真好。
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel能认识你也很好呢，米西。
+
+message_14:
+  text: \min……\!唉……
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel嗯？怎么了？
+
+message_16:
+  text: \min噢，没什么……\!你是第一个对我的画作给出正面评价的人。
+
+message_17:
+  text: \min有时候我情绪低落，就会开始质疑自己，导致我很难动笔画画。
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel才不会呢！我一点都不相信你的话！\!<br>我真心觉得你的画很棒。\!<br>给我一百万年都画不出来呢！
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel米西，别对自己那么苛刻！\!我和 \n[8] 都相信你！
+
+message_20:
+  text: \min唉……\!是、是啊！\!你是对的！\!<br>我一定要把这些糟糕的情绪甩掉！\!<br>我会……\!我会试着倾尽全力，现在就把这幅画完成。
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel就是要有这样的劲头！\!<br>回头见啦米西，你能做到的！
+
+# COMPANY 2
+#Talk to Mincy, part 2
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel嘿陌生人！这回你在画啥呢？
+
+message_23:
+  text: \min嗨……呃……\!凯！\!……\!还有 \n[8]，对吗？\!<br>不好意思，我很不擅长记名字。\!<br>我正在……\!试着画点水果……\!但我画的不是很好。
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel才没有，你画的可好了！\!<br>我不是很喜欢水果，但我肯定愿意吃你画出来的那些！\!<br>你也愿意的，对吧，\n[8]？
+
+#[Nod/Shake]
+#[Nod]
+#no extra dialogue
+#[Shake]
+message_25:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel你当然愿意啦！\!别开玩笑了，\n[8]！
+#-------------
+
+message_26:
+  text: \min嘿嘿……你们真的这么想？\!谢谢你们。
+
+message_27:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel米西，你太客气了。\!<br>继续加油！你可以的！
+
+# COMPANY 3
+# Talk to Mincy, part 3
+
+message_28:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel嘿，陌生人！你最新的大作进展如何？
+
+message_29:
+  text: \min凯！\!\n[8]！\!真高兴又遇见你们。\!很顺利……\!<br>我正在试着画出各种各样的\c[3]糖果\c[0]。
+
+message_30:
+  text: \min看起来都好美味哦。\!我都要忍不住给自己买一些来享用了。
+
+message_31:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel你的画看起来真棒！\!<br>你应该让店主唐果小姐看看这幅画。\!<br>我想她肯定会喜欢的。
+
+message_32:
+  text: \min噢、噢真的吗？\!我不知道……\!我应该这么做吗？
+
+message_33:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel是啊，当然应该啦！\!你难道不这么想吗，\n[8]？
+
+  #[Nod/Shake]
+  #[Nod]
+message_34:
+  faceset: MainCharacters_Faraway
+  faceindex: 24     #insert number here
+  text: \kel嗯，嗯……是啊，\n[8]。我赞成！
+  #[Shake]
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel你心里肯定不是这么想的吧，\n[8]！
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel米西，你一定得给她看看这画……\!不然的话就让我拿去给她看！
+
+message_37:
+  text: \min\Com[2]噢不！\!请、请不要这么做！
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 15     #insert number here
+  text: \kel才没啦，我不会对你做这种事的……\!<br>但我真心觉得你画完之后应该给她看看。
+
+message_39:
+  text: \min啊，好吧……\!我会的……
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel那就继续画吧！你可以的，米西！
+
+#COMPANY 4
+#Speak to Mincy, part 4
+
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel诶呀，瞧瞧这是谁呀？<br>又是咱们的神笔米西！
+
+message_42:
+  text: \min嘿，伙计们。最近怎么样？
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel你好呀，米西！\!<br>没什么特别的……就和平时一样，出来逛逛而已。\!<br>看来你这回在画花呢！
+
+message_44:
+  text: \min是啊！有那么多不同种类的花，我想把每一种花全都画出来。
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel一如既往的绝妙作品呢，米西！\!你要知道我可是你的头号粉丝！\!<br>而 \n[8] 是你的二号粉丝……\!大概吧！\!<br>米西，你能做到的！我们会给你加油鼓劲的！
+
+message_46:
+  text: \min是啊！我能做到的！\!谢谢你，凯！\!谢谢你，\n[8]！
+
+#COMPANY 5
+#Speak to Mincy, part 5
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel瞧瞧是谁又拿着纸笔呀！\!<br>你画画真是一刻都不消停呢，米西？
+
+message_48:
+  text: \min我想你说得对！哈哈！\!只是……我整个人都燃起来啦……\!<br>所以，得赶在我的艺术能量流失之前把它们都宣泄出来。
+
+message_49:
+  text: \min这回我在画彩绘玻璃窗。\!<br>当光线透过它们照进室内的时候，它们看起来真是太漂亮了。
+
+message_50:
+  text: \min但是其中一扇窗户看起来颜色有一点点不同。\!<br>我想知道为什么会这样……
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel啊，我知道为什么！\!<br>我小时候经常来这里，所以我知道他们换过那扇窗户……
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 25     #insert number here
+  text: \kel嗯……\!呃……\!我听说啊，那扇窗户是一个小孩子不小心投棒球打碎的。\!<br>\}那球确实没瞄准好……
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel呃啊……\!我、我是说……\!我在说的是那个小孩子！\!<br>不是在说自己啦……\!嘿嘿……
+
+message_54:
+  text: \min哈哈……\!凯，你真的不擅长撒谎。\!<br>别担心，我不会告诉任何人的。\!<br>我怎么会举报自己的头号粉丝呢！
+
+message_55:
+  text: \min反正，我还挺喜欢现在这样的……<br>\!能让这里显得独一无二。
+
+message_56:
+  faceset: MainCharacters_Faraway
+  faceindex: 15     #insert number here
+  text: \kel哈哈，是啊……\!想来也是呢，对吧？
+
+# COMPANY 6
+# Speak to Mincy, part 6
+
+message_57:
+  faceset: MainCharacters_Faraway
+  faceindex: 13     #insert number here
+  text: \kel米西，又回到公园来啦？\!<br>这回你打算画啥呀？
+
+message_58:
+  text: \min凯和 \n[8]，你们好！\!这回我什么都不画啦……\!<br>我只是坐在这里吹吹风，享受一下。
+
+message_59:
+  faceset: MainCharacters_Faraway
+  faceindex: 12     #insert number here
+  text: \kel不错呀！你整个周末都在努力画画呢。\!休息也是很重要的。
+
+message_60:
+  text: \min是、是呢……\!可我还是很焦虑。\!<br>我希望我的作品集足够优秀，能让我进入艺术学院。
+
+message_61:
+  text: \min虽然成为画家一直都是我的梦想，可是有的时候我却会自己给自己设置障碍。
+
+message_62:
+  text: \min感谢这几天以来你们做的一切。\!<br>我想这正是我需要的。
+
+message_63:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel哈？\!我做了什么？
+
+message_64:
+  text: \min哈哈……\!其实没什么特别的，但……\!我觉得……\!<br>就是告诉了我，我应该继续前进什么的。\!<br>我感觉自己时不时会需要别人推一把，你懂我的意思吧？
+
+message_65:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel嗯……\!大概懂吧……
+
+message_66:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel虽然不是太明白，但我还是很高兴能帮到你！
+
+message_67:
+  text: \min哈哈……\!我想你也不会懂……\!但没关系的。\!<br>嗯……\!这里有张速写，是我画的你们俩。\!<br>并不是什么了不起的东西，但我希望你们会喜欢。
+
+message_68:
+  text: 你获得了\c[4]一小张速写\c[0]。
+
+message_69:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel\Com[2]不是吧！这真的是给我们的？！\!哇，这可太厉害了！\!<br>画里的我比现实里的我要好看呢！
+
+message_70:
+  faceset: MainCharacters_Faraway
+  faceindex: 15     #insert number here
+  text: \kel太谢谢你了，米西！\!<br>你让你的头号和二号粉丝都很开心！
+
+message_71:
+  text: \min别客气……\!你俩这对伙伴可真有意思。\!<br>要是每个人都能有像你们这样的朋友，世界一定会变得更加快乐吧。
+
+message_72:
+  faceset: MainCharacters_Faraway
+  faceindex: 13     #insert number here
+  text: \kel哇……\!从没有人跟我们说过这么好听的话……<br>对吧，\n[8]？
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel米西，我们希望你能进入艺术学院！\!<br>等你成了大画家，可别忘了我们呀！
+
+message_74:
+  text: \min哈哈……\!你们不必担心这种事情……\!<br>我肯定不会忘记你们的。\!永远不会……
+
+message_75:
+  text: \min多谢你们这周末帮了我。\!我肯定不会忘记你们的。\!永远不会……
+

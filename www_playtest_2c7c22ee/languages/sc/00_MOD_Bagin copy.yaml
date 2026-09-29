@@ -1,0 +1,327 @@
+message_0:
+  text: 作者的话：这个作品包括对于焦虑、抑郁、创伤后应激障碍等心理健康问题的描写。<br>如果你正在经历心理健康问题，请寻求专业帮助。<br>如果你有自杀倾向，请拨打当地的自杀防治热线。<br>在中国大陆地区，你可以拨打：<br>北京：010-82951332<br>上海：021-64387200<br>广州：020-81888888<br>深圳：0755-82551234<br>全国24小时热线：400-161-9995<br>如果你在其他地区，请查找当地的心理健康资源。<br><br>本作品中涉及的内容可能会引起不适，请谨慎阅读。<br><br>——作者
+
+message_1:
+  text: ……………………\!<br>……啊\!……发生什么了
+
+message_2:
+  text: 天花板，白得刺眼。\!还有仪器持续的滴滴声。
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: ……贝瑟尔？ \kel
+
+message_4:
+  text: 你头晕目眩，想要说话，但却发不出声音来。
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \{ \quake[1]贝瑟尔醒了！我去叫护—— \kel\quake[0] \fr
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 冷静点，凯，你太激动了，病人需要静养。\aub
+
+message_7:
+  text: 这里好像是医院……\!<br>SUNNY呢？\!他的眼睛有事吗？
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 啊，抱歉抱歉……\!\kel
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: ……那个，虽然不知道，发生什么了……\!<br>但是，\!有什么想说的尽管和我们说……贝瑟尔……\aub
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 好了，别那么着急，\!贝瑟尔，\!<br>有没有哪里不舒服？\her
+
+message_11:
+  text: 你想开口说一两句话，但是你的声带好像粘到一起了。
+
+message_12:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 4
+  text: …………\!…………\!<br>………………………………\bas
+
+message_13:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 5
+  text: ……呃\!……\!我其实……感觉挺好的\!……谢谢……\bas
+
+message_14:
+  text: 病房里安静了几秒。\!<br>心电监护在响。
+
+message_15:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 0
+  text: …………………………………………………………………………\n<SUNNY>
+
+message_16:
+  text: SUNNY站在门口。\!<br>你看着SUNNY。<br>\!SUNNY看着你。
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: ……哇，SUNNY，\!你还好么？\!<br>你怎么自己走下床了？ \kel
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: ……SUNNY……你醒了……你还好吗？\aub
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 老兄，进来呗，站在门口干嘛。\kel
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: ……SUNNY，我还是想问……\!<br>你们为什么要这么做……你们差点死掉…… \aub
+
+message_21:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: …………………………………………………………………………\n<SUNNY>
+
+message_22:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 4
+  text: ………………………………………\!……………不是你的错。\bas
+
+message_23:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 5
+  text: 那些事……都不是你想干的。\!对不对，SUNNY？\bas
+
+message_24:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 1
+  text: …………………………………………………………………………\n<SUNNY>
+
+message_25:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: 不……都是因为我。\!我……我有件事一定要告诉你们……\n<SUNNY>
+
+message_26:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: ……玛里\!……不是自杀。\!我杀了她。\!那是个意外。\!我……\!我把她从楼梯上推了下去。\n<SUNNY>
+
+message_27:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 9
+  text: …………………………………………………………\!<br>……………………………………………………\bas
+
+message_28:
+  text: 放松。\!量一个血压，马上就好………\!<br>心跳有点快………\n<护士>
+
+message_29:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: ………………………………………………………………\!<br>……什么？\kel
+
+message_30:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: ……………………………………………………………… \aub
+
+message_31:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: ………………………………………………………………\!<br>这不是真的，对吧…………\her
+
+message_32:
+  text: 你觉得你要晕倒了。你没听错吧？
+
+message_33:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 14
+  text: ………………………………………………………………\bas
+
+message_34:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: …………………………………………………………………………\n<SUNNY>
+
+message_35:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 1
+  text: ……她摔下去之后，\!我很害怕……我不知道要怎么做。\!我把她搬到床上。\!希望她能醒来。\n<SUNNY>
+
+message_36:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: ………她没有醒。\!我不能接受玛里\!……她死了，\!<br>我不断喃喃自语，\!这一切都不是真的，\!不能让别人知道……\n<SUNNY>
+
+message_37: 
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: ……我\!……我不知道该怎么办了……\!<br>等我反应过来的时候……\!……我躺在地上\!……我晕倒了……\n<SUNNY>
+
+message_38:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 7
+  text: ……SUNNY，你不想这么做的……是我的错……\!<br>……绳子是我拿的……\!我每次都想帮你……可总是做得这么差……\bas
+
+message_39:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 13
+  text: 我甚至……\!弄伤了你的眼睛……\!……是我不好……\bas
+
+message_40:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 1
+  text: …………………………不。\!是我想这么干的……\!<br>我没法接受发生这种事情，\!我只是在欺骗自己……\n<SUNNY>
+
+message_41:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: 之后也是我的错……\!我拿了你的记号笔。\!<br>一张一张……\!把玛里的脸涂掉了。\n<SUNNY>
+
+message_42:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: 然后……\!我把自己关在家里……\!我不敢面对真相……\!<br>我害怕它……\!我只是一直在逃避它……\n<SUNNY>
+
+message_43:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 0
+  text: ……我觉得……\!我觉得我必须告诉你们……\n<SUNNY>
+
+message_44:
+  text: 你听到英雄瘫倒在墙上，\!看起来很痛苦。\!<br>凯难以置信地摇着头，\!奥布里一直在颤抖……
+
+message_45:
+  text: SUNNY继续说着，\!眼泪不断地流下来……\!<br>……你感觉呼吸困难，\!你好像在远处看着自己……
+
+message_46:
+  faceset: MainCharacters_sunny_mod
+  faceindex: 2
+  text: 都是我的错……\n<SUNNY>
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: ……为什么\!……SUNNY\!……你为什么不早说……\kel
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 26
+  text: \aub\{ \quake[1]……你这个混蛋!\!你怎么可以。\!你怎么可以让我们都以为。 \quake[0] \fr
+
+message_49:
+  text: 你看见奥布里举起了拳头，\!你还以为她要揍SUNNY，\!但是她只是在锤着自己的大腿……
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 9
+  text: 是我不好……\!是我怪贝瑟尔……\!都是因为我。\aub
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: 我去看看她……\her
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 你还好吗？\kel
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: ……抱歉，我不知道。\her
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 嗯……SUNNY，我得去看看英雄。\kel
+  
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 我……我很快回来。\kel
+
+message_56:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 4
+  text: SUNNY……你做到了。\!谢谢你。\!谢谢你肯说出来。\!啊……\!我就知道你是一个很好的人的\!……SUNNY。\bas
+
+message_57:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 5
+  text: 你说出来了……太好了……哈哈……\!<br>我从来没想过……我不用再守着那个承诺了……\bas
+
+message_58:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 8
+  text: 可是……可是为什么我高兴不起来？\!<br>你自由了……你应该自由了……可我感觉……我感觉我……\bas
+
+message_59:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 7
+  text: 你解脱了……你应该解脱……可是我……我……\bas
+
+message_60:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 14
+  text: 四年……你四年没出门……我把你关在房间里了……是不是？\!<br>SUNNY……\!你会原谅我吗？\!我值得原谅吗？\bas
+
+message_61:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 6
+  text: ……他们不会原谅我们的。\!没有人会。\!<br>……是我骗了所有人……四年……我骗了他们四年……\!<br>我们还有希望可言吗？\bas
+
+message_62:
+  text: 我们是Faraway镇警察局的。\!我们接到报告，\!需要和这里的人谈谈。\n<???>
+
+message_63:
+  text: 你们这群混蛋！\!他们都需要时间休息！\!不准伤害他们！\aub
+
+message_64:
+  text: ……他们只是一群无辜的孩子。\!我们可以谈谈。\her
+
+message_65:
+  text: 我们会分开询问。\!不会很久。\!也是为了你们好。\n<???>
+
+message_66:
+  text: ……抱歉，但是这是规定。\!我必须上报……\!放轻松，警察不会伤害他们的……\n<护士>
+
+message_67:
+  text: 门外乱成一团。\!你看向SUNNY。\!SUNNY也在看着你。\!<br>SUNNY的嘴在动，说了什么。\!但警察的声音、走廊里的声音、所有的声音混在一起，你听不清。\!<br>你永远不知道SUNNY想说的是什么。
+
+message_68:
+  text: \n<???>
+
+message_69:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 9
+  text: ……是我。\bas
+
+message_70:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 12
+  text: ……你们应该惩罚我。\bas
+
+message_71:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 13
+  text: 求求你们，不要带走SUNNY……\bas
+
+message_72:
+  faceset: MainCharacters_Basil_mod
+  faceindex: 13
+  text: 求求你们……\bas
+
+message_73:
+  text: \fn<OMORI_GAME>\quake[1]…………第29次…………\quake[0]\fr
+

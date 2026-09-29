@@ -1,0 +1,152 @@
+# =========================================================================================
+# Cooking Help
+# =========================================================================================
+
+message_0:
+  text: \n<双马尾女生>噢，你好！\!我记得你！你是那个帮我们家挑了壁纸的男孩。\!<br>我看你把朋友们带来了嘛！
+
+message_1:
+  text: \n<双马尾女生>如果你们是来参加派对的，那我很抱歉。现在还有点太早了……
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel哎呀……不好意思！\!那我们待会再来！
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her嗯？\!闻闻……\!诶？\!你们有闻到吗？\!<br>我好像闻到烧焦的味道……
+
+message_4:
+  text: \n<双马尾女生>\com[2]\{\quake[1]啊啊啊啊啊啊啊啊啊呀！！<br>\quake[0]抱歉，稍等！
+
+#KAREN slams the door, then reopens it
+
+message_5:
+  text: \n<双马尾女生>……
+
+message_6:
+  text: \n<双马尾女生>其实呢……\!嗯……\!有没有可能，你们几位正好会做饭呢？\!<br>我可能在做晚饭的过程中需要一些帮助……
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel你需要有人帮忙做饭？\!哎呀，那你今天真走运！<br>\!我哥哥英雄是个很棒的厨师哦！\!<br>他肯定立马就能煮出一些东西来的！嘿嘿……
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her哈啊？\!让、让我来？
+
+message_9:
+  text: \n<双马尾女生>噢，谢谢你！\!拜托了……请进来！
+
+#Talk to KAREN inside
+
+message_10:
+  text: \n<双马尾女生>真抱歉这样麻烦你……\!<br>我还是第一次给这么多人做饭，所以我有点紧张……
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel别担心。\!我们会帮你的！对吧，朋友们？\! \sinv[1]对吧？\sinv[0]
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her噢……那，好吧……\!开工吧，大伙儿。\!<br>我会给你们都安排上活计的！
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 5
+  text: \aub哈？等、等一下……我也要吗？！
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her是啊，当然了！\!我们还小的时候，不总是一起做饭的吗，对吧？
+
+message_15:
+  text: \n<双马尾女生>太感谢你们了！食材请你们随便用！\!虽然，我这儿也没多少就是了……
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her别担心……我相信我们能做出一顿佳肴！\!<br>开工吧！
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel\Com[2]\{\SINV[1]这就来嘞，老大！！\SINV[0]
+
+# ===============================================
+#Cutscene: Hero helps KAREN Cook
+# ===============================================
+
+#SEAN walks inside.
+
+message_18:
+  text: \n<格子衫男生>哇哦……有什么东西这么好闻？
+
+message_19:
+  text: \n<双马尾女生>噢，肖恩好呀！\!是我们的新朋友在帮我准备今晚派对上的晚餐！
+
+message_20:
+  text: \n<格子衫男生>好啊……\!看起来你们进展得很不错嘛！\!<br>我已经把外面布置好了，让我也来帮忙吧！
+
+message_21:
+  text: \n<双马尾女生>\sinv[1]好耶！\!这下我们大家都可以一起做饭啦！
+
+#Cooking montage: Everyone standing near the oven
+
+message_22:
+  text: \n<双马尾女生>\sinv[1]呼……\sinv[0]完成了！\!有了你们帮忙，这次派对一定会大获成功的！
+
+message_23:
+  text: \n<双马尾女生>再次感谢你们的帮助。<br>\!你们真的是大好人呀！
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her乐意之至！\!感谢你相信我们，让我们进厨房……<br>\!我们很享受跟你们一起做饭的过程！
+
+message_25:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel是啊，这可太好玩了！\!真等不及在今晚的派对上大吃特吃啦！
+
+message_26:
+  text: \n<格子衫男生>我们会等你们来的！
+
+message_27:
+  text: \n<双马尾女生>多保重哦！
+
+
+message_100:
+  text: \n<双马尾女生>大家好呀！快进来！\!派对已经开始啦！
+
+message_101:
+  text: 美味的\c[3]曲奇饼\c[0]！
+
+message_102:
+  text: 一块放久了的\c[3]馅饼\c[0]！
+
+message_103:
+  text: 一块新鲜的\c[3]馅饼\c[0]！
+
+message_104:
+  text: 一大只烤鸡。
+
+message_105:
+  text: 沙拉……
+
+message_106:
+  text: \n<格子衫男生>嘿哟！你是不是很期待今晚的派对呀？\!我们等你来哦！
+
+message_107:
+  text: 还未做完的食物。
+
+message_108:
+  text: 美味的\c[3]一块蛋糕\c[0]！
+

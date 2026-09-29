@@ -1,0 +1,113 @@
+# =========================================================================================
+# Sidequest: Bring back Angel
+# =========================================================================================
+
+message_0:
+  text: \art嘿，你们有见到我的傻弟弟安吉尔吗？\!<br>今早我给了他点钱，让他帮忙出门跑腿，可他现在还没回来。
+
+message_1:
+  text: \art我了解他……他八成直接忘了……\!<br>你们要是遇到了他，能帮我看看他怎么了吗？
+
+message_2:
+  text: \art告诉他……\!他姐姐……\!开始失去耐心了……
+
+#Talk to ANGEL
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嘿，安吉尔！你姐姐在找你……\!<br>她说她之前派你出来跑腿来着！
+
+message_4:
+  text: \ang哼……\!跑腿？\!跑啥腿？
+
+message_5:
+  text: \ang\Com[2]糟了！\!我忘了自己今早出来是要帮她买画材的！
+
+message_6:
+  text: \ang呃……\!呃不……\!所以我口袋里才装着那些钱的……\!<br>……\!哎哟……
+
+message_7:
+  text: \ang嘿，呃……\!你跟我姐说话的时候……\!<br>她……\!她看起来生气吗？
+
+#[yes/no]
+
+#[if yes]
+
+message_8:
+  text: \ang她、她……\!生气了？
+
+message_9:
+  text: \ang嗯……\!那我是不是应该回家一趟？\!<br>我现在回家还有意义吗？
+
+message_10:
+  text: \ang\Com[2]呃啊！\!不行，要是我一直逃避的话，事情只会变得更糟糕！\!<br>加把劲啊安吉尔！你必须要直面自己的恐惧！
+
+message_11:
+  text: \ang\{\Com[2]冲啊，安吉尔！\!\Com[2]你能做到的！！
+
+#ADD FWWAAAAAAAAA
+
+#ANGEL runs O.S. towards TOWN PLAZA.
+
+#[if no]
+
+message_12:
+  text: \ang哈……\!是这样的吗……？\!嗯，你不能把事情说得太死，对吧？
+
+message_13:
+  text: \ang大概是时候回去了……\!出于安全起见……
+
+message_14:
+  text: \ang之后我会赶上你们的……
+
+message_15:
+  text: \ang我……\!呃……\!我得走了……
+
+#Fwaaaaa
+#ANGEL runs O.S. towards TOWN PLAZA.
+
+# =========================================================================================
+# Cutscene: Angel's Punishment
+# =========================================================================================
+
+message_20:
+  text: \art\{\{\COM[2]\QUAKE[1]安吉尔，给我回来！！！\QUAKE[0]
+
+message_21:
+  text: \ang\{\{\COM[2]\QUAKE[1]姐，对不起！！！\QUAKE[0]
+
+message_22:
+  text: \ang\COM[2]\QUAKE[1]拜托了……\!我求你……<br><br><br>\{\COM[2]不要那个！！！\! \COM[2]其他什么都可以只要不是那个就好！！！！\QUAKE[0]
+
+#RIPPING NOISE
+
+message_23:
+  text: \ang\COM[2]\QUAKE[1]啊\{啊\{啊\{啊啊\{啊啊！！\QUAKE[0]
+
+#TALK TO ARTIST
+
+
+message_24:
+  text: \art哼……\!噢，是你们啊。\!<br>谢谢你们把我的小弟弟带回来……
+
+message_25:
+  text: \art他……\!他已经去了一个无忧无虑的地方……
+
+message_26:
+  text: \art开玩笑而已……\!他只是站在角落里面壁思过。\!下一次，他也许会在把我的钱全部用去买集换卡牌之前先三思了！
+
+message_27:
+  text: \art\}切……\!来。\!拿着这个。
+
+message_100:
+  text: 你获得了\c[4]罕贵卡\c[0]。
+
+#You got a RARE TRADING CARD.
+
+message_28:
+  text: \art\}刚刚我为了吓他，假装把他的一张超级罕贵卡给撕掉了……\!<br>但真正的那张卡其实在这里。
+
+message_29:
+  text: \art\}你先……\!把这张卡拿在手里几天，然后再还给他。\!嘿嘿……\!这样应该能给他留个教训。
+

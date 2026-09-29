@@ -1,0 +1,468 @@
+# =========================================================================================
+# Cutscene: Sweetheart's Wedding
+# =========================================================================================
+
+#Trigger: Enter SWEETHEART'S CASTLE ENTRANCE.
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 我们总算成功逃出来啦！\kel
+
+#KEL LOOKS AROUND
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 哇，这么多装饰是怎么回事？\kel
+
+#AUBREY looks at KEL.
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 看起来是有人要结婚了耶！\aub
+
+#HERO looks to the side and is surprised.
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 哎呀！演出好像要开始了！\!<br>我们快躲起来！\her
+
+#Party hides.
+#Camera pans to stage.
+
+message_4:
+  text: 欢迎大家！欢迎大家！\smm
+
+message_5:
+  text: 这真是个值得纪念的日子。\smm
+
+message_6:
+  text: 在上演了四十二季<br>《甜心的爱心冒险》后……\!<br>今天，我们终于迎来了大结局。\smm
+
+#Audience awwws.
+
+message_7:
+  text: 一路以来我们走过了……\!呜……\!多么精彩的旅程……\!呜呜……\!<br>感谢你们贡献的收视率。\smm
+
+message_9:
+  text: 自从节目播出以来……\!<br>我们一直在为大家心爱的甜心苦苦寻觅一位理想伴侣……\smm
+
+message_10:
+  text: 而每一次……无比遗憾……\!<br>甜心都没能找到她的那一位真爱。\smm
+
+message_11:
+  text: 但这一次，我们相信是……\!<br>史无前例的展开。\smm
+
+message_12:
+  text: 这一刻……\!一切即将迎来终结……\!<br>一段全新历史……\!始于今日。\smm
+
+message_13:
+  text: 请调暗灯光……\smm
+
+#Lights dim.
+
+message_8:
+  text: \{大结局现在开始！\smm
+
+message_14:
+  text: \{\Com[2]让我们开始婚礼！！\smm
+
+#Curtain opens, revealing Sprout Mole Choir singing for SWEETHEART's WEDDING.
+
+message_15:
+  text: 有请来到过道的这一位……\!<br>\{\Com[2]甜心的完美追求者！！\smm
+
+#Camera pans to end of aisle. SWEETHEART bursts from a cake at the end of the aisle.
+#Audience gasps.
+#Camera pans to SMM.
+#SMM jumps.
+
+message_16:
+  text: 是的！没错！\!<br>事到如今，你们明白了吗！\smm
+
+message_17:
+  text: 答案一直都显而易见！\smm
+
+message_18:
+  text: 唯一能够配得上、迷得住甜心的追求者……\smm
+
+#Camera pans to SWEETHEART.
+
+message_19:
+  text: \{……那就是甜心自己！\smm
+
+#Audience cheers and hollars.
+#SWEETHEART Ohohohs a lot
+
+message_20:
+  text: \{\{\{\Com[2]\quake[1]肃静！！\quake[0]\swh
+
+#Audience stops.
+
+message_21:
+  text: 咳咳……\!让我们开始仪式。\swh
+
+#Wedding song begins and SWEETHEART walks down the aisle alone. Camera follows.
+
+message_22:
+  text: \}亲爱的朋友们……我们今天聚集在此……\smm
+
+#Camera pans to party.
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{哈哈哈哈哈哈哈哈哈哈哈哈！！\}\!<br>甜心要自己跟自己结婚！这也太逊了！\kel
+
+message_24:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 别笑了，凯！\!我……其实……\!挺为她难过的。\aub
+
+#Camera pans to the stage.
+
+message_25:
+  text: ……\!现在……有人反对这场神圣的婚姻吗？\smm
+
+message_26:
+  text: 请现在说出来，否则就永远保持缄默！\smm
+
+#Pause with no noise.
+
+message_27:
+  text: 既然没人反对……\!<br>那么，以上天赋予我的权利，我现在宣布……\!<br>甜心与甜心结为夫妻！\smm
+
+message_28:
+  text: 你现在可以亲吻——\smm
+
+message_29:
+  text: \quake[1]\{\{\Com[2]我反对！！\quake[0]\who
+
+message_30:
+  text: \Com[2]\{现在就停止这场婚礼！！\who
+
+#Camera pans to party.
+#AUBREY is at the end of the aisle.
+#AUBREY takes off her Sprout Mole mask.
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 别这样，甜心！\!<br>这场婚礼就是个笑话……\!自恋是一回事，可是……<br>你也做得太过头了！\aub
+
+#Camera pans to SWEETHEART.
+#SWEETHEART jumps.
+
+message_32:
+  text: \{怎么又是你！！\}<br>你竟敢再次踏足此地！\swh
+
+message_33:
+  text: \{\{\Com[2]守卫？！\!\Com[2]守卫？！？！\swh
+
+#Camera pans to AUBREY.
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 甜心……你搞错了。\!<br>你不能就这样嫁给自己……\aub
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 你一定能找到命中注定的那个人的……\!我可以肯定！\aub
+
+#KEL jumps.
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \}奥布里，你在干什么呢……？\!<br>她又要把我们打进\c[11]地牢\C[0]了……\kel
+
+#Camera pans to SWEETHEART. Guards are behind her now.
+
+message_37:
+  text: 哼……\!你什么也不懂，路人脸的英雄粉丝。\swh
+
+#SWEETHEART turns around.
+
+message_38:
+  text: 我曾经是一位年轻的公主。\!<br>我曾经，也以为宇宙中一定会有那位真命天子……\swh
+
+message_39:
+  text: 但那已经是过去的事情了。\swh
+
+message_40:
+  text: 我已经不相信有真爱了！\!<br>我永远不会再爱上其他人了！\swh
+
+message_41:
+  text: \Com[2]从现在开始，我爱的人就只有我自己！\swh
+
+message_42:
+  text: 好了，守卫们……\!<br>\{逮捕她！！\swh
+
+#Guards walk forward.
+#Camera pans to HERO, who is now next to AUBREY. KEL and OMORI are behind them. They are closer to the stage now.
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \}呃……\!英雄……\!你可得想想清楚……\kel
+
+#HERO takes off his Sprout Mole mask.
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: \{\Com[2]甜心，听我说！！\}<br>你不用这么做！\her
+
+#Camera pants to SWEETHEART.
+
+message_45:
+  text: 什、什么？\!我、我没看错吧？\swh
+
+message_46:
+  text: \sinv[1]英雄！\!我的英雄为我而来了！\swh
+
+message_47:
+  text: \sinv[1]哦，我可爱的英雄啊……<br>我就知道你不会像这样丢下我一个人！\swh
+
+#SWEETHEART walks a step forward.
+
+message_48:
+  text: 你的一言一语深深触动了我的心！\!<br>虽然我们的关系可能已经结束了，但我的心还是没能把你放下。\swh
+
+#SWEETHEART turns around.
+
+message_49:
+  text: 我给你最后一次机会。\swh
+
+#SWEETHEART turns to HERO and walks a step forward.
+
+message_50:
+  text: \{和我结婚吧，英雄……就在此时此地！\!\}<br>只要你这么做，我就饶你和你的粉丝一命！\swh
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \Com[2]\{等、等等，什么？！？！\!\}<br>我不会跟你结婚的……这也太扯了！\her
+
+#SWEETHEART turns around.
+
+message_52:
+  text: ……\|……\|……\swh
+
+message_300:
+  text: \swh这算什么？\!你居然……\!又拒绝了我？
+
+message_301:
+  text: \swh可是……\!这怎么可能呢？
+
+message_302:
+  text: \swh\quake[1]我……\!不能……\!理解……
+#SWEETHEART turns toward party.
+#Camera pans to party.
+
+message_53:
+  text: ……\|……\|……\|……\|……<br>\!哦嚯嚯嚯……\swh
+
+
+#SWEETHEART ohohohos.
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: 啊呀……\!瞧你干了什么……\kel
+
+message_55:
+  text: 啊……\!是啊……\!我已经看透一切了。\swh
+
+message_56:
+  text: 我就承认吧……\!我看错你了，英雄。\!<br>我以为你是配得上我的伴侣……\!然而……\!你和其他人一样，不过是嫉妒我而已！\swh
+
+message_57:
+  text: \Com[2]是的！\!肯定是这样！\!我光彩炫目的外表……\!我迷人可爱的笑容……\!我八面玲珑的性格……\!在我面前，你一定觉得自己相形见绌了吧！\swh
+
+message_58:
+  text: 好了……\!没有必要再在绝望中挣扎了。\!<br>我会……\!亲手结束你的痛苦。\!\swh
+
+message_59:
+  text: \{\quake[1]永别了，可悲的贱民们！\swh
+
+#SWEETHEART takes out weapon and whips mace.
+
+message_60:
+  text: \Com[2]\{\sinv[1]我要把你们永远关在<br>\c[11]地牢\C[0]里！！\swh
+
+
+# =========================================================================================
+# Cutscene: Captain Spaceboy's Return!
+# =========================================================================================
+
+#Trigger: Defeat SWEETHEART.
+
+#Party is on stage with SWEETHEART.
+
+message_70:
+  text: 这怎么可能？\!你、你们……\!你们什么都不是！\swh
+
+message_71:
+  text: 你们怎敢违抗我……\!<br>把他们丢进\c[11]地牢\C[0]！\!<br>守卫……\!守卫呢？！？！\swh
+
+#Guards sweat and step back.
+#AUBREY walks up.
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 已经结束了，甜心……\!<br>婚礼被取消了！\aub
+
+message_73:
+  text: 不、不！我不会接受的。\!你们都滚开！\swh
+
+#Spaceship noises are heard above.
+#Party and SWEETHEART look around confused.
+#CAPT. SPACEBOY's ship lands at the end of the aisle. He locks it, making a locked car noise.
+#CAPT. SPACEBOY down the aisle.
+
+message_74:
+  text: \Com[2]我的甜心！\!噢，我的甜心！<br>啊，天哪，还好我及时赶到了。\cap
+
+message_75:
+  text: 你不能再这样任性下去了！\cap
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 太、太空男孩船长？！\kel
+
+message_77:
+  text: 你……\!\Com[2]\{你个白痴！！\swh
+
+message_78:
+  text: 我记得我告诉过你……<br>永远不要再出现在我的面前！\swh
+
+message_79:
+  text: \sinv[1]噢，甜心！\!啊，甜心！\!<br>我甜美动人的、填满果酱的甜甜圈！\cap
+
+message_80:
+  text: 我请求你，直视你的内心，然后再给我一次机会吧。\cap
+
+message_81:
+  text: 我不应该让你等这么久的。\cap
+
+message_82:
+  text: 你……\!你、你在干什么？\swh
+
+message_83:
+  text: 我很抱歉，我应该早点这么做的。\cap
+
+#CAPT. SPACEBOY holds up ring, gets on his knees and pulls out a ring.
+
+message_84:
+  text: \{\sinv[1]嫁给我吧，甜心！！\}<br>就在这个舞台上！\cap
+
+message_85:
+  text: 噢……哦呀！\!这……这真是意料之外！\!<br>这实在是……\!实在是……\!实在是……\!\Com[2]\sinv[1]太浪漫了！\swh
+
+message_86:
+  text: 树苗鼹鼠麦克……\!我命令你立刻让我们成婚！\swh
+
+message_87:
+  text: 是！遵命，我的陛下！\smm
+
+message_88:
+  text: \}亲爱的朋友们，我们今天聚——\smm
+
+message_89:
+  text: 繁文缛节都省省吧，麦克！<br>真爱等不得这些！\swh
+
+#SMM sweats.
+
+message_90:
+  text: 是、是，公主陛下！\smm
+
+message_91:
+  text: 咳咳……\smm
+
+message_92:
+  text: 以上天赋予我之权力，我现在宣布……<br>\!\{\Com[2]甜心与太空丈夫结为夫妻！\smm
+
+message_93:
+  text: 新郎可以亲吻新娘了！\smm
+
+#SWEETHEART and SPACEHUSBAND kiss.
+
+message_94:
+  text: \sinv[1]哦，我的甜心……\!<br>让我们携手遨游宇宙……<br>把这一切抛诸脑后吧！\n<太空丈夫>
+
+message_96:
+  text: \sinv[1]好！好的，我的丈夫！<br>\!只要能和你在一起，我愿意去任何地方！\swh
+
+message_97:
+  text: 我们去度蜜月吧，我的甜心！<br>我们已经分开了太久了。\n<太空丈夫>
+
+message_98:
+  text: 走吧，我的飞船在等着呢！\n<太空丈夫>
+
+message_99:
+  text: 好的！当然了，亲爱的！\!<br>不过……\!最后还有一件事，我必须完成。\swh
+
+message_100:
+  text: 树苗鼹鼠麦克，把按钮给我！\swh
+
+message_101:
+  text: \Com[2]遵命，我的陛下！\smm
+
+#SMM walks out then comes back and hands something to SWEETHEART.
+#SWEETHEART, SPACE HUSBAND, and SMM walk towards aisle.
+#SWEETHEART holds up a button.
+#SWEETHEART turns around.
+
+message_102:
+  text: 这些再也用不着了！\swh
+
+#SWEETHEART presses button and stage explodes. There is now a big hole in it.
+#SWEETHEART OHOHOHOHO's the whole time.
+#SWEETHEART looks at SBH.
+
+message_103:
+  text: 我准备好了，亲爱的。\swh
+
+message_104:
+  text: 最后的最后，我们终于在一起了……\!<br>\sinv[1]来吧，我的女王！我们的座驾还在等着呢！\n<太空丈夫>
+
+#SWEETHEART and SPACEHUSBAND board his ship and fly away.
+#Camera pans back to party.
+#AUBREY looks at KEL.
+
+message_105:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 就这样大团圆结局了吗……\!我可不觉得他们会有什么好结果。\aub
+
+#KEL looks at AUBREY.
+
+message_106:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 是哇……\!我想我们来这儿完全是浪费时间。\kel
+
+message_107:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 就是……\!跟他们比起来，还是我和 OMORI 之间的感情更真挚、更有意义……对吧，OMORI？\aub
+
+
+message_109:
+  text: \smm呜呜……\!大团圆结局谁不爱呢？
+
+#==========================================================================================
+# Cutscene: Misc
+# =========================================================================================
+
+message_120:
+  text: 你想要跳进洞里吗？可能没有回头路了。
+

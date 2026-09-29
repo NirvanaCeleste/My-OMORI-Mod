@@ -1,0 +1,535 @@
+# =========================================================================================
+# Cutscene: Aubrey's Trash
+# =========================================================================================
+
+#AUBREY runs out of her house and goes to the trash can.
+#The trash can lid opens and AUBREY dumps something inside.
+#She walks back to her house, but turns around and looks at the trash can.
+#She walks backwards one step toward her house, then turns around and walks inside.
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 你看到了吗？<br>奥布里刚刚把什么东西扔进了垃圾桶里！\! <br>我们去翻翻看。\kel
+
+# =========================================================================================
+# Cutscene: Album Get
+# =========================================================================================
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \Com[2]天啊，难以置信！\!这是贝瑟尔的\c[4]相册\c[0]。\kel
+
+#KEL puts hand behind head.
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 真不敢相信她就这么扔了。\!<br>还好我们把它从垃圾桶里翻出来了。\kel
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 趁天黑之前，我们把相册拿去给贝瑟尔吧。\!他见到一定会很开心的！\kel
+
+message_23:
+  text: 你获得了贝瑟尔的\c[4]相册\c[0]。
+
+message_24:
+  text: 按\DII[pagedown]查看贝瑟尔的\c[4]相册\c[0]。
+
+# =========================================================================================
+# Cutscene: Polly
+# =========================================================================================
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{\Com[2]\sinv[1]咚咚咚！！\!贝瑟尔！\!\}<br>你的朋友凯和 \n[8] 来咯！\kel
+
+#POLLY answers and walks one step out. KEL and PLAYER take one step back.
+
+message_41:
+  text: 你们好呀！请问你们是？\n<？？？>
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 嗨，贝瑟尔——\!诶，等等。\!你不是贝瑟尔……\kel
+
+message_43:
+  text: "啊，不好意思！我叫\uFEFF波莉。\\! <br>我是贝瑟尔家的护工。\\n<波莉>"
+
+#BASIL runs in POLLY's way.
+
+message_44:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 噢，是凯啊。\!找、找我有什么事呢？\bas
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 嗨，贝瑟尔！\!我们把你的\c[4]相册\c[0]拿回来了！\kel
+
+message_46:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: \com[2]诶、诶？你们真的拿回来了？\!哇……\!谢谢你们。\bas
+
+message_47:
+  text: 你把贝瑟尔的\c[4]相册\c[0]还给了他。
+
+message_48:
+  text: 贝瑟尔！你怎么没和我说你的朋友们会来呢？\!<br>你们要不要留下来吃晚餐？\! <br>我菜似乎总是会做得太多。\n<波莉>
+
+message_49:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 晚餐？\!好啊，听起来就很棒！\kel
+
+message_200:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 来嘛，\n[8]！免费晚餐耶！\kel
+
+#POLLY and BASIL enter from the front door.
+#KEL and PLAYER follow.
+
+message_50:
+  text: 当这里是自己家就好！\! <br>那我继续去做饭了。\n<波莉>
+
+#POLLY walks to the kitchen.
+#KEL turns to BASIL.
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 哇，已经好一阵子没来这里了。\!<br>你肯定又新种了不少植物吧！\kel
+
+message_52:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 啊……\!是呀，我真的很喜欢植物。\!实际上，这里有几盆是你们以前经常来的时候就种下的，它们一直活到现在呢。\bas
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 哇，真是太有心了。\kel
+
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 是啊，贝瑟尔就是这样啦……\!花草呀、照片呀……\kel
+
+#KEL has an idea.
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 这倒是提醒我了！\!好不容易把<br>\c[4]相册\c[0]拿回来了，不如我们一起<br>看看以前的照片吧。\kel
+
+message_56:
+  faceset: MainCharacter_Basil
+  faceindex: 35
+  text: \com[2]啊！真的要——呃……\!这样真的好吗？\bas
+
+message_57:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你也有一段时间没有看过这些照片了吧？\!<br>来嘛！会很有意思的！\kel
+
+message_58:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: 呃……\!……\!好、好的……\!嗯。\bas
+
+#BASIL takes out his PHOTO ALBUM.
+
+message_59:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 就是这些。\bas
+
+#Slide: Basil's PHOTO ALBUM (Faraway - Missing Photos)
+
+message_60:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 哎呀……\!似乎好多照片都不见了。\kel
+
+message_61:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 或许是奥布里把它们藏起来了……\!<br>我们之后得把那些照片也找回来。\kel
+
+#KEL jumps.
+
+message_62:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 说点开心的吧，你们看我小时候多矮啊。哈哈！\kel
+
+message_63:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 自从英雄去上大学后，我起码长高了 30 厘米呢！\!<br>真等不及要让他看看了……\kel
+
+#KEL looks back.
+
+message_64:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 今年，我终于会是兄弟两人中个头更高的那个啦。嘿嘿！\kel
+
+message_65:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: …… …… ……\kel
+
+#KEL looks at BASIL.
+
+message_66:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 总之，别担心那些不见的照片啦，贝瑟尔。\!<br>我和 \n[8] 会帮你解决的。\kel
+
+message_67:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你只要专心做回那个开开心心、无忧无虑的你就好啦。\kel
+
+message_68:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 嗯。\!谢谢你……\!我会加油的。\bas
+
+#POLLY walks to party.
+
+message_69:
+  text: 抱歉，让你们久等了……准备晚餐比我想象的还要耗时间。\!<br>你们有人想帮忙吗？\n<波莉>
+
+message_70:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 当然啦！我来吧！\!<br>我以前就帮我哥做饭什么的。\kel
+
+message_71:
+  text: 噢，那可真是太好了。\!<br>请跟我来吧，厨房就在这边。\n<波莉>
+
+#POLLY walks O.S. and KEL follows.
+
+message_72:
+  text: 凯离开了小队。
+
+# =========================================================================================
+# Cutscene: Grandma's Room
+# =========================================================================================
+
+#TRIGGER: Examine White Egret Orchid.
+
+message_90:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 噢，\n[8]……\!真没想到你也会一起来……\!哈哈……\bas
+
+message_91:
+  faceset: MainCharacter_Basil
+  faceindex: 34
+  text: …… …… ……\bas
+
+message_92:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 你、你过得怎么样，\n[8]？\!<br>一切都还好吧？\bas
+
+message_93:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: ……\!嗯……\!算、算了。\bas
+
+#BASIL walks to GRANDMA.
+
+message_94:
+  faceset: MainCharacter_Basil
+  faceindex: 43
+  text: 你知道吗？奶奶她听不到我们说话。\! <br>她最近身体不是很好……\bas
+
+message_95:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: …… …… ……\bas
+
+#BASIL walks up to PLAYER.
+
+message_96:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 已经过了整整四年了，对吧？\bas
+
+message_97:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: …… …… ……\bas
+
+message_98:
+  faceset: MainCharacter_Basil
+  faceindex: 43
+  text: 看到你还在这里真是太好了……\!<br>哪怕只能见到一小会儿也好。\bas
+
+message_99:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 来。\!我的\c[4]相册\c[0]给你……\!我想让你拿着它。\bas
+
+message_100:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 我就把它托付给你了，可以吗？\!我只是在想……你翻看它的机会应该比我多吧。\bas
+
+message_101:
+  text: 贝瑟尔把他的\c[4]相册\c[0]给了你。
+
+message_103:
+  faceset: MainCharacter_Basil
+  faceindex: 32
+  text: 自从拍下这些照片以来，真的发生了好多事情。\!<br>有时候我甚至会觉得，一切会不会只是一场噩梦而已。\bas
+
+message_106:
+  faceset: MainCharacter_Basil
+  faceindex: 43
+  text: 现在已经很难回想起那种感觉了，可是……\!我想……\!那个时候……\!<br>我用相机拍下的，都是我最害怕失去的事物。\bas
+
+message_107:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 翻翻看这本相册，你还能看见那些美好的时光……\!或许有一天……\!一切都能回到原来的样子。\bas
+
+message_108:
+  text: \sinv[1]\Com[2]\{\n[8]！\!贝瑟尔！！<br>\!晚饭做好啦！！\kel
+
+message_109:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 嗯，来了！\bas
+
+
+#BASIL walks out.
+
+# =========================================================================================
+# Cutscene: Awkward Dinner
+# =========================================================================================
+
+#Trigger: Examine Dining Table
+
+message_120:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 每道菜都好好吃！\!你太厉害了，波莉！\kel
+
+message_121:
+  text: 你过奖了……我只是照着奶奶的菜谱来做。\! <br>谢谢你帮忙啦，凯。\n<波莉>
+
+#KEL grabs food and starts to eat.
+
+message_122:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 嚼……嚼……嚼……嚼……\!继续刚刚的话题噢，<br>波莉……\!明天……嚼……\!<br>我的哥哥，英雄，就要从大学回来了。\kel
+
+message_123:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 我妈可激动了，正在给房子做<br>大扫除之类的……\!嚼……\!<br>我家现在简直一团糟，我可不想在那儿待着。\kel
+
+message_124:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 不过啊……\!嚼……\!我还挺期待见到他的……<br>嚼……\!每次他回来，<br>我们做的第一件事就是比身高……\!嚼……\kel
+
+message_125:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 今年呢……\!嚼……\!我啊……嚼……\!<br>终于要比他更高啦……\!<br>我从……嚼……\!骨子里能感受到！\kel
+
+message_126:
+  text: 哈哈……\!听起来你和你哥哥关系不错嘛。\! <br>这样真好……\!家人是很重要的！\n<波莉>
+
+#KEL looks surprised.
+
+message_127:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 哦，对了！\!嚼……\!<br>你拿着贝瑟尔的\c[4]相册\c[0]干啥呢，\n[8]？\kel
+
+#BASIL looks nervous.
+
+message_128:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 噢、噢……\!是……\!是我给他的。\!<br>我觉得应该把相册交给他。\bas
+
+message_129:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 哇，真的吗？\!嚼……\!你也太大方了。\!不过也对……\!<br>嚼……\!毕竟 \n[8] 他很快就要搬走了嘛。\kel
+
+#BASIL drops his fork.
+
+message_130:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 什、什么？\!……\!\n[8] 要……\!搬走了？\bas
+
+message_131:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 哦对！\!我还以为我跟你说过了……\!嚼……\! <br>我一定是忘了。\!嚼……\!他还有……\!三天就搬走了，<br>应该是吧？\!嚼……\!抱歉啊……我以为你已经知道了。\kel
+
+message_132:
+  faceset: MainCharacter_Basil
+  faceindex: 36
+  text: 噢、噢……\!呃……\!我一定是听漏了吧……\bas
+
+message_133:
+  faceset: MainCharacter_Basil
+  faceindex: 35
+  text: 对、对不起……\!呃……\bas
+
+message_134:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: 我、我可以离开一下吗？\!我……\!我要去洗手间。\bas
+
+#BASIL gets up leaves the table.
+#KEL is confused.
+
+message_135:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 他这是怎么了啊？\!嚼……\!<br>好吧……\!也没办法。\!<br>人有三急嘛！\kel
+
+message_136:
+  text: \n<波莉>贝瑟尔最近老是去洗手间。\!<br>希望不是因为我做的饭……
+
+# =========================================================================================
+# Cutscene: There's Something Behind You
+# =========================================================================================
+
+#Trigger: Enter Basil's Bathroom
+
+#BASIL's Something's silhouette is pulsing on the ground.
+
+message_150:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 41
+  text: \fn<OMORI_GAME>一切都会没事的……\|一切都会没事的……\|一切都会没事的……\|一切都会没事的……\bas
+
+#BASIL turns around to see you.
+
+message_151:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 33
+  text: 噢、噢……是你呀……\!\n[8]……\!你来了……\!我好高兴……\bas
+
+message_153:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 33
+  text: 你……\!你也看到了，对吗？\|<br>在你身后的……\|某个东西……\bas
+
+#[Trigger: Attempt to leave]
+
+message_152:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 37
+  text: 等……等一下……\!求、求你了，\n[8]……\!不要离开我……\|\fn<OMORI_GAME><br>不要再离开我了……\bas
+
+
+# =========================================================================================
+# Cutscene: Bye, Polly
+# =========================================================================================
+
+
+message_170:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 你来啦，\n[8]！\!我觉得我们差不多该回家了。\!<br>我的宵禁时间早就过了！\kel
+
+#KEL turns to POLLY.
+
+message_171:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 那……\!<br>总之，波莉，如果需要我帮忙的话，就来这个地址找我吧。\!<br>我就住在街的那一边！\kel
+
+message_172:
+  text: 谢谢你啊，凯。你真好。\n<波莉>
+
+message_173:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 嘿、嘿……没什么啦。\!<br>帮我向贝瑟尔道个别！\kel
+
+message_174:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你要去哪儿啊，\n[8]！拜托，这可是免费晚餐耶！\kel
+
+
+# =========================================================================================
+# Cutscene: Good Night, Player
+# =========================================================================================
+
+message_190:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 嘿，\n[8]。\!谢谢你今天出来陪我。\kel
+
+message_191:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 9
+  text: 抱歉，出了这么多乱子。\!这可真是场相当疯狂的冒险呢，对吧？\kel
+
+message_192:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 10
+  text: 看的出来你已经很久没和人讲过话了……\!但没事的！\!多多练习就好了！\kel
+
+message_193:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 11
+  text: 不管怎么说啊，明天英雄就从大学回来了。他肯定很想在你搬走之前见你一面。\kel
+
+message_194:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 所以……如果你不介意的话……\!<br>我明天早上还会再来找你的。\kel
+
+message_195:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 11
+  text: 晚安，\n[8]。\!做个好梦！\kel
+
+#BASILS GRANDMA
+
+message_300:
+  text: \n<贝瑟尔的奶奶>\}贝瑟尔……\|是你吗？
+
+message_301:
+  text: 贝瑟尔的奶奶呼吸平稳。
+
+
+#=======
+#KEL's HOUSE STOP
+
+message_220:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 7
+  text: \{\Com[2]等、等等，\n[8]！！\}\kel
+
+message_221:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 10
+  text: 我知道你好久没来过我家了，但现在真的不太方便啦……嘿嘿……\!\kel
+

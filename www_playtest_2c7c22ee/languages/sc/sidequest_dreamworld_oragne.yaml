@@ -1,0 +1,141 @@
+# =========================================================================================
+# Long Lost Brother
+# ========================================================================================
+
+#Talk to Orange Joe:
+
+message_0:
+  text: 香橙乔在扔橙子。
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28     #needs appropriate faceset
+  text: \kel嘿……\!呃……\!你在干啥呢？
+
+message_2:
+  text: \n<香橙乔>我叫香橙乔，我在扔橙子！
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18     #needs appropriate faceset
+  text: \kel哇！酷诶！
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28     #needs appropriate faceset
+  text: \kel但是为什么呢？
+
+message_5:
+  text: \n<香橙乔>因为……\!我在……\!呜呜……\!<br>找我失散多年的双胞胎兄弟……\!香澄乔……
+
+message_6:
+  text: \n<香橙乔>我们一出生就分开了，但我的香橙之心告诉我，<br>他一定还在外面的某处等着我。
+
+message_7:
+  text: \n<香橙乔>每个橙子里面我都附上了一条信息，告诉他我是谁，如何联系我……
+
+message_8:
+  text: \n<香橙乔>我希望如果我把这些橙子扔向四方，<br>他总会捡到其中一颗然后来找我的！
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1     #needs appropriate faceset
+  text: \aub嗷……\!真是太暖了。\!<br>希望你早日找到你的兄弟……
+
+message_10:
+  text: \n<香橙乔>谢谢你，小姑娘！\!我相信我会的！\!<br>我身体健康，心怀希望，充满活力！
+
+message_11:
+  text: \n<香橙乔>不过……\!万一呢……\!如果你们确实遇到我的双胞胎兄弟了，<br>请把这个\c[4]香橙徽章\c[0]带给他。\!<br>我相信这会带我来到他身边的。
+
+message_12:
+  text: 你获得了\c[4]香橙徽章\c[0]。
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel不用怕，亲爱的香橙乔朋友。\!我们一定会找到你的兄弟的！
+
+#Cutscene: Found at Last!
+
+message_14:
+  text: \who啊？\!我在哪？\!你是谁？
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19     #needs appropriate faceset
+  text: \kel等等……\!你看起来有点眼熟。\!<br>那样的身体形状……\!柑橘属的外形……\!毫无疑问！
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18     #needs appropriate faceset
+  text: \kel你一定是香橙乔的双胞胎兄弟……\!香澄乔吧！
+
+message_17:
+  text: \n<香澄乔>我叫……\!香澄乔？\!而且……\!我有个双胞胎兄弟？
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18     #needs appropriate faceset
+  text: \kel是啊，而且他一直都在找你呢！\!<br>来，拿上这个！他让我们给你的！
+
+message_19:
+  text: 你把\c[4]香橙徽章\c[0]给了香澄乔。
+
+message_20:
+  text: \n<香澄乔>这……\!这徽章！\!这是真的吗？\!<br>我从小就一直在四处寻找我真正的归宿……
+
+message_21:
+  text: \n<香澄乔>我唯一拥有的东西，就是这个雕刻着香橙纹章的吊坠……
+
+message_22:
+  text: \n<香澄乔>那图案正和这个\c[4]香橙徽章\c[0]上的图案一样啊！
+
+message_23:
+  text: \n<香澄乔>这一切都合理了……\! <br>我知道我是谁了！\!我一定是……\!<br>香澄乔！
+
+#ORANGE JOE walks in.
+
+message_24:
+  text: \n<香橙乔>\Com[2]兄弟！\!我不敢相信！\!真的是你！
+
+message_25:
+  text: \n<香澄乔>是啊，兄弟！\!是我……\!香澄乔！
+
+message_26:
+  text: \n<香橙乔>不会有错的！\!我在我的香橙之心中感受到了。\!<br>哦，亲爱的兄弟，我多想你啊！
+
+message_27:
+  text: \n<香澄乔>是啊！\!我心中充满希望，活力充沛！\!<br>我等这一天等了太久了！\!<br>我们终于见面了，亲爱的兄弟！
+
+message_28:
+  text: \n<香橙乔>我们拥抱吧！
+
+#ORANGE JOE AND ORAGNE JOE hug?
+
+message_29:
+  text: \n<香橙乔>谢谢你们，孩子……\!我这一生无时无刻不在想念我的兄弟，如今他终于站在我的面前了！
+
+message_30:
+  text: \n<香橙乔>为表我的感激之情，请收下这个。
+
+message_31:
+  text: 你获得了\c[3]生命果酱\c[0]！
+
+message_32:
+  text: \n<香澄乔>是啊！\!谢谢你们让我们团圆了……\!<br>我等了那么久，终于找到了我真正的归宿！\!<br>收下这个吧！\!这是我的一份心意！
+
+message_33:
+  text: 你又获得了\c[3]生命果酱\c[0]！
+
+message_34:
+  text: \n<香橙乔>来吧，亲爱的兄弟！我们回家吧！
+
+message_35:
+  text: \n<香澄乔>你真是太好了，亲爱的兄弟！\!<br>为了纪念这次会面，我们一起走吧！
+
+message_36:
+  text: \n<香橙乔和香澄乔>\sinv[1]希望与活力！\!希望与活力！\!希望与活力！
+
+#ORANGE JOE AND ORAGNE JOE walk off
+

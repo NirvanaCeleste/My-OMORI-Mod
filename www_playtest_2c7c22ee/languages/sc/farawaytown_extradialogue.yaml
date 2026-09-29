@@ -1,0 +1,174 @@
+# =========================================================================================
+# Faraway extra dialogue
+# =========================================================================================
+
+#SECRET LAKE CUTSCENE - DAY 3 AFTER GETTING AUBREY:
+
+#Intro
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel所以，这里就是你跟新朋友的秘密基地咯？
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub没错……怎么了？
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel呃……\!没什么啦，我也不能怪你什么……
+
+#Kel walks up 1 step
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel毕竟，这个地方确实挺不错的……
+
+#*KEL walks to lake*
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel我记得以前我们还一起在这里游过泳呢！\!<br>不过湖水好像比以前要浑浊得多……
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 11
+  text: \aub明明就跟以前没区别嘛……\!只是你的要求变高了而已。
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel嘿嘿……有道理，有道理。\!<br>那个……后来我们就没有再来这里游泳，是为什么来着？
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub你忘了吗？\!有一次，\n[8] 差点淹死在这，<br>之后玛里就再也不想来这个地方了……
+
+#*KEL jumps*
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel噢，对耶，我完全忘了这回事！
+
+#*HERO walks to lake*
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her我跟凯以前很喜欢从那个雕像上花式跳水。<br>有一次呢，我们把 \n[8] 带上去，让他也试一试……\!<br>但他整个人都僵住了，然后一不小心就掉进了湖里。
+
+#*HERO turns to player*
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: \her你还记得吗，\n[8]？\!事情发生得太快了，我们都没反应过来……
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: \her虽然当时我们都在湖里，但是救你的却不是我们。
+
+#*KEL turns to PLAYER*
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嗯，是玛里把你给救上来的……\!<br>我们都还没反应过来的时候，她已经跳下去了。
+
+#*AUBREY walks to front of pier*
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub我永远也忘不了她把你从湖里抱起来的那一刻。\!等你好不容易睁开了眼睛，她整个人就扑在了你身上，一下子哭了起来。
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub……\!我以前从没见过她这种样子……
+#*HERO walks right in front of PLAYER*
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her\n[8]，玛里真的很爱你。\!你知道的，对吧？
+
+
+# =========================================================================================
+# Sleepover final messages - Day 3 night after basil's memories
+# =========================================================================================
+
+#Examine sleeping Kel
+
+#1st talk
+#message_20:
+#      text: Even though KEL is just as you remember him...\!<br>you still can tell he has grown while you were gone.\!<br>Something about that hurts, but you don't know why.
+
+#2nd talk
+message_21:
+  text: 凯一直都陪在你身边。\!<br>虽然有时候他神经有点大条，但你知道他其实是个很善良的人。
+
+message_22:
+  text: 他最大的心愿就是希望身边的人都开开心心的。\!你心情低落的时候，他总是能让你开心起来。他是你值得依靠的好朋友。
+
+message_23:
+  text: 你会很想他的。
+
+#1st talk
+#message_24:
+#      text: Loud, angry, violent...\! AUBREY has changed a lot...\!<br>But, she still hardly makes a noise when she sleeps.
+
+#2nd talk
+message_25:
+  text: 奥布里总是有什么说什么，从来不会掩饰自己的情绪。\!<br>尽管她嘴上不愿承认自己关心其他人，<br>但是从她的行动也能看得出来，她其实比谁都在乎大家。
+
+message_26:
+  text: 在过去的几年里，她变了，变得让你有点难以理解……\!<br>但是不管怎么样，她总是在尽最大努力去做正确的事情。<br>唯有这点不用怀疑。
+
+message_27:
+  text: 你会很想她的。
+
+#1st talk
+#message_28:
+#      text: HERO looks peaceful...\! but you can't help but worry.\!<br>For a moment, you wonder what his life would have been like if MARI was still there.
+
+#2nd talk
+message_29:
+  text: 英雄永远是你最坚实的后盾。\!<br>他聪明、能干，又有爱心，习惯性把别人放在第一位。
+
+message_30:
+  text: 就算你犯了错，他也愿意随时帮你。
+
+message_31:
+  text: 你会很想他的。
+
+
+#RECYCLEPATH AFTERWARDS
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel\n[8]……\!呃……\!\n[8]……？
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub喂，你还好吗？\!你已经神游五分钟咯……
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her哈哈……\!你在那呆呆地想什么呢，\n[8]？
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her你刚刚的表情……\!看起来真的又轻松又平和。
+

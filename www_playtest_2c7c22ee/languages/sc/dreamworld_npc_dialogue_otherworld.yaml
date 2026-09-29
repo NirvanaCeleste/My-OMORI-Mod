@@ -1,0 +1,530 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============OTHERWORLD========================================
+
+                        #====NIGHT 1-2====
+
+#Colony Mole 1
+#Location: Sprout mole Colony
+message_0:
+  text: \n<聚居区的鼹鼠>以前啊，这里住着很多树苗鼹鼠……\!可是大森林里有个比这还大的树苗鼹鼠聚居区，他们就都搬过去了。
+
+message_1:
+  text: \n<聚居区的鼹鼠>唔，但迁徙的风险也不小，所以还是有一部分鼹鼠留了下来……
+
+message_2:
+  text: \n<聚居区的鼹鼠>唉，我兄弟就是丢下我们，自己搬过去了……\!<br>你觉得他还记得我吗？
+
+#Colony Mole 2
+#Location: Sprout mole Colony
+message_3:
+  text: \n<聚居区的鼹鼠>旅行者，你好，欢迎来我家做客！\!<br>虽然这里又小又破，但起码是属于我自己的甜蜜小窝。
+
+#Colony Mole 3
+#Location: Sprout mole Colony
+message_4:
+  text: \n<聚居区的鼹鼠>我们树苗鼹鼠可是非常聪明的生物哦！
+
+#CREEPY CAT
+#Location: Old Barn
+message_5:
+  text: \n<怪异的小猫>喵……\!\SINV[2]喵？\SINV[0] \!\SINV[1]喵……\SINV[0]\! \QUAKE[1]喵——\QUAKE[0]
+
+#DUCKIE JR
+#Location: Outskirts
+#Ref: sidequests_dreamworld_duckjr
+
+#Ferris
+message_6:
+  text: \n<菲利斯>这里以前是个野生动物保护区，但是旅游业发达了以后，来玩的人越来越多，这里的垃圾也越来越多……
+
+message_7:
+  text: \n<菲利斯>随手捡一下垃圾就有那么难吗！
+
+#Laramie
+message_8:
+  text: \n<拉勒米>这帮太空海盗在这里扎了营，待了很久都没走……
+
+message_9:
+  text: \n<拉勒米>我听说，他们的船长突然就不想再周游太空了，所以有一半船员就夺走了他的太空船，自己开着跑了！
+
+#LONE Mole
+message_10:
+  text: \n<孤立树苗鼹鼠>\Com[2]\{嘿，你在干什么啊？！\}
+
+message_11:
+  text: \n<孤立树苗鼹鼠>我费了老大劲才脱离了社会，就是想一个人清净清净，结果你忽然冒了出来，这下我的计划全泡汤了！
+
+message_12:
+  text: \n<孤立树苗鼹鼠>\Com[2]\{你最好给我马上把一切都恢复原状！！\}
+
+message_13:
+  text: 你帮树苗鼹鼠重新摆好了所有的路锥。
+
+#Mr DUCKIE
+#Mrs DUCKIE
+#Ref: sidequests_dreamworld_duckjr
+
+#PO
+message_14:
+  text: \n<波>晚上的时候抬头看着天上的星星，\!<br>就觉得世界上的其他东西都是如此渺小……
+
+#Talk with Kel as leader
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哇，小姐。您好高哦……
+
+message_16:
+  text: \n<波>谢谢你啊，小家伙！\!<br>其实长这么高，大多数时候给我带来的只有烦恼……\!<br>不过在看星星的时候就不一样了，确实是越高视野就越好呢。
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\Com什么！长得高才不麻烦呢！\!<br>长高的话一切都会更美好的。
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel总有一天，我要和你长得一样高！
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub行吧，\n[3]，你就继续做梦吧……
+
+#Recycline Machine
+#sidequest_dreamworld_recycle
+
+#Scarecrow
+#Scarecrow friend 1,2,3
+#sidequest_dreamworld_crowfriends
+
+#JJ
+message_20:
+  text: 要打开手提音响吗？
+
+message_21:
+  text: \n<体育之声>\Com[2]\SINV[2]\{!!!!!!!!!\{!!!!!\{!!!!!!!!!!\}!!!!!\}!!!!!!!!!\}\SINV[0]
+
+message_22:
+  text: 要关闭手提音响吗？
+
+message_23:
+  text: \n<体育之声>……
+
+#SMOL
+
+message_24:
+  text: \smo我叫斯摩，我是世界上最小的人马。 \!<br>瞧，这些都是我得的奖！
+
+message_25:
+  text: 房子周围散落着一堆棍子。
+
+message_26:
+  text: 一个马形的奖杯。\!<br>“马身比例奖——第二名”。
+
+message_27:
+  text: 一本获奖证书。\!<br>“最小人马奖——第一名”。
+
+message_28:
+  text: 一个高高的奖杯。\!<br>“袖珍人马奖——第一名”。
+
+message_29:
+  text: 一个矮矮的奖杯。\!<br>“迷你人马奖——第一名”。
+
+#PESSI
+
+message_31:
+  text: \pes你好，我叫佩西！你可能已经发现了……\!<br>\Com[2]\{我超级喜欢甜心的！\}
+
+message_32:
+  text: \pes甜心的周边我这全都有……\!<br>你看，我有甜心的海报、手办、贴纸、痛衫，她出的所有专辑我都有买哦！反正只要是你能想得到的甜心出的东西，我都有买！
+
+message_33:
+  text: \pes我收藏的甜心专辑是最全的，全世界没人比我更全了！
+
+message_34:
+  text: \pes说我是“超级粉丝”都算轻的了……\!<br>应该是\QUAKE[1]骨灰级\QUAKE[0]粉丝才对！
+
+message_35:
+  text: \pes我跟你说，我上次差一点点就见到甜心了！\!<br>好巧不巧，我们两个人那时候正好在同一家餐厅里吃饭……\!<br>我觉得这就是命运吧！
+
+message_36:
+  text: \pes而且呀，我们两个人点的餐都是一样的哦！\!我可不是看到她点了什么，然后故意跟她点同一样的，是真的就那么巧哦！
+
+message_37:
+  text: \pes我本来还想帮她付饭钱的，但是我刚买了一个新发售的等身大小甜心雕像，口袋里没钱了……
+
+message_38:
+  text: \pes不过嘛，我最后觉得还好是没付。因为那个女孩子根本不是甜心，只不过是打扮得像甜心的素人而已！
+
+message_39:
+  text: \pes我告诉你，其实我早就看出来她不是甜心了，\!只有那种跟风的伪粉才会把素人当成甜心本人！
+
+message_40:
+  text: \pes喂，小心点！\!那是我自己种的粉星花……\!<br>当然，这也是甜心最喜欢的花！
+
+message_41:
+  text: \pes这种花要是不放在专门的容器里面养，就会像燃烧的野火一样，开得到处都是。而且它不挑地方，真的是在什么东西上面都能长，所以只要蔓延开了，就没法让它停下来了。
+
+message_42:
+  text: 第一眼看上去像是个令人讨厌的家伙……\!<br>不过这其实只是一个雕像而已。
+
+#SNAKE
+message_43:
+  text: \n<蛇>\SINV[1]嘶嘶嘶嘶嘶嘶嘶嘶！\SINV[0]\!（好兴奋啊！）
+
+#SNALEY
+message_44:
+  text: \n<斯纳里>哦，天哪！\!我挡住你的路了吗？\!<br>太对不起了。\!我马上让开。
+
+message_45:
+  text: \n<斯纳里>哦，天哪！\!我好像挡着你的路了。\!<br>天呐，实在是太对不起了。\!我马上让开。
+
+#TV Girl
+#Coffee Machine quest
+
+#Veggie Kid (Eggplant)
+#Outskirts
+
+message_50:
+  text: \n<蔬菜宝宝>我们在冒险哦！
+
+#Veggie Kid (Onion)
+#Outskirts
+
+message_51:
+  text: \n<蔬菜宝宝>我们是冒险家！
+
+#Veggie Kid (Potato)
+#Outskirts
+
+message_52:
+  text: \n<蔬菜宝宝>我们要去探险！
+
+#Veggie Kid (Tomato)
+#Outskirts
+
+message_53:
+  text: \n<蔬菜宝宝>我们是探险家！
+
+#Space Pirate ACE
+#Location: Space boyfriends House
+
+message_54:
+  text: \n<太空海盗王牌>\QUAKE[1]她……\QUAKE[0]\!不来这里了以后……太空男孩船长——\!呃，我是说太空男友……就一直瘫在床上……
+#Location: Frozen Lake
+
+message_55:
+  text: \n<太空海盗王牌>你刚刚真的太勇敢了，\!我就从来不敢像你那样跟船长叫板……\!要我说，你肯定能成为超级厉害的太空海盗的！
+
+#Space Pirate AMIGO
+#Location: Space boyfriends House
+
+message_56:
+  text: \n<太空海盗朋友>\SINV[1]Zzzzzzzzz……\SINV[0]
+
+#Space Pirate BRO
+#Location: Space boyfriends House
+
+message_57:
+  text: \n<太空海盗哥们>太空男友……\!<br>我们能为你做些什么呢，哥们儿？<br>\!为什么你就是不愿意下床呢？
+
+#Location: Frozen Lake
+
+message_58:
+  text: \n<太空海盗哥们>哥们儿……\!这些\c[3]雪糕筒\c[0]……\!真的很不错。
+
+#Space Pirate BUDDY
+#Location: Space boyfriends backyard
+
+message_59:
+  text: \n<太空海盗伙计>伙计……\!你偏偏要赶在这种时候回来，真是太糟糕了……
+
+#Location: Frozen Lake
+
+message_60:
+  text: \n<太空海盗伙计>船长，你回来了真是太好了！\!耶，伙计，噢耶！
+
+
+#Space Pirate CHIEF
+#Location: Campsite
+
+message_61:
+  text: \n<太空海盗长官>嘎！\!太空男孩船长……呃，不对，我是说太空男友……他接手了太空海盗以后，这里就变得超级无聊……
+
+message_62:
+  text: \n<太空海盗长官>就是……\!你看看，老船长的飞船都让太空男友弄成什么样了！\!粉胡子船长要是在这，绝对不会允许任何人这样做的！
+
+#Location: Campsite
+
+message_64:
+  text: \n<太空海盗长官>嘎！\!太空男孩船长恢复正常了？！\!<br>我现在就去告诉粉胡子船长！
+#SPACE PIRATE CHIEF flies away and becomes N/A
+
+#Space Pirate DUDE
+#Location: Space boyfriends backyard (Solar System)
+
+message_65:
+  text: \n<太空海盗兄弟>喂，兄弟！\!太空男友很宝贝的冥王星之前就是放在这儿的……但是它现在不见了！
+
+#Location: Frozen Lake
+
+message_66:
+  text: \n<太空海盗兄弟>兄弟……没想到船长帮我们付了这些\c[3]雪糕筒\c[0]的钱……真不敢相信……\!<br>呜……\!我现在好感动啊。
+
+#Space Pirate GUY
+#Location: Campsite
+
+message_67:
+  text: \n<太空海盗老铁>喂，老铁！\!我们都是在太空男友手下干活的。\!当太空海盗真逍遥，我好怀念咱们的快乐时光啊！
+
+#Location: Frozen Lake
+
+message_68:
+  text: \n<太空海盗老铁>喂，老铁！\!这儿有\c[3]雪糕筒\c[0]，要跟我们一起吃点不？
+
+#CHIEF AFTER SBF IS BACK HOME WITH dad
+
+message_69:
+  text: \n<太空海盗长官>哦，这是浪子回头了呀……\!哼！\!看看他能好多久吧……
+
+#Space Pirate MATE
+#Location: Space Boyfriend's House
+
+message_80:
+  text: \n<太空海盗老兄>我最近就老是听到其他老兄抱怨，说什么这里变无聊了。\!但我觉得打扫卫生还蛮开心的啊……不会就我一个人这么想吧？
+
+#Location: Space Boyfriend's House
+
+message_81:
+  text: \n<太空海盗老兄>太空男孩船长恢复正常了？\!老兄，这可是天大的好消息啊！\!等大家都再度出发，继续探索宇宙，我就留在这里，守好咱们的堡垒。\!这儿总不能没人啊，对不对？
+
+#Space Pirate PAL
+#Location: Space Boyfriend's House
+
+message_82:
+  text: \n<太空海盗搭档>眼下的情况确实不太乐观，但是别人说什么我都不在乎，搭档……\!反正我就相信咱们船长！
+#Location: Frozen Lake
+
+message_83:
+  text: \n<太空海盗搭档>我这\c[3]雪糕筒\c[0]怎么没味儿啊！
+
+                        #====NIGHT 2====
+
+#Colony Mole 1 same as night 1-2
+#Colony Mole 2 same as night 1-2
+#Colony Mole 3 same as night 1-2
+#Creepy Cat same as night 1-2
+#Duckie Jr same as night 1-2
+#Ferris same as night 1-2
+#JJ same as night 1-2
+#LARAMIE
+message_88:
+  text: \n<拉勒米>我听说太空海盗又要继续遨游太空了，挺好的嘛！\!<br>不过……\!唔……\!我很好奇，他们为什么叫自己海盗呢？\!<br>他们也没偷过别人的东西吧？
+#Lone Mole N/A
+#Duckies same as night 1-2
+#Pessi same as night 1-2
+#Pluto N/A
+#PO same as night 1-2
+#Recycle Machine same as night 1-2
+#Scarecrow same as night 1-2
+#Scarecrow Friend 1,2,3 same as night 1-2
+#SMOL same as night 1-2
+#SNAKE same as night 1-2
+#SNALEY N/A
+#SPACE BOYFRIEND N/A
+#TVGIRL
+message_89:
+  text: \n<电视妹>可恶……\!最近电视里一直在播以前播过的东西……\!<br>什么时候才能播点新鲜玩意儿啊？
+
+#VEGGIE KIDS N/A
+#Space Pirate ACE N/A
+#Space Pirate AMIGO N/A
+#Space Pirate BRO N/A
+#Space Pirate BUDDY
+message_90:
+  text: \n<太空海盗伙计>\SINV[1]冥王星……\!不管你躲在哪儿了，你现在给我出来，出来啊！\SINV[0]
+
+#Space Pirate CHIEF N/A
+#Space Pirate DUDE
+message_91:
+  text: \n<太空海盗兄弟>太空男孩船长和几个海盗兄弟急匆匆地往外面去了……
+
+message_92:
+  text: \n<太空海盗兄弟>不过我跟旁边的兄弟打算去找冥王星，也就是太空男孩船长不见了的那个宝贝玩意儿……\!<br>唔……\!他到底跑到哪儿去了呢？
+
+#Space Pirate GUY
+#Space Pirate MATE
+message_93:
+  text: \n<太空海盗老兄>老兄，你来晚啦！大家都坐着太空男孩船长的新飞船走了！\!咳，我很高兴告诉各位，太空男孩船长和太空海盗满血回归咯！
+
+message_94:
+  text: \n<太空海盗老兄>希望各位兄弟们都能玩得开心！
+
+#Space Pirate PAL
+message_95:
+  text: \n<太空海盗搭档>船长让我留下看着他的旧飞船。\!他给我下命令的时候真是太帅了！
+
+
+                        #====NIGHT 3====
+
+#Colony Mole 1: Same as Night 1-2
+#Colony Mole 2: Same as Night 1-2
+#Colony Mole 3: Same as Night 1-2
+#Creepy Cat: Show Creepy Cat Picture
+#Duckies: Same as Night 1-2
+#Ferris: Same as Night 1-2
+#JJ: Same as Night 1-2
+#LARAMIE
+message_100:
+  text: \n<拉勒米>我听说，太空海盗的船长去了\c[11]异世界\c[0]之后就没回来……
+
+message_101:
+  text: \n<拉勒米>这下，那群太空海盗肯定又要陷入恐慌了！\!<br>他们总是有这样那样的状况啊……
+
+#LONE Mole
+#Location: Forgotten Pier
+message_102:
+  text: \n<孤立树苗鼹鼠>这里就我一个人！\!我太喜欢这里了！
+
+#PESSI: Sprout Mole Village - Stolen quest (Incomplete)
+#Pluto: N/A
+#PO: Same as Night 1-2
+#Recycle: Same as Night 1-2
+#Scarecrow: Same as Night 1-2
+#Scarecrow Friend 1,2,3 same as Night 1-2
+#Smol: Same as Night 1-2
+#Snake: Same as Night 1-2
+#Snaley: Location: N/A
+#Space BF: Frozen Forest quest
+#TV Girl: Same as Night 2
+#Veggie kids: N/A
+#Space pirate ACE
+#Space Pirate Amigo: Last Resort: Same as Night 1-2
+#Space Pirate Bro: Location Last Resort
+message_105:
+  text: \n<太空海盗哥们>甜心走了以后，太空男孩船长——呃，不对，我是说……\!太空丈夫……就不知道跑到哪去了……
+
+message_106:
+  text: \n<太空海盗哥们>我们组织了一个搜救队，到处找他，但他连个影儿都没有！\!他到底去哪儿了啊？
+
+#Space pirate BUDDY
+#Location: Orange Oasis
+message_107:
+  text: \n<太空海盗伙计>\SINV[1]哦，冥王星啊……\!冥王星……\!你到底跑到哪里去了？\!\SINV[0]<br>唉……\!这地方实在是太大了，\!我们怎么才能找到他啊？
+
+#Space Pirate CHIEF
+#Location: Last Resort
+message_108:
+  text: \n<太空海盗长官>嘎啊！\!这地方糟透了！
+
+#Space pirate DUDE
+#Location: Orange Oasis
+message_109:
+  text: \n<太空海盗兄弟>唉……\!兄弟，我好想其他的兄弟们啊……
+
+message_110:
+  text: \n<太空海盗老铁>哈啊……\!哈啊……\!船长……\!老铁……\!<br>虽然发生了很多事情……但是……\!我还是愿意相信你！
+
+message_111:
+  text: \n<太空海盗老兄>啊哼，各位老兄，听我说！\!我很高兴告诉各位，太空男孩船长和太空海盗满血归来咯！\!希望各位兄弟们都能玩得开心！
+
+#SPACE PIRATE PAL: Same as Night 2
+
+                        #====NIGHT 4====
+
+message_130:
+  text: \n<拉勒米>我听说，太空男孩船长的爸爸粉胡子知道自己儿子不见了以后，就赶忙跑回来主持大局了！\!<br>简直就像是在演电视剧嘛！\!你说，接下来的发展会不会更刺激？
+
+#Lone Mole: N/A
+#ESSI: Slime Girl's Lair
+
+message_140:
+  text: \n<太空海盗王牌>耶！\!船长……\!又……回来啦！\!不过这次他会待多久呢？
+
+message_141:
+  text: \n<太空海盗朋友>要是你能感觉得到痛苦……\!那你也能治愈这些伤痛。
+
+#Location: Lost Forest
+message_142:
+  text: \n<太空海盗伙计>喂，伙计……\!<br>我觉得冥王星不大可能跑到这种地方来啊。
+
+message_143:
+  text: \n<太空海盗兄弟>兄弟，我觉得我们这是迷路了……\!<br>我们现在肯定已经离家十万八千里了。
+
+message_144:
+  text: \n<太空海盗哥们>呜……\!我就知道，船长你一定会回来的……\!欢迎回家，船长！
+
+message_145:
+  text: \n<太空海盗王牌>呜……\!船长他……\!又不见了……
+
+#========================== Message in a bottle ========================
+
+message_160:
+  text: 这是一个装着信的漂流瓶！
+
+message_161:
+  text: 上面写着……<br>“请填空。”
+
+message_162:
+  text: 好一朵美丽的茉莉花～<br>好一朵美丽的____花～
+
+message_163:
+  text: 你想如何回答？
+
+message_164:
+  text: 你在信纸上写下了答案，然后把信塞回瓶子里，又扔回了湖里。
+
+message_165:
+  text: OMORI
+
+message_166:
+  text: 奥布里
+
+message_167:
+  text: 凯
+
+message_168:
+  text: 英雄
+
+
+#-----
+
+message_170:
+  text: 太空海盗热情地打着招呼。
+
+
+#----
+
+message_200:
+  text: \n<施工鼹鼠>电视上播完了“甜心的爱心冒险”大结局以后，有些树苗鼹鼠就搬回聚居区去了。
+
+message_201:
+  text: \n<施工鼹鼠>这可是黄金地段啊！
+
+message_202:
+  text: \n<刚来聚居区的鼹鼠>在第二次“树苗鼹鼠大迁徙”中，有不少鼹鼠死在了路上……\!不过想要前进就免不了要流血牺牲啊！
+
+message_203:
+  text: \n<刚来聚居区的鼹鼠>这儿可比\c[11]树苗鼹鼠村\c[0]要宽敞，\!而且还不是宽敞了一点半点，我看是宽敞了\sinv[1]很多很多\sinv[0]！
+
+message_204:
+  text: \n<硕鼹鼠>祝安好。
+
+message_205:
+  text: \n<刚来聚居区的鼹鼠>唔，我也不知道有个室友会是什么感觉……\!<br>不过，希望这个室友能帮我洗盘子。
+
+message_206:
+  text: \n<施工鼹鼠>建设一个更光明的未来吧……\!这就是我们树苗鼹鼠的生存之道！
+
+message_207:
+  text: \n<刚来聚居区的鼹鼠>唔，我也不知道有个室友会是什么感觉……\!<br>不过，希望这个室友能帮我叠衣服。
+
+message_208:
+  text: \n<刚来聚居区的鼹鼠>唔，我也不知道有个室友会是什么感觉……\!<br>不过，希望这个室友能帮我买点生活用品。
+

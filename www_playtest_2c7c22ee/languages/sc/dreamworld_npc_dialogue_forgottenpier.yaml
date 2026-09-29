@@ -1,0 +1,21 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============FORGOTTEN PIER / GHOST PARTY========================
+
+
+                        #====NIGHT 3 and 4====
+
+#BASIL'S GRANDMA
+#Location: Forgotten Pier
+message_0:
+  text: \n<陌生人>你见到我的孙子了吗？
+
+#HUMAN SHADOW - MULTIPLE
+#Location: Forgotten Pier
+message_1:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<？？？>……
+

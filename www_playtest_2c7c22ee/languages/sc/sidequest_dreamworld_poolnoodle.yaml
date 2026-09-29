@@ -1,0 +1,73 @@
+# =========================================================================================
+# POOL NOODLE
+# ========================================================================================
+
+#Talk to Berly
+
+message_0:
+  text: \ber\{\SINV[1]\Com[2]啊哈哈哈\{哈哈哈\{啊哈哈！\SINV[0]
+
+message_1:
+  text: \ber你知道吗……\!我最近有点发明创造的欲望哦。\!我想干一票大的……\!<br>做点惊世骇俗的事情……
+
+message_2:
+  text: \ber我想造出有史以来\Com[2]最大……\!\Com[2]最坏……\!<br>\Com[2]最厉害的究极武器！
+
+message_3:
+  text: \ber唯一的问题在于我现在没有灵感！\!<br>我所寻求的是制造终极武器的完美材料……
+
+message_4:
+  text: \ber又要柔韧又要结实……\!可能……\!还要带点浮力。
+
+message_5:
+  text: \ber如果你们能为我找到这样的材料，那我一定会给你们造出究极武器的！
+
+#Talk to Berly with Pool NOODLE
+
+message_6:
+  text: \ber哇……\!那……\!那边那个……\!那个形状……\!那个材质……
+
+message_7:
+  text: \ber我……\!我觉得……\!\SINV[1]我悟了。\SINV[0]
+
+message_8:
+  text: \ber这根\c[13]泳池浮力棒\c[0]就是我要找的东西啊！
+
+message_9:
+  text: \ber我一定能用它做出究极武器的！
+
+message_10:
+  text: 把你的\c[13]泳池浮力棒\c[0]给波利吗？
+
+#yes/no
+
+#yes
+message_11:
+  text: \ber稍等……
+
+#Berly turns around for a while, then turns back.
+message_12:
+  text: \ber\{\Com[2]快来大饱眼福吧！！
+
+message_13:
+  text: 你获得了\c[13]炫酷浮力棒\c[0]。
+
+#ADD BAHAHAHA
+
+message_14:
+  text: \ber没错！\!尽情欣赏完美无瑕的\c[13]炫酷浮力棒\c[0]吧！
+
+message_15:
+  text: \ber\c[13]炫酷浮力棒\c[0]的力量可不容小觑。\!只有最为久经沙场的人才能使用它。\!<br>而且，它不仅如此强大……\!而且还美丽万分。
+
+message_16:
+  text: \ber匠人精湛的手工艺令它显得独具一格。
+
+message_17:
+  text: \ber没错！\!我这次真是超常发挥啊！\! <br>不用急着感谢我啦！
+
+#ADD BAHAHAHAHAHA!!
+
+message_18:
+  text: \ber\com[2]但我为什么要这么做？\!我现在该拿我这溢出的灵感做些什么啊？
+
