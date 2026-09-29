@@ -184,4 +184,6 @@ var $plugins =
 {"name":"FadeLoopCore","status":true,"description":"v1.0 通用淡入淡出循环控制器","parameters":{}},
 {"name":"TDDP_ChineseWordWrap","status":true,"description":"中文对话按指定字符数自动换行 仅对对话文本生效","parameters":{"Max Characters Per Line":"31"}},
 {"name":"UnwrittenStory","status":true,"description":"《未竟之事》梦境修改之书：翻页/逐行书写/分支状态机/修改/擦除/自动播放/结局分支","parameters":{"yamlFile":"uw_book","defaultSpeed":"4","cursorChar":"_","bookWidth":"0","bookHeight":"0","fontSize":"16","font":"","autoPlaySpeed":"2","autoPlayPause":"15","hintSwitchId":"2005"}}
+,
+{"name":"UnwrittenSeal","status":true,"description":"封存：主菜单戳刺改为封存演出（书皮+红封章+完成开关）","parameters":{"sealLabel":"封存","promptText":"把这一页，封存起来吗？","coverImage":"Unwritten/Book/book_cover","stampSe":"Attack1","stampPitch":"70","stampCount":"5","stampInterval":"22","doneSwitchId":"2006","menuIntercept":"true"}}
 ];
