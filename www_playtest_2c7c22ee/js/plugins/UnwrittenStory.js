@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenStory —— 《未竟之事》
-// Version: 1.39 - A1-A5修复；blocks 多块四方向(ltr/rtl/ttb/btt)任意位置叠层文字；书进度存档恢复
+// Version: 1.40 - 架构阶段一：排版与动画分离（buildLayout 一次算坐标 + 统一渲染器）
 //=============================================================================
 // Add to Imported List
 var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
@@ -86,7 +86,7 @@ _TDS_.UnwrittenStory.Param.hintSwitchId    = Number(_TDS_.UnwrittenStory.Param['
 _TDS_.UnwrittenStory.Param.autoPlaySpeed   = Number(_TDS_.UnwrittenStory.Param['autoPlaySpeed'] || 2);
 _TDS_.UnwrittenStory.Param.autoPlayPause   = Number(_TDS_.UnwrittenStory.Param['autoPlayPause'] || 15);
 // 版本号单一来源（头部注释与加载日志共用）
-_TDS_.UnwrittenStory.Version = '1.39';
+_TDS_.UnwrittenStory.Version = '1.40';
 
 //=============================================================================
 // ** Game_UnwrittenStory —— 运行时状态
@@ -270,6 +270,8 @@ Window_UnwrittenBook.prototype.initialize = function(x, y, width, height) {
     this._selectionFlat = -1;
     this._dirty = true;
     this._cumWidths = [];
+    this._layout = null;      // 排版缓存：全部字符坐标（setPage 时算一次）
+    this._flatMeta = [];      // 每个 flat 的排版元数据（边界/光标/锚点）
     this._autoPlayMode = false;
     this._forceNoSkip = false;
     // 逐字过渡动画
@@ -450,6 +452,7 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
             : ((rBlk && rBlk.speed !== undefined) ? Number(rBlk.speed) : this._speed));
     }
     this.updateCumWidths();
+    this.buildLayout();
     this.computeSubPages();
     this._subIndex = 0;
     this._flatIndex = this._subPages[0] ? this._subPages[0].start : 0;
@@ -471,105 +474,157 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
 
 Window_UnwrittenBook.prototype.computeSubPages = function() {
     this._subPages = [];
-    // blocks 模式：不自动分页（多块绝对定位是演出效果，整页一个子页）
-    if (this._blocksMode) {
-        if (this._flat.length === 0) {
-            this._subPages.push({ start: 0, end: -1 });
-        } else {
-            this._subPages.push({ start: 0, end: this._flat.length - 1 });
-        }
-        return;
-    }
     if (this._flat.length === 0) {
         this._subPages.push({ start: 0, end: -1 });
         return;
     }
-
+    // blocks 模式：不自动分页（多块绝对定位是演出效果，整页一个子页）
+    if (this._blocksMode) {
+        this._subPages.push({ start: 0, end: this._flat.length - 1 });
+        return;
+    }
+    // 经典模式：从 _flatMeta 的纵向边界推导子页（只在行边界切分，与旧实现等价）
     var maxHeight = this.contents.height - 48;
+    var oY = this._origin[1];
+    var flatMin = [], flatMax = [];
+    for (var f = 0; f < this._flat.length; f++) {
+        var m = this._flatMeta[f];
+        if (!m) {
+            m = { minY: oY, maxY: oY + this.lineHeight() };
+        }
+        flatMin.push(m.minY);
+        flatMax.push(m.maxY);
+    }
+    var startFlat = 0;
+    var curMin = flatMin[0], curMax = flatMax[0];
+    for (var f2 = 1; f2 <= this._flat.length; f2++) {
+        var split = (f2 === this._flat.length);
+        if (!split) {
+            var sameRow = (this._flat[f2].row === this._flat[f2 - 1].row);
+            var nMin = Math.min(curMin, flatMin[f2]);
+            var nMax = Math.max(curMax, flatMax[f2]);
+            if (!sameRow && (nMax - oY) > maxHeight && (curMax - oY) > 0) {
+                split = true;
+            } else {
+                curMin = nMin; curMax = nMax;
+            }
+        }
+        if (split) {
+            this._subPages.push({ start: startFlat, end: f2 - 1 });
+            startFlat = f2;
+            if (f2 < this._flat.length) { curMin = flatMin[f2]; curMax = flatMax[f2]; }
+        }
+    }
+};
+
+//=============================================================================
+// * buildLayout —— 排版与动画分离的核心（v1.40 阶段一）
+//   setPage 时一次性算出全部字符坐标；书写动画/过渡只决定"显示几个字符"，
+//   不再参与定位。四方向（ltr/rtl/ttb/btt）与 blocks/经典两模式在此统一。
+//
+//   产物：
+//     _layout.chars[i] = { flat, k, x, y, w, h, cx, cy, hide }
+//        (cx,cy) = 该字符写完后的光标位置（按各自方向推算，含换行后的落点）
+//     _flatMeta[f]  = { start, count, minX, maxX, minY, maxY, lastY, cursor0 }
+//        cursor0 = 该 flat 一个字都没写时光标应在的位置（空句/擦除锚点用）
+//=============================================================================
+Window_UnwrittenBook.prototype._newFlatMeta = function(flatIndex, charsLen) {
+    return { start: charsLen, count: 0, minX: 1e9, maxX: -1e9,
+             minY: 1e9, maxY: -1e9, lastY: 0, cursor0: null };
+};
+Window_UnwrittenBook.prototype._pushChar = function(chars, meta, flatIndex, k,
+                                                    x, y, w, h, cx, cy) {
+    var c = { flat: flatIndex, k: k, x: x, y: y, w: w, h: h, cx: cx, cy: cy,
+              hide: (y + h > this.contents.height || y < -h) };
+    chars.push(c);
+    meta.count++;
+    if (x < meta.minX) { meta.minX = x; }
+    if (x + w > meta.maxX) { meta.maxX = x + w; }
+    if (y < meta.minY) { meta.minY = y; }
+    if (y + h > meta.maxY) { meta.maxY = y + h; }
+    meta.lastY = y;
+    return c;
+};
+Window_UnwrittenBook.prototype.buildLayout = function() {
     var fs = this.contents.fontSize;
     var lineH = this.lineHeight();
     var o = this._origin;
-    // 文字右边界:对齐背景图右缘内侧(原图右侧40px留白 × 缩放系数),
-    // 防止字体宽度(含字距)导致文字超出窗口/背景。
     var rightX = this.contents.width - 30;
-
-    var rowHeights = [];
-    for (var r = 0; r < this._rows.length; r++) {
-        var row = this._rows[r];
-        var totalHeight = 0;
-        var curX = o[0];
-        var curY = o[1];
-        for (var s = 0; s < row.segments.length; s++) {
-            var seg = row.segments[s];
-            var flatIdx = -1;
-            for (var f = 0; f < this._flat.length; f++) {
-                if (this._flat[f].row === r && this._flat[f].seg === s) {
-                    flatIdx = f;
-                    break;
-                }
-            }
-            if (flatIdx < 0) { continue; }
-            var text = this.segText(flatIdx);
-            var cum = this._cumWidths[flatIdx] || [];
-            var tempX = curX;
-            var tempY = curY;
-            var lineCount = 0;
-            for (var k = 0; k < text.length; k++) {
+    var chars = [];
+    this._flatMeta = [];
+    var f, k;
+    if (this._blocksMode) {
+        // ---- blocks：每行按所属块的方向绝对定位，不换行 ----
+        for (f = 0; f < this._flat.length; f++) {
+            var ref = this._flat[f];
+            var row = this._rows[ref.row];
+            var blk = this.rowBlock(ref.row);
+            var bo = blk ? blk.origin : o;
+            var dir = blk ? blk.direction : 'ltr';
+            var lineIdx = row.line || 0;
+            var text = this.segText(f);
+            var cum = this._cumWidths[f] || [];
+            var meta = this._newFlatMeta(f, chars.length);
+            for (k = 0; k < text.length; k++) {
                 var cw = (k > 0 ? cum[k] - cum[k - 1] : cum[0]);
                 if (!cw || cw <= 0 || isNaN(cw)) { cw = fs; }
-                if (tempX + cw > rightX && tempX > o[0]) {
-                    tempX = o[0];
-                    tempY += lineH;
-                    lineCount++;
+                var prefix = (k > 0 ? cum[k - 1] : 0);
+                var x, y, cx, cy;
+                if (dir === 'ltr') {
+                    cw = (k > 0 ? cum[k] - cum[k - 1] : cum[0]) || fs;
+                    x = bo[0] + prefix; y = bo[1] + lineIdx * lineH;
+                    cx = x + cw; cy = y;
+                } else if (dir === 'rtl') {
+                    cw = fs; prefix = k * fs;
+                    x = bo[0] - prefix - cw; y = bo[1] + lineIdx * lineH;
+                    cx = x - cw; cy = y;
+                } else if (dir === 'ttb') {
+                    cw = fs; prefix = k * fs;
+                    x = bo[0] + lineIdx * lineH; y = bo[1] + prefix;
+                    cx = x; cy = y + fs;
+                } else {   // btt：首字在最下，向上逐字生长
+                    cw = fs; prefix = k * fs;
+                    x = bo[0] + lineIdx * lineH;
+                    y = bo[1] + (text.length - 1 - k) * fs;
+                    cx = x; cy = y - fs;
                 }
-                tempX += cw;
+                this._pushChar(chars, meta, f, k, x, y, cw, fs, cx, cy);
             }
-            if (lineCount > 0 || text.length > 0) {
-                tempY += lineH;
-            }
-            totalHeight = tempY - o[1];
-            curY = tempY;
+            meta.dir = dir;
+            meta.cursor0 = (dir === 'ttb' || dir === 'btt')
+                ? { x: bo[0] + lineIdx * lineH, y: bo[1] }
+                : { x: bo[0], y: bo[1] + lineIdx * lineH };
+            this._flatMeta.push(meta);
         }
-        rowHeights.push(totalHeight);
-    }
-
-    var startRow = 0;
-    var currentHeight = 0;
-    for (var r2 = 0; r2 < rowHeights.length; r2++) {
-        var rh = rowHeights[r2];
-        if (currentHeight + rh > maxHeight && currentHeight > 0) {
-            var startFlat = 0;
-            var endFlat = 0;
-            for (var f2 = 0; f2 < this._flat.length; f2++) {
-                if (this._flat[f2].row === startRow && startFlat === 0) {
-                    startFlat = f2;
-                }
-                if (this._flat[f2].row === r2 - 1) {
-                    endFlat = f2;
-                }
+    } else {
+        // ---- 经典流式：段落行连续排布 + 自动换行（与旧 refresh 逐字行为一致）----
+        var curX = o[0], curY = o[1];
+        var lastRow = -1;
+        for (f = 0; f < this._flat.length; f++) {
+            var refC = this._flat[f];
+            if (refC.row !== lastRow) {
+                if (lastRow >= 0) { curX = o[0]; curY += lineH; }
+                lastRow = refC.row;
             }
-            for (var f3 = this._flat.length - 1; f3 >= 0; f3--) {
-                if (this._flat[f3].row === r2 - 1) {
-                    endFlat = f3;
-                    break;
+            var textC = this.segText(f);
+            var cumC = this._cumWidths[f] || [];
+            var metaC = this._newFlatMeta(f, chars.length);
+            metaC.dir = 'ltr';
+            metaC.cursor0 = { x: curX, y: curY };
+            for (k = 0; k < textC.length; k++) {
+                var cwC = (k > 0 ? cumC[k] - cumC[k - 1] : cumC[0]);
+                if (!cwC || cwC <= 0 || isNaN(cwC)) { cwC = fs; }
+                if (curX + cwC > rightX && curX > o[0]) {
+                    curX = o[0];
+                    curY += lineH;
                 }
+                this._pushChar(chars, metaC, f, k, curX, curY, cwC, fs, curX + cwC, curY);
+                curX += cwC;
             }
-            this._subPages.push({ start: startFlat, end: endFlat });
-            startRow = r2;
-            currentHeight = rh;
-        } else {
-            currentHeight += rh;
+            this._flatMeta.push(metaC);
         }
     }
-    var lastStartFlat = 0;
-    var lastEndFlat = this._flat.length - 1;
-    for (var f4 = 0; f4 < this._flat.length; f4++) {
-        if (this._flat[f4].row === startRow) {
-            lastStartFlat = f4;
-            break;
-        }
-    }
-    this._subPages.push({ start: lastStartFlat, end: lastEndFlat });
+    this._layout = { chars: chars };
 };
 
 Window_UnwrittenBook.prototype.currentSubPage = function() {
@@ -927,8 +982,9 @@ Window_UnwrittenBook.prototype.update = function() {
             this._dirty = true;
         }
         if (this._dirty) {
-            // 重算宽度;若宽度变化导致排版变化,重新分页,保证分页与绘制一致(避免字体超出)
+            // 重算宽度;宽度变化（字体就绪等）时重建排版并重新分页
             if (this.updateCumWidths()) {
+                this.buildLayout();
                 this.computeSubPages();
                 if (this._subIndex >= this._subPages.length) {
                     this._subIndex = Math.max(0, this._subPages.length - 1);
@@ -949,230 +1005,130 @@ Window_UnwrittenBook.prototype.update = function() {
     }
 };
 
+//=============================================================================
+// * _revealCounts —— 每个 flat 当前应显示的字符数（书写动画的唯一输出）
+//   书写/过渡/完成状态 → 数量；与坐标完全解耦。
+//=============================================================================
+Window_UnwrittenBook.prototype._revealCounts = function(page) {
+    var counts = [];
+    for (var f = page.start; f <= page.end; f++) {
+        var text = this._transitionActive ? this.transitionText(f) : this.segText(f);
+        if (this._finished || this._transitionActive) {
+            counts[f] = text.length;
+        } else if (this._mode === 'simultaneous') {
+            counts[f] = Math.min(this._prog[f] || 0, text.length);
+        } else if (f < this._flatIndex) {
+            counts[f] = text.length;
+        } else if (f === this._flatIndex) {
+            counts[f] = Math.min(this._charIndex, text.length);
+        } else {
+            counts[f] = 0;
+        }
+    }
+    return counts;
+};
+
+//=============================================================================
+// * refresh —— 统一渲染器（经典流式 / blocks 四方向 共用一份代码）
+//   坐标全部查 _layout 缓存；本函数只做三件事：
+//   1) 按显示数量逐字绘制（含金色高亮/灰下划线）
+//   2) 累积选区包围盒、定位书写光标（= 最后显示字符的 cx,cy）
+//   3) 画擦除锚点下划线 / 封存章 / 选区框 / 闪烁光标
+//=============================================================================
 Window_UnwrittenBook.prototype.refresh = function() {
     this.contents.clear();
     this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
     if (!this._page) { return; }
     if (this._eraseFlash > 0) { return; }
-    if (this._blocksMode) { this.refreshBlocks(); return; }
+    var L = this._layout;
+    if (!L || !L.chars) { return; }
     var fs = this.contents.fontSize;
-    var o = this._origin;
-    var lineH = this.lineHeight();
     var blinkOn = (Graphics.frameCount % 60) < 30;
-    // 与 computeSubPages 一致:文字右边界对齐背景图右缘内侧,防止字体宽度导致超出
-    var rightX = this.contents.width - 30;
     var page = this.currentSubPage();
-    var curX = o[0];
-    var curY = o[1];
-    var selLines = {};
+    var counts = this._revealCounts(page);
     var cursorPos = null;
     var markPos = null;
-    for (var f = page.start; f <= page.end; f++) {
-        var seg = this.segAt(f);
+    var sel = null;
+    var editColor = '#b8860b';
+    var i, f2;
+    for (i = 0; i < L.chars.length; i++) {
+        var c = L.chars[i];
+        if (c.flat < page.start || c.flat > page.end) { continue; }
+        var count = counts[c.flat] || 0;
+        if (c.k >= count) { continue; }
+        if (c.hide) { continue; }
+        var seg = this.segAt(c.flat);
         var st = this.segState(seg);
-        var text = this._transitionActive ? this.transitionText(f) : this.segText(f);
-        var count = 0;
-        if (this._finished) {
-            count = text.length;
-        } else if (this._mode === 'simultaneous' && !this._transitionActive) {
-            count = Math.min(this._prog[f], text.length);
-        } else if (!this._transitionActive) {
-            if (f < this._flatIndex) { count = text.length; }
-            else if (f === this._flatIndex) { count = Math.min(this._charIndex, text.length); }
+        var isEdit = seg.editable && !this._autoPlayMode;
+        var showGold = isEdit && !(st && st.modified) && !(st && st.erased);
+        var showUnderline = isEdit && st && st.modified;
+        if (showGold) {
+            this.contents.fillRect(c.x, c.y, c.w, fs, 'rgba(255, 217, 102, 0.35)');
+            if (this.contents.textColor !== editColor) { this.changeTextColor(editColor); }
+        } else if (showUnderline) {
+            this.contents.fillRect(c.x, c.y + fs - 2, c.w, 1, 'rgba(180, 180, 180, 0.5)');
+            if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
+                this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
+            }
         } else {
-            count = text.length;
-        }
-        var cum = this._cumWidths[f] || [];
-        var isEdit = seg.editable && !this._autoPlayMode;
-        var isModified = st && st.modified;
-        var isErased = st && st.erased;
-        var showGold = isEdit && !isModified && !isErased;
-        var showUnderline = isEdit && isModified;
-        var editColor = '#b8860b';
-        for (var k = 0; k < count && k < text.length; k++) {
-            var cw = (k > 0 ? cum[k] - cum[k - 1] : cum[0]);
-            if (!cw || cw <= 0 || isNaN(cw)) { cw = fs; }
-            if (curX + cw > rightX && curX > o[0]) {
-                curX = o[0];
-                curY += lineH;
+            if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
+                this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
             }
-            // 底部防线:当前行超出可绘制区域底部则跳过绘制(防止文字画出窗口)
-            if (curY + fs > this.contents.height) { break; }
-            if (showGold) {
-                this.contents.fillRect(curX, curY, cw, fs, 'rgba(255, 217, 102, 0.35)');
-                if (this.contents.textColor !== editColor) { this.changeTextColor(editColor); }
-            } else if (showUnderline) {
-                this.contents.fillRect(curX, curY + fs - 2, cw, 1, 'rgba(180, 180, 180, 0.5)');
-                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
-                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
-                }
+        }
+        var text = this._transitionActive ? this.transitionText(c.flat) : this.segText(c.flat);
+        this.contents.drawText(text.charAt(c.k), c.x, c.y, c.w, fs);
+        if (this._selectionMode && c.flat === this._selectionFlat) {
+            if (!sel) { sel = { minX: c.x, minY: c.y, maxX: c.x + c.w, maxY: c.y + fs }; }
+            else {
+                if (c.x < sel.minX) { sel.minX = c.x; }
+                if (c.y < sel.minY) { sel.minY = c.y; }
+                if (c.x + c.w > sel.maxX) { sel.maxX = c.x + c.w; }
+                if (c.y + fs > sel.maxY) { sel.maxY = c.y + fs; }
+            }
+        }
+        var isWriteFlat = false;
+        if (!this._finished && this._writing && !this._transitionActive) {
+            if (this._mode === 'simultaneous') {
+                isWriteFlat = ((this._prog[c.flat] || 0) < this.segText(c.flat).length);
             } else {
-                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
-                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
-                }
-            }
-            this.contents.drawText(text.charAt(k), curX, curY, cw, fs);
-            if (this._selectionMode && f === this._selectionFlat) {
-                var key = curY;
-                if (!selLines[key]) { selLines[key] = { x1: curX, x2: curX + cw }; }
-                else {
-                    if (curX < selLines[key].x1) { selLines[key].x1 = curX; }
-                    if (curX + cw > selLines[key].x2) { selLines[key].x2 = curX + cw; }
-                }
-            }
-            var isWriteFlat = false;
-            if (!this._finished && this._writing && !this._transitionActive) {
-                if (this._mode === 'simultaneous') {
-                    isWriteFlat = (this._prog[f] < text.length && k === count - 1);
-                } else {
-                    isWriteFlat = (f === this._flatIndex);
-                }
-            }
-            if (isWriteFlat) {
-                cursorPos = { x: curX + cw, y: curY };
-            }
-            curX += cw;
-        }
-        if (isEdit && isModified && isErased && count === 0) {
-            var underlineX = curX;
-            var underlineY = curY + fs - 2;
-            this.contents.fillRect(underlineX, underlineY, fs * 2, 1, 'rgba(180, 180, 180, 0.5)');
-            if (this._selectionMode && f === this._selectionFlat) {
-                selLines[curY] = { x1: underlineX, x2: underlineX + fs * 2 };
-            }
-            if (!this._finished && this._writing && f === this._flatIndex) {
-                cursorPos = { x: underlineX, y: curY };
+                isWriteFlat = (c.flat === this._flatIndex);
             }
         }
-        if (st && st.marked && count === text.length) {
-            markPos = { x: curX + 4, y: curY };
-        }
-        curX = o[0];
-        curY += lineH;
-    }
-    if (cursorPos && blinkOn) {
-        this.contents.drawText(_TDS_.UnwrittenStory.Param.cursorChar, cursorPos.x, cursorPos.y, fs, fs);
-    }
-    if (markPos) {
-        this.contents.fillRect(markPos.x - 1, markPos.y - 1, fs + 2, fs + 2, 'rgba(180, 40, 40, 0.85)');
-        this.contents.drawText('封', markPos.x, markPos.y, fs, fs);
-    }
-};
-
-//=============================================================================
-// * blocks 模式绘制（v1.0 四方向书写的回归，叠加多块能力）
-//   每块绝对定位（origin），方向：
-//     ltr 从起点向右写，多行往下叠（按实际字宽推进）
-//     rtl 从起点向左写（第一夜倒写演出）
-//     ttb 从起点竖排向下（每行右移一列）
-//     btt 从下往上生长（首字在最下，向上逐字出现）
-//   块按 yaml 顺序绘制 → 后写的块压在先写的块上（互相遮挡）。
-//   非 ltr 方向不做自动换行（演出文字都是短句）。
-//=============================================================================
-Window_UnwrittenBook.prototype.refreshBlocks = function() {
-    var fs = this.contents.fontSize;
-    var lineH = this.lineHeight();
-    var blinkOn = (Graphics.frameCount % 60) < 30;
-    var page = this.currentSubPage();
-    var cursorPos = null;
-    var selRect = null;
-    var markPos = null;
-    for (var f = page.start; f <= page.end; f++) {
-        var ref = this._flat[f];
-        var row = this._rows[ref.row];
-        var blk = this.rowBlock(ref.row);
-        var o = blk ? blk.origin : this._origin;
-        var dir = blk ? blk.direction : 'ltr';
-        var lineIdx = row.line || 0;
-        var seg = this.segAt(f);
-        var st = this.segState(seg);
-        var text = this._transitionActive ? this.transitionText(f) : this.segText(f);
-        var count = 0;
-        if (this._finished) { count = text.length; }
-        else if (this._mode === 'simultaneous' && !this._transitionActive) { count = Math.min(this._prog[f], text.length); }
-        else if (!this._transitionActive) {
-            if (f < this._flatIndex) { count = text.length; }
-            else if (f === this._flatIndex) { count = Math.min(this._charIndex, text.length); }
-        } else { count = text.length; }
-        var cum = this._cumWidths[f] || [];
-        var isEdit = seg.editable && !this._autoPlayMode;
-        var isModified = st && st.modified;
-        var isErased = st && st.erased;
-        var showGold = isEdit && !isModified && !isErased;
-        var showUnderline = isEdit && isModified;
-        var editColor = '#b8860b';
-        var rMinX = 1e9, rMinY = 1e9, rMaxX = -1e9, rMaxY = -1e9;
-        for (var k = 0; k < count && k < text.length; k++) {
-            var cw = (k > 0 ? cum[k] - cum[k - 1] : cum[0]);
-            if (!cw || cw <= 0 || isNaN(cw)) { cw = fs; }
-            if (dir !== 'ltr') { cw = fs; }   // 非 ltr 方向用等宽步进（v1.0 语义）
-            var prefix = (k > 0 ? cum[k - 1] : 0);
-            if (dir !== 'ltr') { prefix = k * fs; }
-            var cx, cy;
-            if (dir === 'ltr') {
-                cx = o[0] + prefix; cy = o[1] + lineIdx * lineH;
-            } else if (dir === 'rtl') {
-                cx = o[0] - prefix - cw; cy = o[1] + lineIdx * lineH;
-            } else if (dir === 'ttb') {
-                cx = o[0] + lineIdx * lineH; cy = o[1] + prefix;
-            } else {   // btt：首字在最下，向上逐字生长
-                cx = o[0] + lineIdx * lineH; cy = o[1] + (text.length - 1 - k) * fs;
-            }
-            if (cx < rMinX) { rMinX = cx; }
-            if (cy < rMinY) { rMinY = cy; }
-            if (cx + cw > rMaxX) { rMaxX = cx + cw; }
-            if (cy + fs > rMaxY) { rMaxY = cy + fs; }
-            if (cy + fs > this.contents.height || cy < -fs) { continue; }   // 底部/顶部防线
-            if (showGold) {
-                this.contents.fillRect(cx, cy, cw, fs, 'rgba(255, 217, 102, 0.35)');
-                if (this.contents.textColor !== editColor) { this.changeTextColor(editColor); }
-            } else if (showUnderline) {
-                this.contents.fillRect(cx, cy + fs - 2, cw, 1, 'rgba(180, 180, 180, 0.5)');
-                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
-                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
-                }
-            } else {
-                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
-                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
-                }
-            }
-            this.contents.drawText(text.charAt(k), cx, cy, cw, fs);
-            var isWriteFlat = false;
-            if (!this._finished && this._writing && !this._transitionActive) {
-                if (this._mode === 'simultaneous') {
-                    isWriteFlat = (this._prog[f] < text.length && k === count - 1);
-                } else {
-                    isWriteFlat = (f === this._flatIndex);
-                }
-            }
-            if (isWriteFlat) {
-                // 光标位置 = 下一个字符将要出现的地方（按方向）
-                if (dir === 'ltr')      { cursorPos = { x: cx + cw, y: cy }; }
-                else if (dir === 'rtl') { cursorPos = { x: cx - cw, y: cy }; }
-                else if (dir === 'ttb') { cursorPos = { x: cx, y: cy + fs }; }
-                else                    { cursorPos = { x: cx, y: cy - fs }; }
-            }
-        }
-        // 已擦除的可改句：原位画一条灰色空下划线（提示这里曾有一句）
-        if (isEdit && isModified && isErased && count === 0) {
-            var ux = (dir === 'rtl') ? o[0] - fs * 2 : o[0];
-            var uy = o[1] + lineIdx * lineH;
-            this.contents.fillRect(ux, uy + fs - 2, fs * 2, 1, 'rgba(180, 180, 180, 0.5)');
-            if (rMinX > ux) { rMinX = ux; }
-            if (rMaxX < ux + fs * 2) { rMaxX = ux + fs * 2; }
-            if (rMinY > uy) { rMinY = uy; }
-            if (rMaxY < uy + fs) { rMaxY = uy + fs; }
-        }
-        if (st && st.marked && count === text.length && text.length > 0) {
-            markPos = { x: (dir === 'rtl' ? o[0] - text.length * fs - 4 : o[0] + (cum[text.length - 1] || text.length * fs) + 4),
-                        y: o[1] + lineIdx * lineH };
-        }
-        if (this._selectionMode && f === this._selectionFlat && rMaxX > rMinX) {
-            selRect = { x: rMinX - 4, y: rMinY - 4, w: (rMaxX - rMinX) + 8, h: (rMaxY - rMinY) + 8 };
+        if (isWriteFlat && c.k === count - 1) {
+            cursorPos = { x: c.cx, y: c.cy };
         }
     }
-    if (selRect) {
-        this.contents.strokeRect(selRect.x, selRect.y, selRect.w, selRect.h, 'rgba(220, 60, 60, 0.9)');
+    // 空句/已擦除可改句：原位画灰色空下划线（提示这里曾有一句）
+    for (f2 = page.start; f2 <= page.end; f2++) {
+        var seg2 = this.segAt(f2);
+        var st2 = this.segState(seg2);
+        var cnt2 = counts[f2] || 0;
+        if (seg2.editable && st2 && st2.modified && st2.erased && cnt2 === 0) {
+            var meta = this._flatMeta[f2];
+            if (meta && meta.cursor0) {
+                var ux = meta.cursor0.x, uy = meta.cursor0.y;
+                this.contents.fillRect(ux, uy + fs - 2, fs * 2, 1, 'rgba(180, 180, 180, 0.5)');
+                if (this._selectionMode && f2 === this._selectionFlat && !sel) {
+                    sel = { minX: ux, minY: uy, maxX: ux + fs * 2, maxY: uy + fs };
+                }
+                if (!this._finished && this._writing && f2 === this._flatIndex) {
+                    cursorPos = { x: ux, y: uy };
+                }
+            }
+        }
+        // 封存章（兼容旧数据 marked 字段）
+        if (st2 && st2.marked && cnt2 === this.segText(f2).length && this.segText(f2).length > 0) {
+            var meta2 = this._flatMeta[f2];
+            if (meta2 && meta2.maxX > meta2.minX) {
+                markPos = (meta2.dir === 'rtl')
+                    ? { x: meta2.minX - fs - 4, y: meta2.lastY }
+                    : { x: meta2.maxX + 4, y: meta2.lastY };
+            }
+        }
+    }
+    if (sel) {
+        this.contents.strokeRect(sel.minX - 4, sel.minY - 4,
+            (sel.maxX - sel.minX) + 8, (sel.maxY - sel.minY) + 8, 'rgba(220, 60, 60, 0.9)');
     }
     if (cursorPos && blinkOn) {
         this.contents.drawText(_TDS_.UnwrittenStory.Param.cursorChar, cursorPos.x, cursorPos.y, fs, fs);
