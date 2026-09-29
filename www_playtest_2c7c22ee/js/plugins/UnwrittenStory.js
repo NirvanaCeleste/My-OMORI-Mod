@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenStory —— 《未竟之事》
-// Version: 1.38 - 树状状态机支持：每节点 N 备选=N分支 + 保留 + 擦除，树深 3-4 层
+// Version: 1.39 - A1-A5修复；blocks 多块四方向(ltr/rtl/ttb/btt)任意位置叠层文字；书进度存档恢复
 //=============================================================================
 // Add to Imported List
 var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
@@ -8,7 +8,7 @@ var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
 var _TDS_ = _TDS_ || {} ; _TDS_.UnwrittenStory = _TDS_.UnwrittenStory || {};
 //=============================================================================
  /*:
- * @plugindesc v1.33 梦境之书《未竟之事》：状态快照 / 分支 / 书写 / 修改擦除 / 自动分页
+ * @plugindesc v1.39 梦境之书：树状状态机 / 修改擦除保留 / blocks四方向叠层文字 / 进度存档恢复 / 配合UnwrittenSeal封存
  * 作者：NirvanaCeleste
  *
  * @author NirvanaCeleste
@@ -86,14 +86,29 @@ _TDS_.UnwrittenStory.Param.hintSwitchId    = Number(_TDS_.UnwrittenStory.Param['
 _TDS_.UnwrittenStory.Param.autoPlaySpeed   = Number(_TDS_.UnwrittenStory.Param['autoPlaySpeed'] || 2);
 _TDS_.UnwrittenStory.Param.autoPlayPause   = Number(_TDS_.UnwrittenStory.Param['autoPlayPause'] || 15);
 // 版本号单一来源（头部注释与加载日志共用）
-_TDS_.UnwrittenStory.Version = '1.38';
+_TDS_.UnwrittenStory.Version = '1.39';
 
 //=============================================================================
 // ** Game_UnwrittenStory —— 运行时状态
 //=============================================================================
 function Game_UnwrittenStory() { this.initialize.apply(this, arguments); }
 Game_UnwrittenStory.prototype.initialize = function() { this.clear(); };
-Game_UnwrittenStory.prototype.clear = function() { this._pages = {}; this._lastOperation = null; };
+Game_UnwrittenStory.prototype.clear = function() {
+    this._pages = {};
+    this._lastOperation = null;
+    this._bookState = {};   // yaml文件名 -> { id: 状态id, page: 页key }，书进度存档恢复用
+};
+// 记录某本书当前停在树上的哪个状态（A3：中途关游戏再读档可恢复进度）
+Game_UnwrittenStory.prototype.setBookState = function(yamlFile, stateId, pageKey) {
+    if (!this._bookState) { this._bookState = {}; }
+    this._bookState[yamlFile] = {
+        id: (stateId === null || stateId === undefined) ? null : String(stateId),
+        page: pageKey || null
+    };
+};
+Game_UnwrittenStory.prototype.bookState = function(yamlFile) {
+    return (this._bookState && this._bookState[yamlFile]) || null;
+};
 // 句子状态按 sentenceId 全局存储（edits id 全局唯一）
 Game_UnwrittenStory.prototype.sentenceState = function(pageId, sentenceId) {
     var key = String(sentenceId);
@@ -172,7 +187,14 @@ DataManager.makeSaveContents = function() {
 _TDS_.UnwrittenStory.DataManager_extractSaveContents = DataManager.extractSaveContents;
 DataManager.extractSaveContents = function(contents) {
     _TDS_.UnwrittenStory.DataManager_extractSaveContents.call(this, contents);
-    $gameUnwrittenStory = contents.unwrittenStory || new Game_UnwrittenStory();
+    var us = contents.unwrittenStory;
+    if (us) {
+        // A5 修复：MV 存档经 JSON 序列化会丢失原型，不恢复则读档后书本所有方法调用崩溃
+        Object.setPrototypeOf(us, Game_UnwrittenStory.prototype);
+        if (!us._bookState) { us._bookState = {}; }
+        if (us._lastOperation === undefined) { us._lastOperation = null; }
+    }
+    $gameUnwrittenStory = us || new Game_UnwrittenStory();
 };
 
 //=============================================================================
@@ -327,17 +349,50 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
     this._page = page;
     this._rows = [];
     this._flat = [];
-    var rawText = (page && page.text) || '';
-    if (typeof rawText === 'string' && rawText.length > 0) {
-        var edits = (page.edits || []);
-        var counter = { n: 0 };
-        var rawLines = rawText.split('\n');
-        for (var i = 0; i < rawLines.length; i++) {
-            if (rawLines[i].trim() === '') { continue; }
-            var segs = this.parseInline(rawLines[i], edits, counter);
-            this._rows.push({ segments: segs });
-            for (var s = 0; s < segs.length; s++) {
-                this._flat.push({ row: this._rows.length - 1, seg: s });
+    // ---- blocks 模式：page.blocks = [{origin,direction,speed,text,edits}, ...] ----
+    // 每块绝对定位、各有书写方向（ltr/rtl/ttb/btt），按块序绘制（后块覆盖前块=互相遮挡）。
+    // 用于心理恐怖演出：文字在任意位置上下左右生成、叠压。
+    this._blocksMode = !!(page && Array.isArray(page.blocks) && page.blocks.length > 0);
+    this._blocks = [];
+    if (this._blocksMode) {
+        for (var bi = 0; bi < page.blocks.length; bi++) {
+            var blkRaw = page.blocks[bi] || {};
+            this._blocks.push({
+                origin: blkRaw.origin || [this.padding + 8, this.padding + 8],
+                direction: blkRaw.direction || 'ltr',
+                speed: blkRaw.speed
+            });
+        }
+        for (var b = 0; b < page.blocks.length; b++) {
+            var blk = page.blocks[b] || {};
+            var bText = String(blk.text || '');
+            var bEdits = blk.edits || [];
+            var bCounter = { n: 0 };
+            var bLines = bText.split('\n');
+            var lineInBlock = 0;
+            for (var li = 0; li < bLines.length; li++) {
+                if (bLines[li].trim() === '') { continue; }
+                var bSegs = this.parseInline(bLines[li], bEdits, bCounter);
+                this._rows.push({ segments: bSegs, block: b, line: lineInBlock });
+                for (var bs = 0; bs < bSegs.length; bs++) {
+                    this._flat.push({ row: this._rows.length - 1, seg: bs });
+                }
+                lineInBlock++;
+            }
+        }
+    } else {
+        var rawText = (page && page.text) || '';
+        if (typeof rawText === 'string' && rawText.length > 0) {
+            var edits = (page.edits || []);
+            var counter = { n: 0 };
+            var rawLines = rawText.split('\n');
+            for (var i = 0; i < rawLines.length; i++) {
+                if (rawLines[i].trim() === '') { continue; }
+                var segs = this.parseInline(rawLines[i], edits, counter);
+                this._rows.push({ segments: segs });
+                for (var s = 0; s < segs.length; s++) {
+                    this._flat.push({ row: this._rows.length - 1, seg: s });
+                }
             }
         }
     }
@@ -374,6 +429,14 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
             Math.round(write.origin[1] * fitScale)
         ];
     }
+    // blocks 的 origin 同样按背景图缩放（yaml 里写原图坐标，如 1140x720）
+    for (var bo = 0; bo < this._blocks.length; bo++) {
+        var bOrigin = this._blocks[bo].origin;
+        this._blocks[bo].origin = [
+            Math.max(4, Math.min(this.contents.width - 8, Math.round(bOrigin[0] * fitScale))),
+            Math.max(4, Math.min(this.contents.height - 8, Math.round(bOrigin[1] * fitScale)))
+        ];
+    }
     // 钳制 origin:文字起点不能超出窗口可绘制区域(防止字体画出窗口/背景)
     var maxOX = Math.max(this.padding + 4, this.contents.width - 40);
     var maxOY = Math.max(this.padding + 4, this.contents.height - 24);
@@ -382,7 +445,9 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
     this._lineSpeeds = [];
     for (var f = 0; f < this._flat.length; f++) {
         var seg = this.segAt(f);
-        this._lineSpeeds.push(seg.speed !== undefined ? seg.speed : this._speed);
+        var rBlk = this.rowBlock(this._flat[f].row);
+        this._lineSpeeds.push(seg.speed !== undefined ? seg.speed
+            : ((rBlk && rBlk.speed !== undefined) ? Number(rBlk.speed) : this._speed));
     }
     this.updateCumWidths();
     this.computeSubPages();
@@ -406,6 +471,15 @@ Window_UnwrittenBook.prototype.setPage = function(pageKey, page, stateIndex) {
 
 Window_UnwrittenBook.prototype.computeSubPages = function() {
     this._subPages = [];
+    // blocks 模式：不自动分页（多块绝对定位是演出效果，整页一个子页）
+    if (this._blocksMode) {
+        if (this._flat.length === 0) {
+            this._subPages.push({ start: 0, end: -1 });
+        } else {
+            this._subPages.push({ start: 0, end: this._flat.length - 1 });
+        }
+        return;
+    }
     if (this._flat.length === 0) {
         this._subPages.push({ start: 0, end: -1 });
         return;
@@ -518,6 +592,12 @@ Window_UnwrittenBook.prototype.segText = function(flatIndex) {
         return seg.variants[st.variant];
     }
     return seg.base;
+};
+// 该行所属的 block（blocks 模式；经典模式返回 null）
+Window_UnwrittenBook.prototype.rowBlock = function(rowIdx) {
+    var r = this._rows[rowIdx];
+    if (!r || r.block === undefined || r.block < 0 || !this._blocks[r.block]) { return null; }
+    return this._blocks[r.block];
 };
 Window_UnwrittenBook.prototype.updateCumWidths = function() {
     // 返回布尔:宽度是否发生了变化(字体加载完成等场景)。变化时调用方需重新分页。
@@ -874,6 +954,7 @@ Window_UnwrittenBook.prototype.refresh = function() {
     this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
     if (!this._page) { return; }
     if (this._eraseFlash > 0) { return; }
+    if (this._blocksMode) { this.refreshBlocks(); return; }
     var fs = this.contents.fontSize;
     var o = this._origin;
     var lineH = this.lineHeight();
@@ -968,6 +1049,130 @@ Window_UnwrittenBook.prototype.refresh = function() {
         }
         curX = o[0];
         curY += lineH;
+    }
+    if (cursorPos && blinkOn) {
+        this.contents.drawText(_TDS_.UnwrittenStory.Param.cursorChar, cursorPos.x, cursorPos.y, fs, fs);
+    }
+    if (markPos) {
+        this.contents.fillRect(markPos.x - 1, markPos.y - 1, fs + 2, fs + 2, 'rgba(180, 40, 40, 0.85)');
+        this.contents.drawText('封', markPos.x, markPos.y, fs, fs);
+    }
+};
+
+//=============================================================================
+// * blocks 模式绘制（v1.0 四方向书写的回归，叠加多块能力）
+//   每块绝对定位（origin），方向：
+//     ltr 从起点向右写，多行往下叠（按实际字宽推进）
+//     rtl 从起点向左写（第一夜倒写演出）
+//     ttb 从起点竖排向下（每行右移一列）
+//     btt 从下往上生长（首字在最下，向上逐字出现）
+//   块按 yaml 顺序绘制 → 后写的块压在先写的块上（互相遮挡）。
+//   非 ltr 方向不做自动换行（演出文字都是短句）。
+//=============================================================================
+Window_UnwrittenBook.prototype.refreshBlocks = function() {
+    var fs = this.contents.fontSize;
+    var lineH = this.lineHeight();
+    var blinkOn = (Graphics.frameCount % 60) < 30;
+    var page = this.currentSubPage();
+    var cursorPos = null;
+    var selRect = null;
+    var markPos = null;
+    for (var f = page.start; f <= page.end; f++) {
+        var ref = this._flat[f];
+        var row = this._rows[ref.row];
+        var blk = this.rowBlock(ref.row);
+        var o = blk ? blk.origin : this._origin;
+        var dir = blk ? blk.direction : 'ltr';
+        var lineIdx = row.line || 0;
+        var seg = this.segAt(f);
+        var st = this.segState(seg);
+        var text = this._transitionActive ? this.transitionText(f) : this.segText(f);
+        var count = 0;
+        if (this._finished) { count = text.length; }
+        else if (this._mode === 'simultaneous' && !this._transitionActive) { count = Math.min(this._prog[f], text.length); }
+        else if (!this._transitionActive) {
+            if (f < this._flatIndex) { count = text.length; }
+            else if (f === this._flatIndex) { count = Math.min(this._charIndex, text.length); }
+        } else { count = text.length; }
+        var cum = this._cumWidths[f] || [];
+        var isEdit = seg.editable && !this._autoPlayMode;
+        var isModified = st && st.modified;
+        var isErased = st && st.erased;
+        var showGold = isEdit && !isModified && !isErased;
+        var showUnderline = isEdit && isModified;
+        var editColor = '#b8860b';
+        var rMinX = 1e9, rMinY = 1e9, rMaxX = -1e9, rMaxY = -1e9;
+        for (var k = 0; k < count && k < text.length; k++) {
+            var cw = (k > 0 ? cum[k] - cum[k - 1] : cum[0]);
+            if (!cw || cw <= 0 || isNaN(cw)) { cw = fs; }
+            if (dir !== 'ltr') { cw = fs; }   // 非 ltr 方向用等宽步进（v1.0 语义）
+            var prefix = (k > 0 ? cum[k - 1] : 0);
+            if (dir !== 'ltr') { prefix = k * fs; }
+            var cx, cy;
+            if (dir === 'ltr') {
+                cx = o[0] + prefix; cy = o[1] + lineIdx * lineH;
+            } else if (dir === 'rtl') {
+                cx = o[0] - prefix - cw; cy = o[1] + lineIdx * lineH;
+            } else if (dir === 'ttb') {
+                cx = o[0] + lineIdx * lineH; cy = o[1] + prefix;
+            } else {   // btt：首字在最下，向上逐字生长
+                cx = o[0] + lineIdx * lineH; cy = o[1] + (text.length - 1 - k) * fs;
+            }
+            if (cx < rMinX) { rMinX = cx; }
+            if (cy < rMinY) { rMinY = cy; }
+            if (cx + cw > rMaxX) { rMaxX = cx + cw; }
+            if (cy + fs > rMaxY) { rMaxY = cy + fs; }
+            if (cy + fs > this.contents.height || cy < -fs) { continue; }   // 底部/顶部防线
+            if (showGold) {
+                this.contents.fillRect(cx, cy, cw, fs, 'rgba(255, 217, 102, 0.35)');
+                if (this.contents.textColor !== editColor) { this.changeTextColor(editColor); }
+            } else if (showUnderline) {
+                this.contents.fillRect(cx, cy + fs - 2, cw, 1, 'rgba(180, 180, 180, 0.5)');
+                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
+                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
+                }
+            } else {
+                if (this.contents.textColor !== _TDS_.UnwrittenStory.Param.textColor) {
+                    this.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
+                }
+            }
+            this.contents.drawText(text.charAt(k), cx, cy, cw, fs);
+            var isWriteFlat = false;
+            if (!this._finished && this._writing && !this._transitionActive) {
+                if (this._mode === 'simultaneous') {
+                    isWriteFlat = (this._prog[f] < text.length && k === count - 1);
+                } else {
+                    isWriteFlat = (f === this._flatIndex);
+                }
+            }
+            if (isWriteFlat) {
+                // 光标位置 = 下一个字符将要出现的地方（按方向）
+                if (dir === 'ltr')      { cursorPos = { x: cx + cw, y: cy }; }
+                else if (dir === 'rtl') { cursorPos = { x: cx - cw, y: cy }; }
+                else if (dir === 'ttb') { cursorPos = { x: cx, y: cy + fs }; }
+                else                    { cursorPos = { x: cx, y: cy - fs }; }
+            }
+        }
+        // 已擦除的可改句：原位画一条灰色空下划线（提示这里曾有一句）
+        if (isEdit && isModified && isErased && count === 0) {
+            var ux = (dir === 'rtl') ? o[0] - fs * 2 : o[0];
+            var uy = o[1] + lineIdx * lineH;
+            this.contents.fillRect(ux, uy + fs - 2, fs * 2, 1, 'rgba(180, 180, 180, 0.5)');
+            if (rMinX > ux) { rMinX = ux; }
+            if (rMaxX < ux + fs * 2) { rMaxX = ux + fs * 2; }
+            if (rMinY > uy) { rMinY = uy; }
+            if (rMaxY < uy + fs) { rMaxY = uy + fs; }
+        }
+        if (st && st.marked && count === text.length && text.length > 0) {
+            markPos = { x: (dir === 'rtl' ? o[0] - text.length * fs - 4 : o[0] + (cum[text.length - 1] || text.length * fs) + 4),
+                        y: o[1] + lineIdx * lineH };
+        }
+        if (this._selectionMode && f === this._selectionFlat && rMaxX > rMinX) {
+            selRect = { x: rMinX - 4, y: rMinY - 4, w: (rMaxX - rMinX) + 8, h: (rMaxY - rMinY) + 8 };
+        }
+    }
+    if (selRect) {
+        this.contents.strokeRect(selRect.x, selRect.y, selRect.w, selRect.h, 'rgba(220, 60, 60, 0.9)');
     }
     if (cursorPos && blinkOn) {
         this.contents.drawText(_TDS_.UnwrittenStory.Param.cursorChar, cursorPos.x, cursorPos.y, fs, fs);
@@ -1138,19 +1343,41 @@ Scene_UnwrittenStory.prototype.create = function() {
     Scene_BaseEX.prototype.create.call(this);
     var data = this.bookData();
     this._defaults = data.defaults;
-    this._states = data.states;
-    this._stateIndex = 0;
-    this._fullOrder = (data.states[0].order || data.order || []).slice();
-    if (this._fullOrder.length === 0) {
-        for (var k0 in data.states[0].pages) { this._fullOrder.push(k0); }
+    this._states = data.states || [];
+    // A4 修复：states 为空（yaml 缺失/格式错/切了没有书文件的语言）时先崩在 states[0]
+    // 此处提前拦截，显示游戏内可见的红字诊断而不是 TypeError
+    if (this._states.length === 0) {
+        console.warn('UnwrittenStory: 书数据为空或不存在: ' + this._yamlFile +
+            ' | languages=' + (LanguageManager._language || '?'));
+        var err0 = new Sprite(new Bitmap(Graphics.width, 160));
+        err0.bitmap.fontSize = 18;
+        err0.bitmap.textColor = '#ff3333';
+        err0.bitmap.drawText('书数据加载失败: ' + this._yamlFile, 0, 0, Graphics.width, 26, 'center');
+        err0.bitmap.drawText('请检查对应 languages 目录里是否存在该书 yaml 且 states 非空', 0, 32, Graphics.width, 26, 'center');
+        this.addChild(err0);
+        this._fatal = true;
+        return;
     }
-    // 锁死页：s0 中 readonly 的页（结局阶段才显示）
+    this._stateIndex = 0;
+    // A3 修复：恢复上次进度（读档/重开书时不再从根状态重来导致卡死）
+    var savedState = ($gameUnwrittenStory && $gameUnwrittenStory.bookState) ?
+        $gameUnwrittenStory.bookState(this._yamlFile) : null;
+    if (savedState && savedState.id !== null && savedState.id !== undefined) {
+        for (var sv = 0; sv < this._states.length; sv++) {
+            if (String(this._states[sv].id) === String(savedState.id)) { this._stateIndex = sv; break; }
+        }
+    }
+    this._fullOrder = (this._states[0].order || data.order || []).slice();
+    if (this._fullOrder.length === 0) {
+        for (var k0 in this._states[0].pages) { this._fullOrder.push(k0); }
+    }
+    // 锁死页：根状态中 readonly 的页（结局阶段才显示）
     this._lockedPages = [];
-    var s0p = data.states[0].pages || {};
+    var s0p = this._states[0].pages || {};
     for (var lk in s0p) { if (s0p[lk] && s0p[lk].readonly) { this._lockedPages.push(lk); } }
     this._endingStage = false;
-    this._pageOrder = this.currentVisibleOrder(0);
-    this._pages = this.buildStatePages(0);
+    this._pageOrder = this.currentVisibleOrder(this._stateIndex);
+    this._pages = this.buildStatePages(this._stateIndex);
     if (this._pageOrder.length === 0) {
         console.warn('UnwrittenStory: 书没有任何页面。yamlFile=' + this._yamlFile +
             ' | languages=' + (LanguageManager._language || '?') +
@@ -1163,6 +1390,11 @@ Scene_UnwrittenStory.prototype.create = function() {
         err.bitmap.drawText('请检查 languages/sc/uw_book.yaml 是否存在且语法正确', 0, 32, Graphics.width, 26, 'center');
         this.addChild(err);
         return;
+    }
+    // A3：事件没显式指定起始页时，回到上次读到的页
+    if (this._pageKey === null && savedState && savedState.page &&
+        this._pageOrder.indexOf(savedState.page) >= 0) {
+        this._pageKey = savedState.page;
     }
     if (this._pageKey === null) { this._pageKey = this._pageOrder[0]; }
     var found = this._pageOrder.indexOf(this._pageKey);
@@ -1659,6 +1891,11 @@ Scene_UnwrittenStory.prototype.advanceState = function() {
         book._dirty = true;
     }
     this.updateStoryState();
+    // A3：把书的新进度写进存档数据（状态 id + 当前页）
+    if ($gameUnwrittenStory && $gameUnwrittenStory.setBookState) {
+        var stObj = this._states[this._stateIndex];
+        $gameUnwrittenStory.setBookState(this._yamlFile, stObj ? stObj.id : null, this._pageKey);
+    }
 };
 Scene_UnwrittenStory.prototype.onPageChange = function() {
     var pageKey = this._pageOrder[this._pageIndex];
@@ -1965,6 +2202,16 @@ Scene_UnwrittenStory.prototype.updateEnding = function() {
             for (var i = 0; i < this._pageOrder.length; i++) {
                 var p = this._pages[this._pageOrder[i]];
                 if (p && p.doneSwitchId) { switchId = p.doneSwitchId; break; }
+            }
+        }
+        // A1 修复：自动播放会跳过 confirm 页且把 _pageOrder 重写为不含 confirm 的列表，
+        // 上面的搜索永远找不到挂在 confirm 页上的 doneSwitchId → 完成开关从不置 ON。
+        // 兜底改为搜索全局 _fullOrder（_pages 沿父链合并，包含 confirm 页）。
+        if (!switchId) {
+            var full = (this._fullOrder && this._fullOrder.length > 0) ? this._fullOrder : this._pageOrder;
+            for (var j = 0; j < full.length; j++) {
+                var p2 = this._pages[full[j]];
+                if (p2 && p2.doneSwitchId) { switchId = p2.doneSwitchId; break; }
             }
         }
         if (switchId) { $gameSwitches.setValue(Number(switchId), true); }

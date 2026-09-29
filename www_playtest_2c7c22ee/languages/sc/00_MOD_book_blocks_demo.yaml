@@ -1,0 +1,72 @@
+# ============================================================================
+# 《未竟之事》blocks 四方向演示书 —— 验证 v1.39 多块叠层文字特性
+# 测试方法（F9 调试跳图后，在事件里加插件命令，或临时改 Map515 的某事件）：
+#   UnwrittenStory Open 00_MOD_book_blocks_demo demo
+# 特性：
+#   - 页面用 blocks 定义多个文字块，每块有自己的 origin（书页原图 1140x720 坐标系）
+#     与 direction（ltr/rtl/ttb/btt），按块顺序绘制 → 后块压前块（互相遮挡）
+#   - 块内可以用 **片段** 定义可改句（edits 属于块）
+# ============================================================================
+
+defaults:
+  speed: 3
+  mode: sequential
+  allowExit: false
+
+order:
+  - demo
+  - confirm
+
+states:
+  - id: s0
+    editable: dA
+    pages:
+      demo:
+        write:
+          speed: 3
+        blocks:
+          # ① 中央：可修改句（ltr，金色高亮）
+          - origin: [300, 140]
+            direction: ltr
+            speed: 4
+            text: "**这一页，还可以再改一改。**"
+            edits:
+              - id: dA
+                variants:
+                  - "这一页，必须记住。"
+                  - "这一页，可以忘掉。"
+          # ② 右上：从右往左写（第一夜倒写演出回归）
+          - origin: [980, 260]
+            direction: rtl
+            speed: 5
+            text: "从右往左回来的句子"
+          # ③ 左下：竖排向下
+          - origin: [220, 380]
+            direction: ttb
+            speed: 4
+            text: "竖着往下落的字"
+          # ④ 中下：从下往上生长（第三夜崩坏感）
+          - origin: [640, 560]
+            direction: btt
+            speed: 6
+            text: "从下往上生长的字"
+          # ⑤ 压在③上面的短句（互相遮挡演示）
+          - origin: [170, 470]
+            direction: ltr
+            speed: 2
+            text: "盖在上面的话"
+
+      confirm:
+        confirm: true
+        confirmChoices:
+          - "确定"
+          - "否"
+        readonly: true
+        write:
+          origin: [300, 300]
+          speed: 4
+        text: |
+          演示到此结束。
+
+          确定要合上这本书吗？
+        doneSwitchId: 2007
