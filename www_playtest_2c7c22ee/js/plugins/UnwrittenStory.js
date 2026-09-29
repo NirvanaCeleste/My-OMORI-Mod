@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenStory —— 《未竟之事》
-// Version: 1.40 - 架构阶段一：排版与动画分离（buildLayout 一次算坐标 + 统一渲染器）
+// Version: 1.41 - 阶段一排版/动画分离 + 阶段三事件总线与句子书域隔离
 //=============================================================================
 // Add to Imported List
 var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
@@ -86,7 +86,37 @@ _TDS_.UnwrittenStory.Param.hintSwitchId    = Number(_TDS_.UnwrittenStory.Param['
 _TDS_.UnwrittenStory.Param.autoPlaySpeed   = Number(_TDS_.UnwrittenStory.Param['autoPlaySpeed'] || 2);
 _TDS_.UnwrittenStory.Param.autoPlayPause   = Number(_TDS_.UnwrittenStory.Param['autoPlayPause'] || 15);
 // 版本号单一来源（头部注释与加载日志共用）
-_TDS_.UnwrittenStory.Version = '1.40';
+_TDS_.UnwrittenStory.Version = '1.41';
+
+//=============================================================================
+// ** 事件总线（阶段三）—— 剧情演出的外挂点
+//   _TDS_.UnwrittenStory.on(事件, fn) 订阅；剧情侧零侵入核心：
+//     'modified' {book, sentence, variant}   修改了一个片段
+//     'erased'   {book, sentence}            擦除
+//     'kept'     {book, sentence}            保留
+//     'state'    {book, stateId}             树上推进到新状态
+//     'page'     {book, pageKey}             翻页
+//     'finish'   {book, switchId}            书完成（开关已置ON）
+//=============================================================================
+_TDS_.UnwrittenStory._bus = {};
+_TDS_.UnwrittenStory.on = function(evt, fn) {
+    (this._bus[evt] = this._bus[evt] || []).push(fn);
+    return fn;
+};
+_TDS_.UnwrittenStory.off = function(evt, fn) {
+    var list = this._bus[evt];
+    if (!list) { return; }
+    var i = list.indexOf(fn);
+    if (i >= 0) { list.splice(i, 1); }
+};
+_TDS_.UnwrittenStory.emit = function(evt, data) {
+    var list = this._bus[evt];
+    if (!list) { return; }
+    for (var i = 0; i < list.length; i++) {
+        try { list[i](data || {}); }
+        catch (e) { console.warn('[UnwrittenStory] 事件 ' + evt + ' 订阅者异常: ' + e.message); }
+    }
+};
 
 //=============================================================================
 // ** Game_UnwrittenStory —— 运行时状态
@@ -109,14 +139,23 @@ Game_UnwrittenStory.prototype.setBookState = function(yamlFile, stateId, pageKey
 Game_UnwrittenStory.prototype.bookState = function(yamlFile) {
     return (this._bookState && this._bookState[yamlFile]) || null;
 };
-// 句子状态按 sentenceId 全局存储（edits id 全局唯一）
-Game_UnwrittenStory.prototype.sentenceState = function(pageId, sentenceId) {
-    var key = String(sentenceId);
+// 句子状态按 (书名::句子id) 域隔离（阶段三）；
+// bookId 缺省时回退裸 id，且优先命中旧存档的裸键 → 新旧存档互通
+Game_UnwrittenStory.prototype._skey = function(sentenceId, bookId) {
+    var k = String(sentenceId);
+    return bookId ? String(bookId) + '::' + k : k;
+};
+Game_UnwrittenStory.prototype.sentenceState = function(pageId, sentenceId, bookId) {
+    var key = this._skey(sentenceId, bookId);
+    if (this._pages[key] === undefined && bookId) {
+        var bare = String(sentenceId);
+        if (this._pages[bare] !== undefined) { key = bare; }   // 旧存档兼容
+    }
     if (this._pages[key] === undefined) { this._pages[key] = { variant: -1, erased: false, modified: false }; }
     return this._pages[key];
 };
-Game_UnwrittenStory.prototype.setVariant = function(pageId, sentenceId, index) {
-    var st = this.sentenceState(pageId, sentenceId);
+Game_UnwrittenStory.prototype.setVariant = function(pageId, sentenceId, index, bookId) {
+    var st = this.sentenceState(pageId, sentenceId, bookId);
     st.variant = index;
     st.erased = false;
     st.modified = true;
@@ -126,8 +165,8 @@ Game_UnwrittenStory.prototype.setVariant = function(pageId, sentenceId, index) {
         value: index
     };
 };
-Game_UnwrittenStory.prototype.setErased = function(pageId, sentenceId, flag) {
-    var st = this.sentenceState(pageId, sentenceId);
+Game_UnwrittenStory.prototype.setErased = function(pageId, sentenceId, flag, bookId) {
+    var st = this.sentenceState(pageId, sentenceId, bookId);
     st.erased = flag;
     if (flag) { st.modified = true; }
     else { st.modified = false; st.variant = -1; }
@@ -137,8 +176,8 @@ Game_UnwrittenStory.prototype.setErased = function(pageId, sentenceId, flag) {
         value: null
     };
 };
-Game_UnwrittenStory.prototype.setKeep = function(pageId, sentenceId) {
-    var st = this.sentenceState(pageId, sentenceId);
+Game_UnwrittenStory.prototype.setKeep = function(pageId, sentenceId, bookId) {
+    var st = this.sentenceState(pageId, sentenceId, bookId);
     st.variant = -1;
     st.erased = false;
     st.modified = true;   // 保留 = 已处理，但原文不变
@@ -158,10 +197,10 @@ Game_UnwrittenStory.prototype.pageEditIds = function(page) {
     }
     return ids;
 };
-Game_UnwrittenStory.prototype.pageHasUnmodified = function(pageId, page) {
+Game_UnwrittenStory.prototype.pageHasUnmodified = function(pageId, page, bookId) {
     var ids = this.pageEditIds(page);
     for (var j = 0; j < ids.length; j++) {
-        if (!this.sentenceState(pageId, ids[j]).modified) { return true; }
+        if (!this.sentenceState(pageId, ids[j], bookId).modified) { return true; }
     }
     return false;
 };
@@ -292,6 +331,8 @@ Window_UnwrittenBook.prototype.lineHeight = function() {
     return this.contents.fontSize + 8;
 };
 Window_UnwrittenBook.prototype.setDefaults = function(defaults) { this._defaults = defaults || {}; };
+// 书域（阶段三）：句子状态按 (书名::句子id) 隔离；场景打开书时设置
+Window_UnwrittenBook.prototype.setBookId = function(bookId) { this._bookId = bookId || null; };
 Window_UnwrittenBook.prototype.setSpeed = function(n) {
     if (n !== undefined && Number(n) > 0) {
         this._speed = Number(n);
@@ -636,7 +677,7 @@ Window_UnwrittenBook.prototype.segAt = function(flatIndex) {
 };
 Window_UnwrittenBook.prototype.segState = function(seg) {
     if (!seg.editable || seg.id === null) { return null; }
-    return $gameUnwrittenStory.sentenceState(this._pageKey, seg.id);
+    return $gameUnwrittenStory.sentenceState(this._pageKey, seg.id, this._bookId);
 };
 Window_UnwrittenBook.prototype.segText = function(flatIndex) {
     var seg = this.segAt(flatIndex);
@@ -1358,6 +1399,7 @@ Scene_UnwrittenStory.prototype.create = function() {
     this.createBackground();
     this.createPageImageSprite();
     this.createBookWindow();
+    this._bookWindow.setBookId(this._yamlFile);
     this.createPageBackground();
     this.createPageArrows();
     this.createFooterWindow();
@@ -1784,7 +1826,7 @@ Scene_UnwrittenStory.prototype.canEditCurrentPage = function() {
     if (!book || this._pageIndex !== this._nextEditPageIndex) { return false; }
     var page = this.currentPage();
     if (!page || page.readonly) { return false; }
-    return $gameUnwrittenStory.pageHasUnmodified(this._pageKey, page);
+    return $gameUnwrittenStory.pageHasUnmodified(this._pageKey, page, this._yamlFile);
 };
 Scene_UnwrittenStory.prototype.findMatchingState = function() {
     var lastOp = $gameUnwrittenStory._lastOperation;
@@ -1852,6 +1894,7 @@ Scene_UnwrittenStory.prototype.advanceState = function() {
         var stObj = this._states[this._stateIndex];
         $gameUnwrittenStory.setBookState(this._yamlFile, stObj ? stObj.id : null, this._pageKey);
     }
+    _TDS_.UnwrittenStory.emit('state', { book: this._yamlFile, stateId: (this._states[this._stateIndex] || {}).id });
 };
 Scene_UnwrittenStory.prototype.onPageChange = function() {
     var pageKey = this._pageOrder[this._pageIndex];
@@ -1865,6 +1908,7 @@ Scene_UnwrittenStory.prototype.onPageChange = function() {
     this._rightArrow.visible = this._pageIndex < this._pageOrder.length - 1 ||
         this._bookWindow._subIndex < this._bookWindow._subPages.length - 1;
     this.refreshFooter();
+    _TDS_.UnwrittenStory.emit('page', { book: this._yamlFile, pageKey: pageKey });
 };
 Scene_UnwrittenStory.prototype.flipPage = function(dir, keepWriting) {
     var book = this._bookWindow;
@@ -1986,7 +2030,8 @@ Scene_UnwrittenStory.prototype.onActionOk = function() {
         this._variantWindow.activate();
         this._variantWindow.select(0);
     } else if (action === 'erase') {
-        $gameUnwrittenStory.setErased(this._bookWindow._pageKey, seg.id, true);
+        $gameUnwrittenStory.setErased(this._bookWindow._pageKey, seg.id, true, this._yamlFile);
+        _TDS_.UnwrittenStory.emit('erased', { book: this._yamlFile, sentence: seg.id });
         AudioManager.playSe({ name: 'SE_Mess_Paper', volume: 70, pitch: 100, pan: 0 });
         var book = this._bookWindow;
         book._selectionMode = false;
@@ -1995,7 +2040,8 @@ Scene_UnwrittenStory.prototype.onActionOk = function() {
         this.advanceState();
     } else if (action === 'keep') {
         // 保留：原文不变，标记已处理 → 走 keep 分支
-        $gameUnwrittenStory.setKeep(this._bookWindow._pageKey, seg.id);
+        $gameUnwrittenStory.setKeep(this._bookWindow._pageKey, seg.id, this._yamlFile);
+        _TDS_.UnwrittenStory.emit('kept', { book: this._yamlFile, sentence: seg.id });
         AudioManager.playSe({ name: 'SYS_select', volume: 80, pitch: 110, pan: 0 });
         var book2 = this._bookWindow;
         book2._selectionMode = false;
@@ -2007,7 +2053,8 @@ Scene_UnwrittenStory.prototype.onActionOk = function() {
 Scene_UnwrittenStory.prototype.onVariantOk = function() {
     var flatIndex = this._bookWindow._selectionFlat;
     var seg = this._bookWindow.segAt(flatIndex);
-    $gameUnwrittenStory.setVariant(this._bookWindow._pageKey, seg.id, this._variantWindow.index());
+    $gameUnwrittenStory.setVariant(this._bookWindow._pageKey, seg.id, this._variantWindow.index(), this._yamlFile);
+    _TDS_.UnwrittenStory.emit('modified', { book: this._yamlFile, sentence: seg.id, variant: this._variantWindow.index() });
     AudioManager.playSe({ name: 'SYS_select', volume: 80, pitch: 110, pan: 0 });
     this._variantWindow.deactivate();
     this.removeChild(this._variantWindow);
@@ -2171,6 +2218,7 @@ Scene_UnwrittenStory.prototype.updateEnding = function() {
             }
         }
         if (switchId) { $gameSwitches.setValue(Number(switchId), true); }
+        _TDS_.UnwrittenStory.emit('finish', { book: this._yamlFile, switchId: switchId || 0 });
         this.popScene();
     }
 };
