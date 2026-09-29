@@ -1,0 +1,100 @@
+#==================================================================
+
+#KEL ERRANDS
+
+#==================================================================
+#PIZZA
+#==================================================================
+
+message_0:
+  text: \n<披萨男>你们好，欢迎光临\c[11]吉诺披萨店\c[0]！\!请问需要来点什么？
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel你好呀！我是来取订单的！
+
+message_2:
+  text: \n<披萨男>好的！\!你订的是什么？\!<br>哦……我知道了……\!是想来点……\!披萨吧？\!吧唧吧唧……
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel我妈妈上午打电话订了一个\c[3]英雄三明治\c[0]！\!我来拿一下。
+
+message_4:
+  text: \n<披萨男>噢……\!我知道了……\!就是你们家每次都点三明治……\!不点披萨……
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel可是……\!三明治……\!菜单上确实有啊，不是吗？
+
+message_6:
+  text: \n<披萨男>嗯……\!好吧……\!没错……\!确实是这样……
+
+message_7:
+  text: \n<披萨男>好吧！我去帮你拿过来！
+
+#KEL turns to PLAYER.
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel你知道吗……\!我不记得有没有跟你说过了，我哥的外号“英雄”就是这么来的……
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel你可能会以为有什么很酷的原因，比如他小时候救了只狗狗之类的……\!但不是这样的……\!<br>只是因为他超级喜欢三明治而已！
+
+message_10:
+  text: \n<披萨男>来，这是你们订的\c[3]英雄三明治\c[0]。\!好好享用吧！
+
+#KEL turns to PIZZA MAN.
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel好，谢啦！
+
+#KEL turns to PLAYER.
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel好啦，\n[8]！\!<br>等你准备好就走吧！
+
+#==================================================================
+#BAKERY
+#==================================================================
+
+message_20:
+  text: \n<焙客先生>欢迎光临我们的家庭烘焙坊！请问要来点什么？
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel你好呀！我是来取订单的！
+
+message_22:
+  text: \n<焙客先生>嗯……\!啊，对了！\!你妈妈之前说过你会来取……我还以为你会早点到呢。\!我去把你的订单取来！
+
+#MR. BAKER walks into door and then walks back out.
+
+message_23:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel你知道吗？这家烘焙坊是米凯尔他们家开的。\!<br>应该不太容易看出来吧，毕竟他一直戴着那顶恐怖的黄色假发……
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel感觉他真的很想让自己变得与众不同诶！
+
+message_25:
+  text: \n<焙客先生>给，这就是你们订的东西！\!欢迎下次光临！\!<br>请好好享用。
+
+#message 11
+#message 12
+

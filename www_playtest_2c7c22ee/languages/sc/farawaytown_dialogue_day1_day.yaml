@@ -1,0 +1,455 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+#=========================================================================================
+# DAY 1 - DAY
+#=========================================================================================
+
+# ===================Basil================
+#Examine BASIL's House Door.
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 唔……\!没人应门诶……\kel
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 可能贝瑟尔在洗手间里什么的吧。\kel
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 嗯，那也没关系。我们之后再来找他吧。\kel
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \n[8]，来吧！我们还得去找\c[4]相册\c[0]呢！\kel
+
+#===============ANGEL=====================
+
+#Location: FARAWAY PARK (Cutscene: Charlie & Angel Fight)
+
+message_10:
+  text: \n<安吉尔>师父去了\c[11]遥远广场\c[0]的喷泉。\!<br>他说他要去和女孩子见面……\!<br>然后跟她们约会什么的……
+
+#===============CHARLIE=====================
+
+#Location: FARAWAY PARK (Cutscene: Charlie & Angel Fight)
+
+message_20:
+  text: \n<查理>……
+
+message_21:
+  text: \n<查理>…………
+
+#===============MAVERICK=====================
+
+#Location: Town Plaza
+
+message_30:
+  text: \n<独行侠>我不会告诉你奥布里在哪里的，除非你叫我<br>\Com[2]独行侠！
+
+
+#===============ARTIST=====================
+
+#Location: Artist's house - Agree with me! Quest
+
+message_40:
+  text: \n<画家>唔……\!这可能是我迄今为止画得最好的一幅画了！
+
+#===============SHORT HAIR GIRL=====================
+
+#Location: Town Plaza (Near the fountain)
+
+message_50:
+  text: \n<短发女孩>我刚刚许了个愿，希望有一天我能找到真爱！
+
+#After Cutscene: The Maverick's Loss
+
+message_51:
+  text: \n<短发女孩>哇……\!那个戴金色假发的男孩子好酷哦……\!<br>我希望我和他一样有自信。
+
+
+#===============FASHIONABLE MOM=====================
+
+#Location: Supermarket
+
+message_60:
+  text: \n<时尚的妈妈>我儿子比利真是个注重环保的人。\!他和他朋友经常在镇上到处捡\c[4]垃圾\c[0]。
+
+message_61:
+  text: \n<时尚的妈妈>看到现在有这么多年轻人一心想保护地球环境，真是令人开心！
+
+#===============STRANGE MAN=====================
+
+#Location: Supermarket
+
+message_70:
+  text: \n<奇怪的男人>这片区域里所有的容器都能被回收，然后又能用来制造新的容器，一直一直反复下去……\!<br>真是个优美的概念啊，不是吗？
+
+#===============SCHOOL PRINCIPAL=====================
+
+#Location: BRENT'S HOUSE
+
+message_80:
+  text: \n<校长>干得不错，家教老师……\!想来的话明天再来啊！
+
+#===============OLD BEARDY=====================
+
+#Location: GINO'S PIZZA
+
+message_90:
+  text: \n<白胡子老爷爷>你们好啊，小子们。你们正好撞到我休息了！
+
+message_91:
+  text: \n<白胡子老爷爷>\SINV[2]嘎\{\{哈哈\{哈哈\{哈哈！！\SINV[0]
+
+message_92:
+  text: \n<白胡子老爷爷>我已经想了整整十分钟要吃什么了，我也不知道我到底在纠结个啥……
+
+message_93:
+  text: \n<白胡子老爷爷>反正这儿吃啥都好吃啊！
+
+#===============After completing Medication Quest: Charlie's Mom=====================
+
+#Location: Other street in front of her HOUSE
+
+message_100:
+  text: \n<黄圆髻奶奶>我的小女儿平时都特别关心我的……\!我在想她上哪儿去了……
+
+message_101:
+  text: \n<黄圆髻奶奶>她一直都很内向的，但最近交了不少朋友。\!<br>唉，玩归玩，希望她没有忘了我……
+
+#===============CRIS'S DAD=====================
+
+#Location: Where's the Remote? Couch in Cris's HOUSE
+
+message_110:
+  text: 标准美式男人一直盯着电视屏幕。
+
+message_111:
+  text: \n<标准美式男人>\Com[2]85 号根本门户大开啊！\!\Com[2]那算是什么传球啊？！
+
+#===============CRIS'S MOM=====================
+
+#Location: CRIS'S HOUSE in the kitchen
+
+message_120:
+  text: \n<标准美式母亲>派怎么样，好吃吗？\!<br>为了参加夏季末的县城集市，我正在完善我的食谱哦！
+
+message_121:
+  text: \n<标准美式母亲>到目前为止，我参加的每一年都获得了优胜，希望今年也一样！\!<br>哦嚯嚯！
+
+#===============CURTSEY=====================
+
+#Location: CANDY SHOP
+
+message_130:
+  text: \n<可爱的女孩>欢迎！\!希望我们的\c[3]糖果\c[0]能给你带来笑容！
+
+message_131:
+  text: \n<唐果小姐>\{\com[2]小礼，我不是跟你说过了吗！\!<br>是\sinv[1]\“微笑\”\sinv[0]\才对吧！
+
+message_132:
+  text: \n<唐果小姐>\{\{\quake[1]\sinv[1]\“微\.\.\.笑！\”\sinv[0]
+
+message_133:
+  text: \n<可爱的女孩>好、好、好的，女士！
+
+message_134:
+  text: \n<可爱的女孩>欢迎！\!希望我们的\c[3]糖果\c[0]能让你脸上浮现出微笑！
+
+
+#===============Daphne & Bowen=====================
+
+#Location: Supermarket, working at the Bakery
+
+message_140:
+  text: \n<双胞胎其一>\SINV[1]新鲜的面包……\SINV[0]
+
+message_141:
+  text: \n<双胞胎其二>\SINV[1]新鲜的面包……\SINV[0]
+
+message_142:
+  text: \n<双胞胎>\SINV[1]您想来点新鲜的面包吗？\SINV[0]
+
+#===============Gino=====================
+
+#Location: Gino's Pizza: Sitting at table
+
+message_150:
+  text: \n<眼镜男>哈喽，哈喽！\!我叫吉诺！
+
+message_151:
+  text: \n<眼镜男>我知道你们在想什么……不，这不是我的店……\!但每年我过生日，他们都会送我一\c[3]整张披萨\c[0]，所以还挺好的。
+
+#===============Hector (Dog)=====================
+
+#Location: Player's Street
+
+message_160:
+  text: \n<赫克托尔>\quake[1]\Com[2]汪！\{汪！\{汪！\}\}汪！\! \{汪！\}汪！\}汪！\quake[0]<br>\!（我是个好孩子哟！）
+
+#===============JOCK=====================
+
+#Location: FARAWAY PARK, running around the basketball court
+
+message_170:
+  text: \n<体育生>呼……\!呼……\!噢，嘿！\!你好啊！\!呼……\!<br>你在这里做什么，凯？<br>你原来住在小镇这头的吗？
+
+message_171:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel哦，哇！没想到会在这里见到你啊，阿杰！
+
+message_172:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel\n[8]，这是阿杰，是我高中足球队的队长！\!哎，我都不知道你还会打篮球呢！
+
+message_173:
+  text: \n<体育生>哈……\!呼……\!我这也没有像踢足球那么专业，就是随便玩玩，<br>打发下时间而已。\!最多算是个业余爱好吧。
+
+message_174:
+  text: \n<体育生>你今年想去篮球队来着，是吧，凯？\!兴许你还能教我两招呢！
+
+message_175:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel当然好啊！感觉会很好玩……
+
+message_176:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel不过……我们还是改天再约吧？\!<br>我的这位发小 \n[8] 再过几天就要搬走了，所以我打算今天一整天都要好好陪陪他。
+
+message_177:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel不过我过段时间肯定会来找你的！
+
+message_178:
+  text: \n<体育生>行啊，那我们下周约个时间吧。\!<br>老时间，老地点，怎么样？
+
+message_179:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel行呀！到时候见！
+
+#After talking again
+
+message_180:
+  text: \n<体育生>呼……\!呼……\!呼……\!呼……
+
+
+#===============JESSE'S DAD=====================
+
+#Location: FARAWAY PARK, sweeping the ground
+
+message_190:
+  text: \n<抬头纹老爷爷>嘿，伙计们！见到你们真好！\!<br>我嘛，就是在这扫扫地，捡捡\c[4]垃圾\c[0]，擦擦窗子什么的……\!<br>反正……\!就还是平常干的那些活儿。
+
+message_191:
+  text: \n<抬头纹老爷爷>唉……\!要打扫的地方太多了……\!一个人根本干不完啊！
+
+
+#===============JESSE'S DAD=====================
+
+#Location: Joy's House - Tutoring Joy Quest
+
+#After completing Tutoting joy quest
+message_200:
+  text: \n<小女孩>爸爸对我超级严格的，因为我哥哥迈克尔不去学校了，<br>他想要当街头吉他手……
+
+message_201:
+  text: \n<小女孩>他有时候会在\c[11]遥远广场\c[0]弹吉他哦！\!<br>他弹得超好的！
+
+#===============JESSE'S DAD=====================
+
+#Location: Joy's Dad - Tutoring Joy Quest
+
+message_210:
+  text: \n<粗眉毛>太棒了！\!你应该考虑当全职家教！\!<br>请务必明天再来！
+
+
+#===============KAREN=====================
+
+#Location: Hardware store: After Picking up paint quest
+
+message_220:
+  text: \n<双马尾女生>你们有空的话就来我家做做客吧！
+
+message_221:
+  text: \n<双马尾女生>我们想在两天后开一场乔迁聚会。\!要是你们能来的话就再好不过啦！
+
+#===============KATIE=====================
+
+#Location: Hobbeez - Pet Rock Fight
+
+message_230:
+  text: \n<有趣的女孩>这个地方有点小，但里面全是稀有的古董！\!<br>人们甚至会从市里一路赶来这里淘货！
+
+#===============KIM AND VANCE'S DAD =====================
+
+#Location: Hardware Store- Fix Pipe Quest 1
+
+#After hardware store- fix pipe quest 1, kim and vance's dad is in his house next to the pipe
+message_240:
+  text: \n<粗犷的男人>嘟囔、嘟囔……\!水管又坏了……
+
+message_241:
+  text: \n<粗犷的男人>可恶……\!我看我还是明天再试试吧……
+
+
+#===============KIM AND VANCE'S MOM =====================
+
+#Location: Other Street - Missing Shears Quest
+
+#Kim's Mom moves to Kim's Mom's house living room after Missing Shears Quest. Snipping Bonsai.
+
+message_250:
+  text: \SINV[2]剪、剪……\!剪、剪、剪……\SINV[0]
+
+message_251:
+  text: \n<戴红眼镜的女士>啊，你们两个好啊！\!没想到你们这么快就来了！
+
+message_252:
+  text: \n<戴红眼镜的女士>瞧！\!这些盆栽都是我种的！我平时就喜欢养盆栽，\!<br>自己种点花花草草……\!还挺解压的。
+
+message_253:
+  text: \n<戴红眼镜的女士>不过我等下就要给我的两个孩子——金和万斯准备今天的晚餐了。\!<br>他们最好不要又给我晚回家……\!不然的话……
+
+message_254:
+  text: \SINV[2]剪、\{剪、剪、\{剪、剪、\{剪！！
+
+#===============LUCAS (DOG) =====================
+
+#Location: Artist's house
+
+message_260:
+  text: \n<乖狗狗>\quake[1]\{汪！\}汪！\!\{汪！\{汪！\}汪！\}汪！
+
+message_261:
+  text: \n<画家>\Com[2]\{卢卡斯，别叫了！
+
+
+#===============MINCY =====================
+
+#Location: FARAWAY PARK - Company Quest 1
+
+message_270:
+  text: 她正在勤奋地画画。
+
+#===============PRETTY BOY=====================
+
+#Location: FARAWAY PARK - Pet Rock Fight
+
+message_280:
+  text: \n<漂亮男孩>我最近生活压力挺大的。不过在这儿看着路人走来走去，倒是能让我想清楚不少事情。
+
+message_281:
+  text: \n<漂亮男孩>说不定我来着来着就习惯了，以后会经常来这个公园走一走……\!<br>唔，生活果然还是要偶尔停下脚步，欣赏沿途的风景啊！
+
+message_282:
+  text: \n<漂亮男孩>哎呀，你好像受伤了！\!来，这是\c[5]创可贴\c[0]。\!要是不够的话，你可以去\c[11]异家超市\c[0]的\c[11]药店\c[0]看看，那里有大把的创可贴卖。
+
+message_283:
+  text: 你获得了\c[5]创可贴\c[0]。
+#===============POLLY=====================
+
+#Location: Pharmacy
+
+message_290:
+  text: \n<？？？>唉……\!我什么都做不了吗？
+
+#===============POLLY=====================
+
+#Location: FARAWAY PARK
+
+message_300:
+  text: \n<牧师>我在去\c[11]教堂\c[0]的路上。<br>不过对我来说，在布道之前先散散步，<br>已经成了一种习惯了。
+
+message_301:
+  text: \n<牧师>我从小就有怯场的大毛病，散散步看看风景就能让我放松一点！
+
+
+#===============RECYCULTISTS=====================
+
+#Location: PARK
+
+message_310:
+  text: \n<回收教徒>我们是回收教徒，圣垃圾桶的门徒！
+
+message_311:
+  text: \n<回收教徒>无人不曾乱扔垃圾，因此人类必须接受自己是\c[4]垃圾\c[0]的事实！
+
+message_312:
+  text: \n<回收教徒>\Com[2]\{节能减用，重复使用，回收利用！！
+
+
+#===============SARAH=====================
+
+#Location: Supermarket in grocery section
+
+message_320:
+  text: \n<马尾女孩>我妈和我是来\c[11]异家超市\c[0]买健康食品的，因为她昨天把我们家里所有的零食都扔掉了……
+
+message_321:
+  text: \n<马尾女孩>我觉得她最近在健康饮食方面有点走火入魔了，<br>就因为我爸最近只吃垃圾食品……\!为什么不能两种都吃呢？
+
+
+#===============SARAHs MOM=====================
+
+#Location: Supermarket in grocery section
+
+
+message_323:
+  text: \n<马尾女士>我老公就知道吃垃圾食品！\!我得让他吃得健康点。
+
+#===============SARAHs DAD=====================
+
+#Location: Gino's Pizza eating Pizza
+
+message_330:
+  text: \n<笨拙的男人>我老婆一直跟我说我越来越肥了，但我们住得离\c[11]吉诺披萨店\c[0]那么近，<br>那里的东西又那么好吃，我把持不住啊！
+
+message_331:
+  text: \n<笨拙的男人>噢……\!嗯……\!披萨……
+
+#===============SEAN=====================
+
+#Location: Hardware Store (picking paint quest)
+#After completing Picking Paint Quest:
+
+message_340:
+  text: \n<格子衫男生>太谢谢你的帮助了！\!<br>我们原本都住在这一带，但我们最近搬到新家，开始同居了……
+
+message_341:
+  text: \n<格子衫男生>我们就住在靠近\c[11]教堂\c[0]的那条街上。
+
+
+#===============TUCKER=====================
+
+#Location: Charlie's Basement - Pet Rock Fight
+
+message_350:
+  text: \n<怪异的男子>你好，人类！\!请叫我图克……
+
+message_400:
+  text: 一个不起眼的蜂窝。\!你想惊扰它吗？
+
+#BEES DEATH REVIVE
+
+message_420:
+  text: \n<药剂师>孩子们，你们没事吧？\!<br>有几个过路的人发现你们俩被黄蜂蛰得浑身是包，<br>昏倒在地上，所以就把你们送到我这儿来了。
+
+message_421:
+  text: \n<药剂师>我已经帮你们处理过了……\!嗯……\!<br>幸好你们俩都没有过敏……那应该就没事了！
+
+message_422:
+  text: \n<药剂师>不过你们以后可别再去捅蜂窝玩了。\!黄蜂蛰起人来可不是闹着玩的！
+

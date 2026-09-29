@@ -1,0 +1,344 @@
+# =========================================================================================
+# Cutscene: Polly's Welcome
+# =========================================================================================
+
+#Trigger: Examine Basil's House Door.
+
+message_0:
+  text: 啊……谢天谢地，你们回来了……\n<波莉>
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: 发生什么事了？\her
+
+message_2:
+  text: 是这样的……\!贝瑟尔回家了，但是……\! <br>他完全不肯跟我说话。\n<波莉>
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 怎么会……\!有什么我们可以帮上忙的吗？\her
+
+message_4:
+  text: 我也说不好。\!<br>贝瑟尔回家之后，就直接把自己锁在了房间里。\n<波莉>
+
+message_5:
+  text: 他一句话都没跟我说过。\!<br>也许他需要自己静一静……\!但是……\!我还是……\!<br>我还是很担心他。\n<波莉>
+
+message_6:
+  text: 你们能和他谈谈吗？\n<波莉>
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 没问题！\!包在我们身上。\kel
+
+message_8:
+  text: 太感谢了，大家……\!你们随时可以进来。\n<波莉>
+
+# =========================================================================================
+# Cutscene: Basil Won't Leave His Room
+# =========================================================================================
+
+#POLLY walks up the stairs.
+#Trigger: PLAYER goes up the stairs and examines BASIL's Door.
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: 嘿，贝瑟尔，我是英雄呀。\!<br>凯，奥布里，还有 \n[8] 都在这。\! <br>我们来探望你了！\her
+
+message_21:
+  text: ……
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 有什么我们可以帮忙的吗？\her
+
+message_23:
+  text: ……\| …… \|……
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: 我们只是想让你知道，我们就在这里。\!<br>有什么需要尽管跟我们说，好吗？\her
+
+message_25:
+  text: ……\| …… \|…… \|…… \|……
+
+message_26:
+  text: 唉……\!也许他只是想一个人静静……\!<br>真抱歉，给你们添麻烦了。\n<波莉>
+
+message_27:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel没什么，波莉……我们都有过这样的时刻嘛。\!<br>如果说过去几天我学到了什么……那就是朋友之间应该互相帮助！
+
+#AUBREY goes to the door.
+
+message_28:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 嘿，贝瑟尔……\!我是奥布里。\aub
+
+message_29:
+  text: …… …… ……
+
+message_30:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: 我只是想……<br>\!道个歉。\!我不该那样对待你的。\aub
+
+message_31:
+  text: …… …… ……
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 你能说点什么吗？\!<br>我们只是想确认你没事。\aub
+
+message_33:
+  text: ……\| …… \|…… \|…… \|……
+
+message_34:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: ……\aub
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 我觉得我们应该在这里陪着他。\aub
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 35
+  text: 是啊……\!那个时候，明明我们最需要的就是彼此的陪伴，大家却选择了分道扬镳。\!<br>这一次……\!我们不能再犯相同的错误了。\her
+
+#HERO turns to POLLY.
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 波莉……\!今晚我们可以在这里过夜吗？\her
+
+message_38:
+  text: 噢噢……\!你们真好……\!<br>你们当然可以留下来过夜了！\n<波莉>
+
+message_39:
+  text: 我相信贝瑟尔也会很开心的……\!<br>我知道你们对他来说意义非凡。\n<波莉>
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{\sinv[1]太棒了！\!沙发归我了！！\kel
+
+message_41:
+  text: 啊，早知道我应该好好准备下的！\n<波莉>
+
+message_42:
+  text: 那么，既然凯要睡沙发，我就给其他人准备被褥吧！\!<br>我们家里还有挺多套的。\n<波莉>
+
+message_43:
+  text: 我现在就去拿。\n<波莉>
+
+#POLLY walks off.
+#AUBREY turns to KEL.
+
+message_44:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: 哼……\!凭什么沙发归你？\aub
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \sinv[1]哈，傻了吧！\sinv[0]\!这叫先到先得！\kel
+
+#AUBREY hits KEL.
+
+message_46:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 喂，很痛耶！\kel
+
+# =========================================================================================
+# Cutscene: Stay for Basil
+# =========================================================================================
+
+#Trigger: Examine sleeping quilt.
+
+message_70:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: 嘿，\n[8]……\!<br>我知道，你可能没有预料到在镇上的最后一晚会这样度过。\her
+
+message_71:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 我只是想告诉你，就算你明天就要搬走了……\!我们也永远会是朋友。\her
+
+message_72:
+  faceset: MainCharacter_Basil
+  faceindex: 44
+  text: 呃……\!你说话好肉麻，英雄。\aub
+
+message_73:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 嘿！我只是坦诚地说出了自己的想法而已！\her
+
+message_74:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 哈哈……\!英雄一直都是个感情细腻的人呀……\!<br>就像你一样，奥布里。\kel
+
+message_75:
+  faceset: MainCharacter_Basil
+  faceindex: 47
+  text: \{\Com[2]\quake[1]你——你说什么？！\aub
+
+message_76:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 哈哈……\!这样和大家聚在一起感觉真好。\!<br>我之前一直都忙于学业。<br>甚至都没时间交朋友了。\her
+
+message_77:
+  faceset: MainCharacter_Basil
+  faceindex: 44
+  text: ……\aub
+
+message_78:
+  faceset: MainCharacter_Basil
+  faceindex: 46
+  text: 嗯……\!至少你还有我们……\!是吧。\aub
+
+message_79:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 看……我刚刚说什么来着！\!情感细腻的奥布里！\kel
+
+message_80:
+  faceset: MainCharacter_Basil
+  faceindex: 44
+  text: 哼……\aub
+
+message_81:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 13
+  text: 不过……她也没说错。\!<br>我们永远是朋友。\!<br>就像我知道，玛里其实一直都陪着我们一样。\kel
+
+message_82:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: ……\her
+
+message_83:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: 话说……\n[8]，真希望你明天走之前，我们能见到贝瑟尔。\her
+
+message_84:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 要是你们能好好道个别就好了……\her
+
+message_85:
+  faceset: MainCharacter_Basil
+  faceindex: 46
+  text: 对啊……\aub
+
+message_86:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 13
+  text: \sinv[1]哈欠……\!啊……我都开始困了。\kel
+
+message_87:
+  text: ……\|……\|……\kel
+
+message_88:
+  text: \sinv[1]呼噜……\kel
+
+#AUBREY is surprised.
+
+message_89:
+  faceset: MainCharacter_Basil
+  faceindex: 47
+  text: 什么……\!他这就睡着了？！\aub
+
+message_90:
+  text: \sinv[1]呼噜……\|呼噜……\|呼噜……\|呼噜……\kel
+
+message_91:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 是啊，凯就是这样的……\!<br>这一点上，他从来没变过呢。\her
+
+#HERO turns to PLAYER.
+
+message_92:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 对了，\n[8]……\!真的很感谢你。\!你都在家里待了这么久，突然把你叫出来，对你来说一定很不容易吧……<br>但你还是出来陪我们了，所以谢谢你。\her
+
+message_93:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 好了！明天可是个大日子！\!希望你不要因为搬家的事太担心……\!<br>别忘了，还有我们呢！\her
+
+message_94:
+  faceset: MainCharacter_Basil
+  faceindex: 14
+  text: 生活总会变好的。\!你只需要积极乐观一点。\her
+
+message_95:
+  faceset: MainCharacter_Basil
+  faceindex: 44
+  text: 嗯……\!生活总会变好……吗……\aub
+
+message_96:
+  faceset: MainCharacter_Basil
+  faceindex: 46
+  text: 嘿，\n[8]……\!在你搬走之后……\!<br>也许你可以……\!时不时回来看看我们之类的。\aub
+
+message_97:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 对呀！我们可以一起出去吃汉堡！\!或者一起去公园……\!或者海滩……\!<br>又或者，只是坐在家里看电视……\!对吧？我们做什么都行！\her
+
+message_98:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 0
+  text: 哈……\!听上去真不错。\!<br>能让我的那些新朋友也一起来吗？\aub
+
+message_99:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 当然可以，奥布里！随时欢迎！\!<br>人越多肯定越开心嘛。\her
+
+message_100:
+  text: \sinv[1]呼噜……\|好了，大伙儿……\|<br>该睡觉了……\kel
+
+message_101:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 0
+  text: 哈哈……\!好啦，好啦……\aub
+
+message_102:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 0
+  text: 大家晚安……\aub
+
+message_103:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 晚安，凯。\!晚安，奥布里。\!晚安，\n[8]。\!<br>明天早上见……\her
+
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+#Trigger: Interact with sleeping party.
+

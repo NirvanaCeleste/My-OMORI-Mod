@@ -1,0 +1,508 @@
+# =========================================================
+# DOUGH DUNGEON (DOOM TOMB)
+# =========================================================
+
+#Upon entry: Crypt is dark
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel这里真的好黑啊……
+
+#Red eyes surround party
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her等等……\!这里可不只有我们几个！
+
+#One bread walks forward
+
+message_2:
+  text: \who\Quake[1]嘶……\Quake[0]
+
+#Rest of bread walks forward
+
+message_3:
+  text: \who\Quake[1]嘶……\|嘶……\|嘶……\|嘶……\Quake[0]
+
+#Placeholder:
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel嘿！它们正在向我们嘶嘶叫呢！\!怎么能这样对我们！\!<br>\Com[2]给它们点颜色看看！
+
+#AFTERBATTLE
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呼哧……\!呼哧……\!行了，刚刚那应该是最后一只了。
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel天啊……这里怎么有这么多的面包？\!<br>看来有些人在烤面包时没有“烤”虑清楚……
+
+
+#After examining DO NOT TOUCH big bread
+
+message_53:
+  text: \who\sinv[1]哦哦哦哦哦哦……\sinv[0]
+
+#*Small shaking*
+
+message_54:
+  text: \who\sinv[1]噢噢噢噢噢噢噢噢噢噢噢噢……\sinv[0]
+
+#*More shaking*
+
+message_55:
+  text: \who\sinv[1]噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢！！\sinv[0]
+
+#*The toast begins floating*
+#*More shaking and screen starts to fade out*
+#*falling noises*
+
+
+#Upon falling into Doom TOMB
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\Com[2]\sinv[1]\{呸呸呸呸呸呸呸呸！！\!\}<br>呃呃呃呃呃……\!\sinv[0]这些都是什么啊？
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her这……\!这是中筋面粉！
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\Com[2]\sinv[2]\{阿——阿——阿嚏！！\sinv[0]\}\!<br>呃……\!我的鼻子好痒……
+
+#--------------
+#ACTUAL MOLE DIALOGUE + SAFE
+
+message_200:
+  text: \n<真正的鼹鼠>不许动，你们这些坏家伙们！\!难道你们就看不懂墙上的警告吗？\!<br>你们真该为自己感到羞耻！
+
+message_201:
+  text: \n<真正的鼹鼠>我和我的家族啊，世世代代都守护着这个宝藏地洞……\!<br>可守护起来一点也不容易，正因为有你们这样的人三天两头地闯进来！
+
+message_202:
+  text: \n<真正的鼹鼠>或许我已经年老体衰……视力也不怎么好……<br>家族里也只剩我一只鼹鼠了……<br><br>但我把我的一生都奉献给了这里，我赶走的入侵者要多少有多少！<br>我可不怕你们！
+
+message_203:
+  text: \n<真正的鼹鼠>我甚至记不清我在守护些什么，我估计就是那个藏在房间左边墙角里，看上去就很重要的保险箱里的东西吧！
+
+message_204:
+  text: \n<真正的鼹鼠>好了好了，请你们乖乖离开。\!身为一只真正的鼹鼠，我可是能 3 秒就从这里挖出去！
+
+message_205:
+  text: \n<真正的鼹鼠>这里真没有啥特别的。\!我可以帮你们个忙，要不要把你们全都送出去？
+
+#[YES/NO]
+
+#[YES]
+message_206:
+  text: \n<真正的鼹鼠>呼！好嘞！\!别眨眼啊！看我快如闪电，瞬间把你们送回地面！
+
+#[NO]
+message_207:
+  text: \n<真正的鼹鼠>你想留在这里玩玩？\!行吧，既然你这么坚持！
+
+
+message_208:
+  text: \n<真正的鼹鼠>你们可以四处转转……\!这个召唤魔法阵看上去有点久，<br>但它还是能用的……\!你们可别整什么幺蛾子……\!不然有你们好看的！
+
+#Enter after leaving:
+message_209:
+  text: \n<真正的鼹鼠>嘿，伙计！你们又回来这个黑咕隆咚的地方啦？\!<br>让我数数，这都过了多少年了？
+
+#Talk to him again:
+message_210:
+  text: \n<真正的鼹鼠>你说你想回到地面上啦？\!<br>先告诉你，在台子上的那些东西你们可不能拿出去！\!明白了吗，哥们？
+#[YES/NO]
+
+#[YES]
+message_211:
+  text: \n<真正的鼹鼠>\{\{\sinv[1]噫噫噫——哈！！！
+
+message_230:
+  text: \n<真正的鼹鼠>看我快如闪电，瞬间把你们送回地面！
+
+#[NO]
+#Nothing
+
+#To unveil the safe combination, you must empty the table as the safe combination is on it, meaning you must summon everything.
+#Use the combo to open up the safe.
+
+#Examine safe for the first time:
+message_212:
+  text: \n<真正的鼹鼠>\com[2]你们可别对那个保险箱动歪心思！\!<br>这堆东西旁边可绝对没有什么保险箱密码！
+
+#Talk to the safe:
+message_213:
+  text: 保险箱的密码是什么？
+
+message_217:
+  text: 然后呢？
+
+#Multiple choice with 4 random numbers each.
+#Correct answer combo:
+#2
+#2
+#3
+#1
+#9
+#9
+#1
+
+#The safe contains RECIPE FOR DISASTER. (Item #246)
+#Get Message is in XX_MELON
+#The screen will fade out and fade in to show the image, then fade back.
+#You can also view it through inventory.
+
+
+#The recipe requires you to sacrifice ACTUAL MOLE.
+
+#Talk to the Mole with RECIPE FOR DISASTER:
+message_214:
+  text: 你想把\c[4]真正的鼹鼠\c[0]捡起来吗？\!<br>这么做可能没有回头路……
+
+message_215:
+  text: \n<真正的鼹鼠>\quake[1]\{\{喂喂喂，你想干嘛？！？！
+
+message_216:
+  text: 你把\c[4]真正的鼹鼠\c[0]捡了起来。
+#(Note: Once you pick up the ACTUAL MOLE, you won't be able to leave.)
+#ACTUAL MOLE is Item #248
+
+#Talk to the summoning circle. (XX_MELON.message_79)
+
+#After you sacrifice the ACTUAL MOLE, the map starts rumbling, the screen begins shaking and turning black.
+
+#You and your party will spawn to the top of this map. The boulder will appear and start chasing you down.
+
+#If you die here, it'll play the funeral song like you died.
+#Then you'll respawn at the top of the boulder map infinitely.
+
+#If you fall “survive” and fall through the hole at the bottom, the screen will turn black, then there will be a falling noise and then a crash signifying you hit the ground. Then it'll play the funeral song like you died. (Either way, you “die.”)
+
+#Instead of GAME OVER, you find yourself in the left pantry with 3 TOASTS around you (your party members).
+
+#OMORI pops out from the middle of the flour pile, covered in flour.
+
+#Orange = party members Green = Life Jam watermelons
+
+#You must gather the LIFE JAM around the room and use the LIFE JAM on the TOASTS to revive them.
+#After you revive each member, they join your party.
+
+
+
+message_220:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aubOMORI！你救了我！
+
+#*AUBREY twirl*
+
+message_221:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub谢谢你……我都以为要永远变成吐司了！
+
+#AUBREY joins your party.
+
+#KEL looks around
+
+message_222:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\quake[1]\com[2]\{啊啊啊！！我在哪？！
+
+#*KEL jumps*
+
+message_223:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel哦，嘿，大伙！我错过什么了？
+
+#KEL joins your party.
+
+message_224:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呃……
+
+message_225:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub欢迎回来，英雄！你还好吗？
+
+message_226:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her我感觉……\!头好晕……
+
+message_227:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]呜、呜哇！\!等等，我们这是在哪儿？
+
+message_228:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel不知道啊……\!或许被丢弃的吐司都被送到了这里……
+
+message_229:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her这，我们现在可不是吐司了呀！\!我们赶紧找条路出去吧！
+
+
+#Walk to the top of the staircase and Biscuit and Doughie will challenge you.
+#Their dialogue was edited in dreamworld_extras_doomtomb.yaml. (message 63 - 110)
+#You can win or lose to them and it'll produce the same result except for a few lines of text.
+#Note: Maybe ingredients on the table should be gone after you defeat them.
+
+#After you fight them, Biscuit and Doughie leave using the portal above them.
+
+#When party uses portal, they pop out of the sand in toast graveyard one by one like zombies.  Then they align into party formation.
+
+#-----------
+#After entering BISCUIT and DOUGHIE's lair:
+message_63:
+  text: \n<小面团>我们生来就是为了做面包，日复一日，年复一年……\!<br>\sinv[1]新鲜的面包……\|新鲜的面包……\|新鲜的面包……\sinv[0]
+
+message_64:
+  text: \n<小面团>这种生活真是艰苦……而且我们也得不到任何回报……<br>但这就是我们的一切了……\!<Br>我们必须得心存感激，对吧，小饼干？
+
+message_65:
+  text: \n<小饼干>\sinv[1]噢噢噢……\sinv[0]
+
+message_66:
+  text: \n<小面团>说的没错，哥哥……\!我们的生活一直如此……\!<br>被困在这无穷无尽的面包循环中。
+
+message_67:
+  text: \n<小饼干>\sinv[1]噢噢噢噢噢噢……\sinv[0]
+
+message_68:
+  text: \n<小面团>\sinv[1]噢噢噢\{噢噢噢\{噢噢噢噢……\sinv[0]
+
+message_69:
+  text: \n<小饼干和小面团>\sinv[1]噢\{噢噢\{噢噢噢\{噢噢噢……\sinv[0]
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel原来那些哀嚎声都是从这里传来的！
+
+message_71:
+  text: \n<小面团>\Com[2]啊！\!这面包……\!它说话了！\!<br>我就知道这些面包会化为厉鬼来纠缠我们的……
+
+message_72:
+  text: \n<小面团>来吧，小饼干！<br>我们必须要先发制人，除掉它们！
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel等等……我们可不是——
+
+message_74:
+  text: \n<小饼干>\sinv[1]噢噢噢噢噢噢！\sinv[0]
+
+message_75:
+  text: \n<小面团>\sinv[1]噢噢噢\{噢噢噢\{噢噢噢噢！！\sinv[0]
+
+message_76:
+  text: \n<小饼干和小面团>\sinv[1]噢\{噢噢\{噢噢噢\{噢噢噢……\sinv[0]
+
+#After fighting BISCUIT and DOUGHIE and WINNING:
+
+message_78:
+  text: |
+    \n<小面团>呼哧……\!呼哧……\!我们已经没有活力了……\!<br>看起来……\|这里就是我们的葬身之地了，小饼干……
+
+
+message_79:
+  text: \n<小饼干>\sinv[1]噢噢……\sinv[0]
+
+#then continue to after win/lose text (message 85+)
+
+#After fighting BISCUIT and DOUGHIE and LOSING:
+#party members are lying on the floor
+
+#biscuit and doughie look at each other
+
+message_80:
+  text: \n<小面团>\{\sinv[1]好耶！我们赢了！！
+
+message_81:
+  text: \n<小饼干>\sinv[1]噢噢！\sinv[0]
+
+#party members get up one by one
+
+message_82:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 嘿……\!大家都还好吗？\her
+
+message_83:
+  text: \n<小面团>哥哥！\!这些活面包又站起来了！
+
+#DOUGHIE looks around
+message_84:
+  text: \n<小面团>但我们已经没有别的食材了……\!我们或许要葬身于此了，小饼干……
+
+message_85:
+  text: \n<小饼干>\sinv[1]噢噢噢……\sinv[0]
+
+#After win/lose text always continues to this same part:
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\Com[2]等等！\!我们不是面包……\!我们只是像你们一样的小孩子！
+
+message_87:
+  text: \n<小面团>你们……\!你们不是来毁灭我们的吗？
+
+message_88:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub当然不是啦！\!我们不会无端攻击别人的！
+
+message_89:
+  text: \n<小面团>听到了吗，小饼干？\!我们得救了！\! <br>现在该回去烤面包了……\!<br>\sinv[1]新鲜面包……\|新鲜面包……\|新鲜面包……\sinv[0]
+
+message_90:
+  text: \n<小饼干>\sinv[1]噢噢……\sinv[0]
+
+#they bake for a while
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嘿……那个……\!你们在这个地方烤面包多久了？\!<br>你们难道不想出去呼吸新鲜空气吗？
+
+message_92:
+  text: \n<小面团>\sinv[1]噢噢……\sinv[0]\!我们做不到啊……\!<br>从宇宙形成开始，我们就被困在这里了……
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub哇哦……听上去是很长一段时间耶。\!我觉得你们俩都应该放个假！
+
+message_94:
+  text: \n<小面团>\Com[2]什么？这也太荒谬了！\!<br>如果我们不烤面包，那我们的人生还有什么意义？
+
+message_95:
+  text: \n<小饼干>\sinv[1]噢噢？\sinv[0]
+
+message_96:
+  text: \n<小面团>如果我们离开这个烘培坊……我们又能做什么呢？\!<br>这是我们唯一知晓的生活方式啊……
+
+#pause
+
+message_97:
+  text: \n<小面团>话虽如此……\!我这病态的好奇心始终折磨着我……
+
+message_98:
+  text: \n<小面团>这上面的传送门可以把我们送出这个地方。
+
+message_99:
+  text: \n<小面团>我们为了履行面包召唤，已经无数次用传送门把面包送出去，但我们还没有亲眼见过传送门的另一边……
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哈，但我们见过啊！\!我告诉你们……外面的世界广阔又精彩！\!你们是时候去尝试一些新鲜事物了！
+
+#[Doughie and BISCUIT face each other]
+
+message_101:
+  text: \n<小面团>嗯嗯嗯……\!真吸引人……
+
+#face each other
+
+message_102:
+  text: \n<小面团>怎么样？你觉得呢，小饼干？
+
+message_103:
+  text: \n<小饼干>\sinv[1]噢噢……
+
+message_104:
+  text: |
+    \n<小面团>\}嗯嗯嗯……\|我在听……\|嗯嗯……\|没错……\|但是……\|啊……\|你说的对……
+
+
+#face party
+message_105:
+  text: \n<小面团>好吧，我们改变主意了……\!<br>我们要离开这里……\!这地方烂透了！
+
+message_106:
+  text: \n<小饼干>\sinv[1]噢噢！\sinv[0]
+
+#face each other
+
+message_107:
+  text: \n<小面团>小饼干……\!这么多年来，我们一直对使用传送门心怀恐惧……
+
+message_108:
+  text: \n<小面团>看来，是时候作出改变了……
+
+#walk to portal
+
+message_109:
+  text: \n<小面团>来吧，哥哥！\!<br>\Com[2]让我们感受自出生以来第一次自由的滋味吧！
+
+message_110:
+  text: \n<小饼干和小面团>\sinv[1]噢噢\{噢噢\{噢噢噢\{噢噢噢！！\sinv[0]
+
+#[BISCUIT & DOUGHIE go into the portal]
+
+message_500:
+  text: 你对奥布里使用了\c[3]生命果酱\c[0]。
+
+message_501:
+  text: 你对凯使用了\c[3]生命果酱\c[0]。
+
+message_502:
+  text: 你对英雄使用了\c[3]生命果酱\c[0]。
+
+message_503:
+  text: 奥布里……\!但已化为吐司。
+
+message_504:
+  text: 凯……\!但已化为吐司。
+
+message_505:
+  text: 英雄……\!但已化为吐司。
+
+#GHOST Mole
+
+message_510:
+  text: \n<真正的幽灵>\com[2]是你们！\!我可不会忘了你们对我做过的事情！\!不管怎样，变成了幽灵可不代表我不能挖一条通道出去。
+
+message_511:
+  text: \n<真正的幽灵>你们想不想回到地面去？\!先告诉你，台子上的东西你都不能拿出去。
+
+message_512:
+  text: \n<真正的幽灵>好吧……\!你们可别整什么幺蛾子……\!不然有你们好看的！
+
+message_513:
+  text: \n<真正的幽灵>\com[2]看我快如闪电，瞬间把你们送回地面！
+
+message_515:
+  text: 金字塔大门需要\c[4]金字塔钥匙\c[0]来开启。
+
+message_517:
+  text: 献祭的完美地点。
+
+message_518:
+  text:
+

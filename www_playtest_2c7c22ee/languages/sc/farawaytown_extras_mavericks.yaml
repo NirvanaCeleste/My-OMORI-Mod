@@ -1,0 +1,175 @@
+ # =========================================================================================
+# FARAWAY TOWN Mavericks
+# =========================================================================================
+
+#Intro: Enter Mavericks House between Day 2 and Day 3
+#Play: fat_church.ogg upon entering
+#once player enters Daphne and Bowens room, change song to goofy_times.ogg
+#there is a cardboard cutout of Daphne and Bowen inside
+
+#Examining either cardboard cutout
+message_1:
+  text: 你找到了一张字条。
+
+message_2:
+  text: “我们好像失踪了……\!<br>我们走不远的……\!<br>来找我们吧，亲爱的弟弟。”
+
+message_3:
+  text: 署名，<br>达芙妮和鲍恩（你亲爱的哥哥姐姐）
+
+#upon exiting, song stays as goofy_times.ogg
+
+
+#HIDING SPOTS
+
+#There are now 2 lumps in the rug of the hallway.
+
+message_4:
+  text: 你掀开毯子……\!然后找到了两个蓬松的枕头。
+
+message_5:
+  text: “这把戏都老掉牙了……\!<br>你居然中计了，不会吧……”
+
+message_6:
+  text: 你打开了冰箱……\!然后在里面发现了一张字条。
+
+message_7:
+  text: “哼哼……\!看来你的线索到这里就中断了呢……”\!<br>“真是不幸啊……”
+
+#EXAMINE CURTAINS WITH SILHOUETTES
+
+message_8:
+  text: 你拉开窗帘……\!发现了更多块人型立牌。
+
+message_9:
+  text: “你以为我们只买了一对人型立牌？\!那样就太不划算了。”
+
+#Examine curtains with silhouettes:
+#Animation: A cat bolts out (You cannot find it after)
+
+#Examine Oven
+
+message_10:
+  text: 你打开烤箱……\!<br>新鲜烤面包的香气弥散在空气之中。
+
+#Examine (General)
+
+message_11:
+  text: 你打开了橱柜的门……
+
+message_12:
+  text: 但你没有找到什么值得在意的东西。
+
+message_13:
+  text: 你查看了桌子底下……
+
+message_14:
+  text: 你看了看床底……
+
+message_15:
+  text: 你查看了浴缸周围……
+
+message_16:
+  text: 你看了看钟后面……
+
+message_17:
+  text: 你看了看挂画后面……
+
+message_18:
+  text: 你找到了一个隐藏的保险箱。\!<br>最好还是假装你什么都没看到吧。
+
+message_19:
+  text: 你检查了书架后面……
+
+message_20:
+  text: 你检查了雕像后面……
+
+message_21:
+  text: 你检查了壁炉里面……
+
+message_22:
+  text: 你发现了一个隐藏开关。\!<br>最好还是不要乱动它。
+
+#ONE STATUE
+
+message_23:
+  text: 你找到了一个秘密按钮。\!<br>最好无视它。
+
+#Examine under The Mavericks Bed (Correct answer)
+
+#Bed begins shaking.
+message_24:
+  text: \n<双胞胎>\quake[1]\{\Com[2]哇！！\}
+
+message_25:
+  text: \n<双胞胎其一>哈哈！\!吓你一跳吧？！
+
+message_26:
+  text: \n<双胞胎其二>……
+
+message_27:
+  text: \n<双胞胎其一>嘿，等等……\!你不是我们亲爱的弟弟……
+
+message_28:
+  text: \n<双胞胎其一>嗯……\!嗯……\!看来我们的弟弟太酷了，都不肯跟我们玩了，是不是啊，鲍恩？\!他现在都没空来陪他亲爱的哥哥姐姐一起玩耍了！
+
+message_29:
+  text: \n<双胞胎其二>是啊，达芙妮……\!这真是……\!令人遗憾……
+
+message_30:
+  text: \n<双胞胎其一>唉……\!我们两个不上班的空闲时间都那么少……\!好不容易抽出空来……\!<br>可是小米凯尔这种时候都从来不跟我们一起玩！\!<br>真是不公平啊，是吧鲍恩？
+
+message_31:
+  text: \n<双胞胎其二>人生真是残酷……
+
+message_32:
+  text: \n<双胞胎其一>啊，没事。\!现在我们有新朋友了……\!不过……\!<br>我不太确定他们是做什么的。\!那就让我们开心一下吧，亲爱的朋友们！
+
+message_33:
+  text: \n<双胞胎其二>是啊，让我们开心一下吧！
+
+#If PET ROCK is activated: CLASH OF Jash
+
+#else
+
+message_34:
+  text: \n<双胞胎其一>嗨呀……\!你们什么都拿不出手吗？
+
+message_35:
+  text: \n<双胞胎其二>那可真是太糟糕了……
+
+message_36:
+  text: \n<双胞胎其一>好吧，虽然刚才挺有意思的，但我们已经开始觉得无聊了。
+
+message_37:
+  text: \n<双胞胎其一>走吧，哥哥。\!我们去找点更好玩的事情做吧。
+
+message_38:
+  text: \n<双胞胎其二>再见了，新朋友们。\!刚才……\!过得挺愉快的。
+
+#DAPHNE and BOWEN walk out of THE MAVERICK'S ROOM into DAPHNE and BOWEN'S ROOM.
+
+message_39:
+  text: \n<双胞胎其一>我们家族的面包房已经传了四代了……\!<br>但我们亲爱的小弟弟六岁的时候就发誓说他不会继承家业……
+
+message_40:
+  text: \n<双胞胎其一>不过嘛……\!我相信他总有一天会回心转意的。
+
+message_41:
+  text: \n<双胞胎其二>爸爸妈妈想让我们一从学校毕业就接下面包店……\!<br>所以我们为什么还要去学校呢？
+
+#Cutouts
+
+message_42:
+  text: 一对双胞胎的人型立牌。\!背后粘着什么东西。
+
+#Locked
+
+message_43:
+  text: 门上莫名其妙地出现了一把大得离谱的锁。
+
+#Note
+
+message_44:
+  text: 后面有一张字条。
+

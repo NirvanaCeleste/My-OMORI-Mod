@@ -1,0 +1,353 @@
+# =========================================================================================
+# Cutscene: Last Time at Player's
+# =========================================================================================
+
+#Trigger: Enter proximity of PLAYER's House.
+
+message_0:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 7
+  text: 哇……\!我突然意识到。\kel
+
+message_1:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 11
+  text: 我们真的好久好久没有进过你家了……<br>虽然我们其实就住在隔壁。\!真是时光飞逝啊，对吧？\kel
+
+message_2:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 是啊，确实……\her
+
+message_3:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 我们进去吧。\!你先请，\n[8]！\her
+
+# =========================================================================================
+# Cutscene: Last Time at Player's (Cont.)
+# =========================================================================================
+
+#Trigger: Enter PLAYER's Living Room.
+
+message_10:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 12
+  text: 哇！这个地方都清理得一干二净了，\n[8]！\!<br>你家现在这么空旷，反而看起来更大了。\kel
+
+#HERO walks to the couch area.
+
+message_11:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 以前这里放了个沙发，我们会坐在这里看电视。\! <br>每个周末的早上，我们都会来你这儿看动画片。\her
+
+message_12:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 是啊，这个污渍是那次我把\c[3]香橙乔汽水\c[0]洒到地毯上了！\!<br>玛里可生气了……\kel
+
+message_13:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 哈，那是因为她的猫踩上去了，然后弄得满屋子都是！\her
+
+message_14:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 10
+  text: 嘿嘿……\!是这样的吗？\kel
+
+#KEL goes to the backyard door.
+
+message_15:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 7
+  text: 哎呀……\!<br>天太黑了，今天就不去看树屋了吧。\kel
+
+message_16:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 没事。\!我们可以明天再去看。\her
+
+message_17:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: \Com[2]\{慢着，我有个主意！！\!<br>\}我们要不今晚就在这里过夜吧？\kel
+
+message_18:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 11
+  text: 以后我们就再也没机会再来这间房子了，不是吗？\kel
+
+#KEL turns to PLAYER.
+
+message_19:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 而下一次想和 \n[8] 一起过夜还不知道得等到什么时候！\kel
+
+message_20:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: 我也想，可是……\!妈妈会不太高兴吧。\her
+
+message_21:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 她没事的啦！\!再说了，我真的受够萨丽了，她半夜老是把我吵醒。\!<br>你不是还要帮老妈洗一个星期的碗吗？<br>就把在这儿过夜当作奖励吧，奖励！\kel
+
+message_22:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 好吧……\!无法反驳。\!那应该没问题吧。\!<br>反正我们就住在隔壁，几步路就到了！\her
+
+message_23:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 你要去哪儿啊，\n[8]？\!<br>抛下客人一个人溜走可是很不礼貌的哦？\kel
+
+message_24:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 我们去看看英雄在琴房干什么吧！\kel
+
+message_25:
+  text: 你不想在晚上独自外出。
+
+# =========================================================================================
+# Cutscene: Hero on the Piano
+# =========================================================================================
+
+#Trigger: Enter Hallway.
+
+message_40:
+  faceset: MainCharacter_Basil
+  faceindex: 15
+  text: 啊，我记得这条走廊！\!<br>左边是橱柜……\!<br>右边是琴房。\her
+
+message_41:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 不知道那台钢琴还在不在。\!我去看看！\her
+
+message_42:
+  text: 英雄离开了小队。
+
+#HERO leaves
+
+# =========================================================================================
+# Cutscene: Hero on the Piano (Cont.)
+# =========================================================================================
+
+#Trigger: Enter Piano Room.
+
+message_60:
+  faceset: MainCharacter_Basil
+  faceindex: 15
+  text: 别笑我喔。\!我已经好一阵子没练习过了。\her
+
+#HERO plays an immaculate piece.
+
+message_61:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 14
+  text: 真会显摆……\kel
+
+message_62:
+  faceset: MainCharacter_Basil
+  faceindex: 14
+  text: 哈哈，看来我还有一手的嘛。\her
+
+#HERO turns to PLAYER.
+
+message_63:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 嘿，\n[8]。我突然想到！你还在拉小提琴吗？\her
+
+#HERO looks at empty violin stand.
+
+message_64:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: 噢……\!不在这里……\!你大概已经把它装到箱子里了吧。\her
+
+message_65:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 你和玛里曾经合奏过的那首曲子……\!<br>现在我的脑海里偶尔还会响起那段旋律，<br>不过我不记得它的名字了。\her
+
+message_66:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 你们俩会一遍又一遍地演奏……\!<br>有时我们甚至在隔壁都能听到。\!<br>啊，到底叫什么来着？\her
+
+#[Trigger: PLAYER attempts to leave the room.]
+
+message_67:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 13
+  text: \sinv[1]呼……\!哎呀，我突然感觉好困。\!<br>要不我们去睡觉吧。\kel\sinv[0]
+
+message_68:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 好啊，毕竟我明天还要早起晨跑呢！\her
+
+message_69:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 所以我们该睡哪儿呢，\n[8]？\!睡你房间怎么样？\!我记得你以前可讨厌一个人睡了。\her
+
+message_70:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 对哦，听起来就很有意思！\!<br>我们睡在地板上就行了！<br>去找点毯子吧！\kel
+
+#KEL runs out.
+
+message_71:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 等一下啦，凯！等等我！\her
+
+#HERO runs out.
+#PLAYER hears the duet when he is alone.
+
+# =========================================================================================
+# Cutscene: Talking before Bed
+# =========================================================================================
+
+#KEL and HERO are in a bed fort.
+
+message_90:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 嘿，\n[8]！我们用毯子搭了个小城堡！\!<br>希望你别介意。\kel
+
+message_91:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 这全是凯的主意。和我可没关系。\her
+
+message_92:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 11
+  text: 对了，英雄……\n[8] 和我给你买了礼物！\kel
+
+message_110:
+  text: 凯把\c[4]英雄的礼物\c[0]交给了英雄！
+
+message_93:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 13
+  text: 是《老奇普老字号老食谱》！\!<br>你还记得这本书吗？\kel
+
+message_94:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 当然记得了！<br>\!哎呀，我那时候可想做厨师了……\!<br>现在想起来真是太蠢了。\her
+
+message_95:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 8
+  text: 嘿，你的厨艺还是很不错的！\!<br>而且你想当厨师的话还是可以当啊，英雄！\kel
+
+message_96:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 啊……\!现在就算了。\!我已经腾不出时间来了。\her
+
+message_97:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 12
+  text: 但是……\!你特别喜欢做饭啊，不是吗？\!<br>然后人们也要吃饭，对吧？\!所以就……\!何乐而不为呢？\kel
+
+message_98:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 哈哈……\!事情没有这么简单啦，凯——\her
+
+message_99:
+  text: ……\|……\|……\|<br>\SINV[1]呼噜……\|呼噜……\|呼噜……\kel
+
+message_100:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: ……\her
+
+message_101:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 还真是秒睡啊……\!这家伙，总是这样子。\her
+
+#HERO looks at PLAYER.
+
+message_102:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 谢谢你让我们来过夜，\n[8]。\her
+
+message_103:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 29
+  text: 一个人待在这间空屋子里肯定很难熬吧……<BR>尤其是玛里已经不在了。\her
+
+message_104:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 15
+  text: 抱歉，我没能多陪陪你……\her
+
+message_105:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 28
+  text: 这一切都和从前大不相同了……\!<br>不过，你好像都没怎么变。\her
+
+message_106:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 说真的，这倒是让我松了口气！哈哈！\her
+
+#HERO looks away.
+
+message_107:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: 唉……\!能再见到你真是太好了。\!<br>要是奥布里和贝瑟尔也在这里就更好了。\her
+
+#HERO is surprised.
+
+message_108:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 31
+  text: 总、总而言之！\!抱歉扯了这么多有的没的。\!已经很晚了。<br>我应该也很快就睡了。\her
+
+message_109:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: 晚安，\n[8]！明早见。\her
+
+# =========================================================================================
+# Cutscene:  Player in the Bathtub
+# =========================================================================================
+
+#Trigger: Enter Bathroom.
+
+message_130:
+  text: 你想要洗个澡。
+
+#Screen turns black. PLAYER is in bath tub.
+
+message_131:
+  text: 你感到有什么东西把你拉了下去……
+
+message_150:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 30
+  text: \her真好，还有人在保养玛里的钢琴。\!上面几乎是一尘不染。
+
+message_151:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 9
+  text: \kel英雄他怎么还弹得这么好啊？\!我连读五线谱都不会了……
+

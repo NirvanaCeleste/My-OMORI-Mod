@@ -1,0 +1,131 @@
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\c[13]赫克托尔\c[0]真是有史以来最酷的宠物石头啦！
+
+message_2:
+  text: 你必须与朋友们一起离开。
+
+message_3:
+  text: 一只眼睛从柜子里盯着你。
+
+message_4:
+  text: 电视上放着一部电影。\!<br>四个男孩在铁路轨道上走着。
+
+message_5:
+  text: 一张熟悉的人的照片。
+
+message_6:
+  text: 一个松软的枕头，形状是一个女孩子的头。
+
+message_7:
+  text: \n<蛇>\sinv[1]嘶嘶嘶嘶嘶嘶嘶……？\sinv[0]\!（正在等待某件事情的发生吗？）
+
+message_8:
+  text: 一个猫形的洞。
+
+message_9:
+  text: 你感觉到门背后有某个东西的存在。\!<br>要看一眼锁孔吗？
+
+message_10:
+  text: 一份包装精美的礼物。
+
+message_11:
+  text: 一台搅拌机。
+
+message_12:
+  text: 盘子上有一颗豆子。
+
+message_13:
+  text: 你想做烤面包吗？
+
+message_14:
+  text: 你烤了面包。
+
+message_15:
+  text: 一个棒球和一根棒球棍。
+
+message_16:
+  text: 一根触手伸出了地面。
+
+
+#- Omori's CUT Tag Skill
+
+message_17:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嗯？路被枝条给挡住了……\!<br>它们怎么会长在这儿？
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub别担心，贝瑟尔！\!<br>我敢说呀，OMORI 轻而易举就能\c[1]切\c[0]出一条路来！
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aubOMORI！加油！\!你可以做到的！
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aubOMORI！加油！\!你可以做到的！
+
+
+#- Snake money
+
+message_100:
+  text: \n<蛇>\sinv[1]嘶嘶嘶嘶嘶嘶嘶嘶……？\!\sinv[0]（要出去吗，OMORI？）\!<br>\sinv[1]嘶嘶嘶嘶嘶嘶……\!\sinv[0]（这是你今天的零用钱。）
+
+message_101:
+  text: 你获得了 \v[1001] 蚌币。
+
+message_102:
+  text: \n<蛇>\sinv[1]嘶嘶嘶嘶嘶嘶……\!\sinv[0]（慢走。）
+
+message_103:
+  text: \n<蛇>\sinv[1]嘶嘶嘶嘶嘶嘶……？\sinv[0]（正在等待某件事情的发生吗？）
+
+#Trying to go back inside Neighbor's Room before Basil is kidnapped
+
+message_110:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \basOMORI，等一下……我们是要去我家啦！\! <br>从游乐场南边的路走过去就到了。
+
+message_111:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas之前我刚刚种下了一些花草，想给大家看一看。\!<br>来吧！它们都很可爱呢！
+
+message_112:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her你去哪呀，OMORI？\!我们去找玛里和贝瑟尔吧！\!可不能让他们准备好的野餐白白浪费啦！
+
+message_113:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her你去哪呀，OMORI？\!我们去找玛里吧！\!她担心死你了。
+
+message_114:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar我们去那个阴森森的屋子看看吧，OMORI！\!<br>别害怕呀。\!有我们陪着你呢！
+
+message_115:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aubOMORI，你要去哪儿呀？\! 我们得去找贝瑟尔……
+
+#FRIEND TEXT
+message_120:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub嗨，OMORI！\!能见到你真是太好啦！
+
+message_121:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel怎么啦，死党？\!肯定想我了吧？嘿嘿……
+

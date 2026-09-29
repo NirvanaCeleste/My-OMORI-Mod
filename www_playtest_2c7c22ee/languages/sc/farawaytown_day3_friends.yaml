@@ -1,0 +1,459 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+#=========================================================================================
+# DAY 3 - Friends
+#=========================================================================================
+
+
+#=========================Vending Machine==============================
+#DAY 3: WALKING IN FROM PLAZA TO PARK AFTER GETTING AUBREY
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub啊等一下，我要买罐喝的。\!<br>……\!嗯……\!不要这个……\!这个也不要……\!这个就算了……
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel什么！\!\c[3]香橙乔汽水\c[0]明明这么好喝，你居然就直接跳过了？\!<br>哪有你这样的？！
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \aub噫！你还喝\c[3]香橙乔汽水\c[0]？！\!那东西甜得发腻，恶心得要死……\!给小婴儿喝还差不多！
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \kel哦？真的吗？如果真是给小婴儿喝的，那为什么……嗯……\!每罐香橙乔还含有 150 毫克的咖啡因呢？！\!啧啧……你还是先做好功课再开腔吧，奥布里！
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub哼……随你怎么说！\!反正，是个人都觉得\c[3]香橙乔汽水\c[0]喝起来恶心。\!<br>全世界可能也就只有你会买这种垃圾饮料喝。
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \kel喂，你这变成人身攻击了！\!你竟敢侮辱我的好朋友\c[3]香橙乔汽水\c[0]！\!<br>你以前根本就没喝过吧？！\!呃……算了，我买给你！
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: \aub凯！\!你、你在干嘛？！
+
+#*KEL pushes AUBREY aside and presses the \c[3]ORANGE JOE\c[0] button*
+#“A can of \c[3]ORANGE JOE\c[0] fell from the VENDING MACHINE.”
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: \aub……
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel啊……\!这个易拉罐的设计好像是五年前的样子……\!而且……\!<br>已经过期了……
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub我都跟你说了……\!根本没人会买这种东西喝……
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel别担心啦，我的好朋友\c[3]香橙乔汽水\c[0]……\!不管怎么样，我会一直喝你的！别人不买我来买！
+
+message_12:
+  text: 咕噜咕噜咕噜
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: \kel\sinv[1]呜呣……\!好喝……\sinv[0]
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 5
+  text: \aub恶……\!恶心死了……
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel诶嘿嘿……
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub还、还有，你欠我一块钱啊！
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel好啦好啦……\!我等下就还你！
+
+#=========================MARIS GRAVE ==================================
+
+#Day 3: After visiting Mari's Grave with flowers with Aubrey/Kel/Hero
+
+message_30:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub你好，玛里……\!我又来看你了。\!<br>不过，这次 \n[8]、凯和英雄也一起来了。
+
+message_31:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel奥布里，你经常来给玛里扫墓吗？
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub嗯……虽然有时候也会遇到这样那样的状况，但我是能来就来。\!<br>你们偶尔也会来给她扫墓……对吧？
+
+message_33:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel时不时会来一下吧。\!<br>不过我来的次数可能还是太少了点……
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel嘿，英雄。\!你还好吗？
+
+message_34:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her……我没事啦。\!大家一起来看她了，我觉得很高兴。
+
+#HERO WALKS TO MARI'S Grave
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her玛里，你好啊……\!对不起我一直没来看你。\!<br>我实在有点太薄情了……
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her已经过去这么久了，我却越来越想念你。\!<br>我……\!我那时候没有在你身边，对不起。
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her真的……\!对不起……
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub英雄……\!你不用太责怪自己的。
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel是啊……我们在这儿陪着你呢。
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her哈……\!谢谢你们……\!不过，你们也不要太担心我啦。
+
+message_40:
+  text: 你想和玛里一起野餐吗？
+
+#Turns into Breaktime with picnic at Mari's Grave
+
+
+#=========================After Secret Lake Break time ==================================
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel嘿，奥布里！
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub干嘛呀，凯？
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel我一直在想哦……\!我们好像总是在吵架诶？
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub嗯，没错……
+
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel不过再怎么吵，我们也还是好朋友，对吧？
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub嗯……\!大概吧……
+
+message_56:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel哼嗯……但是这样不是很奇怪吗？
+
+message_57:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub可能是很奇怪吧……\!我也不知道……
+
+message_58:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her哈哈……\!嗨，你们两个呀……\!这说明你们俩相处的时候很自在啊。
+
+message_59:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her你们俩认识这么久了，还能跟对方这么坦诚，这可不是谁都能做到的。\!说实话，我都有点嫉妒呢。
+
+message_60:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel真的吗？\!我刚想说，其实我觉得这样有点烦诶……
+
+message_61:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \aub……\!呃……\!你真是个白痴。
+
+
+#=========================DAY 2: GO TO KEL AND HERO'S ROOM DAY 2 AFTER CUTSCENE: CONVINCING KEL'S MOM==================================
+
+message_80:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel好，现在就来看看我们兄弟俩到底谁最高吧！一次定胜负！
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her又来呀，凯？\!我们不是早就定出胜负了吗？
+
+message_82:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \kel别磨磨唧唧啦，英雄！\!快点，就跟以前一样，快来跟我背靠背站好！
+
+message_83:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel唔，\n[8]……\!你觉得我们俩谁比较高？
+
+#Choice Kel / HERO
+
+#IF Kel
+
+message_84:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel哈哈哈！看来是我赢了！
+
+message_85:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel哇……\!我的人生终于圆满了……\!不过，我现在觉得好空虚啊……
+
+message_86:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her看来我不在家的这段日子里，你真的长高了不少。\!<br>不过可惜啊，人是长高了，但成绩还是不太行……
+
+message_87:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \kel英雄，你后半句话是多余的啦！\!脑子聪明又不能代表一切！
+
+message_88:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her哈哈……我这是在故意逗你啦……\!我觉得你也很聪明啊，凯！\!只不过，你的聪明跟别人的不大一样……
+
+message_89:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel哈哈！没错，我也是这样想的！
+
+#If you pick Hero instead
+
+message_90:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her啊，抱歉啦，凯！\!祝你明年好运……
+
+message_91:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel可恶……\!我还以为这次我会赢呢……
+
+message_92:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her都是因为你喝\c[3]香橙乔汽水\c[0]喝得太多了啦！\!<br>你知道吗，咖啡因会害你长不高的噢？
+
+message_93:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel啊啊，不要怪香橙乔汽水啦！\!<br>那我只要喝香橙乔汽水的时候再喝一点牛奶，这不就平衡了嘛！
+
+message_94:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: \kel不过……我真的很讨厌牛奶。\!<br>唔，说不定我可以把牛奶跟香橙乔混在一起喝……
+
+message_95:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel英雄，你就等着瞧吧……\!明年！\!<br>我明年一定会超过你的！我能从骨子里感觉到！
+
+message_96:
+  text: 凯
+
+message_97:
+  text: 英雄
+
+
+
+#=========================DAY 1: GO TO KEL AND HERO'S ROOM DAY 2 AFTER CUTSCENE: CONVINCING KEL'S MOM==================================
+
+
+message_110:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel嘿，\n[8]……我想起来了。
+
+message_111:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel你还记得吗，我们俩小时候经常半夜偷偷溜到\c[11]蜂玩堂\c[0]来玩。
+
+message_112:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel结果我们俩第二天就起不来了，上学也迟到了，然后英雄和玛里总是会问“你们怎么这么困啊？”之类的。
+
+message_113:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel其实我知道他们肯定已经怀疑我们了，<br>但是还好他们没跟妈妈说什么……
+
+message_114:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel我们那时候真的好大胆啊，差点就被发现了，哈哈……
+
+#wait time 40 frame
+
+message_115:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel啊总之，我们还是应该快点跑完腿快点回去……\!<br>我妈等我们都等了一天了！
+
+
+#=========================DAY 3 AFTERNOON: PLAYER AND AUBREY ON THE SWINGS==================================
+
+message_130:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub嘿，\n[8]……\!对不起，我之前对你太刻薄了。
+
+message_131:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub唔，我只是因为你突然出现，被吓了一跳……\!好啦，我知道我这个借口挺烂的啦。
+
+message_132:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub反正就是，我希望你最近过得还好……\!毕竟发生了这么多事情，你肯定受了很大打击。
+
+message_133:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub有时候我会想，当时其实应该是我去好好陪着你才对。
+
+message_137:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub玛里的死我们或许永远也无法放下……\!但慢慢来就行。
+
+message_138:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub慢慢去消化各种各样的情绪……\!给自己一点时间。
+
+message_134:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: \aub总、总之，我就是想告诉你……\!我还是很在乎你就是了……
+
+message_135:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub我前两天看到你的时候就在想……你看起来脸色有点苍白……\!<br>人也有点瘦瘦的。
+
+message_136:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: \aub答应我，你搬家以后要多出去走走，好不好？
+
+#=========================DAY 3 DAY: PINWHEEL==================================
+
+message_140:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her嘿，快看！你们还记得这里吗？\!<br>奥布里，我们当时就是在这附近遇到你的吧？
+
+message_141:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub是、是啊，怎么啦？
+
+message_142:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel哦，我想起来了！\!你当时弄丢了一只鞋子，正在人行道上哇哇大哭来着。
+
+message_143:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel\sinv[1]啊啊……可爱的小奥布里，还戴着一个粉粉的小蝴蝶结！\!<br>历历在目，恍如昨日……
+
+message_144:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub哼！你觉得我可爱……
+
+message_145:
+  faceset: MainCharacters_Faraway
+  faceindex: 10
+  text: \aub所以你才经常故意作弄我咯？
+
+message_146:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel啊、啊？你怎么会这样想啊？
+
+message_147:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \kel\com[2]我小时候可从来没有作弄你哦！
+
+message_148:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \aub嗯哼………\!你说是就是，凯。
+

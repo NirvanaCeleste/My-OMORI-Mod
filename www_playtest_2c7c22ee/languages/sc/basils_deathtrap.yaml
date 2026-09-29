@@ -1,0 +1,525 @@
+# =========================================================================================
+# Cutscene: BASIL's DEATHTRAP DIALOGUE
+# =========================================================================================
+
+#Talk to Basil
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \basOMORI！
+
+message_1:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas……
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas是……\!真的是你呀！\!<br>谢天谢地你来了……真是松了一口气。
+
+message_3:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas我一直在尝试找到出去的办法，可是……\!这地方太大了。\!<br>我总是走着走着就迷路了……所以试了一阵子后……<br>我就放弃了……
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas对不起……\!我应该再加把劲的……
+
+message_5:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas这段时间里，我一直都在翻看\c[4]相册\c[0]，只有它陪伴着我……
+
+message_6:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我感觉害怕的时候呀，我就会看看以前那些快乐的回忆，<br>这样就能冷静下来……
+
+message_7:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我就知道你会来救我的，OMORI！<br>毕竟，你是我最棒的朋友了！
+
+message_8:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas现在你来了，我们一定能找到出去的办法的！\!
+
+message_9:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas虽然这个地方可能有点危险，不过……我相信你……
+
+message_10:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas你来带路吧，OMORI！
+
+# =========================================================================================
+# Cutscene: GOOD/BAD ROUTE: Lost Forest Progression
+# =========================================================================================
+
+message_20:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas嘿，OMORI……\!我在想……\!<br>你知道我是怎么来到这里的吗？
+
+message_21:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas我一直想回忆起来，可是我的记忆有点模糊了……\!<br>我觉得……\!我当时是在看一张照片……\!<br>照片上是……\quake[1]\fn<OMORI_GAME>一把破损的小提琴……
+
+message_22:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas不过……\!唔……\!也许那只是我臆想出来的？\!我也不确定了……
+
+message_23:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas啊……\!好像照片上还有别的什么东西，不过……
+
+message_24:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas唔……\!应该……\!应该不重要啦。\!<br>我们还是赶快离开这里吧！
+
+# =========================================================================================
+# Cutscene: Upon entering/respawning with BASIL at the Stump Arena
+# =========================================================================================
+
+message_29:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿，OMORI……
+
+message_30:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我觉得这附近很危险，于是就藏在了这里。还好是你找到了我。
+
+message_31:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas大家还好吗？\!<br>希望你们没有太担心我……\!<br>我已经等不及再见到大家啦！
+
+# =========================================================================================
+# Cutscene: Upon entering Forest Stump.
+# =========================================================================================
+
+message_40:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas那、那个……\!OMORI……\!我想了很久……\!<br>我觉得有件事情还是应该跟你说……\!<br>你愿意听我简单说一下吗？
+
+message_41:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \basOMORI……？
+
+# =========================================================================================
+# Cutscene: Upon entering Hallway Stump.
+# =========================================================================================
+
+message_50:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas你没事吧，OMORI？\!你有点怪怪的耶……
+
+message_51:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas难道说我不在的时候，发生了什么吗？
+
+# =========================================================================================
+# Cutscene: Upon entering Spider Stump.
+# =========================================================================================
+
+message_60:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas呃……\!很抱歉提起这个，可是……\!<Br>有件事情一直在困扰着我……
+
+message_61:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas是……\!唔……\!关于玛里的事情……\!<br>也许你知道我想说什么吧？
+
+message_62:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas呃！\!这里好多虫子啊……\!我不喜欢这个地方……
+
+message_63:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas啊！\!好疼啊……\!我觉得这些虫子在咬我！\!啊！我甩不掉它们！
+
+message_64:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas虫子好多啊！它们想吃掉我！OMORI！帮帮我！！
+
+# =========================================================================================
+# Cutscene: Watermelon Stump
+# =========================================================================================
+
+message_70:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿，OMORI……\!你是不是……\!迷路了呀？<br>迷路……也不要紧的。我不会说你什么的，我保证！
+
+# =========================================================================================
+# Cutscene: Upon entering Dark Hand Stump.
+# =========================================================================================
+
+message_80:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas等、等等……\!我……\!对不起，OMORI。\!<br>我可能有点不在状态。
+
+message_81:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas我感觉有点不对劲……\!<br>有件事情我一定要告诉你……\!<br>求求你了……\!OMORI……\!你可以听我说吗？
+
+# =========================================================================================
+# Cutscene: Upon entering Raft Stump.
+# =========================================================================================
+
+message_90:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \basOMORI……\|\^我一点也不喜欢这个地方……\|\^<br>这里感觉很不安全。\|\^
+
+message_91:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas不过……\|\^至少我们还有彼此。\|\^哈哈……\|\^
+
+message_92:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas其实……\|\^有件事情真的一直在困扰着我……\|\^<br>你愿意听我讲讲吗？\|\^
+
+# =========================================================================================
+# Cutscene: Upon entering Elevator Stump.
+# =========================================================================================
+
+message_100:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas电梯？\!它会通向哪里呢？\!也许，它能直接带我们回家也说不定！
+
+message_101:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \ba话、话说……\!既然一时半会儿也到不了。\!<br>我能跟你说个事情吗？\!OMORI？
+
+# DING SFX
+
+message_102:
+  text: 你想去哪里？
+
+message_103:
+  text: 异世界
+
+message_104:
+  text: 辽阔森林
+
+message_105:
+  text: 树苗鼹鼠村
+
+message_106:
+  text: 深井
+
+message_111:
+  text: 黑色空间
+
+# Aftermath
+
+message_107:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas等、等等啦，OMORI。\!我……我觉得我被卡住了。
+
+message_108:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas你可以帮帮我吗？
+
+#
+
+message_109:
+  text: \bas呜……\|呃……\|唔啊……\|O……MORI……
+
+# =========================================================================================
+# Cutscene: Upon entering Mercy Stump.
+# =========================================================================================
+
+message_110:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas我、我说啊，OMORI……\!这个地方看起来不是很安全……\!<br>或许我们该找找有没有其他路可以出去……
+
+# =========================================================================================
+# Cutscene: Upon entering Friends Stump.
+# =========================================================================================
+
+message_120:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas嘿，OMORI……\!<br>有件事情我一直想告诉你……\!<br>我脑海里总是会出现某个场景……
+
+message_121:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas那个场景里有我和你……\!然后……\!我们……\!<br>我们站在彼此身旁……
+
+message_122:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas……\!而且玛里……\!玛里也在哦……\!可是……
+
+#HERO walks in the screen
+
+#Basil exclamation mark icon
+
+message_123:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas英雄！是你呀！\!你在这里做什么？
+
+message_124:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas快看，OMORI！英雄在这儿呢！\!我们快跟着他吧！
+
+#FOLLOW HERO
+
+message_125:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas凯！\!奥布里！\!见到你们大家真是太好了！！
+
+message_126:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas大家的近况如何？\!有没有想我呀，嘿嘿……
+
+#Aubrey and KEL do their tag poses.
+
+message_127:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas等、等等……\!你们……\!你们在做什么？
+
+message_128:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \basOMORI——
+
+#Screen goes black.
+
+# =========================================================================================
+# Cutscene: Upon entering RED SPACE
+# =========================================================================================
+
+message_134:
+  text: 手指。
+
+#Stump exit
+
+message_130:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas话、话说，OMORI……\!你今天好像有点冷淡……\!<br>是我做错了什么吗？
+
+message_131:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\{\Com[2]啊啊啊啊！\Com[2]怎么回事？！
+
+message_132:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\Com[2]\{OMORI！！\!救救我！！！
+
+#Talk to Basil
+
+#Repeat message_132
+
+message_133:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\Com[2]\{求你了！！！
+
+#OMORI CUTS BASIL
+
+
+# =========================================================================================
+# Cutscene: Upon entering Black Space Entrance.
+# =========================================================================================
+
+message_140:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿，那就是出口吗？\!我们速度还挺快的嘛……哈哈……\!
+
+message_141:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas你能当我的朋友真是太好了，OMORI。\!<br>无论发生什么事情，你好像总是能应对自如……\!<br>我真的很敬佩你这一点哦。
+
+message_142:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas啊、呃——OMORI……\!其实呢……\!对不起……\!<br>在我们走之前，有件……\!呃……
+
+message_143:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas有件事情我要告诉你……
+
+message_144:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas是……\!是关于玛里的事情……
+
+#Spotlight on Exit disappears
+
+message_145:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\Com[2]诶、诶？\!怎么回事？！\!\Com[2]出口消失了！
+
+message_146:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas糟了……\!OMORI……\!<br>我们这下该怎么办呀？
+
+#When OMORI talks to BASIL, he CUTS him instead.
+
+message_147:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \basO、OMORI……！
+
+message_148:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \basO、OMORI，救救我！
+
+# =========================================================================================
+# NEUTRAL ROUTE: Upon entering Black Space Entrance.
+# =========================================================================================
+
+message_150:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿！是出口！\!我们终于逃出来了，OMORI！
+
+message_151:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我们快走吧！大家都在等着我们呢！
+
+#INSIDE THE TREEHOUSE
+
+message_160:
+  text: 猫
+
+message_161:
+  text: 吐司
+
+message_162:
+  text: 玩具
+
+message_163:
+  text: 游戏
+
+message_164:
+  text: 电视
+
+message_165:
+  text: 书
+
+#---
+
+message_166:
+  text: 日期
+
+message_167:
+  text: 吐司？
+
+message_168:
+  text: 欢乐
+
+message_169:
+  text: 卡牌
+
+message_170:
+  text: 沉重
+
+message_171:
+  text: 烹饪书
+
+#---
+
+message_172:
+  text: 暑假
+
+message_173:
+  text: 朋友
+
+message_174:
+  text: 不复存在
+
+message_175:
+  text: 曲奇饼
+
+message_176:
+  text: 凯
+
+message_177:
+  text: 图书
+
+#---
+
+message_180:
+  text: \n<玛里？>开阔你的思维吧，OMORI！
+
+message_181:
+  text: \n<玛里？>开阔！
+
+message_182:
+  text: \n<玛里？>开阔你的思维吧！
+
+message_183:
+  text: \n<玛里？>开阔，OMORI！
+
+message_184:
+  text: \n<玛里？>\fn<OMORI_GAME>开阔……
+
+message_185:
+  text: \n<玛里？>\}\}\fn<OMORI_GAME>开阔……
+
+message_186:
+  text: \n<蓝女孩>不要和我说话。
+
+message_187:
+  text: \n<蓝云>跟着云走！
+
+message_188:
+  text: 上下颠倒。
+
+message_189:
+  text: \n<骷>跳支舞吧，皮包骨的小东西！
+
+message_190:
+  text: 你睡了个好觉。
+

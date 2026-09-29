@@ -1,0 +1,261 @@
+# =========================================================================================
+# Farawaytown: Something about Basil
+# =========================================================================================
+
+
+#=========================Something about Basil==============================
+
+#AUBREY walks back after sticking a pinwheel on the stump.
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub自从……\!大家渐渐疏远以后，\!我就觉得自己好孤独……
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub不过我现在才发现，其实是我自己把其他人推开了而已。
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub玛里去世后没几个月……<br>一切就都变了。<br><br>\n[8] 和贝瑟尔不再出门……\!凯跑去体育社团交朋友……\!<br>至于英雄呢……总是在忙学习的事情。
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: \aub大家的生活居然都这样继续前进，我真的好生气。
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \aub我感觉大家都抛弃了我……<br>也抛弃了玛里……
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub但是，大家其实都只是在用自己的方式让心里好受一点，<br>只不过我不知道而已。
+
+message_7:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub\n[8]不来学校上学了之后……\!<br>有一天，我看到贝瑟尔一个人坐在那吃午餐……\!<br>我就过去问他，想不想让我去他家跟他一起学习……
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub听了我的话，他一开始还有点不安……\!<br>但是我跟他好说歹说，他总算是答应了。
+
+message_30:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub我们一路上谁都没说话……\!<br>贝瑟尔甚至连看都没看我一眼。
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub等我们两个进了他的卧室，我刚想开口跟他聊几句……\!<br>他就忽然说要去洗手间，然后趁机跑掉了。
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub然后我发现他的书架上放着一本旧\c[4]相册\c[0]，\!<br>我就拿了起来，想看看里面的照片……因为……\!唔……\!<br>大概是因为，我想再看看大家开心的样子吧。
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub但是……\!我打开之后一看……
+
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \aub照片全都被贝瑟尔用马克笔给涂黑了！
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: \aub他连玛里的脸都给涂掉了……\!我、我真的不敢相信他会做这种事……
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: \aub那本相册里全都是我们的回忆啊……\!<br>他为什么要毁掉那一切！
+
+message_14:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: \aub我又生气……\!又疑惑……\!<br>我觉得贝瑟尔已经疯了，无药可救了。
+
+message_15:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub于是……\!我根本没打算理解他，搞懂他为什么要这么做……\!<br>就直接偷走了他的\c[4]相册\c[0]，然后也不叫他贝瑟尔了，<br>就直接喊他“惹人厌的家伙”之类的。
+
+message_16:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub结果叫着叫着……\!其他人也开始这样叫他了。
+
+message_17:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub……
+
+message_18:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: \aub我现在觉得自己就是个人渣。
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub但是，你们知道吗……
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub从那时候开始，我就慢慢疏远了其他人，到现在也还是这样。
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 8
+  text: \aub很可笑吧。\!我这样做明明就比贝瑟尔还过分，但是我却还冲他发火，<br>觉得是他不好……
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 9
+  text: \aub呜呜……\!我，真是个笨蛋！
+
+#Aubrey starts crying
+#(HERO and KEL walk up to comfort AUBREY.)
+
+message_23:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: \her嘿……\!没事的，奥布里。\!我们都会犯错啊。
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel其实我那时候也不太明白到底发生了什么事……\!<br>但是我很害怕自己会无意间火上浇油……\!<br>所以我就决定，还是跟大家保持一段距离。
+
+message_25:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel对不起，奥布里……\!对不起……\n[8]。\!<br>我这个朋友当得可真是够失败的。
+
+message_26:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: \her凯，说到底你年纪还小啊。<br>倒是我，我们这一圈人里年纪最大的就是我了……\!<br>按理来说，应该由我来照顾大家的。
+
+message_27:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her但是我……\!我……
+
+message_28:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub啊……\!没、没关系的。
+
+message_29:
+  faceset: MainCharacters_Faraway
+  faceindex: 8
+  text: \aub你看，现在大家不是都在吗……\!所以……没关系的。
+
+#AUBREY shakes
+
+message_31:
+  faceset: MainCharacters_Faraway
+  faceindex: 9
+  text: \aub呜呜……\!我……我真是……
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 9
+  text: \aub我不配有你们这么好的朋友。
+
+message_33:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her说什么傻话呢，奥布里。\!你怎么就不配了？
+
+message_34:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her这么久以来，你其实也一直在关心我们啊……
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her比如说……\!看看这本\c[4]相册\c[0]就知道了。\!<br>这上面哪有你说的什么用马克笔涂黑的地方！\!大家的笑容都好好的呢！
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her这些涂黑的地方总不能是自己消失的吧？你们说对吧？
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub……
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel没事的，奥布里……\!<br>我发誓，我从现在起会永远陪在你身边的！
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her没错……我也发誓……\!我们要相互陪伴，相互扶持，不离不弃！
+
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her……
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her嗯，我觉得呢！\!<br>大家现在应该来个大大的拥抱！
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel\sinv[1]\{\{\Com[2]一起抱抱？
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel\{\{\sinv[1]噢耶！我也要来抱抱！！
+
+message_44:
+  faceset: MainCharacters_Faraway
+  faceindex: 5
+  text: \aub给我等、等一下啦！
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her\sinv[1]\{我们可不等你啰！
+
+#[Group Hug Slide]
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub……
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub我们晚点应该去贝瑟尔家一趟，看看他到家了没有。
+
+message_49:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub我觉得我应该向他道歉……\!而且……\!我现在觉得……\!<br>现在最需要我们大家的人，其实是他才对。
+

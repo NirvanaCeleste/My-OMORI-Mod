@@ -1,0 +1,125 @@
+# =========================================================================================
+# Feed Humphrey
+# ========================================================================================
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36     #replace
+  text: \her嘿，鲨赞先生！我们来打个招呼！
+
+message_1:
+  text: \jaw英雄……\!真的是你吗？
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38     #replace
+  text: \her是呀，当然是我了！\!你过得怎么样？
+
+message_3:
+  text: \jaw我生意不顺啊，英雄……\!\quake[1]很不顺哪。\quake[0]
+
+message_4:
+  text: \jaw自从你离我而去，事情就天翻地覆了。\!<br>所有的投资者都不干了，建筑项目停滞不前，而且我们的客源在源源不断地流失啊！
+
+message_5:
+  text: \jaw这一切的征兆都预示着同一件事情！<br>\!那就是，我选错了我的人生道路……
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39     #replace
+  text: \her别这样说嘛，鲨赞先生！\!<br>你是最棒的……\!也是唯一当过我老板的人了！
+
+message_7:
+  text: \jaw你别会错意，我可不是在自怨自艾。\!<br>我只是学到了人生的一课而已！
+
+message_8:
+  text: \jaw我已经发展过各种各样成功的副业了，但……\!<br>我真的为\c[11]最后度假村\c[0]投入了很多心血，你知道吧？
+
+message_9:
+  text: \jaw是啊……\!我已经决定了……<br>\!是时候放弃了。
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46     #replace
+  text: \her\Com[2]等等，鲨赞先生！\!你可不能就这么放——
+
+message_11:
+  text: \jaw拿上这个，英雄……\!<br>你为我做了那么多，这是你应得的。
+
+message_12:
+  text: 你获得了\c[4]巨额支票\c[0]。
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47     #replace
+  text: \her哦——哦！\!那好吧。\!太感谢您了。
+
+message_14:
+  text: \jaw还有……\!还有一件事。\!<br>英雄，\|我希望你……\|能够从我这里接手\c[11]最后度假村\c[0]。
+
+message_40:
+  text: \n<鳄鱼男>您的领带，老板。
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46     #replace
+  text: \her\Com[2]什——什么？\!你确定吗？\!可我才十五岁啊！
+
+message_16:
+  text: \jaw英雄！\!我活到今天，这是我最最确定的一件事情了！\!<br>别告诉别人，但……\!你一直是我最中意的那个。
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46     #replace
+  text: \her鲨赞先生……
+
+message_18:
+  text: \jaw呵……\!这样一来，一切都安排好了。\!<br>现在只有……\!最后一件事要做了。
+
+message_19:
+  text: \jaw\{\sinv[1]\Com[2]该去度个假咯，宝贝！！\sinv[0]
+
+message_20:
+  text: \jaw老鲨赞要好好享受人生巅峰啦！\!<br>回头见！别想我！
+
+message_28:
+  text: \jaw\Com[2]\Sinv[2]\{\{鲨吼\{吼吼\{吼吼！！\Sinv[0]
+
+
+#Talk to Humphrey
+
+message_21:
+  text: \hum\sinv[1]啊啊啊啊啊啊……\!睡得真爽。\!<br>我的肚肚一点都不疼了。\!但我\quake[1]还是……\|好……\|饿……
+
+message_22:
+  text: \hum\sinv[1]鲸了，鲸了，鲸了！\sinv[0]\!我闻到特别特别美味的东西了！\!<br>你身上带着的是\c[4]巨额支票\c[0]吗？\!<br>可不可以……\!可以的话……\!让我啃一小口吧？
+
+#[Nod/Shake]
+#[Nod]
+message_23:
+  text: 你把英雄的\c[4]巨额支票\c[0]给了汉弗莱。
+
+message_24:
+  text: \hum\sinv[1]\{真……\{\Com[2]好吃！！\sinv[0]\}
+
+#HUMPHREY opens his mouth and burps
+
+message_25:
+  text: \hum\sinv[1]这才叫美味佳肴嘛！\sinv[0]
+
+#HUMPHREYS stomach gurgles
+
+message_26:
+  text: \hum哎呀……好啦！\!既然我填饱肚子了，<br>那这里面应该已经一切正常了……
+
+#note: Humphrey becomes re-accessible as a map
+
+#[Shake]
+
+message_27:
+  text: \hum噢……\!但它看起来好好吃哦……
+
+
+message_29:
+  text: \hum我……\!快……\!\quake[1]啧，啧……\quake[0]
+

@@ -1,0 +1,161 @@
+# =========================================================================================
+# DADDY LONGLEGS
+# ========================================================================================
+
+#He always says this first. The rest, he says based on how many times you entered any map in the lost forest.
+
+message_0:
+  text: \n<长腿爸爸>欢迎来到\c[11]迷失森林\c[0]。在这里，你能找到你已经失去了的，早已被你遗忘的东西……\!又或许，它们是出于某种理由才被遗忘的。
+
+#He always says this stuff, left as is so the player could know how hot or cold they are:
+
+message_1:
+  text: \n<长腿爸爸>我想每个人心中都有秘密……\!不论你将它埋藏得多深，不论你付出何种努力去遗忘它，它总会找到回去的路……
+
+message_2:
+  text: \n<长腿爸爸>你在尝试丧失自我吗？又或者你已经做到了？\!不管怎样，你来对了地方。\!或许这正是你出现在这里的原因……你要完成你的使命。
+
+#Alternate
+
+message_3:
+  text: \n<长腿爸爸>我们通常倾向于做我们想做的事情……而不是我们声称会做的事情。\!<br>我呢，从来不是忠于欲望的人。\!我会搞清楚自己“需要”什么。
+
+message_4:
+  text: \n<长腿爸爸>而我建议你，在你的“需要”完全浮现之前，赶快寻找出口吧。
+
+message_5:
+  text: \n<长腿爸爸>这已经是我第 \v[109] 次见到你了。
+
+#If：Lost Forest Entrances  8
+
+message_6:
+  text: \n<长腿爸爸>你还在这里？\!看来你不是放弃了，便是已经完全接受了你的命运。\!或许这是你的忏悔，但这不该由我来说。
+
+message_7:
+  text: \n<长腿爸爸>你已经从我身边经过 \v[109] 次了。
+
+#  If：Lost Forest Entrances = 9
+
+message_8:
+  text: \n<长腿爸爸>曾经有一个男孩，像你一样在这附近游荡。\!他步入了黑暗之中，再也没有出来过。
+
+message_9:
+  text: \n<长腿爸爸>从未能找到他渴求的事物，他该有多么地懊悔呢。\!但无论那是懊悔、挫败还是疑惑，终究也无人知晓了。
+
+#  If：Lost Forest Entrances = 12
+
+message_10:
+  text: \n<长腿爸爸>我见过人迷失自我，也见过人陷入盲目之中。但两者的结合依旧令人不安。\!或许你是在故意逃避正确的道路。
+
+#  If：Lost Forest Entrances = 15
+
+message_11:
+  text: \n<长腿爸爸>恶人固然无道德可言。\!可人们又该如何界定无意的恶行呢？\!为何你明知这条道路不正确，还要继续走下去呢？
+
+#This stuff is unique to the map that you're on. He says it directly after the stuff above.
+
+#MAP 1
+message_12:
+  text: \n<长腿爸爸>常言道，切勿浪费时间度过不属于你的人生。\!梦境也是相同的道理，正如这片森林一样。\!迷失于此……
+
+#MAP 2
+message_13:
+  text: \n<长腿爸爸>有时候，当我们想对自己隐瞒一些事情，我们便会创造出各个迥然不同的真相，从而遗忘原本的道路。\!<br>你找到你的道路了吗？又或者你还在迷失当中？
+
+#MAP 5
+message_18:
+  text: \n<长腿爸爸>你会忘掉一切，或者尝试忘掉一切。\!无论你知晓与否，黑暗总会萌芽浮现。\!它潜藏在无知的背后，静静地看着你的谎言分崩离析。
+
+#Once you complete the forest, his page 2 is always:
+message_19:
+  text: \n<长腿爸爸>令人恐惧的黑暗将你团团围住，但“真相”依旧指引着你。\!而你还能保留它多久呢？
+
+#END
+
+message_21:
+  text: \n<长腿爸爸>你来到了\c[11]迷失森林\c[0]的尽头……<br>但这里却是真相的起点。
+
+message_22:
+  text: \n<长腿爸爸>我来向你讲述一个，随着时间流逝而被遗忘的故事吧……\!<br>一个有关这个世界起源的故事。
+
+message_23:
+  text: \n<长腿爸爸>最初，这里只有两个存在……\!<br>造梦者，与他的房间。
+
+message_24:
+  text: \n<长腿爸爸>造梦者逐渐厌倦了他的房间，便创造了一扇门，那扇门通往了许多不同的世界。
+
+message_25:
+  text: \n<长腿爸爸>以外来访客的身份，造梦者随心所欲地探索着一个又一个不同的世界。
+
+message_26:
+  text: \n<长腿爸爸>一路上跌跌撞撞，爬上又爬下……\!造梦者的好奇心，最终将其引领至一个特殊的世界。
+
+message_27:
+  text: \n<长腿爸爸>一个不一样的世界……\!<br>一个乱象丛生、沐浴黑暗的世界。
+
+message_28:
+  text: \n<长腿爸爸>造梦者逐渐被恐惧蚕食。\!一直以来沉寂着的那些恶意言语，悄悄地爬进了他的脑海。\!它们窃窃私语着谎言、秘密，以及真相。
+
+message_29:
+  text: \n<长腿爸爸>无力让杂音缄默的造梦者，决定在他的各个世界里创造出一个又一个善良的个体……
+
+message_30:
+  text: \n<长腿爸爸>然后他将各个世界融合为一……\!凭借各界之力，将黑暗领域封印在了世界之下。
+
+message_31:
+  text: \n<长腿爸爸>然而，即便有了这些奋勇的努力，黑暗的存在却从未消褪过。\!即便造梦者有了新的盟友，黑暗仍在试图入侵他的意识。
+
+message_32:
+  text: \n<长腿爸爸>杂音或许平息了几分，但它从未完全消失。
+
+message_33:
+  text: \n<长腿爸爸>造梦者当然可以逃避，或是掩埋他的恐惧；但人始终要面对自己的倒影。
+
+message_34:
+  text: \n<长腿爸爸>而造梦者所创造的一切，他已经无法置身其中。<br>那是不属于他自身的东西。
+
+message_35:
+  text: \n<长腿爸爸>造梦者的力量成为了他最大的敌人。\!<br>知识……又或是无知，将是对造梦者最大的赠予。
+
+message_36:
+  text: \n<长腿爸爸>如此便能真正地逃离他的能力所带来的危难，<br>升华到无知的幸福状态……\!<br>只有那时，杂音才会停止侵蚀造梦者的理智。
+
+message_37:
+  text: \n<长腿爸爸>于是……\!造梦者换了另一个名字……\!<br>然后选择彻底遗忘自己。
+
+message_38:
+  text: \n<长腿爸爸>从那时起，造梦者就与我们居住在一起……<br>\!仅仅作为这个世界的一份子生活……\!<br>他幸福地四处旅行着，对自己虚构出的谎言一无所知。
+
+#leave
+
+message_39:
+  text: \n<长腿爸爸>这场旅途对心灵脆弱的人来说太过艰难。\!你们想离开吗，孩子们？\!我不会责怪你们。
+
+#message_39:
+#    text:  \n<DADDY LONGLEGS>Do you understand, children?
+    #YES/NO
+
+#message_40:
+#    text: \n<DADDY LONGLEGS>Good.\! Now, I will leave you with a warning.
+
+#message_41:
+#    text: \n<DADDY LONGLEGS>I'm sorry. As conflicted as I am, this tale was not meant to be repeated.\! Now, I will leave you with a warning.
+
+message_41:
+  text: \n<长腿爸爸>孩子们，我必须警告你们……
+
+message_42:
+  text: \n<长腿爸爸>在这个世界生与死的循环中，即使是世界本身也无法避免消亡的命运。\!即便造梦者减缓了这一进程，黑暗仍在不断生长。
+
+message_43:
+  text: \n<长腿爸爸>正如没有绷带可以遏止永恒的创伤渗出的血……\!终有一日，黑暗将渗入这个世界。<br>造梦者或许遗忘了他的危难，但危难却不会遗忘他。
+
+message_44:
+  text: \n<长腿爸爸>然而，这个世界的终结在所难免。\!唯有造梦者的力量，可以真正解放这个世界。
+
+message_50:
+  text: 这盏灯是不久前被点亮的。
+
+message_51:
+  text: 一个老树桩。
+

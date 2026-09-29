@@ -1,0 +1,269 @@
+﻿#=========================================================================================
+# Updated at 06/25/2021
+# This file has been created by BLUEMOON for exporting all the hardcoded strings 
+# from JS files.
+#
+# Just for a good memo, some strings are incapsulated in "" quotes because they have 
+# : inside the string. 
+#=========================================================================================
+
+# =========================================================================================
+# Map_Character_Tag
+# Those texts are for the MAP TAG SYSTEM
+# =========================================================================================
+
+Map_Character_Tag:
+  leader: リーダー
+  tag_who: 誰をタッグする？
+
+# =========================================================================================
+# OMORI BATTLE SYSTEM
+# =========================================================================================
+
+Omori_Battle_System:
+  hold: "所持数： x%1" # This is for the hold item on item window of battle scene. %1 is the number of items
+  cost: "コスト" # Those are the MP cost of a skill in battle
+
+# =========================================================================================
+# OMORI BLACK LETTER MENU
+# =========================================================================================
+
+Omori_Blackletter_Menu:
+  hangman: ハングマン
+  collect_desc: キーを集め、空欄を埋めよう。
+  incorrect_desc: 間違ったキーは右の方に捨てられる。
+
+# =========================================================================================
+# OMORI ITEM SHOP
+# =========================================================================================
+
+Omori_Item_Shop:
+  total_price: "合計金額："
+  amount: "購入数："
+
+# =========================================================================================
+# OMORI MAIN MENU SCENE SKILL
+# =========================================================================================
+
+Omori_Mainmenu_Sceneskill:
+  do_what: 何をする？
+  use_on_who: 誰に使う？
+  use_on_all: 全員に使う？
+  use: 使う
+  swap: 交換  
+
+# =========================================================================================
+# OMORI MAIN MENU 
+# =========================================================================================
+
+Omori_Mainmenu:
+  lvl: LV
+  select_who: 誰を選ぶ？
+
+# =========================================================================================
+# OMORI MAIN MENU SCENE OPTIONS
+# =========================================================================================
+
+Omori_Mainmenu_Sceneoptions:
+  commands: ["各種設定", "オーディオ", "操作設定", "システム"]
+
+# =========================================================================================
+# OMORI NAME INPUT
+# =========================================================================================
+
+Omori_Name_Input:
+  nameask: 彼の名前は？
+
+# =========================================================================================
+# OMORI SAVE AND LOAD
+# =========================================================================================
+
+Omori_Save_Load:
+  file: "ファイル %1:" # This is the file number entry on save/load scene. %1 is the file index
+  level: "レベル："
+  playtime: "合計プレイ時間："
+  location: "現在地："
+  overwrite_file: 上書きしちゃう？
+  load_file: このデータにする？
+
+# =========================================================================================
+# YIN BLACKJACK
+# =========================================================================================
+
+Yin_Blackjack:
+  bets: [$5,$25,$100,やめる] # Those are the strings in the bet commands
+  jack_commands: [スタンド, ヒット] # Those are the commands for blackjack. They will be uppercased.
+  dealer_streak: ディーラー %1 # %1 is streak string
+  player_streak: プレイヤー %1 # %1 is streak string
+  streak_string: "連勝記録： %1" # %1 is the player/dealer streak value
+  score: "スコア： ディーラー%1   プレイヤー%2" # %1 and %2 are dealer and player scores
+  bet: "ベット：$%1 x%2Total Cash - $%3" # Format numbers references to wagerAmount, playerBonus and currentEarnings
+  maincommands: [ニューゲーム, コンティニュー, やめる] # Blackjack commands. They will be uppercased.
+
+# =========================================================================================
+# YIN OMORI FIXES
+# =========================================================================================
+
+Yin_Omori_Fixes:
+  # Final Battle Strings
+  continue: コンティニューする？ # This message is returned on the scripted Game Over during the final OMORI BATTLE
+  retry: リトライする？
+
+# =========================================================================================
+# OMORI TITLE SCREEN
+# =========================================================================================
+
+Omori_Title_Screen:
+  commands: ['はじめる', 'つづける', 'オプション'] #['NEW GAME', 'CONTINUE', 'OPTIONS']
+
+# =========================================================================================
+# YIN PIZZA MINIGAME
+# As I have not coded this plugin myself, I'm trying to imagine the logic of the 
+# original coder. - BLUEMOON
+# =========================================================================================
+
+Yin_Pizza_Delivery:
+  houseHints:
+    1: ["Cans In The Yard", "Red PickupTruck", "Green Rug", "Cans By The Garbage", "RunDown Brown Roof", "Boarded Up Window", "Brick Front", "No Fence", "Roots In The Yard", "Plants On The Driveway", "Garbage Lined Up In The Front"]
+    2: ["Dark Green PickupTruck", "Purple Rug", "Stone Chimney In The Yellow Roof", "Yellow Door With Windows", "Windows In The Door"]
+    3: ["White Rug", "Dark Pink Door", "Tether Ball In The Yard", "Pink Roof", "One Pink Front Window", "Purple Flowers By The Window"]
+    4: ["Gray Rug", "Orange Door", "Cones In Front Of The Driveway", "Light Blue Roof", "Ladder By The Tree"]
+    5: ["Gray Car", "Large Rock In The Yard", "Flowers By The Large Rock", "Purple Rug", "Orange Roof", "Brick Front", "No Garbage Cans"]
+    6: ["White Door", "Dark Blue Roof With The Stone Chimney", "Beat Up Front", "Easel In The Yard", "Plants In The Yard"]
+    7: ["Red PickupTruck", "Light Yellow Door With Windows", "Boxes In The Side Yard", "Purple Flowers By The Yellow Window", "Dark Purple Rug", "No Garbage Can", "Red Roof", "No Fence"]
+    8: ["Purple Roof With A Chimney", "Messy Yard", "Brown Rug", "No Fence", "Ladder By The Door", "Hydrant Out Front", "Dark Red Door"]
+    9: ["Light Brown Roof", "Pink Door", "Gray PickupTruck", "No Fence"]
+    10: ["Yellow Roof", "Tires In The Yard", "White Door With No Windows", "Picnic Table On The Side", "Grill In The Yard"]
+    11: ["Blue Roof", "Light Brown Door", "Brown Rug", "Dog House", "Roots In The Yard"]
+    12: ["Light Green Roof", "Toys In The Yard", "Cans By The White Fence", "White Rug", "One Green Window", "Large Rock In The Yard", "Hydrant Out Front"]
+    13: ["Light By The Driveway", "Dark Green Rug", "Blue PickupTruck", "Brown Fence With Bushes", "Hydrant Out Front", "Purple Brick Chimney In A Dark Green Roof"]
+    14: ["Brown Roof", "Roots And Flowers In The Yard", "Tree Lined Entrance", "Dark Yellow Rug", "Dark Red Door", "White Garage Door"]
+    15: ["Blue Roof With The Blue Brick Chimney", "White Brick Front", "Green PickupTruck", "Garbage On The Left Side", "Hoops In The Yard", "Tether Ball", "Bushes By The Light Brown Garage Door"]
+    16: ["Pink Car In The Driveway", "Brown Roof With Dark Green Chimney", "Yellow Door With Windows", "Yellow Flowers In The Bushes"]
+    17: ["White Car", "Light Pink Garage Door", "Light Pink Rug", "White Door With Windows", "Dirt Patch By The Fence", "Light Gray Roof", "Flowers In The Yard", "Boxes By The Garage Door"]
+    18: ["Dark Brown Brick Roof", "Garage Door With No Windows", "Beat Up Fence", "Green PickupTruck", "Garbage Out Front", "Yellow Flowers In The Bushes", "Trees In The Yard", "Couch In The Garbage"]
+    19: ["Red Roof", "Messy Garbage On The Left Side", "Blue Rug", "Gray Door", "Rock Lined Driveway", "Bottles And Cans In The Yard", "Tree By The Door", "No Windows In The Garage Door", "Red Brick Chimney"]
+    20: ["Light Brown Roof", "Orange Door", "Garbage On The Side Of The Driveway", "Gray Car", "Brown Chimney", "Flowers Bushes Lined Driveway"]
+    21: ["Purple Roof", "Purple Chimney", "Pink Door", "Dark Red Garage Door", "Hydrant Out Front", "Dark Blue Rug", "Pink Car", "Birdhouse In The Yard", "Mailbox Out Front", "Flowers Boxes In The Yard", "Grill On The Right Side", "Wood Planks By The Trees"]
+    22: ["Dark Brown Door", "Dark Green Roof", "White Brick Front", "Plants By The Door", "Mulch On The Side Of The Yard", "Garbage By The Fence", "Dog House", "Purple Brick Chimney", "Hoops"]
+    23: ["Yellow Roof", "Work Table On The Side", "Tools In The Yard", "Yellow Rug", "Gray PickupTruck", "White Garage Door With Windows", "Tires In The Yard"]
+    24: ["Red PickupTruck", "Blue Roof", "Cones Out Front", "Yellow Door With Windows", "Flamingo", "Birdhouse", "Blue Brick Chimney"]
+    25: ["Purple Roof", "White Rug", "Flamingo And Trees On The Driveway", "Brown Fence On The Left Side", "Gray Stone Chimney", "One Pink Window", "Grill By The Picnic Table"]
+    26: ["Light Brown Roof", "Brown Door", "Hoops By The Brown Fence", "Purple Rug", "Two Black Garbage Cans", "Toys In The Yard", "Light Brown Brick Front", "Cones Out Front"]
+    27: ["Dark Brown Roof", "Sign Out Front", "Roots In The Yard", "Red Flowers By The Yellow Window"]
+    28: ["Flowers Lined Path", "Garbage On The Left And Right Side", "Two Green Garbage Cans On The Right", "White Roof", "White Door", "Hydrant Out Front", "White Stone Chimney"]
+    29: ["Yellow Roof", "Dark Red Door", "Brown Rug", "Garbage In The Front", "Tires In The Yard", "Ladder By The Door", "Gray PickupTruck", "Blue PickupTruck", "Wood Planks On The Side"]
+    30: ["White Fence", "Pink Car", "Flowers Lined Driveway", "Light Brown Roof", "Grill On The Left Side", "Dark Pink Door"]
+    31: ["Dark Brown Roof", "Swing", "Tether Ball", "Flowers In The Yard", "Garbage On The Dirt Patch", "Small Dirt Path", "Toys Out Front"]
+    32: ["Red Roof", "Gray Rug", "Orange Door", "Roots In The Yard", "Two Green Garbage Cans", "Beat Up Front", "Hydrant Out Front", "Ladder On The Wood Planks", "Gray Stone Chimney"]
+    33: ["Gray Roof", "Brick Front", "Purple Rug", "Ladder By The Door", "Two Garbage Cans", "Bottles By The Garbage", "Dog House", "Wood Planks In The Yard", "No Fence", "Gray PickupTruck Out Front"]
+    34: ["White Car Out Front", "Mailbox Out Front", "Cans By The Garbage Out Front", "Light Blue Roof", "Trees By The Entrance", "Light Red Door", "Hoops", "Light Green Rug"]
+    35: ["Yellow Car Out Front", "Red Flowers By The Window", "Flowers By The Small Path", "Mulch In The Yard", "Blue Roof", "Dark Blue Rug", "Trees In Front Of The White Fence"]
+    36: ["Hydrant Out Front", "No Fence", "Purple Flowers By The Pink Window", "Garbage On The Right Side By The Toys", "Pink Door", "White Roof", "Gray Car", "Car Toys In The Yard"]
+
+  partPool: [
+        "This Pizza Goes Down The Street To The House With The ",
+        "Please Take This Pizza To The House With The ",
+        "Look For The House That Has The ",
+        "This Pizza Goes To The House With The ",
+        "Take The Pizza To The House That Has The ",
+        "Find The House With The ",
+        "Can You Find The House With The ",
+        "Take This Pizza To The House With The ", 
+        "Take This Pizza Down The Street To The House With The ",
+        "Please Find The House With The ",
+        "This Pizza Goes To The House That Has The ",
+        "Can You Find The House That Has The "
+    ]
+
+  descriptionLink: " And The " # This part of the string seems to be used to link the description of the House Pools -> var text = part + $gameSystem.pizza[0] + " And The " + $gameSystem.pizza[1];
+
+  #==========================
+  # In the original code, there is this line
+  #     if (text.contains("The No")) {
+  #      text = text.replace("The No", "No");
+  #  }
+  #
+  # I'm not sure why the original programmer added this, probably to prevent
+  # some kind of mispelling/grammar problem. If you think that this is not
+  # needed in the localization by any chance, just leave void the strings
+  # this way ["", ""]
+  theNo: ["The No", "No"] 
+
+# =========================================================================================
+# UI_CONFIGURATION
+# In the object below, you can edit some settings related to some UI parts of the game
+# that were originally edited directly in the source code. 
+# =========================================================================================
+# LanguageManager.getMessageData("XX_BLUE.Window_Base")
+
+Sprite_MapCharacterTagFace:
+  setText_fontsize: 20 # MAP CHARACTER TAG line 622
+
+Window_Base:
+  drawShortActorHP_contents_fontsize: 15 # OMORI BASE line 3514
+
+Window_OmoMenuHelp:
+  refresh_contents_fontsize: 18 # OMORI BASE line 3868
+  refresh_description_fontsize: 16 # OMORI BASE line 3870 only for the BATTLE SYSTEM
+
+Window_OmoWindowIndexCursor:
+  refresh_contents_fontsize: 16 # OMORI BASE line 3969
+  refresh_draw_text_position: [0, -10] # OMORI BASE line 3976
+
+Window_NameBox:
+  refresh_draw_text_position: ["padding", -7] # OMORI BASE line 4634
+  standardFontSize: 24 # YEP MESSAGE CORE line 1094
+
+Window_OmoriBattleActorStatus:
+  drawHP_contents_fontsize: 12 # OMORI BATTLE SYSTEM line 2537
+  drawHP_contents_clearRect_position: [0, "y"] # OMORI BATTLE SYSTEM line 2539
+  drawMP_contents_fontsize: 12 # OMORI BATTLE SYSTEM line 2551
+
+Window_ScrollingTextSource:
+  standardFontSize: 18 # OMORI BATTLE SYSTEM line 4124
+
+Window_OmoMenuOptionsCategory:
+  standardFontSize: 20 # OMORI MAIN MENU SCENE OPTIONS line 698
+
+Window_MenuCommand: # TAG EQUIP POCKET SKILL OPTION
+  standardFontSize: 19 # OMORI MAIN MENU line 259
+
+Window_Gold:
+  drawCurrencyValue_position: ["x", 5] # OMORI MAIN MENU line 334
+
+Window_OmoMainMenuActorStatus:
+  refresh_contents_fontsize: 20 # OMORI MAIN MENU line 604
+  refresh_drawText_position: [12, -3] # OMORI MAIN MENU line 606
+  refresh_contents_fontsize2: 16 # OMORI MAIN MENU line 607
+  refresh_drawTextHP_position: [12,44] # OMORI MAIN MENU line 626
+  refresh_drawTextMP_position: [12,72] # OMORI MAIN MENU line 631
+
+Window_OmoriFileInformation:
+  refresh_contents_fontsize: 20 # OMORI SAVE AND LOAD LINE 608
+  refresh_drawText_position: [150, 2] # OMORI SAVE AND LOAD line 613 [115, 5]
+
+Scene_OmoriTitleScreen:
+  commandHints_fontsize: 16 # OMORI TITLE SCREEN line 208
+  commandHints_confirm_position: ["iconSize + 5", "paddingY + 2"] # OMORI TITLE SCREEN line 211
+  commandHints_cancel_position: ["iconSize*2 + 20 + this._commandHints.bitmap.measureTextWidth(confirm)", "paddingY + 2"] # OMORI TITLE SCREEN line 214
+  gameVersion_position: [5,5] # OMORI TITLE SCREEN line 234
+  gameVersion_fontsize: 20 # OMORI TITLE SCREEN line 235
+  
+Window_OmoTitleScreenBox: # NEW GAME, CONTINUE, OPTION
+  refresh_contents_fontsize: 20 # OMORI TITLE SCREEN line 1134
+  refresh_drawText_position: [0, -8] # OMORI TITLE SCREEN line 1140
+
+Window_OmoMenuItemCategory:
+  standardFontSize: 17 # OMORI MAIN MENU SCENE ITEM line 620
+
+Window_OmoMenuItemList:
+  drawItem_contents_fontsize: 16 # OMORI MAIN MENU SCENE ITEM line 794
+  drawItem_drawText_position: ["rect.x + rect.width - 15", "rect.y"] # OMORI MAIN MENU SCENE ITEM line 800
+
+Window_OmoMenuItemConfirmation:
+  standardFontSize: 20 # OMORI MAIN MENU SCENE ITEM line 832
+
+Window_OmoMenuItemTrashPromptWindow:
+  standardFontSize: 20 # OMORI MAIN MENU SCENE ITEM line 893
+  itemRectForText_rectx: "this.textPadding() + 10" # OMORI MAIN MENU SCENE ITEM line 925

@@ -1,0 +1,70 @@
+# =========================================================================================
+# Tentacle
+# ========================================================================================
+
+#Cutscene: ABBI's Tentacles
+
+#ABBIs Tentacles sink into the ground. ABBI's head is peeking from above the strange
+
+
+message_0:
+  text: \fn<OMORI_GAME>\n<阿比>求求你……\|不要……\!我……\|很抱歉……\Quake[0]
+
+
+message_3:
+  text: \fn<OMORI_GAME>\n<阿比>我是八个小小池塘里……\|红色的触手……\|<br>遍布\c[11]脑内空间\c[0]……\Quake[0]
+
+message_4:
+  text: \fn<OMORI_GAME>\n<阿比>我会在那边……\|虔诚上供……\Quake[0]
+
+
+message_5:
+  text: \fn<OMORI_GAME>\n<阿比>求求你……\|求求你……\|求求你……\|原谅我……\|我最好的朋友……\SINV[0]\Quake[0]\n
+
+
+#[Nod/Shake]
+#[Nod]
+
+message_6:
+  text: \fn<OMORI_GAME>\n<阿比>谢谢你……\|造梦者……
+
+message_7:
+  text: \fn<OMORI_GAME>\n<阿比>我是……\|你的一份礼物……\|造梦者。
+
+message_8:
+  text: 阿比给了你一根\c[13]棒球棍\c[0]。
+
+message_9:
+  text: 阿比给了你一根\c[13]头带\c[0]。
+
+message_10:
+  text: 阿比给了你一个\c[13]咳嗽口罩\c[0]。
+
+message_11:
+  text: 阿比给了你一把\c[13]红色的小刀\c[0]。
+
+message_12:
+  text: 阿比给了你一个\c[13]篮球\c[0]。
+
+message_13:
+  text: 阿比给了你一把\c[13]可靠的老伙计\c[0]。
+
+message_14:
+  text: 阿比给了你一顶\c[13]厨师帽\c[0]。
+
+message_15:
+  text: 阿比给了你一个\c[13]漂亮的蝴蝶结\c[0]。
+
+message_16:
+  text: 一个空的池塘。
+
+message_17:
+  text: 你获得了\c[13]阿比之眼\c[0]。
+
+#[Shake]
+#ABBI suddenly disappears
+#Tentacle pools in dreamworld disappear
+
+message_18:
+  text: \fn<OMORI_GAME>\n<阿比>真相……\|我曾经知晓……\|<br>但……\|我是……\|我已不再记得……
+

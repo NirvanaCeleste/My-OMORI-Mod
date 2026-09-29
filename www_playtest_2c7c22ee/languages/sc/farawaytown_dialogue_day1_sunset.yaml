@@ -1,0 +1,297 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+#=========================================================================================
+# DAY 1 - SUNSET
+#=========================================================================================
+
+
+#========================== BASIL================================
+
+#Location: Basil's House (Cutscene: Polly)
+#BASIL's eyes follow \n[8].
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: \n<贝瑟尔>啊、啊……\!你好……\!\n[8]……
+
+message_1:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: \n<贝瑟尔>我们终于又见面了，真是太好了……\!哈哈……
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 35
+  text: \n<贝瑟尔>你、你为什么……那样盯着我看？
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 36
+  text: \n<贝瑟尔>呃……\!\n[8]？\!你……\!你没事吧？
+
+#========================== ANGEL================================
+
+#Location: Hobbeez looking at comics (Pet Rock Fight)
+
+message_10:
+  text: \n<安吉尔>\Com[2]你瞅啥呢？！\!我跟你讲啊，我可是这儿的常客！<br>我得赶在开学之前赶紧追上最新的漫画进度！
+
+#========================== CHARLIE (CHARLENE)================================
+
+#Location: Hardware store looking at flowers
+
+message_20:
+  text: \n<查理>……
+
+#========================== THE MAVERICK================================
+
+#Location: FARAWAY PARK running in place in an open area
+
+message_30:
+  text: \n<独行侠>\Com[2]啊！\!这不是凯和 \n[8] 吗！
+
+message_31:
+  text: \n<独行侠>今天早些时候，被你们目睹了我丢脸的样子……\!<br>但现在，我\Com[2]独行侠要亲手把面子给挣回来！
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel啊？现在这又是演哪一出啊，米凯尔？
+
+message_33:
+  text: \n<独行侠>可恶……\!你现在还一副嘻皮笑脸的样子！去你的！
+
+message_34:
+  text: \n<独行侠>\Com[2]\{凯！\!\Com[2]来跟我好好比一场，<br>看看到底谁跑得快吧！\}
+
+message_35:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel……啊？跟我赛跑？\!你认真的吗？
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel我不知道要不要比诶……\!因为我跑得还挺快的……
+
+message_37:
+  text: \n<独行侠>\Com[2]哈！\!你也就现在能说这种话了！\!<br>你等着瞧，让你看看我训练的成果！
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel我是认真的，米凯尔。\!公平起见，你可别说我没提醒你……\!<br>我跑得很快的。\!\SINV[1]超级\SINV[0]快的哦。
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel啊，我知道了！\!公平起见，你等下也可以骑滑板车来跟我比哦！
+
+message_40:
+  text: \n<独行侠>\{\Com[2]不要小瞧我啊！！\}
+
+message_41:
+  text: \n<独行侠>来啊，凯！\!<br>你嘴上功夫一套一套的，脚下功夫到底行还是不行啊？！\!<br>\Com[2]拿出真本事，跟我好好比一场吧？！
+
+message_42:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: \kel唉……\!看来我今天是非跑不可了。
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel抱歉啦，\n[8]。\!我马上就回来。
+
+#PLAYER is at the finish line.
+#CAMERA pans to KEL and THE MAVERICK who are on the other side of the track.
+
+
+message_44:
+  text: \n<独行侠>\Com[2]\{\SINV[1]各——就位！！\SINV[0]
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel预备……
+
+message_46:
+  text: \n<独行侠和凯>\Com[2]\SINV[1]跑噢\{噢噢\{噢噢\{噢噢噢！！\SINV[0]
+
+#KEL runs quickly, and the camera follows
+#After a few seconds,THE MAVERICK slowly walks into the screen from off CAMERA
+
+message_47:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!等等……\!<br>我……\!呼……\!我要再比一次……
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel你确定吗，米凯尔……\!<br>你看……天色已经挺晚了哦？
+
+message_49:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……
+
+#THE MAVERICK's wig falls off and he picks it up and puts it back on.
+
+message_50:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!<br>求你……
+
+message_51:
+  text: \n<独行侠>呼……\!我……\!呼……\!要……\!呼……\!把面子……\!挣回来……\!呼……
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel好吧……\!呃……\!改天再说吧……\!我和 \n[8] 有事要先走了……\!<br>之后再见啦，米凯尔！
+
+#cutscene ends
+
+message_53:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!<br>可恶啊，凯，你这家伙……\!呼……
+
+message_54:
+  text: \n<独行侠>你还没见到……呼……\! \Com[2]独行侠……真正的实力……呼……
+
+#========================== SHORT HAIR GIRL================================
+
+#Location: FARAWAY PARK running in place in an open area
+
+message_60:
+  text: \n<短发女孩>我觉得我今天找到了真爱……\!<br>希望他会注意到我！
+
+#========================== FASHIONABLE MOM================================
+
+#Location: Candy Shop
+
+message_70:
+  text: \n<时尚的妈妈>巧克力是女孩们最好的朋友！\!<br>虽然……\!钻石的排名也挺高的……
+
+#========================== STRANGE MAN================================
+
+#Location: FARAWAY PARK
+
+message_80:
+  text: \n<奇怪的男人>地球的污秽……\!令我作呕……\!<br>真希望我能就此……\!将它们全部一扫而空。
+
+#========================== OLD BEARDY===============================
+
+#Location: Graveyard
+
+message_90:
+  text: \n<白胡子老爷爷>这一带还挺安静的，是不是？\!你完全听不见街道那边嘈杂的声音呐……
+
+message_91:
+  text: \n<白胡子老爷爷>呵……\!这儿只有一些游魂野鬼……\!<br>当然，还有我啦！
+
+message_92:
+  text: \n<白胡子老爷爷>你那是什么表情？\!<br>\{\Com[2]我还没死呢！
+
+message_93:
+  text: \n<白胡子老爷爷>\SINV[2]嘎\{\{哈哈\{哈哈\{哈哈！！\SINV[0]
+
+#========================== DAPHNE & BOWEN===============================
+
+#Location: Church
+
+message_100:
+  text: \n<双胞胎其一>\SINV[1]我们家每周都会来一次\c[11]教堂\c[0]……\SINV[0]
+
+message_101:
+  text: \n<双胞胎其二>\SINV[1]有时也会每周来两次……\SINV[0]
+
+message_102:
+  text: \n<双胞胎其一>\SINV[1]有时还会每周来三次……\SINV[0]
+
+
+#========================== POLLY===============================
+
+#Location: Basil's House
+
+#After cutscene: Polly
+message_110:
+  text: \n<波莉>晚餐很快就准备好了！\!<br>大家可以随意一点哦！就当成是自己家就行！
+
+#After cutscene: Awkward Dinner
+message_111:
+  text: \n<波莉>你可能在想我是这个家里的谁，对不对？\!<br>其实呢，我并不是这个家的一员……<br>我是个护工，是来照顾贝瑟尔的奶奶的。
+
+message_112:
+  text: \n<波莉>几个月之前，贝瑟尔的父母雇我来照顾贝瑟尔，因为他们经常要出差。
+
+message_113:
+  text: \n<波莉>我尽力照顾贝瑟尔了，因为他父母好像从来都不在家，但……
+
+message_114:
+  text: \n<波莉>自从我搬进来，我总感觉贝瑟尔好像一直在躲着我……
+
+message_115:
+  text: \n<波莉>我很想知道是不是我做错了什么，他才……
+
+#==========================Preacher===============================
+
+#Location: Church
+
+message_120:
+  text: \n<牧师>嗯……\!我通常不会容忍有人在我布道时大打出手……\!<br>但这回……似乎非同小可啊。
+
+message_121:
+  text: \n<牧师>那个叫奥布里的女孩过去几年每周都来这里，但从来不和任何人说话。
+
+message_122:
+  text: \n<牧师>我试图和她搭过几次话，<br>但她……\!呃……\!讲话不太客气……
+
+message_123:
+  text: \n<牧师>她看起来心事重重。\!也许她需要和朋友聊聊。
+
+#==========================Sarah===============================
+
+#Location: Sarah's House
+
+message_130:
+  text: \n<马尾女孩>哦，你们好啊！\!我刚听到厨房里有动静，\!<br>是不是我爸爸的\c[4]结婚戒指\c[0]又掉到下水道里去了？<br>\!唉，他老是这样……
+
+message_131:
+  text: \n<马尾女孩>不过他不知道我其实对他的事一清二楚就是了……呵呵……
+
+message_132:
+  text: \n<马尾女孩>总之呢！我叫莎拉！\!很高兴认识你们！
+
+#Talk to SARAH again
+
+message_133:
+  text: \n<马尾女孩>自从我妈对于健康生活走火入魔以来，<br>我家就找不出任何的薯片和零食了……\!但是……
+
+message_134:
+  text: \n<马尾女孩>就算是胡萝卜和芹菜，如果沾沙拉酱吃……\!味道应该也不错吧……
+
+#==========================Sarah's Dad===============================
+
+#Location: Sarah's House (Ring in the sink quest)
+
+message_140:
+  text: \n<笨拙的男人>唔……\!嘿，孩子们，你有没有看见一大包薯片落在什么地方啊？\!<br>我明明前两天刚买了一大包的……
+
+#==========================Sarah's Mom===============================
+
+#Location: Sarah's House (Ring in the sink quest)
+
+message_150:
+  text: \n<马尾女士>按照计划，我们全家从这周开始都应该健康饮食的，<br>但\c[11]吉诺披萨店\c[0]里的香味实在是太诱人了……
+
+message_151:
+  text: \n<马尾女士>唉……\!也许时不时吃一顿油腻的大餐也不是不行……
+
+#==========================The Maverick's Dad===============================
+
+#Location: Church
+
+message_160:
+  text: \n<穿着讲究的女士>哦，天哪……\!呜呜……\!好像我们家的小儿子又没有去\c[11]教堂\c[0]……
+
+message_161:
+  text: \n<穿着讲究的男士>唉……\!米凯尔……\!你在哪儿呢？\!为什么你总让你妈为你担心呢？
+

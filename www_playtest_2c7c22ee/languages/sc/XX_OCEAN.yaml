@@ -1,0 +1,1609 @@
+#=========================================================================================
+# Messages to be replaced
+#=========================================================================================
+
+
+#=========================Location: x==============================
+#== x scene is happening
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub大家等一下，我有点渴了。<br>\!嗯……\!我该买哪个呢？
+
+#=========================Location: Kims mom in front of house==============================
+#== Missing shears sidequest
+
+message_20:
+  text: 你将\c[4]\c[4]园艺剪\c[0]\c[0]还给了戴红眼镜的女士。
+
+#=========================Location: Cris house==============================
+#== Wheres the remote sidequest
+
+message_30:
+  text: 你看到\c[4]电视遥控器\c[0]在沙发底下。\!你决定先不管它。
+
+message_31:
+  text: 你看到\c[4]电视遥控器\c[0]在浴室储物柜的毛巾中间。\!你决定先不管它。
+
+message_32:
+  text: 你看到\c[4]电视遥控器\c[0]被放在派里。\!……\!你决定先不管它。
+
+message_33:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嘿，你手里拿的是\c[4]电视遥控器\c[0]吗，\n[8]？\!<br>偷别人东西可不好，知道吗？
+
+#=========================Location: Fixit==============================
+#== Pick up furniture sidequest
+
+message_40:
+  text: 奇怪的男人给了你 $50.00 去买\c[4]落地灯\c[0]。
+
+message_41:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 等等，\n[8]！我们可不能就这样拿钱离开啊！\!我们要先去买\c[4]落地灯\c[0]才行！
+
+message_42:
+  text: \n<“修它”老板>你们这些孩子想买\c[4]落地灯\c[0]吗？\!好吧，你们看中的那个要花……\!嗯……\!$50.00。\!想买下它吗？
+
+message_43:
+  text: \n<“修它”老板>没问题，这是你们崭新的\c[4]落地灯\c[0]。\!<br>不接受退款和替换喔。\!这是公司的政策。
+
+#=========================Location: Orange Guy in front of OTHERMART=============================
+#== Fruitwarbrayden
+
+#If you are wearing a red headband
+message_51:
+  text: \n<香橙小子>呃啊！\!你头上戴的……\!\c[13]红色头带\c[0]……\!是真的吗？\!在你把它取下来之前，我是不会给你们\c[3]香橙汁\c[0]的！
+
+#After buying 5 Orange juices
+message_52:
+  text: \n<香橙小子>哦对了！在你们走之前，这是给忠实顾客的一个小礼物！\!给你\c[13]橙色头带\c[0]，香橙的颜色哦！\!没有比这更棒的！
+
+#If HERO is wearing a red headband
+message_53:
+  text: \n<香橙小子>我看到你的朋友戴着\c[13]红色头带\c[0]……\!虽然我通常不会同意，但头带确实挺配他的。\!这次就原谅他吧，但仅此一次！
+
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her哇哦！谢谢！
+
+#Receive orange headband
+message_55:
+  text: 你获得了\c[13]橙色头带\c[0]！
+
+#=========================Location: Apple Guy in the park=============================
+#== Fruitwaradrian
+
+#While wearing an Orange Headband
+message_60:
+  text: \n<苹果小子>呃啊！\!你头上戴的……\! \c[13]橙色头带\c[0]……\!是真的吗？\!在你把它取下来之前，我是不会给你们\c[3]苹果汁\c[0]的！
+
+#After buying 5 Apple juices
+message_61:
+  text: \n<苹果小子>哦对了！在你们走之前，这是给忠实顾客的一个小礼物！\!给你\c[13]红色头带\c[0]，苹果的颜色哦！\!骄傲地戴着它吧！
+
+#If HERO is wearing an orange headband
+message_62:
+  text: \n<苹果小子>我看到你的朋友戴着\c[13]橙色头带\c[0]……\!虽然我通常不会同意，但头带确实挺配他的。\!这次就原谅他吧，但仅此一次！
+
+message_63:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her哇哦！谢谢！
+
+#Receive Red Headband
+message_64:
+  text: 你获得了\c[13]红色头带\c[0]！
+
+#=========================Location:Vances house =============================
+#== Fix pipe
+
+#Day 1 reward
+message_70:
+  text: \n<粗犷的男人>给你们孩子 $1.00。\!去买些\c[3]糖果\c[0]之类的吧。
+
+#Day 2 reward
+message_71:
+  text: 你往人形洞里看了看……\!然后发现了一个\c[4]海贝\c[0]！
+
+#If pipe is completely fixed
+message_72:
+  text: \n<粗犷的男人>真感谢你们在我最困难的时期一直支持着我。\!如果能有办法报答你们就好了……\!<br><br>哦，我知道了！给你们我前几天找到的
+    \c[4]CD\c[0]！<br>\!这样就可以了吧！
+
+message_73:
+  text: \n<粗犷的男人>\sinv[1]嘟囔、嘟囔……
+
+message_74:
+  text: 你往人形洞里面看去……
+
+#=========================Location: Jesses house=============================
+#== Birthday gift 2
+
+#Talk to Jesses dad before you talk to Jesse
+message_80:
+  text: \n<抬头纹老爷爷>今天是我儿子的生日！\!……\!如果我能让他从房间里出来庆祝生日就好了！
+
+message_81:
+  text: \n<抬头纹老爷爷>唉……\!我还给他买了个\c[3]蛋糕\c[0]……
+
+#Talk to Jesses dad after you talk to Jesse
+message_82:
+  text: 你获得了\c[3]蛋糕\c[0]！
+
+#=========================Location: Candy store=============================
+#== Anniversary chocolate
+
+
+message_90:
+  text: \n<笨拙的男人>给你！分给你一些\c[3]糖果\c[0]以表谢意！\!我的妻子不会介意分享的！
+
+message_91:
+  text: \n<笨拙的男人>给你！分给你一些\c[3]焦糖苹果\c[0]以表谢意！\!我的妻子不会介意分享的！
+
+message_92:
+  text: \n<笨拙的男人>给你！分给你一些\c[3]巧克力\c[0]以表谢意！\!我的妻子不会介意分享的！
+
+message_93:
+  text: 最好的周年纪念礼物会是？
+
+message_94:
+  text: \c[3]巧克力\c[0]
+
+message_95:
+  text: \c[3]糖果\c[0]
+
+message_96:
+  text: \c[3]焦糖苹果\c[0]
+
+
+#=========================Location: General=============================
+#== Kels blocking you when you need to go elsewhere
+
+message_100:
+  text: 这里什么也没有。
+
+message_101:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel等一下，这不是去\c[11]蜂玩堂\c[0]的路！\!<br>你不记得了吗，\n[8]？\!<br>它在北边的\c[11]小镇广场\c[0]里！
+
+message_102:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\n[8]，我们先去\c[11]蜂玩堂\c[0]吧！
+
+message_103:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嘿！这可不是去\c[11]贝瑟尔家\c[0]的路！<br>还记得我教你的吗？\!它是我们十字路口对角线另一侧的第一座房子！\!<br>挺好记住的，对吧？
+
+message_104:
+  text: 你不应该在晚上打扰别人。\!是时候回家了。
+
+message_105:
+  text: 你不应该这么晚打扰别人。
+
+message_106:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel我先陪你一起回家吧！
+
+message_107:
+  text: 你想要抚摸这只狗狗吗？
+
+message_108:
+  text: 吉他男的捐款箱里装满了现金！
+
+#=========================Location: Church=============================
+#== Day 1 Church
+
+message_110:
+  text: 你想进入\c[11]教堂\c[0]吗？
+
+message_111:
+  text: 你不应该在布道时打扰别人。
+
+message_112:
+  text: 你不应该在布道时打扰别人。
+
+
+#=========================Location: Basils house=============================
+#== Dinner with Basil
+
+message_130:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 嚼嚼……嚼嚼……嚼嚼……嚼嚼……\!<br>你怎么才来？！\kel
+
+message_131:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 我和波莉这顿晚饭准备得可用心了！<br>\!快找个位子坐下吧，\n[8]！ \kel
+
+message_132:
+  text: 波莉和凯做的家常菜。\!<br>你想吃点吗？
+
+message_133:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel\sinv[1]贝——瑟——尔！\!喂，贝——瑟——尔！
+
+message_134:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel哎呀……可怜的家伙。\!他肠胃一直不太好。\!希望他能快点好起来……
+
+message_135:
+  faceset: MainCharacter_Basil
+  faceindex: 33
+  text: \bas来吧，\n[8]！我们吃晚餐吧……
+
+#=========================POLLY==============================
+
+#LOCATION: SUNFLOWER
+
+message_140:
+  text: \n<波莉>唉……\!我还以为他会在这里……
+
+
+#=========================FIXIT/BASIL STREET=============================
+#QUEST: PICK UP FURNITURE
+
+message_150:
+  text: 你获得了\c[4]落地灯\c[0]！
+
+# Trying to leave the shop without finishing your job
+message_151:
+  text: 喂！你想去哪啊？
+
+message_152:
+  text: 那我们说好了啊！\!把陈列架摆好，你就能挣到钱了！
+
+#Rule Explanation
+message_153:
+  text: \n<“修它”老板>仔细看看身后这些架子，你就会发现所有东西都摆的乱七八糟！
+
+message_154:
+  text: \n<“修它”老板>你可能觉得既然架子上贴了标签，那东西该放哪肯定也是一目了然，但现在的人完全不在乎啊……\!唉……\!我真讨厌零售这活……
+
+message_155:
+  text: \n<“修它”老板>不管怎样，架子上的标签告诉了你产品都该放在哪。\!你的工作就是把所有东西放回原位，懂了吧？\!靠你了啊，孩子。
+
+
+#=========================SHOPPING CENTER=============================
+#map flavor text
+
+message_160:
+  text: 停放的汽车。
+
+message_161:
+  text: 糟了……
+
+
+#=========================HOBBEEZ=============================
+#Hobbeez
+
+message_170:
+  text: 一张有趣的海报。
+
+message_171:
+  text: 你从架子上拿下了\c[4]英雄的礼物\c[0]。
+
+message_172:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\n[8]，你忘了吗？\!我们还拿着给英雄的礼物呢。\!我们可不能顺手牵羊啊！
+
+message_173:
+  text: \n<店长>啊……\!\c[4]《超级无敌树苗鼹鼠吞噬者——鼹鼠的复仇 3》\c[0]……\!这部作品一定会成为传世之作！
+
+message_174:
+  text: \n<店长>哟，冠军！我有个想法。你有没有兴趣买下我最后一个\c[13]宠物石头\c[0]呀？
+
+message_177:
+  text: \n<店长>一般一个要卖 $25.00……\!但我总觉得你是天选之人……\!所以我 $10.00 就卖给你！\!怎么样，成交吗？\$
+
+message_175:
+  text: \n<店长>太棒了。\!你和这个\c[13]宠物石头\c[0]会成为好搭档的。\!<br>记得好好照顾它啊！
+
+message_176:
+  text: 你想向这个怪物发起挑战吗？
+
+#=========================Artist=============================
+#ARtists house
+
+message_180:
+  text: \art嘿，陌生人！\!你来得正好，快来评价一下我这幅尚未完成的作品！
+
+#=========================Pet Rock=============================
+#Pet Rock
+
+message_190:
+  text: 你获得了\c[13]绅士帽\c[0]……
+
+
+#=========================Shopping center=============================
+#Michaels lunch
+
+message_200:
+  text: \n<粗眉毛>我的儿子退学去\c[11]小镇广场\c[0]弹吉他了。\!我们相处得不太好，不过我心里还是常常挂念着他的。
+
+message_201:
+  text: \n<吉他男>太好了！我马上就要达到捐款目标了！\!有了挣的这些钱，我明天就能离开这里去大城市了！
+
+message_202:
+  text: \n<吉他男>哇哦！我就快要达到捐款目标了！\!有了挣的这些钱，我很快就能去大城市了……
+
+message_203:
+  text: \n<粗眉毛>唉……\!那孩子就是不肯放弃……
+
+#=========================Other street=============================
+#Charlies mom
+
+message_210:
+  text: \n<黄圆髻奶奶>啊……\!这样啊……\!<br>那希望我女儿能快点来……
+
+#=========================Basils house=============================
+#Basils house day 1
+
+message_220:
+  text: \n<波莉>今晚我们要做鸡肉蔬菜汤！\!听起来怎么样？
+
+message_221:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel汤和蔬菜？！\!听上去既美味又营养诶！
+
+message_222:
+  text: \n<波莉>你、你真的这么觉得？\!我还担心你们可能不喜欢呢……\!别人总说我口味有点太清淡了……
+
+message_223:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel管他们说的啥呢！<br>\!只要是吃的我都喜欢！\!你来啥我吃啥！
+
+
+#=========================Park=============================
+#PB and J
+
+message_230:
+  text: \n<体育生>那个……\!所以说……你最近过得怎么样啊？
+
+message_231:
+  text: \n<漂亮男孩>挺好的。\!来公园一个人待着可以缓解压力、整理思绪……\!不过，碰巧遇到你，我还是很高兴……
+
+message_232:
+  text: \n<体育生>真、真的吗？太好了……\!<br>我……呃……\!我也很高兴碰到你……
+
+#=========================Creepy guy=============================
+#tucker refuse pet rock
+
+#no
+message_240:
+  text: \n<怪异的男子>啊哈！你当然不敢了！\!在我面前畏惧颤抖吧！
+
+#=========================BRENT and JOY=============================
+#Brent
+
+message_241:
+  text: 你想当外表聪慧的男孩的家教吗？
+
+message_242:
+  text: 你想当小女孩的家教吗？
+
+message_243:
+  text: 你得到了$20.00。
+
+message_244:
+  text: 购买
+
+message_245:
+  text: 卖出
+
+message_246:
+  text: 什么也不做
+
+#=========================Pedros Shop=============================
+#Hobbeez buying pet rock
+
+message_250:
+  text: \n<店长>哟，冠军！有没有兴趣买下我最后一个\c[13]宠物石头\c[0]呀？\!这玩意儿在四五年前可火了，孩子们都在玩……<br>一般一个要卖
+    $25.00……但我总觉得你是天选之人，所以我 $10.00 就卖给你……\!怎么样，成交吗？
+
+message_251:
+  text: \n<店长>这样啊，好吧……不过这个\c[13]宠物石头\c[0]在呼唤你的名字喔！\!<br>我能感觉得到！
+
+message_252:
+  text: \n<老妇人>给你 $\v[650].00 以表谢意！嚯嚯！
+
+message_253:
+  text: \n<笨拙的男人>\com[2]\{谢谢你，谢谢你，谢谢你！！
+
+message_254:
+  text: \n<笨拙的男人>求求你……\!我不想再让老婆找到朝我发火的理由了！
+
+#==================Kel graffiti====================
+#Day 2 Graffiti kels house
+
+message_260:
+  text: 这里有粉笔画的涂鸦。“凯有体臭！”
+
+message_261:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]啥啊这都是？！怎么回事？！<br>\!可恶……肯定是奥布里和滑板车帮干的……\kel
+
+message_262:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: ……\!<br>\n[8]，你要实话实说喔！我闻起来真的有一股味儿吗？\kel
+
+message_263:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 等等，\n[8]！走之前我们得先给英雄选个礼物！\kel
+
+message_264:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \n[8]……你在干什么？\!<br>我们不能不付钱就走啊！\kel
+
+
+#====================Save point Faraway=======================
+
+message_270:
+  text: 空的野餐篮。\!你想要保存吗？
+
+message_271:
+  text: 你想要摸摸这只狗狗吗？
+
+message_272:
+  text: 你摸了摸这只狗狗。
+
+message_273:
+  text: \n<乖狗狗>\com[2]\{汪、汪……\{汪！
+
+message_274:
+  text: 狗狗看上去心满意足。
+
+message_275:
+  text: \n<赫克托尔>\com[2]\{汪、汪……\{汪！
+
+message_276:
+  text: 你没有摸这只狗狗……
+
+#====================Faraway lamp=======================
+
+message_277:
+  text: 你把\c[4]落地灯\c[0]给了时尚的妈妈。
+
+message_278:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \n[8]，我来对付奥布里。\!你快去帮贝瑟尔！\kel
+
+message_279:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel噢！你想打工是吧？\!好啊好啊。\!那我们就先去逛逛咯，等会儿回来找你。\!之后见，\n[8]！
+
+message_280:
+  text: 你的辛勤工作换来了 $30.00。
+
+message_281:
+  text: \n<披萨男>总之，钱给你。\!<br>你可以考虑用它买点\c[3]披萨\c[0]！
+
+message_282:
+  text: 你的辛勤工作换来了 $20.00。
+
+message_283:
+  text: 你获得了\c[13]宠物石头\c[0]！
+
+message_284:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel噢！你想打工是吧？\!好啊好啊。\!那我就先去逛逛咯，等会儿回来找你。\!之后见，\n[8]！
+
+
+#====================Dreamworld=======================
+
+#When you find the rarebear in Sweetheart Castle
+
+message_290:
+  text: 你找到了\c[4]泰迪熊\c[0]！
+
+#Reward for killing a Squizzard
+
+message_291:
+  text: 你获得了 \v[101] 蚌币！
+
+#====================POLLY 2S after finding Basil=======================
+
+message_300:
+  text: \n<波莉>我已经照顾贝瑟尔两年了，但我还是一点都不了解他……\!什么时候他才能向我敞开心扉呢？\!我只是想帮一帮他……
+
+#====================  Pessie =======================
+
+message_310:
+  text: \pes\Com[2]\{\quake[1]我……\|爱……\|甜心！\quake[0]\}
+
+message_311:
+  text: \pes我超级超级爱甜心……\!甚至连赫赫有名的《甜心的爱心冒险》演出门票我都买到了！
+
+message_312:
+  text: \pes尽管我没能买到超级稀有压根不可能获得的前排座位票……
+
+message_321:
+  text: \pes不过那位可靠的推销员跟我保证说，我的座位也不会差到哪里去的！
+
+message_317:
+  text: \pes他还跟我说，演出马上就要开始了，所以我就在这里排队等了好多好多个小时！
+
+message_313:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub嗯……\!我们该不该告诉他呢……
+
+
+message_314:
+  text: \pes我百分百确定，这场演出很快就要开始了！非但如此，甜心本人还会前来安排我就座！
+
+message_315:
+  text: \pes当然……\!作为甜心真正的铁粉，我完全无法想象要是我没有带着我最珍贵的宝贝出席会怎么样！\!看看我这美丽的——
+
+message_316:
+  text: \pes\com[2]\quake[1]\{什、什、什么？！\!它……\|不见了？！？！
+
+message_318:
+  text: \pes不……\!我最珍贵的宝贝……\!<br>没有了它，我该怎么参加我梦寐以求的演出啊！
+
+message_319:
+  text: \pes你们四个！\!你们毫无疑问是甜心的下等粉丝，我要求你们找到我最珍贵的宝贝，然后交还给我！\!你看到它一定能认出来！
+
+message_320:
+  text: \pes\sinv[1]\{噢嚯\{嚯嚯\{嚯嚯\quake[1]嘿嘿……\quake[0]
+
+message_322:
+  text: \pes\sinv[1]\{噢，你们找到了！我最珍贵的宝贝！
+
+message_911:
+  text: 你把\c[4]佩西的宝贝\c[0]交给了佩西。
+
+message_323:
+  text: \pes我必须得说……\!太感谢了……\!我必须得再说一次……\!太感谢你们了……
+
+message_324:
+  text: \pes为了报答你们的无私奉献，我要赐予你们这份终极礼物。
+
+message_325:
+  text: 你获得了\c[13]甜心胸像\c[0]。
+
+message_326:
+  text: \pes\sinv[1]啊……\!太美丽了。
+
+message_327:
+  text: \pes\sinv[1]愿它陪伴你的余生，使你充满喜悦！
+
+message_328:
+  text: \n<可疑的鼹鼠>\}听好了……\!不要跟别人说啊……\!我刚才呢，看到一个戴着大粉色蝴蝶结的树苗鼹鼠在翻可怜的佩西的口袋……
+
+message_329:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub戴着大粉色蝴蝶结的树苗鼹鼠？\!\com[2]那不就是罗莎吗！
+
+message_330:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel又是可恶的罗莎！\!走吧，OMORI！我们无论如何也要让她把\c[4]佩西的宝贝\c[0]交出来！
+
+
+#Sidequest B.E.D. with Rosa and Shady Mole
+
+message_340:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\{\com[2]罗莎！！你这下完蛋了！
+
+message_341:
+  text: \n<罗莎>你们怎么在这里？！\!我现在很生气！快滚！
+
+message_342:
+  text: \n<罗莎>真是多亏了你们，我亲爱的甜心和那个该死的太空男孩船长跑了……\! \com[2]又跑了！
+
+message_344:
+  text: \n<罗莎>唉……\!甜心原本离我只有几门之隔……\!但现在她都飞去别的银河系了！\!我现在要怎么追上她啊？！\!你觉得我看上去像是会飞的样子吗？！
+
+message_345:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her我……我觉得这也不是我们的错啊……
+
+message_346:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\com[2]罗莎，我知道你偷走了\c[4]佩西的宝贝\c[0]！快还回来！
+
+message_347:
+  text: \n<罗莎>又来这套？\!你们怎么老是想夺走我的甜心周边？！\!我可是凭真本事找到它的，而且……
+
+message_348:
+  text: \n<罗莎>\{\com[2]谁找到的就是谁的！
+
+message_909:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: \her别担心，大家。\!这里就交给我来处理……
+
+message_349:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: \her嘿……\!罗莎……
+
+message_350:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: \her我们为什么不坐下来谈——
+
+message_351:
+  text: \n<罗莎>\sinv[1]呕呕呕呕呕呕……\sinv[0]\com[2]不要！我才不想听你说话！
+
+message_352:
+  text: \n<罗莎>我才不会把我价值连城的新藏品交给你们……
+
+message_353:
+  text: \n<罗莎>\{\quake[1]现在从我家滚出去！！
+
+message_354:
+  text: \n<可疑的鼹鼠>\}呵……\!罗莎又在故搅蛮缠了？\!<br>我就知道……她一直就这德行……
+
+message_908:
+  text: \n<可疑的鼹鼠>\}给。\!把这个拿给她看。\!<br>看了这个她就没法拒绝你们的要求了。
+
+message_910:
+  text: 你获得了\c[4]威胁信\c[0]。
+
+message_355:
+  text: \n<可疑的鼹鼠>\}好了，让我一个人和\c[4]持·无·昂\c[0]待着。<br>我们之后就毫无瓜葛了！
+
+message_356:
+  text: \n<罗莎>又是你们？\!哼……\!真是徒劳无功……\!<br>都把我给逗笑了！
+
+#INSERT OHOHOO 15_cutscenes_herothebachelor.message_145
+
+message_357:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel大家让开。我来对付她！
+
+message_358:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her等等，凯……
+
+message_359:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her罗莎确实是很那个啦……\!但我真的觉得用\c[4]威胁信\c[0]对付她还是太——
+
+message_360:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel\{\{\Com[2]嘿，罗莎！！
+
+message_361:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{\{\Com[2]看看这个！！
+
+message_362:
+  text: 凯拿出了\c[4]威胁信\c[0]。
+
+message_363:
+  text: \n<罗莎>你、你、你是从哪里拿到的？
+
+message_364:
+  text: \n<罗莎>\Com[2]我……我改变主意了！\!<br>求求你，善良的先生……\!你想要什么我都给你！\!<br>只要你把那封\c[4]威胁信\c[0]交给我！
+
+message_365:
+  text: \n<罗莎>\Com[2]啊，对了！\!你想要\c[4]佩西的宝贝\c[0]，对吧？
+
+message_366:
+  text: \n<罗莎>行吧，给就给。\!拿着！它是你的了……<br>现在把\c[4]威胁信\c[0]给我……
+
+message_367:
+  text: \n<罗莎>\{\{\Com[2]\quake[1]快点给我！！！
+
+message_368:
+  text: 你用\c[4]威胁信\c[0]交换了\c[4]佩西的宝贝\c[0]。
+
+message_369:
+  text: \n<罗莎>现在我命令你们立刻离开我的家。\!<br>你们已经得到了想要的东西了！
+
+message_370:
+  text: \n<罗莎>\{\{\Com[2]现在快滚！滚滚滚！
+
+message_371:
+  text: \n<罗莎>滚开！我很生气！
+
+
+#====================  Faraway =======================
+
+message_380:
+  text: \n<标准美式男人>\com[2]喂，别挡住屏幕！\!<br>你没看见我在看电视吗？！
+
+#==================== Pizza Delivery 2 =======================
+
+message_390:
+  text: 查看笔记吗？
+
+# Heros gift in Hobbeez
+
+message_391:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel这些 \c[4]CD\c[0] 看上去挺新潮的，但我觉得英雄可能喜欢更怀旧一些的礼物！\!我们再看看别的吧。
+
+# Space boys arcade
+
+message_392:
+  text: 一台很酷的街机……\!<br>但你连游玩的 $1.00 都没有。
+
+message_393:
+  text: 你想玩这个游戏吗？\$
+
+message_394:
+  text: 一个叫做《太空男孩船长的太空冒险》的游戏。\!<br>游玩只需 $1.00。
+
+# Moms to do list and voice mail
+
+message_395:
+  text: 妈妈留下的待办清单。\!<br>你现在不想做任何家务。
+
+message_396:
+  text: 你收到了新留言。
+
+message_397:
+  text: 这里曾经挂了点什么。
+
+message_398:
+  text: 你没有收到新留言。
+
+# Kels house dinner time
+
+message_399:
+  text: 你获得了\c[4]家常餐\c[0]……\!但已经冷掉了。\!<br>你可以用微波炉加热一下。
+
+# Characters sleeping in bedfort
+
+message_400:
+  text: \sinv[1]呼噜……\|呼噜……\|呼噜……\|呼噜……\kel
+
+message_401:
+  text: 英雄睡得正香。
+
+# Going to other places when you need to go to shopping center first
+
+message_402:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel嘿，\n[8]！走吧，我们先去一下\c[11]小镇广场\c[0]！
+
+#Gachapon:
+message_403:
+  text: 一台扭蛋机。\!扭一次需要 $3.00。\!
+
+message_404:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嘿，\n[8]！我们要先去买\c[4]英雄的礼物\c[0]。\!之后再去玩吧！
+
+message_405:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel不是这边啦！\c[11]贝瑟尔家\c[0]我们刚刚路过了！
+
+#Note: Placeholder Hero dialogue
+message_406:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her话说……\!能一起出来玩，我真的很高兴……\!但没能陪妈妈，我也有点过意不去……
+
+message_407:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her去你家之前，我们先去\c[11]修它家居店\c[0]买束\c[4]鲜花\c[0]吧！\!<br>送给我妈妈的话，她肯定会喜欢的。
+
+message_434:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her喔！你已经有\c[4]鲜花\c[0]了！\!不过嘛，我觉得还是应该买点更新鲜的花送给我妈妈。\!反正\c[11]修它家居店\c[0]离这里也不远。
+
+
+message_408:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\sinv[1]哇，英雄……\!不愧是妈妈的乖宝宝呀……
+
+message_409:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her你想把这些\c[4]鲜花\c[0]送给我妈妈吗？
+
+message_410:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her妈妈肯定会喜欢这些\c[4]鲜花\c[0]的！我们先回我家一趟吧，\n[8]。
+
+message_411:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her啊，这样啊……那我们也给我妈妈买一个吧！
+
+message_412:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her嗯……\!看起来天色也不早了。\!我们完事儿后就立刻去你家吧。\!这个安排怎么样？
+
+message_413:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: \her\sinv[1]嘿，老妈……我给你买了一束\c[4]鲜花\c[0]喔！
+
+message_414:
+  text: \n<凯的妈妈>哦、哦……\!这是给我的吗？
+
+message_415:
+  text: \n<凯的妈妈>哎呀，这花可真漂亮。\!谢谢你。
+
+message_416:
+  text: \n<凯的爸爸>哈！\!英雄，你可真是个小迷人精。\!就跟你老爸一样！
+
+message_417:
+  text: \n<凯的妈妈>不好意思呀，之前我有点反应过头了。\!<br>我知道 \n[8] 马上就要搬走了……
+
+message_418:
+  text: \n<凯的妈妈>尽可能保持联络吧。\!长大以后就更难交到朋友了！
+
+message_419:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel老妈……瞧你这话说的……\!我们肯定会保持联络啦！
+
+message_420:
+  text: \n<凯的妈妈>嗯……好好好。
+
+message_421:
+  text: 这扇门上锁了。
+
+message_422:
+  text: \n<凯的妈妈>保重呀，\n[8]。\!<br>要记住这里永远都是你的家哦！
+
+# Kel telling you to check out the bedfort if you try to leave your bedroom
+
+message_423:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\n[8]，快来看看我们用枕头和毯子搭的城堡！
+
+# Kel yelling at you to go to his room instead of the other rooms when you first go into his house
+
+message_424:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel你可以再忍一下吗，\n[8]？\!我想先带你参观我的房间！
+
+message_425:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel那是我爸妈的房间！我们去我的房间吧！
+
+# With basil taking him other than the path to his house
+
+message_426:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel走吧，我们要送贝瑟尔回家！
+
+# NPC woman sitting behind apple guy
+
+message_427:
+  text: \n<棕发女士>哇哦……景色真不错。
+
+message_428:
+  text: \n<抬头纹老爷爷>看样子有的孩子还是喜欢来湖这里玩。\!我不介意，但我总要清理他们留下的垃圾……
+
+message_429:
+  text: \n<抬头纹老爷爷>好吧，该干活喽！
+
+
+
+#==================== Dreamworld =======================
+
+message_430:
+  text: \n<太空男孩船长>我最近总是被各种思绪和情感淹没……\!但此时此刻我却无比平静。\!<br>我的内心感受到了安宁。
+
+message_431:
+  text: \n<皮纳塔人>\sinv[1]\{\{呜噫噫噫噫噫噫噫！！\^
+
+message_432:
+  text: \n<皮纳塔人>\sinv[1]\{\{呜噢噢噢噢噢噢噢！！\^
+
+message_433:
+  text: \n<皮纳塔人>啊……
+
+
+
+
+#==================== Aubrey street before you get Aubrey =======================
+
+message_440:
+  text: \n<安吉尔>本来我今天要给奥布里看我新编的舞……\!<br>你们说，她不会在刻意回避我吧？！
+
+message_441:
+  text: \n<查理>\}……
+
+message_442:
+  text: \n<独行侠>奥布里不太舒服？\! \com[2]怎么可能？！\!一定是某个更邪恶的东西干的……\!说不定就是罪恶的幕后主脑！\!我们必须立刻追查他的下落！
+
+message_443:
+  text: \n<金>\sinv[1]嘟囔，嘟囔……\! ……\! 唉……
+
+message_444:
+  text: \n<万斯>别这么低落啊，小金。大家都有过不顺心的日子嘛。\!<br>奥布里肯定过两天就没事了。
+
+
+# Mincy drawing if you didn't meet her before
+
+message_445:
+  text: 一位艺术家正在勤奋地素描。
+
+# Day 2 looking at photo album at kels place
+
+message_446:
+  text: 你已经看完\c[4]相册\c[0]了吗？
+
+# Hero giving money for flowers in fixit
+
+message_447:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: \her啊，对了！趁我还没忘……\!\n[8]，这是给我妈妈买\c[4]鲜花\c[0]的钱。\!你不会以为这钱要你来出吧？
+
+message_448:
+  text: 英雄给了你 $10.00。\!哇哦……
+
+message_449:
+  text: \n<“修它”老板>你想要买一些五金器材吗？
+
+message_450:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel哦，我们只是随便看看！我们不是要去\c[4]落地灯\c[0]区域看看吗？
+
+message_451:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her我们走之前先把\c[4]鲜花\c[0]送给老妈吧！
+
+
+# CDs from Hobbeez, titles to be replaced once the actual titles are set
+
+
+message_452:
+  text: 一张\c[4]野性的 CD\c[0]。\!想花 $10.00 买下它吗？
+
+message_453:
+  text: 一张\c[4]活泼的 CD\c[0]。\!想花 $10.00 买下它吗？
+
+message_454:
+  text: 一张\c[4]天外的 CD\c[0]。\!想花 $10.00 买下它吗？
+
+message_455:
+  text: 一张\c[4]放松的 CD\c[0]。\!想花 $10.00 买下它吗？
+
+message_456:
+  text: 一张\c[4]动感的 CD\c[0]。\!想花 $10.00 买下它吗？
+
+message_466:
+  text: 你可以在收银台付 \c[4]CD\c[0] 的钱。
+
+# Clumsy guy day 1 sunset when he loses the ring
+
+message_457:
+  text: \n<笨拙的男人>好吧，如果你改变主意就跟我说……\!<br>最好快点啊！
+
+message_460:
+  text: 什么也不做
+
+message_461:
+  text: 一本书。
+
+
+# Basil in his faraway house day 1
+
+message_462:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 33
+  text: \bas\n[8]……\!一切都已经没事了，对吗？
+
+message_463:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 35
+  text: \bas\n[8]……\!为、为什么……\!为什么你看上去这么害怕呢？
+
+message_464:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel稍等哦，我这就来！
+
+
+# Gacha!
+
+
+message_465:
+  text: 你没有 $3.00。
+
+# -----------------------------------------------
+# - FOUND ITEM
+# -----------------------------------------------
+
+#  Consumables
+message_500:
+  text: 你获得了\c[3]\itemget\c[0]！
+
+message_501:
+  text: 你获得了\c[3]\itemget\c[0]！
+
+#  Toys
+message_510:
+  text: 你获得了\c[5]\itemget\c[0]！
+
+message_511:
+  text: 你获得了\c[5]\itemget\c[0]！
+
+#  equips
+message_520:
+  text: 你获得了\c[13]\itemget\c[0]！
+
+message_521:
+  text: 你获得了\c[13]\itemget\c[0]！
+
+#  key items
+message_522:
+  text: 你获得了\c[4]\itemget\c[0]！
+
+#  Skills
+message_530:
+  text: 角色习得了\c[1]技能\c[0]
+
+message_531:
+  text: 英雄习得了\c[1]喝茶时间\c[0]！
+
+message_532:
+  text: 英雄习得了\c[1]清凉一下\c[0]！
+
+message_533:
+  text: 英雄习得了\c[1]零食时间\c[0]！
+
+message_534:
+  text: 英雄习得了\c[1]柔嫩化\c[0]！
+
+message_535:
+  text: 凯习得了\c[1]补充活力\c[0]！
+
+message_536:
+  text: 凯习得了\c[1]雪球\c[0]！
+
+message_540:
+  text: OMORI 永久获得了 1 心心。
+
+message_541:
+  text: 凯永久获得了 1 心心。
+
+message_542:
+  text: 奥布里永久获得了 1 心心。
+
+message_543:
+  text: 英雄永久获得了 1 心心。
+
+# Kels mom when POLLY <3 comes over
+
+message_550:
+  text: \n<凯的妈妈>凯，这位漂亮年轻的姑娘是谁呀？\! \com[2]你怎么不告诉我今天这么多客人要来家里？！
+
+# Kel and Aubrey fighting in the pier sunset day 2
+
+message_551:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \n<奥布里>你这个榆木脑袋能不能开窍啊，蠢货！<br>我都跟你说了那只是个意外！
+
+message_552:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 你到底在干什么啊，奥布里？！\! <br>你真的做得太过火了！\kel
+
+message_553:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her走吧，我们要先把贝瑟尔送回家！
+
+# Foe facts in Angels room
+
+message_554:
+  text: 你想看一遍\c[4]《敌人指北》\c[0]吗？
+
+
+# Trying to leave kels house before getting dinner
+
+message_555:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel走啦，我们去吃晚饭啦！
+
+# Trying to go elsewhere without flowers for heros mom
+
+message_556:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her我们应该去给我妈妈买\c[4]鲜花\c[0]……
+
+message_557:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her等一下，\n[8]！我们应该把这些\c[4]鲜花\c[0]送给我妈妈！
+
+message_558:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her等一下，\n[8]。我们还没买\c[4]鲜花\c[0]送给我妈妈呢。
+
+message_559:
+  text: “献给世界上最好的母亲。”<br>“你的儿子，英雄。”\!哇哦……
+
+# Trying to go up stairs without Hero, day 2 night
+
+message_560:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 7
+  text: \kel你要去哪，\n[8]？\!英雄还在琴房等我们呢！
+
+
+# Basils bathroom
+
+message_561:
+  text: 一本关于植物的书。
+
+# Trying to leave Aubreys house before getting Aubrey
+
+message_562:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: \her等等，\n[8]。我们应该先去看看奥布里的情况。
+
+# I forget lol
+
+message_563:
+  text: 你不能让自己回去。
+
+# crossroads for when you try to leave basils house on night 3
+
+message_564:
+  text: 你想回家。
+
+#Hobbeez store: picking out a gift for HERO
+
+message_565:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel啊，这些漫画真的勾起了好多回忆啊。\!好像回到了以前一样，对吧，<br>\n[8]？\!不过啊，英雄对漫画一直都不是很感兴趣……
+
+message_566:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel这些 DVD 都落好多灰了……\!而且，我感觉我们家大部分都有……\!虽然估计也在吃灰……
+
+message_567:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel我一直都挺喜欢这些小人的……\!不过小时候我用午餐钱买它们，然后被英雄发现了，那个时候他可生气了。\!<br>还是不要勾起他这种回忆比较好……
+
+message_568:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel这东西实在是太贵了，\n[8]！\!<br>我爱英雄，但还没爱到\sinv[1]这种\sinv[0]程度啦！
+
+message_569:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel买这个作为礼物的话，英雄还没回来我就已经先吃完了……
+
+message_570:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \kel我家里已经有这台游戏主机了，\n[8]！\!<br>而且我也买不起第二台了……
+
+message_571:
+  text: 你获得了\c[4]英雄的礼物\c[0]！
+# =========================================================================================
+# Cutscene: Fake Knife Fight
+# =========================================================================================
+
+#Trigger: Attack AUBREY in battle.
+
+#AUBREY falls to the floor.
+#KIM runs to AUBREY.
+
+message_580:
+  text: 奥布里！\!你怎么了？\kim
+
+message_581:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: \n[8]……\!他手上有把\c[13]牛排刀\c[0]……\aub
+
+message_582:
+  text: 啥？！\!快走，我们带你离开这里！\kim
+
+message_583:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: 呃……\!我会让你们付出代价的。\!\aub
+
+#AUBREY and HOOLIGANS run away.
+
+message_584:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 哇，刚才真的是太险了……\!<br>还好你带了把刀，不然我们——\kel
+
+#Kels orders
+
+message_590:
+  text: 你获得了凯\c[4]订购的烘培品\c[0]！
+
+message_591:
+  text: 你获得了凯\c[4]订购的“披萨”\c[0]！
+
+message_592:
+  text: 你把\c[4]订购的烘培品\c[0]和\c[4]订购的“披萨”\c[0]交给了凯的妈妈。
+
+#Treehouse, talking with characters before getting the  photo
+
+message_593:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: \kel\sinv[1]哈哈……\!我玩卡牌游戏可是最强的……
+
+message_594:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: \aub好啦……\!恢复如初……
+
+message_595:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her我想起来了！\!是凯把烤面包机带过来的！\!他要我用烤面包机做饭……\!凯小时候真是个奇怪的孩子……
+
+#Graveyard with everyone, if you don't have any flowers
+message_596:
+  text: 你身上没有\c[4]鲜花\c[0]。
+
+#Graveyard with everyone, if you do have flowers
+message_597:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her来，玛里，这是给你的。\!这是我们所有人的心意……
+
+message_598:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: \her我准备好了……\!我们走吧。
+
+message_599:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: \aub子茄先生也太脏了……
+#Talking to yellow bun granny after you are given prescription
+
+message_600:
+  text: \n<黄圆髻奶奶>今天天气真好啊！\!虽然我走路不太方便，我还是想呼吸点新鲜空气……
+
+message_601:
+  text: \n<黄圆髻奶奶>我这种情况没办法去找药剂师……
+
+
+#Dreamworld Train station jash
+
+message_603:
+  text: \n<斯纳里>嗨！我是一生不幸的斯纳里！\!正当我想买一张\c[4]火车票\c[0]时，这家伙说已经卖完了。\!真是个有趣的巧合啊！
+
+#Aubreys mom if you try to talk to her
+
+message_605:
+  text: \n<奥布里的妈妈>……
+
+#Kels dad if you get him meat in the afternoon
+
+message_606:
+  text: \n<凯的爸爸>我来给大家烤点美味的\c[3]汉堡\c[0]吧！\!这个烤汉堡啊，我可练了好一段时间了！
+
+# Hobbeez buying CDs
+
+message_608:
+  text: 你想把 \c[4]CD\c[0] 放回去吗？
+
+message_609:
+  text: 你可以把 \c[4]CD\c[0] 拿到收银台结账。
+
+message_610:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel等等，\n[8]！你忘了吗？\!你刚刚拿了一张 \c[4]CD\c[0]。\!<br>我们可不能偷东西啊！我们是守法好公民！
+
+#Intro
+message_619:
+  text: \n<店长>哟，冠军们！你们好像对那张 \c[4]CD\c[0] 很感兴趣啊。\!$10.00 卖给你们怎么样？\$
+#Purchase
+message_620:
+  text: \n<店长>谢啦，冠军们！那张 \c[4]CD\c[0] 你们可以去隔壁的\c[4]点唱机\c[0]播播看！
+#Insufficient Funds
+message_621:
+  text: \n<店长>哇，不好意思。你的钱不够哦。
+#item selling prompt
+message_622:
+  text: \n<店长>没关系。把 \c[4]CD\c[0] 放回原来的桌子上就行了！
+#item selling cancel prompt
+message_623:
+  text: \n<店长>谢啦，冠军！
+
+message_624:
+  text: 你还未完成工作，不应该离开。
+
+message_625:
+  text: 你把\c[4]英雄的礼物\c[0]交给了英雄。
+
+message_626:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her我们应该去找玛里……\!她特别担心你。
+
+message_627:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her我们应该先去找找贝瑟尔。
+
+message_628:
+  text: \n<波莉>贝瑟尔从小就和奶奶一起生活。\!<br>他的父母总是很忙的样子……\!<br>我到现在只见过他们一次。
+
+message_629:
+  text: 你想回到\c[11]白色空间\c[0]吗？
+
+message_630:
+  text: 你想透过钥匙孔看看吗？
+
+# Mincy drawing if you did meet her before
+
+message_631:
+  text: 米西正在勤奋地画素描。
+
+message_632:
+  text: 查看\c[4]披萨笔记\c[0]吗？
+
+message_633:
+  text: \n<拉伊>我叫拉伊！\!我来这里是想玩卡牌游戏的，但我同样也有\c[13]宠物石头\c[0]！
+
+message_634:
+  text: \n<凯的爸爸>好久没见到你喽，\n[8]。\!你能在搬家前来看看凯和英雄，真好！
+
+message_635:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\n[8]，你已经想回家了吗？\!但现在还没到晚上呢！
+
+message_636:
+  text: \n<凯的爸爸>\c[4]鲜花\c[0]？\!哈……\!英雄你个好小子，真有你的。
+
+message_637:
+  text: 一张写着“需要人手”的招工海报。\!或许你明天可以咨询一下。
+
+message_638:
+  text: \n<眼镜男>《树苗鼹鼠吞噬者》是老游戏了，但还是特别有意思。\!你们可以玩到腻为止！\!与此同时呢……\!我就专心致志地盯着这个披萨看……
+
+message_639:
+  text: 你想扔一枚\c[4]硬币\c[0]到喷泉里吗？
+
+message_640:
+  text: \c[4]硬币\c[0]直直沉入了水底。
+
+message_641:
+  text: 你还未完成工作，不应该离开。
+
+message_642:
+  text: 你找到了一枚\c[4]硬币\c[0]！
+
+message_643:
+  text: 你找到了 $1.00！\!今天真是你的幸运日！
+
+message_644:
+  text: 一张招工海报。\!<br>你今天已经完成这份工作了。
+
+message_645:
+  text: 你的辛勤工作换来了 $20.00。
+
+message_646:
+  text: 你想扔 1 蚌币到喷泉里吗？
+
+message_647:
+  text: 蚌币直直沉入了水底。
+
+message_648:
+  text: 你捡起了一颗\c[5]珍珠\c[0]。
+
+message_649:
+  text: 你没有蚌币了。
+
+message_650:
+  text: 这可不是果汁。
+
+message_651:
+  text: 一些\c[4]园艺剪\c[0]。
+
+message_652:
+  text: REPLACE WITH PLAYER SHAKING HEAD
+
+message_653:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel快来，\n[8]！\!我们得去救贝瑟尔！
+
+message_654:
+  text: Enter- \DII[ok]
+
+message_655:
+  text: Esc- \DII[escape]
+
+message_656:
+  text: 上- \DII[up]
+
+message_657:
+  text: 下- \DII[down]
+
+message_658:
+  text: A 键- \DII[cancel]
+
+message_659:
+  text: Shift 键- \DII[shift]
+
+message_660:
+  text: 你想要和赫克托尔玩吗？
+
+message_661:
+  text: 你不想伤害\n[6]。
+
+message_662:
+  text: \n<抬头纹老爷爷>让我把这里清理一下……
+
+message_663:
+  text: \n<回收教徒>在教主同意之前我可不敢离开这里！
+
+message_664:
+  text: $1.00
+
+message_665:
+  text: $5.00
+
+message_666:
+  text: $10.00
+
+message_667:
+  text: 你想要施舍多少钱？\$
+
+message_668:
+  text: 什么也不做
+
+message_669:
+  text: 你没有足够的钱。
+
+message_670:
+  text: 一台点唱机。\!没有可供播放的曲子。
+
+message_671:
+  text: 你确定要施舍 $\v[1167].00 给老流浪汉吗？
+
+message_672:
+  text: 你确定要施舍 $\v[1167].00 给难闻的流浪汉吗？
+
+message_673:
+  text: 你确定要施舍 $\v[1167].00 给吉他男吗？
+
+message_675:
+  text: \n<马尾女孩>对不起，我妈妈现在心情不太好。\!她给爸爸买了一份礼物，但他还没回家。\!你能晚点再来吗？
+
+message_676:
+  text: \n<马尾女孩>对不起，我爸爸现在心情不太好。\!他给妈妈买了一份礼物，但她还没回家。\!你能晚点再来吗？
+
+message_677:
+  text: 你想看一遍\c[4]相册\c[0]吗？
+
+message_678:
+  text: \n<肉铺男>你可不会想买上面爬了苍蝇的\c[4]肉\c[0]！
+
+message_679:
+  text: \n<焙客先生>千万别让那些苍蝇落在我们新鲜出炉的\c[3]面包\c[0]上！
+
+# messages for cancelling out of minigames
+
+message_680:
+  text: 你想要继续做这份工作吗？
+
+message_681:
+  text: \n<异家超市的女士>份工咁就唔做喇？\!……\!OK。\!咁我唔俾钱你。
+
+#UNUSED
+#message_682:
+#      text: \n<PIZZA MAN>Oh what happened? Didn't get to deliver the pizzas after all? I.... see.
+
+message_683:
+  text: \n<“修它”老板>唉……我想无所谓了。\!就让这些货架继续乱着吧。
+
+message_684:
+  text: \n<店长>不要退缩！\!命运在召唤着你！
+
+
+#LAST RESORT CONSTRUCTION AFTER GETTING HERO
+
+
+message_700:
+  text: \n<鳄鱼男>呃！这下子一天的好心情都没了。
+
+message_701:
+  text: \n<鳄鱼男>别告诉我妈妈我输了，好吗？
+
+message_702:
+  text: \n<鳄鱼男>别以为你赢了就能在那边洋洋得意！我只是今天还没喝\c[3]咖啡\c[0]而已……
+
+message_703:
+  text: \n<鳄鱼男>输了真难受……
+
+
+message_800:
+  text: 你是否想要重试？
+
+message_801:
+  text: 你是否想要继续？
+
+
+message_705:
+  text: \n<眼镜男>没问题！花些时间做好准备。\!我就在这里等着！
+
+message_706:
+  text: \n<店长>那我会翘首以待的。\!命运正在召唤你！
+
+message_707:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 我们快点追上金和万斯吧！\kel
+
+
+# If Hero / Aubrey are in the team in fixit when you take a job:
+
+message_708:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her哇哦，\n[8]！你现在都开始打工啦？\!你看看你，真的长大了！\!那我们晚点再来找你。\!好好工作哦！
+
+#If you talk to Berly again with pool noodle after declining the first time
+
+message_709:
+  text: \ber所以你改变主意了？\!你的\c[13]泳池浮力棒\c[0]到底给不给我？
+
+message_720:
+  text: \n<抬头纹老爷爷>嗯……这个迷你唱片还挺有意思的，不过我儿子更喜欢那个叫做电子游戏的东西……\!你能不能帮我找找看呀？
+

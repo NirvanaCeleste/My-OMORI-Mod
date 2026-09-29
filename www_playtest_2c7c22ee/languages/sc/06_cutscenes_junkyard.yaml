@@ -1,0 +1,400 @@
+# =========================================================================================
+# Cutscene: Aubrey's SMASH Tag Skill
+# =========================================================================================
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 哎呀！<br>怎么有一大块垃圾挡在路中央啊！\kel
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 这就是所谓的……\!大“箱”径“停”……\!没错吧？\her
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 不用担心啦，大家！\!<br>我这棒球棍挥下去，这大块头就得粉碎！\aub
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: OMORI，你不是知道怎么砍掉枝条和路锥嘛。\!其实呢，这里有特殊能力的不只是你噢！\aub
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 比如说，我，就可以把大块的路障给一棒挥走！\aub
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 凯和英雄应该也有他们自己的特殊能力……<br>\}\!当然，凯没有也正常，嘻嘻……\aub
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 只要在玩家菜单选择换人或者按下\DII[tag]就可以把我切换为队长啦！\!<br>看我轻轻松松击飞这垃圾大块头！\aub
+
+
+message_7:
+  text: 大门被锁上了。\!你大概可以用\c[4]垃圾场钥匙\c[0]打开它。
+
+# =========================================================================================
+# Cutscene: Kel's THROW Tag Skill
+# =========================================================================================
+
+#message_20:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 18
+#      text: Hey, is that a target I see?\! I'll have you know that throwing stuff at targets is my specialty!\!<br>Make me LEADER, OMORI! I'll hit that switch for you!\kel
+
+# =========================================================================================
+# Cutscene: Hero's CHARM Tag Skill
+# =========================================================================================
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \Com[2]喂！输送带机器人先生！\!<br>快换一下这些输送带的方向！\kel
+
+message_31:
+  text: \n<输送带机器人先生>\quake[1]嗞……\!哼……\!没礼貌的人……\quake[0]
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 你怎么求人办事还对着人大吼大叫呢，凯！\!<br>天哪！动动脑子，行不行？\aub
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 好啦好啦……没必要为了这点小事就吵起来。\!这次就让我出手吧！\her
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: 咳咳……\!贵安，输送带机器人爵士。\!我与我的同行者需要您出手相助，改变输送带的方向。\!请问您和您的朋友是否能帮助我们呢？\her
+
+#HERO CHARM ANIMATION
+
+message_35:
+  text: \n<输送带机器人>\quake[1]嗞！\!啊……\!嗯……\!有礼貌的人……\!没问题……\quake[0]
+
+message_36:
+  text: \n<输送带机器人>\}\quake[1]嗞……没礼貌的人……
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 好啦好啦……没必要为了这点小事就吵起来。\!让我上吧！\!<br>换我来，OMORI！
+# =========================================================================================
+# Cutscene: Hero's CHARM Tag Skill (Cont.)
+# =========================================================================================
+
+#Trigger: OMORI cuts the cheese.
+
+message_40:
+  text: 你切开了芝士。
+
+#Trigger: Tag HERO and examine Cheese.
+
+# EMS spirals down from the sky
+
+message_50:
+  text: \}你好呀，朋友们！\!是我，EMS，朴实无华的饥饿仓鼠！\ems
+
+#EMS looks around.
+
+message_51:
+  text: \}哇，这全是给我的吗？这下我可以饱餐一顿了！\!<br>你们是怎么知道我最喜欢芝士的？\ems
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 我根本用不着猜，EMS！\!<br>一切东西都是你最喜欢的东西。\her
+
+#HERO turns to party.
+
+message_53:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 各位，这是仓鼠艾米莉，不过我一般叫她 EMS！\!<br>她是我的好朋友。\her
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 你知道要做什么吧，EMS！\her
+
+message_55:
+  text: \}当然呀！\! \Com[2]看我瞬间解决！\ems
+
+#EMS begins to devour the cheese.
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 哇……\kel
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 她那小小的身子是怎么装得下的？\aub
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 谁知道呢。我尽可能不去想这个问题。\her
+
+message_59:
+  text: 芝士被吃完了，道路也已经清理完毕。
+
+message_60:
+  text: \}真是吃得超爽！\ems
+
+message_61:
+  text: \}下次再需要吃掉巨型芝士的服务的话，你们知道电话该打给谁啦！\ems
+
+message_62:
+  text: \}再见咯，朋友们！\ems
+
+#EMS spirals into the sky.
+
+# =========================================================================================
+# Cutscene: Rosa
+# =========================================================================================
+
+#Trigger: Entering proximity in JUNKYARD
+
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 唉……\!这地方叫人怎么找东西嘛？！\!<br>到处都是堆积如山的垃圾！\aub
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 你说啥，我们是来找东西的吗？\kel
+
+message_82:
+  text: \sinv[2]\{\Com[2]哦嚯\{嚯\{嚯\{嚯嚯～！！\who
+
+message_83:
+  text: 过了这么久，我总算是找到了。\who
+
+message_84:
+  text: 在挖掘了无数个小时之后……\!<br>这盒独一无二、超级稀有的\c[4]特制混音带\c[0]现在终于是我的了！\who
+
+message_85:
+  text: 没错，是我罗莎的东西了！\!我就是天下第一的甜心粉丝！\ros
+
+message_86:
+  text: 有了这件无与伦比的收藏品，<br>我总算可以超越那些蹩脚的冒牌粉丝了。\ros
+
+message_87:
+  text: 等等……\!我闻闻看……\!噢，天呐！\! <br>这盒\c[4]特制混音带\c[0]……\!闻起来就像便便一样。\!<br>我闻……我闻……\!噢，天呐！\!我闻起来也像便便一样！\ros
+
+message_88:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 哎等等……她是不是说她找到一盒\c[4]特制混音带\c[0]？\!<br>那不就是我们要找的东西嘛！\aub
+
+message_89:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \sinv[1]喔，对耶～耶～\}耶～\}耶……\sinv[0]\kel\}
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 我们去把它拿走吧！\kel
+
+message_91:
+  text: \Com[2]拜托，你们说的话我在这里可是能听得一清二楚，好吗！\!<br>我早有预料，拥有如此价值连城的东西会给我带来麻烦。\ros
+
+message_92:
+  text: \sinv[2]\{\Com[2]哦嚯\{嚯\{嚯\{嚯～！！\ros\sinv[0]
+
+message_93:
+  text: 怎么了呀？你们是嫉妒了吗？\ros
+
+message_94:
+  text: 这盒\c[4]特制混音带\c[0]是我的了！\!<br>我绝对不会把它交给你们！现在不会，以后也不会！\ros
+
+message_95:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 嘿，我们大老远跑到这儿，可不能白来一趟！\!<br>如果你不把\c[4]特制混音带\c[0]交出来，我们就得动用武力了！\kel
+
+message_96:
+  text: \Com[2]\{\quake[1]噫噫噫！！真是太粗鲁了！！\quake[0]\}\!<br>暴力永远不会解决任何问题，懂吗。\ros
+
+message_97:
+  text: 哼！\!和你们在这鬼扯真是不符合我尊贵的身份。\!<br>再见了，贱民们……再也不见！\ros
+
+#ROSA runs off screen
+
+message_98:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \Com[2]等等！给我回来！<br>\!快追，OMORI！追上她！我们可不能让她逃了！\kel
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 快追，OMORI！追上她！\!<br>我们可不能让她逃了！\kel
+
+# =========================================================================================
+# Cutscene: Loading...
+# =========================================================================================
+
+#Trigger: Entering proximity in JUNKYARD - BOSS MAP.
+
+message_120:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 罗莎……我们总算抓到你了！\!<br>立刻把那盒\c[4]特制混音带\c[0]还给我们！\kel
+
+message_121:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: ……\kel
+
+message_122:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 她是怎么了？\!<br>\{\Sinv[1]\Com[2]嘿罗莎，你能听到我们说话吗？！\kel\}\sinv[0]
+
+message_123:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 嗯？\!她为什么不说话呢？\!<br>我们凑近点看看她的情况吧。\her
+
+# =========================================================================================
+# Cutscene: Loading... continued
+# =========================================================================================
+
+#Trigger: Defeating download window
+
+message_140:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: ……\!发生了……\!什么？\her
+
+message_141:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 管他的呢？！我们得把\c[4]特制混音带\c[0]拿回来！\kel
+
+#OMORI walks to ROSA.
+
+message_142:
+  text: 你从罗莎那里拿走了\c[4]特制混音带\c[0]。
+
+#ROSA is surprised and looks around.
+
+message_143:
+  text: 嗯？究竟是怎么回事？\ros
+
+#ROSA looks at OMORI.
+#ROSA is surprised.
+
+message_144:
+  text: 喂！那是我的！快还给我！\ros
+
+#KEL jumps.
+
+message_145:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 想什么呢！谁找到的就是谁的！\!<br>我们要把混音带放回太空男友的手提音响里，那里才是它的归属！\kel
+
+message_146:
+  text: 嗯？\!你说……\!太空……\!男友？\ros
+
+#ADD Ohohoho
+
+message_147:
+  text: 噢，无知的小孩啊。\!<br>你们消息也太不灵通了吧？\ros
+
+message_148:
+  text: 我有可靠的信息来源，告诉你们，<br>太空男友和甜心早就各奔东西了！\ros
+
+message_149:
+  text: 不然这盒\c[4]特制混音带\c[0]又怎么会在\c[11]垃圾场\c[0]里呢？\!<br>当然是因为太空男友亲手丢弃了它！\ros
+
+message_150:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 太空男友亲手丢弃了\c[4]特制混音带\c[0]？！\!<br>哎呀……\!这就不好办了。\her
+
+message_151:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 可是如果太空男友和甜心已经分手了，<br>我们现在要怎样才能唤醒太空男友呢？\aub
+
+message_152:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 辉煌一时的太空海盗联盟的未来就靠我们了呀……\aub
+
+message_153:
+  text: 哼。\!那听起来像是你要解决的问题，与我无关。\ros
+
+message_154:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \com[2]你给我等等！\!我们怎么确定你不是在说谎呢？\!有没有可能，你这么说只不过是想拿回这盒\c[4]特制混音带\c[0]呢！\kel
+
+message_155:
+  text: 啊……\!我……\!\Com[2]怎么可能呢！\!<br>我可能傲慢无礼，但我绝对不会说谎！\ros
+
+message_156:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 信你个鬼！\!这盒\c[4]特制混音带\c[0]我们就拿着了，我们去亲自弄个明白。\kel
+
+message_157:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 你还是滚开吧，丑兮兮的植物家伙！\!要烦就去烦别人吧！\kel
+
+message_158:
+  text: 啊呀！\!太无礼了。\ros
+
+#ROSA walks away, then turns back to party.
+
+message_159:
+  text: 你会为此付出代价的，臭小孩！记住我的话！\ros
+
+#ROSA walks off screen
+
+# =========================================================================================
+# NEW KEL THROW
+# =========================================================================================
+
+message_170:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \com[2]啊？！怎么——\!搞啥啊这家伙！\kel
+
+#KEL exclamation then idea
+
+message_171:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 嘿，你猜怎么着？\!它的头上居然有弱点！\!<br>我一眼就看出来了。\kel
+
+#pan down to platform
+
+message_172:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 我们试试朝它丢点什么吧！\!<br>肯定会有点用的。\kel
+
+message_173:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 那里的平台像是个扔东西的好地方。\!<br>切换到我吧！这个让我来！\kel
+

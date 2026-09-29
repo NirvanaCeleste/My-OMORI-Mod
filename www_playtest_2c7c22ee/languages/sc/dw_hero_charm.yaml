@@ -1,0 +1,464 @@
+# =========================================================================================
+# ** TEMPLATE DIALOGUE
+# =========================================================================================
+
+#Space Pirate Chief - Otherworld - Inspired me to become a Space Pirate → POPCORN
+
+
+#Goosey - Train Station - Saved my child from danger → 100 CLAMS
+
+message_0:
+  text: \n<阿鹅>哦呀，等下，你是英雄对吧？\!你还记得我吗？\!<br>你救下了我差点掉下悬崖的孩子！
+
+
+message_1:
+  text: \n<阿鹅>现在我终于可以报答你了。
+
+
+message_2:
+  text: 阿鹅从她的翅膀里拿出了 100 蚌币。
+
+
+message_100:
+  text: \n<阿鹅>去吧，英雄！\!<br>你就是世人的拯救者！
+
+
+#Mountain - Train Station - Put out the great wildfire → GRANOLA BAR
+
+message_3:
+  text: \n<大山>啊。\!好久不见，英雄。\!<br>自从上次您用一己之力扑灭山火后，我就没见过您了。
+
+
+message_4:
+  text: \n<大山>您的到访我深感荣幸。\!请收下这个微不足道的礼物。
+
+
+message_5:
+  text: 大山张开了嘴，吐出了一片\c[13]四叶草\c[0]。
+
+
+message_101:
+  text: \n<大山>去吧，英雄！\!<br>您就是世人的守护者！
+
+
+#Hot Diggity Dog - Train Station - Volunteered at the shelter → HOT DOG
+
+message_6:
+  text: \n<热滴狗>热……\!滴……\!狗啊！\!真不敢相信我的眼睛！\!<br>英雄，真的是你！
+
+
+message_7:
+  text: \n<热滴狗>我一直想感谢你在庇护所里的义务劳动。\!这是给你的！
+
+
+message_8:
+  text: 热滴狗给了你一个\c[3]热狗\c[0]。
+
+
+message_102:
+  text: \n<热滴狗>去吧，英雄！\!<br>你就是世人的照料者！
+
+
+#Smol - Otherworld - Saved my species from the brink of extinction. → PRESENT
+
+message_9:
+  text: \n<斯莫>我的天啊，英雄！\!我又遇到你了，真高兴！
+
+
+message_10:
+  text: \n<斯莫>你拯救了我们的种族，让我们不再濒临灭绝！\!请收下这份礼物。
+
+
+message_11:
+  text: 斯莫给了你一个手工制作的\c[13]友谊手环\c[0]。
+
+
+message_103:
+  text: \n<斯莫>去吧，英雄！\!<br>你就是世人的护卫者！
+
+
+#Lone Mole - Otherworld - Carried me to safety after The Great Siege → DONUT
+
+message_12:
+  text: \n<孤立树苗鼹鼠>\Com[2]\{嘿，你在干什……
+
+
+message_13:
+  text: \n<孤立树苗鼹鼠>等等，英雄？！\!真的是你吗？！\!自从你把我从大围攻中救出来后，我就没再见过你了！<br><br>感觉已经过去了好久……\!但你的强大一直激励着我去变强！
+
+
+message_14:
+  text: \n<孤立树苗鼹鼠>收下这份礼物吧。\!你应得的。
+
+
+message_75:
+  text: 孤立树苗鼹鼠把\c[3]甜甜圈\c[0]吐在了你手里。
+
+
+message_104:
+  text: \n<孤立树苗鼹鼠>去吧，英雄！\!<br>你就是世人的解放者！
+
+
+#Batzy - Sprout Mole Colony - Since you escorted me from one dangerous location to another  → BUTT PEACH SODA
+
+message_15:
+  text: \n<蝠蝠>你好呀，英雄！\!我差点没认出来你。<br>这洞里也太黑了。
+
+
+message_16:
+  text: \n<蝠蝠>我一直想感谢你上次护送我逃出危险地带。\!给！拿着这个！
+
+
+message_17:
+  text: 蝠蝠给了你一罐\c[3]屁桃汽水\c[0]。
+
+
+message_105:
+  text: \n<蝠蝠>去吧，英雄！\!<br>你就是世人的护送者！
+
+
+#Box Mole - Sprout Mole Village - Showed me the true meaning of christmas → SNO-CONE
+
+message_18:
+  text: \n<方形树苗鼹鼠>英雄……你回来了！\!<br>自从你向我展示了圣诞节的真谛，我就仿佛蜕变了一般。\!<br>谢谢你让我获得新生。
+
+
+message_19:
+  text: \n<方形树苗鼹鼠>这是我最贵重的宝贝，但请你收下它。
+
+
+message_20:
+  text: 方形树苗鼹鼠给了你一个\c[3]雪糕筒\c[0]。
+
+
+message_106:
+  text: \n<方形树苗鼹鼠>去吧，英雄！\!<br>你就是世人的领路人！
+
+
+#Skeleton - SW Castle - Slayed the demon king → 300 CLAMS
+
+message_21:
+  text: \n<骨头>啊……伟大的英雄。\!你又回来了。\!<br>自从几年前你击败恶魔王之后，我就没见过你了。
+
+
+message_22:
+  text: \n<骨头>我一直想给你一份奖励。\!把手伸进我的右眼窝，奖励就在里面。
+
+
+message_23:
+  text: 你把手伸进了骨头的右眼窝，找到了 300 蚌币。
+
+
+message_107:
+  text: \n<骨头>去吧，英雄。\!<br>你永远是世人的英雄。
+
+
+#Skeleton - SW Castle - Slayed the reincarnation of the demon king → 301 CLAMS
+
+message_24:
+  text: \n<骨头>啊，伟大的英雄。\!你又一次回来了。\!<br>自从你前几天击败了复活的恶魔王之后，我就没见过你了。
+
+
+message_25:
+  text: \n<骨头>我又有一份奖励给你。\!把手伸进我的左眼窝，奖励就在里面。
+
+
+message_26:
+  text: 你把手伸进了骨头的左眼窝，找到了 301 蚌币。
+
+
+message_108:
+  text: \n<骨头>去吧，英雄。\!<br>你永远是世人的英雄。
+
+
+#Tiffany Darling - SW Gallery - Drove the evil spirit out of my house → MANGO SMOOTHIE
+
+message_27:
+  text: \n<蒂芙尼·达林>我的天啊！英雄，是你！\!你上次帮了我一个大忙。\!<br>自从你把寄宿于我家的邪恶幽灵驱赶走后，我的生活完全改变了！
+
+
+message_28:
+  text: \n<蒂芙尼·达林>真不知道该如何报答你。\!拿着这个吧。\!小小礼物，不成敬意！
+
+
+message_29:
+  text: 蒂芙尼·达林给了你一杯\c[3]芒果冰沙\c[0]。
+
+
+message_109:
+  text: \n<蒂芙尼·达林>去吧，英雄！\!<br>你就是世人的天使！
+
+
+#Yin - Orange Oasis -  Helped me gather ingredients for my unlimited cheesecake supply. → WAFFLE
+
+message_30:
+  text: \n<米娜>嘿，英雄！\!还记得上次我让你帮我收集原料，以便我可以无限量供应芝士蛋糕吗？那之后已经过了好久了！
+
+
+message_31:
+  text: \n<米娜>虽然那些芝士蛋糕最后都由我吃掉了……\!不过还是感谢你，拿着这个！
+
+
+message_32:
+  text: 米娜给了你一个\c[3]华夫饼\c[0]。
+
+
+message_110:
+  text: \n<米娜>去吧，英雄！\!<br>你就是世人的觅食者！
+
+
+#Ricoli Ravioli - Orange Oasis - Helped me discover my love of food. → CHEESE WHEEL
+
+message_33:
+  text: \n<意大利馄饨哥>我的好伙计，英雄！\!自从你帮我发现我对于美食的激情后，这都过去多少年了？\!我的梦想，我的人生意义，都是你给的！
+
+
+message_34:
+  text: \n<意大利馄饨哥>别害羞，拿着这个！\!<br>这是我最爱的美食，分享给你们，反正我库存还多着呢！
+
+
+message_35:
+  text: 意大利馄饨哥给了你一块\c[3]轮盘芝士\c[0]。
+
+
+message_111:
+  text: \n<意大利馄饨哥>去吧，英雄！\!<br>你就是世人的人生导师！
+
+
+#Basket Case - Last Resort - Helped file taxes. → CARDBOARD
+
+message_36:
+  text: \n<莓晶利>我的天啊……真的是你吗，英雄？\!<br>你上次帮我报税真是救我于水火之中啊。\!<br>我自己可真没办法搞定。
+
+
+message_37:
+  text: \n<莓晶利>你真的帮了我大忙！\!收下这份礼物吧。\!我欠你的！
+
+
+message_38:
+  text: 莓晶利给了你一副\c[13]书呆子眼镜\c[0]。
+
+
+message_112:
+  text: \n<莓晶利>去吧，英雄！\!<br>你就是世人的会计师！
+
+
+#Silker - Last Resort - Covered work shift at the last minute. → 500 CLAMS, 440 after taxes
+
+message_39:
+  text: \n<丝克尔>你好啊，英雄。\!你的存在让无聊的工作都变得可以忍受了。
+
+
+message_40:
+  text: \n<丝克尔>每次我有紧急状况时你都能接我的班。\!<br>一直欠你人情也不好。\!收下这个吧！
+
+
+message_41:
+  text: 丝克尔从自己钱包里拿出了 500 蚌币。
+
+
+message_42:
+  text: \n<丝克尔>哎呀，等下……\!不好意思。\!我得留点钱交税。
+
+
+message_76:
+  text: 丝克尔把 500 蚌币又放了回去。
+
+
+message_77:
+  text: 丝克尔给了你 440 蚌币。
+
+
+message_78:
+  text: \n<丝克尔>真感谢你为我做的一切，英雄。\!<br>你就是世人的好朋友！
+
+
+
+#Krispy - Casino - Helped to get Jawsum to forgive debt. → CONFETTI
+
+message_83:
+  text: \n<克茨比>哟，英雄！感谢你上次帮我解决了债务。
+
+
+message_43:
+  text: \n<克茨比>真不敢想象你对债主说了些什么……我也不想知道就是了。\!<br>但你真的帮了我个大忙。
+
+
+message_44:
+  text: \n<克茨比>收下这个吧……这是我的一点心意。\!<br>之后我们再找个时间庆祝！
+
+
+message_79:
+  text: 克茨比给了你\c[5]五彩纸片\c[0]。
+
+
+message_113:
+  text: \n<克茨比>去吧，英雄！\!<br>你就是世人的博爱者！
+
+
+#Wolf - Saved my marriage.  → 143 CLAMS
+
+message_45:
+  text: \n<狼人>喂，等下……\!你就是那个拯救了我婚姻的男孩子！\!你叫英雄，对吧？\!<br>我一直想向你道谢来着。
+
+
+message_46:
+  text: \n<狼人>我现在手头有点紧，但还是能偿还你一点点人情的。\!<br>希望你不介意，伙计。\!你应得的。
+
+
+message_47:
+  text: 狼人从口袋里掏出了 143 蚌币。
+
+
+message_114:
+  text: \n<狼人>去吧，英雄！\!<br>你就是世人的和平使者！
+
+
+#Shamboo - Concierge - Held me accountable for my actions → DYNAMITE
+
+message_48:
+  text: \n<香波>啊……\!你就是那个把我绳之以法的男孩。\!<br>自从被你严厉问责后，我就改过自新了。
+
+
+message_49:
+  text: \n<香波>我希望你能收下这个。\!小小礼物而已……
+
+
+message_50:
+  text: 香波举起帽子，给了你一个\c[5]炸药\c[0]。
+
+
+message_115:
+  text: \n<香波>去吧，英雄……\!<br>你就是世人的引导者……
+
+
+#Touchdown - Concierge - Awakened my true potential → WATERMELON JUICE
+
+message_51:
+  text: \n<塔持挡>请留步！你是英雄对吧？\!我还记得你呢！\!<br>在我还是个新人时，你训练我，并激发了我的真正潜能。
+
+
+message_52:
+  text: \n<塔持挡>现在我身上没什么东西，但我也不喜欢欠着别人。\!<br>收下这个，我们就谁也不欠谁了。
+
+
+message_53:
+  text: 塔持挡给了你一杯\c[3]西瓜汁\c[0]。
+
+
+message_116:
+  text: \n<塔持挡>去吧，英雄！\!<br>你就是世人的熏陶者！
+
+
+#Hoagie - Club Sandwich - Donated organs to save REUBEN's life → 5000 CLAMS
+
+message_54:
+  text: \n<霍吉>哟，英雄。\!我知道我从没跟你提起过……\!但我和鲁本都欠你一个大人情。
+
+
+message_55:
+  text: \n<霍吉>当你说你要捐器官去救鲁本的命……\!我真没想到你是认真的。
+
+
+message_56:
+  text: \n<霍吉>英雄，我希望你知道，你是这个世界上独一无二的存在。\!<br>小小礼物，希望你能收下。
+
+
+message_80:
+  text: 霍吉从衣服里拿出了 5000 蚌币。
+
+
+message_81:
+  text: \n<霍吉>希望你生活愉快，英雄。\!<br>你就是世人的无私捐赠者！
+
+
+#City Slicker - Underwater Highway - Helped me recover through surgery → MILK
+
+message_57:
+  text: \n<都市老滑头>哇，你好！\!真没想到还能见到你，英雄！
+
+
+message_58:
+  text: \n<都市老滑头>我能顺利出院都是因为你的悉心照料。\!<br>我从医院里偷了个东西出来，别告诉别人啊！\!<br>我想把它送给你！
+
+
+message_59:
+  text: 都市老滑头从他的夹克里拿出了一盒\c[3]牛奶\c[0]。
+
+
+message_117:
+  text: \n<都市老滑头>去吧，英雄！\!<br>你就是世人的支柱！
+
+
+#Jet Setter - Underwater Highway  - Found and returned stolen bicycle → AIR HORN
+
+message_60:
+  text: \n<暴走族>哟哟哟！\!这不是英雄吗！\!我一直想报答你，帮我找回失窃的机车！
+
+
+message_61:
+  text: \n<暴走族>你真酷，英雄。\!真的，你是我认识的最酷的人。\!<br>像你这样的人值得一份礼物。
+
+
+message_62:
+  text: 暴走族把手伸进了头发里，掏出了一副<br>\c[13]酷酷眼镜\c[0]。
+
+
+message_118:
+  text: \n<暴走族>去吧，英雄！\!<br>你就是世人的正义！
+
+
+#Skull Crusher - Underwater Highway  - Taught how to read → POETRY BOOK
+
+message_63:
+  text: \n<头颅破坏者>嘿，英雄！你是来跟大家打招呼的吗？\!<br>自从你教会我识字，我的世界完全被改变了。
+
+
+message_64:
+  text: \n<头颅破坏者>还记得这本书吗，你以前用来教我识字的。\!<br>这本书我已经能倒背如流了，现在还给你。
+
+
+message_65:
+  text: 头颅破坏者从夹克里掏出了一本<br>\c[5]诗集\c[0]。
+
+
+message_82:
+  text: \n<头颅破坏者>教育是不可或缺的……\!真令人感叹。
+
+
+#Brick - Underwater Highway - Saved family restaurant → WHOLE CHICKEN
+
+message_66:
+  text: \n<阿砖>最近怎么样，英雄？\!<br>自从你拯救了我们家的餐厅，我每天都想着你的事情。
+
+
+message_67:
+  text: \n<阿砖>请收下这个，伙计。\!这是我们家的招牌菜……你一定得试试！
+
+
+message_68:
+  text: 阿砖取下了他的头巾，递给你一只<br>\c[3]烤全鸡\c[0]。
+
+
+message_119:
+  text: \n<阿砖>去吧，英雄！\!<br>你就是世人的恩惠！
+
+
+#SEacow - Underwater Highway - Saved the farm → COMBO MEAL
+
+message_69:
+  text: \n<海牛>英雄！\!自从你拯救了我们的牧场后，我就没见过你了！
+
+
+message_70:
+  text: \n<海牛>我一直没能正式感谢你，这个想法一直萦绕在我的脑海里……\!<br>现在我的机会来了。\!请收下这个吧，伙伴。
+
+
+message_71:
+  text: 海牛不知道用什么方式给了你一份\c[3]套餐\c[0]。
+
+
+message_120:
+  text: \n<海牛>去吧，英雄！\!<br>你就是世人的意大利香肠！
+
+

@@ -1,0 +1,59 @@
+# =========================================================================================
+# Dreamworld Extras
+# =========================================================================================
+
+#Perfectheart and Sweetheart (Post-Game)
+
+#Sweetheart: sweeping with maid outfit
+message_0:
+  text: \swh\Com[2]你们四个在看什么呢？！
+
+message_1:
+  text: \n<完美甜心>我正在指导甜心如何做家务！\!<br>她在按照自己的步调……\!一步步学习……\!<br>你不觉得她当女仆特别可爱吗？嚯嚯！
+
+message_2:
+  text: 未使用的信息
+
+message_3:
+  text: \n<完美甜心>对呀，对呀！她真的太可爱了！
+
+message_4:
+  text: \n<完美甜心>我说的对吗，扫地甜心？？\!哦嚯嚯嚯！
+
+message_5:
+  text: \n<扫地甜心>\Com[2]哼！
+
+#Talk again
+
+message_6:
+  text: \n<完美甜心>怎么了？\!你是想和我决斗吗？\!<br>噢……\!你不会想这么做的……\!你真的确定吗？
+
+#[Nod/Shake 1]
+
+#[nod 1]
+message_7:
+  text: \n<完美甜心>噢……\!我了解了……\!我必须要提醒你，这个选择会让你后悔的哦……\!所以……\!我再问一次……\!<br>你真的想要挑战我？
+
+#[Nod/Shake 2]
+
+#[nod 2]
+message_8:
+  text: \n<完美甜心>你真的、真的确定吗？
+
+#Nod/Shake 3]
+message_9:
+  text: \n<完美甜心>……\!<br>好吧，既然如此……\!我不妨回应你的期待。\!<br>我不会手下留情的哦。
+
+#Shake
+message_10:
+  text: \n<完美甜心>没错……\!这才是明智的选择。
+
+#Defeating Perfectheart
+message_11:
+  text: \n<不完美甜心>嗯……\!恭喜你。\!你赢了。\!这么一来，我也不再是完美的了。\!<br>真令人遗憾呢。
+
+#Submersible Karaoke
+
+message_12:
+  text: \spxh\Com[2]那些失去了自己挚爱的人们……\!<br>这首歌……\!是献给你们的。
+

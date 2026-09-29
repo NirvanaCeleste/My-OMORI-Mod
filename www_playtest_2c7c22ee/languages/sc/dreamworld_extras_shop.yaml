@@ -1,0 +1,671 @@
+# =========================================================================================
+# Dreamworld shops
+# =========================================================================================
+
+#Placeholder intro
+message_1:
+  text: \n<贾什>我是天赋异禀的交易大师贾什。<br>\!有什么可以帮上您的吗？
+
+#purchase
+message_2:
+  text: \n<贾什>感谢您的倾囊相助。
+
+#insufficient funds
+message_3:
+  text: \n<贾什>您还没有足够的蚌币。
+
+message_4:
+  text: \n<贾什>我是天赋异禀的交易大师贾什。
+
+message_5:
+  text: \n<贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_6:
+  text: \n<贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_7:
+  text: 你获得了\c[13]折扣标签\c[0]。
+
+message_203:
+  text: \n<雪糕贾什>您还没有足够的蚌币。
+
+message_204:
+  text: \n<雪糕贾什>我是天赋异禀的交易大师贾什。
+
+message_205:
+  text: \n<雪糕贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_206:
+  text: \n<雪糕贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_213:
+  text: \n<豆腐贾什>您还没有足够的蚌币。
+
+message_214:
+  text: \n<豆腐贾什>我是天赋异禀的交易大师贾什。
+
+message_215:
+  text: \n<豆腐贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_216:
+  text: \n<豆腐贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_223:
+  text: \n<柠檬贾什>您还没有足够的蚌币。
+
+message_224:
+  text: \n<柠檬贾什>我是天赋异禀的交易大师贾什。
+
+message_225:
+  text: \n<柠檬贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_226:
+  text: \n<柠檬贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_233:
+  text: \n<商人贾什>您还没有足够的蚌币。
+
+message_234:
+  text: \n<商人贾什>我是天赋异禀的交易大师贾什。
+
+message_235:
+  text: \n<商人贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_236:
+  text: \n<商人贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_243:
+  text: \n<派对贾什>您还没有足够的蚌币。
+
+message_244:
+  text: \n<派对贾什>我是天赋异禀的交易大师贾什。
+
+message_245:
+  text: \n<派对贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_246:
+  text: \n<派对贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+message_247:
+  text: \n<走私贩贾什>请留步，先生或者女士。\!在你们走之前……<br>我想感谢你们常来光顾贾什的小店。
+
+message_248:
+  text: \n<走私贩贾什>请收下这个\c[13]折扣标签\c[0]。\!虽然这里不会给您任何折扣，但我相信它在别的地方还是有用的。
+
+
+# =========================================================================================
+# MAILBOX: GENERAL
+# =========================================================================================
+
+#Mailbox intro
+
+message_10:
+  text: \who喂……\!那边的！\!喂……
+
+message_11:
+  text: \who你！\!没错，就是你！
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub唔……\!OMORI……\!那个信箱好像在跟我们说话……\!<br>或许我们应该去看看……
+
+#Mailbox opens
+message_13:
+  text: \mai没错，没错！尊贵的客人……<br>欢迎来到我的小店！请随意看看！\}\sinv[1]嘻嘻嘻……
+
+#MAILBOX - GENERAL
+
+#ENTER shop
+
+message_14:
+  text: \mai没错，没错！尊贵的客人……<br>欢迎来到我的小店！请随意看看！\}\sinv[1]嘻嘻嘻……
+
+#BUYING/SELLING
+
+message_15:
+  text: \mai感谢光临，尊贵的客人！\!<br>非常感谢您在这里买东西。<br>\}\sinv[1]嘻嘻嘻……
+
+#LEAVE SHOP AFTER BUYING SOMETHING
+
+message_16:
+  text: \mai非常感谢您！
+
+#LEAVE SHOP WITHOUT BUYING ANYTHING
+
+message_17:
+  text: \mai实话实说，我可不喜欢只看不买的人……
+#NOT ENOUGH CLAMS
+
+message_18:
+  text: \mai等等……\!<br>你身上的蚌币买不起这个！\!<br>你以为我是干什么的？做慈善的？！
+
+message_19:
+  text: \mai\Com[2]你以为我是干什么的？做慈善的？！
+#item buying prompt
+message_184:
+  text: \mai这些东西一共是 <SHOPTOTAL> \G。
+#max item message
+message_185:
+  text: \mai您身上没有足够的空间了……\!先去扔点东西再来吧！
+#on item list buy ok
+message_186:
+  text: 您想买多少个？\^
+#item selling ok
+message_187:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_188:
+  text: \mai这些东西，我出这么多蚌币来买……\!您意下如何？
+#item buying cancel
+message_189:
+  text: \mai什么？你选了那么久，就打算这样走了？
+
+
+#IF HERO IS leader
+message_200:
+  text: \mai啊，这不是我最爱最帅气的顾客英雄吗！给您往常一样的折扣！来吧……买点什么吧！\}\sinv[1]嘻嘻嘻……
+
+# =========================================================================================
+# MAILBOX: FOREST PLAYGROUND
+# =========================================================================================
+
+#Leaving before purchasing misfortune cookie
+#Note: once player buys misfortune cookie, this no longer triggers
+
+
+
+#Yes/No
+
+#Buying Misfortune COOKIE
+
+
+
+#Rejecting Misfortune COOKIE
+
+
+# =========================================================================================
+# MAILBOX: OTHERWORLD CAMPSITE
+# =========================================================================================
+
+#Buying Misfortune COOKIE
+
+
+
+# =========================================================================================
+# MAILBOX: SPROUTMOLE TOWN ENTRANCE
+# =========================================================================================
+
+
+
+# =========================================================================================
+# MAILBOX: Orange Oasis (In Front of Dino's Dig)
+# =========================================================================================
+
+#Leaving before purchasing Misfortune cookie
+
+
+# =========================================================================================
+# MAILBOX - LAST RESORT
+# =========================================================================================
+
+#SELECTING POOL NOODLE
+
+message_70:
+  text: \mai嘿，那边的孩子们！你们有没有兴趣买下这根\c[13]泳池浮力棒\c[0]？\!<br>它虽然看上去不怎么样，但可是有变成强力武器的潜质的哦！
+
+message_71:
+  text: \mai即便让你知道这些……\!<br>我也仅仅收您 5000 蚌币，这可是非常便宜的价格了！
+
+message_72:
+  text: \mai这个价格，可以说是从我这明抢了！
+
+message_73:
+  text: \mai怎么样？\!有没有心动啊？\$
+#yes/no
+
+#if yes
+message_74:
+  text: \mai太棒了！\!请收下好好对待它吧！\!<br>\}\sinv[1]嘻嘻嘻……\LECLEAR
+
+#if no
+message_75:
+  text: \mai哦，我明白了……\!可是这根\c[13]泳池浮力棒\c[0]可是稀有的珍品啊……\!<br>请您务必再考虑考虑！\!我稍微降降价格，2500
+    蚌币怎么样？
+
+message_76:
+  text: \mai您意下如何？\!想买下它吗？\$
+
+#yes/no
+message_77:
+  text: \mai你……\!\Com[2]你还是不想买？？\!<br>\QUAKE[1]这么便宜都不要？！？！\QUAKE[0]
+
+message_78:
+  text: \mai呃……哼……
+
+message_79:
+  text: \mai好吧，好吧……\!我真的要大出血了，听好了啊……
+
+message_80:
+  text: \mai准备好这一生仅有一次的好买卖吧！<br>1000 蚌币，要还是不要！\$
+
+#No
+message_81:
+  text: \mai你……\!你可真是个难伺候的顾客……
+
+message_82:
+  text: \mai哎……\!那……\!500 蚌币呢……\$
+
+#[no]
+message_83:
+  text: \mai250 蚌币呢？\$
+
+#[no]
+message_84:
+  text: \mai好吧好吧……\!\Com[2]算了！\!<br>我都不知道为什么要拼命推销这玩意儿……
+
+message_85:
+  text: \mai如果你不打算花钱买\c[13]泳池浮力棒\c[0]，那我免费送你好了！
+
+message_87:
+  text: \mai我再也不想看见这玩意了……\!拿上它赶紧走吧！
+
+message_88:
+  text: 你获得了\c[13]泳池浮力棒\c[0]。
+
+#Shop closes
+
+#Leaving before purchasing Misfortune cookie (If you bought a misforune cookie from orange oasis)
+
+
+
+#Buying misfortune COOKIE
+
+
+
+#Rejecting misforunte cookie
+
+
+
+
+# =========================================================================================
+# BOTTLED WATER SELLERS (DEEP REEF)
+# =========================================================================================
+
+message_95:
+  text: \n<粘液人>嘿，你！\!没错，面无表情的那个！
+
+message_96:
+  text: \n<粘液人>嘿，你！\!没错，头上戴着可爱蝴蝶结的那个！
+
+message_97:
+  text: \n<粘液人>嘿，你！\!没错，特别矮的那个！
+
+message_98:
+  text: \n<粘液人>嘿，你！\!没错，长得特帅的那个！
+
+message_99:
+  text: \n<粘液人>你有没有兴趣买下这瓶纯天然有机\c[3]瓶装水\c[0]？\!我们正在进行童叟无欺的清仓大甩卖！
+
+#should be a variable reference to change depending on the amount
+message_100:
+  text: \n<粘液人>这\c[3]瓶装水\c[0]只收你特惠价 \v[635] 蚌币！\!怎么样，想买吗？\$
+
+#1st/2nd/3rd price, variable reference
+message_101:
+  text: \n<粘液人>这\c[3]瓶装水\c[0]只收你特惠价 \v[635] 蚌币！\!怎么样，想买吗？\$
+
+#Yes
+message_102:
+  text: \n<粘液人>\sinv[1]太棒了！！\!\sinv[0]拿好你的\c[3]瓶装水\c[0]。它现在是你的了！
+
+#no
+message_103:
+  text: \n<粘液人>好吧……\你会后悔错过这绝无仅有的好买卖的！
+
+#not enough clams
+message_104:
+  text: \n<粘液人>你还想要\c[3]瓶装水\c[0]吗？\!<br>我这应该还有存货……
+
+message_105:
+  text: \n<粘液人>你身上没有足够的蚌币……
+
+message_106:
+  text: \n<粘液人>请好好享受你的\c[3]瓶装水\c[0]！
+
+message_107:
+  text: \n<粘液人>你身上没有足够的蚌币……
+
+message_108:
+  text: \n<粘液人>哦吼……你是\sinv[1]回来\sinv[0]买\c[3]瓶装水\c[0]的吗？
+
+message_109:
+  text: \n<粘液人>真不幸，自我们上次谈话以来，价格又上涨了……现在的价格是\v[635]，但我希望你仍然会接受这笔买卖！嘿嘿……\$
+
+message_94:
+  text: 你获得了\c[3]瓶装水\c[0]。
+
+# =========================================================================================
+# Sno-cone JASH
+# =========================================================================================
+
+#Intro  start at 110
+message_110:
+  text: \n<雪糕贾什>我是天赋异禀的交易大师贾什。<br>\!有什么可以帮上您的吗？
+
+#Purchase
+message_111:
+  text: \n<雪糕贾什>感谢您的倾囊相助。
+
+#Decline
+message_112:
+  text: \n<雪糕贾什>我尊重您的决定。
+
+#Not enough money
+message_113:
+  text: \n<雪糕贾什>您身上似乎没有足够的蚌币……
+#item buying prompt
+message_114:
+  text: \n<雪糕贾什>好极了！一共是 <SHOPTOTAL>\G。
+#max item message
+message_115:
+  text: \n<雪糕贾什>您身上的空间不够了……
+#on item list buy ok
+message_116:
+  text: 您想买多少个？\^
+#item selling ok
+message_117:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_118:
+  text: \n<雪糕贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_119:
+  text: \n<雪糕贾什>我尊重您的决定。
+
+# =========================================================================================
+# TOFU JASH
+# =========================================================================================
+
+#Intro   start at 120
+message_120:
+  text: \n<豆腐贾什>您好，先生或者女士。有没有兴趣购买一些上好的\c[3]豆腐\c[0]？\!<br>每个只花您 1 蚌币。\$
+
+#Purchase
+message_121:
+  text: \n<豆腐贾什>感谢您的倾囊相助。
+#Decline
+message_122:
+  text: \n<豆腐贾什>我尊重您的决定。
+#Not enough money
+message_123:
+  text: \n<豆腐贾什>您连区区 1 蚌币都拿不出来？\!我真同情您。\!免费送您一块\c[3]豆腐\c[0]吧。
+#item buying prompt
+message_124:
+  text: \n<豆腐贾什>好极了！一共是 <SHOPTOTAL>\G。
+#max item message
+message_125:
+  text: \n<豆腐贾什>您身上已经装不下了！
+#on item list buy ok
+message_126:
+  text: 您想买多少个？\^
+#item selling ok
+message_127:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_128:
+  text: \n<豆腐贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_129:
+  text: \n<豆腐贾什>我尊重您的决定。
+
+
+# =========================================================================================
+# Lemonade JASH
+# =========================================================================================
+
+#intro   start at 130
+message_130:
+  text: \n<柠檬贾什>您好，先生或者女士。\!看上去\c[4]火车票\c[0]已经卖光了，不过我们还剩下一些\c[3]柠檬水\c[0]。\!您想买点\c[3]柠檬水\c[0]吗？
+
+#purchase
+message_131:
+  text: \n<柠檬贾什>感谢您的倾囊相助。
+
+#decline
+message_132:
+  text: \n<柠檬贾什>我尊重您的决定。
+
+#not enough CLAMS
+message_133:
+  text: \n<柠檬贾什>您身上似乎没有足够的蚌币……
+#item buying prompt
+message_134:
+  text: \n<柠檬贾什>好极了！一共是 <SHOPTOTAL>\G。
+#max item message
+message_135:
+  text: \n<柠檬贾什>您身上已经装不下了！
+#on item list buy ok
+message_136:
+  text: 您想买多少个？\^
+#item selling ok
+message_137:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_138:
+  text: \n<柠檬贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_139:
+  text: \n<柠檬贾什>我尊重您的决定。
+
+
+# =========================================================================================
+# PARTY JASH
+# =========================================================================================
+
+#Intro    start at 140
+message_140:
+  text: \n<派对贾什>我是天赋异禀的交易大师贾什。<br>\!有什么可以帮上您的吗？
+
+#Purchase
+message_141:
+  text: \n<派对贾什>感谢您的倾囊相助。
+
+#decline
+message_142:
+  text: \n<派对贾什>明明是派对，您真令人扫兴……
+
+#Not enough money
+message_143:
+  text: \n<派对贾什>您身上似乎没有足够的蚌币……
+#item buying prompt
+message_144:
+  text: \n<派对贾什>好极了！一共是 <SHOPTOTAL>\G。
+#max item message
+message_145:
+  text: \n<派对贾什>您身上已经装不下了！
+#on item list buy ok
+message_146:
+  text: 您想买多少个？\^
+#item selling ok
+message_147:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_148:
+  text: \n<派对贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_149:
+  text: \n<派对贾什>我尊重您的决定。
+# =========================================================================================
+# DEALER JASH
+# =========================================================================================
+
+#Intro    start at 170
+message_170:
+  text: \n<商人贾什>我是天赋异禀的交易大师贾什。<br>\!有什么可以帮上您的吗？
+
+#Purchase
+message_171:
+  text: \n<商人贾什>感谢您的倾囊相助。
+
+#decline
+message_172:
+  text: \n<商人贾什>您要拒绝这比好买卖？\!真可惜……
+
+#Not enough money
+message_173:
+  text: \n<商人贾什>您身上似乎没有足够的蚌币……
+#item buying prompt
+message_174:
+  text: \n<商人贾什>很好。一共是 <SHOPTOTAL>\G。
+#max item message
+message_175:
+  text: \n<商人贾什>您身上的空间不够了……
+#on item list buy ok
+message_176:
+  text: 您想买多少个？\^
+#item selling ok
+message_177:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_178:
+  text: \n<商人贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_179:
+  text: \n<商人贾什>我尊重您的决定。
+
+# =========================================================================================
+# MUSTARD SUB
+# =========================================================================================
+
+#Intro       start at 150
+message_150:
+  text: \n<艾利诺>欢迎来到\c[11]黄芥末潜艇\c[0]！\!你们想点些什么？
+
+#Leave Menu without Ordering
+message_151:
+  text: \n<艾利诺>什么都不点吗？\!<br>没关系！欢迎下次再来！
+
+#Purchase
+message_152:
+  text: \n<艾利诺>这可是我们的招牌菜！\!一共收您 <SHOPTOTAL>\G。
+
+#MERMAID walks through the door and then comes back.
+
+message_193:
+  text: \n<艾利诺>感谢您，祝您有个愉快的一天！
+#item buying prompt
+message_194:
+  text: \n<艾利诺>这可是我们的招牌菜！\!这样如何？
+#max item message
+message_195:
+  text: \n<艾利诺>您身上的空间不够了……
+#on item list buy ok
+message_196:
+  text: 您想买多少个？\^
+#item selling ok
+message_197:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_198:
+  text: \n<艾利诺>没问题，亲爱的！\!您的订单马上好！
+#item buying cancel
+message_199:
+  text: \n<艾利诺>抱歉……\!您没有足够的蚌币……
+
+# =========================================================================================
+# Vending Machines
+# =========================================================================================
+
+#Intro     start at 160
+message_160:
+  text: 一台自动贩卖机。\!<br>花 100 蚌币买一罐\c[3]美味汽水\c[0]吗？\$
+
+message_162:
+  text: 你没有足够的蚌币。
+
+message_164:
+  text: 你的口袋已经装不下了。
+
+message_163:
+  text: 一罐冰凉的\c[3]美味汽水\c[0]从贩卖机里弹了出来！
+
+#Examine when Sold out
+message_161:
+  text: 一台自动贩卖机。\!<br>里面的东西已经卖光了。
+
+# =========================================================================================
+# Lemonade JASH
+# =========================================================================================
+
+#intro   start at 130
+message_250:
+  text: \n<走私贩贾什>我因为走私而被送进地牢，但旧习难改啊。
+
+#purchase
+message_251:
+  text: \n<走私贩贾什>明智的选择！
+
+#decline
+message_252:
+  text: \n<走私贩贾什>我尊重您的决定。
+
+#not enough CLAMS
+message_253:
+  text: \n<走私贩贾什>您身上似乎没有足够的蚌币……
+#item buying prompt
+message_254:
+  text: \n<走私贩贾什>好极了！一共是 <SHOPTOTAL>\G。
+#max item message
+message_255:
+  text: \n<走私贩贾什>您身上已经装不下了！
+#on item list buy ok
+message_256:
+  text: 您想买多少个？\^
+#item selling ok
+message_257:
+  text: 您想卖多少个？\^
+#item selling prompt
+message_258:
+  text: \n<走私贩贾什>太棒了！\!马上为您准备您的订单！
+#item buying cancel
+message_259:
+  text: \n<走私贩贾什>我尊重您的决定。
+
+#MAILBOX BEFORE INTRO
+message_300:
+  text: 一个可疑的蓝色信箱。
+
+#=====
+#CRAP SELLERS IN LAST RESORT
+
+
+
+# GOOMANS
+
+message_350:
+  text: \n<粘液人>我保证你想来一杯新鲜的\c[3]牛奶\c[0]，这可是刚刚从\c[11]海牛农场\c[0]运来的哦！\!<br>这\c[3]牛奶\c[0]可是新鲜的不能再新鲜了，而且绝对会给你带来新鲜的一天，一杯只售500
+    蚌币！\$
+
+message_351:
+  text: \n<粘液人>这可是最最新鲜的！
+
+message_352:
+  text: \n<粘液人>想不想在那个纯手工制作的独特镂空照相板那里摆各种姿势呀？\!<br>只需 100 蚌币！\$
+
+message_353:
+  text: \n<粘液人>太棒了，感谢感谢。\!你们随便用，随便用。
+
+message_354:
+  text: \n<粘液人>我有一罐特别特别珍贵的\c[3]汽水\c[0]，它的原材料可是最好的\c[3]屁桃\c[0]。\!没错，正是举世闻名的\c[3]屁桃汽水\c[0]！只需
+    600 蚌币它就是你的了！\$
+
+message_355:
+  text: \n<粘液人>你绝对会爱上这味道的。\!这可是屁股啊！我是说，上好的屁桃啊！
+
+message_356:
+  text: \n<粘液人>你看上去是会追求危险的人。<br>\!我这里有不少高品质的\c[5]炸药\c[0]正一触即发……\!<br>只需要 1500 蚌币的低价。\!有兴趣吗？\$
+
+message_357:
+  text: \n<粘液人>下次还想要炸点什么的话，记得再来找我！
+

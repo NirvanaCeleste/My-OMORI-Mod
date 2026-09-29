@@ -1,0 +1,1480 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+#DW_ManonFire
+#Shamboo
+#Location: Mr Jawsum's Concierge
+message_0:
+  text: \n<香波>我和鲨赞先生……\!我们还有好多大事要商量呢……\!没错……\!<br>好多，好多大事……
+
+message_1:
+  text:
+
+#Nereene
+#Location: SW Library
+message_2:
+  text: \n<内琳>啊哈！好久不见。\!我猜你们四个又要去搞破坏啦？
+message_3:
+  text: \n<内琳>你们逃出隧道后有没有吃一堑，长一智呀？\!下次可不会这么走运了！
+
+message_4:
+  text:
+
+#Guava
+#Location: Train Station
+message_5:
+  text: \n<瓜娃>我一点儿都不介意等车！\!<br>等待是人生的一部分。
+
+message_6:
+  text: \n<瓜娃>我等车等得太久了……\!都记不清自己为什么要过来了！
+
+#Mimi
+#Orange Oasis
+
+message_7:
+  text: \n<米米>哇……这苹果好大！
+
+message_8:
+  text:
+
+#Mira
+#takes places of AUBREY as secretary
+message_9:
+  text: \n<米拉>嗨！我是米拉！\!新来的秘书！
+
+
+message_10:
+  text: \n<米拉>嗨，老板！\!我把今天所有事情都安排好啦，你可以去放松放松了！
+
+#Silker
+#Location: Last Resort Casino
+
+message_11:
+  text: \n<丝克尔>从早到晚，每天都是一个样。\!<br>无所谓了……\!工作就是工作吧。\!当然……前提是他们发工资的话。
+
+message_12:
+  text:
+#Jussie
+#Location: Last Resort Casino
+message_13:
+  text: \n<朱西>我哥哥叫我在这里等他，但我不知道他什么时候回来。\!你认识一个叫鲨赞先生的人吗？\!<br>哥哥说他有事要找鲨赞先生……
+
+message_14:
+  text:
+#Hayes
+#Location: Last Resort Casino
+
+message_15:
+  text: \n<海耶斯>啊……\!终于能休息会儿了。
+
+message_16:
+  text: \n<海耶斯>你们也是从城里来的吗？\!反正看起来是城里的小孩儿。\!<br>这里好吃的挺多，但下水道太恐怖了，是不是？
+
+
+message_17:
+  text:
+
+#Turmoil
+#Location: Underwater Highway outside of Mustard Sub
+
+message_18:
+  text: \n<特麻烦>嗨……我又把烟留在家里了……
+
+message_19:
+  text:
+
+#Russell
+#Location: Last Resort Casino
+message_20:
+  text: \n<拉塞尔>嗯……嗯……\!如果我数对了的话……\!那就……\!<br>嗯……嗯……
+
+message_21:
+  text:
+
+#Albacore
+#Location: Underwater Highway Cave
+message_22:
+  text: \n<青花鱼>你们不想付过路费才来这里的，是不是？\!我这周已经见过两拨像你们一样的人了！
+
+message_23:
+  text: \n<青花鱼>从这条路走虽然不太方便，不过你们至少可以紧紧攥着那些甜美的蚌币了。\!不过，最后一段的过路费还是老实付了比较好。\!相信我！
+
+message_24:
+  text:
+#James
+#Location: Last Resort Casino
+message_25:
+  text: \n<詹姆斯>我非常喜欢看着自己辛辛苦苦赚来的钱进入这台机器，然后再也出不来的感觉。\!就看着这些钱……\!全部……\!消失……
+
+message_26:
+  text:
+
+#Honeydew
+#Location: Mr Jawsum's Concierge
+message_27:
+  text: \n<蜜珠>老板把我叫上来，说有个重要会议要开，但现在又说没空……\!<br>我不知道……\!我该在这里等？还是该回去工作？！
+
+message_28:
+  text:
+#Crusher Blast
+#[UNPLACED]
+
+message_29:
+  text: \n<粉碎爆炸机>他们派我去做手工活儿。\!管理，差。\!<br>预测，帝国衰落。
+
+message_30:
+  text: \n<粉碎爆炸机>哈。哈。\!管理，变动。\!预测，成功。
+
+#Cipher
+#Location: Deeper Well Whirlpool
+
+message_31:
+  text: \n<零>当她在人间……\|阳光都更加耀眼……
+
+message_32:
+  text:
+#Gascon
+#Location: Otherworld Campsite
+
+message_33:
+  text: \n<吹牛大王>啊啊啊，糟糕，我把相机落家里了。\!<br>野营要是我不能拍照，那还能叫野营吗？
+
+message_34:
+  text:
+
+#Teacup Spirit
+#Location: SW Library
+message_35:
+  text: \n<茶杯幽灵>\sinv[1]噢噢噢噢……我有一个问题想问你你你你！\sinv[0]\!<br>你觉得幽灵是一种气体吗？
+
+message_36:
+  text:
+
+#Canopy
+#Location: Train Station
+
+message_37:
+  text: \n<树冠>我用我的小眼睛偷偷看了一下……\!<br>看见一把长着好多条腿的彩虹雨伞！
+
+#Breezy
+#[UNPLACED: Orange Oasis Club Sandwich]
+
+
+message_40:
+  text:
+
+message_42:
+  text:
+#--------------------------------------------------------------------------------------------------
+#DW_NPC_18
+
+#Child on Stilts
+#[UNPLACED]
+message_43:
+  text: \n<踩在高跷上的小孩>我卡住下不来了。
+
+message_44:
+  text: \n<踩在高跷上的小孩>我觉得还蛮不错的。
+
+#--------------------------------------------------------------------------------------------------
+#DW_NPC_19
+
+#Barbracoa
+#Location: Last Resort Hallway
+message_45:
+  text: \n<巴拉科阿>\sinv[1]啊！我可爱的孩子们可真努力啊……\!\sinv[0]<br>你最好别给他们惹事……\!不然的话……
+
+
+message_46:
+  text: \n<巴拉科阿>我就\com[2]让你再也看不见明天的太阳！
+
+#Decay
+#Location: Deeper Well
+message_47:
+  text: \n<衰败>时间奔流不息。\!真相终将水落石出……\!你对此一清二楚……\!<br>不是吗，造梦者？
+
+message_48:
+  text:
+
+#Dowon
+#SW GALLERY
+message_49:
+  text: \n<大旺>大旺觉得大旺明白什么是艺术……\!但是来到这里之后，大旺好像得重新再想一下了。
+
+message_50:
+  text:
+
+#Parsnip
+#[UNPLACED]
+message_51:
+  text: \n<防风草>我是玛丽娜的第八个试验品……\!可能吧。她十几岁的时候用苔藓和豆芽制造了我。
+
+message_52:
+  text: \n<防风草>\sinv[1]捏耶耶耶耶耶耶……
+
+message_352:
+  text: \n<防风草>\sinv[1]捏啊啊啊啊啊啊……
+
+#Renbi
+#Location: Last Resort Entrance
+message_53:
+  text: \n<雷比>哈哈……天哪，这个笑话可真不错……\!……\!<br>这笑话……\!可……可太……\!好笑了……
+
+message_54:
+  text:
+
+#Burro
+#[UNPLACED]
+message_55:
+  text: \n<布罗>我是玛丽娜的第五个试验品。\!她还是个小孩子的时候就用硬纸板和\c[3]糖果\c[0]制造了我。
+
+message_350:
+  text: \n<布罗>\com[2]哦！\!我的糖果！
+
+message_351:
+  text: \n<布罗>被认可的感觉真好。
+
+#Peeve
+#[UNPLACED]
+message_57:
+  text: \n<麻烦鬼>我是玛丽娜的第六个试验品。\!她在十几岁的时候用气球和魔法制造了我。
+
+message_353:
+  text:
+
+message_354:
+  text:
+
+#------------------------------------------------------------------------------------------
+#DW_NPC_20
+
+#Gallipot
+#[UNPLACED]
+message_56:
+  text: \n<药剂师>你们好呀，年轻的旅行者！\!来尝尝我做的饮料吧。\!<br>全都是我自己做的哦！
+
+message_58:
+  text: \n<药剂师>你想花 150 蚌币\$来点新鲜的\c[3]香橙汁\c[0]吗？
+
+message_59:
+  text: \n<药剂师>你想花 130 蚌币\$来点新鲜的\c[3]桃子汽水\c[0]吗？
+
+message_60:
+  text: \n<药剂师>你想花 150 蚌币\$来点新鲜的\c[3]牛奶\c[0]吗？
+
+message_62:
+  text: \n<药剂师>我的特调！\!<br>打起精神来吧，年轻的旅行者！
+
+message_68:
+  text: \n<药剂师>抱歉，年轻的旅行者。\!<br>你的蚌币不够……
+
+#------------------------------------------------------------------------------------------
+#DW_NPC_24
+
+#Nova
+#Location: Train Station
+message_61:
+  text: \n<点点>这里空气真好，是不是？\!闻起来很清新！
+
+message_103:
+  text: \n<点点>这里空气真甜，是不是？\!闻起来超糖的！
+
+
+
+#Gonzo
+#Location: Underwater Highway
+message_63:
+  text: \n<疯子>这高速路比我想象的要长得多……\!<br>但往回走也是走，往前走也是走。\!<br>……\!还不如接着往前呢。
+
+
+#Jogen
+#Last Resort Hotel Room
+message_65:
+  text: \n<约根>我是石头剪刀布大赛的冠军！\!<br>如果你把我打败了，我就给你我毕生的积蓄！
+
+message_81:
+  text: 你选哪一个？
+
+message_86:
+  text: 石头
+
+message_88:
+  text: 布
+
+message_90:
+  text: 剪刀
+
+message_92:
+  text: 什么也不做
+
+message_94:
+  text: \n<约根>\{\com[2]\sinv[1]准准准准备……\|要要要要来了……
+
+#SCISSORS:
+message_76:
+  text: \n<约根>\com[2]哈！我赢了！\!冠军至上！
+
+#ROCK:
+message_78:
+  text: \n<约根>什么？\!平手！？\!下次，下次我将成为胜者！
+
+
+#PAPER:
+message_64:
+  text: \n<约根>……\!啊……\!这就是失败的滋味吗。\!你让我知道人外有人了，挑战者。
+
+message_66:
+  text: \n<约根>照之前说的，你可以拿走我毕生积蓄。
+
+message_70:
+  text: 你获得了 3 蚌币。
+
+message_72:
+  text: \n<约根>千万不要一次性花完呀……
+
+message_74:
+  text: \n<约根>毕生的积蓄都没了……\!我想我得回炉再造了……\!我会再次成为冠军的！
+
+
+#backing out
+message_83:
+  text: \n<约根>临阵退缩吗，哈？\!一点都没有英雄气概！
+
+#Drew
+#Location: Last Resort Casino
+message_67:
+  text: \n<画画>嗨，我是新来的！\!工作一般般，但我喜欢这儿的员工。\!丝克尔老给我们讲笑话！\!他可太有意思了。
+
+#Morgan
+#Location: Otherworld Campsite
+
+message_69:
+  text: \n<摩根>我刚刚把一些罐子拿去回收，那台回收机给了我一个超酷的奖品耶！\!回收真的有回报！
+
+#Urchin
+#Location: Underwater Highway
+message_71:
+  text: \n<海胆>请务必不要碰我的刺。谢谢。
+
+#Sully
+#[UNPLACED]
+message_73:
+  text: \n<萨利>我是玛丽娜的第七个试验品……\!到底是第几个已经不太记得清了。她十几岁的时候用小鸟制造了我。
+
+message_355:
+  text: \n<萨利>这让我非常愤怒。
+
+message_356:
+  text: \n<萨利>这使我充满幸福。
+
+#Yellow
+#[UNPLACED]
+message_75:
+  text: \n<黄>啊啊啊啊……可恶！\!我就差一枚\c[4]恐龙币\c[0]就能买到\c[4]银制勺子\c[0]了！
+
+#Chow
+#Location: Train Station
+message_77:
+  text: \n<周>我只见过这辆火车开过一次，而且是好几年前的事儿了……\!现在它可能要开到一个全新的地方了。
+
+message_105:
+  text: \n<周>我还从没来过这一站呢。\!<br>得赶紧开始探索\c[11]橙子绿洲\c[0]才行……这可是机遇之地！
+
+#Sydney
+#[UNPLACED]
+message_79:
+  text: \n<西尼>带着腰包的仓鼠本质上就是一只小袋鼠。
+
+
+#Treble
+#Location: Otherworld Campsite
+message_80:
+  text: \n<特布>啊……\!这里的景色太美了。
+
+#Andy
+#Location: Train Station
+message_82:
+  text: \n<安迪>如果等的时间太长，我就会焦虑！\! \com[2]搞快点！搞快点啊！
+
+
+#Fred
+#Location: Train Station
+
+message_84:
+  text: \n<弗雷德>我正要去处理一些重要的事情。\!<br>处理完之后，我还要去处理更多重要的事情。
+
+#Location 2: Mr. Jawsum's Concierge
+
+message_85:
+  text: \n<弗雷德>我在这里等着，是要去处理一些重要的事情。\!处理完之后，我还要去处理更多重要的事情。
+
+
+
+#Whizzy Whitney
+#Location: Train Station
+
+message_87:
+  text: \n<跑得嗖嗖快惠特尼>欧耶！我跑得超快的，但火车比我跑得更快！\!<br>知道自己的极限在哪里很重要！
+
+
+
+#Batzy
+#Location: Sprout Mole Colony
+message_89:
+  text: \n<蝠蝠>我的朋友以前住在这些隧道里，\!<br>但现在都去寻找他们的失踪的首领了……\!<br>你觉得他们还会回来吗？
+
+message_101:
+  text: \n<蝠蝠>我的朋友慢慢回来了！\!呃……\!至少大部分都在往回赶。
+
+#Ricoli Ravioli
+#[UNPLACED]
+message_91:
+  text: \n<意大利馄饨哥>欢迎来到\c[11]橙子绿洲\c[0]，这里的月光都格外耀眼！我是意大利馄饨哥，一个美食爱好者。
+
+
+#Gluten
+#Sweetheart Gallery
+message_93:
+  text: \n<格鲁顿>这些画作……\!它们唤醒了我体内的某些东西。\!希望这只是暂时的。
+
+
+#Artichoke
+#[UNPLACED]
+message_95:
+  text: \n<菜蓟>这里展出的宝物来自世界各地！\!<br>如果有一天我能环游世界就好了……
+
+#Fuchsia
+#[UNPLACED]
+message_96:
+  text: \n<灯笼花>我是玛丽娜的第一个试验品。\!<br>她还是小宝宝的时候用沙子和水果制作了我。
+
+message_97:
+  text: \n<灯笼花>哈哈……\!痒痒的……
+
+message_357:
+  text: 灯笼花表演了翻筋斗。
+
+
+#Grunty
+#[UNPLACED]
+message_98:
+  text: \n<呼噜>我上次玩\c[11]恐龙挖宝\c[0]的时候，发现了超多厉害的宝物！
+
+message_99:
+  text: \n<呼噜>但这次玩\c[11]恐龙挖宝\c[0]，只找到了几根\c[3]燕麦棒\c[0]……
+
+#Frank
+#Location: Train Station
+message_100:
+  text: \n<弗兰克>如果我这列还不动……\!<br>旁边那家伙就要先到了。
+
+
+#Krispy
+#Location: Last Resort Casino
+message_102:
+  text: \n<克茨比>记得提醒我，下次随便选度假地点的时候先看看评价。
+
+
+#Tuna Can
+#Location: Underwater Highway
+
+message_104:
+  text: \n<金枪鱼罐头>我里面已经完全没有金枪鱼了！
+
+#Zarf
+#Location: Otherworld Campsite
+message_106:
+  text: \n<泽夫>今天来了好多人类啊……\!你们可真是喜欢太空旅游。
+
+#Jorge
+#Location: Last Resort Entrance
+message_107:
+  text: \n<乔治>嘿！你们这些小家伙是来度假的客人还是这里的员工呀？\!这里到处都在施工，至少给员工发套统一制服啊……
+
+#Basket Case
+#Location: Last Resort Entrance
+
+message_108:
+  text: \n<莓晶利>我今天不小心撞到了一个员工……\!然后，她就开始一边叫我大傻子一边用头槌把我从房间的一头顶到了另一头。
+
+message_109:
+  text: \n<莓晶利>鬼知道头槌会这么疼！？\!反正我之前不知道。
+
+message_110:
+  text: \n<莓晶利>来这儿之前，我不小心踩到了一只树苗鼹鼠的脚……\!然后，她就一边骂我是可悲的贱民，一边抽我耳光，都快把我抽傻了。
+
+message_111:
+  text: \n<莓晶利>唉……\!我一定把她的脚踩得非常痛吧……
+
+#Owangee
+#[UNPLACED]
+message_112:
+  text: \n<欧万奇>这个地方对我的蛀牙不好……\!<br>但谁会需要牙齿啊！？
+
+message_113:
+  text:
+
+#Applefly
+#[UNPLACED]
+message_114:
+  text: \n<苹果蝇>我是玛丽娜的第四个试验品。\!<br>她还是个小孩子的时候用脏脏的苹果制造了我。
+
+message_115:
+  text: \n<苹果蝇>哦？
+
+message_358:
+  text: \n<苹果蝇>好了，够了！
+
+message_370:
+  text: \n<苹果蝇>\sinv[1]嗞嗞嗞嗞……\|哦哦……\|耶……\|嗞嗞嗞嗞嗞嗞嗞……\!<br>呣呣呣呣呣呣呣……\!就在茎的后面……
+
+#Snug
+#Location: Otherworld Campsite
+message_116:
+  text: \n<卷卷>只有在这样的时刻，我才会想起我们的宇宙是那么的美丽！
+
+message_117:
+  text:
+
+#Wily
+#UNPLACED]
+message_118:
+  text: \n<威利>\c[11]橙子绿洲\c[0]里有很多年长的人，他们从很久很久以前开始就住在这边啦。
+
+message_119:
+  text: \n<威利>但我希望有一天……\!这个地方能成为一座繁荣的城市！\!毕竟这里有大片大片的土地可以开发呢！
+
+#Cinder
+#Location: Last Resort Casino
+message_120:
+  text: \n<渣渣>哥们儿……我好像有点晕。\!<br>天旋地转的只有我一个吗？
+
+message_121:
+  text:
+
+#Dango
+#Location: Train Station
+message_122:
+  text: \n<丹贡>我受够了，我再也不想和那个蜜蜂男讲话了。\!<br>再和他讲话我非疯了不可！
+
+message_123:
+  text:
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#DW_NPC_25
+
+#Aliana
+#Location: Cattail Field
+message_124:
+  text: \n<艾琳娜>天空不是很美吗？\!<br>许许多多的人都能看到同一片美丽的天空，真是太好啦。
+
+#Ghian
+#Loation: Outskirts
+message_125:
+  text: \n<吉安>这次远足可太累了！\!明天我的两条腿就废了。
+
+#Chelle
+#Location: Cattail Field
+message_126:
+  text: \n<谢勒>该死……\!我就知道我把\c[3]甜甜圈\c[0]落在这里了……
+
+
+
+#Goosey
+#Location: Train Station
+message_128:
+  text: \n<阿鹅>这长长的队伍是我补美容觉的完美借口！
+
+
+
+#Tiffany Darling
+#Location: Last Resort Casino
+message_130:
+  text: \n<蒂芙尼·达林>\sinv[2]哎嘿嘿嘿嘿！\sinv[0]\! 我又赢了！\!<br>今天可真是我的幸运日！
+
+message_134:
+  text: \n<蒂芙尼·达林>\sinv[2]快把这些臭钱拿走！我才不要呢！\!<br>我可是有钱人！有钱人！懂吗！现在你也是了！
+
+message_127:
+  text: 你获得了 100 蚌币！
+
+message_129:
+  text: 你获得了 500 蚌币！
+
+message_139:
+  text: 你获得了 1000 蚌币！
+
+message_141:
+  text: 你获得了 2000 蚌币！
+
+message_131:
+  text: \n<蒂芙尼·达林>\sinv[2]哎嘿嘿嘿嘿！\sinv[0]\! 这场演出真是太盛大了！
+#Jerko
+#Location: Train Station
+message_132:
+  text: \n<叶尔科>你能叫我前面那人搞快点吗？\!<br>又不是所有人都成天没事干。
+
+#Location 2: Last Resort
+message_133:
+  text: \n<叶尔科>\com[2]这人为啥像老板一样指手画脚的，让所有人在这排队？\!<br>他算老几啊！？\!又不是所有人都成天没事干。
+
+
+
+#Mott
+
+#Location: Train Station
+message_137:
+  text: \n<莫特>最近到处都是鳄鱼男……\!<br>应该是老板又在开展业务了……<br><br>哈？你还不知道老板是谁？\!别担心，你很快就会知道了。
+
+#Location: Mr. Jawsum's Concierge
+message_135:
+  text: \n<莫特>鲨赞先生……\!这名字可是无人不知，无人不晓。
+
+message_136:
+  text: \n<莫特>我听说他做生意从不会脏了自己的手……\!这怎么能怪他呢！\!如果打个响指就能得到我想要的任何东西，我也会这么做的！
+
+
+#Miggie
+#Location: Last Resort Casino
+message_138:
+  text: \n<马吉>我从城里大老远跑来就为了这个？\!我还可以给我的假期再请个假吗……
+
+
+
+#Tapioca
+#Location: Underwater Highway
+message_140:
+  text: \n<特皮欧卡>这里的水比山上洞穴里的水要暖和一些。
+
+
+
+#Brooke
+#Location: Train Station
+message_142:
+  text: \n<布鲁克>我发现自己经常处在岌岌可危的境地。\!<br>这次不知道算不算……
+
+#Location 2: Last Resort Casino
+message_143:
+  text: \n<布鲁克>我发现自己经常处在岌岌可危的境地。\!<br>这次不知道算不算……
+
+message_144:
+  text:
+
+#Megaphone
+#Location: Train Station
+message_145:
+  text: \n<喇叭筒>之前有很多火车会穿过这片森林，但现在只剩这一列了。
+
+
+message_146:
+  text:
+
+#Cat Pyramid
+#Location: SW Art Gallery
+message_147:
+  text: \n<猫猫金字塔>这次展览可太精彩了！\!不枉我大老远从\c[11]橙子绿洲\c[0]跑过来！
+
+
+#Gasper
+#Location: Train Station
+message_149:
+  text: \n<加斯珀>\sinv[1]啦…… 啦啦……啦……啦啦……啦！\sinv[1]
+
+message_150:
+  text: \n<加斯珀>唱歌的时候，我的时间过得很快……\!而其他人的时间过得很慢！
+
+
+#Cowblin
+#Location: Train Station
+message_152:
+  text: \n<考林>我妈让我把外套穿上，因为她觉得外面会变冷……
+
+message_153:
+  text: \n<考林>唉……\!现在外面太热了……\!但我又不想把外套脱了……\!脱了我就得一直拿着它了。
+
+message_154:
+  text: \n<考林>唉……\!今天甚至比前两天还热……
+
+#Square
+#Location: Train Station
+message_155:
+  text: \n<方方>\com[2]咯吱！咯吱！咯吱！
+
+#Pellet
+#[UNPLACED]
+message_156:
+  text: \n<佩勒特>这个池塘好清澈啊！\!仿佛可以看到水中的另一个世界！
+
+message_157:
+  text: \n<佩勒特>这个池塘有点浑浊了……\!怎么会这样？\!明明之前还那么清澈……
+
+#Loam
+#Location: Otherworld Lake
+message_158:
+  text: \n<咕嘟>\sinv[1]古独……\!咕嘟啊咕嘟……\!古独的咕嘟……\!啊，真古独啊。
+
+
+
+#This Guy
+#[UNPLACED]
+message_160:
+  text: \n<这家伙>我是玛丽娜的第二个试验品……\!她还是个小宝宝的时候用黏土和石头制造了我。
+
+#POKE
+message_159:
+  text: \n<这家伙>嗯……\!我还挺喜欢被戳一戳的……\!但我更喜欢击掌。
+
+#PET
+message_161:
+  text: \n<这家伙>嗯……\!我还挺喜欢被拍一拍的……\!但我更喜欢握手。
+
+#Red Smile
+#[UNPLACED]
+message_162:
+  text: \n<红色微笑>
+
+message_163:
+  text:
+
+#Porinu
+#[UNPLACED]
+message_164:
+  text: \n<波利纽>我是玛丽娜的第三个试验品。\!她还是个娃娃的时候用橡胶手套制造了我。
+
+message_165:
+  text: \n<波利纽>\com[2]谁？\! 谁在拍我！？
+
+message_359:
+  text: \n<波利纽>\com[2]谁在戳我！？\! 快出来！
+
+#Sereno
+#[UNPLACED]
+message_166:
+  text: \n<塞雷诺>传说一对双胞胎在守护着\c[11]橙子绿洲\c[0]。\!他们拥有强大的能力……\!甚至可以让死者复活……
+
+message_167:
+  text: \n<塞雷诺>我不知道这些传说是不是真的，但至少很有趣对吧？
+
+#Brelle
+#SW GALLERY
+message_168:
+  text: \n<贝拉莱>啊……这件作品让我神魂颠倒……\!这位艺术家不加掩饰地展示出他巨大的自我，实在令人叹为观止。
+
+message_169:
+  text:
+
+#Mooncake
+#Location: Train Station
+message_170:
+  text: \n<月饼>布罗基很容易失落，他只是需要向人倾诉……\!而这个人就是我啦！
+
+message_171:
+  text:
+
+#Blookie
+#Location: Train Station
+message_172:
+  text: \n<布罗基>这里的每个人都又有趣又与众不同……\!<br>我想知道是什么让我有趣和与众不同……
+
+message_173:
+  text:
+
+#Whatever
+#Location: Train Station
+message_174:
+  text: \n<无所谓>我需要一大笔钱。
+
+#Location 2: Mr. Jawsum's Concierge
+message_175:
+  text: \n<无所谓>我需要一大笔钱。
+
+message_176:
+  text:
+
+#Babo
+#Location: Frozen Forest
+message_177:
+  text: \n<巴波>巴波喜欢寒冷的天气……\!因为寒冷让巴波对暖和的天气心存感激……
+
+
+message_178:
+  text:
+
+#Hoffy
+#Location: Last Resort Casino
+message_179:
+  text: \n<霍菲>我得休息一下，不能再玩老虎机了……\!<br>再玩儿胳膊都要抽筋了。
+
+message_180:
+  text:
+
+#Andrew
+#Location: Last Resort Casino
+message_181:
+  text: \n<安德鲁>今天我可要狠赚一把！\!<br>噢～耶！感觉很有戏！
+
+message_182:
+  text:
+
+#Quaspy
+#Location: Outskirts
+message_183:
+  text: \n<夸斯匹>刚才徒步旅行的时候，我看到悬崖上有一张脸。\!<br>太怪了，不知道是怎么回事。
+
+
+message_184:
+  text:
+
+#Citrus
+#Location: Train Station
+message_185:
+  text: \n<塞图斯>我其实不太喜欢火车。\!我是来这儿听音乐的！
+
+message_186:
+  text:
+
+#Lulu
+#Location: Last Resort Casino
+message_187:
+  text: \n<露露>我可能订错车票了……\!这里和我在广告上看到的完全不一样嘛……
+
+message_188:
+  text:
+
+#Amelia
+#Location: Last Resort Casino
+message_189:
+  text: \n<艾米莉亚>唉……不知道怎么回事，我这周过得太糟糕了。\!<br>烦人的事情一件接着一件……
+
+#SW GALLERY
+message_190:
+  text: \n<艾米莉亚>哇，这展厅真的太棒了……\!当然也有点奇怪。\!之前城堡是在这里的吗？\!可能只是我的幻想吧……
+
+#-------------------------------------------------------------------------------------------
+#DW_NPC_26
+
+#Soy Sauce
+#Location: Last Resort Casino
+message_191:
+  text: \n<酱油>啊，可恶！怎么又输了！\!我用我的左脚打赌！<br>\!这机器肯定被动了手脚！
+
+#SW GALLERY
+message_192:
+  text: \n<酱油>美术馆就是用来展示酷酷的东西的！\!<br>他们应该也展示展示我！\!我也很酷哦！
+
+#Tater
+#Location: Train Station
+message_193:
+  text: \n<塔特>我马上就起床。\!再……等一下下。
+
+message_194:
+  text:
+
+#Simple Roach
+#Location: SW Kitchen
+message_195:
+  text: \n<傻傻的蟑螂>\com[2]啊！被发现了！\! 别告诉别人我在这里！\!<br>我只是喜欢在食品柜里刨来刨去……\! 嘿嘿……谁不喜欢呢？
+
+message_196:
+  text:
+
+#Spaghetti
+#Location: Mr. Jawsum's Concierge
+message_197:
+  text: \n<意面>我旁边那家伙肯定在搞什么可疑的事情……一个感觉不一定对……
+
+message_198:
+  text:
+
+#Wollie
+#Location: Last Resort Casino
+message_199:
+  text: \n<沃利>正常情况下应该有输有赢……\!<br>至少大家都这样想，\!但不包括我哦。\!<br>我从来没赢过……\! 一直都在输。
+
+
+message_200:
+  text:
+
+#Bafino
+#Location: Last Resort Casino
+message_201:
+  text: \n<巴菲诺>哇哦！买这里的 VIP 可真是我这辈子做过的最明智的决定了！
+
+message_202:
+  text: \n<巴菲诺>我刚从仅此一家的"随便花"自助餐厅回来，听说今晚还有一个给\c[3]豆腐\c[0]的筹款会！我可得去瞧瞧！
+
+message_203:
+  text:
+
+#Scuba
+#Location: Mr. Jawsum's Concierge
+message_204:
+  text: \n<斯古巴>啊……我还钱又还晚了……\!<br>鲨赞先生要把我的头插在棍子上了！完了……全完了……
+
+message_205:
+  text:
+
+#Darville
+#Location: Train Station
+message_207:
+  text: \n<丹维尔>啊，天哪……我又惹上麻烦了……\!<br>唉……\!为什么总是我！？
+
+message_209:
+  text: \n<丹维尔>……\!别多管闲事，小屁孩。\!与人交往可要看仔细了。\!这可是经验之谈！
+
+#Location: Mr. Jawsum's Concierge
+message_206:
+  text: \n<丹维尔>啊啊啊，天哪……\!为什么非得是我去告诉鲨赞先生又有一个投资人要撤资了！\!这又不是我的错！？\!……\!我是绝对不会告诉他的。
+
+#Obaaa
+#Location: Train Station
+message_208:
+  text: \n<欧巴>\sinv[1]欧巴巴巴巴巴巴巴巴巴！\sinv[0]
+
+
+#Diving Man
+#Location: Underwater Highway
+message_210:
+  text: \n<潜水人>我还以为能看到一些海洋生物呢……\!<br>没想到却是这个……
+
+message_211:
+  text:
+#-------------------------------------------------------------------------------------------------------
+#DW_NPC_27
+
+#Maestro
+#Location: Junkyard Entrance - Before Junkyard
+message_212:
+  text: \n<马埃斯特罗>亲爱的。\! 我在寻找真正的艺术品。\!<br>不用担心……\!等我看到它的时候自然会知晓！
+
+#Location: Junkyard Entrance - After Junkyard
+message_213:
+  text: \n<马埃斯特罗>呜呼，我在一个意想不到的地方发现了真正的艺术品！\!<br>夫人一定会很高兴的。
+
+#Location 2: SW Art Gallery
+message_214:
+  text: \n<马埃斯特罗>看呐！\!这难道不是你所见过的最好的艺术品吗？
+
+#Buckaroo
+#[UNPLACED]
+message_400:
+  text: \n<澳内先生>你们好啊，伙计们！\!我是澳内先生……\!<br>年轻时候的我曾环游世界，马不停蹄！
+
+message_401:
+  text: \n<澳内先生>现在嘛……我更喜欢安定的生活。\! 我就站在悬崖边，给那些愿意问我问题的人一些忠告。
+
+message_402:
+  text: \n<澳内先生>长守此地者……\!寡言静无声……
+
+message_403:
+  text: \n<澳内先生>我们有第三只眼……\!如果你明白我什么意思的话……\!就像第六感。
+
+message_404:
+  text: \n<澳内先生>你那三位紫头发朋友拥有爱，也充满着决心和勇气……\!但是你，黑头发的小孩。\!你的气场里满是混沌与破坏！
+
+message_405:
+  text: \n<澳内先生>我只能看到黑暗与扭曲……\!而且它们还不会在短时间内消散。\!孩子，你的旅途还很漫长呢。
+
+message_406:
+  text: \n<澳内先生>我说这些话并不是想让你灰心丧气，孩子。\!每个人都有自己的旅途……\!我有责任帮助你们在自己的道路上走得更远！
+
+message_407:
+  text: \n<澳内先生>我可以回答很多问题……\!<br>如果你想的话，就尽管问吧！
+
+#NOTHING
+
+message_408:
+  text: \n<澳内先生>你难道不想从我这个老头子身上获得一些答案吗？\!<br>无论你将走向何处……\!我都会一直在这里……\!为你加油……\!为你\sinv[1]欢呼\sinv[0]！
+
+#NOTHING
+
+message_409:
+  text: 我在哪里？
+
+message_410:
+  text: 贝瑟尔在什么地方？
+
+message_411:
+  text: 你多大年纪了？
+
+message_412:
+  text: 什么都不问
+
+message_413:
+  text: \n<澳内先生>\sinv[1]嚯嚯嚯！\sinv[0]\!不错的问题！\!这要从哪里说起呢？\!嗯……\!我想，这个地方从时间诞生之初就已经存在了。
+
+message_419:
+  text: \n<澳内先生>这里的景象因人而异……\!但这一次，大部分的空间不但色彩缤纷，还可爱至极……\!更别提它有多宽阔了！<br>你的想象力可真丰富啊，孩子。
+
+message_414:
+  text: \n<澳内先生>嗯……我只能说你的朋友不在这里！\!但我觉得你知道如何寻找答案。\!当有人在寻找真相时……\!这个世界就会创造一组钥匙。<br><br>这些钥匙……\!它们的形态取决于那个人的心愿。\!你知道你的钥匙长什么样，是吧？\!按下\DII[pageup]！
+
+message_417:
+  text: \n<澳内先生>\com[2]你不知道问老人家这个问题很不礼貌吗！\!<br> 我可能大概 33000 岁了吧……\!但现在这个问题已经不重要了。
+
+message_415:
+  text: \n<澳内先生>你们最好快点上路吧！前面的路还很漫长，毛头小子们！
+
+message_416:
+  text: \n<澳内先生>我会为你们加油……为你们\!\sinv[1]欢呼\sinv[0]的！
+
+message_418:
+  text: \n<澳内先生>这就是她写下的全部内容了！\!你还想知道些别的事情吗？
+
+message_420:
+  text: 澳内先生变成了沙子。
+
+message_421:
+  text: 一个奇怪老头的沙子雕塑。
+
+message_422:
+  text: \n<？？？>你好呀！
+
+#rootin and tootin
+#buckaroo
+
+
+#Fiesta
+#Location: Last Resort Casino
+message_218:
+  text: \n<菲艾斯特>我再也不想碰老虎机了，但这儿又没有别的事情可做……\!早知道就回到城市了！
+
+message_219:
+  text:
+
+#Touchdown
+#Location: Mr. Jawsum's Concierge
+message_220:
+  text: \n<塔持挡>我听说鲨赞先生雇了一个很厉害的保镖，但他绝不是我塔持挡的对手！
+
+
+message_221:
+  text:
+
+#Trevor
+#Location: Frozen Forest
+message_222:
+  text: \n<特雷弗>我的家乡没有雪，但这里的景色仍然让我怀念童年的时光……\!真不知道是为什么……
+
+message_223:
+  text:
+
+#Mountain
+#Location: Train Station
+message_224:
+  text: \n<大山>存在即是福。
+
+message_225:
+  text:
+
+#Cesar
+#Location: Last Resort Casino
+message_226:
+  text: \n<塞萨尔>这地方太棒了！\!这是我一生中最快乐的时光！
+
+#Message in the bottle
+#Location: Otherworld Lake
+message_227:
+  text: 一封瓶中信。\!你想要读一下吗？
+
+message_228:
+  text: “好一朵美丽的茉莉花～好一朵美丽的____花～”
+
+message_229:
+  text: 你补上了后半句，把瓶子扔回了湖里。
+
+#Lemonade Jash
+#Location: Train Station
+message_230:
+  text: \n<柠檬贾什>我自认是一个好脾气的贾什……\!<br>但只有一件东西我绝对忍不了……\!那就是插队……
+
+#Gibs
+#Location: Train Station
+message_231:
+  text: \n<吉布斯>你们的\sinv[1]钅戋 \sinv[0]不够吗？\!嗯，没关系。\!其实什么都可以的。\!<br>这是我最喜欢的一首歌。\!来听一听吧！
+
+message_232:
+  text: \n<吉布斯>啊啊啊……\!没问题。\!我还\sinv[1]女子\sinv[0]啦……
+
+#Gumbo
+#Location: OTHERWORLD
+message_233:
+  text: \n<贡博>贡博……\!\{\sinv[1]开心！\sinv[0]
+
+message_234:
+  text: 你很确定这个池塘在闹鬼。\!<br>你想进去吗？
+
+#Sprout Mole
+#Location: Train STATION
+message_235:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\Com[2]\{啊啊啊啊啊啊，救命啊！！\!\}<br>是一棵超丑的植物！
+
+message_236:
+  text: \n<树苗鼹鼠>你说什么！我才不是什么超丑的植物！\!<br>我是树苗鼹鼠，一种能力非常强的高智商生物。
+
+message_237:
+  text: \n<树苗鼹鼠>你们在说的是迷路的树苗鼹鼠。\!当树苗鼹鼠迷路时，它们常常会变得充满敌意，并毫无预警地发动攻击！
+
+message_238:
+  text: \n<树苗鼹鼠>嗯……\!呃……\!这里是什么地方？\!<br>……\!难不成我也……\!迷路了？
+
+message_239:
+  text: \n<树苗鼹鼠>呃……\!我……突然有点不太舒服……
+
+message_240:
+  text: \n<迷路的树苗鼹鼠>……\|……\|……
+
+message_241:
+  text: \n<迷路的树苗鼹鼠>\sinv[1]\{\com[2]呃呃\{呃呃呃\{呃呃呃呃！！
+
+#Gator Guy Rubber BAND
+
+message_245:
+  text: 你获得了\c[5]橡皮筋\c[0]。
+
+message_246:
+  text: \n<鳄鱼男>你终于学会讨老板欢心啦，凯？\!你确实是个大麻烦，但我会罩着你的。
+
+message_247:
+  text: \n<鳄鱼男>老板有些不对劲……\!有一阵子没听他笑过了。\!……\!还有点怀念呢……
+
+message_248:
+  text: \n<鳄鱼男>我会想你的，奥布里。\!别忘了我们说过的话，好吗？\!不要总把事情想得那么严重！\!笑一笑也没关系的。
+
+message_249:
+  text: 这里是高速公路的尽头。
+
+message_251:
+  text: \n<可疑的鼹鼠>\com[2]\quake[1]\{\{呃\{呃\{呃呃啊！！
+
+#TOILET
+
+message_252:
+  text: 你想回到\c[11]最后度假村\c[0]吗？
+
+message_253:
+  text: 你想回到\c[11]深井深处\c[0]吗？
+
+
+#SPROUT MOLES IN ART Gallery
+message_255:
+  text: \n<女仆鼹鼠>让我进去吧！你不知道我等甜心的最新作等了多久！
+
+message_256:
+  text: \n<管家鼹鼠>求你们让我进去吧！我保证会给你们好评的！
+
+message_257:
+  text: \n<管家鼹鼠>你们两个！快回到岗位上去！\!<br>你们知道的，客人优先！
+
+message_258:
+  text: \n<管家鼹鼠>汝等禁止通过！
+
+message_259:
+  text: \n<女仆鼹鼠>你们快住手！\!别捣乱了！
+
+message_260:
+  text: \n<女仆鼹鼠>唉……\!霍尔德本该在这里看守入场口的……\!但我听说他们好像都堵在宴会大厅和图书馆里了……
+
+message_261:
+  text: \n<女仆鼹鼠>他们在忙的事绝对超级重要，怕不是比看甜心的最新演出更重要！
+
+message_262:
+  text: \n<女仆鼹鼠>欢迎来到\c[11]皇家美术馆\c[0]！\!<br>请尽情享受免费赠送的\c[3]豆腐\c[0]！
+
+message_263:
+  text: \n<女仆鼹鼠>欢迎来到\c[11]皇家美术馆\c[0]！\!<br>本月主题是"甜心作品全集"！
+
+message_264:
+  text: 你获得了\c[3]豆腐\c[0]！
+
+message_265:
+  text: \n<管家鼹鼠>嘿，老兄……你没问题吗？\!你脸色有点难看呐！
+
+message_266:
+  text: \n<管家鼹鼠>我和兄弟们这周要去唱卡拉OK。\!你们也一起来吧！
+
+message_267:
+  text: \n<管家鼹鼠>我这周要去卡拉 OK 唱个痛快！\!<br>《甜心别停下》这首歌上还没人能超过我！
+
+message_268:
+  text: \n<女仆鼹鼠>我也想去唱 K……
+
+message_269:
+  text: \n<女仆鼹鼠>甜心真的什么都会！\!她会画画、唱歌、跳舞，甚至拍电影！\!……\!要是她能看我一眼就好了……
+
+#LAST RESORT BREAKROOM
+
+message_280:
+  text: \n<鳄鱼男>别紧张。\!我们不会动手的……\!<br>现在毕竟是下班时间嘛。
+
+message_281:
+  text: \n<鳄鱼男>如果储物柜里有东西丢了，我们可不承担任何责任。\!<br>各位，记得把贵重物品留在家里！
+
+message_282:
+  text: \n<鳄鱼男>我发誓……\!<br>下一个把吃剩的鱼留在微波炉里的人，我会给他点颜色瞧瞧……
+
+#LAST RESORT CONSTRUCTION AFTER GETTING HERO
+
+
+message_286:
+  text: \n<鳄鱼男>你还是决定要走了，是吗？\!<br>等发达了别忘了我们啊！
+
+message_285:
+  text: \n<鳄鱼男>一路顺风，伙计们。\!<br>呜呜呜……你们这些孩子成长得真快啊……
+
+message_287:
+  text: \n<鳄鱼男>你们人类总是在追求更强大更美好的东西。\!<br>等遇到困难了，可别哭着跑回来！
+
+message_288:
+  text: \n<鳄鱼男>你确定不在这里多待一会儿了吗，英雄？\!<br>……\!好吧……\!我至少努力过了。
+
+#LAST RESORT CONSTRUCTION AFTER HERO IS BOSS
+
+message_290:
+  text: \n<鳄鱼男>嘿，你回来啦！\!<br>我就知道你不会忘了我们的，老大。
+
+message_289:
+  text: \n<鳄鱼男>你们都长大了啊……\!<br>如果我是你们的妈妈，我会为你们骄傲的……
+
+message_291:
+  text: \n<鳄鱼男>啊哈，看看是谁来了！\!<br>我听说你是这里的新老板。\!<br>你最好照顾好我们，老大！
+
+message_292:
+  text: \n<鳄鱼男>英雄！我就知道你会回来的！\!<br>最近过得怎么样，大家伙？
+
+#MINA AND Family
+
+message_300:
+  text: \n<米娜>大家好呀，欢迎欢迎！\!别客气，随便看看！
+
+#Eats cheesecake
+
+message_301:
+  text: \n<雷尔>在这间房子里从来不会感到无聊……\!<br>是不是呀，维克托？
+
+message_302:
+  text: \n<维克托>\sinv[1]啥玩意儿……？
+
+message_303:
+  text: \n<乔乔>妈妈说，如果我们不听话，就把我们送到\c[11]阴影裂隙\c[0]里去……\! <br>但无所谓！\!我才不怕怪兽呢！
+
+message_304:
+  text: \n<卢克>\sinv[1]Zzzzzzzzzzzzzzz……\!请……再给我一根意大利腊肠……
+
+message_305:
+  text: \n<诺瓦>\sinv[2]跳！跳！跳！
+
+message_306:
+  text: \n<阿朵纳斯>我和我的兄弟们挖了一条\sinv[1]巨巨巨大\sinv[0]的隧道，\!<br>它还有一个没人知道的秘密入口！
+
+message_307:
+  text: \n<南森>我想去\c[11]恐龙挖宝\c[0]寻找宝藏，但我得先征得妈妈的同意……
+
+#CLUB SANDWICH:
+
+#LAST RESORT
+
+message_310:
+  text: \n<树苗鼹鼠麦克>\com[2]哼……\! ……\!\sinv[1]太空男友这个……\!太空男友那个的……\!谁来关心关心树苗鼹鼠麦克？
+
+message_311:
+  text: \n<鳄鱼男>这里的氛围太赞了。\!鲁本肯定又做了\sinv[1]超好喝的\c[3]果汁\c[0]……\sinv[0]
+
+message_312:
+  text: \n<鳄鱼男>其他俱乐部完全没法和三明治俱乐部相提并论。\!<br>鲁本和霍吉已经超神了！
+
+
+#PYREFLY FOREST
+
+#direction fix
+message_314:
+  text: \n<马克西姆斯爵士四世>时运不济，命途多舛，我在一天之内失去了全部家人……\!该死……\!<br>要是我能变得更强就好了！
+
+message_315:
+  text: \n<马克西姆斯爵士四世>唉……\! 鲁本……\! 我得再喝一杯。
+
+message_316:
+  text: \n<鲁本>马克斯，我马上就来！
+
+message_317:
+  text: \n<罗莎>哼！怎么又是你们几个！\!<br>你们毁掉我人生的次数还不够多吗！？
+
+message_318:
+  text: \n<罗莎>都怪你！甜心不见了！\!<br>现在你开心了吧！
+
+message_319:
+  text: \n<最罕见的熊>\sinv[1]嗷呜？
+
+message_320:
+  text: \n<树苗鼹鼠>\{\sinv[1]救命啊！我不知道该怎么办了！！
+
+#OTHERWORLD
+
+#ems intro
+message_321:
+  text: \n<EMS>\}你好呀，英雄！
+
+message_322:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her你好呀，EMS！最近感觉怎么样？
+
+message_323:
+  text: \n<EMS>\}我还好啦……\!霍吉让我在这里罚站……
+
+message_324:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her啊？你还在罚站吗？\!出什么事了？
+
+message_325:
+  text: \n<EMS>\}其实没什么事……\!我就是刚试着吃了吃那边的桌子……
+
+message_326:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her什么？你刚刚在吃桌子？\!桌子可以吃吗？
+
+#HERO looks at TABLEs
+
+message_327:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her啊……\! 我明白了……\!桌子是\c[3]面包\c[0]做的……
+
+#ems afterwards
+
+message_328:
+  text: \n<EMS>\}我再也不吃桌子了……\!我再也不吃桌子了……
+
+message_329:
+  text: \n<地球>……
+
+message_330:
+  text: \n<太空海盗>别告诉任何人我说过这话……\!<br>但是成为一名太空海盗还是挺难的……
+
+message_331:
+  text: \n<太空海盗>今天的节目怎么回事？\!我这辈子听过不少无聊的东西，但是这个真的无聊到姥姥家了！
+
+message_332:
+  text: \n<太空海盗>单口喜剧真的太难了……
+
+message_333:
+  text: \n<太空海盗>\com[2]\sinv[2]\{\{啊啊啊啊啊啊啊！！
+
+message_334:
+  text: \n<太空海盗>嘿，你们听说了吗！？\!地球其实是个不良少年！
+
+message_335:
+  text: \n<太空海盗>我们来这里多久了？\!<br>你觉得船长会意识到我们失踪了吗？
+
+#ORANGE OASIS
+
+#Izzy
+
+message_41:
+  text: \n<青松>\sinv[1]节奏放慢点，深呼吸。\!<br>是时候用音乐来冷静一下脑部肌肉了。
+
+message_39:
+  text: \n<放松>\sinv[1]休息一下吧……不要多想。\!欢迎来到冷静镇……
+
+message_340:
+  text: \n<老奇普>我是老奇普！
+
+message_341:
+  text: \n<面包小孩>\quake[1]嘶嘶……
+
+#Extras
+#Location: Slime Girls Lair
+message_500:
+  text: \n<汉弗莱>嘿，快点儿吧。\!赶紧挑一个吧！\!<br>算我求你了，行不？
+
+
+#DEEPER Well/BLACK SPACE
+
+
+message_601:
+  text: \n<空白>记忆是有代价的。\!想要获得一段新的记忆，必须舍弃另一段记忆。\!<br>就算如此……\!所有的记忆最终都会消逝。
+
+message_615:
+  text: \n<空白>你或许已经注意到了……\!来自\c[11]深井深处\c[0]的诅咒。
+#-
+
+message_602:
+  text: \n<虚无>随着时间的流逝，重要的事物会发生改变。\!你必须做出选择，选择什么是你要保留的，什么是你要抛弃的。
+
+message_613:
+  text: 这个生物在喃喃自语些什么。
+
+#-
+message_603:
+  text: \n<空>人类是有界限的生物。你的极限定义了你。\!是什么让你成为了人类？
+
+#-
+
+message_604:
+  text: \n<无>困难出现时，你永远可以选择逃避。\!但有一天，你会发现，逃避的道路上只有你一个人在奔跑。
+
+#-
+
+message_607:
+  text: \n<暴发户>如果由你决定呢？\!如果只能由你决定呢？
+
+message_606:
+  text: \n<暴发户>前进吧，造梦者。\!你是唯一能做到的人。
+
+#-
+
+message_609:
+  text: \n<缺失>宇宙中充满了你永远无法回答的问题。\!但是……\!<br>也有一些问题只有你才能回答。\!<br>当真相大白时，你会怎么做？
+
+#-
+
+message_610:
+  text: \n<匮乏>当还有人对你抱有期待时，做这么久的梦挺自私的。
+
+#-
+
+
+
+message_608:
+  text: \n<沉默>你肩负起了堕落的重担。\!你拥有改变未来的力量。\!你会做什么呢，造梦者？\!你会做什么呢？
+
+#-
+
+message_611:
+  text: \n<空洞>你上次掉入深井深处时……\!是得到了救赎？\!还是遭到了诅咒？
+
+#-
+
+message_612:
+  text: \n<虚空>为了拯救你的朋友，你会走多远？
+
+#-
+
+message_614:
+  text: \n<虚无>不是每个人都有的选。
+
+#-
+
+
+message_148:
+  text: \n<闲逛的牛>\sinv[1]逛次……逛次……逛次……
+
+#- Burpmo
+
+message_151:
+  text: \n<巴普莫>我是巴普莫，除了我自己，我不会成为其他任何人！
+
+message_313:
+  text: \n<巴普莫>我是巴普莫，我就是我！
+
+#-- Abyss Skeletons
+
+
+message_444:
+  text: \n<奥布里？>呜呜……\| 呜呜……\|OMORI……
+

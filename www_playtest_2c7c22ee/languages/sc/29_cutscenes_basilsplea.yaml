@@ -1,0 +1,516 @@
+# =========================================================================================
+# Cutscene: Basil's Room
+# =========================================================================================
+
+#Trigger: Enter BASIL's Room.
+
+#BASIL is staring out the window.
+#BASIL turns to \n[8].
+
+message_0:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 啊……\!\n[8]……\!是你啊……\bas
+
+message_1:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 你能来真是太好了。\bas
+
+message_2:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 见到你……\!见到你真的太好了。\bas
+
+message_3:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 你看我们周围。\!你现在看得到它吧？\bas
+
+message_4:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 在你背后的……\!那个东西。\bas
+
+#Trigger: \n[8] uses any command input, but \n[8] sprite will back out towards the door.
+
+#\n[8] turns around and examines door.
+#Slide: SOMETHING at the Door
+#Something pushes \n[8] into the room and reveals itself.
+#BASIL's SOMETHING begins pulsing on the floor.
+
+#BASIL turns to window.
+
+message_5:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 自从……\!自从玛里死的那一天起……\!它就一直跟着你。\bas
+
+message_6:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 19
+  text: 就是玛里……\!玛里她摔下来的那一天……\bas
+
+message_7:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 你……\!你不会做出那种事情。\bas
+
+message_8:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 是你背后的那个东西干的……对不对？\bas
+
+#BASIL turns to \n[8].
+
+message_9:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 你是个很好的人，\n[8]。\!我知道你是个很好的人！\bas
+
+message_10:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 好人是不会做出那样的事情的……\bas
+
+#BASIL turns to window.
+
+message_11:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 过了这么久……\!你终于肯回来找我了。\bas
+
+message_12:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 16
+  text: 可是……\!明天……\!你又要走了。\bas
+
+message_13:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \Com[2]\{\fn<OMORI_GAME>\quake[1]你、你怎么能够这样呢？！？！\bas
+
+#BASIL turns to \n[8].
+
+message_14:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 24
+  text: \Com[2]\fn<OMORI_GAME>你太坏了，\n[8]。\!\Com[2]你实在太坏了！\bas
+
+#BASIL's SOMETHING froms around him.
+
+message_15:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 21
+  text: 啊……\!我们已经被那个东西包围了。\bas
+
+message_16:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 你看得到它吗，\n[8]？\!<br>我们无路可逃了，不是么？\bas
+
+#Trigger: \n[8] attempts to leave again by examining door.
+
+message_17:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 21
+  text: 你要去哪里？！\!<br>\Com[2]不要离开我！停下来！\bas
+
+message_18:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \fn<OMORI_GAME>\Com[2]停、停下来！\Com[2]停下来！\Com[2]停下来！\Com[2]停下来！\Com[2]停下来！\Com[2]停下来！\Com[2]停下来！\bas
+
+message_19:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 24
+  text: \fn<OMORI_GAME>我不要……一个人……\!我……\!我不想再……一个人了。\!<br>别再……丢下……我了……\bas
+
+#BASIL turns to window.
+
+message_20:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: \bas不……\!你不会丢下我的。\!你是不会那样做的呀，\n[8]！
+
+#BASIL turns to \n[8].
+message_21:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 19
+  text: \bas刚才一定又是你背后的那个东西指使的，对吧？
+
+message_22:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 21
+  text: \bas啊！它来了！\!你看见了吗？
+
+message_23:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \bas\fn<OMORI_GAME>\Com[2]离远点！\!\Com[2]离 \n[8] 远点！
+
+message_24:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 16
+  text: \bas……
+
+message_25:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 我无论如何都会保护你的，\n[8]。<br>把一切交给我吧！\bas
+
+message_26:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 19
+  text: 那个东西杀死玛里的时候……\!<br>那个东西毁掉我所有相片的时候……\!\bas
+
+message_27:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 20
+  text: 我什么也没有说……\!<br>我不想让别人误以为是你做的呀，\n[8]。\bas
+
+message_28:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \n[8]……\!\n[8] 不会……做出那样的事情。\bas
+
+#BASIL cries.
+
+message_29:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 16
+  text: \bas……
+
+message_30:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: \bas别担心，\n[8]……\!这一次，我也会救你的。
+
+message_31:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \bas在你背后的那个东西……\!我这次会彻底了结它。
+
+
+#BASIL pulls PLAYER in.
+#Something follows.
+
+message_32:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: \n[8]……\!不要害怕。\bas
+
+message_33:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 19
+  text: 我也很害怕，可是……\!这都是为了我们好。\bas
+
+# message_34:
+#       faceset: MainCharacter_Basil_Dark
+#       faceindex: 21
+#       text: \fn<OMORI_GAME>Don't you worry, \n[8]... I'll save you...\bas
+
+message_35:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 17
+  text: 一切都会没事的……\bas
+
+message_36:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 24
+  text: \fn<OMORI_GAME>一切……\bas
+
+#BASIL something squishes you tighter sfx
+
+message_37:
+  faceset: MainCharacter_Basil_Dark
+  faceindex: 25
+  text: \fn<OMORI_GAME>……都会……没事的……\bas
+
+# =========================================================================================
+# Cutscene: Light
+# =========================================================================================
+
+#[Save for Map Completion]
+
+# =========================================================================================
+# Cutscene: Mari's Request
+# =========================================================================================
+
+#Talk to MARI at the Piano
+
+
+message_50:
+  faceset: MainCharacter_Basil
+  faceindex: 31
+  text: \bas嗨，\n[8]。
+
+message_51:
+  faceset: MainCharacter_Basil
+  faceindex: 30
+  text: \bas你找到回家的路啦。
+
+message_52:
+  faceset: MainCharacter_Basil
+  faceindex: 28
+  text: \bas我一直没有当你的面好好讲过，可是……\!我很抱歉给你添了这么多麻烦。
+
+message_53:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \bas我把\c[4]相册\c[0]给你的时候……\!<br>我是真的希望你可以好好收下它。
+
+message_54:
+  faceset: MainCharacter_Basil
+  faceindex: 16
+  text: \bas可是，不知道为什么……\!每当我想帮忙的时候……\!<br>最后反而都会变成给你添麻烦。
+
+message_55:
+  faceset: MainCharacter_Basil
+  faceindex: 27
+  text: \bas那个时候也是……
+
+message_56:
+  faceset: MainCharacter_Basil
+  faceindex: 26
+  text: \bas……
+
+message_57:
+  faceset: MainCharacter_Basil
+  faceindex: 16
+  text: \bas一直以来，我们所经历的痛苦……\!我们内心深处的愧疚……
+
+message_58:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \bas即使你想全部埋藏在心底……\!这些情绪迟早也会倾泻而出的。
+
+message_59:
+  faceset: MainCharacter_Basil
+  faceindex: 28
+  text: \bas我很想说，一切都会没事的。\!<br>我们早已别无选择，只能继续撑下去。
+
+message_60:
+  faceset: MainCharacter_Basil
+  faceindex: 31
+  text: \bas可是……\!这其实取决于你。
+
+message_61:
+  faceset: MainCharacter_Basil
+  faceindex: 30
+  text: \bas奥布里、凯和英雄，他们都是很好的朋友。\!<br>你要相信他们会原谅我们。
+
+message_62:
+  faceset: MainCharacter_Basil
+  faceindex: 16
+  text: \bas我知道这真的很难相信……\!可是……
+
+message_63:
+  faceset: MainCharacter_Basil
+  faceindex: 30
+  text: \bas我们相册里的相片……\!它们不仅仅是相片这么简单。\!<br>它们是真实存在过的回忆。
+
+message_71:
+  faceset: MainCharacter_Basil
+  faceindex: 29
+  text: \bas我们的回忆！\!那是我们友情的证明！
+
+message_64:
+  faceset: MainCharacter_Basil
+  faceindex: 30
+  text: \bas紧紧握住这些相片……\!<br>然后回忆起你想守护的一切吧。
+
+message_65:
+  faceset: MainCharacter_Basil
+  faceindex: 31
+  text: \bas哈哈……\!对不起……\!我好像又给你添麻烦了。
+
+message_67:
+  faceset: MainCharacter_Basil
+  faceindex: 28
+  text: \bas通向你未来的道路很快就要开启了。<br>不过，最后要怎么做，只有你能决定。
+
+message_68:
+  faceset: MainCharacter_Basil
+  faceindex: 30
+  text: \bas虽然这也算不上什么……\!我会好好为你加油的。
+
+#BASIL walks off to street to right.
+#PLAYER turns right.
+#BASIL runs back to PLAYER and hugs him.
+
+message_69:
+  faceset: MainCharacter_Basil
+  faceindex: 31
+  text: \bas\n[8]……
+
+message_70:
+  faceset: MainCharacter_Basil
+  faceindex: 31
+  text: \bas让我们一起创造一些新的回忆吧，好吗？
+
+#Talk to MARI at the Piano
+
+message_80:
+  text: \n[8]……\!快到时间了。\mar
+
+message_81:
+  text: 过去几天，你经历了这么多的事情。\!<br>你一定很累了吧……\mar
+
+message_82:
+  text: 我们都会犯错……\!<br>而这个错，你已经逃避了很久了。\mar
+
+message_83:
+  text: 承认错误往往并不容易。<br>可是，你一定能够原谅自己的，对吗？\mar
+
+#pause
+
+message_90:
+  text: 你可以做到的，\n[8]。\!<br>你费尽周折才来到这里……\!<br>现在，只剩下一件事要做了。\mar
+
+message_91:
+  text: 我会一直守护着你的，记住哦？\!<br>只要你还记得我，我就一直都在……\mar
+
+# =========================================================================================
+# Cutscene: Basil's Hospital Room - UNUSED
+# =========================================================================================
+
+#Trigger: Enter proximity of SOMETHING.
+
+#message_110:
+#      faceset: MainCharacters_Faraway
+#      faceindex: 17
+#      text: \Com[2]\n[8], you're awake!\!<br>A-Are you sure you should be moving like that?\kel
+
+#message_111:
+#      faceset: MainCharacters_Faraway
+#      faceindex: 31
+#      text: Careful, \n[8]... You shouldn't be walking yet...<br>Your wound might reopen...\her
+
+#\n[8] falls to his knees.
+#Everyone runs to \n[8].
+
+#faceset: MainCharacters_Faraway
+#      faceindex: 6
+#      text: \Com[2]\n[8]! \n[8]!\! \Com[2]Are you okay?\!...\! \Com[2]Say something...\aub
+
+#message_113:
+#      text: .............................................................................................\n<\n[8]>
+
+#message_114:
+#      text: .............................................................................................\n<\n[8]>
+
+#message_115:
+#      text: .............................................................................................\n<\n[8]>
+
+#message_116:
+#      faceset: MainCharacter_Mari
+#      faceindex: 21
+#      text: .............................................................................................<br>\!I...\n<\n[8]>
+
+
+# =========================================================================================
+# Cutscene: Balcony End
+# =========================================================================================
+
+#before arriving at the Balcony (black screen)
+
+# =========================================================================================
+# Cutscene: Leave for the City
+# =========================================================================================
+
+#Trigger: Wake up in \n[8]'s House on 4th day.
+
+#through phone:
+
+message_140:
+  text: 嗨，亲爱的！东西全都收拾好了！\!<br>我们就在外面的车里等你。<br>准备好就出门吧！\n<妈妈>
+
+#SOMETHING is following you.
+
+#Trigger: Exit \n[8]'s House.
+
+#There is a car waiting in front of \n[8]'s house.
+
+#Trigger: Examine Car.
+
+#Car leaves.
+
+
+# =========================================================================================
+# Cutscene: Not Your Problem
+# =========================================================================================
+
+message_150:
+  text: 你想往贝瑟尔的房间里看吗？
+
+message_161:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 46
+  text: 拜托了……\n[8]。\!你不该看到这些。\her
+
+message_163:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 46
+  text: 你今天应该要搬家才对……\!<br>去迎接全新的开始吧。\her
+
+message_164:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 46
+  text: 这里的事情我们会解决的。\her
+
+message_165:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 46
+  text: 去吧……\!<br>\fn<OMORI_GAME>我们会没事的。\!应该……\her
+
+#2nd talk
+
+message_151:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 46
+  text: 去吧……\!我们会没事的。\!应该……\her
+
+#KEL does not turn to you
+message_166:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 44
+  text: 贝瑟尔，为什么……？\!为什么你要这么做？\kel
+
+message_171:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 45
+  text: \n[8]……\!为什么这种事情一次又一次发生在我们身上？\kel
+
+#AUBREY does not turn to you
+message_167:
+  faceset: MainCharacter_Basil_dark
+  faceindex: 47
+  text: 都是我的错，贝瑟尔。\!求你原谅我……\aub
+
+message_168:
+  text: 你该搬去新家了。
+
+message_169:
+  text: 妈妈正在车里等你。
+
+#POLLY does not turn to you
+message_190:
+  text: \n<波莉>为什么……\!我怎么这么没用？
+
+# =========================================================================================
+# Cutscene: In Front of Basil's Door
+# =========================================================================================
+
+message_170:
+  text: 你想打开贝瑟尔的房门吗？
+
+# =========================================================================================
+# Cutscene: In Front of Basil's Door
+# =========================================================================================
+
+message_180:
+  text: 深不见底……\|你要跳下去吗？
+
+#YES/NO
+

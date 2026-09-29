@@ -1,0 +1,566 @@
+# =========================================================================================
+# ** ROCOCO INTRODUCTION
+# =========================================================================================
+#THE ARTIST ROCOCO:
+
+#After defeating Jawsum/Pluto in Last Resort, if you backtrack to Sweetheart's Castle - Fanmail Graveyard, you will notice a hole in the wall.
+
+#ROCOCO is an artist who is an elf.
+
+message_0:
+  text: \n<？？？>\sinv[1]天啊！\sinv[0]\!这——这可能吗！？
+
+
+message_1:
+  text: \n<？？？>啊，终于……\!有人来找我了……
+
+
+#*charm pose spinning*
+
+message_2:
+  text: \n<？？？>\sinv[2]吼嘿吼嘿吼嘿吼！
+
+
+message_3:
+  text: \n<？？？>很久很久以来，我都孤身一人在这里……\!但在经历了这段无穷无尽的孤寂之后……\!终于……\!出现了……\!我的访客！
+
+
+#*charm pose spinning*
+
+message_4:
+  text: \n<？？？>\sinv[2]吼嘿吼嘿吼嘿吼！
+
+
+message_5:
+  text: \n<？？？>你问我是谁？
+
+
+message_6:
+  text: \n<洛可可>什……\!我可是前途无量的伟大艺术家，洛可可！
+
+
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel这家伙……\!真是个怪人。\!我们还是快走吧。
+
+
+#*ROCOCO runs to block exit*
+
+message_8:
+  text: \n<洛可可>\com[2]等等，别走！\!请至少听听我的故事！
+
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel还是……\!不了。
+
+
+message_10:
+  text: \n<洛可可>\{\com[2]\quake[1]求求你们听一下吧！我真的太孤独了！
+
+
+#*pause*
+
+message_11:
+  text: \n<洛可可>咳咳……\!好了。\!我该从哪说起呢？
+
+
+message_12:
+  text: \n<洛可可>故事的最初是我……\!在宇宙某处的太空舱里一边哭……\!一边看着我的母星在我面前爆炸。
+
+
+message_13:
+  text: |
+    \n<洛可可>就算现在回忆起来，一切显得都那么真实……\!<br>火焰……\|爆炸……\|从每个角落……\|随之而来的是无边的黑暗。
+
+
+
+message_14:
+  text: \n<洛可可>当我醒来时，我发现自己身处沙漠之中……\!那是一片被红糖之海所围绕的奇妙之地，之后我才知道这里被人称为\c[11]橙子绿洲\c[0]。
+
+
+message_15:
+  text: \n<洛可可>即使只是个小婴儿，我也深知自己是族群中唯一的幸存者……<br>\!这整片宇宙中的最后一个精灵。
+
+
+#*Party members gather and sit*
+
+message_16:
+  text: \n<洛可可>“一切就要终结于此了吗……” 我当时想。
+
+
+message_17:
+  text: \n<洛可可>然而……\!好运降临！一个名为甜心的小\c[3]甜甜圈\c[0]发现了我。<br>\!她把我带回了家里。那家人收留了我，对我视如己出。
+
+
+message_18:
+  text: \n<洛可可>甜心和我……\!我们是一起长大的。
+
+
+message_19:
+  text: \n<洛可可>我的童年还是颇为艰辛的。\!我们两个经常打架，但赢的总是她……<br>\!如果我反击的话……\!呃……\!……
+
+
+message_20:
+  text: \n<洛可可>总而言之！这让我学会了逃跑！\!而且我还变得还特别擅长逃跑……\!<br>但你也知道……\!逃又能逃到哪呢。
+
+
+message_21:
+  text: \n<洛可可>确实，那段时光确实很辛苦。\!但即使经历了千般磨难，我也从未屈服。
+
+
+
+message_22:
+  text: \n<洛可可>因为我深知，我身上背负了一个使命。\!让我被送到这颗星球，让我在这颗星球生存下去的使命，那唯一的使命……\!就是去复兴我族。
+
+
+#*pause*
+
+message_23:
+  text: \n<洛可可>在这之后，我的记忆不知为何残缺了一些片段，所以让我们快进几年。
+
+
+message_24:
+  text: \n<洛可可>之后的某一天……\!甜心和我相爱了。我们订了婚，一起搬进了一座巨大的城堡！
+
+
+message_25:
+  text: \n<洛可可>我和她形影不离……我们深深爱着彼此！<br>\!我愿意为她做任何事，任何事！
+
+
+message_26:
+  text: \n<洛可可>我已经做好了与她共度余生的准备……\!一起变老……\!一起养育成百上千的孩子！
+
+
+message_27:
+  text: \n<洛可可>嗯……现在回想起来，我有跟她说过这些事吗。
+
+
+message_28:
+  text: \n<洛可可>不管怎样，让我们继续……
+
+
+message_29:
+  text: \n<洛可可>唉，美好的时光总会迎来终结。\!当甜心的粉丝越来越多，我们二人也渐行渐远。
+
+
+message_30:
+  text: \n<洛可可>整个宇宙都有追求者为她寄来礼物和信件……\!希望能有机会向她证明自己的爱意。
+
+
+
+message_31:
+  text: \n<洛可可>作为她唯一的真爱，我当然是强烈反对这件事！但她根本听不进去！
+
+
+message_32:
+  text: \n<洛可可>“甜心是属于大家的！”她竟然这样说！
+
+
+message_33:
+  text: \n<洛可可>……
+
+
+message_34:
+  text: \n<洛可可>结果……\!有天晚上我睡觉的时候……\!甜心和她的仆人们把我五花大绑，封进了城堡的墙里。
+
+
+message_35:
+  text: \n<洛可可>从那之后，我就在这片黑暗中漫无目的地游荡……<br>\!只靠发霉的吐司和\c[3]豆腐\c[0]充饥。
+
+
+
+message_37:
+  text: \n<洛可可>让我们再快进几年，就到了现在这个时候！
+
+
+message_38:
+  text: \n<洛可可>是的……\!自那一天之后，你们四个是我见到的第一批活人。
+
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her哇哦，先生。\!这真是个……呃……\|令人震惊的故事。
+
+
+#ROCOCO shakes.
+
+message_40:
+  text: \n<洛可可>\sinv[1]呜呜……哦……甜心……\!你为什么要这么做？<br>\!难道我还配不上你吗？
+
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub呃……\!很遗憾你经历了这些事……\!但我们现在真的要走了。
+
+
+#party gets up
+
+message_42:
+  text: \n<洛可可>\com[2]\quake[1]\{等等，我还没说完呢！
+
+
+message_43:
+  text: \n<洛可可>我才刚刚说到重点！
+
+
+message_44:
+  text: \n<洛可可>\sinv[1]唉……\sinv[0]\!在过去的几年里，我有大把的时间去思考人生。
+
+
+message_45:
+  text: \n<洛可可>我现在已经放弃之前的所有梦想了……\!<br>它们看起来既遥不可及，又毫无意义……
+
+
+message_46:
+  text: \n<洛可可>所以……\!我决定放下过去的一切，转行当个艺术家！
+
+
+#ROCOCO walks to his canvas.
+
+message_47:
+  text: \n<洛可可>\sinv[1]唉……\sinv[0]\!鉴于我才刚刚起步，我可以给你们打个折。
+
+
+#*ROCOCO CHARM stay in pose*
+
+message_48:
+  text: \n<洛可可>我的第一幅大作……\!只收你们 1000 蚌币！
+
+
+#*stop pose*
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her好吧……\!大家都怎么想？\!1000 蚌币可不便宜，不是吗？
+
+
+message_50:
+  text: \n<洛可可>\{\com[2]\quake[1]求求你了，就雇我作画吧！
+
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her我们……\!我们会考虑一下的。
+
+
+message_52:
+  text: \n<洛可可>啊！好……好的，没问题！请慢慢考虑！
+
+
+message_999:
+  text: \n<洛可可>在您做好决定前，我会一直在这里等的！
+
+
+message_53:
+  text: \$\n<洛可可>这将是我个人历史上的第一幅画作，现在只收你 1000 蚌币！<br>\!你决定要资助我完成这场自我探寻之旅了吗？
+
+
+#[YES/NO]
+
+
+#[YES]
+#*chaching*
+
+message_54:
+  text: \n<洛可可>\{\{\sinv[1]真是太棒了！！
+
+
+message_55:
+  text: \n<洛可可>请过一段时间再回来找我！\!<br>毕竟，伟大的艺术创作可不是一蹴而就的！
+
+
+#[NO]
+
+message_56:
+  text: \n<洛可可>哦……\!没关系……\!\sinv[1]唉……\sinv[0]\!<br>不过我知道……\!总会有人赏识一位真正的艺术家。
+
+
+#If you try to leave after not paying for COMMISSION:
+
+message_57:
+  text: \n<洛可可>\sinv[1]\com[2]\{别让我等太久了！！
+
+
+#If you try to leave after paying for COMMISSION:
+
+message_58:
+  text: \n<洛可可>\sinv[1]\com[2]\{我不会让你失望的！！
+
+
+#Upon returning once painting is complete:
+
+message_59:
+  text: \n<洛可可>\sinv[1]天啊！\sinv[0]\!你回来啦！
+
+
+message_60:
+  text: \n<洛可可>快来欣赏一下我的最新作品！<br>\!它已经被装裱展示出来了，就在前面的美术馆里。
+
+
+#After checking out the painting:
+
+message_61:
+  text: \n<洛可可>怎么样？对我的作品满意吗？
+
+
+message_62:
+  text: \n<洛可可>先提前说好……\!随着我作画技术的提升，需要的委托费也会水涨船高！
+
+
+message_63:
+  text: \$\n<洛可可>我的下一幅大作要收你 \v[1000] 蚌币！<br>\!你愿意继续资助我完成这场自我探寻之旅吗？
+
+
+#After completing all paintings:
+
+message_64:
+  text: \n<洛可可>感谢你们，我的好朋友。\!有了这些委托费……\!我感觉自己在自我探寻的旅程中已经迈进了一大步！\!而且我现在还挺富有的。
+
+
+message_65:
+  text: \n<洛可可>我能为你们做的就这么多了！\!我已经圆满了！
+
+
+#How to Commission Art:
+#ROCOCO will make a total of 6 pieces for you.
+#To commission art from ROCOCO, just talk to him and pay him the amount he asks for. His price will increase with each piece you commission.
+#After you pay ROCOCO, the art will be ready as soon as you exit Sprout Mole Village.
+#When you come back, ROCOCO will tell you that your new art is done and hanging in the gallery. After you check the painting, you can talk to him again. He will ask if you want to commission him for his next piece.
+
+#1st piece: Kid's Drawing
+#Cost: 1000 CLAMS
+
+message_70:
+  text: “无题”<br>\!创作者——伟大艺术家洛可可
+
+
+message_71:
+  text: \n<画家注释>“嘿，我这才刚起步好吗？别那么苛刻。”
+
+
+#2nd piece: Gesture (WIP)
+#Cost: 5000 CLAMS
+message_72:
+  text: “人与果”<br>\!创作者——伟大艺术家洛可可
+
+
+message_73:
+  text: \n<画家注释>“看看我的进步吧！\!不过，我的笔法显然还很青涩。\!在下一幅作品中，我必须摆脱这种初学者的感觉。”
+
+
+#3rd piece: Cubist
+#Cost: 10000 CLAMS
+message_74:
+  text: “四人聚会”<br>\!创作者——伟大艺术家洛可可
+
+
+message_75:
+  text: \n<画家注释>“正如所有伟大的艺术家所言……现实主义真无聊！\!这是我最有表现力的一幅作品！\!你能感受到其中蕴含的情感吗？”
+
+
+#4th piece: Manga Cover (WIP)
+#Cost: 15000 CLAMS
+
+message_76:
+  text: “OMORI 的奇妙逃亡”<br>\!创作者——伟大艺术家洛可可
+
+
+message_77:
+  text: \n<画家注释>“什么？！你很惊讶？<br>\!你在说什么啊？ 难道艺术家就不能换个画风吗！？”
+
+
+#5th piece: Renaissance (WIP)
+#Cost: 25000 CLAMS
+
+message_78:
+  text: “最终启示”<br>\!创作者——伟大艺术家洛可可
+
+
+message_79:
+  text: \n<画家注释>“不得不说。\!这幅作品确实耗费了我不少心血，<br>好在最后的成果还算不错。\!我的下一幅作品将会更棒！”
+
+
+#6th piece: Pixel Art (WIP)
+#Cost: 50000 CLAMS
+
+message_80:
+  text: “OMORI，奥布里，凯，英雄”<br>\!创作者——伟大艺术家洛可可
+
+
+message_81:
+  text: \n<画家注释>“这是凝聚我毕生艺术造诣的巅峰之作。\!在这幅画中，我完美捕捉到了你们的人物精髓。\!我能为你们做的就这么多了。”
+
+
+
+#NOT HAVING ENOUGH CLAMS
+
+message_1000:
+  text: \n<洛可可>啊……\!看起来你身上的蚌币不够。<br>\!真抱歉，但我这里可不能讨价还价……\!而且我拒绝打白工！
+
+
+#THE SCULPTOR GATOR GUY:
+#In the construction area in LAST RESORT above MARI's picnic, there will be a sculptor working on a HERO statue. He will remain here until Epilogue after Hero becomes boss of Last Resort.
+
+#Before HERO is in party:
+message_90:
+  text: \n<鳄鱼男>呼……\!献给本世纪最佳员工的贺礼马上就要完成了。<br>看看我做的雕像……\!没想到我居然还有这本事，<br>不过老板总是很信任我！
+
+
+#After HERO is in party:
+message_91:
+  text: \n<鳄鱼男>嘿，英雄！我马上就能完成老板下令给你做的雕像了。<br>\!看上去还不错吧，或许我可以加上……
+
+
+#After Hero becomes the boss, the Gator Guy will move to his work station.
+#Since Hero is the boss, the GATOR GUY will offer to make a statue of OMORI, AUBREY or KEL (since Hero will already be completed.)
+
+message_92:
+  text: \n<鳄鱼男>嘿，我的新老板！\!我以前就觉得你能接替老板的工作。<br>\!希望你工作顺利！
+
+
+message_93:
+  text: \n<鳄鱼男>你们四个还真是形影不离，但你的雕像看上去孤零零的，英雄。
+
+
+message_94:
+  text: \n<鳄鱼男>如果想让我给你们一起做套雕像，那当然没问题啦……\!但我毕竟只是个卑微的雕塑家，挣不到几个钱……不像你们一样。
+
+
+message_95:
+  text: \n<鳄鱼男>话虽如此，我毕竟欠着老板人情呢。\!如果你想让我做雕像，只需要先付点材料钱就行……\!一个雕像差不多3000蚌币。
+
+
+message_96:
+  text: \n<鳄鱼男>怎么样，想让我帮你们每人都做个雕像吗？
+
+
+#[YES/NO]
+message_97:
+  text: \n<鳄鱼男>想让我做谁的雕像呢？
+
+
+#[OMORI/AUBREY/KEL]
+#
+message_98:
+  text: \n<鳄鱼男>没问题，老板！\!你们可以先出去找点事做，过会儿再回来！<br>\!我马上就帮你雕个朋友出来，老板。
+
+
+#[NO/NEVERMIND]
+
+message_99:
+  text: \n<鳄鱼男>好吧！你说了算，老板……<br>\!但我还是得提一个微不足道的意见，你的雕像真的需要点朋友。
+
+
+message_1002:
+  text: \n<鳄鱼男>好吧……\!你说了算，老板……
+
+
+#Once you pay for your statue, it will be completed as soon as you exit the Last Resort building to Last Resort Entrance.
+
+#After you come back when the statue is complete:
+message_100:
+  text: \n<鳄鱼男>怎么说，老板？\!我看你的雕像在那里孤零零的。
+
+message_101:
+  text: \n<鳄鱼男>想不想让我再帮其他朋友做个雕像？\!<br>还是收你3000蚌币。
+
+
+#After OMORI, AUBREY, and KEL statues are complete:
+
+message_102:
+  text: \n<鳄鱼男>怎么说，老板？\!我看你的雕像在那里孤零零的。
+
+
+message_103:
+  text: \n<鳄鱼男>其实……我刚刚和你正在野餐的朋友们聊了聊。<br>我觉得不该漏掉他们的雕像！
+
+
+message_104:
+  text: \n<鳄鱼男>想不想让我再帮其他朋友做个雕像？\!<br>还是收你3000蚌币。
+
+
+message_105:
+  text: \n<鳄鱼男>想让我做谁的雕像呢？
+
+#[MARI/BASIL]
+
+#After completing MARI/BASIL statues:
+message_106:
+  text: \n<鳄鱼男>怎么说，老板？\!我看你的雕像在那里孤零零的。
+
+
+#*GATOR GUY looks at statues*
+
+message_107:
+  text: \n<鳄鱼男>这……现在我开始感到孤单了……\!也许是我多嘴，但能不能把我也加入你们的雕塑里面呢，老板？
+
+
+#After completing GATOR GUY statue:
+
+message_108:
+  text: \n<鳄鱼男>好了，完美！\!这些雕像现在全部完工了！
+
+
+#*GATOR GUY looks at statues*
+
+message_109:
+  text: \n<鳄鱼男>没有什么比看到你们大伙在一起更棒的事了。
+
+
+message_110:
+  text: \n<鳄鱼男>非常感谢让我也加入你们，即使只是个雕像。\!你们这群伙伴可真不错。
+
+
+message_111:
+  text: \n<鳄鱼男>这是我的电话号码，老板。\!有什么需要尽管给我打电话。
+
+
+message_112:
+  text: 英雄习得了\c[1]有如鳄助\c[0]！
+
+#Skill Get common event
+
+#not enough CLAMS
+
+message_1001:
+  text: \n<鳄鱼男>你们还没有足够的蚌币，老板！\!没事，我不着急。\!我知道你们肯定很快就能凑够钱。
+
+
+#Statues
+
+message_1010:
+  text: 你的雕像。\!<br>看着自己的大脸感觉真奇怪。
+
+
+message_1011:
+  text: 奥布里的雕像。\!<br>她那欢快的模样点亮了全场的气氛。
+
+
+message_1012:
+  text: 凯的雕像。\!<br>完美地抓住了他的精髓。
+
+
+message_1013:
+  text: 英雄的雕像。\!哇哦……
+
+
+message_1014:
+  text: 玛里的雕像。\!<br>你永远猜不透她顽皮的笑容背后隐藏了什么。
+
+
+message_1015:
+  text: 贝瑟尔的雕像。\!<br>即使只是雕像，他也把脸藏在了相机后面。
+
+
+message_1016:
+  text: 鳄鱼男的雕像。\!<br>看上去不错……
+
+

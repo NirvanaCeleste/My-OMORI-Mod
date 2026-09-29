@@ -1,0 +1,245 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+# =========================================================================================
+# DAY 3 - SUNSET
+# =========================================================================================
+
+#==============KEL===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嗯……\!今天就是我们在一起的最后一天了，是吧，\n[8]？
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel在你开启新生活之前，能跟大家一起好好庆祝一下也挺好的！
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel你就好好享受，放轻松啦。<br>\!你看大伙都在这儿呢！
+
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel嗯……嚼……\!今天就是我们在一起的最后一天了，是吧，\n[8]？
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel在你……\!嚼……\!开启新生活之前，<br>能跟大家一起好好庆祝一下也挺好的！
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: \kel你就好好享受，放轻松啦。 <br>\!嚼……\!你看大伙都在这儿呢！
+
+
+#==============HERO===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her我已经很久没有参加过这样的派对了。\!<br>我们大学里也会举办派对，但没有这么……\!呃……\!质朴有趣。
+
+#CONDITIONAL: If PLAYER helps with COOKING QUEST
+message_11:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: \her话说回来，看到大家都吃得这么开心，我也很开心……\!<br>我们辛苦准备了那么久也算是值啦！
+
+#==============AUBREY===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub我其实对派对什么的不感兴趣……\!不过这个派对倒还挺不错的啦。
+
+#CONDITIONAL: If PLAYER helps with COOKING QUEST
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub哼……\!而且，也许那句老话说得对……
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub自己做的菜总是更好吃一点……
+
+#==============KIM===========================================
+#Location: Sean and Karens House
+
+message_30:
+  text: \kim嘿，是你啊！\!<br>可恶……\!现在这派对就一点都不酷了……
+
+message_31:
+  text: \kim呵呵……\!开个玩笑啦……\!书呆子。
+
+message_32:
+  text: \kim总之……\!奥布里跟我说你明天就要搬走了。\!<br>嗨，听上去挺惨的……不过，你肯定很快就能适应新生活。
+
+#Stomach grumble sfx
+
+message_33:
+  text: \kim喔！刚才不是我在嘟囔……\!是我的肚子在叫。\!<br>嗯，趁着东西还没被吃光，我赶紧开吃吧……
+
+#==============THE MAVERICK===========================================
+#Location: Starting at Bakery
+
+message_40:
+  text: \n<独行侠>唔，我之前一直在逃避，不想接手家里的生意……\!<br>不过现在想想，我可能太草率了。
+
+message_41:
+  text: \n<独行侠>我在其他方面也没什么特长……说不定，我\Com[2]独行侠其实有烘焙的才能？
+
+#==============VANCE===========================================
+#Location: Sean and Karens House
+
+message_50:
+  text: \van嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!噢——耶！\!免费的食物！
+
+#==============SHORT HAIR GIRL===========================================
+#Location: TOWN PLAZA
+
+message_60:
+  text: \n<短发女孩>我就是在这里遇到我的心上人的……\!希望他很快会出现……
+
+#==============FASHIONABLE MOM===========================================
+#Location: SHORT HAIR GIRL's House
+
+message_70:
+  text: \n<时尚的妈妈>你看到贝贝没有？马上就要吃晚饭了，她连个人影都没有……\!<br>我们今天晚上可是要吃中餐外卖哦！
+
+#==============INTIMIDATING GIRL===========================================
+#Location: SHORT HAIR GIRL's House
+
+message_80:
+  text: \n<咄咄逼人的女孩>妈妈决定今晚吃中餐外卖真是太好了……她做的菜一点味道都没有……不过你可别跟她说呀！
+
+#if leader is HERO
+
+message_81:
+  text: \n<咄咄逼人的女孩>那个，英雄……你要跟我们一起吃晚饭吗？\!啊……<br>不过直接见家长会不会太快了点！\!你不觉得我们应该先约个会什么的，<br>然后再去见我妈妈吗……诶嘿嘿……
+
+
+#==============BRENT===========================================
+#Location: Brent's House
+
+message_90:
+  text: \n<外表聪慧的男孩>耶！爸爸回家了！
+
+#==============PHARMACIST===========================================
+#Location: Brent's House
+
+message_100:
+  text: \n<药剂师>每天没日没夜地工作还是挺累人的，但能像这样和家人吃上一顿晚餐，我就觉得这一切都是值得的。
+
+#==============SCHOOL PRINCIPAL===========================================
+#Location: Brent's House
+
+message_110:
+  text: \n<校长>大家时不时回家聚聚，感觉还挺不错的。\!<br>我丈夫工作忙，有时候很晚才下班……<br>布伦特肯定也很想念他爸爸吧。
+
+
+#==============HECTOR===========================================
+#Location: FARAWAY PARK chasing something
+
+message_120:
+  text: \n<赫克托尔>\Com[2]汪！\{汪！\{汪！\}\}汪！\!\{汪！\}汪！\}汪？<br>\!（我是个好孩子对不对？）
+
+#==============JOY===========================================
+#Location: JOY'S HOUSE
+
+message_130:
+  text: \n<小女孩>爸爸今天对我超级好的，嘻嘻……
+
+message_131:
+  text: \n<小女孩>他说明天要带我和奶奶去海滩玩耶！\!我已经等不及了！
+
+#==============JOYS DAD===========================================
+#Location: JOY'S HOUSE
+
+message_140:
+  text: \n<粗眉毛的男人>呜呜……我的大儿子已经长大成人，离家自立了。\!<br>唉……我在想我是不是不该管乔伊管得那么紧……
+
+message_141:
+  text: \n<粗眉毛的男人>她一整个夏天都待在房间里学习，可她在长大之前还能有几个夏天啊？\!<br>小孩子的童年可是一去不复返的呀。
+
+#==============KAREN===========================================
+#Location: Sean's House (Housewarming party)
+
+message_150:
+  text: \n<双马尾女生>欢迎来参加我们的乔迁派对！\!不用客气，就当是在自己家好了……\!<br>不过只限今晚哦，呵呵……
+
+message_151:
+  text: \n<格子衫男生>好好放松，吃点东西吧！\!你们想待多久就可以待多久……\!<br>不要太久就行了呢！
+
+#==============KEL'S DAD===========================================
+#Location: Farawy Park
+
+message_160:
+  text: \n<凯的爸爸>让你老爸来给你上一课。\!听着，人年纪越大，就越难交到朋友……
+
+message_161:
+  text: \n<凯的爸爸>所以啊，要是你现在觉得自己身边有很要好的朋友……\!<br>那就一定要珍惜！\!<br>要我说，有的朋友那可是一辈子的！
+
+#==============KIM AND VANCES DAD===========================================
+#Location: Farawy Park
+
+message_170:
+  text: \n<粗犷的男人>啊……\!和我的两个小孩一起享受美好时光。<br>人生别无所求喽！
+
+#==============KIMS MOM===========================================
+#Location: Kim's House
+
+message_180:
+  text: \SINV[2]剪、\{剪、剪、\{剪、剪、\{剪！！
+
+#==============MINCY===========================================
+#Location: Farawy Park (Company Quest 6)
+
+message_190:
+  text: \n<米西>我一定不会忘记你们的。\!永远不会……
+
+#==============POLLY===========================================
+#Location: Basil's House
+
+#After cutscene: Polly's WElcome
+message_200:
+  text: \n<波莉>唉，贝瑟尔……\!<br>大家都是为了你才赶过来的呀，为什么你就是不明白呢？
+
+#After cutscene: Basil won't leave his ROOM
+message_201:
+  text: \n<波莉>拜托你们尽力帮帮他吧……\!<br>现在也只有你们能帮到他了！
+
+#==============SARAH===========================================
+#Location: Gino's Pizza
+
+message_210:
+  text: \n<马尾女孩>呃啊……\!我爸妈在我面前这样腻腻歪歪的，我还怎么吃饭啊？
+
+#==============SARAH'S DAD===========================================
+#Location: Gino's Pizza
+
+message_220:
+  text: \n<笨拙的男人>呜呜……\!我左手拿着披萨，右手牵着老婆。\!<br>这就是男人的人生巅峰啊……
+
+#==============SARAH'S MOM===========================================
+#Location: Gino's Pizza
+
+message_230:
+  text: \n<马尾女士>嘻嘻……这样挺好的呀，是不是，我的小宝贝？
+

@@ -1,0 +1,1010 @@
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+#Leave Last Resort without party
+
+message_201:
+  text: 地下一层
+
+message_202:
+  text: 一层
+
+message_203:
+  text: 二层
+
+message_204:
+  text: 三层
+
+message_205:
+  text: 四层
+
+message_206:
+  text: 五层
+
+message_207:
+  text: 鲨赞先生的办公室
+
+
+message_208:
+  text: 礼宾部
+
+message_209:
+  text: 英雄的办公室
+
+#Elevator Floors
+
+# =========================================================================================
+# Cutscene: Kel the Lost Child
+# =========================================================================================
+
+#Trigger: Enter Deep Well Entrance (Lower).
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 嘿，OMORI！你来啦！\!你之前都去哪儿了呀，哥们儿？\kel
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: 你不在的时候……\!大家都……\kel
+
+#KEL turns around.
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 被骗签了合同！\!<br>所以……\!我们现在都有工作了！\kel
+
+#KEL turns to OMORI.
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: 呜……\!我们这么快就长大成人了……\kel
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 我的工作就是指引人们去\c[11]最后度假村\c[0]。\!<br>我就是在那儿上班！\kel
+
+#KEL turns toward the LAST RESORT. Camera pans to LAST RESORT.
+
+#NEUTRAL
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 其实离这里还挺近的。\kel
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 嗯……想了想，可能也没有很近……\kel
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 来吧，我带路！\!就在湖的对面。\kel
+
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \sinv[1]这个呃呃呃呃呃……\sinv[0]\!看样子比我想象的要远。\!抱歉啦，哥们儿。\kel
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel我们就快到了，我跟你讲。\!打个出租车就能到！
+
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 还有，顺带一提哦……\!尽量避开鳄鱼男比较好。\!<br>我觉得他们不是很喜欢我。\kel
+
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 别害怕呀，OMORI。\!我就在这儿呢！\kel
+
+
+
+#BOTH
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 到了！\kel
+
+#Camera pans back to KEL.
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 看，OMORI。就在前面！\kel
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 说起来啊……\!来这儿的路上，我好好反省了一下。\!在\c[11]最后度假村\c[0]上班是挺好啦……\kel
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 但我得说……\!打工和我想象中不太一样。\kel
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 所以我们为什么不叫大家辞职，然后从这鬼地方出去呢？\kel
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 英雄最近经常去外面出差……\!<br>但我肯定奥布里就在\c[11]最后度假村\c[0]的五层上班。<br>我们应该先去找她。\kel
+
+# =========================================================================================
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: OMORI……\!丢下奥布里不管也就算了……\!但还有英雄呢！\!<br>你怎么可以抛弃他？\kel
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 嘿！\aub
+
+
+
+# =========================================================================================
+# Cutscene: Kel has to use the Bathroom!
+# =========================================================================================
+
+#Trigger: Enter proximity of bathroom.
+
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: OMORI……\!我知道现在时机不太妙……\!<br>但是我真的、真的想上厕所……\kel
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 正如我经常说的……\!<br>人有三急嘛！\kel
+
+message_22:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 在这儿等等，OMORI。一分钟就回来。\kel
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \sinv[1]啊……舒服了……\kel
+
+message_24:
+  text: 你注意到凯没有洗手。
+
+message_25:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \sinv[1]但是我真的想上厕所嘛！\kel
+
+message_26:
+  text: 你让凯洗了手。
+
+# =========================================================================================
+# Cutscene: Aubrey the Secretary
+# =========================================================================================
+
+#Trigger: Enter proximity of Secretary Desk
+
+#AUBREY is answering phones left and right.
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub\sinv[1]\com[540]您好？\!\sinv[0]\com[540]好的，请不要挂机。\! \sinv[1]\com[540]您好？\!\sinv[0]\com[540]好的，请不要挂机。\!
+    \sinv[1]\com[540]您好？\!\sinv[0]\com[540]好的，请不要挂机。
+
+#KEL walks up to AUBREY.
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \{奥布里！！\!\}<br>我们来解救你啦！\kel
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 可恶，凯。走开啦！你没见到我很忙吗？\aub
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 清醒一点，奥布里！你不该是这样的啊！\kel
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 你知道今天有三个人取消了会议吗？\!<br>\{整整三个人！！\aub
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 我本来要帮他们改时间的，可是日程表上全是无谓的行程，<br>根本安排不下……\!<br>更何况今晚还有慈善晚宴！\aub
+
+message_71:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 而且偏偏还是……慈善\c[3]豆腐\c[0]晚宴！\aub
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 谁脑子进水了才会花蚌币买\c[3]豆腐\c[0]呀？\! <br>我试着跟上司讲理，可是他就是不听！\!完全是场噩梦！\aub
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 好啦……奥布里，听我的，吸几口新鲜空气。\kel
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 我在呼吸，凯。\!我的呼吸很顺畅！\aub
+
+message_48:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 深呼吸啦，奥布里，深呼吸……\kel
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \sinv[1]呼……\!哈……\!呼……\!哈……\!\sinv[0]你不是来当秘书的……\! \sinv[1]呼……\!哈……\!\sinv[0]我们得找到失踪的贝瑟尔……\!\sinv[1]呼……\!哈……\!呼……\!哈……\kel
+
+message_50:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \sinv[1]呼……\!哈……\!呼……\!哈……\sinv[0]\aub
+
+#AUBREY is surprised.
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 噢，OMORI！真的是你吗？\aub
+
+#AUBREY twirls.
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 你一定是来救我的！\!嘻嘻……我好开心噢！\aub
+
+message_53:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 慢、慢着，那我呢？\kel
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: OMORI，你得把我救出去呀！\aub
+
+message_55:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 我们直接走就行了，奥布里。\kel
+
+#KEL turns around.
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 出口就在那儿耶！\kel
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 没这么简单呀，凯……\!我们签了合同的，你忘了吗？\aub
+
+#AUBREY is surprised.
+
+# (MR. JAWSUM from Phone)
+
+message_58:
+  text: \}\Com[2]奥布里……\!奥布里！\!你跑到哪去了？\!<br>我已经整整十秒联系不上你了……\!<br>日程表改得怎么样了？\who
+
+#AUBREY is sweating.
+
+message_59:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 6
+  text: \com[540]对、对不起，鲨赞先生……我遇到了点事情。\aub
+
+#KEL jumps.
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \sinv[1]\{\{鲨赞先生，你好呀！！\kel
+
+message_61:
+  text: \}该死的！凯，又是你？\!我们不是把你调职到了很远、很远的地方吗！\!<br>我没告诉过你不准离开岗位吗？\jaw
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 哎呀，我大老远回来是想亲口告诉你……<br>我辞职啦！\!而且我要把奥布里也带走！\kel
+
+message_63:
+  text: \}很好笑。\!来我办公室，凯。\!现在，立刻。\jaw
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \com[540]我这就让他过去。\aub
+
+message_65:
+  text: \}你也要来，奥布里。\!<br><br>……\!\quake[1]哔。\jaw
+
+message_66:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: ……\aub
+
+message_67:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 可恶，凯！你要害我被炒鱿鱼了！\aub
+
+message_68:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 是呀！太好了，不是吗？！\kel
+
+message_69:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 唉……\!我们走吧。\!<br>这台电梯直达鲨赞先生的办公室。\aub
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 我的天……对呀！\!<br>我怎么能忘了呢？\!我们得找到贝瑟尔！\aub
+
+# =========================================================================================
+# Cutscene: Hero the Manager
+# =========================================================================================
+
+#Trigger: Enter proximity of MR. JAWSUM's desk.
+
+#MR. JAWSUM is facing back toward city.
+#MR. JAWSUM turns to party.
+
+message_80:
+  text: 啊……你们终于来了。\jaw
+
+#Camera pans to MR. JAWSUM.
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 嗨，鲨赞先生……\aub
+
+message_82:
+  text: 嗯哼……\!好了，孩子们，我不妨跟你们好好讲清楚。\jaw
+
+#MR. JAWSUM pulls out a contract.
+
+message_83:
+  text: 正如合同所述：\!你们同意为最后度假村工作，不管条件如何、有没有薪水，至死方休。\jaw
+
+#MR. JAWSUM puts away the contract.
+
+message_84:
+  text: 要知道，签下合同就是许下承诺……<br>\!你们不会违背承诺的，对吗？\jaw
+
+#KEL looks at AUBREY.
+
+message_85:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 靠，他说的对！我们不可以违背承诺！\!<br>这下怎么办，奥布里？\kel
+
+#AUBREY walks up one step.
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 鲨赞先生……\!我们确实是向你承诺过……\!<br>可是我们也承诺过彼此，要一起去找我们的朋友贝瑟尔！\aub
+
+message_87:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 呃……对，她说得对！\!<br>所以你必须放我们走！\kel
+
+message_88:
+  text: 嗯……我想我可以尊重你们这一点。\!承诺就是承诺。\!奥布里，我可以放你走……\!前提是你把凯也带上。\jaw
+
+message_89:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 真的吗？\!哇！谢谢你，鲨赞先生。<br>你真是好心肠！\aub
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{\{\sinv[1]好耶！！我们走！！！\kel
+
+#AUBREY and KEL turn around to leave.
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 等等……\!我好像忘了什么……\kel
+
+#KEL turns back around.
+
+message_92:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 哦，对！我们可以把我哥英雄也带上吗？\kel
+
+message_93:
+  text: ……\jaw
+
+message_94:
+  text: 呵……\!你真是个有意思的孩子，凯。\jaw
+
+message_95:
+  text: 你想我把英雄交给你？！\jaw
+
+#add JAWHAWHAW
+
+message_137:
+  text: \Com[2]\{\quake[1]太贪婪了！！\!我跟你讲，你太贪婪了！！\jaw
+
+message_96:
+  text: 英雄，我们的“鲨”手锏，是我这辈子请过的最杰出的员工。\jaw
+
+message_97:
+  text: 他的出现使我的工作产出提升了 700%！\!<br>傻子才会把他这样的员工放走。\jaw
+
+#HERO comes in.
+
+message_98:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 鲨赞先生，贵安！我刚按照您的吩咐布置好了今晚的慈善\c[3]豆腐\c[0]晚宴！\her
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 桌子摆放完毕，房间装饰完毕，厕所打扫完毕。要我说的话，食物的口味更是一级棒！\her
+
+message_134:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 我还擦干净了您的窗子，拖干净了您的地板，喂饱了您的宠物，整理好了您的墨镜收藏，叠好了您的衣服……\her
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 噢！\!还有，这是给您的咖啡。\!我猜您一定喜欢。\her
+
+#ADD JAWHAWHAW
+
+message_101:
+  text: \{看到了吗，孩子们？！\jaw
+
+message_135:
+  text: 做得太好了，英雄！\!真棒！\!<br>我都想给你发一两天的工资了……\jaw
+
+message_136:
+  text: \jaw\Com[2]\Sinv[2]\{\{鲨吼\{吼吼\{吼吼！！\Sinv[0]
+
+message_102:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 真、真的吗？\!这是我的荣幸，先生！\her
+
+#HERO is surprised and walks up to party.
+
+message_103:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 啊呀，大家好啊！你们怎么来了？<br>\!你也想找工作吗，OMORI？\her
+
+message_104:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: ……\kel
+
+message_105:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: ……\aub
+
+message_106:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 英雄……\!你怎么搞的？\kel
+
+message_107:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 不会……连你也把贝瑟尔忘了吧。\aub
+
+#HERO is surprised.
+
+message_108:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 哎呀，对哦！我们要找贝瑟尔！\!<br>我怎么忘了这么重要的事情？\her
+
+message_109:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 那还留在这儿干什么？！我们得马上走！\her
+
+#HERO attempts to walk out.
+
+message_110:
+  text: 喂喂，英雄。别那么急嘛！\!<br>你还有工作没做完呢。\jaw
+
+message_111:
+  text: 今晚的慈善晚宴，你还要招待我们的 VIP 嘉宾！\jaw
+
+message_112:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 鲨赞先生……\!我很抱歉，不过……\!<br>恕我冒昧，慈善\c[3]豆腐\c[0]晚宴可以延后举办！\her
+
+message_113:
+  text: 呵……\!你伤透我的心了，英雄。\!<br>你没有忘记我们签署的合同，对吧？\jaw
+
+message_114:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 这个的话……我……\her
+
+message_115:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 呃呃……别管合同啦！\!贝瑟尔需要我们！<br>我们快走，英雄！\aub
+
+message_116:
+  text: 别听她的，英雄！为什么要听她的话？！\!<br>你又没有跟她签署合同！\jaw
+
+#HERO walks one step to MR. JAWSUM.
+
+message_117:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 我听奥布里不是因为合同……\!<br>我听她的，是因为她是我的朋友！\her
+
+message_118:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 44
+  text: 很抱歉，鲨赞先生……\!<br>但我的朋友们远比薄薄的一纸合同更重要。\her
+
+message_119:
+  text: \quake[1]薄薄的……\!一纸……\!合同？\quake[0]\jaw
+
+message_120:
+  text: 你竟敢这样羞辱我，小子。\!我收留了你……一个涉世不深的年轻人……然后把你培养成了无人能敌的究极员工！\jaw
+
+message_121:
+  text: 要是没有我，你什么都不是！\jaw
+
+#MR. JAWSUM snaps fingers. Doors open behind him and GATOR GUYS surround party.
+
+message_122:
+  text: 违反合同的惩罚就是……\quake[1]\!<br>\{死刑！！\jaw
+
+message_123:
+  text: 我要教会你尊重上级！\jaw
+
+# =========================================================================================
+# Cutscene: Pluto's Return
+# =========================================================================================
+
+#Trigger: Defeat Mr. Jawsum.
+
+message_124:
+  text: 够了！\!<br>退下吧，小的们。这样是没用的。\jaw
+
+#GATOR GUYS step back.
+
+message_125:
+  text: 呵……\!我必须承认……\!你们这些孩子还挺强的。\!<br>但现在无所谓了。\jaw
+
+message_126:
+  text: 我的团队里，可不止有英雄一名究极员工。\!<br>我还有……\!另外一名。\jaw
+
+message_127:
+  text: 你可以进来了……\!冥王星。\jaw
+
+#PLUTO walks in and walks toward party.
+
+message_128:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \{冥王星！是我呀，凯！\!\}<br>你不认得我们了？我们是你的朋友！\kel
+
+#PLUTO walks one step forward.
+
+message_129:
+  text: ……\!抱歉，凯。\plu
+
+message_130:
+  text: 这无关私人恩怨。\!<br>只是公事公办。\plu
+
+message_131:
+  text: 就看看你们……<br>\!要如何对抗一颗前行星吧。\!<br>冥王星！\!向这些孩子展示你真正的力量吧！\jaw
+
+#PLUTO turns to MR. JAWSUM.
+
+message_132:
+  text: 马上就办，先生。\plu
+
+#PLUTO turns to party.
+
+message_133:
+  text: 我很抱歉，各位……\!<br>你们的道路到此为止了。\plu
+
+#PLUTO flexes and buffs up.
+
+# =========================================================================================
+# Cutscene: Mr. Jawsum's Request
+# =========================================================================================
+
+#Trigger: Defeat Pluto.
+
+message_150:
+  text: 呼……呼……\!你们确实都变强了啊。\!<br>呼……\!我……为你们骄傲。\plu
+
+message_151:
+  text: 但是……\!即便如此……我还有工作要完成。<br>既然开始做，我就会做到底。\plu
+
+message_152:
+  text: 做好准备，孩子们……\!<br>\{这才是力量的奥义！！！\plu
+
+message_173:
+  text: \quake[1]论……\!\quake[1]秀……\!\quake[1]肌肉……\!\plu
+
+#PLUTO begins charging up.
+#Screen shakes.
+
+message_153:
+  text: \Com[2]\quake[1]\{\{我\{最—\{拿手—！！\plu
+
+#Screen shakes again.
+
+message_154:
+  text: 好了好了……都消停消停！\jaw
+
+message_155:
+  text: 唉……\!冷静点，冥王星。<br>\!我今天已经失去一名究极员工了。\!<br>我不想再失去第二个！\jaw
+
+message_156:
+  text: 但先生，我能打败他们！<br>只要再给我一点点时间。\plu
+
+message_157:
+  text: 别白费力气了，冥王星。<br>今天我的资产不能再面临风险了。\jaw
+
+#MR. JAWSUM turns around.
+
+message_158:
+  text: 你们快走吧！<br>\!讨鱼嫌的一群家伙！\jaw
+
+#HERO walks up.
+
+message_159:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 谢、谢谢你，先生。\!你做出了正确的决定……\her
+
+message_160:
+  text: 哼……\!是啊，是啊。\jaw
+
+#PLAYER attempts to walk out.
+
+message_161:
+  text: ……\jaw
+
+message_162:
+  text: 看来我真的留不住你，是么？\!<br>真是可惜。\!你本来可以在这里发掘你的真正潜力。\jaw
+
+#HERO takes another step forward.
+
+message_163:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 鲨赞先生……\!在我们离开之前……\!<br>我想跟你说……\her
+
+message_164:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 就算你拐走我所有的朋友，还忽悠我们签一份霸王合同……\!我有时还是会认为，你是一位相当好的人。\her
+
+message_165:
+  text: 英雄……\!你可能会觉得惊讶，但是……\!<br>我一直帮你当成是我从未有过的儿子。\!<br>你一定会在外面闯出名堂的。\jaw
+
+#MR. JAWSUM takes out the contracts and eats them.
+
+message_166:
+  text: \{\quake[1]现在，赶紧消失！！\!\}<br>你们没见到我很忙吗？！\jaw
+
+message_167:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 再次感谢您，鲨赞先生……\her
+
+#HERO turns to party.
+
+message_168:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 好了，大家！\!我们又重聚了，可以继续搜寻贝瑟尔了！\her
+
+message_169:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 真是一趟漫长的旅途，但我知道我们一定会找到他的……\!只要我们不轻言放弃！\her
+
+message_170:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 你说得对，英雄！我们快要到终点线了……\!<br>我已经感觉到了！\kel
+
+message_171:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 再等等就好，贝瑟尔！我们很快就会找到你。\aub
+
+message_172:
+  text: 拿出这种劲头就对了……\!<br>快去吧，你们这群疯孩子。\jaw
+
+
+#----- MARI IN THE elevator
+
+message_180:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 英雄，你回来啦！\mar
+
+message_181:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: 你最近工作这么忙，都没时间陪我了！\mar
+
+message_182:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 你在说什么呢，玛里？\!我明明每天都来看你的呀！\her
+
+#MARI does her pose
+
+message_183:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 嘻嘻……\!我知道……\!我只是逗你玩儿。\mar
+
+message_184:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: 小伙子，你得好好学学怎么应对玩笑呀！\mar
+
+message_185:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 呃啊！\!我很抱歉……玛里。\!我……\!我会尽力的！\her
+
+#HERO hugs MARI
+
+message_186:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: ……\!噢，英雄……\!不要紧，没事啦。\mar
+
+message_187:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: 嘻嘻嘻……\mar
+
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+#Trigger: Head to North Coast
+
+message_200:
+  text: 浓雾笼罩着整片森林。
+
+#Trigger: Construction Bridge
+
+message_210:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 哎呀。\!桥断了。\kel
+
+message_211:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: ……不过，我跟你们打赌，我助跑一下就能跳过去！\kel
+
+message_212:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 你或许是可以跳过去，我们呢？\aub
+
+message_213:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 15
+  text: 你不会连跳一下都不敢吧？\kel
+
+message_214:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 好啦好啦，不要吵架。\!这毕竟是个建筑工地嘛。\!我们到处逛逛，肯定能找到什么有用的东西。\her
+
+#Trigger: Exiting Elevator to casino after defeating Jawsum
+#------------------------------------------------------------------
+
+message_220:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her没错，说得对，凯！\!我们是要找贝瑟尔的。
+
+message_221:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel唔……\!你们觉得贝瑟尔会不会就在\c[11]最后度假村\c[0]的什么地方？
+
+message_222:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub不可能！<br>贝瑟尔死也不会来这里的！<br><br>他看起来像是会喜欢这种地方的人吗？！
+
+message_223:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel我不知道呀……说不定呢？\!<br>我们要不到处走走，问问别人有没有见过他？
+
+message_224:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her这思路不错，凯！\!不过……我们离家已经挺远了。\!这儿的人应该不知道他长什么样子。
+
+message_225:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub噢、噢！我有个想法！我们都来给他画副肖像怎么样！\!说不定人们可以通过画像认出他来！
+
+message_226:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her你们还真是两个小机灵鬼！\!<br>就这么干！
+
+message_227:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel好嘞，我先来！
+
+#Kel turns around facing back
+
+#Aubrey walks in front of Kel
+
+message_228:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub呃……\!你画的都什么呀？！\!一点儿也不像贝瑟尔！\!<br>贝瑟尔的头发明明更像这样。
+
+#Aubrey snatches drawing SFX and turns to back
+
+message_229:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub唔……\!不，等等……\!这看起来也不太对。
+
+#Kel jumps
+
+message_230:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel喂！你别乱改我的大作呀？！\!<br>还有，贝瑟尔鼻子哪有这么大？！
+
+#hero walks up to aubrey
+
+message_231:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her好啦……看看你们画的怎么样了。
+
+#pause
+
+message_232:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her……\!噫……\!贝瑟尔是长这个样子的吗？
+
+#pause
+
+message_233:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her呃……\!我还是别看了……
+
+#hero walks to you
+
+message_234:
+  text: 英雄把\c[4]糟糕的画\c[0]放进了你的口袋。
+
+#aubrey turns around
+
+message_235:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub唉……\!好吧，没有想象中顺利。
+
+message_236:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her别泄气，奥布里。\!<br>我们自己去找贝瑟尔就好啦！
+
+message_237:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel对呀，没事的！\!我们还有好多地方没找过呢。
+
+message_238:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her唔……\!我们要不先去\c[11]深井\c[0]附近看看？\!坐出租车的话很快就能到。\!\c[11]最后度假村\c[0]门口总是会有一辆出租车！
+
+#Go into inventory to see BAD DRAWING picture.
+
+message_300:
+  text: 你获得了\c[4]炫酷钥匙卡\c[0]。
+
+message_301:
+  text: 电话响个不停！
+
+message_302:
+  text: 专为特别难熬的漫漫长夜准备。
+
+message_303:
+  text: 未支付的账单和诉讼费。
+
+message_305:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel酷！我们找到了一张\c[4]炫酷钥匙卡\c[0]！
+
+message_306:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel这样我们就可以坐电梯去五层了。\!我们去找奥布里吧！
+
+#VIP KEY CARD
+message_310:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her噢对了！趁我还没忘……\!OMORI，给你！\!这原本是鲨赞先生给我的。<br>有了它，在\c[11]最后度假村\c[0]就能畅通无阻啦。
+
+message_311:
+  text: 英雄给了你一张\c[4]VIP 钥匙卡\c[0]！\!哇哦……
+
+message_312:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her好啦……\!这下所有电梯就能运行得更快了。\!不过要注意……\!有时可能会剧烈颠簸！
+

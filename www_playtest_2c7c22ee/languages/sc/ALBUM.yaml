@@ -1,0 +1,439 @@
+wrongPlacingMessage:
+  background: 0
+  position: 2
+  text: 这张照片不该放在这里。
+
+puzzleModeClosingMessage:
+  background: 0
+  position: 2
+  text: 你还没整理好这些照片。
+
+error_message:
+  background: 0
+  position: 2
+  text: 错误 - 寻求帮助！
+
+faraway_message1:
+  background: 0
+  position: 2
+  text: \n<12/25 - 圣诞节>我的第一张照片！\!<br>上面是我最好的朋友， \n[8]，他正在调试新买的小提琴。<br><br>为了能和他的姐姐玛里一起演出，他又重新开始上小提琴课了！<br>\!真令人兴奋！
+
+faraway_message2:
+  background: 0
+  position: 2
+  text: \n<2/18 - 我的生日>今天是我的 12 岁生日！\!<br>我还以为朋友们都把这事忘了，没想到他们偷偷为我准备了草莓蛋糕，真是个惊喜。<br>我觉得自己好幸运……<br>\!今年一定是美好的一年！
+
+faraway_message3:
+  background: 0
+  position: 2
+  text: \n<2/18 - 我的生日>又是一张合照。<br>\!这是我刚拆完礼物不久后！<br><br>玛里送了我这本相册，其他人则为我买了相机胶卷。\!<br>我一定会尽我所能，不辜负这些礼物。
+
+faraway_message4:
+  background: 0
+  position: 2
+  text: \n<2/18 - 我的生日>凯就是这样我行我素啦……\!派对帽……\!也……\!太多了……
+
+faraway_message5:
+  background: 0
+  position: 2
+  text: \n<2/18 - 我的生日>\n[8] 躺在沙发上玩游戏。<br>\!\n[8] 有一点害羞，但他真的很擅长倾听。<br><br>我总是在伤心难过时向他倒苦水。\!有时我会觉得给他添麻烦了，但他似乎一点都不在意。
+
+faraway_message6:
+  background: 0
+  position: 2
+  text: \n<2/18 - 我的生日>玛里和英雄在沙发上睡着了。<br>\!他们在一起睡得真香……嘿嘿……<br><br>希望他们不介意我照一张照片。<br>\!要是被玛里的爸爸看见可就情况不妙咯……
+
+faraway_message7:
+  background: 0
+  position: 2
+  text: \n<3/9>早餐过后，玛里和英雄在一起洗碗。<br>\!我们跟玛里和 \n[8] 一起度过了这个周末。<br><br>最近天气逐渐变暖，于是我们决定去公园玩。\!凯说在公园的树丛后面有一个秘密湖泊，我们打算一起去看看！
+
+faraway_message8:
+  background: 0
+  position: 2
+  text: \n<3/9>我们从公园回来了，可凯似乎一点也不累。<br><br><br>他向英雄挑战掰手腕，但我们都已经知道结局了……\!<br>英雄，手下留情呀……
+
+faraway_message9:
+  background: 0
+  position: 2
+  text: \n<3/9>哎呀……太遗憾了，凯……\!下次好运。
+
+faraway_message10:
+  background: 0
+  position: 2
+  text: \n<3/10>凯对昨晚掰手腕输给英雄的事有些耿耿于怀，于是英雄准备凑过去亲亲抱抱他！凯看上去很不耐烦。<br>\!啊，兄弟情……
+
+faraway_message11:
+  background: 0
+  position: 2
+  text: \n<3/10>我在向 \n[8] 介绍最近正在读的书。\!玛里趁我没注意，偷拿了我的相机，然后拍下了这张照片。<br><br>我真应该好好看管自己的东西。
+
+faraway_message12:
+  background: 0
+  position: 2
+  text: \n<3/10>大家全都和 \n[8] 的动物玩偶抱在了一起。\!<br>他有好多软软的玩偶啊！\!真希望可以永远躺在这里。
+
+faraway_message13:
+  background: 0
+  position: 2
+  text: \n<3/31>已经是三月的最后一天了！\!<br>我们和玛里一起在秘密湖泊那里野餐。<br><br>玛里想给大家拍一张合照！ \!说，茄子！
+
+faraway_message14:
+  background: 0
+  position: 2
+  text: \n<3/31>除了我、英雄和玛里，大家都在吃完东西后睡倒了。<br><br><br>在我拍照时发生了一些不幸的事情。\!呃……真是谢谢你了，赫克托尔。\!之后我一定得用胶布把它遮上。
+
+faraway_message15:
+  background: 0
+  position: 2
+  text: \n<4/9>在从学校回家的路上，我拍到一张玛里背着 \n[8] 的照片。<br>\!他肯定是在校车上睡着了。<br><br>我觉得这一幕很可爱，于是赶快把相机拿了出来，拍到了这张绝无仅有的照片！\!唉……\!真希望我能有个兄弟姐妹。
+
+faraway_message16:
+  background: 0
+  position: 2
+  text: \n<4/21>玛里正在教大家怎么编花冠！<br><br><br>\n<4/21>这张照片上，\n[8] 和凯正举着玛里编好的花冠。\!<br>它看上去真完美，不是吗？\!<br>可是玛里似乎还不太满意。
+
+faraway_message17:
+  background: 0
+  position: 2
+  text: \n<4/21>\n[8] 和凯最后还是放弃了编花冠，他们偷偷溜走了，但奥布里和我很快就学会了！<br><br>大家都觉得花冠非常适合我。\!<br>只戴一朵花或许也够了。
+
+faraway_message18:
+  background: 0
+  position: 2
+  text: \n<4/21>英雄还在试着编花冠。<br>\!虽然这费了他不少时间，但花冠总算是成形了。\!<br>这种坚持不懈的精神真让人敬佩！
+
+faraway_message19:
+  background: 0
+  position: 2
+  text: \n<4/29>今天的雨可真大！<br>\!春雨总是来得很突然呢。<br><br>奥布里穿着新买的雨衣，让我给她拍张照片。<br>\!粉色可是她最喜欢的颜色呢！
+
+faraway_message20:
+  background: 0
+  position: 2
+  text: \n<4/29>奥布里拒绝让凯躲进伞下，但凯似乎毫不介意。\!他说他喜欢雨水的味道。
+
+faraway_message21:
+  background: 0
+  position: 2
+  text: \n<4/29>凯真的就是这样我行我素啦……<br><br><br>我们去了蜂玩堂，但店长让凯把雨衣放在外面，要不然店里的漫画就要全被凯弄湿了。<br>\!非常对不起，店长先生。
+
+faraway_message22:
+  background: 0
+  position: 2
+  text: \n<5/25>最近学校课业繁忙，但我们总算能抽出时间一起去公园玩了。<br><br><br>凯正倒挂在树上。\!<br>他真是个爬树大师！\!<br>要是我也能像他一样无所畏惧就好了。
+
+faraway_message23:
+  background: 0
+  position: 2
+  text: \n<5/25>玛里给每个人都买了不同口味的冰棍！<br>\!\n[8] 那根是柠檬味的，英雄是根汁汽水味的，凯是橘子味的，奥布里是西瓜味的，而玛里则是葡萄味的！<br>我的这根是香蕉味的……\!尝起来还行。
+
+faraway_message24:
+  background: 0
+  position: 2
+  text: \n<5/25>大家的鞋排成了一圈！\!<br>猜猜看哪双鞋是谁的？
+
+faraway_message25:
+  background: 0
+  position: 2
+  text: \n<6/22>今天是暑假的第一天，大家决定一起去海滩庆祝假期！<br>\!西瓜是奥布里的最爱。
+
+faraway_message26:
+  background: 0
+  position: 2
+  text: \n<6/22>凯正在喝冰爽的香橙乔汽水解暑！<br><br><br>我不太想离他太近，要不然我的相机可能就要遭殃了。\!<br>凯会把饮料弄洒已经是公认的事实了。
+
+faraway_message27:
+  background: 0
+  position: 2
+  text: \n<6/22>我们把 \n[8] 埋到了沙子里！\!<br>花了我们好长时间，但至少他看上去蛮享受的。<br><br>我不确定他需不需要我们把他从沙堆里扒出来。\!<br>在那之前我最好还是陪着他吧。
+
+faraway_message28:
+  background: 0
+  position: 2
+  text: \n<6/22>玛里说她想把皮肤晒出健康的古铜色！<br>\!我还挺害怕在太阳底下睡着的，因为我很容易被晒伤。<br><br>嗯……我也不太确定凯在干什么，但至少他看上去很开心。
+
+faraway_message29:
+  background: 0
+  position: 2
+  text: \n<6/22>英雄趴在玛里身上睡着了。\!他一定是游泳游累了吧。<br>\!好吧……看上去玛里最后还是没法晒出健康肤色了。
+
+faraway_message30:
+  background: 0
+  position: 2
+  text: \n<6/22>在准备回家的时候，我成功抓拍到了这天的最后一张照片，是玛里和英雄在一起！\!他们看上去真开心。<br><br>好般配的一对呀！
+
+faraway_message31:
+  background: 0
+  position: 2
+  text: \n<7/20 - \n[8] 的生日>耶！今天是 \n[8] 的 12 岁生日！\!虽然我和 \n[8]、奥布里还有凯都是同一年级的，但 \n[8]
+    还是我们当中最小的那个。<br>他就是我们中的小宝宝，我们一定要好好照顾他！
+
+faraway_message32:
+  background: 0
+  position: 2
+  text: \n<7/20 - \n[8] 的生日>\n[8] 从玛里和英雄那里收到了一份超级大的礼物！<br>\!嗯……我挺好奇里面到底是什么。
+
+faraway_message33:
+  background: 0
+  position: 2
+  text: \n<7/20 - \n[8] 的生日>虽然从照片里看不到，<br>但玛里和英雄送了 \n[8] 一整套超级大的积木。<br><br>\n[8] 似乎对这个礼物盒更感兴趣一些。\!<br>他这样子简直就像玛里新养的猫猫——喵乌！
+
+faraway_message34:
+  background: 0
+  position: 2
+  text: \n<7/20 - \n[8] 的生日>\n[8] 不愿意从盒子里出来，于是凯把装食物的碗放了进去。\!<br>我想这里以后就是 \n[8] 和喵乌的新家了。
+
+faraway_message35:
+  background: 0
+  position: 2
+  text: \n<8/4>我们今天要去抓甲虫！\!<br>凯正准备扑向下一个受害者！<br>\!哦对，\n[8] 也在呢。\!不过他看上去要睡着了。
+
+faraway_message36:
+  background: 0
+  position: 2
+  text: \n<8/4>玛里说这是一只大锹形虫。<br>它突然从树上掉下来，吓了大家一跳！\!<br>英雄甚至连看都不敢看。
+
+faraway_message37:
+  background: 0
+  position: 2
+  text: \n<8/14>嗒——哒！\!<br>我们忙活了一整个夏天，在 \n[8] 家的后院里搭了座树屋，今天它终于完工了！<br>英雄和他爸爸承担了大部分的工作，但我和奥布里帮忙做了很多纸花来装饰窗台！\!要我说，我们大家都超棒的！
+
+faraway_message38:
+  background: 0
+  position: 2
+  text: \n<8/14>我去了趟卫生间，回来就发现了这张照片……<br><br><br>凯说这照片只是个小小的意外，<br>但我对此表示怀疑……
+
+faraway_message39:
+  background: 0
+  position: 2
+  text: \n<8/16>我们大家一起在新建的树屋里玩！<br>看来 \n[8] 终于开始读我之前介绍给他的书了！<br><br>我真想每天都在这个树屋里度过，可惜暑假马上就要结束了。\!希望下个夏天我们还能在树屋里一起度过！
+
+faraway_message40:
+  background: 0
+  position: 2
+  text: \n<8/18>今天大家一起去蜂玩堂看了最新版的《太空男孩船长》！\!我们全都沉迷其中！\!等到开学后，大家肯定都在讨论这部漫画。
+
+faraway_message41:
+  background: 0
+  position: 2
+  text: \n<9/6>我正在和凯、英雄还有奥布里一起玩牌。\!他们的心情全都写在脸上，<br>一下就被看穿啦！<br><br>玛里亲手给大家烤了曲奇饼。<br>像往常一样，上面洒满了巧克力碎，非常美味！
+
+faraway_message42:
+  background: 0
+  position: 2
+  text: \n<9/6>看来我有一手必胜的牌，嘿嘿……<br>而且大家都没发现……
+
+faraway_message43:
+  background: 0
+  position: 2
+  text: \n<9/9>今天是开学的第一天！\!我、\n[8]、凯，还有奥布里很早就起床啦。\!奥布里真的超级上镜呢！
+
+faraway_message44:
+  background: 0
+  position: 2
+  text: \n<9/9>唉……再见了，夏天！\!明年再见……
+
+faraway_message45:
+  background: 0
+  position: 2
+  text: \n<9/9>\n[8] 给了玛里一个大大的拥抱！\!玛里为了报考大学，每天都要课外补习，很晚才回家。<br>我最近经常和 \n[8] 一起玩，但我知道他还是很想念玛里。
+
+faraway_message46:
+  background: 0
+  position: 2
+  text: \n<9/22>玛里正在为下个月的演奏会做准备。<br>我们大家都要去看！<br><br>这将会是玛里和 \n[8] 第一次同台演出，但我相信他们肯定会表现得很出彩！\!我们大家都会在观众席为他们加油的！
+
+faraway_message47:
+  background: 0
+  position: 2
+  text: \n<9/22>玛里现在有点羞于上镜，因为她刚刚在弹奏时犯了个小错误。\!别担心，玛里！你能行的！<br>根本不会有人注意到这点小细节啦！
+
+faraway_message48:
+  background: 0
+  position: 2
+  text: \n<9/22>在我们的请求之下，<br> \n[8] 终于愿意和玛里一起排练啦……嘿嘿……<br><br>虽然他们还需要磨合一下，但合奏听起来已经十分惊艳了！我就知道他们会表现得很出色。<br><br>加油！玛里！加油！\n[8]！\!你们一定没问题！
+
+#DREAM WORLD
+
+dreamworld_message1:
+  background: 0
+  position: 2
+  text: “玛里正在教大家如何编花冠！\!<br>OMORI 和凯正举着玛里做好的样品。\! 真漂亮……”
+
+dreamworld_message2:
+  background: 0
+  position: 2
+  text: “OMORI 和凯最后还是偷偷溜走了，但奥布里和我很快就掌握了制作方法！”
+
+dreamworld_message3:
+  background: 0
+  position: 2
+  text: “英雄还在试着编花冠。<br>\!虽然这费了他不少时间，但花冠总算是成形了。\!<br>这种坚持不懈的精神真让人敬佩。”
+
+dreamworld_message4:
+  background: 0
+  position: 2
+  text: “大家一起吃西瓜。\!美味多汁！\!<br>奥布里脸上沾了几粒西瓜籽。\!<br>或许有人该告诉她一声。”
+
+dreamworld_message5:
+  background: 0
+  position: 2
+  text: “凯正在喝他最喜欢的牛奶！<br>\!我还是别靠他太近了，不然我的相机可能就要遭殃啦。”
+
+dreamworld_message6:
+  background: 0
+  position: 2
+  text: “玛里和英雄给我们拍了张照。\!<br>大家一致认为花冠很适合我。”
+
+dreamworld_message7:
+  background: 0
+  position: 2
+  text: “英雄准备凑过去亲亲抱抱！<br>\!凯看上去很不耐烦。\!啊，兄弟情……”
+
+dreamworld_message8:
+  background: 0
+  position: 2
+  text: “我们今天一起去野餐了！\!<br>玛里想给大家拍一张照。\! 说，茄子！”
+
+dreamworld_message9:
+  background: 0
+  position: 2
+  text: “除了英雄和玛里，大家都在吃完东西后睡倒了。\!<br>我自己也有点困了。”
+
+dreamworld_message10:
+  background: 0
+  position: 2
+  text: “凯说这张照片只是个小小的意外，<br>我对此表示怀疑……”
+
+dreamworld_message11:
+  background: 0
+  position: 2
+  text: “大家的脚排成了一圈！\!<br>猜猜看这些脚分别是谁的？”
+
+dreamworld_message12:
+  background: 0
+  position: 2
+  text: ……
+
+#blackspace
+
+blackspace_message1:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message2:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message3:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message4:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message5:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message6:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message7:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message8:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message9:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message10:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message11:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message12:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message13:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message14:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message15:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message16:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message17:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message18:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message19:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message20:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message21:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message22:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message23:
+  background: 0
+  position: 2
+  text: ……
+
+blackspace_message24:
+  background: 0
+  position: 2
+  text: ……

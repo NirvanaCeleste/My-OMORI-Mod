@@ -1,0 +1,1110 @@
+#BLACK SPACE REVAMP GUIDE
+
+#--------------------------------------------------------------------------------------------
+
+#THE HOLE IN BASIL'S HOUSE:
+
+#The black letters cause the hole in BASIL's house to get bigger.
+
+#1 necessary Black letter- Map431
+#No BGM
+
+#6 Black letters - Map432, Map357
+#BGM: Duet
+#If you examine the hole:
+message_1:
+  text: 地板在塌陷。
+
+#All necessary Black letters - Map 434, Map 358
+#No BGM
+
+#--------------------------------------------------------------------------------------------
+
+#BEFORE SW STAGE HOLE:
+
+#As you attempt to leave the stage,
+#BASIL calls in for help.
+
+message_20:
+  text: \bas\fn<OMORI_GAME>\n[8]……
+
+#*OMORI looks up*
+
+message_21:
+  text: \bas\fn<OMORI_GAME>请不要……\|又丢下我……\|一个人……
+
+#*Camera pans to hole*
+#*Then back to party*
+
+message_22:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub发生什么事了，OMORI？\!有什么问题吗？
+
+#Examine Hole:
+message_23:
+  text: 深不见底……\|你要跳下去吗？
+
+
+#--------------------------------------------------------------------------------------------
+
+#BLACK SPACE
+
+#Gameplay:
+
+#In Black Space Entrance, there will be many black doors and no footprints.
+#Instead, going through any black door in Black Space Entrance will teleport the player to the same Required Room.
+
+#There are 6 Required Rooms before you enter the room with BASIL.
+#The player will be teleported to them chronologically from 1-6 each time they enter a black door. In the true route, the basil deaths will happen the same way.
+
+#Once the PLAYER enters a Required Room, the door back should disappear, forcing the Player to leave by coming in contact with a RED HAND or using STAB, which teleports OMORI back to the blanket in Black Space Entrance.
+
+#There should be one or more RED HANDS placed in each area.
+
+#Essentially, the PLAYER isn't required to go through the contents of the Required Rooms to progress the game if they STAB themselves as soon as they enter, which is fine.
+
+#Inside the required rooms will be hidden ways to discover other parts of Black Space (the parts we have previously created). I will create a guide on how to split up those areas and input them later.
+
+#--------------------------------------------------------------------------------------------
+
+#Black Space Entrance:
+
+#The lightbulb is missing. Flavor Text:
+message_40:
+  text: 一条裸露在外的电线。\!这里没有\c[4]灯泡\c[0]。
+
+#The laptop is smashed outside of the blanket. Flavor Text:
+message_41:
+  text: 缺少了部分钥匙。
+
+#Sketchbook shows scribbled out drawings, same way as White Space.
+
+#Laptop replaced with picnic basket. Flavor Text:
+message_42:
+  text: 一个野餐篮。\!你想要保存吗？
+#*Open up save menu
+
+#--------------------------------------------------------------------------------------------
+
+#Required Room 1: Empty Field
+
+
+
+#BGM: bs_drone.ogg
+
+#Ghostlike creatures wander in an empty field map. (Map265)
+
+#If you talk to one, they will say 1 of these messages in chronological order. After you've gone through all of the text, they will say “Pitter-patter” indefinitely.
+
+message_60:
+  text: \n<涂鸦>你迷路了吗？\!不用担心。\!<br>红手知道回去的道路。
+
+message_61:
+  text: \n<涂鸦>你在找某个人吗？\!或者找某个东西？
+
+message_62:
+  text: \n<涂鸦>以前就有人这么做过。\!<br>当时是你？\!还是我？\!还是那个花冠男孩？
+
+message_63:
+  text: \n<涂鸦>如果你迷路了，你会去哪里呢？\!<br>某个熟悉的地方。\!某个令人安心又充满了美好回忆的地方。\!<br>可惜你没有这样的地方可去。
+
+message_64:
+  text: \n<涂鸦>这里什么也没有。\!这里什么也没有剩下。
+
+message_65:
+  text: \n<涂鸦>噼里啪啦……\!噼里啪啦……
+
+#--------------------------------------------------------------------------------------------
+
+#Required Room 2: Subconscious Spill
+
+
+#BGM: bs_distance.ogg
+
+#Talk to LOQUACIOUS CAT
+
+message_90:
+  text: \n<贫嘴猫>嗨我是贫嘴猫你可以问我任何问题
+
+#Choices
+message_101:
+  text: 生命的意义为何？
+message_102:
+  text: 我们何以存在？
+message_103:
+  text: 真爱的意义为何？
+message_104:
+  text: 如何获得幸福？
+message_105:
+  text: 自由意志是否存在？
+message_106:
+  text: 死后会发生什么？
+message_107:
+  text: 麦片粥是粥吗？
+
+#Random Answer Pool:
+message_91:
+  text: \n<贫嘴猫>两码皮革
+message_92:
+  text: \n<贫嘴猫>一根粗缝衣针
+message_93:
+  text: \n<贫嘴猫>一个布制的番茄
+message_94:
+  text: \n<贫嘴猫>一把生锈的剪刀
+message_95:
+  text: \n<贫嘴猫>一张小木桌
+message_96:
+  text: \n<贫嘴猫>很多很多的大头针
+message_97:
+  text: \n<贫嘴猫>一对漂亮的大纽扣
+message_98:
+  text: \n<贫嘴猫>一大袋白棉花
+
+#Most things in this area should say:
+message_99:
+  text: 你离家很远。
+
+#Houses with small doorways:
+message_100:
+  text: 太小了。
+
+#--------------------------------------------------------------------------------------------
+
+#Required Room 3: Suspense Room
+
+#BGM: bs_fleur.ogg
+
+#Most Things:
+message_123:
+  text: 好痛苦……\|好痛苦……\|好痛苦……
+
+##--------------------------------------------------------------------------------------------
+
+#Required Room 4: Cat Dissection
+
+#BGM: bs_56_12_2.ogg
+
+#Player enters from the top door of an operating room with a cat on the table.
+
+#A spotlight goes on the table.
+
+#There's a cat butler that acts as the assistant. He doesn't have to change direction.
+
+#Talk to BUTLER:
+message_140:
+  text: \n<管家>喵乌最近非常、非常不听话。
+
+message_150:
+  text: \n<管家>正在等待什么事情的发生吗？
+
+message_151:
+  text: \n<管家>出去的道路……
+
+message_152:
+  text: \n<管家>总是存在的……\|只不过……
+
+#Examine Table:
+message_141:
+  text: 喵乌盯着你看。\!她不知道正在发生什么。
+
+message_142:
+  text: 你想切开喵乌吗？
+
+#[YES]
+
+message_143:
+  text: 喵乌盯着你看。\!她好奇地歪着头。
+#Do you want to cut open MEWO?
+
+#[YES]
+
+message_144:
+  text: 喵乌盯着你看。\!她的双眼睁大了。\!她现在想离开这里。
+#Do you want to cut open MEWO?
+
+#[YES]
+
+message_145:
+  text: 喵乌盯着你看。\!她挣扎着想挣脱。
+#Do you want to cut open MEWO?
+
+#[YES]
+
+message_146:
+  text: 喵乌盯着你看。\!她的双眼充满了绝望。
+#Do you want to cut open MEWO?
+
+#[YES]
+
+message_147:
+  text: 喵乌盯着你看。\!她试图喊叫，但是没有声音。
+#Do you want to cut open MEWO?
+
+
+#[YES]
+
+message_148:
+  text: 喵乌盯着你看。\!她不知道正在发生什么。
+#Do you want to cut open MEWO?
+
+#[YES]
+
+#*When MEWO is cut open, it makes a violin SFX.*
+message_149:
+  text: 你切开了喵乌。
+
+#--------------------------------------------------------------------------------------------
+
+#Required Room 5: Forest of Stumps
+
+
+#BGM: bs_glade.ogg
+
+#As the Player walks more to the right, the dialogue will pop up more often and become more intense, switching to the dialogue with more words.
+
+#Dialogue:
+message_170:
+  text: 骗子。
+
+#Dialogue:
+message_171:
+  text: 骗子。骗子。骗子。
+
+#Dialogue:
+message_172:
+  text: 骗子。骗子。骗子。骗子。骗子。骗子。骗子。骗子。骗子。骗子。骗子。骗子。
+#There should be Something enemies in this map as well.
+#In battle, they will also say: Liar. Liar. Liar.
+#When you enter a battle with Something, it does not change the BGM.
+
+#When Player reaches the end of the stump path, something is hovering over one of the stumps. It will say:
+
+message_173:
+  text: \n<某个东西>\n[8]……\|我爱你……
+
+#Then it will start following you and every 6 seconds it will repeat the message. It will disappear if you leave the map.
+
+message_174:
+  text: 你想要跳下去吗？
+
+
+#--------------------------------------------------------------------------------------------
+
+#Required Room 6: Temple
+
+
+
+#BGM: bs_orchard.ogg
+
+#It's snowing on this map.
+#There are few lil basil's on the path.
+
+#There's a flower crown. Flavor text:
+
+message_189:
+  text: 你想捡起\c[3]花冠\c[0]吗？
+
+message_190:
+  text: 一个\c[4]花冠\c[0]。\!冰天雪地将它保存得很好。
+
+message_191:
+  text: 你获得了\c[4]花冠\c[0]。
+
+#There's an abandoned church on top of the hill.
+#The back parallax should be either basil_something (maybe remina).
+
+#Enter the abandoned church to find Basil.
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - THE FIRST BASIL DEATH:
+
+
+
+#BGM: bs_temple.ogg
+
+#BASIL without flower crown is hanging where the crucifix is in the empty church.
+#There is a staircase leading up to him.
+
+#Camera pans to BASIL.
+
+message_192:
+  text: \basOMORI……\|你来了……
+
+#Camera pans to OMORI, giving PLAYER control.
+
+#Talk to BASIL
+message_194:
+  text: \bas\n[8]……\|为什么最后会变成这样？
+
+#*Something sucks in BASIL a little*
+
+#Talk to BASIL
+message_195:
+  text: \bas\n[8]……
+
+#*Something sucks in BASIL a little*
+
+#Talk to BASIL
+message_196:
+  text: \bas\n[8]……\|\n[8]……
+
+#*Something sucks in BASIL a little*
+
+#Talk to BASIL
+message_197:
+  text: \basOMORI……\|OMORI……\|OMORI……
+
+#*Something completely sucks in BASIL*
+
+#Examine BASIL's something:
+message_198:
+  text: 你想要跟随贝瑟尔吗？
+#[YES/NO]
+
+#[YES]
+
+#OMORI is sucked into BASIL's Something and is teleported to the dark Lamp Room.
+
+#BGM: event_bad_morning.ogg
+
+
+
+#Shadow BASIL is staring outside the window.
+
+#Camera pans to message Basil
+message_199:
+  faceset: MainCharacter_Basil
+  faceindex: 10
+  text: \bas有某个东西在外面。\|<br>它在呼唤我……\|也在呼唤你。
+
+#PLAYER regains control.
+
+#Talk to BASIL
+
+#BASIL turns to face PLAYER*
+message_200:
+  faceset: MainCharacter_Basil
+  faceindex: 10
+  text: \bas我们一起去吧。
+
+#BGM fades out.
+
+#BASIL opens the door.
+#As he opens the door, fear border surrounds the screen.
+
+#Black arms grab BASIL as he tries to escape.
+
+message_201:
+  text: \bas\com[2]\{\{\quake[1]OMORI！救命！！
+
+#He runs back and tries to claw his way out, but is unsuccessful and leaves scratch marks on the floor.
+#He is dragged out by the black hands.
+
+
+
+#The door shuts, then everything disappears.
+
+#PLAYER is in a completely black space that loops with nothing around.
+#BGS: boss_something_heartbeat.ogg
+
+#PLAYER must stab himself. (Heartbeat BGS stops)
+
+#--------------------------------------------------------------------------------------------
+#Note: After this point, once BASIL joins your party, STAB option should be blacked out.
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - WATERMELON BASIL DEATH:
+
+
+#BGM: bs_bloom.ogg
+
+#PLAYER ends up in Black Space Entrance.
+#He must go through another door, which will be a watermelon patch.
+#This map has a fixed camera (like the gate)
+
+#When entering proximity of BASIL without flower crown:
+message_220:
+  text: \basOMORI……你回来找我了！
+
+message_221:
+  text: \bas那是我的\c[4]花冠\c[0]吗？\!你找到了它，我好开心啊。
+
+message_222:
+  text: 你把贝瑟尔的\c[4]花冠\c[0]还给了他。
+
+message_223:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我们离开这里吧……\!我会跟着你的！
+
+message_224:
+  text: 贝瑟尔加入了你的小队。
+
+message_225:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas在这里种西瓜也挺有趣的啦，不过我真的好想念家里种的花……\!<br>它们还好吗？\!<br>我不在的时候，你有帮忙照料它们吗？哈哈……
+
+message_226:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas嗯，西瓜确实很好吃！
+
+message_227:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我们以前去海滩的时候就经常切西瓜来吃！\!<br>凯脸上沾满西瓜籽的那副光景都浮现在我眼前了呢，哈哈……
+
+message_228:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas和朋友们一起过暑假真的很开心呢。
+
+
+#The scenery slowly disappears and the map turns into the empty map with just watermelons.
+
+#One of the watermelons will break BASIL. While this happens, BGM immediately stops.
+#After this, a RED HAND will appear on the map.
+
+#After 6 seconds, BGS: boss_something_heartbeat.ogg will start looping until you use STAB.
+#STAB or use RED HAND to go back to BLACK SPACE Entrance.
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - SPIDER BASIL DEATH:
+
+
+#BGM: bs_5ths.ogg
+
+message_250:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas噢，你来了真是太好了，OMORI。\!<br>我还以为我永远都被困在这里了。
+
+message_251:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas呼……\!我现在感觉好多了。
+
+message_252:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas真不敢相信你来救我了。\!我好想念你呀！
+
+message_253:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas现在你来了，我终于可以回家啦。\!<br>带路吧，OMORI！
+
+#*Walk a bit
+
+message_254:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas你知道吗……\!我觉得蜘蛛其实被误解得很严重……\!<br>虽然他们看上去很吓人，其实他们并不会主动攻击人类。
+
+message_255:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 更何况，它们还是我做园艺时的最佳帮手呢！\!<br>蜘蛛会吃掉很多伤害植物的害虫，这一切都是大自然的平衡哦！
+
+message_256:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 我记得前一阵子……\!<br>你跟我说过，就在你准备跳进秘密基地的那个湖里时，<br>一只大蜘蛛竟然落在了你的肩膀上！
+
+message_257:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我知道你看到蜘蛛肯定会很害怕，但我敢说，蜘蛛看到你，比你还害怕一百倍呢！\!无意冒犯，无意冒犯……哈哈……
+
+#*Walk more
+
+message_258:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas怎么突然多了好多蜘蛛……\!<br>感觉它们在我身上爬来爬去的。\!<br>嗯，也许它们只是在打招呼？
+
+message_259:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas嗨，蜘蛛们！是我贝瑟尔，我是你们的朋友！
+
+#*Walk more
+
+message_260:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\com[2]呃！它们在咬我！
+
+message_261:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas啊……可能我吓到它们了。
+
+message_262:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas乖哦，乖哦。没事的！\!我不是来伤害你们的！
+
+#*Walk more
+
+message_263:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas越来越多蜘蛛了……我摆脱不掉它们了！
+
+#BASIL looks around.
+
+message_264:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas呃……
+
+#BASIL sprite goes into fetal position.
+
+message_265:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \basOMORI……
+
+#OMORI steps back.
+
+message_266:
+  faceset: MainCharacter_Basil
+  faceindex: 5
+  text: \basOMORI……\|求求你……\|救救我……
+
+#BASIL is eaten.
+
+#After 6 seconds, BGS: boss_something_heartbeat.ogg will start looping until you use STAB.
+#STAB or use RED HAND to go back to BLACK SPACE Entrance.
+
+message_267:
+  text: 一只死掉的蜘蛛。\!它因悲伤而离世。
+
+message_268:
+  text: 蜘蛛宝宝们为母亲的死亡感到悲痛万分。
+
+message_269:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas唔……\!OMORI？你是不是忘记了谁呀？
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - ELEVATOR BASIL DEATH:
+
+
+#BGM: bs_nawa.ogg
+
+message_290:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas啊……OMORI！真的是你吗？<br>\!你怎么找到我的？
+
+message_291:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas凯、奥布里还有英雄也来了吗？\!<br>我一直挂念着你们大家！
+
+message_292:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas这个树屋还在真是太好了。\!当时为了搭建它，大家努力了好久呢。
+
+message_293:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas……\!诶？\!<br>等等，我在说什么？
+
+message_294:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我们回家吧，OMORI。
+
+#*On the way down from the top point of the construction, an elevator comes up.
+
+message_295:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas电梯？\!会是通向哪里的呢？\!也许，它能直接带我们回家也说不定！
+
+#*Go into elevator.
+#*Rest is same as before. End up in same map you came from.
+
+#After 6 seconds, BGS: boss_something_heartbeat.ogg will start looping at 50% or so until you use STAB.
+#STAB or use RED HAND to go back to BLACK SPACE Entrance.
+
+message_296:
+  text: 一张不是很舒服的床。\!你想要上床睡觉吗？
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - RAFT BASIL DEATH:
+
+
+
+#BGM: bs_jungle_cruise.ogg
+
+message_320:
+  text: \basOMORI……\!喂……\!OMORI！\!我在这里！
+
+#BASIL comes out from the stump.
+
+message_321:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas嗒——哒！\!是不是吓了一跳？\!<br>我来到这里后就一直躲在这个树桩里。
+
+message_322:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas虽然我对战斗没有多少信心，不过只是求生的话，我还是很擅长的。
+
+message_323:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas总之……我就知道你会来救我的，OMORI！\!而且我相信，既然你来了，我们一定可以逃出这个地方。
+
+message_324:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas虽然这个地方可能有点危险，不过……我相信你。
+
+#*walk a bit before getting on raft*
+
+message_325:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas话、话说，OMORI……\!你今天好像有点冷淡。\!<br>是我做错了什么吗？
+
+#While walking, OMORI finds a raft.
+
+
+message_326:
+  text: 你想要乘坐木筏吗？
+#[YES/NO]
+
+#[YES]
+#Raft scene (same as before)
+
+#After screen turns black, PLAYER gets off raft at the same place he got on.
+#You can take the raft again with basil's body still on it, but nothing happens.
+
+#Heartbeat no longer plays.
+#STAB or use RED HAND to go back to BLACK SPACE Entrance.
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - FRIENDS BASIL DEATH:
+
+
+
+#BGM: bs_friend1.ogg
+
+message_350:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \basOMORI，你来啦！
+
+message_351:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas啊……松了一大口气。
+
+message_352:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas我一直试着想出去，可是……我却一直在迷路。
+
+message_353:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas抱歉……\!每次你都要这么来救我，你一定也累了。\!也许我应该更加努力才对。
+
+message_354:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas总之，既然你来了，一切都会没事的。\!<br>我们回家吧！
+
+#*Walk a bit
+
+message_355:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas这段时间里，我一直都在翻阅\c[4]相册\c[0]。毕竟只有它陪伴着我。
+
+message_356:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我感觉害怕的时候呀，我就会翻看我们那些快乐的回忆。\!多亏了这样，我才能坚持下去！
+
+message_357:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas虽然我感觉有些照片好像不见了，不过应该只是错觉吧……
+
+message_358:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 总之，奥布里、凯还有英雄他们还好吗？\!希望你们没有太担心我。\!<br>我已经等不及再见到大家啦！
+
+#*HERO comes
+
+message_359:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas英雄？\!是你吗？
+
+message_360:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \basOMORI！看，是英雄！\!<br>你怎么不告诉我大家都来了！
+
+message_361:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas快！我们追上他！
+
+#Beat-Up Scene (Same as before)
+message_362:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas凯！\!奥布里！\!见到你们大家真是太好了！
+
+message_363:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas大家的近况如何？\!有没有想我呀，嘿嘿……
+
+message_364:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas等、等等……\!你们……\!你们在做什么？
+
+message_365:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \basOMORI——
+
+#After beating up BASIL, you can still talk to the party members:
+
+message_366:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 13
+  text: \aub嗨 OMORI！我们正盼着你快点来呢。\!<br>想和我们一起打牌吗？\! <br>我们正好快要打完这一局了呢！
+
+message_367:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 50
+  text: \her\n[3]和\n[2]最近又经常在吵架了……\!<br>一般人会觉得怄气那么久也该累了吧，可谁让他们两个总有花不完的力气呢。
+
+message_368:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 34
+  text: \kel\SINV[1]哎～～～～呀……\sinv[0]\!<br>奥布里总是想要怎么样就能怎么样……
+
+#Heartbeat no longer plays.
+#STAB or use RED HAND to go back to BLACK SPACE Entrance.
+
+#--------------------------------------------------------------------------------------------
+
+#TRUE ROUTE - RED SPACE:
+
+#BGM: bs_listening.ogg
+
+#When you STAB or use RED HAND, you enter a map with the hands parallax.
+
+#At the end of the map is BASIL, who is being held by the RED HANDS.
+
+#There are drag marks on the floor (same one as from the lamp room).
+
+message_391:
+  text: \bas我……\|我很抱歉……\|你会原谅我吗？\|我最好的朋友……
+
+message_392:
+  text: \bas好疼啊，求求你了……\|<br>让它们放开我吧。
+
+#RED HANDS pull BASIL up.
+
+message_393:
+  text: \bas\com[2]等、等等！你要干什么？！
+
+message_394:
+  text: \bas快让它们停下来！
+
+#*BASIL struggles.
+
+message_395:
+  text: \bas\fn<OMORI_GAME>求求你了，快让它们停下来！
+
+message_396:
+  text: \bas\fn<OMORI_GAME>\{\com[2]\quake[1]求你了！！！
+
+#OMORI stabs BASIL (no PLAYER control)
+
+#BASIL falls to the floor. (Maybe BGM doesn't stop)
+
+#*OMORI steps over BASIL and walks up the staircase.
+
+#*The RED hands form the way up and OMORI takes his throne.
+
+#--------------------------------------------------------------------------------------------
+
+#NEUTRAL ROUTE - THE FIRST BASIL + SOMETHING CHASE:
+
+#After grabbing Basil, it will say:
+
+
+message_410:
+  text: 贝瑟尔加入了小队。
+
+#(During this time, switch the church map to an alternate longer map)
+
+#The camera pans up back to the Something shape.
+#Something shows its eyes and mouth and begins to chase OMORI and BASIL.
+
+#Start playing BGM: bs_loop5.ogg
+
+
+#At the bottom of the map is Player's Something, which blocks your way no matter where you go (like SNALEY). So you have no choice but to run into him.
+
+#PLAYER (not OMORI) is in a room with just SOMETHING in the spotlight.
+#PLAYER walks up to SOMETHING and examines it to start the fight.
+
+#During the Something fight, Player's skills are taken away one by one. Player is defeated by Something and is taken to the game over screen.
+#When on the game over screen, select “Retry” to come back as OMORI instead of PLAYER.
+
+#OMORI fights SOMETHING and defeats it.
+#Note: OMORI should learn a special skill that utilizes RED HANDS
+
+#When Something is defeated, OMORI wakes up.
+
+message_411:
+  text: \basOMORI！OMORI！\!快醒醒！
+
+message_412:
+  text: \bas天花板那里有光照进来！\|<br>你觉得会不会是出去的路呢？
+
+#RED HANDS come closer.
+message_413:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas……\!OMORI？
+
+message_414:
+  text: \bas……\|OMORI……\|你好重喔……
+
+message_415:
+  text: \bas来……\|我拉你上来……
+
+message_416:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas呼……太好了，你醒啦。
+
+message_417:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas你没受伤吧？\!我刚才试图把你拉到楼梯顶端的白光那里……
+
+message_418:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas那束温暖的光让我特别安心……\!<br>我们一起上去吧！
+
+#OMORI wakes up and looks up.
+
+#The RED HANDS form a staircase.
+
+#The staircase goes into a white light, then PLAYER and BASIL come out through a few different maps with different parallaxes (music changes every time), then lastly a space parallax. Should feel very magical.
+
+#At the end of the RED HANDS staircase in the space parallax map is NEIGHBOR'S BEDROOM map.
+
+#--------------------------------------------------------------------------------------------
+
+#SLEEPYTIME:
+#Map: Neighbor's Bedroom
+#Activation: Exit Black Space after saving Basil
+
+#BGM: playing_forever.ogg
+
+#In this map, there are 6 beds.
+#MARI, HERO, KEL, and AUBREY are already sleeping in theirs.
+
+#You look at the RED HANDS. The RED HANDS will leave, so there will no longer be a staircase down.
+
+#BASIL will look at you and then walk to his bed and go to sleep.
+
+#When you go to sleep, you wake up in FA.
+
+#*One day left... Slide shows*
+
+message_420:
+  text: \aub\sinv[1]……\|我们去冒险吧，OMORI……\|就……\|我们两个人哦……
+
+message_421:
+  text: \sinv[1]呼噜……\|呼噜……\|呼噜……\|呼噜……\kel
+
+message_422:
+  text: \kel\sinv[1]呼噜……\|哎呀，OMORI……\|再让我睡五分钟嘛……
+
+message_423:
+  text: \her\sinv[1]……\|谁想来个……\|大大的拥抱呀？
+
+message_424:
+  text: \bas\sinv[1]……\|我们该休息了，OMORI……\|我们的朋友们都在这里……
+
+message_425:
+  text: \mar\sinv[1]……\|我永远都会保护你的……\|弟弟……
+
+message_426:
+  text: 玛里的水果篮。\!永远装满了水果。
+
+message_427:
+  text: 一台搅拌机。
+
+message_428:
+  text: 给每个人的花。
+
+message_429:
+  text: 一盆植物。
+
+message_430:
+  text: 一台烤面包机。
+
+message_431:
+  text: 几顶派对帽。
+
+message_432:
+  text: 电视上放着一部电影。\!<br>四个女孩在音乐节上表演摇滚乐。
+
+#------------------------------------------------------------------------------------------
+
+#NEUTRAL ROUTE - DAYTIME HALLUCINATIONS
+#*Player wakes up & plays cleaning mini-game sorting boxes with Something watching over him all day*
+
+#There should be various spooks around the house that puts the player at unease.
+#Something's appear in the “black area” around the interior maps.
+
+#*After cleaning, player goes to sleep.
+
+#*Omori saves Player animation plays.
+
+#*Then slides: Welcome to White Space.
+#*You have been here for as long as you can remember.
+
+#*The laptop is still working like the first time you go there (before black letters)
+
+#*You can enter through the white door and go to Neighbor's Room.
+
+#--------------------------------------------------------------------------------------------
+
+#BASIL'S MEMORIES:
+
+#*After being caught by the spotlights, PLAYER has a falling animation before he arrives into Red Room.
+
+#*Make it mandatory to have the photos sorted in the book during basil's memories. Sorting album pops up every time you get a photo.
+
+#when you screw in the light bulb, have a slide of the lightbulb flickering, and then turning on (white_lightbulb[3x1].png)
+
+# --------------------------------------------------------------------------------------------
+
+#CROSSROADS:
+
+#*Make sure you can access FA album with [Q] and BS album with [W]
+
+#*Streetlights with memories should be timed so that they light up as PLAYER is running. PLAYER shouldn't have to walk back to “catch” the spotlight.
+
+
+# --------------------------------------------------------------------------------------------
+
+#message_500:
+#      text: \who\fn<OMORI_GAME>It's just not good enough.
+
+# message_501:
+#       text: \who\fn<OMORI_GAME>She just needs some rest.
+
+# message_502:
+#       text: \who\fn<OMORI_GAME>You shouldn't have looked.
+
+# message_503:
+#       text: \who\fn<OMORI_GAME>She just needs some rest.
+
+# message_504:
+#       text: \who\fn<OMORI_GAME>This isn't real.
+
+# message_505:
+#       text: \who\fn<OMORI_GAME>Can you tell us the truth?
+
+# message_506:
+#       text: \who\fn<OMORI_GAME>This isn't real.
+
+# message_507:
+#       text: \who\fn<OMORI_GAME>This is the only way.
+
+# --------------------------------------------------------------------------------------------
+#BLANK FACES
+
+message_500:
+  faceset: MainCharacter_Mari
+  faceindex: 35
+  text: \mar
+
+message_501:
+  faceset: MainCharacter_Mari
+  faceindex: 34
+  text: \her
+
+message_502:
+  faceset: MainCharacter_Mari
+  faceindex: 33
+  text: \kel
+
+message_503:
+  faceset: MainCharacter_Mari
+  faceindex: 32
+  text: \aub
+
+message_504:
+  faceset: MainCharacter_Mari
+  faceindex: 28
+  text: \bas
+
+message_505:
+  faceset: MainCharacter_Mari
+  faceindex: 29
+  text: \bas
+
+message_506:
+  faceset: MainCharacter_Mari
+  faceindex: 30
+  text: \mar
+
+message_507:
+  faceset: MainCharacter_Mari
+  faceindex: 31
+  text: \mar
+
+#----
+
+message_665:
+  text: \who你想睡觉还是想醒着？\!<br>只有两个选项。
+
+message_666:
+  text: \who当然……\!也有别的选项……\|只不过……
+
+#-----
+
+message_667:
+  text: \who离我远点……\|我没有你这个儿子……
+
+message_668:
+  text: \who为什么……\|为什么你还不倒下呢？
+
+message_670:
+  text: 这里没有\c[4]灯泡\c[0]。
+

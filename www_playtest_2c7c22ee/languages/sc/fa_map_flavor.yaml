@@ -1,0 +1,1840 @@
+#FARAWAY MAP FLAVOR TEXT
+#============================
+
+#PLAYER'S Street - Map 13
+#============================
+
+#For Sale Sign:
+message_1:
+  text: “房屋待售”标志牌，上面贴了很大一张写着“已出售”的红色贴纸。\!<br>你家的房子已经卖掉了。\!再过三天，你就会搬去其他地方。
+
+message_2:
+  text: “房屋待售”标志牌，上面贴了很大一张写着“已出售”的红色贴纸。\!<br>你家的房子已经卖掉了。\!再过两天，你就会搬去其他地方。
+
+message_3:
+  text: “房屋待售”标志牌，上面贴了很大一张写着“已出售”的红色贴纸。\!<br>你家的房子已经卖掉了。\!明天就要搬走了。\!……\!你会想念这里的。
+
+message_4:
+  text: “房屋待售”标志牌，上面贴了很大一张写着“已出售”的红色贴纸。\!<br>你家的房子已经卖掉了。\!你今天就要搬走了。
+
+#Mailbox:
+message_5:
+  text: 优雅的白色信箱。
+
+#Trash Cans:
+message_6:
+  text: 一排颜色各异的垃圾箱。\!黑色的用来装普通垃圾，蓝色的用来装可回收物，绿色的用来装可自然降解的垃圾。
+
+#Basketball Hoop:
+message_7:
+  text: 凯的篮球架。\!<br>就这么放在马路边，好像有点危险吧……
+
+#Street:
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 别走在马路中间呀，\n[8]！太危险了！\kel
+
+message_8:
+  text: 走在马路上是很危险的。
+
+#Dog House:
+message_9:
+  text: 赫克托尔的狗屋。\!<br>里面有点不透气，但赫克托尔还是很喜欢。
+
+#Flamingo:
+message_10:
+  text: 院子里摆放着塑料火烈鸟装饰。\!它们看起来很有精神。
+
+#Birdhouse:
+message_11:
+  text: 空空的鸟舍，里面全都是树枝和灰尘。
+
+#Statues:
+message_12:
+  text: 宗教人物的雕像。<br>\!……\!感觉它仿佛是在评判你。
+
+#Road Work:
+message_13:
+  text: 附近正在施工。\!<br>唉……\!有些事情永远都不会变。
+
+#Fire Hydrant:
+message_14:
+  text: 消防栓。
+
+message_15:
+  text: 不走人行横道太危险了。
+
+#============================
+
+message_16:
+  text: 盆栽。
+
+#PLAYER'S House - Map 14
+
+#Cardboard Boxes:
+message_20:
+  text: 房子里到处都堆放着纸箱。
+
+#House Plant:
+message_21:
+  text: 一小棵假盆栽。
+
+#House Plant:
+message_22:
+  text: 普通的盆栽植物。\!没什么特别的。
+
+#Bookcase - Dining Room:
+message_23:
+  text: 妈妈收藏的书。
+
+#Microwave:
+message_24:
+  text: 微波炉。
+
+#Refrigerator:
+message_25:
+  text: 冰箱。\!要打开吗？
+#[YES/NO]
+#[YES]
+message_26:
+  text: 空空如也。
+#NIGHT 1 ONLY
+message_27:
+  text: 里面有一块\c[4]牛排\c[0]。
+
+#Bathroom Cabinet:
+message_28:
+  text: 几条毛巾和一些洗浴用品。
+
+#Mirror:
+#(Show mirror slides - various)
+
+#Bathtub:
+message_29:
+  text: 浴缸。
+
+#NEUTRAL - NIGHT 2:
+message_30:
+  text: 你想洗个澡吗？
+
+#Bookcase - Player's Room:
+message_31:
+  text: 书柜已经清空了。
+
+#Computer:
+#First time, DAY 1+ -
+message_32:
+  text: 一台旧电脑。
+#[YES/NO]
+message_33:
+  text: 电脑上只有一个叫二十一点的游戏。\!<br>你想玩吗？
+#[YES/NO]
+#After -
+message_34:
+  text: 一台旧电脑。\!你想玩二十一点吗？
+
+#Phone:
+#NIGHT 1 - Voicemail
+#Other -
+message_35:
+  text: 妈妈让你把这台电话装在房间。\!<br>几乎没有用过。
+
+#Photos:
+message_37:
+  text: 几张家庭合影。
+
+#Pots and Pans:
+message_38:
+  text: 妈妈的锅具。\!<br>你已经记不清上次用它们做饭是什么时候了。
+
+#Bookcase - Piano Room:
+message_39:
+  text: 这里收藏了大量乐谱集。\!其中有很多甚至没有翻开过。
+
+#Piano:
+message_40:
+  text: 一架三角钢琴。\!<br>中间刻着“OMORI”这个词。
+
+#Toilet:
+message_41:
+  text: 马桶。
+#[YES/NO]
+#Screen fades out. Toilet flush SFX, then fades in.
+
+#Mom's Bed:
+message_43:
+  text: 妈妈的床。\!<br>床垫太硬了，很难让你睡得舒服。
+
+#Sketchbook:
+#[Same as WS, but opens up new book]
+
+#Fireplace:
+message_44:
+  text: 壁炉。\!有钉子卡在砖块之间。
+
+#Grandfather Clock:
+message_45:
+  text: 两台旧落地钟之一。\!很久之前就已经不走了，但妈妈还是留着它们。
+
+message_47:
+  text: 衣柜。
+
+message_48:
+  text: 一大堆书。
+
+message_49:
+  text: 马桶。
+
+message_108:
+  text: 一张非常、非常舒服的床。
+
+message_127:
+  text: 外面天气很好……\!但还是屋里更舒服。
+
+
+#============================
+
+#KEL's House - Map 15
+
+#Ofrenda / Photos:
+message_50:
+  text: 一大堆全家福照片。\!凯的亲戚可真不少……
+
+#Figures Bookcase:
+message_51:
+  text: 书柜里放满了可动人偶和玩具。\!<br>比你上次来这里时又多了几个新的。
+
+#Red/Green Houseplant:
+message_52:
+  text: 精心培育的盆栽。\!<br>它为房间增添了一抹美丽的色彩。
+
+#Books in Hallway Bookshelf:
+message_53:
+  text: 一大堆书。\!其中大部分都是关于钓鱼或高尔夫球的……
+
+#Books on Table in Hallway:
+message_54:
+  text: 桌上有一堆新书。\!<br>“美味烧烤指南”……\!“烧烤人生”……\!“鸡肉烹饪秘诀”……<br>嗯……\!看起来凯的爸爸有了新的爱好。
+
+#Coffee:
+message_55:
+  text: 没喝完的咖啡。
+
+#Family Photo:
+#*Family Photo Slide opens*
+message_56:
+  text: 凯和英雄的全家福照片。\!<br>好养眼的一家人……
+
+#Laundry:
+message_57:
+  text: 脏衣服。
+
+#Basketball:
+message_58:
+  text: 篮球。
+
+#Vanity:
+message_59:
+  text: 梳妆台。
+
+#Toilet:
+message_60:
+  text: 马桶。
+
+#Kel's TV:
+message_61:
+  text: 凯的游戏主机。\!<br>平时应该没少玩。
+
+#Trophies:
+message_62:
+  text: 英雄这一边到处都是奖章和奖杯。
+
+message_63:
+  text: “年度吃热狗大赛——第一名”。
+
+message_64:
+  text: “全国青少年烹饪大赛——第一名”。
+
+message_65:
+  text: “全国拼写比赛——第一名”。
+
+message_66:
+  text: “全国奥数竞赛——第一名”。
+
+message_67:
+  text: “全国辩论大赛——最佳进步奖”。
+
+#Kel's Participation
+message_68:
+  text: 凯只有一枚奖章……\!<br>“年度吃热狗大赛——参与奖”。
+
+#Alarm Clock:
+message_69:
+  text: 一个闹钟……专为有责任感的人服务。\!<br>它被调快了五分钟。
+
+#Hero's Desk:
+message_70:
+  text: 英雄的书桌。\!<br>非常整洁……连一点橡皮屑都没有！
+
+#Kel's Desk:
+message_71:
+  text: 凯的书桌。\!<br>这可不像是能安心学习的地方。
+
+#Kel's Bed:
+message_72:
+  text: 凯的床。\!总是乱糟糟的。
+
+#Kel's Wardrobe:
+#First time -
+message_73:
+  text: 凯的衣柜……\!<br>嘿，这里面有 $20.00！\!要拿走吗？
+#[YES/NO]
+#[YES]
+message_74:
+  text: 你从凯的衣柜里拿走了 $20.00。
+#[NO]
+message_75:
+  text: 你把 $20.00 留在了凯的衣柜里。
+#After taking $20 -
+message_76:
+  text: 凯的衣柜……\!失去 $20.00。
+
+#Grandfather clock:
+message_77:
+  text: 落地钟。
+
+#Sally's Cradle:
+message_78:
+  text: 萨丽的摇篮。\!上面还挂着会移动的小飞机。
+
+#Building Blocks:
+message_79:
+  text: 积木。\!<br>可能是凯或英雄小时候玩的。
+
+#Teddy Bear:
+message_80:
+  text: 毛绒玩具。\!<br>可能是凯或英雄小时候玩的。
+
+#Bible:
+message_81:
+  text: 一本圣书。
+
+#Bass:
+message_82:
+  text: 唱歌的鲈鱼……\!要打开吗？
+#YES/NO
+#BGM stops.
+#Sings fish song.
+#After complete, goes back.
+
+#Fireplace:
+message_83:
+  text: 凯和英雄家的壁炉。\!上面挂着不少奖章绶带。\!<br>真是多才多艺的一家人……
+
+#Food Bowl:
+message_84:
+  text: 赫克托尔的狗粮和水碗。\!上面全都是口水！
+
+#Broken Teddy Bear:
+message_85:
+  text: 毛绒玩具。\!可能是赫克托尔的……
+
+#Dog Bed:
+message_86:
+  text: 赫克托尔的狗窝。\!它现在好像已经睡不下了。
+
+#Kel's Fridge:
+message_87:
+  text: 凯的冰箱。\!<br>上面有很多花花绿绿的冰箱贴。\!<br>这家人可真欢乐……
+
+#Salt and Pepper:
+message_88:
+  text: 盐和胡椒罐。
+
+
+#Ball:
+message_89:
+  text: 赫克托尔最爱的玩具球。\!看它这么恶心就知道了。
+
+#Bamboo:
+message_90:
+  text: 竹子盆栽。\!<br>至少你是这么认为的……
+
+#TV Remote:
+message_91:
+  text: 电视遥控器。\!<br>最好别动它……这玩意儿很容易找不到。
+
+#Shoe Rack:
+message_92:
+  text: 鞋架。
+
+#Coat Rack:
+message_93:
+  text: 衣帽架。
+
+message_94:
+  text: 一个球。
+
+#Pots and Pans:
+message_95:
+  text: 厨房里到处都是锅碗瓢盆。
+
+message_96:
+  text: 一台烤面包机。
+
+message_97:
+  text: 英雄的床。\!非常完美……\!就像他本人一样。
+
+message_98:
+  text: 很不错的大电视。
+
+message_99:
+  text: 镜子。
+
+message_100:
+  text: 几棵盆栽。
+
+message_101:
+  text: 一盆漂亮的植物。
+
+message_102:
+  text: 精致的手提包。\!要打开看看吗？
+
+message_103:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel你翻我妈的包包干嘛啦，\n[8]？
+
+message_104:
+  text: 你找到了\c[5]防狼喷雾\c[0]。\!要拿走吗？
+
+message_105:
+  text: 你获得了\c[5]防狼喷雾\c[0]！
+
+message_106:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel哇！我妈居然会有\c[5]防狼喷雾\c[0]？\!要是我们碰到什么麻烦，说不定它能派上用场。\!这主意不错，\n[8]！
+
+message_107:
+  text: 精致的手提包。
+
+message_109:
+  text: 小蜘蛛，再见啦。
+#============================
+
+#Cris's House - Map 16
+
+#Newspaper and Magazines:
+message_110:
+  text: 报纸和杂志……\!这家伙还真会享受。
+
+#Beer cans:
+message_111:
+  text: 罐装“小麦汁”。
+
+#Empty cup:
+message_112:
+  text: 空杯子。\!闻起来还是有股茶香。
+
+#Coasters:
+message_113:
+  text: 一套大理石杯垫。\!看起来价值不菲……
+
+#Pie:
+message_114:
+  text: 白色的陶瓷茶具。\!看起来价值不菲……
+
+#Fireplace:
+message_115:
+  text: 壁炉。\!看起来经常使用。
+
+#Family Photo:
+message_116:
+  text: 很多家庭合影。这家人好像经常出去旅行。
+
+#Family Photo Yearly:
+message_117:
+  text: 一个女孩的照片，记录着她从小到大的时光。\!<br>在某个时候，她把头发染成了蓝色。\!<br>嘿！她好像和你一样大呢！
+
+#Boombox:
+#*Plays Rock Music*
+message_118:
+  text: 好吧，这可真没想到。
+
+#Vases:
+message_119:
+  text: 陶瓷花瓶。\!看起来很脆弱……也很昂贵……
+
+#Seashell:
+message_120:
+  text: 一个大海螺。\!如果把海螺放在耳边，就能听到大海的声音。
+
+#Bookcases:
+message_121:
+  text: 很多书和杂志。
+
+#Mermaid Tail:
+message_122:
+  text: 一条专门定做的鱼尾，可以穿在脚上。
+
+#Fish Bowl:
+message_123:
+  text: 一个大鱼缸。\!里面至少养了两条金鱼。\!<br>它们看起来很精神！
+
+message_124:
+  text: 中等大小的电视。
+
+message_125:
+  text: 冰箱。
+
+message_126:
+  text: 获过奖的馅饼。
+
+#============================
+
+#Maverick's House - Map 17
+
+#Wine Glass:
+message_140:
+  text: 装着红色果汁的杯子。\!闻起来有点像葡萄汁。
+
+#Bookshelf:
+message_141:
+  text: 很多又大又沉的书。\!<br>大部分封面上都写着你看不懂的语言。
+
+#Bread:
+message_142:
+  text: 剩在托盘上的陈面包。
+
+#Bread Kitchen:
+message_143:
+  text: 剩在架子上的陈面包。
+
+#Altar:
+message_144:
+  text: 陌生人的照片。
+
+#Bible in living room:
+message_145:
+  text: 一本圣书。\!几乎每一页上都贴着标签。
+
+#Wigs:
+message_146:
+  text: 桌子上放着一排假发。\!<br>其中黄色的那顶不见了……
+
+#Mirror:
+message_147:
+  text: 一把宽齿梳放在镜子前面。\!<br>镜子上贴满了便签。<br><br>“把肩膀再向后拱起十五度”……\!<br>“摆造型时记得每根手指都要弯曲”……\!<br>“只有受到挑衅时才露出一只眼睛”……<br>……\!呕……
+
+#Game Console:
+message_148:
+  text: 全新的游戏主机。\!<br>看起来闪闪发亮！
+
+#Cactus:
+message_149:
+  text: 仙人掌。\!坚韧不拔的植物。
+
+#Scale:
+message_150:
+  text: 体重秤。\!<br>你已经记不得上次称体重是什么时候了。
+
+#Twin Desks:
+message_151:
+  text: 这张桌子布置的与另一边完全对称。
+
+#Bed:
+message_152:
+  text: 床上的皱褶与另一边完全对称。
+
+#Bookshelf:
+message_153:
+  text: 房间里只有书架不是完全对称的。
+
+#Left Trophy:
+message_154:
+  text: “全国烘焙锦标赛——第一名”
+
+#Right Trophy:
+message_155:
+  text: 这个奖杯是仿制的，只是为了与房间另一边保持对称。
+
+#Fireplace:
+message_156:
+  text: 壁炉。\!看起来偶尔会用一下。
+
+#Maverick's Room Chair:
+message_157:
+  text: 滚轮椅的位置很奇怪。\!<br>看起来好像被人浮夸地推开了。
+
+#============================
+
+#Other Street - Map 22
+
+#Bonsai Tree:
+message_170:
+  text: 盆景树。
+
+#Street Lamp:
+message_171:
+  text: 路灯。
+
+#============================
+
+#Brent's House - Map 23
+
+#Books:
+message_180:
+  text: 屋子里放满了各种学科的书。\!大部分书里都夹着书签或便签纸。
+
+#Red Chair Desk:
+message_181:
+  text: 桌子上放着一叠纸。\!看起来有人正在批改试卷……<br>\!哎呀……\!这些学生要倒霉喽。
+
+#Blue Chair Desk:
+message_182:
+  text: 桌子上放着一叠纸。\!上面写着很多你看不懂的大字……还有一堆乱七八糟的笔迹。
+
+#Slow Cooker:
+message_183:
+  text: 市面上最新款的电炖锅。\!<br>最适合忙碌的妈妈或偷懒的妈妈……<br>至少你之前听到广告里是这么说的。
+
+#Mantle:
+message_184:
+  text: 壁炉上放着一些家庭合影。\!照片看起来落了一层灰。
+
+#Wall Art:
+message_185:
+  text: 植物图案的墙绘。\!比真正的植物省事多了。
+
+#Microwave:
+message_186:
+  text: 微波炉。
+
+#Phone:
+message_187:
+  text: 固定电话。
+
+#Newspaper:
+message_188:
+  text: 报纸。
+
+#Brent's Cabinet:
+message_189:
+  text: 嗯……\!<br>教科书中间还藏了些漫画。
+
+#Brent's Coffee Table:
+message_190:
+  text: 桌上有一本摊开的书。<br><br><br>“现在，我们来简单说一说如何将初始和最终平面波状态之间的摄动理论矩阵元素用于束缚态问题。显然，我们不能直接应用摄动理论来计算束缚态能量。但我们可以先粗略求出束缚态能量，只需要解决……”<br>……\!你把书放了回去。
+
+#Library reading nook book:
+message_191:
+  text: 屋子里放满了各种学科的书。\!<br>这本介绍了一种叫做“纳米材料”的玩意儿。
+
+
+
+#Bonsai Tree:
+message_192:
+  text: 盆景树。\!这一棵长得很有个性。
+
+message_193:
+  text: 屋子里放满了各种学科的书。\!<br>这本介绍了一种叫做“有机化学”的玩意儿。
+
+message_194:
+  text: “终生科学成就奖”。
+
+message_195:
+  text: 一台小电视。
+
+message_196:
+  text: 电脑桌。
+
+message_197:
+  text: 屋子里放满了各种学科的书。\!<br>这本介绍了一种叫做“数理科学”的玩意儿。
+
+message_198:
+  text: 桌上有一本摊开的书。<br><br><br>“需要定期修剪盆栽，使其保持在特定形状。”<br><br><br>“盆栽的生长速度各不相同，因此必须评估每棵盆栽的生长速度，对修剪频率进行相应调整。”
+
+message_199:
+  text: 一个大碗。
+
+#Kim's House - Map 24
+
+#Potted Plant:
+message_210:
+  text: 一盆植物。
+
+#Work Desk:
+message_211:
+  text: 办公桌。\!某人的记事簿正摊开在桌上……<br>\!上周的日程中写着“金”和“万斯”的名字。
+
+#Yoga Mat:
+message_212:
+  text: 瑜伽垫。\!瑜伽可以使身体与心灵间的连接更加紧密，这对你有好处……\!至少妈妈这么说过。
+
+#TV:
+message_213:
+  text: 电视柜里放了很多有关瑜伽的 DVD。
+
+#============================
+
+#Joy's House - Map 25
+
+#Magazines:
+message_230:
+  text: 一大堆杂志，上面都是你看不懂的语言。
+
+#Books:
+message_231:
+  text: 很多书籍，上面都是你看不懂的语言。
+
+#Offering:
+message_232:
+  text: 非常完美的水果。
+
+#Sauce:
+message_233:
+  text: 装着调料和醋的瓶瓶罐罐。
+
+#TV:
+message_234:
+  text: 桌面电视。
+
+#Guitar:
+#*Guitar SFX*
+
+#Hat:
+message_235:
+  text: 床上放着一顶旧帽子。
+
+#Books:
+message_236:
+  text: 一大堆教科书。
+
+#Work Desk:
+message_237:
+  text: 办公桌。
+
+message_238:
+  text: 花瓶。\!里面积了很多灰尘。
+
+message_239:
+  text: 你掀开了锅盖。\!<br>……\!嗯……\!闻起来像是饺子。
+
+message_240:
+  text: 一套木质杯垫。
+
+message_241:
+  text: 电饭煲。
+
+message_242:
+  text: 这本书由你看不懂的语言写成。
+
+message_243:
+  text: 谱架。
+
+message_244:
+  text: 办公桌。\!上面脏兮兮的。
+
+message_245:
+  text: 吉他。
+
+#============================
+
+#Charlie's House - Map 26
+
+#Wheelchair:
+message_250:
+  text: 轮椅。
+
+#Magazines:
+message_251:
+  text: 报刊和杂志。\!似乎已经积攒了很长时间。
+
+#Mail:
+message_252:
+  text: 许多写着“致 妈妈”的信件。\!<br>寄件人的地址遍布全国各地。
+
+#Trash Can:
+message_253:
+  text: 里面都是包装纸。
+
+#Cigarette:
+message_254:
+  text: 烟灰缸。
+
+#Trash:
+message_255:
+  text: 垃圾扔得遍地都是。\!<br>呕……\!这里好像有什么食物变质了。
+
+#Figures:
+message_256:
+  text: 许多小玩偶，居然保存得还不错。
+
+#Bookshelf:
+message_257:
+  text: 很多书。\!<br>最下面一层全都是学校年鉴。
+
+#Awards:
+message_258:
+  text: 墙上挂着一排证书和奖状。\!<br>最早的那张已经是二十年前颁发的了。
+
+#Washing Machine:
+message_259:
+  text: 洗衣机和烘干机。
+
+#Bathtub:
+message_260:
+  text: 浴缸，旁边还装着奇怪的设备。
+
+#Wheelchair:
+message_261:
+  text: 在楼上用的轮椅。
+
+#Love Letter:
+message_262:
+  text: 桌上有封情书。\!<br>嗯……\!是给谁的呢？
+
+#Tea Party:
+message_263:
+  text: 两个人的茶话会。
+
+#Flowers:
+message_264:
+  text: 窗沿上种着一排漂亮的紫色花朵。
+
+#Bookcase:
+message_265:
+  text: 很多书籍、漫画和杂志。
+
+message_266:
+  text: 几个汽水罐。
+
+message_267:
+  text: 一个人的桌子。\!看来这家有人喜欢单独用餐。
+
+message_268:
+  text: 奇怪的漫画。
+
+message_269:
+  text: 报纸上写着字。\!<br>“妈，你看！我上报纸啦！”
+#============================
+
+#Aubrey's Street - Map 31
+
+#Picnic Table:
+message_280:
+  text: 全新的野餐桌。
+
+#Flamingo:
+message_281:
+  text: 院子里放着一只塑料火烈鸟作为装饰。\!<br>它看起来很满足。
+
+#Pink Pinwheel:
+message_282:
+  text: 纸风车。
+
+#Traffic Signs:
+message_283:
+  text: 许多交通标志牌和路锥散落在院子里。
+
+#White Car:
+message_284:
+  text: 一辆白色的中型车。
+
+#Red Truck:
+message_285:
+  text: 一辆旧的红色皮卡车。\!<br>看起来已经远超正常使用寿命了。
+
+#Trash Can:
+message_286:
+  text: 黑色垃圾桶。
+
+message_287:
+  text: 经典的白色信箱。
+
+message_288:
+  text: 前院里堆放着许多汽车部件。
+
+
+#============================
+
+#Vance's House - Map 32
+
+#Junk Food:
+message_300:
+  text: 吃剩的套餐。\!看起来已经发霉了。
+
+#TV:
+message_301:
+  text: 又破又旧的电视。
+
+#Dishes:
+message_302:
+  text: 脏盘子。
+
+#Cup:
+message_303:
+  text: 装着脏水的杯子。
+
+#Bucket:
+message_304:
+  text: 装着脏水的桶。
+
+#Tools:
+message_305:
+  text: 许多工具。
+
+#Mop:
+message_306:
+  text: 湿拖把。
+
+#Bed:
+message_307:
+  text: 床很柔软。
+
+#Magazines:
+message_308:
+  text: 一大堆关于恐龙的书和漫画。
+
+#Vance Desk:
+message_309:
+  text: 乱糟糟的桌子，放满了集换式卡片和\c[3]糖果\c[0]。
+
+#Bathroom:
+message_310:
+  text: 卫生间的状态看起来不太好……
+
+#Trash:
+message_311:
+  text: 一大包垃圾。
+
+message_312:
+  text: 你掀开了锅盖。\!<br>……\!\sinv[1]嗯……闻起来像是芝士通心粉。
+
+#============================
+
+#Shaun and Karen's House - Map 33
+
+#Bookshelf:
+message_320:
+  text: 书架是空的。
+
+#Wallpaper:
+message_321:
+  text: 墙纸还没有贴完。
+
+
+#============================
+
+#Sarah's House - Map 34
+
+#Coupons:
+message_330:
+  text: 一大堆优惠券。<br>这家肯定有人喜欢精打细算！
+
+#Strawberries:
+message_331:
+  text: 一碗健康的草莓。
+
+#Fridge:
+message_332:
+  text: “健康饮食！”\!“拒绝垃圾食品！”\!真没劲。
+
+#Trash:
+message_333:
+  text: 垃圾桶。\!<br>仔细观察后，你发现有一盒包装完好的甜甜圈被扔掉了。
+
+#Room Memo:
+message_334:
+  text: 一叠纸。\!<br>有人花了很多心思来设计三人份的健康养生计划。
+
+message_335:
+  text: 鸟笼。\!里面有只漂亮的蓝色小鸟。\!<br>它看起来很健康！\!……\!但有点躁动不安。
+
+message_336:
+  text: 过期的优惠券……
+
+message_337:
+  text: 猫咪紧紧盯着鸟笼。
+
+message_338:
+  text: 桌上有一本摊开的书。<br><br><br>“他慢慢把手抬起，温柔地抚摸着他的脸……\!<br>他们四目相对，那一瞬间，两人眼中燃起了同样炽热的激情。”\!<br>……\!噢。\!也许你不该看这个。
+
+message_339:
+  text: 没吃完的薯片。
+
+message_348:
+  text: 饲料碗和水碗。
+
+message_349:
+  text: 马桶。\!以及更多的优惠券……
+
+
+#============================
+
+#Aubrey's House - Map 35
+
+#Trash:
+message_340:
+  text: 地上到处都是垃圾。
+
+#Magazines:
+message_341:
+  text: 一堆旧杂志和漫画书。
+
+#Cardboard Box:
+message_342:
+  text: 纸箱。
+
+#Bunny:
+message_343:
+  text: “小兔纸”
+
+#Side Table:
+message_344:
+  text: 墙上的洞用床头柜遮住了。
+
+#TV:
+message_345:
+  text: 坏掉的电视。
+#*Turns on*
+message_346:
+  text: 呃……\!看起来还能用。
+
+#Bucket:
+message_347:
+  text: 水桶。\!下雨天会用得上。
+
+
+message_356:
+  text: 奥布里的床……
+
+message_354:
+  text: 空荡荡的软木板。\!<br>以前，奥布里会把玛里的照片放在上面……
+
+
+message_355:
+  text: 奥布里和金的合照。
+
+#============================
+
+#Church - Map 41:
+
+#Piano:
+message_350:
+  text: 三角钢琴。
+
+message_351:
+  text: 优雅的植物。
+
+message_352:
+  text: 讲台。
+
+message_353:
+  text: 祭祀台。
+
+#============================
+
+#Cemetary - Map 42:
+
+#Flowers:
+message_360:
+  text: 鲜花。
+
+#Bread:
+message_361:
+  text: 面包。
+
+#headstone:
+message_362:
+  text: 一株白鹭兰。\!<br>在花语中，它象征着……<br>“我的思念将追随你进入梦乡。”
+
+message_363:
+  text: 拼图。
+
+message_364:
+  text: 泰迪熊。
+
+#Cemetery Statue:
+
+message_365:
+  text: \c[11]遥远镇\c[0]的标志物。\!<br>它应该代表着通往美好生活的大门。<br><br>你记得小学的时候好像学过，但现在已经记不清那些细节了。
+
+message_366:
+  text: “我们最亲爱的玛里”\!<br>“当她在人间，阳光都更加耀眼。”
+
+message_367:
+  text: 这座墓前需要放些\c[4]鲜花\c[0]。
+
+message_368:
+  text: 你想把\c[4]鲜花\c[0]放在墓前吗？
+#Yes/No
+#Yes (Screen goes black. Player and and followers are 1 step back. There are flowers at MARI's gtave.)
+
+message_369:
+  text: 墓碑。
+
+message_359:
+  text: 你从石像上跳到湖里已经是很久前的事了。\!连着几个礼拜，你都觉得有水进到了脑袋里……\!即使是现在，有时也会有这种感觉。
+
+
+#============================
+
+#Basil's Street - Map 45:
+
+#Pail and Shovel:
+message_370:
+  text: 桶和铲子。
+
+#Yoyo:
+message_371:
+  text: 溜溜球。
+
+#Toy Cars:
+message_372:
+  text: 一堆玩具小车。
+
+#Pick-Up Truck:
+message_373:
+  text: 一辆蓝色皮卡车。
+
+#Paint Buckets:
+message_374:
+  text: 油漆桶。
+
+#Lucas House:
+message_375:
+  text: 狗屋。
+
+#Fertilizer:
+message_376:
+  text: 肥料……\!噫！
+
+#============================
+
+#Basil's House - Map 46:
+
+#Bookcase - Basil's Room:
+message_390:
+  text: 很多书。\!<br>大部分都是关于园艺及室内植物养护的。
+
+#Family Photos in Hallway:
+message_391:
+  text: 贝瑟尔和家人的照片。\!<br>你之前从未见过他们。
+
+#Camera:
+message_392:
+  text: 贝瑟尔的相机。\!上面积了很多灰尘。
+
+#Watering Pail:
+message_393:
+  text: 洒水壶。
+
+#Wheelchair:
+message_394:
+  text: 轮椅。
+
+message_398:
+  text: 空荡荡的床。
+
+message_396:
+  text: 贝瑟尔的奶奶平稳地呼吸着。
+
+message_397:
+  text: 看起来很舒服的床。
+
+#============================
+
+#Jesse's House - Map 47:
+
+#Game Boy:
+message_410:
+  text: 掌上游戏机。
+
+#Arcade Machine:
+message_411:
+  text: 一台街机。\!看起来已经不能用了。
+
+#CPU:
+message_412:
+  text: 发光的电脑主机。\!很有未来感！
+
+#Phonograph:
+message_413:
+  text: 可以播放磁带的留声机。\!<br>真有创意！
+
+#Walkman:
+message_414:
+  text: 最新款的随身听。\!太潮了！
+
+#Table Book:
+message_395:
+  text: 桌上有一本摊开的电话簿。\!<br>这个人似乎在找一些奇怪的工作。
+
+#Game:
+message_415:
+  text: 全新的游戏卡带。
+
+#============================
+
+#Bebe's House - Map 48:
+
+#Drinks:
+message_430:
+  text: 桌上有几瓶饮料。\!<br>看起来主要是用作装饰的。
+
+#Coffee Machine:
+message_431:
+  text: 咖啡机。\!<br>你想来一杯\c[5]咖啡\c[0]吗？
+#[YES/NO]
+#[YES]
+#*Coffee-making noise*
+message_432:
+  text: 你获得了\c[5]咖啡\c[0]！
+
+#Recycle Trash Can:
+message_433:
+  text: 用来放可回收物的垃圾桶。
+
+message_434:
+  text: 很多书和杂志。\!<br>大部分是关于室内设计和美容秘诀的。
+
+message_435:
+  text: 纸箱。
+
+message_436:
+  text: 可回收的瓶子。
+
+#============================
+
+#Artist's House - Map 49:
+
+#Food Bowl:
+message_440:
+  text: 卢卡斯的狗粮和水碗。\!上面全都是口水！
+
+#Broken Teddy Bear:
+message_441:
+  text: 毛绒玩具。\!被咬得破破烂烂……
+
+#Dog Bed:
+message_442:
+  text: 卢卡斯的狗窝。\!它现在好像已经睡不下了。
+
+#Ball:
+message_443:
+  text: 卢卡斯的玩具球。\!<br>看起来它不怎么玩球。
+
+#Canvas:
+message_444:
+  text: 未完成的画。
+
+#Paint:
+message_445:
+  text: 廉价的颜料。
+
+#Corner paint:
+message_446:
+  text: 墙纸都被蹭掉了一点。\!<br>看来有谁经常呆在这个角落……
+
+#Trading cards:
+message_447:
+  text: 桌上有一些闪亮的集换式卡牌。
+
+#Trading cards on floor:
+message_448:
+  text: 集换式卡牌散落在地上。
+
+#Puzzle:
+message_449:
+  text: 未完成的拼图。
+
+#Figure Case:
+message_450:
+  text: 很多小人偶。
+
+
+message_451:
+  text: 许多画册。
+
+message_452:
+  text: A
+
+#============================
+
+#Plaza - Map 55:
+
+#Fountain:
+message_460:
+  text: 一座喷泉。\!你看见有\c[4]硬币\c[0]沉在水底。
+
+#Mailbox:
+message_461:
+  text: 只是个普通的信箱。
+
+#Fruit Cart:
+message_462:
+  text: 水果车。\!里面几乎都是橙子。
+
+#============================
+
+#OTHERMART - Map 56:
+
+#Grapes:
+message_470:
+  text: 葡萄。
+
+#Lemons:
+message_471:
+  text: 澄子。\!就是黄色的橙子。
+
+#Oranges:
+message_472:
+  text: 橙子。
+
+#Apples:
+message_473:
+  text: 苹果。
+
+#Green Apples:
+message_474:
+  text: 苹果，不过是绿色的。
+
+#Veggies:
+message_475:
+  text: 蔬菜。
+
+#Bananas:
+message_476:
+  text: 香蕉……\!还有点生。
+
+#Soda:
+message_477:
+  text: 汽水。
+
+#Bottled Soda:
+message_478:
+  text: 更贵的汽水。
+
+#Shopping Cart:
+#*makes shopping cart noise*
+
+#Ice:
+message_479:
+  text: 冰。\!很冷。
+
+#Frozen Foods and Drinks:
+message_480:
+  text: 冷冻的食品和饮料。\!品种繁多。
+
+#Packaged foods and spices:
+message_481:
+  text: 包装食品和调味料。
+
+#Cereal and Cooking Ingredients:
+message_482:
+  text: 谷物和食材。
+
+#Meats:
+message_483:
+  text: 生肉。
+
+#Seafoods:
+message_484:
+  text: 生鱼。\!闻起来很腥……
+
+#Frozen Pizza:
+message_485:
+  text: 冷鲜肉。
+
+#Scale:
+message_486:
+  text: 食物秤。
+
+#Small Pastries:
+message_487:
+  text: 小糕点……\!闻起来甜甜的。
+
+#Bread:
+message_488:
+  text: 面包。\!暖烘烘的面包香气。
+
+#Pie:
+message_489:
+  text: 馅饼。
+
+message_490:
+  text: 收银机。
+
+message_491:
+  text: “周日闭店”
+
+message_592:
+  text: “遥远墓园”
+
+message_593:
+  text: “异家超市药店”
+
+message_594:
+  text: “唐果小姐的糖果店”
+#============================
+
+#Gino's Pizza - Map 57:
+
+#Table:
+message_500:
+  text: 这里的桌子全都黏糊糊的。
+
+#Barrel:
+message_501:
+  text: 木桶。
+
+#Sign:
+message_502:
+  text: “请自行落座”
+
+#Frozen Drinks:
+message_503:
+  text: 冰镇的汽水饮料。
+
+message_504:
+  text: 啊……\!披萨……
+
+
+#Arcade Machine:
+#Plays SPROUT MOLE EATER
+
+
+#============================
+
+#Hobbeez - Map 58:
+
+#DVDs:
+message_510:
+  text: 满满一柜子 DVD 光盘。
+
+#Comics:
+message_511:
+  text: 满满一柜子漫画书。
+
+#Gachapon:
+message_512:
+  text: 扭蛋机。\!<br>想试试手气吗？\!只要 $1.00……\$
+
+#Arcade:
+#Plays SBF mini-game
+
+#Books:
+message_513:
+  text: 一大堆旧杂志和童书。
+
+#Poster:
+message_514:
+  text: 新游戏的海报，你可以在游戏中周游不同的世界。\!没什么特别的。
+
+#Cards:
+message_515:
+  text: 游戏卡都散落在桌上。
+
+#Checkers Board:
+message_516:
+  text: 棋盘。
+
+message_517:
+  text: 小糖果。
+
+message_518:
+  text: 广告。
+
+message_519:
+  text: 自动售货机。
+
+message_520:
+  text: 太空男孩船长的人形立牌。
+
+message_521:
+  text: 电视上连着一台老式游戏主机。
+
+#Poster:
+message_522:
+  text: 新游戏的海报，你可以在其中游历四方，与邪恶的怪兽战斗……\!而且是在滑板上战斗。
+
+#============================
+
+#Fixit - Map 59:
+
+#Safe:
+message_530:
+  text: 保险箱和钥匙。
+
+#Manual:
+message_531:
+  text: 桌上有一本摊开的书。\!<br>好像是一本指南，教人如何……一夜……暴富？<br>\!……\!\Com[2]哈，有人上班偷看闲书！
+
+#Paint:
+message_532:
+  text: 油漆。
+
+#Wallpaper:
+message_533:
+  text: 墙纸样板。
+
+#Tiles:
+message_534:
+  text: 地砖和墙砖。
+
+#Lamps:
+message_535:
+  text: 灯具。
+
+#Colors:
+message_536:
+  text: 色卡。
+
+#Cement:
+message_537:
+  text: 水泥。
+
+#Nails and Nuts and Bolts:
+message_538:
+  text: 钉子，螺母和螺栓。
+
+#Toolboxes:
+message_539:
+  text: 各类工具。
+
+#Furniture Misc:
+message_540:
+  text: 各式各样的五金器具。
+
+message_541:
+  text: “内有监控，请您微笑！”
+
+#============================
+
+#Garden Fixit - Map 60:
+
+#Fancy Flower Arrangement:
+message_550:
+  text: 精心设计的插花。\!<br>效果稍微有点浮夸。
+
+message_551:
+  text: 园艺工具。
+
+message_552:
+  text: 独轮推车之类的玩意儿。
+
+#============================
+
+#Candy Store - Map 61:
+
+#Giant Lollipop:
+message_560:
+  text: 超大的棒棒糖。\!感觉有点夸张。
+
+#Candy:
+message_561:
+  text: 这么……\!多……\!\c[3]糖果\c[0]……
+
+#Cardboard Cutout:
+message_562:
+  text: 店主的人形立牌。\!感觉有点夸张。
+
+message_563:
+  text: “哇哦！！甜甜的口香糖球！！”
+
+message_564:
+  text: “超有嚼头的太妃糖！”
+
+message_565:
+  text: “酸味软糖，妙不可言！！”
+
+#============================
+
+#Pharmacy - Map 62:
+
+#Medicine:
+message_570:
+  text: 各种各样的药品。
+
+#Consultation Sign:
+message_571:
+  text: “看诊（免费）”
+
+#Medication Sign:
+message_572:
+  text: “药品（收费）”
+
+
+#============================
+
+#Park - Map 63:
+
+#Basketball Hoop:
+message_580:
+  text: 篮球框。
+
+#Picnic Table:
+message_581:
+  text: 野餐桌。
+
+#Slide:
+message_582:
+  text: 滑滑梯。\!有股铁锈味。
+
+#Jungle Gym:
+message_583:
+  text: 攀爬架。\!有股铁锈味。
+
+#Swings:
+message_584:
+  text: 秋千架。\!有股铁锈味。
+
+#Tetherball:
+message_585:
+  text: 绳球杆。\!有股铁锈味。
+
+#Cat:
+message_586:
+  text: 铁皮大猫猫。\!<br>在你的印象中，它似乎要更大一些。
+
+#Fruit Cart:
+message_587:
+  text: 水果车。\!里面几乎都是苹果。
+
+message_588:
+  text: “遥远公园”<br>\!“未来属于造梦者！”
+
+#============================
+
+#Secret Lake
+
+#Pinwheel Assortment:
+message_600:
+  text: 一片纸风车在风中自由地转动。
+
+message_601:
+  text: 野餐篮。
+
+#============================
+
+#Player's Backyard
+
+#Stump:
+message_610:
+  text: 树桩。
+
+#Stump 2 (After AUBREY changes it):
+message_611:
+  text: 有一只风车在树桩上。
+
+message_612:
+  text: 奥布里的垃圾箱。
+
+#============================
+
+#Treehouse
+
+#Calendar:
+message_620:
+  text: 一本旧日历。\!日期仍然停留在四年前的那个夏天。
+
+#TV:
+message_621:
+  text: 旧电视。
+
+#Stuffed Toy:
+message_623:
+  text: 填充玩偶，是个粉色头发的女孩。
+
+#Bat:
+message_624:
+  text: 棒球棍。
+
+#Plantegg:
+message_625:
+  text: 奥布里的填充玩偶。
+
+#Playing Cards:
+message_626:
+  text: 纸牌。
+
+
+#============================
+
+#Houses Misc.
+
+#Bed:
+message_640:
+  text: 这张床稍微有一点硬，但总体来说还算不错。\!<br>满分 10 分的话，可以打 7 分。
+
+#Bed:
+message_641:
+  text: 这张床稍微有一点软，但总体来说还算不错。\!<br>满分 10 分的话，可以打 7 分。
+
+#Bed:
+message_642:
+  text: 这张床软硬适中，但床单似乎不太舒服。\!<br>满分 10 分的话，可以打 6 分。
+
+#Bed:
+message_643:
+  text: 这张床看起来不错，但对你来说，被子有点太厚了。\!<br>满分 10 分的话，可以打 6 分。
+
+#Bed:
+message_644:
+  text: 这张床很大，但床垫却有些坑坑洼洼的。\!<br>满分 10 分的话，可以打 6 分。
+
+#Bed:
+message_645:
+  text: 这张床既宽敞又奢华！床品十分舒适，一觉醒来让人神清气爽！\!<br>满分 10 分的话，可以打 9 分。
+
+#Bed:
+message_646:
+  text: 这张床似乎有点太夸张了……\!满分 10 分的话，这个设计只能打 5 分。
+
+#Bed:
+message_647:
+  text: 这张床好脏……\!满分 10 分的话，只能打 1 分。
+
+#Bed:
+message_648:
+  text: 这张床挺大的，床品也很舒适，可是闻起来有股淡淡的霉味。\!<br>满分 10 分的话，可以打 5 分。
+
+#Bed:
+message_649:
+  text: 这就是张地铺。\!<br>你也不知道该给它打几分。
+
+
+#Blue Lamp:
+message_650:
+  text: 漂亮的灯。
+
+#Cream Lamp:
+message_651:
+  text: 普通的灯。
+
+#Pink Heart Lamp:
+message_652:
+  text: 花俏的灯。
+
+#Bookcase:
+message_653:
+  text: 很多书籍，但没什么特别有趣的。
+
+#Table Lamp:
+message_654:
+  text: 一盏台灯。
+
+#Work desk:
+message_655:
+  text: 办公桌。
+
+message_656:
+  text: 一副古典油画。
+
+message_657:
+  text: 床铺乱糟糟的。\!满分 10 分的话，只能打 3 分。
+
+message_658:
+  text: 你掀开了锅盖。\!<br>……\!嗯……\!闻起来像是果酱。
+
+message_659:
+  text: 脏盘子。
+
+message_660:
+  text: 这张床到处都黏糊糊的。\!还有太妃糖粘在床单上。\!<br>满分 10 分的话，只能打 2 分。
+
+message_661:
+  text: 这里什么也没有。
+
+
+#==
+
+message_665:
+  text: 大大的红色停止标志。
+
+message_666:
+  text: 通往后院的推拉门。
+
+#==
+
+message_1000:
+  text: 一只纸风车在风中自由地转动。
+
+#==
+
+message_680:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 英雄你看，我们准备的都是你爱吃的……\!撒了巧克力片的\c[3]曲奇饼\c[0]，还有一大份\c[3]英雄三明治\c[0]！\kel
+
+message_681:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: 哎呀……太好了……\!这……和去年准备的一模一样呢……\her
+
+#==
+
+message_682:
+  text: 五颜六色的 \c[4]CD\c[0]。\!也许可以用点唱机播放。
+
+message_683:
+  text: 没吃完的早餐。
+
+#==
+
+
+
+#CLOSED Signs
+
+#GINOS
+message_690:
+  text: “营业时间……上午 10 点至凌晨 2 点”<br>“晚上 10 点后，仅对年满 21 岁的顾客开放”
+
+#OTHERMART
+message_691:
+  text: “结束营业”<br>“营业时间……每天上午 8 点至晚上 10 点”
+
+#FIXIT
+message_692:
+  text: “结束营业”<br>“营业时间……每天上午 11 点至晚上 8 点”
+
+
+#TRAIN - ORANGE OASIS. ACCIDENTALLY PLACED HERE
+
+message_800:
+  text: \n<车掌贾什>“女士们先生们……\!我们已经到站了。\!欢迎来到\c[11]橙子绿洲\c[0]，这里的月光都格外耀眼。”
+
+message_801:
+  text: \n<车掌贾什>“请有序下车。\!感谢您搭乘此次列车，期待再次与您相遇。”\!\}\quake[1]嗞……
+
+#BACKYARD
+
+message_1001:
+  text: 早已被遗忘的玩具，在风吹日晒下已经泛黄褪色了。
+
+#SCOOTER AND BIKE
+
+message_1010:
+  text: 拉风的银色滑板车。
+
+message_1011:
+  text: 奥布里以前的蓝色自行车。
+
+message_1012:
+  text: 蓝色的野餐篮。\!一点也不像玛里的。
+
+message_1013:
+  text: 你获得了\c[5]创可贴\c[0]。
+
+message_1014:
+  text: 抽屉。
+
+message_1015:
+  text: 你获得了\c[5]急救箱\c[0]。
+
+message_1016:
+  text: 铃兰花。\!据说这种花能驱逐邪恶，为人们带来更加美好的未来。
+

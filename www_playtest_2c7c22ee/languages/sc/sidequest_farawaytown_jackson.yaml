@@ -1,0 +1,29 @@
+# =========================================================================================
+# Sidequest: Defeat Jackson
+# =========================================================================================
+
+#Examine Jackson Poster
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 14     #insert number here
+  text: \kel哇！这张海报上的怪物看起来好真实哦！\!<br>我敢说要和他打的话会是一场恶战！
+
+#Battle with Jackson starts
+#Battle with Jackson ends
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 16     #insert number here
+  text: \kel……\!你好？\!\n[8]？\!<br>……\!地球向\n[8]通话……
+
+#Show a ! exclamation on Kel
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17     #insert number here
+  text: \kel\com[2]哇！海报后面掉出一张 \c[4]CD\c[0] 诶……\!<br>真奇怪……\!不知道是谁藏在这里的？\!<br>也就是说……\!我们能直接拿走咯？
+
+message_4:
+  text: 你获得了\c[4]愉快的 CD\c[0]。
+

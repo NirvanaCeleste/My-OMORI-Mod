@@ -1,0 +1,85 @@
+# =========================================================================================
+# FARAWAY TOWN Object Flavor Text
+# =========================================================================================
+
+# Gino's Dinner
+
+#Dining tables:
+message_1:
+  text: 这张桌子摸上去粘粘的。
+
+
+# Consumable items
+
+# Donut
+message_100:
+  text: \c[3]甜甜圈\c[0]吃起来软软的，很甜。
+
+# Candy
+message_101:
+  text: \c[3]糖果\c[0]很有嚼劲，是水果味的。
+
+# Salad
+message_102:
+  text: \c[3]沙拉\c[0]吃起来像在吃草。
+
+# Bread
+message_103:
+  text: \c[3]面包\c[0]很香很脆……还有点令人上瘾？
+
+# Chocolate
+message_104:
+  text: \c[3]巧克力\c[0]吃起来有一点奶油味，混着一点坚果味。它在你的嘴里融化了。
+
+# Pizza Slice
+message_105:
+  text: \c[3]一片披萨\c[0]热腾腾的，上面全是芝士。真希望你还能多吃两片……
+
+# Hero Sandwich
+message_106:
+  text: \c[3]英雄三明治\c[0]简直是肉和蔬菜的完美融合。哇哦……
+
+# Caramel Apple
+message_107:
+  text: \c[3]焦糖苹果\c[0]黏黏的、甜甜的，但又脆脆的、酸酸的。
+
+# Whole Pizza
+message_108:
+  text: \c[3]整张披萨\c[0]热腾腾的，上面全是芝士。这个量正正好好。
+
+# Pie
+message_109:
+  text: \c[3]馅饼\c[0]那黄油味的酥脆卷边和内里的水果馅搭配得恰到好处。
+
+# Big Bag of Candy
+#message_110:
+#      text: There was so much \c[3]CANDY\c[0], it barely fit in your mouth.
+
+# Slice of Cake
+message_111:
+  text: \c[3]一块蛋糕\c[0]量虽少，但口感丰富。
+
+# Hamburger
+message_112:
+  text: \c[3]汉堡\c[0]的各部分食材都完美地融合在一起。只是缺了芝士。
+
+# Tasty Soda
+message_113:
+  text: \c[3]美味汽水\c[0]气泡很足，你的口中盈满了旧日美好时光的味道。
+
+# Orange Joe
+message_114:
+  text: \c[3]香橙汁\c[0]和\c[3]咖啡\c[0]混合在一起，口味尚待商榷。
+
+# Apple Juice
+message_115:
+  text: \c[3]苹果汁\c[0]的确是用最成熟饱满的苹果榨的汁。
+
+# Orange Juice
+message_116:
+  text: \c[3]香橙汁\c[0]的确是用最新鲜甜美的香橙榨的汁。
+
+# Coffee
+message_117:
+  text: \c[3]咖啡\c[0]和你料想得一样，又烫又苦。你不理解为什么人们要喝咖啡。
+

@@ -1,0 +1,88 @@
+# =========================================================================================
+# ** TEMPLATE DIALOGUE
+# =========================================================================================
+
+message_0:
+  text: “ANDREW VANCE A.K.A SLEEPYKUYA 长眠于此。”<br>\!“小镇的醉鬼。\!因与真正的鼹鼠搏斗而死。”<br>\!“1873
+    - 1901”
+
+
+message_1:
+  text: “OCEAN'S DREAM 长眠于此。”<br>\!“他与芝士……\!生死相依。”
+
+
+message_2:
+  text: “MELONKID 长眠于此。”<br>\!“不小心踩到了耙子。”
+
+
+message_3:
+  text: “OMOCAT 长眠于此。”<br>\!“只有当我们死了，我们才真正开始活着。”
+
+
+message_4:
+  text: “WHITNEY WHITE A.K.A. YIN 长眠于此。”\"<br>\!“恶魔复仇成功了……:(“
+
+message_5:
+  text: “KIM VANCE A.K.A. LA AGUACATE 长眠于此。”\"<br>\!“因被卷入一场非法走私牛油果的意外而死。”
+
+
+message_6:
+  text: “ROCHELLE 长眠于此。”\"<br>\!“死于咖啡因，享年23岁。”
+
+
+message_7:
+  text: “EMS 长眠于此。”\"<br>\!“需要食物贡品。”
+
+
+message_8:
+  text: “AIVI 长眠于此。”<br>\!“凄美，却如此短暂。”\!<br>“生命因此而火热。”
+
+
+message_9:
+  text: “MINCED 长眠于此。”\"<br>\!“因缺水而枯萎。”
+
+
+message_10:
+  text: “PEDRO 长眠于此。”<br>\!“被摧毁了。”
+
+
+message_11:
+  text: “BATINO 长眠于此。”<br>\!“此地无银三百两，真的没有。”
+
+
+message_12:
+  text: “RAI 长眠于此。”<br>\!“死于斗殴……\!但你该看看另一个人的下场。”
+
+
+message_13:
+  text: “ARCHEIA 长眠于此。”<br>\!“死于与鱼共游。”
+
+
+message_14:
+  text: “TDS 长眠于此。”<br>\!“你必须对这些事情现实一点。”
+
+
+message_15:
+  text: “另一个人长眠于此。”
+
+
+message_16:
+  text: “BLUEMOON 长眠于此。”<br>\!“大家最喜欢的前辈。（拜拜，FIUTO……）”
+
+
+message_17:
+  text: “CACHI 长眠于此。”<br>\!“在20XX年之前不要开启。”
+
+
+message_18:
+  text: “MOOGIRI 长眠于此。”<br>\!“这里好黑啊……\!但我还挺喜欢的。”
+
+
+message_19:
+  text: “KAIRU 长眠于此。”<br>\!“\c[3]生命果酱\c[0]一点用都没有！”
+
+
+message_20:
+  text: “PRIDE-KUN 长眠于此。”<br>\!“到死都没找到她的笔。”
+
+

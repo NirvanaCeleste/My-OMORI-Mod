@@ -1,0 +1,822 @@
+# =========================================================================================
+# Playing Cards at the Treehouse
+# =========================================================================================
+
+#Play BGM: Hangin' with the boys
+
+message_0:
+  text: \her太好了！抽到这张正好！
+
+message_1:
+  text: \kel嗯……我这手牌不太妙啊。
+
+message_2:
+  text: \mar凯，你怎么就这样说出来了呢！<br>打牌可得摆出一本正经的“扑克脸”才行呀。
+
+message_3:
+  text: \kel\Com[2]哇！你什么时候跑到我后面去了，玛里？
+
+message_4:
+  text: \mar我才刚来呢，小傻瓜。\!<br>来！我给大家带了曲奇饼。
+
+#WHITE FLASH
+
+message_5:
+  text: \mar贝瑟尔……\!你在给我们拍照吗？
+
+message_6:
+  text: \bas噢！是……是啊。\!哈哈……
+
+message_7:
+  text: \kel哎呀……\!我都在垂死挣扎了，你就别拍我了嘛！
+
+message_8:
+  text: \mar别这么夸张嘛，凯！不过是场纸牌游戏而已。
+
+#[White Flash]
+
+message_9:
+  text: \bas哈哈……
+
+message_10:
+  text: \kel哎？\!怎么还拍啊！\!还有，到底有什么好笑的呀！
+
+message_11:
+  text: \kel你是不是有事瞒着我们，贝瑟尔？
+
+message_12:
+  text: \bas不用担心。\!你们很快就会知道了。
+
+#=================Talk to Aubrey==================
+
+message_13:
+  text: 你看向奥布里手里的牌。\!<br>是一张 2、一张 5 和一张 10。
+
+message_14:
+  text: \aub唔，\n[8]，你觉得怎样？我该怎么办呢？
+
+message_15:
+  text: \aub快想想，快想想……
+
+#=================Talk to Kel==================
+
+message_16:
+  text: 你看向凯手里的牌。\!<br>是一张 4、一张 6 和一张 6。
+
+message_17:
+  text: \kel别、别看了，\n[8]……\!我……\!我这牌真是糟透了！
+
+message_18:
+  text: \kel唉……\!我肯定输定了。
+
+#=================Talk to Basil==================
+
+message_19:
+  text: 你看向贝瑟尔手里的牌。\!<br>是一张 J 和一张 A。
+
+message_20:
+  text: \bas\sinv[1]嘘……\sinv[0]\!不要跟别人说哦，好吗？
+
+#=================Talk to Hero/Mari==================
+
+message_21:
+  text: \her玛里的曲奇饼是世界上最美味的……对吧，\n[8]？
+
+message_22:
+  text: \mar噢，别谦虚了，英雄。<br>你做的曲奇饼可比我的好吃多了！
+
+message_23:
+  text: \her哈，你这是情人眼里出西施！\!玛里做的曲奇饼呀……\!<br>蕴含着浓郁饱满的爱意。<br>\!我怎么吃都吃不够！
+
+message_24:
+  text: \mar啊，真是的！英雄……羞死人了。
+
+
+#=================Talk to Mari==================
+
+message_25:
+  text: \mar能在这里度过夏天的最后一段时光真是不错。<br>\!我们以后每年都来这里吧。<br>\!来！吃块曲奇饼！
+
+message_26:
+  text: 你获得了\c[3]玛里的曲奇饼\c[0]。
+
+message_27:
+  text: 曲奇饼烤得恰到好处，外层酥脆可口，夹心甜香绵密。
+
+
+#=================Talk to HERO=================
+
+message_28:
+  text: 你看向英雄手里的牌。\!<br>是一张 K、一张 Q 和一张 A。
+
+message_29:
+  text: \her嘿嘿……\!我手气很不错吧……\n[8]？
+
+#=================Talk to BASIL=================
+
+message_30:
+  text: \bas怎么了，\n[8]？\!你想看我拍的照片吗？
+
+message_31:
+  text: \bas好吧，那给你看……\!不过要憋住别笑哦，好吗？
+
+#PHOTO 1 SLIDE
+
+#PHOTO 2 SLIDE
+
+#PLAYER's hand
+
+message_32:
+  text: 你看向自己的牌。\!<br>是一张 A 和另一张 A。\!<br>一如既往的不走运。
+
+# =========================================================================================
+# Eating Watermelon at the Beach
+# =========================================================================================
+
+#BGM: Hide & Seek
+
+#----CUTSCENE----
+
+message_40:
+  text: \her然后这儿……再来一刀！好啦，西瓜切好了。\!<br>大家快来！每人都拿一块。
+
+message_41:
+  text: \mar好耶！辛苦啦，英雄！
+
+message_42:
+  text: \mar你呀……真是个成熟可靠的男子汉。
+
+message_43:
+  text: \her哎呀……现在不是说这种话的时候啦，玛里……哈哈……
+
+message_44:
+  text: \kel\sinv[1]\{呀——呼——！！！\!\}\sinv[0]<br>在这炎炎夏日里，能有什么比得过鲜美多汁的西瓜呢！
+
+message_45:
+  text: \kel\com[2]嚼嚼！嚼嚼！嚼嚼！嚼嚼！嚼嚼！嚼嚼！
+
+message_46:
+  text: \aub嚼……\|嚼……\|嚼……\|嚼……\|嚼……
+
+#*white flash*
+
+message_47:
+  text: \aub喂，我吃东西的时候别拍我呀，贝瑟尔！
+
+message_48:
+  text: \bas啊！不好意思，奥布里。我只是觉得你特别上镜！\!<br>等照片洗出来我给你瞧瞧。
+
+message_49:
+  text: \aub啊……\!那，好吧……\!我相信你，贝瑟尔。
+
+#-----TALK TO AUBREY/KEL---------------
+
+message_50:
+  text: \kel……\!\sinv[2]呸、呸、\{呸呸呸\{呸呸\{呸呸！！
+
+message_51:
+  text: \aub哎呀！脏死了！\!别把西瓜籽吐到我身上，凯！
+
+message_52:
+  text: \kel哈哈，你脸上全是西瓜籽！
+
+message_53:
+  text: \aub哼……\!让你尝尝我的厉害！
+
+message_54:
+  text: \aub……\!\sinv[2]呸、呸、\{呸呸呸\{呸呸\{呸呸！！
+
+message_55:
+  text: \kel噫，住嘴啦，奥布里……<br>你都要把你的\quake[1]傻气\quake[0]传染给我了！！
+
+#-------TALK TO BASIL------------
+
+message_56:
+  text: \bas嘿，\n[8]！你想不想看看奥布里的照片？
+
+#PHOTO SLIDE
+
+message_57:
+  text: \bas奥布里真的很可爱，对吧？
+
+#-------TALK TO HERO------------
+
+message_58:
+  text: \her大伙儿……\!别这样……好不容易来一趟海滩！\!<br>我们来这儿是放松心情的呀。
+
+
+#-----TALK TO MARI---------------
+
+message_59:
+  text: \mar你别插手啦，英雄。他们只是互相嬉闹罢了。\!<br>你还记得我们俩小时候吗？
+
+message_60:
+  text: \mar我常常把虫子藏进你课桌的抽屉里，想看你是什么反应。\!<br>每次你被吓到都特别搞笑。
+
+message_61:
+  text: \her等、等等，那原来是你干的？！
+
+message_62:
+  text: \mar啊呀……\!你生气了吗，英雄？嘻嘻……
+
+#-----TALK TO MARI---------------
+
+message_63:
+  text: \mar嘿，\n[8]！玩得开心吗？\!<br>我知道你挺怕晒的，谢谢你愿意陪我们来海滩啦。
+
+message_64:
+  text: \mar别担心哦！\!如果你想凉快凉快，我们等会儿可以用沙子把你埋起来。
+
+#BALL
+
+message_65:
+  text: 你想踢一下这个球吗？
+
+# =========================================================================================
+# Picnic in the Secret Lake
+# =========================================================================================
+
+#BGM: FARAWAY TOWN Playground
+
+#Screen is Black
+
+message_80:
+  text: \her嗯……\!看来大家都睡着了。
+
+message_81:
+  text: \bas现在应该只有我们三个醒着了。
+
+message_82:
+  text: \mar吃得那么饱，也难怪大家会犯困啦。
+
+message_83:
+  text: \bas谢谢你为我们大家准备的美味佳肴，英雄。
+
+message_84:
+  text: \her哎嘿嘿，不客气……\!正好我也能锻练一下厨艺。\!<br>你们喜欢就好。
+
+message_85:
+  text: \mar总有一天，你会成为享誉全球的大厨。<br>\!到时候要给我做很多很多好吃的哦！
+
+message_86:
+  text: \her哈啊？\!等等！\!大厨？\!说我吗？
+
+message_87:
+  text: \mar当然是说你了！我对你信心十足呢，英雄！
+
+message_88:
+  text: \her好吧……\!你说是就是啦。
+
+#*WHITE FLASH*
+
+message_89:
+  text: \mar你最近好像越来越爱拍照了，贝瑟尔。\!<br>看来你已经找到了其中的乐趣，真为你高兴。
+
+message_90:
+  text: \bas嗯！\!我觉得只要掌握了窍门，摄影真的挺有趣的。
+
+message_91:
+  text: \bas等、等等……\!这张照片好像拍到了奇怪的东西……
+
+message_92:
+  text: \bas嗅、嗅……
+
+message_93:
+  text: \bas赫克托尔！\!坏狗狗！
+
+#Any button wakes PLAYER Up
+
+#----------Talk to MARI-------------
+
+message_94:
+  text: \mar啊，你醒了呀！\!抱歉，是不是我们太吵了？
+
+message_95:
+  text: \mar你刚才睡得一脸安详……\!<br>让我想起你还是个小宝宝的时候。
+
+#----------Talk to HERO-------------
+
+message_96:
+  text: \her嘿，\n[8]……\!有件事想问问你的高见。\!<br>我很喜欢下厨做饭，玛里也经常夸我手艺好，<br>可是爸妈想让我以后当个医生……
+
+message_97:
+  text: \her你认为我以后该当个大厨吗？
+
+message_98:
+  text: \her哈哈……\!或许你说得对……
+
+message_99:
+  text: \her哈哈……\!或许你说得对……\!不过……
+
+message_100:
+  text: \her\com[2]我们还年轻嘛！年轻就该勇敢追梦，对吧？！
+
+message_101:
+  text: \her……\!嗯……不过啊……
+
+message_102:
+  text: \her妈妈要是听到我这么说，肯定有意见。
+
+#After
+
+message_110:
+  text: \her唔……怎么办好呢？
+
+#------Talk to KEL-------------
+
+message_103:
+  text: \kel\sinv[1]呼噜……\|呼噜……\|呼噜……\|呼噜……
+
+
+#------Talk to AUBREY-------------
+
+message_104:
+  text: 奥布里睡觉的时候几乎不会发出任何声音。\!<br>好可爱……
+
+#------Talk to BASIL-------------
+
+message_105:
+  text: \bas嘿，\n[8]！\!<br>我刚刚给大家拍了张照片。\!<br>你想看看吗？
+
+#PHOTO SLIDE
+
+message_106:
+  text: \bas这本来会是一张特别好的照片……
+
+message_107:
+  text: \bas都被赫克托尔的便便毁掉啦！
+
+message_108:
+  text: \bas唉……\!或许我之后可以用胶带遮住这里。
+
+#------Talk to HECTOR------------
+
+message_109:
+  text: \n<赫克托尔>\Com[2]汪、汪！
+
+
+# =========================================================================================
+# RAINY DAY IN STREET
+# =========================================================================================
+
+#BGM: Puddles
+
+#-----Cutscene-----
+
+#AUBREY and KEL are talking outside his house.
+#BASIL and PLAYER walk to them from PLAYER's house direction.
+
+message_130:
+  text: \kel喂，\n[8]！贝瑟尔！你们怎么花了这么久？！
+
+message_131:
+  text: \bas不好意思……\!我们刚才在玩一个新出的对战游戏，叫做\c[13]宠物石头\c[0]，玩着玩着就忘记了时间——
+
+message_132:
+  text: \aub\com[2]贝瑟尔贝瑟尔！\!快给我的新雨衣拍张照！
+
+message_133:
+  text: \bas噢！好的！\!这就来……
+
+#WHITE Flash
+
+message_134:
+  text: \aub你觉得这件雨衣好看吗，\n[8]？\!<br>粉粉的……这是我最喜欢的颜色哦！
+
+message_135:
+  text: \kel噫……我觉得粉色是个恶心的颜色。
+
+message_136:
+  text: \aub粉色才不是恶心的颜色呢，凯！\Com[2]你才最恶心的颜色！
+
+message_137:
+  text: \kel你听听你这都说的啥。
+
+message_138:
+  text: \aub对了，\n[8]！我突然想起来了！
+
+message_139:
+  text: \aub玛里之前和我聊到一起去染发的事情。
+
+message_140:
+  text: \aub玛里说，她要把头发染成紫色。
+
+message_141:
+  text: \kel紫、紫、紫色？！
+
+message_142:
+  text: \aub你想知道我准备染成什么颜色吗？
+
+message_143:
+  text: \kel慢着……\!你该不会是要……染成粉色吧？！
+
+message_144:
+  text: \kel噫……好怪喔……\!你怎么会有这种念头呢？
+
+message_145:
+  text: \aub不知道呀……可是我觉得粉发挺可爱的！\!<br>玛里也这么想！
+
+message_146:
+  text: \kel呃……\!我永远也搞不懂你们两个人的古怪念头。
+
+message_147:
+  text: \bas我觉得你粉发会很好看的，奥布里。
+
+message_148:
+  text: \bas你觉得呢，\n[8]？
+
+#NOD/SHAKE
+
+message_149:
+  text: \bas唔……\!也许我们不该这么和奥布里说的。
+
+message_150:
+  text: \bas\n[8] 说他也觉得粉色很棒！
+
+message_151:
+  text: \aub看，就连贝瑟尔和 \n[8] 都表示赞同……\!<br>奇怪的人是你，凯！
+
+message_152:
+  text: \kel啧……\!随便了……
+
+#------Talk to Aubrey------------
+
+message_153:
+  text: \aub耶！这么一来我就决定了。
+
+message_154:
+  text: \aub总有一天，我要把头发染成粉色！
+
+message_155:
+  text: \aub不过……\!也许要等好长一段时间……\!<br>我爸爸在这方面管得挺严的。
+
+#------Talk to Kel------------
+
+message_156:
+  text: \kel你说你和贝瑟尔在玩那个叫\c[13]宠物石头\c[0]的新游戏吗？<br>\!唔……\!看来我也应该玩玩看。
+
+message_157:
+  text: \kel嘿，我想到了！\!我们不如去\c[11]蜂玩堂\c[0]看看他们进了什么新货吧？
+
+#------Talk to Basil------------
+
+message_158:
+  text: \bas怎么了，\n[8]？你想看我刚才拍的照片吗？
+
+# Photo SLIDE
+
+message_159:
+  text: \bas每当我拍奥布里的时候，你都会问我要照片看。
+
+message_160:
+  text: \bas我是不是……\!嗯……\!闻到了一点暗恋的味道呀？
+
+message_161:
+  text: 你感觉你的耳朵变红了……
+
+message_162:
+  text: \bas嘻嘻……\!不用担心，我不会跟别人说的！\!<br>我会守口如瓶的。
+
+# Leave
+
+message_163:
+  text: \kel噢，你打算先去吗，\n[8]？<br>\!不用担心我们，我们马上就会追上你的！
+
+# =========================================================================================
+# Basil's Birthday Party
+# =========================================================================================
+
+#Play BGM: Interior Peaceful (Basil's Theme)
+
+#-----------CUTSCENE--------------
+
+#Hero brings in Birthday cake
+
+message_177:
+  text: \aub你真的不和我们一起合影吗，\n[8]？
+
+message_178:
+  text: \mar\n[8] 今天不是很想上镜……\!<br>人有的时候就是会这样的嘛。
+
+#MARI turns to PLAYER
+
+message_179:
+  text: \mar没事哦，\n[8]！\!你很快就会习惯相机的咔嚓声的！嘻嘻……
+
+message_180:
+  text: \aub哇！这个蛋糕看起来好棒！\!<br>英雄，你的厨艺又更上一层楼了。
+
+message_181:
+  text: \bas耶……谢谢你，英雄！\!我特别喜欢吃草莓。
+
+message_182:
+  text: \aub贝瑟尔贝瑟尔！你要许什么愿望？
+
+message_183:
+  text: \kel哎呀，哪有直接问别人愿望的，奥布里！
+
+message_184:
+  text: \kel说出来的话……愿望就不会成真喽。
+
+message_185:
+  text: \aub咦？是这样的吗？
+
+message_186:
+  text: \aub既然如此……\!<br>那我就许愿……\!今年考试，凯每一科都拿到好成绩！
+
+message_187:
+  text: \kel喂，你怎么诅咒我！
+
+message_188:
+  text: \bas嗯……\!许愿吗？\!啊……\!可是，许什么愿好呢？\!<br>我想要的一切，都已经在这里了呀！
+
+message_189:
+  text: \bas……
+
+message_190:
+  text: \bas噢，我想到了！嘿嘿……
+
+message_191:
+  text: \bas我的愿望……\!就是……
+
+message_192:
+  text: \bas……
+
+message_193:
+  text: \bas开玩笑的啦。
+
+message_194:
+  text: \bas是秘密哦！
+
+message_195:
+  text: \aub诶……\!我好想知道啊……
+
+message_196:
+  text: \her大伙儿，蜡烛都要融化到蛋糕上了！\!<br>准备好唱生日歌了吗？
+
+message_197:
+  text: \kel早准备好了！
+
+message_198:
+  text: \her玛里，可以由你来带头吗？
+
+message_199:
+  text: \mar当然啦。
+
+message_200:
+  text: \mar咳咳……\!那么，一、二、三、起……
+
+#BIRTHDAY CAKE SLIDE
+#HAPPY BIRTHDAY SONG
+
+
+message_201:
+  text: \sinv[1]祝你生日快乐！\!祝你生日快乐！\n<所有人>
+
+message_202:
+  text: \sinv[1]祝你生日快乐，贝瑟尔！\!祝你生日快乐——！\n<所有人>
+
+message_203:
+  text: \kel\sinv[1]\{呀——呼——！！\!\}\sinv[0]<br>吹蜡烛啦，贝瑟尔！
+
+message_204:
+  text: \aub许个愿，许个愿……
+
+#CAMERA CLICK
+
+# PHOTOSLIDE
+
+# =========================================================================================
+# The Christmas Gift (VIOLIN)
+# =========================================================================================
+
+#BGM: Mari's Theme
+
+#---------CUTSCENE-------------
+
+#Kel opens up his present.
+
+message_220:
+  text: \kel哇……\!新篮球？！\!谢谢老哥！
+
+message_221:
+  text: \her不用客气，凯……\!<br>你要是真想感谢我，考试考好一点就可以了。
+
+message_222:
+  text: \kel嗯哼……当然了！没问题！
+
+message_223:
+  text: \her好啦，\n[8]……轮到你拆礼物了。
+
+message_224:
+  text: \mar今年，你的礼物只有一份……\!这是我们所有人的心意哦。
+
+message_225:
+  text: \bas虽然包装看上去很普通……<br>不过，我们大家一起攒钱，才把它买下来的。
+
+message_226:
+  text: \aub是呀！\!暑假的时候，我和贝瑟尔为了攒钱，<br>甚至去摆摊卖曲奇饼和柠檬水呢。
+
+message_227:
+  text: \her如果你还有印象的话，<br>玛里和我之前在一家面包店工作过一段时间。
+
+message_228:
+  text: \kel而我呢，\!每天早上去送报纸，送了整整三个月……
+
+message_229:
+  text: \kel\Com[2]你也知道我有多讨厌早起！
+
+message_230:
+  text: \mar我们知道你可能觉得有压力，不过……
+
+message_231:
+  text: \her你已经有一段时间没有拉过小提琴了。
+
+message_232:
+  text: \bas玛里告诉我们，每当她练琴的时候，你总是坐在房间里陪她。
+
+message_233:
+  text: \kel而且有一次，你还被我发现你在拉那把迷你小提琴，明明它的尺寸小得不像话。
+
+message_234:
+  text: \aub总之吧……\!这本来是贝瑟尔的主意……\!不过为了买一把好的，我们大家都出了一份力……\!所以……\!嗯！
+
+message_235:
+  text: \mar我们希望你能喜欢它，\n[8]。
+
+message_236:
+  text: \mar这是我们大家一起送给你的。
+
+message_237:
+  text: 你打开了小提琴琴盒。
+
+#VIOLIN SLIDE
+
+message_238:
+  text: \kel\{\sinv[1]嗒——哒！
+
+message_239:
+  text: \aub是你专属的小提琴噢！
+
+message_240:
+  text: \bas希望你喜欢，\n[8]……<br>\!快拿出来试试看吧！
+
+message_241:
+  text: ……
+
+message_242:
+  text: 你感觉到指尖一阵酥麻……\!<br>仿佛出自本能一般，\!你的身体很快动作起来，架好了小提琴，<br>做好了开始演奏的准备。
+
+#WHITE FADE Out, First Note of Duet plays VIOLIN
+#Photo SLIDE
+
+# =========================================================================================
+# White Screen after Memories
+# =========================================================================================
+
+#After exiting from the memory
+#Screen flashes WHITE
+
+#-----------TREEHOUSE-----------
+
+message_260:
+  text: 你回想起了……
+
+message_261:
+  text: 新鲜出炉的曲奇饼的香味。
+
+message_262:
+  text: 它们闻起来比普通的曲奇饼更香，因为你知道曲奇饼是玛里亲手做的。
+
+message_263:
+  text: \c[4]小提琴\c[0]恢复了它原有的形状。
+
+#-----------Beach-----------
+
+message_270:
+  text: 西瓜的味道。
+
+message_271:
+  text: 炎炎夏日里和大家一起吃的西瓜，味道比平时更甜。
+
+message_272:
+  text: \c[4]小提琴\c[0]修复了自身的一部分。
+
+#-----------Secret Lake-----------
+
+message_280:
+  text: 睡在玛里腿上的感觉。
+
+message_281:
+  text: 你感到比平时更安心，因为你知道，无论发生什么事……<br>玛里都会保护你。
+
+#-----------Rainy Day-----------
+
+message_290:
+  text: 雨滴打在你雨伞上的声音。
+
+message_291:
+  text: 它听起来更令人平静，因为你知道，你最好的朋友们就站在你身旁。
+
+#-----------Basil's Birthday party----------
+
+message_300:
+  text: 贝瑟尔即将吹灭生日蜡烛时露出的笑容。
+
+message_301:
+  text: 但你还回想起了……
+
+message_302:
+  text: 在贝瑟尔许愿的同时，你也许了一个愿望。
+
+message_303:
+  text: 那个时候的你……\!许愿所有人都能得到幸福。
+
+#-----------Christmas----------
+
+#add message_260
+
+message_304:
+  text: 你即将在新小提琴上拉出第一个音时，心中焦急的感觉。
+
+message_305:
+  text: 那种焦急使你不安，但是你并不介意……
+
+message_306:
+  text: 因为他们相信着你。
+
+message_307:
+  text: 而且，无论发生什么事情……
+
+message_308:
+  text: 你不想让他们失望。\!<br>因为他们是你的朋友。
+
+message_309:
+  text: \c[4]小提琴\c[0]修复了自身的一部分。
+
+message_310:
+  text: 你获得了\c[4]小提琴\c[0]。
+
+message_311:
+  text: 你获得了\c[4]乐谱\c[0]。
+
+message_312:
+  text: 几缕长长的黑发与它的琴弦缠绕在一起。
+
+message_313:
+  text: 纸张血迹斑斑，七皱八褶……\!<br>但是上面的音符依稀可辨。
+
+
+#-----------Upon examining the Violin Stand with a fixed VIOLIN----------
+
+#message_310:
+#      text: Your eyes begin to well up.
+
+#message_311:
+#      text: You felt tingling in your fingers...\!<br>And...\! as if on its own...\! your body readied the VIOLIN...\!<br>and began to play.
+
+message_319:
+  text: 空的谱架。\!<br>你想把你的\c[4]乐谱\c[0]放上去吗？
+
+message_320:
+  text: 你把\c[4]乐谱\c[0]放上了谱架。
+
+message_400:
+  text: 舞台已经准备好了。\!<br>你想开始演奏\c[4]小提琴\c[0]吗？
+
+message_420:
+  text: 你想解锁玩具箱吗？
+
+#-----------CATTAIL----------
+
+message_600:
+  text: |
+    \who玛里的曲奇饼……蕴含着更加浓厚的爱意。\!我怎么吃都吃不够。
+
+
+message_601:
+  text: \who西瓜是……\|夏日里我的最爱……
+
+message_602:
+  text: \who我们还年轻……\|年轻就该勇敢追梦，对吧？
+
+message_603:
+  text: \who许愿吗？\|可是，许什么愿好呢？\|我想要的一切，都已经在这里了。
+
+message_604:
+  text: \who今年，你的礼物只有一份……\|这是我们所有人的心意哦。
+
+message_605:
+  text: \who你刚才睡得一脸安详……\|让我想起你还是个小宝宝的时候。
+
+message_607:
+  text: \who噢，你打算先去吗？\|不用担心我们……\|我们马上就会追上你的。
+
+#LAKE COOKIES
+
+message_608:
+  text: 玛里的曲奇饼。
+
+message_609:
+  text:
+

@@ -1,0 +1,399 @@
+#Reach picnic
+#Tag should not be enabled
+
+message_0:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar好啦……\!我们到了。
+
+#Hero shakes
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her大伙……\!我不确定该不该继续往前。
+
+message_2:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar噢，英雄！你可别跟我说你怕了哦！
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel就是啊，哥！你都答应过我们了……
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub只要齐心协力，什么都难不倒我们！\!<br>你不是经常这么说的吗？
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her话是这么说……但是……
+
+#Spider sfx
+
+message_6:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar别害怕，英雄。\!我们都在这儿呢。\!<br>你就当做是……为了我吧？\!求你了？
+
+#pause
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her……\!嗯……\!那好吧。
+
+message_8:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar\sinv[1]谢谢啦，英雄～嘻嘻……
+
+#mari walks to OMORI
+
+message_9:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 带路吧，弟弟。\mar
+
+#------------------------------------------------------------------------
+
+#Fog gets closer covering HERO
+#Player walks a bit
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel大家，先等一等。\!英雄去哪儿了？
+
+message_11:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar天哪……他逃跑了吗？\!<br>明明我们辛辛苦苦劝了他这么久！
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel……\!英雄不会这样的啊。\!<br>就算他真的要走，也会告诉我们的。
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub别说了！我都起鸡皮疙瘩了……\!<br>他可能只是回野餐的地方等我们了。\!<br>我们之后回去找他就行了！
+
+message_14:
+  text: 你想要继续穿过迷雾吗？
+#[YES/NO]
+
+#[YES]
+
+
+#[NO]
+
+
+#------------------------------------------------------------------------
+#Player walks a bit
+
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel喂，大伙……我现在也有点犹豫了。\!<br>这还挺让人担心的。
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub凯？\!担心？\!可真不像你呀。
+
+message_24:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel毕竟……\!英雄绝对不会这么丢下我们的。
+
+message_25:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar你真的想回去吗，凯？\!<br>你刚才还特别兴奋，想赶紧看看空屋的！
+
+message_26:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar英雄他能照顾好自己……\!<br>你放心好了！
+
+message_27:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 22
+  text: \kel嗯……\!好像是这样没错。
+
+message_28:
+  text: 你想要继续穿过迷雾吗？
+
+#[YES/NO]
+
+#[YES]
+
+#[NO]
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub唔……\!我们是不是还是回去找英雄比较好？
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \mar啊呀，他一定没事的……
+
+message_17:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar何况……\!如果他真的就这么丢下我们跑了，那活该让他等着！
+
+message_18:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar走吧，OMORI。\!我们继续前进！
+
+
+#------------------------------------------------------------------------
+
+#Fog gets closer covering KEL
+#AUBREY shakes
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]哎哟……凯！你踩到我的脚了！
+
+#AUBREY looks behind her.
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub诶？\!凯他人呢？
+
+message_42:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar唔……他会不会回去找英雄了？
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub或许吧……
+
+#AUBREY looks around
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub话说啊……\!我们人多一点的时候，这片森林还没有那么阴森的……
+
+message_45:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar你想回去吗，奥布里？
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub想是想啦，可是……\!我才不要独自一个人回去。
+
+message_47:
+  text: 你想要继续穿过迷雾吗？
+#[YES/NO]
+
+#[NO]
+
+message_48:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar哎呀……\!奥布里，不用害怕。\!我们都度过了这么多难关。<br>\!任何事都难不倒我们！
+
+message_49:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar就算事情真的到了很糟糕的地步……\!<br>我和 OMORI 也有能力保护你。
+
+message_50:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar对吧，OMORI？
+
+#------------------------------------------------------------------------
+#Player walks a bit
+#AUBREY disappears
+#There should be footprints visible at the bottom of the map during this cutscene
+
+message_60:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar咦？\!奥布里呢？\!<br>奇怪……\!就在刚才，她还牵着我的手的呀。
+
+message_61:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar可能大家都回去了……\!<br>我们现在该怎么办呢，OMORI？\!<br>你还想继续前进吗？
+
+#[YES/NO]
+
+message_62:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 嗯！既然你这么说了，那我就陪着你，弟弟！\mar
+
+#[NO]
+
+message_63:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: 可是，OMORI……\!我们都快到目的地了！\mar
+
+message_64:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 等回去的时候，大家一定都在等着我们呢。\mar
+
+message_65:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 我会保证你平安无事的！\mar
+
+#------------------------------------------------------------------------
+
+#Go to BASIL's house entrance.
+#BASIL's shadow is in front of the bridge to his house.
+#He walks from the bridge to his house door and fades in.
+
+
+#If you try to go back:
+message_70:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar怎么了，OMORI？\!你想回去吗？
+#[YES] takes you back to picnic cutscene
+
+#------------------------------------------------------------------------
+
+#Go into BASIL's house.
+#BASIL's ghost looks at you then walks into blackness.
+
+message_80:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar好啦……\!我们终于到了。
+
+#MARI looks around
+
+message_82:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar看来空屋果然如同其名，什么都没有。\!<br>不知道为什么，感觉有点悲伤呢。
+
+#MARI walks up to and sits on the ledge.
+
+message_83:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar陪我坐坐吧，OMORI！
+
+#PLAYER gets control
+#talk to MARI
+
+message_84:
+  text: 你想要和玛里一起坐下吗？
+#[YES/NO]
+
+#[YES]
+#OMORI sits on the ledge animation + cutscene
+
+#NO
+#Nothing
+
+message_85:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar只剩下我们两个人了。\!<br>我们其实很少能这样独处，是不是？
+
+message_86:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar只要大伙都在，就很难有片刻安宁。\!<br>有的时候，我还蛮怀念这样安静的时光的。
+
+#MARI question mark
+
+message_87:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar怎么了，OMORI？你好像走神了……
+
+#*Shadow BASIL fades away slowly*
+
+#pause
+message_88:
+  text: 深不见底……\|你要跳下去吗？
+
+#[YES/NO]
+
+#[YES]
+message_89:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \marOMORI，当心！\!你差点就要掉下去了。
+
+message_90:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar一定要小心哦，知道了吗？\!我不能再失去你了……
+
+#pause
+
+message_91:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar或许这里真的不太安全。\!<br>我们还是回去找大家吧。
+
+message_92:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar我就在外面等着你！
+#MARI leaves
+
+#NO
+message_93:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar真是深不见底呢……
+#pause
+
+message_94:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar或许这里真的不太安全。\!我们还是回去找大家吧。
+
+message_95:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar我就在外面等着你！
+
+#MARI leaves
+#PLAYER gets up from the ledge and regains control
+
+#If you try to leave, glitch to PLAYER shaking his head.
+
+#If you examine hole, it says:
+
+message_100:
+  text: 你不想跳下去。
+
+#PLAYER must stab himself.
+
+#When he stabs himself, it plays a special stab animation.
+#Then, he wakes up as PLAYER instead of OMORI.
+
+#------------------------------------------------------------------------
+
+#NO
+
+#Teleport back to “reach picnic” cutscene
+

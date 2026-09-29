@@ -1,0 +1,44 @@
+# ============================================================
+# 《未竟之事》模组工作仓库 .gitignore
+# 原则：入库 = 自己的工作成果 + 游戏工程的可文本化部分
+#       不入库 = 大资产（可从解密工程恢复）/ 第三方资料 / 归档快照
+# ============================================================
+
+# ---- 第三方参考资料（磁盘保留，不入库）----
+参考资料/
+教程/
+素材/
+
+# ---- 历史归档快照（磁盘保留，不入库）----
+归档/
+
+# ---- 游戏大资产：从 Steam+OneLoader 解密工程恢复 ----
+www_playtest_2c7c22ee/audio/
+www_playtest_2c7c22ee/fonts/
+www_playtest_2c7c22ee/movies/
+www_playtest_2c7c22ee/render/
+www_playtest_2c7c22ee/save/
+www_playtest_2c7c22ee/scaled/
+www_playtest_2c7c22ee/icon/
+www_playtest_2c7c22ee/js/libs/
+# img 全部排除，只保留模组新增的书本 UI（白名单）
+www_playtest_2c7c22ee/img/*
+!www_playtest_2c7c22ee/img/pictures/
+www_playtest_2c7c22ee/img/pictures/*
+!www_playtest_2c7c22ee/img/pictures/Unwritten/
+
+# ---- 生成物 / 备份 ----
+tools/preview/
+www_playtest_2c7c22ee/backups/
+*.bak
+*.bak_switch
+*.bak_2026*
+*.olg
+*.olid
+
+# ---- 系统杂项 ----
+.oneloader-image-cache/
+Thumbs.db
+desktop.ini
+*.tmp
+~$*

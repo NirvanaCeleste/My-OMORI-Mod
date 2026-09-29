@@ -1,0 +1,1244 @@
+# =========================================================================================
+# ** BREAKTIME CHATTER
+# =========================================================================================
+
+#Examine the cooler to prompt breaktime message.
+#The cooler should not appear until the Breaktime becomes available.
+#The dialogue will only play once. Afterwards, if you use the cooler again, it'll just show them at the picnic without the dialogue.
+
+#=====================================================================
+
+#Pre-Epilogue Picnics
+#These events will disappear in Epilogue (some earlier). Some of them will be replaced by new dialogue that includes Basil at the picnic.
+
+#=====================================================================
+
+#Vast Forest:
+
+#=====================================================================
+#**Forest Playground - Only available after checking on Basil's house after Hangman**
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel我看看啊……\!黛西……\!然后是内布……\!开心……\!眉毛……\!鼻子……\!<br>哦不对，等下……那个才是黛西……
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub你在干嘛呢，凯？
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel没啥……\!只是在记大伙的名字……
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]你还没记住大家的名字？！\!太过分了！
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel对不起，行了吧？我只是一直都在玩嘛……\!<br>大家一起玩得高兴才是首要的，不是吗？\!名字什么的都是次要的！
+
+message_5:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar没事的，奥布里……英雄也经常记不住人名。\!有可能是家族遗传吧……
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 嘿，我已经很努力了！\!有些人就是天生记性好，<br>但有些人就是要后天培养呀！<br>\!又不是所有人记忆力都有 OMORI 这么好……
+
+#------------------------------------------------------------------------------------------------------------------------
+#**Path to Basil (II) - Disappears after entering SGL**
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub你们觉得贝瑟尔会有危险吗？\!<br>我们现在应该更担心他才对……
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯……\!他失踪了确实让人担心……\!但我们也不能慌手慌脚呀。
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub贝瑟尔太轻信别人了……不管别人说什么他都会相信！
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub万一有人骗了他怎么办？\!或者他掉进陷阱了怎么办？
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her冷静一点，奥布里……我们一定能找到他的！
+
+message_12:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar对了！\!他不在的这段时间里，我们为什么不帮他的花浇浇水呢？
+
+message_13:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar他回来后一定会非常感激我们的。
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 12
+  text: \aub呜……\!呜呜……
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel啊……奥布里，别这样！\!我不喜欢你哭的样子！
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel振作一点！\!贝瑟尔虽然外表看起来很柔弱，但他内心还是很坚强的。
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel贝瑟尔可以照顾好自己的！\!你应该多相信他一点才对呀！
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub呜呜……\!好吧，既然你这么说……
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub……
+
+message_20:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub嗯，我会相信贝瑟尔的……\!谢谢你，凯。嘻嘻……
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\com[2]呃！别冲我笑！好怪哦！
+
+message_22:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]你才怪呢！
+
+message_23:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub哼！
+
+#------------------------------------------------------------------------------------------------------------------------
+#Kite Kid
+
+message_24:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\com[2]哎！我的耳朵突然通气了！
+
+message_25:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her啊……确实。\!海拔升高时就会这样。
+
+message_26:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\quake[1]\com[2]\{啥？！\!你刚刚说话了吗？
+
+message_27:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]\{\quake[1]我说……
+
+message_28:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]\{\quake[1]你的耳朵会这样……
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]\{\quake[1]是因为海拔升高了！！
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub\}\sinv[1]嘘……\sinv[0]小点声！\!这里还有其他人在！\!你们没看到那个男孩子在放风筝吗？\!<br>他正全神贯注呢……
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel\}哎呀……\!抱歉啦，风筝男孩……
+
+#=====================================================================
+
+#Orange Oasis:
+
+#=====================================================================
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel这些红糖踩起来真舒服！\!<br>我都有点想捡起来尝尝看了！
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub这也太恶心了，凯……你怎么会有这种念头？！\!你好怪哦！
+
+message_34:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar大家都会产生奇怪的想法呀。
+
+message_35:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar凯只是往往脱口而出而已！
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel嘿！我觉得这是件好事！\!如果你有什么想说的，说出来就好了！
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub这是不对的，凯！我们应该三思而后行！\!做人能不能有点自觉呀！
+
+message_38:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: \kel你也配这么说？霸道小姐？！
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel我当然有自觉了！\!<br>比方说，我现在很清楚我在哪儿！不就在橙子绿洲嘛！
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her好啦好啦……\!你们两个别吵了……
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her\sinv[1]平衡，二位……\!做事情要讲究平衡……\sinv[0]
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel英雄……你个窝囊废。
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub这个回答也太没劲了！\!我还以为你会有更好的意见呢。
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her呃……\!我说错话了吗？
+
+#=====================================================================
+
+#Rain Town:
+
+#=====================================================================
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\sinv[1]咕嘟咕嘟咕嘟……\|真好喝……\|谢谢你做的汤，玛里……
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\sinv[1]这碗……\|汤……\|真的……\|（吸溜）……\|很美味……
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel能不能……\|再来……\|一碗……？
+
+message_48:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar大家怎么了？\!我的汤有什么问题吗？
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel呃……\!下雨天玩耍是挺有趣的，但下雨天吃东西就是另一回事了……
+
+message_50:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her我已经分不清是在喝汤还是在喝雨水了……
+
+#=====================================================================
+
+#Otherworld:
+
+#=====================================================================
+
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel我长大后想成为一名太空海盗……\!探索宇宙的每个角落！
+
+message_52:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar我们为了寻找贝瑟尔都来到离家这么远的地方了。\!如果探索宇宙是你的梦想，那你已经开了个好头啦！
+
+message_53:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\sinv[1]真期待一路上会遇到哪些伙伴！\!又会面对什么样的敌人……\!这一定会是一场空前绝后的史诗级冒险！
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub你怎么无忧无虑的，凯……\!你难道忘了我们是来找贝瑟尔的吗？
+
+message_55:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub你还记得吧？\!我们最好的朋友，贝瑟尔，正需要我们的帮助！
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel好好，我记得，我记得……\!我只是想乐观一点嘛！
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel我们一定能拯救他的！\!而且，故事里的英雄总是会获得最后的胜利……\!我说的对不对，英雄？
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her哈哈……真好笑，凯……
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#**Junkyard Couch - Disappears after Day 0**
+
+
+message_59:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel从这里看月亮可真是太大啦！\!这是我来过最漂亮的地方！
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub但这里全都是垃圾啊……\!<br>到底哪里漂亮了？
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel奥布里啊奥布里……别那么煞风景嘛。\!你就不能看向事物好的一面吗？
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel正如我经常说的……\!<br>“要有一双善于发现美的眼睛！”
+
+message_63:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]我可不记得你说过这句话！
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Frozen Forest:
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her玛里，你认真的吗？\!冰天雪地里做刨冰？
+
+message_65:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar这有什么问题吗，英雄？\!做起来多方便呀！\!刨冰可比\c[3]雪糕\c[0]好做多了！
+
+message_66:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub再说了，刨冰和\c[3]雪糕\c[0]有什么本质上的区别吗？
+
+message_67:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar严格来说，它们还真没什么区别……\!<br>\c[3]雪糕\c[0]的冰要比刨冰的冰大块一些，仅此而已。
+
+
+message_68:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel更大块的冰？\!这就是为什么\c[3]雪糕\c[0]比刨冰更贵吗？
+
+message_69:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar我……\!我也不知道，凯！\!我还真没有确切的答案……
+
+#=====================================================================
+
+#Pyrefly Forest:
+
+#=====================================================================
+
+#Pyrefly IV -
+
+message_70:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar英雄，你的蜘蛛恐惧症怎么样了？
+
+
+message_71:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\sinv[1]呼……\|吸气……\|呼……\|吐气……
+
+message_72:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar你做得很好，英雄！继续加油！
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\sinv[1]呼……\|吸气……\|呼……\|吐气……
+
+message_74:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \marOMORI 以前也很害怕蜘蛛，但你看现在！\!他一点都不怕！
+
+message_75:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar看他变得多勇敢呀！
+
+message_76:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar哇哦……\!超勇敢的……
+
+message_77:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub耶！\!超勇敢的！
+
+#------------------------------------------------------------------------------------------------------------------------
+#**Pyrefly to SM town -  Disappears after entering hidden library / defeating SW**
+
+message_78:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这里比游乐场旁边的那片森林恐怖多了……\!而且还更古老……
+
+message_79:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar确实充满了一种神秘的气息，不是吗？
+
+message_80:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar我听说这里曾经有一个藏满书的图书馆……\!<br>但因为长久以来没人打理……\!它就慢慢地沉入地下了……
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her你怎么知道的，玛里？
+
+message_82:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar噢……\!是游荡在各处的影子告诉我的……\!<br>如果你集中注意力，你也能看见它们哦！
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\com[2]怎样都好啦！\!读书很无聊的！\!谁会喜欢读书啊？
+
+message_84:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub玛里，现在这个图书馆在哪儿呢？
+
+message_85:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar嗯……\!要我猜的话……\!<br>应该就在我们下方！
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub你是说……\!地下吗？
+
+message_87:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar没错！\!应该就在这附近，大概！
+
+#=====================================================================
+
+#Sweetheart's Castle:
+
+message_88:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar英雄！我有个问题想问你……
+
+message_89:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar你到底有没有可能真的答应甜心的求婚呀？
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]什么？！怎么可能！
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: \her你知道我的眼里只有你，玛里……
+
+message_92:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\sinv[1]呃呃呃呃呃呃……
+
+message_93:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar“呃呃呃……”就对了，凯！
+
+message_94:
+  faceset: MainCharacter_Mari
+  faceindex: 5
+  text: \mar英雄！你这样我就不喜欢你咯！
+
+message_95:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her什……什么？\!那怎样比较好？
+
+message_96:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar傻瓜，我怎么能告诉你呢？\!说破了不就没意思了吗？
+
+message_97:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her好吧……\!虽然不太懂……\!随你怎么说吧……
+
+message_98:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub玛里，你可不用担心甜心！
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub甜心是个大坏蛋！\!我真想象不到谁会爱上她！
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel可是，太空男孩船长以前不就和她在一起吗？
+
+message_101:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub哼！\!那种关系太肤浅了！
+
+message_102:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub怎么能和真的比呢……不像我和 OMORI！\!你说对吧，OMORI？
+
+message_103:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aubOMORI？
+
+#=====================================================================
+
+#Deep Well:
+
+#=====================================================================
+#**Last Resort Entrance - Available after getting whole party.**
+
+message_104:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her话说回来，玛里……\!你在等我们时通常都会做什么？
+
+message_105:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar噢……\!没什么特别的。\!我会跟路过的人打声招呼，然后闲聊几句……
+
+message_106:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel听上去好累啊……我可不擅长和人闲聊！
+
+message_107:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub玛里，跟我们讲讲！你最近遇到最有趣的人是谁？
+
+message_108:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar嗯，让我想想……<br>\!在这附近的话，我经常能看到奇怪的游客，还有那些鳄鱼男。
+
+
+message_109:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar虽然那些鳄鱼男说话有些粗鲁……<br>\!但一和他们聊起来，他们就会打开话匣子，开心地跟你聊个没完没了！
+
+message_110:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar他们甚至比大部分游客都要友善！
+
+message_111:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: \aub对！我同意！\!我遇到的所有鳄鱼男都对我挺好的！
+
+message_112:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel真的吗？！\!我感觉他们都把我当眼中钉……
+
+message_113:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar让我想想……还有谁……
+
+message_114:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar啊！我想起来了，我记得有个叫斯纳里的不幸的小家伙……
+
+message_115:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar以前我经常能看到他四处游荡……
+
+message_116:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar不过最近一次，他走过来跟我打招呼的时候……\!突然掉进了一个洞里。\!之后我就再也没见过他了……
+
+message_117:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\com[2]\sinv[1]没意思！\sinv[0]下一个！
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#End of the Highway -
+
+message_118:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her没想到我们真的一路来到了高速公路的尽头。
+
+
+message_119:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar但你们做到了……你们应该为自己感到骄傲！
+
+
+message_120:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar这个悬崖最顶上的桥通往一个叫\c[11]深井深处\c[0]的地方……
+
+message_121:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar有传言说\c[11]深井深处\c[0]已经存在很长时间了，但这座桥是最近才出现的。
+
+message_122:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar谁知道桥的另一端到底有什么呢？
+
+message_123:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub你觉得贝瑟尔去了桥对面吗？
+
+message_124:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: \her我们还不确定……\!但只有一个办法可以找到答案！
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Humphrey:
+
+message_125:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel哇啊，这里发生了什么？怎么乱七八糟的……
+
+message_126:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\com[2]\sinv[1]啊——啊嚏！\sinv[0]\|所有的家具上都是灰……\!<br>已经很久没人打扫过了。
+
+message_127:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel这里可能以前是个办公室之类的。\!不是说这里是海底女巫的巢穴吗？\!<br>这些东西看上去和巫术也没什么关系啊。
+
+message_128:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her别忘了这个情报是甜心告诉我们的……\!<br>我都不怎么相信甜心……\!更别说她的情报了……
+
+message_129:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel我们得阻止甜心！\!她肯定没安好心。
+
+message_130:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her我、我们有必要这么做吗？\!我觉得……\!其实不管她也行啊……
+
+message_131:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar噢……这就是我们现在的目标吗？\!<br>从邪恶势力手中拯救世界？\!真有意思呢！
+
+message_132:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her从邪恶势力手中拯救世界和甜心有什么关系？
+
+message_133:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]你见过她的呀？！\!她\quake[1]超级\quake[0]邪恶！
+
+message_134:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her嗯，也有道理……
+
+message_135:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: \her好吧……\!反正总得有人这么做……
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Medusa Maze 1 -
+
+message_136:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel玛里，这些果冻真好吃！\!它们是用什么做的？
+
+message_137:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar我也不太清楚哦，凯！都是我从墙上和地板上挖来的。\!你喜欢吃吗？
+
+message_138:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her你……\!\com[2]你说什么？！
+
+message_139:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar哈哈……\!开个玩笑啦。
+
+message_140:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar原材料是各种水果！\!还有，嗯……\!果冻！
+
+message_141:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel呃，是啦……\!但……\!果冻又是用什么做的呢？
+
+message_142:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar这个嘛，凯……\!果冻……\!果冻就是用果冻做的呀！
+
+message_143:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel好吧……
+
+message_144:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel算了，管他呢！\!不干不净，吃了没病！
+
+message_145:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel……\!嗯……
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Molly Main Room -
+
+message_146:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub大家……现在可不能休息呀！
+
+message_147:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\com[2]谜题还没解出来呢！\!<br>你们都不怕炸弹会爆炸吗？！
+
+message_148:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\sinv[1]放心吧……奥布里，我们能解开的！\sinv[0]
+
+message_149:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel世界上最聪明的人都在这儿呢！
+
+message_150:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub听你这么说……\!我更不放心了……
+
+message_151:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel屏幕里那位女士不是说这个谜题是给她妹妹设计的吗？\!<br>她不会真想炸了她妹妹吧！
+
+message_152:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her很难说哦，凯……\!奥布里说得对。\!我们不熟悉这里的环境。\!<br>最好还是安全为上。
+
+message_153:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her你觉得我们该怎么做呢，玛里？
+
+message_154:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar诶？\!噢……\!<br>我觉得……\!你心里怎么想的就怎么做吧！
+
+message_155:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her谢了……\!玛里……\!我就知道可以依靠你。
+
+message_216:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar不用谢！
+
+
+#=====================================================================
+
+#Epilogue Picnics:
+
+#=====================================================================
+#Some picnics will have new text after getting Basil back in Epilogue.
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Frozen Forest VII -
+
+message_156:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub哇哦……\!下雪可真美啊！
+
+message_157:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel我觉得吧……确实还行……\!雪下一会儿还是挺好的，但我绝对不会住在一直下雪的地方！
+
+message_158:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel光是想到要铲雪……
+
+message_159:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas……
+
+message_160:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub嘿……\!贝瑟尔，你还好吗？
+
+message_161:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas诶？\!噢……\!我没事！
+
+message_162:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas对不起……听上去可能会有点傻。
+
+message_163:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas就是，不知道为什么……\!下雪总让我很难过。
+
+message_164:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar噢……别难过嘛，贝瑟尔！\!你还有我们大家呢！
+
+message_165:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her是啊……\!有时候感到伤心是很正常的……\!<br>但你随时都可以向我们倾诉喔！
+
+message_166:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas嘿嘿……\!谢谢你们。
+
+message_167:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas不用担心……\!我知道我可以向你们述说任何事情的。
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Frozen Forest IX -
+
+message_168:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar\sinv[1]呀吼！\sinv[0]你们马上就要登上山顶了！\!大家还好吧？
+
+message_169:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\quake[1]不用……\|担心我们……\|玛里……\quake[0]
+
+message_170:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\quake[1]嗯嗯……\|我们……\|都……\|还好……
+
+message_171:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\quake[1]\com[2]啊啊啊！\!我的耳朵又突然通气了！
+
+message_172:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\quake[1]凯，我告诉过你了……\!海拔升高就会这样……
+
+message_173:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\quake[1]对、对啊，别整天抱怨了，凯！\!我们耳朵也不好受！
+
+message_174:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\quake[1]我……我没有在抱怨啊。\!我还挺喜欢这种感觉的！\!就像你游完泳后，水终于从耳朵里流出来了一样！
+
+message_175:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\quake[1]……\|\sinv[1]啊……\|游泳……\|太阳……\|温暖……
+
+message_176:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub\quake[1]大家……\!我、我们下次去个更暖和的地方吧。
+
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Forest Playground -
+
+message_178:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar大家坐在一起放松身心，这种感觉可真好！
+
+message_179:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel玛里！\!贝瑟尔！\!你们为什么不和我们一起去冒险呢？
+
+message_180:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: \mar啊，其实我很想陪着你们……\!可是我得悠着点劲儿。<br>\!毕竟我的膝盖不太好呀，你忘了吗？
+
+message_181:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 20
+  text: \kel对哦……\!你觉得你的膝盖还会好吗，玛里？
+
+message_182:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar嗯，恐怕不会好起来了……\!但没关系！我还可以帮你们准备野餐！
+
+message_183:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar别担心我啦……我会尽我所能帮你们的！
+
+message_184:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \mar而且也没有那么糟糕，毕竟有贝瑟尔陪着我呀。
+
+message_185:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas没错，我和玛里有聊不完的话题。
+
+message_186:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub真的吗？\!你们平时都聊些什么呀？
+
+message_187:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar什么都聊！\!有时候还会聊你们呢！
+
+message_188:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas\sinv[1]没错！\!我们经常聊到 OMORI，夸他有多么沉着冷静……\!<br>或者聊到奥布里总是那么关心身边的一切……
+
+
+message_189:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: \sinv[1]\mar或者，要是像凯一样无忧无虑该有多好……\!又或者那次英雄睡着后，小鸟在他头发上安家的事情……
+
+message_190:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\com[2]等、等等……你最后那句说了什么？
+
+message_191:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: \mar\sinv[1]什——么也没说！\sinv[0]
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#Pyrefly Forest -
+
+message_192:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\sinv[1]哈……\|吸气……\|哈……\|吐气……
+
+message_193:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas啊……\!你真的很怕蜘蛛吗，英雄？
+
+message_194:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel没错……\!如果说这世界上有什么是我哥承受不了的……\com[2]<br>那一定就是蜘蛛了！
+
+message_195:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel你要不开导开导他，贝瑟尔？
+
+message_196:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: \bas啊，这样……嗯，我试试！
+
+message_197:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas呃……\!我觉得蜘蛛其实被误解得很严重……\!虽然他们看上去很吓人，其实他们并不会主动攻击人类。
+
+message_198:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas更何况，它们还是我做园艺时的最佳帮手呢！\!<br>蜘蛛会吃掉很多伤害植物的害虫，这一切都是大自然的平衡哦！
+
+message_217:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas之……\!之类的……
+
+message_199:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub你感觉好点了吗，英雄？
+
+message_200:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel哎呀……\!看来没起作用……
+
+message_201:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar啊……\!没事的，英雄……\!我们可以一步一步来……
+
+message_202:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: \her\sinv[1]呼……\|吸气……\|呼……\|吐气……
+
+message_203:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar……\!或者……\!半步半步来也可以！
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#**Construction - Only available after completing all Statues. Gator Guy joins too.**
+
+message_204:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel看看这些雕像！我们看上去真不错！
+
+message_205:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her这些雕像和我们真的一模一样！\!你做得真好，鳄鱼男先生！
+
+message_206:
+  text: \n<鳄鱼男>嘿嘿……你真这么认为，老板？\!<br>我一直是家里最有艺术细胞的那个。<br><br>我的兄弟们以前老叫我帮他们拍照什么的……\!可把我累坏了……
+
+message_207:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel你说拍照？\!你知道吗……\!我的朋友贝瑟尔可擅长摄影了！\!<br>你应该让他教你几招！
+
+message_208:
+  text: \n<鳄鱼男>喔喔？他这么厉害？
+
+message_209:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\com[2]\}啊……\!干嘛呀，凯……
+
+message_210:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas抱、抱歉……\!我没有那么厉害啦……\!也没有想变得很厉害！\!<br>我只是觉得摄影很好玩！
+
+message_211:
+  text: \n<鳄鱼男>哎？你这是什么意思？\!你也太谦虚了，孩子！\!<br>你这样以后怎么推销自己啊？！
+
+message_212:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas可、可是……\!我也没打算推销自己呀……
+
+message_213:
+  text: \n<鳄鱼男>\com[2]什？你没这个打算？！
+
+message_214:
+  text: \n<鳄鱼男>呵……\!世界上确实也有你这样的人吧。嗯……
+
+message_215:
+  text: \n<鳄鱼男>好吧，你开心就好，花冠小子。\!做自己就好了！
+
+#------------------------------------------------------------------------------------------------------------------------
+
+#**Construction - Only available after completing all Statues. Gator Guy joins too.**
+
+message_220:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub呃……\!这地方又难闻又恶心！\!我的鼻子要受不了了……
+
+message_221:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel别急呀，奥布里！\!我们还要寻宝呢！
+
+message_222:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel这里所有的\c[5]易拉罐\c[0]我都收下了！
+
+message_223:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her喔对！之后我们可以去回收机那里把垃圾都回收了！\!太空男孩……我是说太空男友家附近就有一个回收机！
+
+message_224:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub呃……\!别管\c[5]易拉罐\c[0]了……\!我们赶紧去找\c[4]特制混音带\c[0]然后离开这儿吧。
+
+message_225:
+  faceset: MainCharacter_Mari
+  faceindex: 4
+  text: \mar噢……再坚持一会儿，奥布里。\!你可以撑过去的。
+
+message_226:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar如果能让你好受些的话……\!<br>你可以想想，回收垃圾能为环境做出多大贡献呀！
+
+message_227:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\com[2]对呀，奥布里！我们是为了保护环境！
+

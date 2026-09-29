@@ -1,0 +1,91 @@
+# =========================================================================================
+# RECYCLE
+# ========================================================================================
+
+#COPY FROM DEMO
+
+message_1:
+  text: 一台回收机。\!<br>你想投入什么吗？
+
+message_2:
+  text: 回收机吐出了 [X] 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_3:
+  text: 你没有可回收的东西。
+
+message_4:
+  text: 你把[X]放入了回收机。
+
+message_20:
+  text: 易拉罐
+
+message_21:
+  text: 玻璃瓶
+
+message_22:
+  text: 硬纸板
+
+message_23:
+  text: 废电池
+
+message_24:
+  text: 电脑零件
+
+message_25:
+  text: 一台回收机。\!<br>你想要回收什么？
+
+#can
+
+message_5:
+  text: 你把\c[5]易拉罐\c[0]放入了回收机。
+
+message_6:
+  text: 回收机吐出了 5 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_15:
+  text: 你没有可以回收的\c[5]易拉罐\c[0]。
+
+#glass bottle
+
+message_7:
+  text: 你把\c[5]玻璃瓶\c[0]放入了回收机。
+
+message_8:
+  text: 回收机吐出了 10 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_16:
+  text: 你没有可以回收的\c[5]玻璃瓶\c[0]。
+
+#cardboard
+
+message_9:
+  text: 你把\c[5]硬纸板\c[0]放入了回收机。
+
+message_10:
+  text: 回收机吐出了 15 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_17:
+  text: 你没有可以回收的\c[5]硬纸板\c[0]。
+
+#dead batteries
+
+message_11:
+  text: 你把\c[5]废电池\c[0]放入了回收机。
+
+message_12:
+  text: 回收机吐出了 20 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_18:
+  text: 你没有可以回收的\c[5]废电池\c[0]。
+
+#computer parts
+
+message_13:
+  text: 你把\c[5]电脑零件\c[0]放入了回收机。
+
+message_14:
+  text: 回收机吐出了 25 蚌币。\!<br>谢谢你为环保事业贡献一份力。
+
+message_19:
+  text: 你没有可以回收的\c[5]电脑零件\c[0]。
+

@@ -1,0 +1,800 @@
+# =========================================================================================
+# Cutscene: Kim & Vance Intro
+# =========================================================================================
+
+#Trigger: Enter Candy shop.
+
+message_0:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 唔……\!据我对金和万斯的了解，他们应该就在这附近吧。\kel
+
+#KEL looks around
+#KEL is surprised
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 噢，她不就在那儿嘛！\kel
+
+#Camera pans to KIM and VANCE.
+
+message_2:
+  text: 快快快，万斯……<br>趁没人注意都塞到我们口袋里！\kim
+
+#KEL walks a few steps.
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 喂，金！你有没有见到奥布——\kel
+
+#KIM turns to VANCE.
+
+message_4:
+  text: \{\Com[2]靠！！是凯那个呆子！！\}<br>快走，万斯！我们得跑路了！\kim
+
+message_5:
+  text: 好啊。没问题，小金。我跟着你。\van
+
+#KIM and VANCE try to run out of the Candy Store.
+#KEL blocks their way.
+
+message_6:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 喂喂，慢着！<br>这些你还没给钱吧。\kel
+
+message_7:
+  text: \Com[2]\{呆子别挡路！！<br>你不认识我！！\kim
+
+message_8:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 喂喂！慢着……我不是来告发你们的！\!我们只是想找奥布里。\!你们知道她在哪儿吗？\kel
+
+message_9:
+  text: 呃、嗯？\!奥布里？\!我、我什么都不知道。\! <br>就算我知道我也不会告诉你！\kim
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 唉……\!我今天真是受够了。<br>\!金，做笔交易吧！\kel
+
+message_24:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 你告诉我奥布里在哪儿，我呢，就不去告发你偷这些\c[3]糖果\c[0]的事情。\kel
+
+message_11:
+  text: 你明明说好了不会告发我们！\kim
+
+message_12:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 对啊，你告诉我奥布里在哪儿，我就不告发你们了！\kel
+
+#MISS CANDY is surprised and walks toward KIM and VANCE.
+
+message_13:
+  text: \{\Com[2]又是你们俩？！\!\}<br>我告诉过你们永远不准再来店里了！微笑、微笑！\n<唐果小姐>
+
+#KIM and VANCE turn around.
+
+message_14:
+  text: 哎哟……\van
+
+message_15:
+  text: \com[2]把你们偷的\c[3]糖果\c[0]交出来！\! <br>别逼我报警抓你们两个小孩！微笑、微笑！\n<唐果小姐>
+
+message_16:
+  text: 我们被抓了个现行。\van
+
+message_23:
+  text: \kim\{\{\Com[2]行吧！！
+
+message_17:
+  text: \{\{\Com[2]还你，谁要你这些愚蠢的<br>\{\{\Com[2]\c[3]糖果\c[0]！！\kim
+
+#KIM drops candy.
+#KIM turns to VANCE.
+
+message_18:
+  text: 走吧，万斯……我们离开这破地方。\kim
+
+#KIM and VANCE leave O.S.
+#KEL turns toward store opening.
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \{哈哈！！你们活该啊！！\kel
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: ……\kel
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: 等下……\!这么一来我们还怎么找奥布里啊？\kel
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 哎……\!我们走，\n[8]。跟上他们……\kel
+
+# =========================================================================================
+# Cutscene: Kim & Vance Intro (Cont.)
+# =========================================================================================
+
+#Trigger: Walk 6 steps.
+
+#KEL runs up to PLAYER.
+
+message_38:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 等等，\n[8]。\!我有个想法！\kel
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 不好意思耽搁了……\!走吧，去追金和万斯！\kel
+
+# =========================================================================================
+# Cutscene: Kim & Vance's Fight
+# =========================================================================================
+
+#Trigger: Enter TOWN PLAZA.
+
+message_40:
+  text: 嘟囔、嘟囔……\!对不起，万斯。\!今天没有\c[3]糖果\c[0]可以吃了……\kim
+
+message_41:
+  text: 不……\!怎么又……\!我不知道我还能撑多久时间。\!我们快要死了。\van
+
+message_42:
+  text: 唉……\!回家吧。\!要赶不上吃晚饭了。\kim
+
+#KEL walks up to KIM.
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 等等，金！\!我有东西给你！\kel
+
+#KIM turns around.
+
+message_44:
+  text: 又是你啊，凯？你到底想要什么，你个混混？！\kim
+
+#KEL holds up candy.
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 告诉我们奥布里在哪里，我就给你<br>这\c[4]一整袋糖果\c[0]！\kel
+
+message_46:
+  text: 真、真的吗，一整袋？\!<br>这也不是不……不对！\! \Com[2]你敢用\c[3]糖果\c[0]来收买我们！\!<br>你把我们当成谁了？\kim
+
+#VANCE looks at KIM.
+
+message_47:
+  text: 你确定吗，小金。\!我们已经整整一周没吃过\c[3]糖果\c[0]了……<br>\!而现在一整袋糖就摆在我们面前。\!<br>甚至还不用给钱耶！\van
+
+message_48:
+  text: \}你至少也问问他里面有没有太妃糖，好不好？\van
+
+message_49:
+  text: 停停停，万斯！我们怎能屈服于淫威呢！\! <br>等我们到了老爸家，我们想吃多少\c[3]糖果\c[0]就能吃多少。\kim
+
+message_50:
+  text: 好啦……\!听你的，妹妹。\van
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \sinv[1]金……\!万斯……\!我还在等你们答复哦……\sinv[0]\kel
+
+message_52:
+  text: 呵！\!说的好像我们会接受一群呆子给的\c[3]糖果\c[0]一样。\kim
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: ……\!哎呀……竟然没用？\!我还以为这招一定管用呢。\kel
+
+message_54:
+  text: 真是浪费时间……我们走！\kim
+
+#KEL is surprised and walks forward.
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \com[2]等、等等！\!求你了，金……你是我们唯一的线索了。\kel
+
+message_56:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 这\c[4]一整袋糖果\c[0]都给你们了。\!<br>里面……\!里面甚至还有太妃糖呢。\kel
+
+#KIM and VANCE stop.
+
+message_57:
+  text: 太妃……\!糖？我没听错吧？\van
+
+message_58:
+  text: 这样啊……\!……\!<br>那这一切的性质就不一样了。\kim
+
+#KIM turns around.
+
+message_59:
+  text: 也行。\!反正你们是真的很想知道，对吧？\kim
+
+message_60:
+  text: \{那我们就用拳头来解决问题！\kim
+
+message_61:
+  text: 你赢了的话，我就告诉你奥布里在哪里……\!但我们赢了的话，那袋太妃糖就是我们的了。而且你永远不准再和我们说话。\kim
+
+message_62:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 等一等，没有必要打架啊！\!你只要告诉我<br>她在哪儿，我这一整袋就给你了！\kel
+
+message_63:
+  text: 可是……\!我想和人打一架……\!<br>\Com[2]来吧！举起拳头来，你们两个！\! <br>是时候来场决斗了！\kim
+
+message_64:
+  text: 未使用
+
+message_65:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 唉……\!你们这群人怎么整天想打架？\!<br>好吧……\!我猜我们也没得选就是了。\kel
+
+#KEL turns to PLAYER.
+
+message_66:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: 上啦，\n[8]。\!你应该也习惯了。\kel
+
+# =========================================================================================
+# Cutscene:  Kim & Vance's Loss
+# =========================================================================================
+
+#IF YOU Lose
+
+message_80:
+  text: \kim哼……\!这样或许能教会你不要多管闲事。
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \kel\com[2]慢着！你别走！\!<br>金，求你了……\!我知道你肯定知道奥布里在哪里。
+
+message_82:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel她……\!她拿走了贝瑟尔很重要、很重要的东西。
+
+message_83:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel你和奥布里是朋友什么的，我当然理解……\!但是……\!你们也清楚，奥布里有时会做得太过火，对吧。
+
+message_84:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel求你们了……\!我们只是想帮助一位朋友而已。
+
+#IF YOU WIN
+
+message_90:
+  text: 嘟囔、嘟囔……\!嘟囔、嘟囔、嘟囔……\! <br>唉……真没想到我们输了。<br>\!这事可绝对不能让奥布里知道。\kim
+
+#Church bells ring.
+#Everyone is surprised.
+#VANCE turns to KIM.
+
+message_91:
+  text: 走了，小金……我们要回家了。\!<br>快到晚饭的点了，如果我们没赶上，老妈她会发飙的。\van
+
+message_92:
+  text: 靠……我们赶紧走吧。\kim
+
+#KIM and VANCE try to walk O.S.
+#KEL steps forward.
+
+message_93:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]慢着！你以为你要去哪儿？\! <br>我们赢了，所以你必须告诉我们奥布里的去向！\kel
+
+message_94:
+  text: 噢……\!对……确实。\kim
+
+message_95:
+  text: ……\|……\|……\kim
+
+message_96:
+  text: 奥布里在\c[11]教堂\c[0]。\!她家附近的那个。\kim
+
+#KEL is confused.
+
+message_97:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 哈？\!奥布里在……\!\c[11]教堂\c[0]？\kel
+
+#KIM looks at KEL and jumps.
+
+message_98:
+  text: 嘿，你别这样看着我！\!<br>是你自己说想知道的。\kim
+
+#KIM turns back around.
+
+message_99:
+  text: 还有，要是她问你是谁说的，千万别说是我！\!<br>你就说是……\!米凯尔之类的。\kim
+
+#VANCE is worried.
+
+
+message_100:
+  text: 走了，小金……我们得赶紧加速回去了……\!<br>不然晚饭迟到老妈要发火了。\van
+
+message_101:
+  text: 是啊是啊……我懂的……\!我们走吧……\kim
+
+#KIM takes one step forward.
+
+message_102:
+  text: \SINV[1]后会有期了……\!\Com[2]呆～\{～～\{子们！！\SINV[0]\kim
+
+#KIM and VANCE walk out.
+#Vance runs back
+
+message_103:
+  text: \van这个我就拿走了。
+
+message_104:
+  text: 万斯拿走了\c[4]一整袋糖果\c[0]。
+
+message_105:
+  text: \van谢了。
+
+#VANCE runs away.
+
+message_106:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 哇靠，他们趁我不注意的时候把\c[4]一整袋糖果\c[0]拿走了！\!这两个家伙可真会顺手牵羊。\kel
+
+message_107:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 好吧……\!至少我们现在知道奥布里在哪儿了！\!除非他们故意骗我们。\kel
+
+message_108:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 完全没法想象奥布里会在\c[11]教堂\c[0]……\!只能眼见为实了。\kel
+
+
+# =========================================================================================
+# Cutscene: Aubrey at Church?
+# =========================================================================================
+
+#KEL turns to PLAYER.
+
+message_120:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 好吧，我们到了。\!<br>我真是怎么也想不到她会来这种地方。\kel
+
+message_121:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: ……\kel
+
+message_122:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 我觉得蛮可疑的，说实在话。\!可能是个陷阱。\!<br>我开个门缝稍微偷看一下吧。\kel
+
+#KEL turns to face the Church door.
+
+message_123:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \}唔……\!看着挺正常的……<br>\!似乎牧师正在布道演讲。\kel
+
+#KEL is surprised.
+
+message_124:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \}噢！\!她就在右边那儿。\!唔……\!她只是……\!在那儿坐着……\!<br>看起来也很正常……\!太奇怪了！\kel
+
+#KEL turns to PLAYER.
+
+message_125:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 嗯，我觉得我们直接进去打扰不太好。\! <br>等到布道结束后我们再进去吧。\kel
+
+message_126:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 等等，\n[8]！\!我们在这儿等到布道结束吧。\kel
+
+message_127:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 好吧，我们都已经进来了。\!还是继续前进吧。\kel
+
+message_128:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 唔……看样子他们在为布道演讲做准备。\!你不会真的想最后几天就在\c[11]教堂\c[0]里玩儿吧？\kel
+
+# =========================================================================================
+# Cutscene: Kel follows Player
+# =========================================================================================
+
+#KEL is not following PLAYER.
+
+#[Trigger: PLAYER walks 6 steps.]
+
+message_140:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: 哇！没想到你就这么走进来了，\n[8]。\!<br>好吧……\!也不能回头了……\!<br>\}走吧，我们得保持安静。\kel
+
+#[Trigger: PLAYER walks near AUBREY.]
+
+message_141:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \}她就在右边那儿。\!我们去她身后那排椅子吧。\kel
+
+# =========================================================================================
+# Cutscene: Aubrey's Rage
+# =========================================================================================
+
+#Trigger: Examine Aubrey's Pew behind Aubrey.
+
+#KEL and PLAYER takes the seats behind AUBREY.
+
+message_160:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \}奥布里……\!喂……\!奥布里！\kel
+
+#AUBREY is confused. AUBREY turns around. AUBREY is surprised.
+
+message_161:
+  faceset: MainCharacters_Faraway
+  faceindex: 5
+  text: \}\Com[2]搞什——？\!你、你们两个家伙在这干什么？\aub
+
+message_162:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \}我们希望你能把\c[4]相册\c[0]还给贝瑟尔！\kel
+
+message_163:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}你怎么还在说这个？\!这件事与你无关。\aub
+
+message_164:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: \}认真的吗？\!与我无关？\!<br>我们曾经是最好的朋友，然后现在你想说这事儿与我无关吗？\kel
+
+message_165:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}没错，凯……\!你说的很对。\!我们“曾经”是朋友……\aub
+
+message_166:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \}……\kel
+
+message_167:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \}你知道吗，玛里听到你这么说一定会很难过的。\kel
+
+message_168:
+  faceset: MainCharacters_Faraway
+  faceindex: 10
+  text: \}呵……\!不会吧？\!你真的想把玛里扯进来？\aub
+
+message_169:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}谁又在乎玛里怎么想呢？\!玛里已经死了。\aub
+
+message_170:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: 奥布里，你认真的吗？！\!你有什么毛病？\kel
+
+message_171:
+  faceset: MainCharacters_Faraway
+  faceindex: 21
+  text: \}……\!我知道你现在交到新朋友了，但你也不能就这样把老朋友都忘了吧！\kel
+
+message_172:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}老朋友？\aub
+
+message_173:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}……\aub
+
+message_174:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \}在我最需要老朋友们的时候，他们并没有陪在我身边。\aub
+
+message_175:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \}所以果然是因为这个……\kel
+
+message_176:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \}玛里她……\!过世的时候……\!我们都在处理各自的悲痛情绪……\! <br>我们那时只是小孩子。\!大家都在艰难度日！\kel
+
+message_177:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}你以为事情就这么简单。\!你一直都是个头脑简单的人啊，凯。\aub
+
+#KEL is frustrated.
+
+message_178:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \}我是又如何？\!我宁愿头脑简单也不想像你一样！\! <br>你怎么能这样对待贝瑟尔呢？\! <br>你明明知道他的\c[4]相册\c[0]对他有多重要！\kel
+
+message_179:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}那本\c[4]相册\c[0]对我们所有人都很重要……\aub
+
+message_180:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \}那你也不能把它偷走！\kel
+
+message_181:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \}贝瑟尔是这么告诉你的？！\!我只是要好好保管\c[4]相册\c[0]而已。\aub
+
+message_182:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \}你在胡扯什么呢？\!那本\c[4]相册\c[0]是贝瑟尔的东西，你不还给他，我就不让你走！\kel
+
+#AUBREY turns around.
+
+message_183:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}呃……\!真是顽固的家伙。\aub
+
+message_184:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \}玛里死后，你很快就走了出来。\aub
+
+message_185:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}你猜猜我为什么每周都会来这里？\!<br>即便已经过了这么久，我仍然在寻找内心的安宁……\! <br>但今天看来是做不到了。\aub
+
+message_186:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}我们已经四年没有说过话了，凯。\! <br>四年可以改变很多事情。\aub
+
+#AUBREY turns to party.
+
+message_187:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \}你和 \n[8] 有什么资格，能突然又重新闯进我的生活，上来就对我指指点点吗？\! \Com[2]别天真了！\aub
+
+message_188:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \}奥布里，你可能外表变了许多，行为举止也大相径庭……\!<br>但是你还是曾经的你啊。\kel
+
+message_189:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}哼……\!你所认识的奥布里早就不在了。\!<br>那个曾经是你朋友的奥布里……\!她也早就不复存在了。\aub
+
+message_190:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \}……\kel
+
+message_191:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \}好吧，这样。\!我知道你很生气。\!<br>听好了，如果你想要的是道歉的话，那我就向你道歉。\!<br>对不起，好吗？\kel
+
+message_192:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \}我们失去玛里的时候，我应该陪在你身边的。\kel
+
+#AUBREY turns around.
+
+message_193:
+  faceset: MainCharacters_Faraway
+  faceindex: 3
+  text: \}……\aub
+
+message_194:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \}…… …… …… …… …… …… …… …… ……\aub
+
+message_195:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \}不。\!我不接受你的道歉。\aub
+
+#AUBREY walks to the center aisle and attempts to walk out of the Church.
+
+message_196:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]慢着！\!你要去哪儿？！\kel
+
+#The Pastor stops the sermon.
+
+#KEL walks to the center aisle and faces AUBREY.
+
+message_197:
+  faceset: MainCharacters_Faraway
+  faceindex: 23
+  text: \Com[2]除非你把贝瑟尔的\c[4]相册\c[0]还回来，否则我不让你走，你个小偷！\kel
+
+message_198:
+  text: \}发生什么了？\|……\|贝瑟尔？\|……\|他不是那个孩子吗……\|就是奥布里和她朋友们欺负的那个……\|她甚至开始偷人东西了吗……
+
+message_199:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: 啊……\kel
+
+message_200:
+  faceset: MainCharacters_Faraway
+  faceindex: 6
+  text: …… …… ……\aub
+
+message_201:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: ……\aub
+
+message_202:
+  faceset: MainCharacters_Faraway
+  faceindex: 10
+  text: 你觉得你是个好人，对吧，凯？\aub
+
+message_203:
+  faceset: MainCharacters_Faraway
+  faceindex: 11
+  text: 而我呢，我是彻头彻尾的大坏蛋……\!<br>只会恐吓可怜兮兮、手无寸铁的贝瑟尔。\aub
+
+message_204:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: \com[2]可你自己还整天和这个拿把刀到街上乱晃的精神病呆在一起！\aub
+
+message_205:
+  faceset: MainCharacters_Faraway
+  faceindex: 25
+  text: \}现在不是说这个的时候，奥布里……\kel
+
+message_206:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: 你才没资格这么说！\!<br>\Com[2]是你自己闯进来的！\aub
+
+message_207:
+  faceset: MainCharacters_Faraway
+  faceindex: 22
+  text: 我已经为发生的一切向你道歉了！\kel
+
+#AUBREY pulls out her bat.
+
+message_208:
+  faceset: MainCharacters_Faraway
+  faceindex: 4
+  text: 如果你这么想让我来扮演坏人的角色……\!<br>\Com[2]\{\quake[1]那我就满足你！！\aub
+
+message_209:
+  faceset: MainCharacters_Faraway
+  faceindex: 7
+  text: 来啊，你们快点攻击我啊……<br>\!\{\quake[1]不然我就先出手了！！\aub
+
+
+# =========================================================================================
+# Cutscene: Disapproving Eyes
+# =========================================================================================
+
+#Trigger: Finish Aubrey fight.
+
+
+message_220:
+  text: |
+    \}啊，自从她的父亲走后……\|……\|她就不受管教了……\|……\| <br>没有教养……\|……\|真是为她母亲感到遗憾……
+
+
+message_221:
+  faceset: MainCharacters_Faraway
+  faceindex: 8
+  text: ……\aub
+
+#AUBREY shakes out of anger and runs out.
+
+message_222:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 可恶……\!虽然我知道她最近是这个德行……\!但我还是为她感到难过。\!<br>或许这是个坏主意。\kel
+
+#After a battle
+
+message_223:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel哎呀……刚才打架真把我累坏了。\!你有\c[5]创口贴\c[0]吗，\n[8]？\! 或者……\!有点零食更好！\!吃点东西总是管用的！
+
+message_300:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel唔……\!看样子牧师要继续布道了。
+
+message_301:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel我们或许不应该……再次打扰他们了……\!嘿嘿……
+
+message_302:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel……\!哎呀……
+
+#CHUCH FOLK
+
+message_400:
+  text: \n<教徒>你们没有教养的吗，就在大庭广众下打架？\!你们应该感到羞耻！
+
+message_401:
+  text: \n<教徒>我今天只是想安宁地度过而已……
+
+message_402:
+  text: \n<教徒>我不会评判你们。\!上主自会审判你们。
+
+message_403:
+  text: \n<教徒>那个女孩儿终于跑掉了。\!现在我的朋友们应该会再回到\c[11]教堂\c[0]来了！
+

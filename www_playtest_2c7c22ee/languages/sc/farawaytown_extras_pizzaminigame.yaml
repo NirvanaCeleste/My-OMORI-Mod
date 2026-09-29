@@ -1,0 +1,176 @@
+# =========================================================================================
+# MINI-GAME: Pizza Delivery
+# =========================================================================================
+
+#Placeholder intro
+
+
+message_10:
+  text: 一张\c[11]吉诺披萨\c[0]的招工海报。\!<br>你今天已经完成这份工作了。
+
+message_11:
+  text: 你拿走了招工的海报。\!或许你可以到柜台那边打听一下这份工作的情况。
+
+message_0:
+  text: \n<披萨男>嗯……\!我发现你在看我挂在那边的招工海报啊。\!你想打份零工吗？
+
+#[Nod/Shake]
+#[Nod]
+message_1:
+  text: \n<披萨男>\sinv[1]好——耶——\sinv[0]\!我帮你准备准备。
+#[Shake]
+message_2:
+  text: \n<披萨男>噢，好吧……\!<br>你要是想挣点披萨钱的话，随时找我！
+
+#Rule Explanation
+#Quest Finish
+#Return to Party
+message_40:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel嘿，\n[8]！你的打工如何啦？\!<br>我刚才找了个长椅坐下来，然后和路过的陌生人聊天！\!<br>哎呀，真有意思……\!总之……你好了的话我随时可以走哦！
+
+# Door Knock Greeting
+message_3:
+  text: \com[2]\{\{\sinv[1]披萨外卖！！
+
+# Randomized NPC Dialogue Success
+message_4:
+  text: \n<顾客？>哦！\!没想到你们那么快就来了！\!谢谢你啊，送披萨的小男孩！
+
+message_5:
+  text: \n<顾客？>你们怎么那么慢？\!\c[11]吉诺披萨\c[0]最近真是每况愈下啊……
+
+message_6:
+  text: \n<顾客？>披萨来了？\!太好了。你们放地上吧。\!<br>我马上就来拿。
+
+message_7:
+  text: \n<顾客？>\Com[2]超美味超好吃的\c[3]披萨\c[0]！\!我这就来，宝贝！
+
+message_8:
+  text: \n<顾客？>\}谢、谢谢……
+
+# Randomized NPC Dialogue Fail
+message_20:
+  text: \n<顾客？>呃……那个……\!不好意思，你走错了。\!<br>我们没点过\c[3]披萨\c[0]……
+
+message_21:
+  text: \n<顾客？>免费\c[3]披萨\c[0]吗？！\!哎呀……你不用那么客气的！
+
+message_22:
+  text: \n<顾客？>你是谁？\!我们没点过什么见鬼的\c[3]披萨\c[0]！\!滚出去！
+
+message_23:
+  text: \n<顾客？>你怎么敢把\c[3]披萨\c[0]送来我们的纯素食主义之家！\!你应该为此而感到羞愧！
+
+message_24:
+  text: \n<顾客？>你打扰到我独享清闲的时间了。\!立刻出去！
+
+# Continue looking after failing
+message_25:
+  text: 好像不对……\!你应该找到正确的那栋房子。
+
+# After checking the house again
+message_26:
+  text: 你已经打扰过这户人家了。
+
+# Too many fails
+message_35:
+  text: 陌生人把\c[3]披萨\c[0]抢走了。
+
+# Minigame Complete
+message_36:
+  text: 所有订单都送完了……\!是时候回到\c[11]吉诺披萨\c[0]店里去了！
+
+message_37:
+  text: \n<披萨男>嘿，新人！\!回来得正好，正想找你呢！\!<br>根据近期反馈，你的顾客满意值是 \v[823]/10 分。
+
+# Move On GOOD
+message_38:
+  text: 尽管困难重重，你还是成功地送到了\c[3]披萨\c[0]。\!<br>是时候送下一单了。
+
+# Move On BAD
+message_39:
+  text: 你失败了，没能送到\c[3]披萨\c[0]。\!<br>是时候送下一单了……
+
+# Initialized
+message_41:
+  text: 你获得了\c[4]披萨笔记\c[0]。
+
+# Time runs out
+message_42:
+  text: 你没能在规定时间内送完所有的\c[3]披萨\c[0]。
+
+# Trying to leave the area
+message_43:
+  text: 你要送完\c[3]披萨\c[0]才能离开。
+
+message_44:
+  text: \n<披萨男>我看你人这么靠谱，我再送你点礼物吧！
+
+message_45:
+  text: \n<披萨男>这是我一直都很喜欢的曲子。
+
+message_46:
+  text: \n<披萨男>你可以在那边的点唱机上面放哦！
+
+message_15:
+  text: 查看笔记
+
+message_16:
+  text: 放弃打工
+
+message_17:
+  text: 还是算了
+
+message_19:
+  text: 你想要做些什么？
+
+# Expression of disappointment from quitting
+message_18:
+  text: 好吧……\!这肯定会影响生意的。
+#===
+
+#Job Description
+
+message_50:
+  text: \n<披萨男>好吧，你想听好消息还是坏消息？
+#GOOD NEWS / #BAD NEWS
+
+message_51:
+  text: \n<披萨男>啊，我就先说好消息吧。<br>\!好消息是……\!我们今天有三单不同的\c[3]披萨\c[0]订单！\!
+
+message_60:
+  text: \n<披萨男>坏消息是……\!我们的外卖员突然又打电话请病假了……
+
+message_52:
+  text: \n<披萨男>这三位顾客都是我们的常客，所以我们很久之前就没有记他们的地址了。
+
+message_61:
+  text: \n<披萨男>我一下想不起来他们住哪里了，但我记得他们的房子长什么样！
+
+message_53:
+  text: \n<披萨男>来！拿上这些笔记就没事了！
+
+#*Screen goes black*
+#wait: 20
+#*Pizza bell SFX*
+#wait: 20
+
+message_54:
+  text: \n<披萨男>别害羞！\!穿好制服，抬头挺胸！
+
+#wait: 20 frames
+
+message_55:
+  text: \n<披萨男>记住了，你有三份\c[3]披萨\c[0]要送。\!你送完之后直接骑自行车回店里就好。\!<br>全靠你了哦！
+
+#wait: 20 frames
+#*Screen returns. You are in the pizza mini-game now.#
+
+message_100:
+  text: 披萨男把他的\c[4]披萨笔记\c[0]给了你。
+
+message_101:
+  text: \n<披萨男>我去拿你的制服！
+

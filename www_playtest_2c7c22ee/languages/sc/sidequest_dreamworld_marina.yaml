@@ -1,0 +1,58 @@
+# =========================================================================================
+# Slimegirls: Marina's Body
+# ========================================================================================
+
+#Talk to Marina:
+
+message_0:
+  text: \n<玛丽娜>\Com[2]真可恶！\!<br>我就知道我不应该相信那什么甜心女士的。\!<br>我现在这个样子怎么去抓实验体啊！？
+
+message_1:
+  text: \n<玛丽娜>呃……\!随便了……
+
+message_2:
+  text: \n<玛丽娜>至少甜心已经罪有应得啦……\!\quake[1]嘻嘻嘻～\quake[0]
+
+message_3:
+  text: \n<玛丽娜>哦，嘿！我记得你们！\!你们还在为先前那些胳膊和腿的事情生气呀？<br>\!哎……\!是我我就不会往心里去。我那就是一时兴起啦。
+
+message_4:
+  text: \n<玛丽娜>我得给自己找点上好的肉。<br>\!来点\c[4]老鼠肉\c[0]就完美了！
+
+message_5:
+  text: \n<玛丽娜>你去杀点那边跑来跑去的小白鼠大概就行了……\!能做到的，对吧？
+
+#Talk to Marina with Rat meat: Cutscene: Marinas Body forms
+
+message_6:
+  text: \n<玛丽娜>\Com[2]哇！你们真的给我带了\c[4]老鼠肉\c[0]？\!你们这帮小孩还不赖嘛！<br>\!我甚至可以考虑让你们活着离开这个地方了哦！
+
+message_7:
+  text: \n<玛丽娜>这样，我终于能取回自己的身体了！\quake[1]嘻嘻嘻～\quake[0]
+
+#FADE IN FADE OUT WITH SFX
+
+message_8:
+  text: \n<玛丽娜>\sinv[1]啊…………\!伸懒腰真舒服……\!<br>又回到有手有脚的状态真是太开心了～\sinv[1]
+
+message_9:
+  text: \n<玛丽娜>嗯？\!你们看什么呢？\!<br>哦，对哦。\!有人帮你做事，你确实是要给点什么报酬的，对吧？<br>\!那好吧……
+
+#Marina burps
+
+message_10:
+  text: \n<玛丽娜>唔……\!好，来。拿上这个。\quake[1]嘻嘻嘻～\quake[0]
+
+message_11:
+  text: 你获得了\c[13]手指\c[0]！
+
+message_12:
+  text: \n<玛丽娜>我们现在扯平啦！
+
+#Quest complete
+
+#After-Quest Dialogue:
+
+message_13:
+  text: \n<玛丽娜>我终于可以继续回去做实验了！\!<br>好了，我的电锯在哪里～？\quake[1]嘻嘻嘻~\quake[0]
+

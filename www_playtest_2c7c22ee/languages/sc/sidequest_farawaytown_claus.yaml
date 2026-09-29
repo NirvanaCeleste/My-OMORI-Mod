@@ -1,0 +1,95 @@
+# =========================================================================================
+# Sidequest: Claus
+# =========================================================================================
+
+#Cutscene: Claus Leaves 1   FISH 1
+
+message_1:
+  text: \n<橘猫>\sinv[1]咕噜……\!喵呜……
+
+#Claus walks off in the direction of Basil's street
+
+message_2:
+  text: 猫给你留下了一份礼物。
+
+message_3:
+  text: 你获得了\c[4]垃圾\c[0]……
+
+#Cutscene: Claus Leaves 2   FISH 2
+
+message_4:
+  text: \n<橘猫>\sinv[1]喵呜？\!咪喵嗷呜……
+
+#Claus walks off in the direction of Player's street
+
+message_5:
+  text: 猫给你留下了一份礼物。
+
+message_6:
+  text: 你获得了\c[4]垃圾\c[0]……
+
+
+#Cutscene: Claus Leaves 3   FISH 3
+
+message_7:
+  text: \n<橘猫>\sinv[1]嗷呜……\!嗷呜？\!喵嗷……
+
+#Claus walks off in the direction of Town Plaza
+
+message_8:
+  text: 猫给你留下了一份礼物。
+
+message_9:
+  text: 你获得了\c[4]泡泡纸\c[0]！
+
+
+#Cutscene: Claus Leaves 4   FISH 4
+
+message_10:
+  text: \n<橘猫>\sinv[1]咪喵嗷呜……\!咕噜……\!咕噜……\!咕噜……
+
+#Claus walks off in the direction of Trash Fortress
+
+message_11:
+  text: 猫给你留下了一份礼物。
+
+message_12:
+  text: 你获得了\c[4]海贝\c[0]！
+
+
+#Cutscene: Claus Leaves 5   FISH 5
+
+message_13:
+  text: \n<橘猫>喵呜！\!喵嗷呜……\!喵呜！
+
+#Claus walks off in the direction of Graveyard
+
+message_14:
+  text: 猫给你留下了一份礼物。
+
+message_15:
+  text: 你获得了\c[4]安宁的 CD\c[0]！
+
+#Cutscene: Claus Leaves 6   FISH 6
+
+message_16:
+  text: 你认出了猫身边的坟墓。
+
+message_17:
+  text: \n<橘猫>\sinv[1]喵呜？
+
+message_18:
+  text: 猫给你留下了一份礼物。
+
+message_19:
+  text: 你获得了\c[4]街机部件\c[0]！
+
+message_20:
+  text: 你有种感觉，这会是你最后一次见到这只猫了。
+
+message_21:
+  text: 橘猫看起来很饿。\!要喂它吃点\c[3]鱼\c[0]吗？
+
+message_22:
+  text: 你身上没有\c[3]鱼\c[0]。
+

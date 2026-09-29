@@ -1,0 +1,428 @@
+# =========================================================================================
+# FARAWAY TOWN Shops
+# =========================================================================================
+
+            #Supermarket
+
+#Intro
+message_1:
+  text: \n<异家超市的女士>哈喽！\!喺咪想买条超级好食嘅\c[3]鱼\c[0]番屋企食呢！\!实喺啦！
+
+#Purchase
+message_2:
+  text: \n<异家超市的女士>OK！\!多谢帮衬喇，细路哥！
+
+message_3:
+  text: \n<异家超市的女士>哈喽！\!喺咪想买条\c[3]鱼\c[0]番屋企食呢！\!实喺啦！
+
+message_4:
+  text: 你获得了\c[4]肉\c[0]。
+
+message_5:
+  text: 你获得了\c[3]鱼\c[0]。
+#Insufficient Funds
+message_6:
+  text: \n<异家超市的女士>唔好意思。\!你好似唔够钱喎。
+#item buying prompt
+message_100:
+  text: \n<异家超市的女士>咁夹埋 $<SHOPTOTAL>.00 蚊，OK？\^
+#max item message
+message_101:
+  text: \n<异家超市的女士>唔好意思，你个袋放唔落喎！\.\^
+#on item list buy ok
+message_102:
+  text: \n<异家超市的女士>要几多？\.\^
+#item selling ok
+message_103:
+  text: \n<异家超市的女士>卖俾我几多？\.\^
+#item selling prompt
+message_104:
+  text: \n<异家超市的女士>咁俾你 $<SHOPTOTAL>.00 蚊，OK？\^
+#item selling cancel prompt
+message_105:
+  text: \n<异家超市的女士>算数啦。
+#item buying cancel
+message_106:
+  text: \n<异家超市的女士>OK。
+
+
+            #Bakery
+
+#Intro
+message_7:
+  text: \n<焙客先生>欢迎光临我们的家庭烘焙坊！请问要来点什么？
+#Purchase
+message_8:
+  text: \n<焙客先生>选得好！我马上帮您装起来！
+#Insufficient Funds
+message_9:
+  text: \n<焙客先生>您的钱不够买我们美味的烘焙糕点哦！
+#item buying prompt
+message_80:
+  text: \n<焙客先生>好的！一共是 $<SHOPTOTAL>.00。\.\^。
+#max item message
+message_81:
+  text: \n<焙客先生>看来您拿不了这么多了。\.\^
+#on item list buy ok
+message_82:
+  text: \n<焙客先生>您想买多少个？\.\^
+#item selling ok
+message_83:
+  text: \n<焙客先生>噢，您想卖东西给我们吗？
+#item selling prompt
+message_84:
+  text: \n<焙客先生>一共是 $<SHOPTOTAL>.00。\.\^。
+#item selling cancel prompt
+message_85:
+  text: \n<焙客先生>谢谢惠顾。欢迎下次光临！
+#item buying cancel
+message_86:
+  text: \n<焙客先生>噢，您改主意了？
+
+message_10:
+  text: \n<焙客女士>哎呀，你们好呀，孩子们！\!我家小孩也和你们差不多大呢。\!<br>他老是和自己那群爱惹事的朋友鬼混，一直戴着那顶可怕的假发……
+
+message_11:
+  text: \n<焙客女士>他应该和他哥哥姐姐一样更有责任心一点！
+
+message_12:
+  text: \n<焙客女士>自从我妈漂洋过海来这里定居之后，我家面包店已经传了四代人了！
+
+message_13:
+  text: \n<焙客女士>我希望有一天我家孩子也能接手面包店，把传统延续下去……\!<br>这是我和我丈夫最大的心愿呐！
+
+            #Candy Shop
+
+#Intro
+message_14:
+  text: \n<唐果小姐>嗨嗨！是我！\!开开心心，元气满满的唐果小姐哦！<br>您今天想买点什么呢？笑笑，笑笑！
+#Purchase
+message_15:
+  text: \n<唐果小姐>谢谢您！笑笑，笑笑！
+#Insufficient Funds
+message_16:
+  text: \n<唐果小姐>噢，亲爱的……\!您好像没带够钱呢！\!<br>笑笑，笑笑！
+#item buying prompt
+message_70:
+  text: \n<唐果小姐>没问题！一共是 $<SHOPTOTAL>.00。<br>笑笑，笑笑！\.\^
+#max item message
+message_71:
+  text: \n<唐果小姐>不好意思，您好像带不下了呢！\!<br>笑笑，笑笑！\.\^
+#on item list buy ok
+message_72:
+  text: \n<唐果小姐>太好了！您想买多少呢？笑笑，笑笑！\.\^
+#item selling ok
+message_73:
+  text: \n<唐果小姐>什么？您要卖东西给我吗？笑笑，笑笑！\.\^
+#item selling prompt
+message_74:
+  text: \n<唐果小姐>那我就付这么多吧！笑笑，笑笑！\.\^
+#item buyin cancel prompt
+message_75:
+  text: \n<唐果小姐>太谢谢啦！笑笑，笑笑！
+#item buying cancel
+message_76:
+  text: \n<唐果小姐>噢，没关系的！没事的！<br>笑笑，笑笑！
+
+message_77:
+  text: \n<唐果小姐>请务必下次光临！\!（不然的话……）
+
+message_78:
+  text: \n<唐果小姐>笑笑，笑笑！
+
+            #Pharmacy
+
+#Intro
+message_17:
+  text: \n<药剂师>孩子们，你们有哪里磕碰到了吗？需要什么吗？
+
+#Default
+message_18:
+  text: \n<药剂师>不知道我儿子布伦特在家怎么样了……\!<br>希望我不在的时候他不会太寂寞。
+
+#item buying prompt
+message_90:
+  text: \n<药剂师>好啊，孩子。一共是 $<SHOPTOTAL>.00。\.\^
+#max item message
+message_91:
+  text: \n<药剂师>你拿不下更多了，孩子！\.\^
+#on item list buy ok
+message_92:
+  text: \n<药剂师>行啊。你要买多少呢，孩子？\.\^
+#item selling ok
+message_93:
+  text: \n<药剂师>哦，你让我买点什么吗？\.\^
+#item selling prompt
+message_94:
+  text: \n<药剂师>好啊，孩子。一共是 $<SHOPTOTAL>.00。\.\^
+#item selling cancel prompt
+message_95:
+  text: \n<药剂师>谢谢。下次再来啊，孩子！
+#item buying cancel
+message_96:
+  text: \n<药剂师>你改主意了？
+#item buying confirmation prompt
+message_97:
+  text: \n<药剂师>给你，孩子……保重！
+#not enough money
+message_98:
+  text: \n<药剂师>你钱不够，买不起，孩子。
+
+            #Hobbeez
+
+#  data.texts.itemBuyingPromptMessage = 'farawaytown_extras_shop.message_19'
+#  data.texts.itemBuyingConfirmationMessage = 'farawaytown_extras_shop.message_20'
+#   	data.texts.notEnoughMoneyMessage = 'farawaytown_extras_shop.message_21';
+#    data.texts.maxItemMessage = 'XX_GENERAL.message_50';
+#    data.texts.onItemListBuyOkMessage = 'XX_GENERAL.message_52';
+#    data.texts.onItemListSellOkMessage = 'XX_GENERAL.message_53';
+#    data.texts.itemSellingPromptMessage = 'XX_GENERAL.message_55'
+#    data.texts.itemSellingConfirmationMessage = 'XX_GENERAL.message_57'
+#    data.texts.itemBuyingCancelMessage = 'XX_GENERAL.message_58'
+#    data.texts.itemSellingCancelMessage = 'XX_GENERAL.message_59'
+
+
+#Intro
+message_19:
+  text: \n<店长>哟，伙计们！你们有什么想要的，跟我说一声哈！
+#Purchase
+message_20:
+  text: \n<店长>多谢。\!好好享受这些几乎全新的二手货吧。
+#Insufficient Funds
+message_21:
+  text: \n<店长>哇，你没有足够的钱哦。\!抱歉啦，伙计们。
+#item buying prompt
+message_40:
+  text: \n<店长>这样你看行吗？一共是 $<SHOPTOTAL>.00。\.\^
+#max item message
+message_41:
+  text: \n<店长>你身上东西太多了。我不想让你负担太重！\.\^
+#on item list buy ok
+message_42:
+  text: \n<店长>好啊，伙计。你要买多少？\.\^
+#item selling ok
+message_43:
+  text: \n<店长>蜂玩堂不只是潮玩店……还可以是当铺哦！\!<br>你不要的东西我都可以买下！\!你今天想卖什么呢？
+#item selling prompt
+message_44:
+  text: \n<店长>你看 $<SHOPTOTAL>.00 可以吗？\.\^
+#item selling cancel prompt
+message_45:
+  text: \n<店长>谢啦，冠军！
+#item buying cancel
+message_46:
+  text: \n<店长>你改主意了？
+
+message_700:
+  text: \n<店长>你想卖多少呢？\.\^
+
+
+            #GINO'S PIZZA
+
+#note: [Purchase Item] will be replaced with the item that the player bought, or make the statement more general
+#Intro
+message_22:
+  text: \n<披萨男>你们好，欢迎光临\c[11]吉诺披萨店\c[0]！\!请问需要来点什么？
+#Purchase
+message_23:
+  text: \n<披萨男>选得好！马上就来！
+#Exclamation mark on PIZZA MAN
+message_24:
+  text: \n<披萨男>嗯……?Purchase Item?……<br>\!好，一份?Purchase Item?马上就来！
+#Insufficient Funds
+message_25:
+  text: \n<披萨男>抱歉……可以的话我也想免费给你啊！<br>等你有钱再来吧！
+#item buying prompt
+message_50:
+  text: \n<披萨男>OK，没问题！一共是……$<SHOPTOTAL>.00。\.\^
+#max item message
+message_51:
+  text: \n<披萨男>你确定你都拿得下吗？\!<br>感觉你拿不下……\.\^
+#on item list buy ok
+message_52:
+  text: \n<披萨男>OK，没问题！你想买多少？\.\^
+#item selling ok
+message_53:
+  text: \n<披萨男>好哦……你要卖多少？\.\^
+#item selling prompt
+message_54:
+  text: \n<披萨男>嗯……你看这样行吗？
+#item selling cancel prompt
+message_55:
+  text: \n<披萨男>太谢谢啦！
+#item buying cancel
+message_56:
+  text: \n<披萨男>啊……你改主意了？
+
+            #Hardware Store
+
+#Intro
+message_26:
+  text: \n<“修它”老板>欢迎来到\c[11]修它家居店\c[0]……<br>有东西坏了？在这儿买点啥，然后亲自动手\c[11]修它\c[0]吧！\!<br>看看有什么想要买的？
+#Purchase
+message_27:
+  text: \n<“修它”老板>好嘞！我马上帮你包装好。
+#Insufficient Funds
+message_28:
+  text: \n<“修它”老板>抱歉，哥们。你钱不够买那个。
+#item buying prompt
+message_60:
+  text: \n<“修它”老板>这样行吗？一共是 $<SHOPTOTAL>.00。\.\^
+#max item message
+message_61:
+  text: \n<“修它”老板>你没地方装那个了！\.\^
+#on item list buy ok
+message_62:
+  text: \n<“修它”老板>你要买多少？\.\^
+#item selling ok
+message_63:
+  text: \n<“修它”老板>你要卖多少？\.\^
+#item selling prompt
+message_64:
+  text: \n<“修它”老板>大概我会……付这么多。\.\^
+#item selling cancel prompt
+message_65:
+  text: \n<“修它”老板>干得好。
+#item buying cancel
+message_66:
+  text: \n<“修它”老板>啊……那好吧。
+
+          #apple guy / orange guy
+
+#item buying prompt
+message_120:
+  text: \n<香橙小子>太好了！这样如何？
+#max item message
+message_121:
+  text: \n<香橙小子>你带不下那么多果汁啦！
+#on item list buy ok
+message_122:
+  text: \n<香橙小子>你要买多少？
+#item selling ok
+message_123:
+  text: \n<香橙小子>你要卖多少？
+#item selling prompt
+message_124:
+  text: \n<香橙小子>一共是……$<SHOPTOTAL>.00。
+#item selling cancel prompt
+message_125:
+  text: \n<香橙小子>谢啦！
+#item buying cancel
+message_126:
+  text: \n<香橙小子>不要吗？可是很健康的……
+
+
+#item buying prompt
+message_130:
+  text: \n<苹果小子>太好了！这样如何？
+#max item message
+message_131:
+  text: \n<苹果小子>你带不下那么多果汁啦！
+#on item list buy ok
+message_132:
+  text: \n<苹果小子>你要买多少？
+#item selling ok
+message_133:
+  text: \n<苹果小子>你要卖多少？
+#item selling prompt
+message_134:
+  text: \n<苹果小子>一共是……$<SHOPTOTAL>.00。
+#item selling cancel prompt
+message_135:
+  text: \n<苹果小子>谢啦！
+#item buying cancel
+message_136:
+  text: \n<苹果小子>不要吗？可是很健康的……
+
+
+            #Supermarket
+
+#Ponytail Cashier 1
+message_30:
+  text: \n<异家超市的收银员>现在市面上有太多种玉米粉蒸肉了。\!<br>我才不需要那么多花里胡哨的。我吃罐头装的就好了！
+
+#Ribbon Cashier 2
+message_31:
+  text: \n<异家超市的收银员>在我看来，食物不过是酱料的载体罢了。
+
+#Glasses Cashier 3
+message_32:
+  text: \n<异家超市的收银员>如果你压力很大，那我推荐你喝点茶。\!伯爵茶和洋甘菊茶都很不错啦，但我还是最喜欢珍珠奶茶！
+
+#Tall Cashier 4
+message_33:
+  text: \n<异家超市的收银员>我对食物并不感冒，但工作就是工作嘛。\!不过，我还蛮喜欢吃炸鸡块的。
+
+#Cashier 5
+message_34:
+  text: \n<异家超市的收银员>我爱大葱！\!<br>它们又美味又营养！
+
+
+# =========================================================================================
+# Vending Machines
+# =========================================================================================
+
+#Intro     start at 140
+message_140:
+  text: 一台自动贩卖机。\!<br>花 $1.00 买一罐\c[3]美味汽水\c[0]吗？\$
+
+message_142:
+  text: 你没有足够的钱。
+
+message_144:
+  text: 你身上没有地方放\c[3]美味汽水\c[0]了。
+
+message_143:
+  text: 一罐冰凉的\c[3]美味汽水\c[0]从贩卖机里弹了出来！
+
+#Examine when Sold out
+message_141:
+  text: 一台自动贩卖机。\!里面的东西已经卖光了。
+
+# =========================================================================================
+# FA Meat man
+# =========================================================================================
+
+
+#Butcher quotes for shop
+
+message_201:
+  text: \n<肉铺男>我只有一份工作，就是卖这些\c[4]肉\c[0]啦！
+
+#Full inventory
+message_202:
+  text: \n<肉铺男>就算是我也带不下那么多\c[4]肉\c[0]啊。
+
+#Insufficient Funds
+message_203:
+  text: \n<肉铺男>我能帮你把\c[4]肉\c[0]砍半，但我可没法帮你把价格砍半啊。
+
+#Purchase
+message_204:
+  text: \n<肉铺男>好了，给。\!好好享用美味的\c[4]肉\c[0]吧！
+
+#on item list buy ok
+message_205:
+  text: \n<肉铺男>你要买多少呢？\.\^
+
+#item buying prompt
+message_206:
+  text: \n<肉铺男>这样如何？一共是 $<SHOPTOTAL>.00。\.\^
+
+
+#itemBuyingConfirmationMessage
+message_207:
+  text: \n<肉铺男>好的呀，吧嗒叮。
+
+
+#item buyin cancel prompt
+message_208:
+  text: \n<肉铺男>改主意了？
+
+message_209:
+  text: \n<肉铺男>\c[4]肉\c[0]缘再相见哦。
+
+#BATINO
+message_300:
+  text: \n<“修它”员工>曼多把所有事情都交给我来干了。\!<br>我要怎么够到最高一层的货架啊？我们最后一个梯子都卖出去了！
+

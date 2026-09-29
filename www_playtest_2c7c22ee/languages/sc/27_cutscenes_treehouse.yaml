@@ -1,0 +1,529 @@
+# =========================================================================================
+# Cutscene: Hooligan Friends
+# =========================================================================================
+
+#Trigger: Exit Aubrey's House.
+
+message_0:
+  text: 哟，奥布里！你没事吧？\kim
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 嘿，小金……我没事……\!谢谢你把大家都带到这里来。\aub
+
+message_2:
+  text: \Com[2]\{喂，大伙们！大伙们！\!奥布里来了！！\kim
+
+#HOOLIGANS run to AUBREY.
+
+message_3:
+  text: 哟，奥布里。感觉好点儿了吗？<br>我们特意给你留了一颗太妃糖呢。\van
+
+message_4:
+  text: 发生什么事了？！你的脸怎么都红了……\!<br>\Com[2]是谁干的？！要不要我去教训他？！\mav
+
+message_5:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 你们不用担心我……\!<br>抱歉我之前一直无视你们。\aub
+
+#ANGEL jumps.
+
+message_6:
+  text: 哎，没啥大不了的！你没事就好。<br>\!我说得对吧，查理？\ang
+
+message_7:
+  text: \}……\!对。\{\cha
+
+#ANGEL turns to AUBREY.
+
+message_8:
+  text: 奥布里、奥布里！我们去公园玩吧！\!给你看看我昨天新研究出来的酷炫招式！\!我一整晚都在练习呢。\ang
+
+message_9:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: 哈哈……听着挺有意思的，不过……\!<br>还是之后再说吧。\!我还有些事情要处理。\aub
+
+message_10:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: 和你们约好了，明天我们一定出去玩。\aub
+
+message_11:
+  text: 喔……好吧……\!那就之后见吧。\ang
+
+#KIM walks to AUBREY.
+
+message_12:
+  text: 奥布里……可别让我们等太久啊！\kim
+
+#AUBREY turns to KIM.
+
+message_13:
+  faceset: MainCharacters_Faraway
+  faceindex: 11
+  text: 不会的啦，小金。\!我一眨眼功夫就回来了。\aub
+
+# =========================================================================================
+# Cutscene: Basil is Not Home
+# =========================================================================================
+
+#Trigger: Examine Basil's Door.
+
+message_30:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 你好，波莉！请问贝瑟尔怎么样了？\! <br>不知道他今天能不能和我们一起出去？\her
+
+message_31:
+  text: 哦，是你们呀！\!<br>真抱歉，贝瑟尔现在不在家。\! <br>他……\!在医院里。\n<波莉>
+
+#Everyone is surprised.
+
+message_32:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \Com[2]什么？！\!贝瑟尔他没事吧？\kel
+
+#POLLY is confused, then has an idea.
+
+message_33:
+  text: 啊，不好意思！\!是我没说清楚……\n<波莉>
+
+message_34:
+  text: 贝瑟尔是去医院照顾奶奶了……\! <br>她昨晚被送进了 ICU。\n<波莉>
+
+message_36:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 噢，天啊……\!怎么会这样。\her
+
+message_37:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 你知道他什么时候会回来吗？\kel
+
+message_38:
+  text: 我也不太清楚……\!或许今天下午晚些时候吧。\!……\!不好意思……\n<波莉>
+
+message_39:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 你介意我们晚点再来一趟吗？\!<br>我们真的很担心他。\her
+
+message_40:
+  text: 当然不介意了。\!你们随时都可以来。\n<波莉>
+
+message_41:
+  text: 我相信贝瑟尔也会希望有朋友们陪着他的。\n<波莉>
+
+message_42:
+  text: 贝瑟尔有那么多关心他的朋友，我也很高兴。\n<波莉>
+
+message_43:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: 哎，这不算什么。\!<br>朋友嘛……\!就应该互帮互助……\!<br>对吧，奥布里？\kel
+
+message_44:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 嗯、嗯……\!是啊…\aub
+
+message_45:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 好吧，那我们晚点再来。\!回头见，波莉！\kel
+
+message_46:
+  text: 好的，再见！\n<波莉>
+
+#POLLY shuts door.
+
+message_47:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 看来我们只能等他回来了……\!<br>在那之前，你们有什么想做的事吗？\her
+
+message_48:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 我随便，做什么都可以。\aub
+
+message_49:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 那我选室内活动！\!今天外面太热了。\kel
+
+message_50:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 没问题，大家可以先去我们家玩会儿。\!晚一点等天气不热了，还可以去树屋看看！\her
+
+message_51:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 对哦！真是好主意！\!<br>而且奥布里也和我们在一起。\kel
+
+message_52:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: 我们以前那个树屋？\!哈，我都好久没去过了……\aub
+
+message_53:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 对啊，我们也好久没去了！\!昨天我们本来想去的，但当时天已经黑了。\kel
+
+message_54:
+  faceset: MainCharacters_Faraway
+  faceindex: 30
+  text: 你呢，\n[8]？\!你今天想做什么？\!毕竟这是你在镇上的最后一天，所以由你来决定喽！\her
+
+message_55:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 没错！\!你来决定这最后一天在\c[11]遥远镇\c[0]做什么。\!带路吧，\n[8]。\kel
+
+# =========================================================================================
+# Cutscene: Mari's Tree
+# =========================================================================================
+
+#Trigger: Examine: Tree Stump.
+
+message_70:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: ……\!这里就是玛里——\kel
+
+message_71:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: 没错……\!就是这里。\her
+
+message_72:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: ……\aub
+
+message_73:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: 虽然感觉已经过了很久了……\!<br>但我还清楚地记得那一天。\aub
+
+#HERO walks a step.
+
+message_74:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: 那……\!那一天，我们从早忙到晚。\!我和妈妈在早上去买了新衣服和鞋。\!然后我们一直都在买东西，直到下午才回家。\her
+
+message_75:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: 我也记得那天……\!<br>我和爸爸出门理发了。\kel
+
+#KEL turns to AUBREY.
+
+message_76:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 哦对了！你和你爸爸当时也在呀，奥布里！\! <br>我们当时是在准备去什么地方来着？\kel
+
+message_77:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 嗯，我们也在。\!<br>那天本来是要去参加玛里和 \n[8] 的演奏会……\aub
+
+message_78:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 演奏会本该在晚上举行的……\!结果……\!当我们傍晚回家的时候……\aub
+
+message_79:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: …… …… ……\aub
+
+#Party turns to tree.
+
+message_80:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 即使到了现在……\!<br>我——我还是不明白她为什么要那么做。\kel
+
+message_81:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 我们……\!大概永远也不会知道答案了。\aub
+
+message_82:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: ……\!嘿，大伙……\!我们……\!接着走吧。\her
+
+#STUMP
+
+message_83:
+  text: ……
+
+# =========================================================================================
+# Cutscene: Memories in the Treehouse
+# =========================================================================================
+
+#Trigger: Enter Treehouse.
+
+
+message_100:
+  faceset: MainCharacters_Faraway
+  faceindex: 42
+  text: 哇……虽然已经过了这么久……\!但这里和我们离开时简直一模一样。\her
+
+message_101:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \Com[2]我们以前的东西都还留在这呢！\kel
+
+#KEL walks to scattered cards.
+
+message_102:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 嘿，快看！我们的扑克牌！\! <br>我当时可是扑克牌大师啊，对吧大家？\kel
+
+#AUBREY walks up to stuffed toy.
+
+message_103:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 子茄先生……\!哎呀，你都变得脏兮兮的了……\aub
+
+message_104:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 你们看这些旧书……\!<br>原来我的烹饪书都在这里啊！\her
+
+message_105:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \Com[2]呀！我好像踩到了什么硌脚的东西了！\kel
+
+message_106:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 啊，天啊……美好的回忆。\kel
+
+#HERO walks to toaster.
+
+message_107:
+  faceset: MainCharacters_Faraway
+  faceindex: 34
+  text: 嗯……\!这里为什么有个烤面包机？\her
+
+#PLAYER needs to examine Photo.
+#Slide: Treehouse Photo.
+#PLAYER needs to flip it to read the back, then exit out.
+
+message_144:
+  text: 你把\c[4]玩具箱钥匙\c[0]放进了口袋里。
+
+message_108:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: 嘿……快看……\!\n[8] 找到了一张我们的合照。\aub
+
+#Slide: Treehouse Photo
+
+message_109:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: 我们看上去……\!都好开心啊……\aub
+
+message_110:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 这不是\c[4]相册\c[0]里少的那张吗？\!<br>肯定是了！\kel
+
+message_111:
+  faceset: MainCharacters_Faraway
+  faceindex: 38
+  text: 真的诶，凯！\!把\c[4]相册\c[0]拿出来吧，\n[8]。<br>我们把它放回去！\her
+
+#Slide: Basil's PHOTO ALBUM (Faraway) - Sorting
+
+message_112:
+  faceset: MainCharacters_Faraway
+  faceindex: 1
+  text: 这么一来……\!\c[4]相册\c[0]就再次完整了。\aub
+
+message_113:
+  faceset: MainCharacters_Faraway
+  faceindex: 29
+  text: 我说……这可能是我们最后一次在树屋里团聚了。\!现在\c[4]相册\c[0]里的照片也找齐了……\!要不我们最后再看一遍相册吧。\her
+
+message_114:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 好主意，英雄！\!反正\c[4]相册\c[0]都拿出来了，不看白不看……<br>对吧，\n[8]？\!我们就从第一页开始看好了。\kel
+
+#Slide: Basil's PHOTO ALBUM (Faraway) - Viewing
+
+message_115:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: ……\!唉，玛里……\!我真的好想她。\her
+
+message_116:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: ……\!我……\aub
+
+message_117:
+  faceset: MainCharacters_Faraway
+  faceindex: 8
+  text: 我也很想她……\aub
+
+#KEL is surprised.
+
+message_118:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: 嘿……大家振作一点！干嘛哭丧着脸啊？\kel
+
+message_119:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 我们大家又重新聚在一起……<br>\!玛里肯定会很高兴的！\kel
+
+message_120:
+  faceset: MainCharacters_Faraway
+  faceindex: 35
+  text: 对啊……她一定会的。\her
+
+message_121:
+  faceset: MainCharacters_Faraway
+  faceindex: 32
+  text: 唉……\!如果贝瑟尔也在这里就好了。\her
+
+message_122:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: ……\aub
+
+#AUBREY turns away and leaves
+
+message_123:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: 嗯？\!奥布里，怎么了？\kel
+
+#KEL follows AUBREY
+
+#HERO question mark and leaves
+
+#-------------------------------------------------------------------
+#UPON WALKING INTO PLAYER'S HOUSE WITH AUBREY FOR THE FIRST TIME
+#-------------------------------------------------------------------
+message_125:
+  faceset: MainCharacters_Faraway
+  faceindex: 28
+  text: 太阳马上就要下山了。\!<br>你想现在去树屋看看吗，\n[8]？\her
+
+#-------------------------------------------------------------------
+#UPON WALKING INTO PLAYER'S HOUSE WITH AUBREY FOR THE FIRST TIME
+#-------------------------------------------------------------------
+
+#everyone walks in one by one
+#aubrey examines her surroundings then turns to player
+
+message_130:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub哎……\!看来你真的要搬走了啊，\n[8]？
+
+message_131:
+  faceset: MainCharacters_Faraway
+  faceindex: 2
+  text: \aub看到这个屋子空荡荡的，说实话……感觉很突然。\!但对你来说……\!搬家一定是个很漫长的过程吧。
+
+message_132:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub希望你能在新家过上平静的生活……\!总之就……\!开开心心。
+
+#HERO walks to the sliding door.
+#*pause*
+#HERO turns to party.
+
+message_133:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her过去几年里，我们大家都把该说的话……\!<br>还有那些痛苦的回忆全都憋在心里。
+
+message_134:
+  faceset: MainCharacters_Faraway
+  faceindex: 42
+  text: \her即便如此……\!我还是很庆幸我们重新成为了好朋友。\!很高兴大家能聚在这里……\!共同面对这一切。
+
+#*pause*
+#HERO turns to the sliding door.
+#*pause*
+
+message_135:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her……
+
+#*pause*
+#KEL walks to HERO.
+
+message_136:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel没事的，英雄。\!我带头吧。
+
+#HERO moves out of the way for KEL.
+#KEL walks outside.
+#*pause*
+#HERO walks outside right after him.
+
+#AUBREY walks to PLAYER.
+
+message_137:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub嘿，\n[8]……\!在你搬走之后……\!如果你不嫌麻烦的话，能不能——
+
+#from outside
+#AUBREYs face the door
+message_138:
+  text: \kel\com[2]奥布里！\!\n[8]！\!你们在干嘛呢？
+
+#*pause*
+
+message_139:
+  faceset: MainCharacters_Faraway
+  faceindex: 27
+  text: \aub……\!那——那……算了……\!当我没说。
+
+#AUBREY walks to door and walks outside.
+#*pause*
+#PLAYER walks slowly in front of door and stops in front of it.
+#screen tints white
+#when you go outside, all 4 party members will already be in your party
+
+
+#---- if you try to exit the ALBUM
+
+message_140:
+  faceset: MainCharacters_Faraway
+  faceindex: 31
+  text: \her这张照片肯定在树屋里放了很久了。\!都已经开始褪色了。
+
+message_141:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel是啊……\!它怎么会跑到这儿来的。\!<br>你上次和贝瑟尔碰面是什么时候，\n[8]？
+

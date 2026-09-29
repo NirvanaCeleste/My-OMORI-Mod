@@ -1,0 +1,557 @@
+#========================================================================================================================
+
+#BASIL'S PATH DIALOGUE
+
+#========================================================================================================================
+#UGLY PLANT CREATURE
+#========================================================================================================================
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哇！\!那棵超丑的植物是啥啊！
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub你不知道吗，凯？\!那是一只树苗鼹鼠！
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: \aub树苗鼹鼠是高智商生物，但是它们迷路的时候就会显露出凶恶的一面。
+
+message_3:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas嘿，树苗鼹鼠先生！你没事吧？
+
+#SPROUT MOLE does Question Mark
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas你、你会不会是迷路了呀？
+
+#SPROUT MOLE turns to PARTY. then vibrates. Then runs toward party.
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her啊……\!这下我们可知道答案了！
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her\Com[2]大家小心点！它冲着我们来了！
+
+#========================================================================================================================
+#UGLY PLANT CREATE - AFTER BATTLE
+#========================================================================================================================
+
+message_10:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas呼……\!大家都还好吗？
+
+message_11:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas抱歉……\!最近这里有很多迷路的树苗鼹鼠。<br>\!我不太喜欢战斗，不过既然你们来了，那一切肯定都会没事的。
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub别担心，贝瑟尔！\!接下来就交给我们啦！
+
+#========================================================================================================================
+#BESTIARY
+#========================================================================================================================
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her嘿，OMORI！\!我觉得我们已经开始找到战斗的窍门了……<br>\!这本日志给你，以后要是我们遇到有意思的敌人，可以记录在里面。
+
+message_16:
+  text: 英雄给了你一本\c[4]《敌人指南！》\c[0]。
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her我把它放进你的口袋里了。\!虽然日志主要由你来记录，但我们有时也会参与其中哦！
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her按下 \DII[escape] 打开玩家菜单，就可以在口袋里找到它了。
+
+
+#========================================================================================================================
+#BASIL EXPLAINS FLOWERS 1
+#========================================================================================================================
+
+#SUNFLOWER
+
+message_20:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas大家快来这儿！我想给你们看一点东西。
+
+message_21:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas这些是向日葵。\!顾名思义，它们永远面朝太阳。
+
+message_22:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我也想成为这个样子……<br>\!总是能看到事物好的那一面……我想成为这样的人。
+
+#LILY
+
+message_23:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas这些是铃兰花。\!<br>据说这种花能驱逐厄运，为人们带来更加美好的未来……
+
+message_24:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我想，这就是它们让我联想到玛里的原因啦！\!<br>因为只要有她在身边，我就能保持积极向上的心态！
+
+#========================================================================================================================
+#BATTLE TUTORIAL - ANGRY
+#========================================================================================================================
+
+#SPROUT MOLE STOMPING
+
+message_30:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas噢，不！又一只迷路的树苗鼹鼠！
+
+message_31:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\Com[2]树苗鼹鼠先生，求求你了！不要再到处蹦蹦跳跳了！<br>花儿们都要被你踩扁了……
+
+#SPROUT MOLE STOMP HARDER
+#SPROUT MOLE RAMS INTO PARTY
+
+#message_32:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 46
+#      text: \herUh-oh!\! It's no use, BASIL...\!<br>It looks like this SPROUT MOLE is ANGRY.
+
+#message_33:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 39
+#      text: \herMuch like us, SPROUT MOLES also feel EMOTION.\! Since this sprout mole is ANGRY, its attacks are stronger... but in its recklessness, also leaves itself wide open.
+
+#message_34:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 2
+#      text: \aubRight!\! So what HERO is saying is that now is the perfect time for us to stop him!
+
+#message_35:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 3
+#      text: \aubDon't worry about a thing, BASIL! We'll save your flowers!\!<br>Come on, OMORI! Let's get em!
+
+#AFTER BATTLE
+
+message_36:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas啊……\!大多数的花都没事……\!太好了！
+
+message_37:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我们就快到我家了。\!沿着这条路继续前进吧！
+
+#========================================================================================================================
+#BASIL EXPLAINS FLOWERS 2
+#========================================================================================================================
+
+#ROSE
+
+message_40:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas这些是玫瑰！<br>你们猜猜看，它们会让我联想到谁？
+
+message_41:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas……\!答案是英雄！\!你们猜对了吗？
+
+message_42:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas玫瑰有许多不同颜色的品种，而且每一种都有其独特的含义。
+
+message_43:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas比如说，粉玫瑰象征仰慕……橙玫瑰象征活力……黄玫瑰象征友谊……还有许多其他的例子！
+
+message_44:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas我觉得英雄不像是某种特定的玫瑰。\!<br>他更像是所有玫瑰集合体的化身一样，因为他多才多艺，<br>而且所有人都喜欢他！
+
+#GLADIOLUS
+
+message_45:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas啊！\!这种花叫做剑兰！
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel剑……啥？
+
+message_47:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas剑兰！“刀剑”的“剑”，“兰花”的“兰”！
+
+message_48:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas你们可能也猜到了，它们代表的是坚强的性格。\!一个诚实、道德感强烈、价值观坚定不移的人……\!一个秉持信念到底的人……
+
+message_49:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas所以，剑兰花让我想起奥布里，因为她总是忠于自我！
+
+message_50:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel噢，原来如此……<br>\!你是想说，奥布里特别顽固喽！
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub喂！我才不顽固！
+
+message_52:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas哈哈……\!好啦！我们继续前进吧！
+
+#========================================================================================================================
+#BATTLE TUTORIAL - HAPPY
+#========================================================================================================================
+
+#SPROUT MOLE TWIRLING
+
+message_60:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas\Com[2]啊，怎么又来！\!树苗鼹鼠先生，求求你了！不要再转圈圈了！<br>\!花田都被你破坏掉了！
+
+#SPROUT MOLE TWIRLS HARDER
+#SPROUT MOLE TWIRLS INTO PARTY
+
+#message_61:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 39
+#      text: \herHmm... Let's see...\! From what I can gather, this SPROUT MOLE looks like its HAPPY!<br><br>As it flails around in its frenzy, it has a higher chance to hit our weak spots and do more damage, but it also means it has a higher chance of hitting nothing!
+
+#message_62:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 4
+#      text: \aubCome on, OMORI!<br>We have to stop it before it squishes all the flowers!
+
+#message_63:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 18
+#      text: \kelLet's show this ugly plant creature who's boss!
+
+#========================================================================================================================
+#BASIL EXPLAINS FLOWERS 3
+#========================================================================================================================
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哇！这是什么花啊？它们看着好帅，而且还带刺儿呢！
+
+message_71:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: \bas这个嘛，凯……这其实是一株仙人掌！<br>\!与其说是花，其实应该说是植物啦……\!而且你问问题的时机挑的真好，<br>因为它们正好让我想到你呢！
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub是因为……\!凯是个刺头吗？
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel喂！
+
+message_74:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas嗯……\!虽然也有这方面原因，<br>不过主要是因为仙人掌是一种茁壮而坚韧的植物。\!<br>它们基本上不怎么需要照料，还能在极为严酷的环境下生存呢！
+
+message_75:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas我想我要说的是……凯，就算是你也可以养好仙人掌哦！
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel哇，好耶！\!仙人掌万岁！
+
+message_77:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas啊……\!这些是白色的郁金香。\!<br>朴实而单纯，还圆鼓鼓的……就像 OMORI 一样！
+
+message_78:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: \bas怎么说呢……我只是觉得它很吸引我。
+
+#========================================================================================================================
+#BASIL PATH - SAD FLOWER DAYS
+#========================================================================================================================
+
+message_200:
+  text: \bas这些是向日葵。\!顾名思义，它们永远面朝太阳。
+
+message_201:
+  text: \bas我也想成为这个样子……<br>\!总是能看到事物好的那一面……我想成为这样的人。
+
+message_202:
+  text: \bas这些是铃兰花。\!<br>据说这种花能驱逐厄运，为人们带来更加美好的未来……
+
+message_203:
+  text: \bas我想，这就是它们让我联想到玛里的原因。\!<br>因为只要有她在身边，我就能保持积极向上的心态。
+
+message_204:
+  text: \bas玫瑰有许多不同颜色的品种，而且每一种都有其独特的含义。
+
+message_205:
+  text: \bas比如说，粉玫瑰象征仰慕……橙玫瑰象征活力……黄玫瑰象征友谊……还有许多其他的例子。
+
+message_206:
+  text: \bas我觉得英雄不像是某种特定的玫瑰。\!<br>他更像是所有玫瑰集合体的化身一样，因为他多才多艺，<br>而且所有人都喜欢他。
+
+message_207:
+  text: \bas这种花叫做剑兰。“刀剑”的“剑”，“兰花”的“兰”。
+
+message_208:
+  text: \bas你们可能也猜到了，它们代表的是坚强的性格。\!一个诚实、道德感强烈、价值观坚定不移的人……\!一个秉持信念到底的人……
+
+message_209:
+  text: \bas所以，剑兰花让我想起奥布里，因为她总是忠于自我。
+
+message_210:
+  text: \bas仙人掌是一种茁壮而坚韧的植物。\!它们基本上不怎么需要照料，还能在极为严酷的环境下生存呢。
+
+message_211:
+  text: \bas我想我要说的是……凯，就算是你也可以养好仙人掌哦……
+
+message_213:
+  text: \bas然后这些……\!这些是白色郁金香。\!郁金香不是特别华丽的植物。<br>\!它们的尺寸刚好，不大也不小；外形上也并不十分精致，或是过于张扬。
+
+message_214:
+  text: \bas换一种说法就是……\!我觉得……\!它们令人安心。\!单纯、朴素又完美。\!<br>就像 \n[8] 一样。
+
+
+
+
+#========================================================================================================================
+#BATTLE TUTORIAL - SAD
+#========================================================================================================================
+
+#SPROUT MOLE staying still on top of a flower
+
+message_80:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: \bas啊！又是树苗鼹鼠！
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel没事的啦，贝瑟尔！\!我们已经掌握对付它们的诀窍了！
+
+#KEL WALKS UP TO SPROUT MOLE AND TAPS IT. SPROUT MOLE TURNS AROUND. PROCS BATTLE.
+
+#message_X:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 40
+#      text: \herHmm...\! Judging by the looks of it, this SPROUT MOLE seems a bit SAD...<br><br>See how it's curled up in the fetal position?\!<br>That means it takes less damage to its HEART, but it also loses a bit of JUICE in its place...
+
+#message_82:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 19
+#      text: \kelLet's just put it out of its misery!
+
+#message_83:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 11
+#      text: \aubWait, what?
+
+#message_84:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 18
+#      text: \kelCome on, OMORI! You know what to do!
+
+#========================================================================================================================
+#YE OLD SPROUT
+#========================================================================================================================
+
+#Before seeing anything, hear stomping noises and then a quake like something sat down.
+
+
+
+#Happens in the middle of the battle
+#Party members facing YE OLD SPROUT blocking the entrance to BASIL's house in order from left to right: OMORI, AUBREY, KEL, HERO. BASIL standing behind them.
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her哎呀，这场战斗真是艰难……\!不过，不用担心！<br>只要齐心协力，一定能做得到！
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her看来我得教你们一点团队协作的技巧才行！\!我们再上吧，OMORI！<br>这次一定可以解决掉他！
+
+#========================================================================================================================
+#WHEN STEPPING ON FLOWER WHEN BASIL IS IN PARTY
+#========================================================================================================================
+
+message_92:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: \bas请、请不要踩在花上！
+
+#[Player moves one step back]
+
+message_93:
+  text: 一朵花。
+
+#========================================================================================================================
+#MISC
+#========================================================================================================================
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \her等一下，OMORI！贝瑟尔的家不在这边！
+
+message_101:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aubOMORI，你要去哪儿呀？\!<br>快来一起帮贝瑟尔整理他的\c[4]相册\c[0]吧！
+
+message_102:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \bas你准备好把相片放回相册了吗，OMORI？\!<br>准备好了就跟我说一声。
+
+
+
+#========================================================================================================================
+#SKILL DESCRIPTION
+#========================================================================================================================
+
+#short pause
+
+message_156:
+  text: 贝瑟尔的\c[4]相册\c[0]。\!他最珍贵的东西。
+
+message_163:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her这样就完成了……\!《英雄的战斗教学入门》！<br>\!而且我相信，随着战斗经验的增长，我们的团队协作也会慢慢进步的！
+
+message_157:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 哇，辛苦了！\!你们太厉害了！\bas
+
+message_158:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 啊呀，没什么、没什么……嘿嘿。\!比他个子更大的家伙我都拿下过呢！\!之后有时间了，我就教你一些我的\c[1]技能\c[0]吧！\kel
+
+message_159:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 贝瑟尔……我知道你不是喜欢打架的类型……<br>\!可是也要学会保护自己哦！\aub
+
+message_160:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 说起来……\!我其实一直在写一本关于战斗的书！<br>\!下次我们好好讨论讨论吧。<br>\!我就先把手稿交给 OMORI 好了。\her
+
+message_169:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her随着我们变得更强，我还会更新\c[4]《自助指南》\c[0]里连携技一章的内容，<br>所以记得时不时查看一下喔！
+
+message_152:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: OMORI，有一件事你应该要知道……<br>\!当我们获得足够的经验值并升级的时候，我们有时会习得新的\c[1]技能\c[0]。\her
+
+message_153:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 这些\c[1]技能\c[0]很强大，而且用途广泛，<br>不过我们每个人同时只能记得四个\c[1]技能\c[0]。\her
+
+message_154:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 习得了新的\c[1]技能\c[0]之后，别忘了在玩家菜单里装备它哦！\her
+
+message_161:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 好啦，好啦……我们知道了！\!可以出发去贝瑟尔家了吗？\kel
+
+message_162:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 好了！我要说的都说完了！\!耐心点嘛，凯……\her
+
+#========
+#EMOTION
+
+#=======
+
+message_165:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 唔……\!看上去我们遇到的敌人多多少少带了点情绪。\her
+
+message_166:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her以防你不知道，情绪状态可以决定攻击的强弱。<br>\!开心克制生气……\!生气克制悲伤……\!而悲伤克制开心！
+
+message_167:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 看！我还画了一张示意图呢！<br>\!我的画画水平不怎么样，不过我想你应该看得懂。<br>\!我把它放进你的口袋里，这样你就随时可以拿出来看了。\her
+
+message_168:
+  text: 你获得了\c[4]情绪示意图\c[0]。
+
+message_170:
+  text: 你想查看\c[4]情绪示意图\c[0]吗？
+

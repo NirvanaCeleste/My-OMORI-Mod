@@ -1,0 +1,1888 @@
+# =========================================================================================
+# Farawaytown extras daily dialogue
+# =========================================================================================
+
+#=========================================================================================
+# DAY 1 - DAY
+#=========================================================================================
+
+# ===================Basil================
+#Examine BASIL's House Door.
+message_0:
+  text: delet this
+
+message_1:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 唔……\!没人应门诶……\kel
+
+message_2:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 可能贝瑟尔在洗手间里什么的吧。\kel
+
+message_3:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 嗯，那也没关系。\!我们之后再来找他吧。\kel
+
+message_4:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: 该出发了，\n[8]！\!我们有一本\c[4]相册\c[0]要找呢。\!<br>我们这就回\c[11]遥远公园\c[0]去找找线索吧！\kel
+
+#===============ANGEL=====================
+
+#Location: FARAWAY PARK (Cutscene: Charlie & Angel Fight)
+
+message_10:
+  text: \n<安吉尔>老师去了\c[11]遥远广场\c[0]的喷泉。<br>\!他说他要去和女孩子见面……\!然后跟她们约会什么的……
+
+#===============CHARLIE=====================
+
+#Location: FARAWAY PARK (Cutscene: Charlie & Angel Fight)
+
+message_20:
+  text: \n<查理>……
+
+message_21:
+  text: \n<查理>……………………………………
+
+#===============MAVERICK=====================
+
+#Location: Town Plaza
+
+message_30:
+  text: \n<独行侠>我不会告诉你奥布里在哪里的，除非你叫我独行侠！
+
+
+#===============ARTIST=====================
+
+#Location: Artist's house - Agree with me! Quest
+
+message_40:
+  text: \n<画家>唔……\!这可能是……\!我迄今为止画得最好的一幅画了！
+
+#===============Bebe=====================
+
+#Location: Town Plaza (Near the fountain)
+
+message_50:
+  text: \n<贝贝>我刚刚许了个愿，希望有一天我能找到真爱！
+
+#After Cutscene: The Maverick's Loss
+
+message_51:
+  text: \n<贝贝>哇……\!那个戴金色假发的男孩子好酷哦……\!我希望我和他一样有自信。
+
+
+#===============Bebe's Mom=====================
+
+#Location: Supermarket
+
+message_60:
+  text: \n<贝贝的妈妈>我儿子比利真是个注重环保的人。\!<br>他和他朋友经常在镇上到处捡垃圾。
+
+message_61:
+  text: \n<贝贝的妈妈>看到现在有这么多年轻人一心想保护地球环境，真是令人开心！
+
+#===============Billy=====================
+
+#Location: Supermarket
+
+message_70:
+  text: \n<比利>这片区域里所有的容器都能被回收，<br>然后又能用来制造新的容器，一直一直反复下去……\!<br>真是个优美的概念啊，不是吗？
+
+#===============BRENT'S MOM=====================
+
+#Location: BRENT'S HOUSE
+
+message_80:
+  text: \n<布伦特的妈妈>干得不错，家教老师……\!想来的话明天再来啊！
+
+#===============CARETAKER=====================
+
+#Location: GINO'S PIZZA
+
+message_90:
+  text: \n<看门人>你们好啊，小子们。\!你们正好撞到我休息了！
+
+message_91:
+  text: \n<看门人>嘎哈哈哈哈哈哈哈！！
+
+message_92:
+  text: \n<看门人>我已经想了整整十分钟要吃什么了，我也不知道我到底在纠结个啥……\!<br>反正这儿吃啥都好吃啊！
+
+#===============After completing Medication Quest: Charlie's Mom=====================
+
+#Location: Other street in front of her HOUSE
+
+message_100:
+  text: \n<查理的妈妈>我的小女儿平时都特别关心我的……\! <br>我在想她上哪儿去了……
+
+message_101:
+  text: \n<查理的妈妈>她一直都很内向的，但最近交了不少朋友。\!<br>唉，玩归玩，希望她没有忘了我……
+
+#===============CRIS'S DAD=====================
+
+#Location: Where's the Remote? Couch in Cris's HOUSE
+
+message_110:
+  text: 克里斯的爸爸一直盯着电视屏幕。
+
+message_111:
+  text: \n<克里斯的爸爸>85 号根本门户大开啊！那算是什么传球啊？！
+
+#===============CRIS'S MOM=====================
+
+#Location: CRIS'S HOUSE in the kitchen
+
+message_120:
+  text: \n<克里斯的妈妈>派怎么样，好吃吗？\!为了参加夏季末的县城集市，我正在完善我的食谱哦！\!到目前为止，我参加的每一年都获得了优胜，今年也不会改变的！\!哦嚯嚯！
+
+#===============CURTSEY=====================
+
+#Location: CANDY SHOP
+
+message_130:
+  text: \n<小礼>欢迎！\!希望我们的\c[3]糖果\c[0]能给你带来笑容！
+
+#===============Daphne & Bowen=====================
+
+#Location: Supermarket, working at the Bakery
+
+message_140:
+  text: \n<达芙妮>新鲜面包……
+
+message_141:
+  text: \n<鲍恩>新鲜面包……
+
+message_142:
+  text: \n<达芙妮和鲍恩>您想来点新鲜的面包吗？
+
+#===============Gino=====================
+
+#Location: Gino's Pizza: Sitting at table
+
+message_150:
+  text: \n<吉诺>哈罗，哈罗！\!我叫吉诺！
+
+message_151:
+  text: \n<吉诺>不……\!这家店不是我的店……\!但每年我过生日，<br>他们都会给我一份免费的\c[3]整张披萨\c[0]，所以还挺好的。
+
+
+#===============Hector (Dog)=====================
+
+#Location: Player's Street
+
+message_160:
+  text: \n<赫克托尔>汪！汪！汪！汪！\!汪！汪！汪！汪！汪！汪！\! <br>（我是只乖狗狗！）
+
+#===============JOCK=====================
+
+#Location: FARAWAY PARK, running around the basketball court
+
+message_170:
+  text: \n<体育生>呼……\!呼……\!哦，嘿！\!怎么了？\!呼……\!<br>你在这里做什么，凯？\!你住在镇上这边吗？
+
+message_171:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel哦，哇\!！没想到会在这里见到你啊，杰哥！
+
+message_172:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel\n[8]，这是杰哥！\! 他是我高中足球队的队长！\!<br>我不知道你还打篮球啊！
+
+message_173:
+  text: \n<体育生>呃……\!呼……\!我就是来打发打发时间的。\!只是兴趣爱好。\!<br>你今年想去篮球队来着，是吧凯？\!也许你能教我两招哦！
+
+message_174:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel当然好啊！\!听上去很好玩……\!不过也许改天吧。\!<br>我小时候认识的老朋友\n[8]再过几天就要搬走了，所以我们今天一整天都要一起玩啦。\!不过之后我一定会来找你的！
+
+message_175:
+  text: \n<体育生>行啊，那我们下周约个时间吧。\!老时间，老地点，成？
+
+message_176:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel行呀！\!成！\!到时候见！
+
+#After talking again
+
+message_177:
+  text: \n<体育生>呼……\!呼……\!呼……\!呼……
+
+
+#===============JESSE'S DAD=====================
+
+#Location: FARAWAY PARK, sweeping the ground
+
+message_190:
+  text: \n<抬头纹老爷爷>嘿，伙计们！\!见到你们真好。\!<br>我就是在扫扫地，捡捡垃圾，擦擦窗子什么的……\!都是我平时的工作。\!<br>唉……\!要打扫的地方太多了……\!一个人根本不可能做完嘛！
+
+#===============JESSE'S DAD=====================
+
+#Location: Joy's House - Tutoring Joy Quest
+
+#After completing Tutoting joy quest
+message_200:
+  text: \n<乔伊>爸爸对我超级严格的，因为我的哥哥迈克尔不去学校了，他要成为街头吉他手……\!他有时候会在\c[11]遥远广场\c[0]弹吉他哦！\!他弹得超好的！
+
+#===============JESSE'S DAD=====================
+
+#Location: Joy's Dad - Tutoring Joy Quest
+
+message_210:
+  text: \n<乔伊的爸爸>太棒了！\!你应该考虑当全职家教！\!<br>请务必明天再来！
+
+
+#===============KAREN=====================
+
+#Location: Hardware store: After Picking up paint quest
+
+message_220:
+  text: \n<卡伦>有空的话请来拜访我们！\! <br>我们准备在两天以后举办乔迁宴。\! <br>你要是能来的话就太好了！
+
+
+#===============KATIE=====================
+
+#Location: Hobbeez - Pet Rock Fight
+
+message_230:
+  text: \n<卡蒂>这个地方有点小，但里面全是稀有的古董！\! <br>人们甚至会从市里一路赶来这里淘货！
+
+
+#===============KIM AND VANCE'S DAD =====================
+
+#Location: Hardware Store- Fix Pipe Quest 1
+
+#After hardware store- fix pipe quest 1, kim and vance's dad is in his house next to the pipe
+message_240:
+  text: \n<万斯的爸爸>叽里咕噜， 叽里咕噜……\!水管又坏了……
+
+message_241:
+  text: \n<万斯的爸爸>耗子……\!我觉得我还是明天再试试吧……
+
+
+#===============KIM AND VANCE'S MOM =====================
+
+#Location: Other Street - Missing Shears Quest
+
+#Kim's Mom moves to Kim's Mom's house living room after Missing Shears Quest. Snipping Bonsai.
+
+message_250:
+  text: \n<小金的妈妈>剪，剪……\!剪，剪，剪……
+
+message_251:
+  text: \n<小金的妈妈>啊，你们两个好啊！\!我没想到你们这么快会过来！
+
+message_252:
+  text: \n<小金的妈妈>看这里！\!照顾这些盆栽是我的兴趣之一。\!能帮我……\!缓解压力。
+
+message_253:
+  text: \n<小金的妈妈>之后，我要为我的两个孩子——金和万斯准备今天的晚餐了。\!<br>他们最好不要又给我迟到……\!否则……
+
+message_254:
+  text: \n<小金的妈妈>剪，剪，剪，剪，剪，剪，剪，剪！！
+
+#===============LUCAS (DOG) =====================
+
+#Location: Artist's house
+
+message_260:
+  text: \n<卢卡斯>汪，汪，汪，汪，汪！
+
+message_261:
+  text: \n<画家>卢卡斯！\!别叫了！
+
+
+#===============MINCY =====================
+
+#Location: FARAWAY PARK - Company Quest 1
+
+message_270:
+  text: 米西正在勤奋地画画。
+
+#===============PRETTY BOY=====================
+
+#Location: FARAWAY PARK - Pet Rock Fight
+
+message_280:
+  text: \n<漂亮的男孩>我最近生活压力很大，但在这里看人来人往有助于我理清思绪。\!<br>也许我会养成经常来这个公园的习惯……\!我想也许有的时候，<br>细嗅蔷薇就是放松的最佳途径！
+
+
+#===============POLLY=====================
+
+#Location: FARAWAY PARK - Pet Rock Fight
+
+message_290:
+  text: 这位年轻的女士脸上带着非常专注的神情。\!<br>她不愿抬头从地板上移开视线。
+
+
+#===============POLLY=====================
+
+#Location: FARAWAY PARK
+
+message_300:
+  text: \n<牧师>我正在去\c[11]教堂\c[0]的路上，但我习惯在布道之前先去快速地逛一下散散步。\!我从小就有怯场的大毛病，散散步看看风景总能帮我舒缓心情！
+
+
+#===============RECYCULTISTS=====================
+
+#Location: PARK
+
+message_310:
+  text: \n<回收教徒>我们是回收教徒，圣垃圾桶的门徒！
+
+message_311:
+  text: \n<回收教徒>无人不曾乱扔垃圾，<br>因此人类必须接受自己是垃圾的事实！
+
+message_312:
+  text: \n<回收教徒>节能减用，重复使用，回收利用！
+
+
+#===============SARAH=====================
+
+#Location: Supermarket in grocery section
+
+message_320:
+  text: \n<莎拉>我妈和我是来\c[11]异家超市\c[0]买健康食品的，因为她昨天把我们家里所有的零食都扔掉了……我觉得她最近在健康饮食方面有点走火入魔了，因为我爸最近只吃垃圾食品……为什么不能两者都吃呢？
+
+
+#===============SARAH=====================
+
+#Location: Gino's Pizza eating Pizza
+
+message_330:
+  text: \n<莎拉的爸爸>我老婆一直跟我说我越来越肥了，但我们住得离\c[11]吉诺披萨店\c[0]那么近，\!<br>我把持不住啊！\!噢……\!唔……\!披萨……
+
+#===============SEAN=====================
+
+#Location: Hardware Store (picking paint quest)
+#After completing Picking Paint Quest:
+
+message_340:
+  text: \n<肖恩>太谢谢你的帮助了！\!<br>我们都住在这附近，但我们最近搬到一栋全新的房子里去了……\!<br>就在靠近\c[11]教堂\c[0]的那条街上。
+
+
+#===============TUCKER=====================
+
+#Location: Charlie's Basement - Pet Rock Fight
+
+message_350:
+  text: \n<图克>你好，人类！\!请叫我图克……
+
+
+#=========================================================================================
+# DAY 1 - SUNSET
+#=========================================================================================
+
+
+#========================== BASIL================================
+
+#Location: Basil's House (Cutscene: Polly)
+#BASIL's eyes follow \n[8].
+
+message_361:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \n<贝瑟尔>哦——哦……嗨，\n[8]……
+
+message_362:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \n<贝瑟尔>你——你为什么那样盯着我看？
+
+message_363:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \n<贝瑟尔>终于见到你真是太好了……哈哈……
+
+message_364:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \n<贝瑟尔>\fn<OMORI_GAME>一切都会好的……\!一切都会好的……\!一切都会好的……\!<br>一切都会好的……\!一切都会好的……\!一切都会好的……\
+
+
+#========================== ANGEL================================
+
+#Location: Hobbeez looking at comics (Pet Rock Fight)
+
+message_370:
+  text: \n<安吉尔>你看啥呢？！\!你要是不知道，我告诉你，我可是这里的常客！\! <br>我得赶在开学之前赶紧追上最新的漫画进度！
+
+
+#========================== CHARLIE (CHARLENE)================================
+
+#Location: Hardware store looking at flowers
+
+message_380:
+  text: \n<查理> ...
+
+#========================== THE MAVERICK================================
+
+#Location: FARAWAY PARK running in place in an open area
+
+message_390:
+  text: \n<独行侠>啊！\!这不是凯和\n[8]吗！
+
+message_391:
+  text: \n<独行侠>你们今天早些时候也许羞辱了我……\!但现在正是我复仇之时！
+
+message_392:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel现在又是演哪一出啊，米凯尔？
+
+message_393:
+  text: \n<独行侠>可恶……\!你现在还一副嘻皮笑脸的样子！去死吧你！
+
+message_394:
+  text: \n<独行侠>凯！\!我向你挑战，跟我赛跑吧！！
+
+message_395:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel真的吗？\!赛跑吗？
+
+message_396:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel我不知道要不要比诶……\!因为我跑得还挺快的……
+
+message_397:
+  text: \n<独行侠>哈！\!你也就现在能说这种话了！\!你等着瞧，让你看看我训练的成果！
+
+message_398:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel我是认真的，米凯尔。\!<br>公平起见，我警告你……\!我跑的很快的。\!\fb超级\fb快的。
+
+message_399:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel嘿，我知道了！\!你想的话可以骑你的滑板车哦！
+
+message_400:
+  text: \n<独行侠>你不要这么居高临下地对我！
+
+message_401:
+  text: \n<独行侠>来啊，凯！\!你嘴上功夫一套一套的，脚下功夫到底行还是不行啊！？\!<br>别当缩头乌龟了！\!真的来挑战我啊！
+
+message_402:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel唉……\!我必须得这么做了， 是不是？\!好，行吧。
+
+message_403:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel抱歉啦，\n[8]。\!我马上就回来。
+
+#PLAYER is at the finish line.
+#CAMERA pans to KEL and THE MAVERICK who are on the other side of the track.
+
+
+message_404:
+  text: \n<独行侠>准备！！
+
+message_405:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel预备……
+
+message_406:
+  text: \n<独行侠和凯>跑！
+
+#KEL runs quickly, and the camera follows
+#After a few seconds,THE MAVERICK slowly walks into the screen from off CAMERA
+
+message_407:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!等……\!我……\!呼……\!我要重赛……
+
+message_408:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel我不太想诶，米凯尔……\!天色有点晚了，是不是？
+
+message_409:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……
+
+#THE MAVERICK's wig falls off and he picks it up and puts it back on.
+
+message_410:
+  text: \n<独行侠>呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!呼……\!求你……
+
+message_411:
+  text: \n<独行侠>呼……\!我……\!呼……\!要……\!呼……\!重赛……\!呼……
+
+message_412:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel好吧……\!呃……\!也许改天吧……\!我和\n[8]有事要先走了……\!<br>之后再见啦，米凯尔……
+
+#cutscene ends
+
+
+message_413:
+  text: \n<独行侠>呼……呼……呼……呼……呼……呼……呼……呼……去你的，凯……呼……
+
+message_414:
+  text: \n<独行侠>你还没见到……呼……独行侠……的真正实力……呼……
+
+#========================== BEBE================================
+
+#Location: FARAWAY PARK running in place in an open area
+
+message_420:
+  text: \n<贝贝>我觉得我今天找到了真爱……\!希望他能注意到我……
+
+#========================== BEBE'S MOM================================
+
+#Location: Candy Shop
+
+message_430:
+  text: \n<贝贝的妈妈>巧克力是所有女孩最好的朋友啊！\!虽然……\!钻石的排名也挺高的呢……
+
+#========================== BILLY================================
+
+#Location: FARAWAY PARK
+
+message_440:
+  text: \n<比利>地球的污秽……\!令我作呕……\!真希望我能就此……\!将它们全部一扫而空。
+
+#========================== CARETAKER===============================
+
+#Location: Graveyard
+
+message_450:
+  text: \n<看门人>这一带还挺安静的，是不是？你完全听不见街道那边嘈杂的声音呢。<br>呵……这边只有游荡的魂魄……当然，还有我啦！
+
+message_451:
+  text: \n<看门人>你那是什么表情？我还没死呢！
+
+message_452:
+  text: \n<看门人>呱哈哈哈哈！！
+
+#========================== DAPHNE & BOWEN===============================
+
+#Location: Church
+
+message_460:
+  text: \n<达芙妮>我们家每周会来一次\c[11]教堂\c[0]……
+
+message_461:
+  text: \n<鲍恩>有时候会来两次……
+
+message_462:
+  text: \n<达芙妮>有时候会来三次……
+
+
+#========================== POLLY===============================
+
+#Location: Basil's House
+
+#After cutscene: Polly
+message_470:
+  text: \n<波莉>晚餐很快就准备好了！大家可以随意一点哦！
+
+#After cutscene: Awkward Dinner
+message_471:
+  text: \n<波莉>你可能在想我是谁，对不对？我不是谁啦……\!<br>我就是个照顾贝瑟尔祖母的护士而已。
+
+message_472:
+  text: \n<波莉>几个月之前，贝瑟尔的父母雇佣我来当贝瑟尔的监护人，\!<br>因为他们经常要出差。
+
+message_473:
+  text: \n<波莉>我尽力照顾贝瑟尔了，因为他父母好像从来都不在家，\!<br>但……自从我搬进来，贝瑟尔一直试图躲着我的感觉始终挥之不去……
+
+message_474:
+  text: \n<波莉>我看过他相册里自己的照片，感觉根本就不是同一个人。<br>我在想是不是我做错了什么……
+
+
+#==========================Preacher===============================
+
+#Location: Church
+
+message_480:
+  text: \n<牧师>唔……\!一般布道会中途斗殴这种事情我是不会容忍的，<br>但刚才看起来事态挺严肃的……
+
+message_481:
+  text: \n<牧师>那个叫奥布里的女孩过去几年每周都来这里，但从来不和任何人说话。\!我试图和她搭过几次话，但她一直对我说些……\!污言秽语……
+
+message_482:
+  text: \n<牧师>她看起来心事重重。\!也许她需要和朋友聊聊。
+
+#==========================Sarah===============================
+
+#Location: Sarah's House
+
+message_490:
+  text: \n<莎拉>哦，你好！\!我听到楼下有些骚乱。\!<br>是不是我爸的结婚戒指又掉到下水道里了？\!<br>他老是这样……\!不过他不知道我知道就是了……\!呵呵……
+
+message_491:
+  text: \n<莎拉>总之，你好呀！\!我是莎拉！很高兴遇见你！
+
+#Talk to SARAH again
+
+message_492:
+  text: \n<莎拉>自从我妈对于健康生活走火入魔以来，\!<br>我家就找不出任何的薯片和零食了……\!但……\!我猜……\!<br>胡萝卜和麦片沾沙拉酱吃，味道应该也不错吧……
+
+#==========================Sarah's Dad===============================
+
+#Location: Sarah's House (Ring in the sink quest)
+
+message_500:
+  text: \n<莎拉的爸爸>唔……\!嘿，你有没有看见一大包薯片落在什么地方啊？\!<br>我发誓我前两天刚买了一大包的……
+
+#==========================Sarah's Mom===============================
+
+#Location: Sarah's House (Ring in the sink quest)
+
+message_510:
+  text: \n<莎拉的妈妈>按照计划，我们全家从这周开始都应该健康饮食的，\!<br>但\c[11]吉诺披萨店\c[0]的味道真是太诱人了……\!唉……\!<br>也许时不时吃一顿油腻的大餐也不是不行……
+
+#==========================The Maverick's Dad===============================
+
+#Location: Church
+
+message_520:
+  text: \n<独行侠的妈妈>哦，天哪……\!呜呜……\!好像我们家的小儿子又没有去\c[11]教堂\c[0]……
+
+message_521:
+  text: \n<独行侠的爸爸>唉……\!米凯尔……\!你在哪儿呢？\!为什么你一定要让你妈为你担心呢？
+
+#=========================================================================================
+# DAY 2 - DAY
+#=========================================================================================
+
+
+#==========================Aubrey===============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_530:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub……
+
+message_531:
+  text: 奥布里不愿抬头从餐盘上移开视线。
+
+
+#==========================Basil===============================
+
+#Location: FARAWAY PARK near the Secret Lake entrance.
+
+message_540:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas嘿——嘿……\!凯……\!嘿，\n[8]……
+
+message_541:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel嘿，贝瑟尔！\!你康复了真是太好啦！\!昨天之后你感觉好点了吗？
+
+message_542:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas嗯？\!昨，昨天？\!你，你是什么意思？
+
+message_543:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel你昨天肚子痛得很厉害呀，不是吗？\!<br>所以你晚餐吃到一半就去洗手间了，对吧？
+
+message_544:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas啊，啊……\!哦，对哦……
+
+message_545:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel那你今天想和我们出去玩吗？\! <br>你也知道，\n[8]再过几天就要搬走了……
+
+message_546:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas啊……\!嗯…………\!我不知道……
+
+message_547:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas可，可能还是明天吧……
+
+message_548:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas我还是……\!不太舒服。
+
+message_549:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel嗷……\!那好吧。\!我们之后再来找你！
+
+message_550:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \bas好，好的……
+
+#BASIL is gone after leaving this map.
+
+
+#==========================ANGEL===============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_560:
+  text: \n<安吉尔>哇啊啊啊啊啊啊啊啊！！
+
+message_561:
+  text: \n<安吉尔>\n[8]和凯！\!你们在这里干什么！？\!<br>你们不知道打扰别人吃饭很不礼貌吗！？
+
+
+#==========================CHARLIE (CHARLENE)===============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_570:
+  text: \n<查理>你，你好……
+
+#==========================Kim===============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_580:
+  text: \n<小金>恶……\!书呆子诶！\!叽里咕噜，叽里咕噜……<br>别靠近我们！今天和你们没话说！
+
+#==========================The Maverick===============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_590:
+  text: \n<独行侠>啊……\!我哒舌头……
+
+
+#==========================VANCE==============================
+
+#Location: Gino's Pizza until Cutscene: Dropping off Stuff at Kel's
+
+message_600:
+  text: \n<万斯>嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!<br>嚼嚼……\!披萨……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!<br>嚼嚼……\!嚼嚼……\!嚼嚼……
+
+#==========================ARTIST==============================
+
+#Location: Artist's House (Lost Lucas)
+
+message_610:
+  text: \n<画家>唉……\!卢卡斯……\!别这样让我担心啊。
+
+
+#==========================BEBE==============================
+
+#Location: Gino's Pizza
+
+message_620:
+  text: \n<贝贝>哦我的天……\!我喜欢的人就坐在那里诶……\!我要怎么做？\!我要怎么做？\!呼吸啊，贝贝……\!你要显得帅一点！
+
+#==========================BEBE'S MOM==============================
+
+#Location: Gino's Pizza
+
+message_630:
+  text: \n<贝贝的妈妈>我大女儿今晚要从大学回来啦！\!<br>她肯定知道现在最新潮最流行的是什么……\!<br>吼吼！真是等不及要和她叙叙旧了！
+
+#==========================BILLY (Recycultist)==============================
+
+#Location: FARAWAY PARK in a Recycultist's Outfit
+
+message_640:
+  text: \n<回收教徒>兄弟姐妹们，我们大家都必须接受自己是垃圾的事实。\!<br>虽然我们都是垃圾，但只要我们还是可生物降解的，\!<br>我们就有机会得到救赎。
+
+#==========================BRENT==============================
+
+#Location: Brent's House: Sneaking out Brent
+#After Sneaking Out Brent
+#Location: FARAWAY PARK running in circles
+
+message_650:
+  text: \n<布伦特>\sinv[1]啊啊啊啊啊啊啊啊啊啊啊！！\!这太好玩了！
+
+#==========================BRENT'S MOM==============================
+
+#Location: Town Plaza Gossiping with Kim's Mom
+
+message_660:
+  text: \n<布伦特的妈妈>就和我说的一样……\!你能相信吗……\!然后她……\!但是之后……\!嗯哼……
+
+#==========================CARETAKER==============================
+
+#Location: Graveyard
+
+message_670:
+  text: \n<看门人>感觉最近气氛有些不对劲……\!那些鬼魂……\!在长嚎……
+
+message_671:
+  text: \n<看门人>依我看来，他们可能是要准备给谁接风洗尘了……\!<br>可能这附近有谁马上要成为他们之中的一员了吧。
+
+message_672:
+  text: \n<看门人>嗯？\!你那是什么表情？\!你觉得我疯了还是怎么的？
+
+message_673:
+  text: \n<看门人>呱哈哈哈哈！！\!不要那么快就下论断嘛！\!<br>我可是亲眼见过的，如果你也一样，那你一定也会相信我的话的！
+
+
+#==========================CHARLIE'S MOM==============================
+
+#Location: Charlie's House
+
+message_680:
+  text: \n<查理的妈妈>哎，你们好啊！再次谢谢你们昨天帮我去拿药……哎呀，\!<br>你们让我想起了我自己的两个儿子呢！
+
+message_681:
+  text: \n<查理的妈妈>他们性格迥异，但处得很好。人们都说他们性格互补呢……咳，咳……
+
+message_682:
+  text: \n<查理的妈妈>虽然你看不出来，但我今年就要64岁了！我一生中有七个孩子，但除了我的大儿子和我的小女儿，大家都搬走了。不过，我大儿子从来不离开他的房间，所以他可能一辈子不会出来了吧……
+
+#==========================Cris's Dad==============================
+
+#Location: FARAWAY PARK
+
+message_690:
+  text: \n<克里斯的爸爸>唉……\!做肉饼真辛苦……\!<br>但一想到牙齿咬上那鲜嫩多汁的汉堡肉的滋味，那一切都值得了。\!<br>嗯……\!我现在就已经可以品尝到了……
+
+message_691:
+  text: \n<克里斯的妈妈>亲爱的，注意看！\!肉饼要烧糊了！
+
+message_692:
+  text: \n<克里斯的爸爸>哦，糟了！\!谢谢，亲爱的。刚才真险……
+
+#==========================Cris's Mom==============================
+
+#Location: FARAWAY PARK
+
+message_693:
+  text: \n<克里斯的妈妈>今天真是野餐的好日子！\!我带了我的拿手好菜来……\!鸡肉派，柠檬派，当然还有我世界著名的苹果派啦！
+
+#==========================CURTSEY==============================
+
+#Location: Hobbeez
+
+message_700:
+  text: \n<小礼>我在\c[11]糖果店\c[0]工作，但我休息的时候就喜欢来这里！\!<br>我每次来都能看到新东西，所以不无聊的。
+
+
+#==========================GINO==============================
+
+#Location: Gino's Pizza
+
+message_710:
+  text: \n<吉诺>...
+
+
+#=========================HECTOR (DOG)==============================
+
+#Location: Player's Street
+
+message_720:
+  text: \n<赫克托尔>汪！汪！汪！汪！\!汪！汪！汪！汪！汪！汪！\! （我是只乖狗狗吗？）
+
+
+#=========================JESSE'S DAD==============================
+
+#Location: FARAWAY PARK
+
+message_730:
+  text: \n<杰西>嘿，大家！\!见到你们真好。\!<br>最近这边冒出来些新的回收教徒，因为他们，事态变化很大啊！
+
+message_731:
+  text: \n<杰西>这还是我第一次看见那么多人说要去捡垃圾呢。\!<br>真是让我的工作轻松了不少呢……哈哈……
+
+message_732:
+  text: \n<杰西>不过我总感觉他们有些可疑……
+
+
+#=========================JOY==============================
+
+#Location: Joy's House (Sneaking out Joy quest)
+
+
+message_740:
+  text: \n<乔伊>跳！\}啊——\{跳！\}啊——\{跳！跳！跳！
+
+#=========================JOY's DAD==============================
+
+#Location: Supermarket talking to AYEE
+
+message_750:
+  text: \n<乔伊的爸爸>喂，阿妈，今日生意点呀？
+
+message_751:
+  text: \n<阿姨>少少忙，都算 OK 啦。乔伊做紧乜呀？
+
+message_752:
+  text: \n<乔伊的爸爸>佢宜家温紧书……几勤力嘅！
+
+message_753:
+  text: 你完全听不懂他们在说什么。
+
+
+#=========================KAREN==============================
+
+#Location: Sean's House
+
+message_760:
+  text: \n<卡伦>我们正贴新墙纸贴到一半呢！\!<br>贴完以后，我们要去\c[11]异家超市\c[0]买明天要用的东西……好忙，好忙！
+
+#=========================KEL'S DAD==============================
+
+#Location: Hardware Store Garden
+
+#Exclamation on Kel
+
+message_770:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel哎呀……嗯……呃……\n[8]……我们还是去别的地方看看吧！
+
+message_771:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \n<凯的爸爸>凯！是你吗？你在这里干什么？你不是应该去帮你妈跑腿吗？
+
+message_772:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel哦，嗨，爸爸！原来你在那啊！我都没发现……嘿嘿……
+
+message_773:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel快来啊，\n[8]……我们该撤了……
+
+message_774:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \n<凯的爸爸>哦，那好吧。晚点见了小子们！
+
+
+#=========================KIM'S MOM==============================
+
+#Location: Town Plaza Gossiping with Kim's Mom
+
+message_780:
+  text: 那和我们那时一样……\!是啊……\!然后……\!<br>说真的，我觉得……\!嗯，肯定……
+
+
+#=========================LUCAS (DOG)==============================
+
+#LOCATION: Player's Street (Lost Lucas quest)
+
+message_790:
+  text: 汪，汪！汪！
+
+
+#=========================POLLY==============================
+
+#LOCATION: Artist's House
+
+message_800:
+  text: \n<波莉>我最喜欢向日葵了……
+
+#=========================PREACHER==============================
+
+#LOCATION: Church
+
+message_810:
+  text: \n<牧师>我今天一整天都感觉墓地这边有哪里怪怪的。\!<br>我上次有这种感觉还是在……\!算了，别在意……\!肯定是巧合。
+
+
+#=========================SARAH==============================
+
+#LOCATION: Sarah's House
+
+message_820:
+  text: \n<莎拉>爸爸妈妈最近一直在吵架……\!希望他们没事。
+
+
+#=========================SARAH's DAD==============================
+
+#Location: Gino's Pizza
+
+message_830:
+  text: \n<莎拉的爸爸>我老婆一直跟我说我越来越肥了，但我们住得离\c[11]吉诺披萨店\c[0]那么近，\!<br>我把持不住啊！
+
+message_831:
+  text: \n<莎拉的爸爸>唉……\!但我真的不应该再偷吃了。\!<br>昨天晚上，老婆说我的口气闻起来像辣香肠，超级生气的……
+
+
+#=========================SARAH's MOM==============================
+
+#Location: Sarah's House (Toilet seat quest)
+
+message_840:
+  text: \n<莎拉的妈妈>我老公真是个大傻子！我们全家都在吃健康餐，\!<br>但我昨天晚上居然闻到他口气里有辣香肠的味道！
+
+#=========================SEAN==============================
+
+#Location: SEAN'S HOUSE
+
+message_850:
+  text: \n<肖恩>呼……\!呼……\!虽然很艰难，但一切都是值得的！
+
+
+#=========================================================================================
+# DAY 2 - SUNSET
+#=========================================================================================
+
+
+#=========================BASIL==============================
+
+#Location: BASIL'S ROOM IN BED
+
+message_860:
+  faceset: MainCharacter_Basil
+  faceindex: 20
+  text: \n<贝瑟尔>\n[8]……\!我们……\!无路可逃了……不是么？
+
+message_870:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel可怜的贝瑟尔，这几天经历了那么多不好的事情……
+
+message_880:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her贝瑟尔……\!你一定累了吧。\!你好好休息吧……\!我们明天再来看你。
+
+#=========================ANGEL==============================
+
+#Location: Angel's Bedroom
+
+message_890:
+  text: \n<安吉尔>唔哇哇哇哇哇哇哇！！！你们在我家干啥呢！？\!<br>是不是我姐放你们进来的？
+
+message_891:
+  text: \n<安吉尔>呼呼呼……\!那此时此刻就是找你俩重赛的大好时机了！\!<br>管你准没准备好，我来也！
+
+#[Battle: Angel]
+
+#player win
+message_892:
+  text: \n<安吉尔>哼……你们不知道的是，\!<br>我的真正目的是在这场战斗中钻研你们的一招一式……\!<br>下次你们可就不会赢得那么轻松了！
+
+#player lose
+message_893:
+  text: \n<安吉尔>哼……我能看出你放水了，知道吗……\!<br>虽然我是个小孩子，但我可不傻！
+
+
+#=========================CHARLIE==============================
+
+#Location: Charlie's Bedroom
+
+#Charlie explanation mark
+
+message_900:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel等一下……\!你就是查琳？\!我一直以为你叫查理……
+
+message_901:
+  text: \n<查琳>……你好……\!我的名字叫……\!查琳……
+
+message_902:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel哎呀，你为什么不说呢！？
+
+message_903:
+  text: \n<查琳>...
+
+
+#=========================KIM==============================
+
+#Location: Kim's Bedroom (Mom's House) staring at the photo of AUBREY and KIM next to her bed.
+
+message_910:
+  text: \n<小金>奥布里……
+
+message_911:
+  text: \n<小金>啊！\!叽里咕噜……\!叽里咕噜……\!你为什么觉得你有权这样随便闯进别人的房间啊！？\!你一定和我妈交上朋友了，是吧？\!只要愿意听她说话的人她都会放进来的……
+
+#====================THE MAVERICK==============================
+
+#Location: The Maverick's Bedroom
+
+message_920:
+  text: \n<独行侠>我哥我姐都超挫的，是不是？这里所有人都这样！
+
+#====================VANCE==============================
+
+#Location: Vance's Bedroom (Mom's House)
+
+message_930:
+  text: \n<万斯>嚼嚼……嚼嚼……嚼嚼……\sinv[1]嗯……\c[3]糖果\c[0]……\sinv[0]
+
+message_931:
+  text: \n<万斯>哦，嘿。怎么了？
+
+message_932:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel嗯？你好冷静哦……你不要挑战我们，打一架什么的吗？
+
+message_933:
+  text: \n<万斯>嗯……不啊，我和你们都没啥矛盾。\!<br>只是小金和我一直做同样的事情而已。
+
+message_934:
+  text: \n<万斯>我只大一岁而已，但因为我有胡子，没有人相信我……
+
+message_935:
+  text: \n<万斯>我知道她经常嘴上不饶人，但她其实心地宽广。\!<br>我呢？我猜我就是她的筋肉保镖吧！嘎哈哈……
+
+
+#====================ARTIST==============================
+
+#Location: Artist's house
+
+message_940:
+  text: \n<画家>我在给下一幅画打草稿，但不知道从哪里开始……\!<br>要想出好点子可真难啊！
+
+
+#====================Bebe==============================
+
+#Location: Bebe's House
+
+message_950:
+  text: \n<贝贝>我在想要不要给我喜欢的对象写一封信，告诉他我的心意……
+
+#====================Bebe's Mom==============================
+
+#Location: Bebe's House (Pick up furniture quest)
+
+message_960:
+  text: \n<贝贝的妈妈>我的咖啡机就在厨房。小心……咖啡很浓的！
+
+#====================Brandi==============================
+
+#Location: Bebe's House
+
+message_970:
+  text: \n<布兰迪>哦，嘿！\!我是布兰迪……\!我今天刚从学校回来。\!<br>我已经想念城市了！\!这里真是太安静了。
+
+#====================BRENT'S MOM==============================
+
+#Location: Hardware Store looking at flowers
+
+message_980:
+  text: \n<布伦特的妈妈>我有时候就是来这里看看花的。\!<br>我想在家里也放一盆，但我听说有些植物会吸引蚂蚁……
+
+message_981:
+  text: \n<布伦特的妈妈>夏天来了，变热了……我最怕在房子里发现蚂蚁了！
+
+
+#====================CARETAKER==============================
+
+#Location: Graveyard (Lost dentures quest)
+
+message_990:
+  text: \n<看门人>救昧啊！\!窝牙没咯！！\!棱帮窝找咩！？
+
+#After finding teeth:
+
+message_991:
+  text: \n<看门人>呱哈哈哈！！
+
+message_992:
+  text: \n<看门人>谢谢，伙计。\!这里的鬼魂有时候喜欢跟我开玩笑！
+
+message_993:
+  text: \n<看门人>他们没有恶意的……\!我老眼昏花了而已……
+
+
+#====================CRIS'S MOM==============================
+
+#Location: Supermarket
+
+message_1000:
+  text: \n<克里斯的妈妈>啦——滴——滴！\!啦——滴——哒！\!<br>啦——滴——滴！\!啦——滴——哒！
+
+#====================CURTSEY==============================
+
+#Location: Pharmacy
+
+message_1010:
+  text: \n<小礼>唐果小姐头痛，让我来买点止痛药。\!<br>显然这边有很多小孩喜欢偷\c[3]糖果\c[0]……他们胆子可真大。\!<br>唐果小姐生起气来真是超可怕的……
+
+#====================KAREN==============================
+
+#Location: Supermarket
+
+message_1020:
+  text: \n<卡伦>唔……我从来没有给一整队人做过饭……\!<br>可能这次我有点太高估自己了……
+
+message_1021:
+  text: \n<卡伦>我应该质量至上还是数量至上？我怎么知道我应该选哪个牌子？\!<br>青葱和洋葱是同一个东西吗？
+
+message_1022:
+  text: \n<卡伦>唉……早知道我们就直接叫外卖好了。
+
+message_1023:
+  text: \n<肖恩>嘿，不用因为这事太紧张，卡伦。我相信你！\!<br>再说……如果没有人吃你做的菜，那你知道我肯定会吃的！
+
+message_1024:
+  text: \n<卡伦>哦，西恩……你真会说话。我做了什么才配得上你这么好的人？
+
+
+#====================KEL'S DAD==============================
+
+#After Cutscene: Polly's Worry:
+
+#Location: Kel's Living Room watching TV
+
+message_1030:
+  text: \n<凯的爸爸>本来我说要帮忙做今天的晚饭，不过嘛，你妈看不起我的手艺……\!<br>所以我还是坐在这里看电视好了。
+
+#After Cutscene: Kel's Mom
+#Location: Kel's Dining Room
+
+message_1031:
+  text: \n<凯的爸爸>记住啊，一定要好好夸夸你妈做的菜！
+
+#After Cutscene: Convincing Kel's Mom:
+#Location: Kel's Living Room
+
+message_1032:
+  text: \n<凯的爸爸>别担心你妈妈了，英雄。她就是想你啦！她冷静下来以后会好点的……你们去做自己的事情吧！我会好好照看她的。
+
+#KEL'S DAD leaves to KEL'S PARENT'S ROOM.
+#Examine KEL'S PARENT'S ROOM.
+
+message_1033:
+  text: 这扇门上锁了。
+
+#====================KEL'S MOM==============================
+
+#After Cutscene: Polly's Worry:
+
+#Location: Kel's Living Room
+
+message_1040:
+  text: \n<凯的妈妈>好啦，你们去吧……\!但是晚餐前要回家哦！
+
+
+#====================Kim and Vance's Mom==============================
+
+#Location: Kim's House
+message_1050:
+  text: \n<小金的妈妈>剪……剪……剪……剪……剪……
+
+message_1051:
+  text: \n<小金的妈妈>我儿子女儿现在应该回家了啊！\!<br>有什么事情那么重要，重要得让他们不愿意回家和妈妈玩呢！？
+
+message_1052:
+  text: \n<小金的妈妈>剪，剪，剪，剪，剪，剪，剪！！
+
+#====================Polly==============================
+
+#Location: Basil's House
+message_1060:
+  text: \n<波莉>我发现贝瑟尔很喜欢去公园，但我没发现他在那里……\!<br>他祖母的情况不太好……
+
+message_1061:
+  text: \n<波莉>我试图让他接受必然会发生的事情，但我说到一半，<br>他就哭了起来跑掉了……唉……我希望他没事……
+
+
+#====================SARAH==============================
+
+#Location: Sarah's House
+
+message_1070:
+  text: \n<莎拉>爸妈还没回家。天色有点晚了……他们会去哪儿了呢？
+
+#talk again
+
+message_1071:
+  text: \n<莎拉>我想吃得健康一点，但家里没有沙拉酱了……\!<br>现在我要怎么吃胡萝卜和麦片啊？
+
+#====================SARAH'S DAD==============================
+
+#Location: Candy Shop (Anniversary chocolate quest)
+
+message_1080:
+  text: \n<莎拉的爸爸>你真是帮了我大忙。如果你需要帮忙，随时叫我。我欠你个人情！
+
+#====================SARAH'S MOM=============================
+
+#Location: Gino's Pizza (Anniversary Pizza quest)
+
+message_1090:
+  text: \n<莎拉的妈妈>哦天哪，亲爱的！你弄得我好害羞哦……我会永远记得这次纪念日的！
+
+
+#====================SEAN=============================
+
+#Location: Supermarket
+
+message_1100:
+  text: \n<卡伦>唔……我从来没有给一整队人做过饭……\!<br>可能这次我有点太高估自己了……
+
+message_1101:
+  text: \n<卡伦>我应该质量至上还是数量至上？我怎么知道我应该选哪个牌子？\!<br>青葱和洋葱是同一个东西吗？
+
+message_1102:
+  text: \n<卡伦>唉……早知道我们就直接叫外卖好了。
+
+message_1103:
+  text: \n<肖恩>嘿，不用因为这事太紧张，卡伦。我相信你！\!<br>再说……如果没有人吃你做的菜，那你知道我肯定会吃的！
+
+message_1104:
+  text: \n<卡伦>哦，西恩……你真会说话。我做了什么才配得上你这么好的人？
+
+
+#=========================================================================================
+# DAY 3 - DAY
+#=========================================================================================
+
+#Location: Hobbeez looking at trading cards in the display case. (Pet Rock Fight)
+
+message_1110:
+  text: \n<安吉尔>看看这些超级稀有超级昂贵的卡牌吧……\!<br>我想收齐所有卡牌，但我身上只有$5！当小孩真是不爽……
+
+message_1111:
+  text: \n<安吉尔>哇，这是什么！？我在屁股口袋里找到一张崭新的$20钞票诶！\!<br>今天一定是我的幸运日！呼呼呼……\!<br>我想我今天至少能买到一张超级稀有的罕贵卡了……
+#If player completes quest: Bring Angel home
+
+message_1112:
+  text: 安吉尔一动不动。\!可能要过上一会他才能缓过来。
+
+#==============CHARLIE (CHARLENE)======================================================
+
+#Location: Hardware Store - Flower Quest
+
+message_1120:
+  text: \n<查理>你，你好……
+
+message_1121:
+  text: \n<查理>来……这个给你……
+
+message_1122:
+  text: 你获得了\c[4]花花发卡\c[0]。
+
+message_1123:
+  text: \n<查理>花花真好看……
+
+
+#==============KIM======================================================
+
+#Location: Park (Ding-Dong)
+
+message_1130:
+  text: \kim嘿，快看啊！是奥布里和书呆子们！
+
+message_1131:
+  text: \aub嘿，金。最近怎么样？
+
+message_1132:
+  text: \kim挺好的，挺好的。我和我们帮派的其他人看过这个奇怪的垃圾堆以后，就都去各干各的事情了。
+
+message_1133:
+  text: \kim我爸说他今晚要带我们去参加一个很厉害的派对……应该挺酷的吧。
+
+message_1134:
+  text: \van噢——耶！免费的食物诶！
+
+message_1135:
+  text: \kim所以为了打发时间，我们要玩我们最喜欢的游戏……叮咚——跑路！
+#Ding Dong Ditch: Explanation
+
+
+#==============The Maverick===========================================
+
+#Location: Hobbeez
+
+message_1140:
+  text: \n<独行侠>我一整天都想打通这游戏，但我老是被按在地上摩擦。\!<br>唉……为什么要找到我真正擅长的事情就那么难呢！？
+
+#==============VANCE===========================================
+#Location: Park (Ding-Dong)
+
+message_1150:
+  text: \van这么……多……垃圾……
+
+#==============ARTIST===========================================
+#Location: Artist's House (Bring back Angel)
+
+message_1160:
+  text: \art啊……\!终于，我终于能安静一会儿了……
+
+#==============AUBREY'S MOM===========================================
+#Location:  Aubrey's House
+
+message_1170:
+  text: \n<奥布里的妈妈>……
+
+#==============BEBE===========================================
+#Location:  FARAWAY PARK
+
+message_1180:
+  text: \n<贝贝>我跟姐姐讲了我心上人的事情！\!<br>她想让我带她去看看他，所以我们就来这附近等着了，\!<br>他一般会和他朋友来这里……
+
+#==============BEBE'S MOM===========================================
+#Location:  FARAWAY PARK
+
+message_1190:
+  text: \n<贝贝的妈妈>啊，我在想今天晚上给女儿们做什么晚饭好呢……\!<br>布兰迪终于要从大学回来了！不过……我不怎么做饭的，\!<br>要不还是点外卖吧。
+
+#==============BRANDI===========================================
+#Location:  FARAWAY PARK
+
+message_1200:
+  text: \n<布兰迪>贝贝跟我讲了她心上人的事情，我一定要亲眼来看看。\!<br>目前为止他还没出现……\!不过贝贝告诉我，\!<br>我们要找一个戴着很夸张的金色假发的人。
+
+message_1201:
+  text: \n<布兰迪>唉……\!贝贝挑男人的眼光超级烂……\!我回去上学了，谁来照顾她啊？
+
+#BRANDI: If Hero is the leader
+
+message_1202:
+  text: \n<布兰迪>哎！英雄，是你啊！嘿嘿……没在学校而是在这里看到你可真奇怪。我猜你也是回老家来见家人吧……家人是挺好的啦，但我已经等不及回去见朋友了……老家这边什么有意思的事情都没有，你懂吧？
+
+#==============BRENT===========================================
+#Location:  Brent's House
+
+message_1210:
+  text: \n<布伦特>嘿，老师们。谢谢你们帮我做题啦……我觉得我现在自己也能搞定了，<br>不过多亏有你们帮了大忙！
+
+#If you snuck out Brent
+
+message_1211:
+  text: \n<布伦特>嘘……不过我其实是想感谢你们昨天掩护我溜出去啦……嘿嘿嘿……\!<br>你们真是史上最酷的家教老师！
+
+#==============BRENT'S MOM===========================================
+#Location:  Kim's House
+
+message_1220:
+  text: \n<布伦特的妈妈>就和我说的一样……你能相信吗……然后她……但是之后……嗯哼……
+
+#==============CARETAKER===========================================
+#Location:  Graveyard
+
+message_1230:
+  text: \n<看门人>今天一整天鬼魂们都在嚎叫……\!<br>我为这个小镇祈祷。今夜会有人痛失至亲。
+
+#==============CHARLIE'S MOM===========================================
+#Location:  Charlie's House
+
+message_1240:
+  text: \n<查理的妈妈>哦，你交到朋友了嘛！你好！欢迎呀！
+
+message_1241:
+  text: \n<查理的妈妈>天气这么好，你们还愿意来拜访我这么一位孤独的老太太，\!<br>你们真是太好了。\!<br>我想你们的时间一定能花在更有意思的事情上吧。
+
+#==============CRIS'S DAD===========================================
+#Location:  Cris's House (where is the remote quest 3)
+
+message_1250:
+  text: \n<克里斯的爸爸>嘿！\!那可是故意犯规啊！\!怎么不判啊！？
+
+#==============CRIS'S MOM===========================================
+#Location:  Cris's House
+
+message_1260:
+  text: \n<克里斯的妈妈>我把之前烤的那个派从烤箱里拿出来的时候，\!<br>总感觉闻上去有点怪怪的……
+
+#==============Daphne and Bowen===========================================
+#Location:  The Mavericks House (Pet Rock Fight)
+
+message_1270:
+  text: \n<达芙妮>我们的小弟弟米凯尔六岁之后就没尝过面包是什么味道了……
+
+message_1271:
+  text: \n<鲍恩>很快，他就要接受自己的命运了……没有出路的……
+
+message_1272:
+  text: \n<达芙妮>我们的傻弟弟……
+
+message_1273:
+  text: \n<鲍恩>我们的傻弟弟……
+
+#==============JESSE===========================================
+#Location:  Jesse's House
+
+message_1280:
+  text: \n<杰西>哎……我小的时候有两个很好的朋友，布伦特和乔伊。\!<br>但他们最近一门心思都在学习上，所以我就不跟他们玩了。\!<br>不知道他们最近过得怎么样……
+
+#==============JESSE'S DAD===========================================
+#Location:  FARAWAY PARK
+
+message_1290:
+  text: \n<杰西的爸爸>我不太确定到底是怎么回事，但一晚上过去这里就多出了一堆垃圾。\!<br>我有种感觉，应该是那些回收教徒干的好事……
+
+message_1291:
+  text: \n<杰西的爸爸>唉……我一辈子都要在这里扫地了。
+
+
+#==============JOY===========================================
+#Location:  Joy's House
+
+message_1300:
+  text: \n<乔伊>我哥哥迈克尔告诉我，他今天要出镇去当街头吉他手了……\!<br>我不该说的，但我不小心把这事告诉了爸爸。\!<br>希望迈克尔不要生我的气……
+
+#==============JOY'S DAD===========================================
+#Location:  Joy's House (Michael's Lunch quest)
+
+message_1310:
+  text: \n<乔伊的爸爸>噢……过去这几年我太为难他了……
+
+message_1311:
+  text: \n<乔伊的爸爸>我...\!我希望有一天能再见到他……\! <br>他可能还会上电视呢！\!哈哈！
+
+#==============KAREN===========================================
+#Location:  Sean's House (Cooking help quest)
+
+message_1320:
+  text: \n<卡伦>再次感谢你们所有人帮忙。你们都是大好人！今晚派对见哦！
+
+message_1321:
+  text: \n<肖恩>我们会等着你的！
+
+#==============KEL'S DAD===========================================
+#Location: FARAWAY PARK (Forgot Meat quest)
+#Finish Forgot Meat (Before Sunset)
+
+message_1330:
+  text: \n<凯的爸爸>知道吗，你们晚点都应该来我这边一趟。\!<br>我不介意和你们一起分享这些美味的汉堡哦！
+
+message_1331:
+  text: \n<凯的爸爸>去吧，都去好好放松一下吧。今天天气真好！
+
+#==============KEL'S MOM===========================================
+#Location:  FARAWAY PARK
+
+message_1340:
+  text: \n<凯的妈妈>哎呀，你们好呀孩子们！至少我们一起度过了一些有意义的时光呢！
+
+message_1341:
+  text: \n<凯的妈妈>可以的话多待一会吧。今天的天气可真是太好了！
+
+#==============KIM and VANCE'S DAD===========================================
+#Location:  HARDWARE STORE (fix pipe quest 3)
+
+
+message_1350:
+  text: \n<万斯的爸爸>嘿！\!你们知道吗，我儿子和女儿<br>也差不多是你们这个年纪呢！\!他们分别叫万斯和小金哦！
+
+message_1351:
+  text: \n<万斯的爸爸>他们小时候，我就和他们的母亲离婚了……
+
+message_1352:
+  text: \n<万斯的爸爸>我没法经常见到他们，<br>所以我一有机会就会使劲给他们塞\c[3]糖果\c[0]哦！嘿嘿……
+
+message_1354:
+  text: \n<万斯的爸爸>他们是好孩子……\!真的！\!我有时候很担心他们，<br>因为他们一直惹上麻烦，不过至少他们还能陪伴彼此……
+
+#==============KIM and VANCE'S MOM===========================================
+#Location:  Kim's House
+
+message_1360:
+  text: \n<小金的妈妈>那和我们那时一样……\!是啊……\!然后……\!说真的，我觉得……\!<br>嗯，肯定……
+
+#==============Lucas(Dog)===========================================
+#Location:  Artist's House, running around Angel
+
+message_1370:
+  text: \n<卢卡斯>啊呜——！\!汪，汪，汪！
+
+#==============Polly===========================================
+#Location:  Basil's House
+
+message_1380:
+  text: \n<波莉>我觉得贝瑟尔知道朋友来家里玩会很开心的。他最近一直一个人呆着，一定很寂寞吧……
+
+message_1381:
+  text: \n<波莉>知道贝瑟尔有这么关心他的朋友真是太好了。
+
+#==============Preacher===========================================
+#Location:  Church
+
+message_1390:
+  text: \n<牧师>啊，我们今天应该不会举办布道会了，但你可以随意四处逛逛。<br>这里所有人都欢迎你。
+
+#==============Sally===========================================
+#Location:  FARAWAY PARK
+
+#Randomly selected
+message_1400:
+  text: \n<萨丽>啊噗……呜噗噗……
+
+message_1401:
+  text: 萨丽把自己的脸挤成了奇怪的形状。
+
+message_1402:
+  text: 萨丽抓了你的鼻子。
+
+message_1403:
+  text: 萨丽坐在了你的脚上。
+
+message_1404:
+  text: 萨丽翻了个身。
+
+#==============SARAH===========================================
+#Location: Sarah's House
+
+message_1410:
+  text: \n<莎拉>妈妈说我们今天晚上可以去\c[11]吉诺披萨店\c[0]了……\!好耶！
+
+#==============SARAH'S DAD===========================================
+#Location: Sarah's House watching TV on the couch together
+
+message_1420:
+  text: \n<莎拉的爸爸>Zzzzzzzzz...\|呼呼……
+
+#==============SARAH'S MOM===========================================
+#Location: Sarah's House watching TV on the couch together
+
+message_1430:
+  text: \n<莎拉的妈妈>这……\!呜呜……\!是我最喜欢的电影……\!呜呜……
+
+#==============SEAN===========================================
+#Location: Aubrey's Street in front of his house
+
+message_1440:
+  text: \n<肖恩>嘿，大家！就是提醒你们一下，我们今晚要举办乔迁宴哦。<br>欢迎住在这条街道上的所有人来。希望今晚能看到你哦！<br>我们会准备很多食物的。
+
+#after cooking help Quest
+
+message_1441:
+  text: \n<卡伦>再次感谢你们所有人帮忙。你们都是大好人！今晚派对见哦！
+
+message_1442:
+  text: \n<肖恩>我们会等着你的！
+
+# =========================================================================================
+# DAY 3 - SUNSET
+# =========================================================================================
+
+#==============KEL===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+message_1450:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel嗯……\!今天是我们能一起玩的最后一天了，是不是，\n[8]？
+
+message_1451:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel在你开启新生活之前，能好好庆祝一下也挺好的！
+
+message_1452:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel你就好好享受，放轻松啦。\!大家都一样的！
+
+#==============HERO===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+message_1460:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her我已经很久没有参加过这样的派对了。\!我们大学里也会举办派对，<br>但那种没有那么……\!质朴有趣。
+
+message_1461:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her大家都觉得食物挺好吃，这也不错……\!<br>这顿饭是我们齐心协力一起做的，是不是？
+
+#==============AUBREY===========================================
+#If Player enters sean and karens house
+#Location: Sean and Karens House
+
+message_1470:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub哼……\!老话说得对……
+
+message_1471:
+  faceset: MainCharacters_Faraway
+  faceindex: 0
+  text: \aub东西都是别人家的好吃……
+
+
+#==============KIM===========================================
+#Location: Sean and Karens House
+
+message_1480:
+  text: \kim嘿，是你！\!可恶……\!现在这派对就不酷了……
+
+message_1481:
+  text: \kim呵呵……\!开个玩笑而已，书呆子。
+
+message_1482:
+  text: \kim奥布里跟我说你明天要搬走了。\!听上去挺烂的，但你肯定会没事的。
+
+#Stomach grumble sfx
+
+message_1483:
+  text: \kim哦！刚才不是我在叽里咕噜……\!是我的肚子在叫。\!<br>我还是趁着食物没冷赶紧吃吧！
+
+
+#==============THE MAVERICK===========================================
+#Location: Starting at Bakery
+
+message_1490:
+  text: \n<独行侠>我可能对家族企业的理解有些武断……\!<br>我一直在逃避这件事情，但我好像除此以外没什么擅长的事情了。
+
+message_1491:
+  text: \n<独行侠>我有没有可能擅长烘焙呢？
+
+#==============VANCE===========================================
+#Location: Sean and Karens House
+
+message_1500:
+  text: \van嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!嚼嚼……\!噢——耶！\!免费的食物！
+
+
+#==============BEBE===========================================
+#Location: TOWN PLAZA
+
+message_1510:
+  text: \n<贝贝>这是我和喜欢的人的初遇地点……\!希望他能尽快过来……
+
+
+#==============BEBE'S MOM===========================================
+#Location: Bebe's House
+
+message_1520:
+  text: \n<贝贝的妈妈>你见过贝贝吗？\!她晚餐要迟到了……\!我们今天晚上吃中餐外卖哦！
+
+
+#==============BRANDI===========================================
+#Location: Bebe's House
+
+message_1530:
+  text: \n<布兰迪>妈妈最后决定晚餐吃中餐外卖真是太好了……\!<br>她做的所有菜都淡而无味，但你不要告诉她。
+
+#if leader is HERO
+
+message_1531:
+  text: \n<布兰迪>嘿，英雄……\!你要跟我们一起吃晚饭吗？\!这一切都发生得太快了！\!<br>你见我妈妈之前，我们应该先约会什么的，你不觉得吗？
+
+
+#==============BRENT===========================================
+#Location: Brent's House
+
+message_1540:
+  text: \n<布伦特>耶！\!爸爸回家啦！
+
+#==============BRENT'S DAD===========================================
+#Location: Brent's House
+
+message_1550:
+  text: \n<布伦特的爸爸>每天没日没夜地工作还是挺累人的，但能像这样和家人吃上一顿晚餐，我就觉得这一切都是值得的。
+
+#==============BRENT'S MOM===========================================
+#Location: Brent's House
+
+message_1560:
+  text: \n<布伦特的妈妈>大家时不时都回家聚聚，感觉还是很好的。<br>我丈夫有的时候上夜班会上到很晚。布伦特肯定也很想念他爸爸吧。
+
+
+#==============HECTOR===========================================
+#Location: FARAWAY PARK chasing something
+
+message_1570:
+  text: \n<赫克托尔>汪，汪，汪，汪，汪，汪，汪，汪，汪！
+
+#==============JOY===========================================
+#Location: JOY'S HOUSE
+
+message_1580:
+  text: \n<乔伊>爸爸今天对我超级好的，嘿嘿……
+
+message_1581:
+  text: \n<乔伊>他说明天要带我和奶奶去海滩玩诶！\!我已经等不及了！
+
+#==============JOYS DAD===========================================
+#Location: JOY'S HOUSE
+
+message_1590:
+  text: \n<乔伊的爸爸>呜呜……我的大儿子已经长大成人，离家自立了。我在想我是不是应该对乔伊管得松一点……
+
+message_1591:
+  text: \n<乔伊的爸爸>……毕竟她整个夏天都待在房间里呢。小孩的童年可是一去不复返啊，对吧？
+
+#==============KAREN===========================================
+#Location: Sean's House (Housewarming party)
+
+message_1600:
+  text: \n<卡伦>欢迎来参加我们的乔迁宴！不用客气，就当是在自己家好了……<br>今晚限定哦，呵呵……
+
+message_1601:
+  text: \n<肖恩>好好放松，吃点东西吧！你们想待多久就可以待多久……<br>不要太久就行了呢！
+
+#==============KEL'S DAD===========================================
+#Location: Farawy Park
+
+message_1602:
+  text: \n<凯的爸爸>听好，你老爸要教你一点人生道理。要知道，随着你逐渐长大，交到朋友就越来越难了……所以如果你觉得自己交到好朋友了，那一定要好好珍惜对方。一段好的友谊可以持续一生啊，你听到了吗！
+
+
+#==============KIM AND VANCES DAD===========================================
+#Location: Farawy Park
+
+message_1610:
+  text: \n<小金和万斯的爸爸>啊……和我的两个小孩一起享受美好时光。人生别无所求啊！
+
+
+#==============KIMS MOM===========================================
+#Location: Kim's House
+
+message_1620:
+  text: 剪，剪，剪，剪，剪，剪，剪！
+
+#==============MINCY===========================================
+#Location: Farawy Park (Company Quest 6)
+
+message_1630:
+  text: \n<米西>我一定不会忘记你们的。\!永远不会……
+
+#==============POLLY===========================================
+#Location: Basil's House
+
+#After cutscene: Polly's WElcome
+message_1640:
+  text: \n<波莉>哦，贝瑟尔……为什么你看不出来大家都站在你这边呢？
+
+#After cutscene: Basil won't leave his ROOM
+message_1641:
+  text: \n<波莉>请你尽全力帮帮他吧……要说是谁能帮他，那只有你了！
+
+#==============SARAH===========================================
+#Location: Gino's Pizza
+
+message_1650:
+  text: \n<莎拉>恶……\!我爸妈这么恩恩爱爱的，我要怎么和他们同桌吃饭啊？
+
+#==============SARAH'S DAD===========================================
+#Location: Gino's Pizza
+
+message_1660:
+  text: \n<莎拉的爸爸>呜呜……\!我左手拿着披萨，右手牵着老婆。\!<br>这就是男人的人生巅峰啊……
+
+#==============SARAH'S MOM===========================================
+#Location: Gino's Pizza
+
+message_1670:
+  text: \n<莎拉的妈妈>嘿嘿……\!这样也不错，是不是，小南瓜？
+

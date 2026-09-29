@@ -1,0 +1,549 @@
+# =========================================================================================
+# Cutscene: Neighbors Room Intro, DAY 0 PART 1
+# =========================================================================================
+
+#Area Block
+
+message_0:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 去游乐场不是从这里走啦，笨蛋！\aub
+
+#TRIGGER: ENTER NEIGHBORS ROOM
+
+#upon seeing OMORI, AUBREY runs across the cards to greet him.
+
+message_1:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 嗨 OMORI！我们正觉得你马上要来呢。\!<br>想和我们一起打牌吗？\! <br>我们正好快要打完这一局了呢！\aub
+
+#AUBREY looks behind her.
+
+message_2:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 啊！\!哎呀……\!当我没说吧……\aub
+
+#KEL looks at AUBREY and jumps.
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 哎呀……\Com[2]你搞什么呀，奥布里？！\!<br>你把牌全都弄乱了嘛！\!<br>我明明就快赢了呢。\kel
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 我说，凯，没有必要生气呀。\!<br>说到底只是一局牌而已。\her
+
+#KEL looks at HERO
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 少跟我来这套，英雄！<br>\!你就是要输了才会说这种话。\kel
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 42
+  text: ……\her
+
+# =========================================================================================
+# Aubrey's Dialogue before Omori gives her the PlantEgg
+# =========================================================================================
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub为什么\n[3]总是对我那么坏呢？！\!<br>你知道吗，上次这个坏蛋还偷走了我的\c[13]填充玩偶\c[0]，藏在了这个房间不知什么地方呢。
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub他为什么会做出那种事情呀？\!真是太幼稚了……\!<br>我究竟对他做过什么啦？！
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub啊，我知道了！\!你能帮我找一下我的\c[13]填充玩偶\c[0]吗，\n[1]？\!拜托啦！
+
+
+# =========================================================================================
+# Kel's Dialogue
+# =========================================================================================
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel哟 \n[1]，来看看我之前找到了什么！
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel是个宠物石头呢……他是不是很帅呀？
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 35
+  text: 一块小小的宠物石头正从\n[3]的口袋里看着你。
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{我决定给他起名叫\c[13]赫克托尔\c[0]！！\}
+
+message_126:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel\}跟你说个只属于我们两个人的秘密哦……\!<br>你只要从玩家菜单里选择我的装备那一栏就可以随时看到他了！
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel\SINV[1]哎～～～～呀……\sinv[0]\!<br>奥布里总是想要怎么样就能怎么样。
+
+# =========================================================================================
+# Hero's Dialogue
+# =========================================================================================
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her你还好吗，\n[1]？我们都在等你呢！
+
+message_19:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her\n[3]和\n[2]最近又经常在吵架了。\!<br>一般人会觉得怄气那么久也该累了吧，<br>可谁让他们两个总有花不完的力气呢。
+
+# =========================================================================================
+# Cutscene: STUFFED TOY
+# =========================================================================================
+
+#TRIGGER: OMORI finds AUBREYs Stuffed Toy, and returns the Stuffed toy to AUBREY
+
+message_27:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 这、这不是……？\!难道是？\aub
+
+#AUBREY does a twirl.
+
+message_28:
+  text: 奥布里从你手中一把抓过了\c[13]填充玩偶\c[0]。
+
+#AUBREY turns to KEL.
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 嘿，凯！\!你看，是我的\c[13]填充玩偶\c[0]！\aub
+
+#KEL looks at AUBREY and jumps.
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \Com[2]怎、怎么会的？\!你是从哪里拿到的啊？\kel
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 是 OMORI 找到的！\!<br>怎么样，我运气好吧，有真正的朋友帮我！\aub
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 这就是你自找的咯，凯。\!<br>谁让你想要捉弄别人呢。\her
+
+#KEL looks at HERO.
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: 可是明明是奥布里先挑的事啊……\!<br>是她一直捉弄我，笑话我有颗痣长在我的……\kel
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 在你的……\!哪里呀？\aub
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: ……\kel
+
+#HERO looks at AUBREY
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 奥布里……\her
+
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 好啦……\aub
+
+# =========================================================================================
+# Aubrey's Dialogue after Omori gives her PlantEgg
+# =========================================================================================
+
+message_38:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub谢谢你，\n[1]！我就知道可以依靠你的，\!<br>你是最棒的！
+
+# =========================================================================================
+# Hero's Dialogue after Omori gives Aubrey PlantEgg
+# =========================================================================================
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，\n[1]！问题能解决真是太好了。\!<br>这两个人呀，总是彼此之间闹别扭。
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her玛里和贝瑟尔邀请了我们一起去游乐场野餐呢！\!<br>你想去见见他们吗？
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her好啦大家……\!<br>我们去见玛里和贝瑟尔吧！
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her好的，没关系！\!我们都会在这里的。
+
+message_42:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，\n[1]！\!准备出发了吗？
+
+#IF YOU GO TO WHITE SPACE AND THEN RETURN TO NEIGHBOR'S ROOM
+
+message_50:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her嘿，OMORI！欢迎回来！\!准备出发了吗？
+
+#DAY 1 PYREFLY
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her好了大家……\!<br>我们去找贝瑟尔吧！
+
+#AFTER SGL
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her好了大家……\!<br>我们出发去探险吧！
+
+# =========================================================================================
+# Cutscene: STUMP ENTRANCE
+# =========================================================================================
+
+#TRIGGER: ENTER STUMP ENTRANCE
+
+#KEL, HERO, and OMORI pop out of the stump.
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{\sinv[1]噢耶！！终于有新鲜空气了！！\!\}<br>大自然真是太棒了。\!好了，我们出发吧！\kel
+
+#KEL, HERO, and OMORI start walking to FOREST PLAYGROUND.
+  #AUBREY is off screen
+
+message_59:
+  text: \Com[2]哎，等一下！\aub
+
+  #AUBREY pops out of the stump half-way
+
+message_60:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 大家帮我一下呀！我被卡住了。\aub
+
+#HERO begins walking toward stump but is blocked by KEL.
+
+message_61:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \SINV[1]那你要先说“拜托”！\SINV[0]\kel
+
+message_62:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: 凯你别闹了，快把我拉出来啦。\aub
+
+message_63:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: 好啦好啦……\}知道了。\kel
+
+#KEL pulls AUBREY out of the stump.
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: 哼！\!花了这么久才成功！\aub
+
+message_65:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: 那真是抱歉啦，公主大人……\kel
+
+# =========================================================================================
+# Cutscene: Mari and Basil
+# =========================================================================================
+
+#TRIGGER: enter Forest Playground
+
+#AUBREY runs to MARI.
+
+message_86:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \{玛里！贝瑟尔！\aub
+
+message_87:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 啊，你好呀奥布里！大家都好呀！\!<br>今天大家过得怎么样？\mar
+
+message_88:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{凯他又欺负我！！\aub
+
+message_89:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: 啊不是吧！\!又来了吗……\!他怎么能这样呢？\mar
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: 切，我才没有欺负她呢！\!只是奥布里喜欢什么事都瞎抱怨。\kel
+
+message_91:
+  faceset: MainCharacter_Mari
+  faceindex: 2
+  text: 啊呀，凯！\!你的话也很有说服力呀。\!<br>这下我可不知道该相信谁了！\mar
+
+message_92:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \{当然是相信我！！\kel\}
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{不对，应该相信我！！\aub\}
+
+message_94:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 唉……\!你们两个消停一点吧……\!<br>\}为什么每次都是这样子呢？\her
+
+message_95:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 别泄气呀，英雄！你呀，那么成熟有担当的样子。\mar
+
+message_96:
+  faceset: MainCharacter_Mari
+  faceindex: 7
+  text: 我真的很喜欢你的这一点呢……嘻嘻……\mar
+
+message_97:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 啊呀，玛里！\!别现在说这个啦……\her
+
+message_98:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 哎呀英雄，你知道我只是在开玩笑啦。\!<br>不过你慌张的样子真的很可爱呢！\mar
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: ……\her
+
+message_100:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 嘻嘻嘻……\mar
+
+message_101:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 等你们来的时候，我正和贝瑟尔一起看他的\c[4]相册\c[0]呢！\!你们要不要也一起来看呀？\mar
+
+message_102:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 当然要！\!<br>毕竟……\!照片上拍的就是我们呀，对不对？\aub
+
+message_103:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \{贝瑟尔贝瑟尔！你快来看这个！！\kel
+
+#Kel does a pose
+
+message_104:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \Com[2]好啦贝瑟尔！快给我拍张照片！\kel
+
+#Short pause
+
+message_105:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: 对不起，凯，我拍照从来都是趁着对方意想不到的时候才拍的！\bas
+
+message_106:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 你是喜欢拍人们没有意识到有镜头对着他们时的自然的表现，<br>对吧贝瑟尔？\her
+
+message_107:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 嗯……\!我觉得每个人都有着自己独特的生活方式，这一点很是特别。<br>\!我想要捕捉的就是那样的瞬间！\bas
+
+message_108:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 所以……\!我们是要假装不知道你在旁边吗？\kel
+
+message_109:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 哈哈……\!是吧，应该也可以这么说。\bas
+
+message_110:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 好嘞，这个我能做到的！\kel
+
+#Kel looks away.
+
+message_111:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: 所以你想不想把你的\c[4]相册\c[0]给大家看呢，贝瑟尔？\mar
+
+message_112:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 啊，好的……\!不过真的没有什么了不起的啦。\bas
+
+message_113:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 哎呀贝瑟尔！不要这样自我怀疑嘛！\!<br>一定都拍得很好的。\aub
+
+message_114:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: 你说得对，奥布里。\!<br>对不起……\!我会试着更加相信自己一点的。\bas
+
+#Basil takes out PHOTO ALBUM.
+#Party surrounds Basil, except Kel.
+
+message_115:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 打开啦！\!这样我们大家就能一起看了。\bas
+
+message_116:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 这些照片都拍得好棒呀，贝瑟尔。\!<br>你真的很懂得要怎么把握住精彩的瞬间！\her
+
+message_117:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 谢谢……\!不过这些照片不全是我拍的，\!<br>因为玛里有时候喜欢偷拿我的相机呢。\bas
+
+message_118:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 只是有时候哦！\mar
+
+message_119:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 嘿，我有个好主意！\!你们想不想到我家来玩呢？\bas
+
+message_127:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 之前我刚刚种下了一些花草，想给大家看一看。\!<br>来吧！它们都很可爱呢！\bas
+
+message_120:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 可以啊，听起来还挺有趣的！\!我们现在就去吧！\kel
+
+#Hero walks 1 step down.
+
+message_121:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 我记得是在游乐场的南面，对吧？\her
+
+message_122:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 对，就是那个方向！\bas
+
+message_123:
+  faceset: MainCharacter_Mari
+  faceindex: 1
+  text: \mar嗯……\!那这次我就不去了吧。\!你们大家玩得开心一点哦！\mar
+
+message_130:
+  faceset: MainCharacter_Mari
+  faceindex: 0
+  text: \mar不过要是你们什么时候感到累了，随时可以到我准备好的野餐点来休息一会儿！
+
+message_131:
+  faceset: MainCharacter_Mari
+  faceindex: 6
+  text: 不管在哪里我都会准备好点心和饮料的……\!甚至还可以在我的野餐篮进行保存呢！\mar
+
+message_132:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her哎呀……多谢你了，玛里！\!你总是为我们忙前忙后的！
+
+message_124:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: 再见啦玛里！我们会很快再来见你的！\aub
+
+message_125:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 好啦，快点出发去吧！<br>\!你们知道可以在哪里找到我的！\mar
+
+# =========================================================================================
+# NEIGHBOUR'S ROOM DOOR
+# =========================================================================================
+
+message_200:
+  text: 你的朋友们在等着你。
+

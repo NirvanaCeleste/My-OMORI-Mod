@@ -1,0 +1,92 @@
+# =========================================================================================
+# Sidequest: Fruit War (Brayden)
+# =========================================================================================
+
+#messages to be added here, reserved spaces 461 to 480
+
+message_1:
+  text: \n<香橙小子>哼哼……\!哼哼……\!哼哼……\!哼哼……\!\Com[2]喝\c[3]香橙汁\c[0]！
+
+message_2:
+  text: \n<香橙小子>听说过那句老话吗……<br>“最幸福的颜色是橙色”？
+
+message_3:
+  text: \n<香橙小子>……没听说过？\!好吧，那也没关系！\!<br>你只要知道\c[3]香橙汁\c[0]也是同理就可以了哦！
+
+message_4:
+  text: \n<香橙小子>\c[3]香橙汁\c[0]补充水分\! \c[3]香橙汁\c[0]能让你感情充沛，精神饱满，心中洋溢着快乐、幸福与喜悦之情！
+
+message_5:
+  text: \n<香橙小子>里面富含维他命 C，免疫系统要健康工作的话可少不了它！
+
+message_6:
+  text: \n<香橙小子>它同时还是一种有益健康的抗氧化物，<br>能保护你的细胞免受自由基损伤哦！
+
+#If any APPLE JUICE is inventory:
+
+message_7:
+  text: \n<香橙小子>你拿着的是\c[3]苹果汁\c[0]吗？\!<br>\Com[2]那根本就是垃圾！\!别喝那玩意！
+
+#BRADYEN threw away your APPLE JUICE...
+
+message_8:
+  text: 香橙小子把你的\c[3]苹果汁\c[0]扔掉了……
+
+message_9:
+  text: \n<香橙小子>哈！给他点颜色看看！
+
+message_10:
+  text: \n<香橙小子>那么……你愿意花$2.00\$买点\c[3]香橙汁\c[0]吗？\$
+
+#[Yes/No]
+
+message_100:
+  text: 你获得了\c[3]香橙汁\c[0]！
+
+message_11:
+  text: \n<香橙小子>好啊！\Com[2]喝\c[3]香橙汁\c[0]！\!你会喜欢的！
+
+message_12:
+  text: \n<香橙小子>好吧……\!没关系……\!<br>只要你不买\c[3]苹果汁\c[0]就好……
+
+#buy more fruit from brayden than ADRIAN
+
+message_13:
+  text: \n<香橙小子>呼……\!呼……\!哈！\!和我料想得一样……\!\c[3]香橙汁\c[0]比\c[3]苹果汁\c[0]好多了！\!<br>我的兄弟不久就会知道他坚持的道路有多么愚蠢了！
+
+
+#Buy more Fruit from Adrian than Brayden:
+
+message_14:
+  text: \n<香橙小子>我兄弟摆摊卖\c[3]苹果汁\c[0]，一直都得意的要命……
+
+message_15:
+  text: \n<香橙小子>呼……\!不要紧……\!呼……\!我永远都会是\c[3]香橙汁\c[0]的忠实拥趸！\!<br>没有人能动摇我的信念！
+
+#not enough money
+
+message_16:
+  text: \n<香橙小子>唔……\!看来你身上钱不够，买不起这样一杯营养的\c[3]香橙汁\c[0]啊……
+
+message_21:
+  text: \n<香橙小子>等等，那是……\!你头上戴的是……\!\c[13]红色头带\c[0]……？！\!<br>在你把它取下来之前，我是不会给你们\c[3]香橙汁\c[0]的！
+
+#After buying 5 Orange juices
+
+message_101:
+  text: \n<香橙小子>\{\{\sinv[1]嚯哦——哈啊啊啊啊啊！！
+
+message_17:
+  text: \n<香橙小子>这是给忠实顾客的一个小礼物！\!给你\c[13]橙色头带\c[0]，香橙的颜色哦！
+
+message_18:
+  text: \n<香橙小子>哼！我看到你的朋友戴着\c[13]红色头带\c[0]……\!这次就原谅你吧，但仅此一次！
+
+message_19:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: \her哈哈……\!不好意思啊……
+
+message_20:
+  text: 你获得了\c[13]橙色头带\c[0]！
+

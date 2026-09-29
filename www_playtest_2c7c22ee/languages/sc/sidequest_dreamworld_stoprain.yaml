@@ -1,0 +1,180 @@
+# =========================================================================================
+# STOP THE RAIN
+# ========================================================================================
+
+#Talk to Potatogirl
+
+message_1:
+  text: \n<蔬菜宝宝>\Com[2]啊啊啊啊啊！\!雨下得太大了！\!<br>让我们稍微有点不舒服了！
+
+message_2:
+  text: \n<蔬菜宝宝>附近有一个神秘的阀门控制着我们的降雨量，<br>但只有天选之人才能转动它……
+
+message_3:
+  text: \n<蔬菜宝宝>如果没有人帮帮我们的话，<br>那我们永远都要这样稍微有点不舒服下去了！
+
+#EXTRA VEGGIE KID VILLAGERS:
+
+message_4:
+  text: \n<蔬菜宝宝>我们稍微有点不舒服！\!请不要这样！
+
+message_5:
+  text: \n<蔬菜宝宝>我被降雨量弄得稍微有点心烦。
+
+message_6:
+  text: \n<蔬菜宝宝>如果雨稍微小一点就好了……
+
+message_7:
+  text: \n<蔬菜宝宝>雨稍微有一点下得太大了，你不觉得吗？
+
+message_8:
+  text: \n<蔬菜宝宝>我感觉不舒服。
+
+message_9:
+  text: \n<蔬菜宝宝>这雨稍微有点让我受不了。
+
+message_10:
+  text: \n<蔬菜宝宝>我觉得稍微有点生理上的不适。
+
+message_11:
+  text: \n<蔬菜宝宝>如果现在有一个表示舒不舒服的量表，\.1代表非常舒服，10代表非常不舒服的话，\.那我现在差不多是6。
+
+message_12:
+  text: \n<蔬菜宝宝>呸！
+
+message_13:
+  text: \n<蔬菜宝宝>噫！
+
+message_14:
+  text: \n<蔬菜宝宝>恶心！
+
+message_15:
+  text: \n<蔬菜宝宝>讨厌！
+
+message_16:
+  text: \n<蔬菜宝宝>呕！
+
+message_17:
+  text: \n<蔬菜宝宝>恶！
+
+#EXAMINE VALVE AS OMORI
+
+message_18:
+  text: 你想把阀门稍微往右转一点还是稍微往左转一点？
+
+#[RIGHT/LEFT]
+#[RIGHT]
+message_19:
+  text: 右
+#RAIN BECOMES lighter
+#Song changes to Puddles
+
+message_20:
+  text: 雨现在下得稍微小了一点。
+
+#[LEFT]
+message_21:
+  text: 左
+#[Screen turns black.]
+
+message_45:
+  text: 雨下得更大了，倾盆大雨淹没了整座\c[11]落雨镇\c[0]。\!<br>\c[11]落雨镇\c[0]和镇民从此杳无音信。
+
+#[Party teleports to Oasis.]
+
+message_46:
+  text: 你是\c[11]落雨镇\c[0]的英雄！
+
+#EXAMINE VALVE AS anyone else
+
+#[RIGHT/LEFT]
+message_22:
+  text: 阀门一动不动。
+
+#Talk to Potatogirl after adjusting Valve
+message_23:
+  text: \n<蔬菜宝宝>雨量被调整过了！\!太好了！\!<br>谢谢你，天选之人！\!<br>我们会永远铭记你的善举的。
+
+#TOMATO KID walks up
+message_24:
+  text: \n<蔬菜宝宝>什么，孩子？\!你想和他们一起走吗？\!你确定吗？
+
+#VEGGIE KID (Tomato) turns to VEGGIE KID (Potato).
+
+message_25:
+  text: \n<蔬菜宝宝>如果你确实是这么想的话……
+
+message_26:
+  text: \n<蔬菜宝宝>天选之人……\!这孩子想跟你们一起踏上旅途。\!<br>她现在是你们的了。\!请好好照顾她。
+
+message_27:
+  text: 你获得了一只\c[13]蔬菜宝宝\c[0]。
+
+#Potato speaking:
+message_28:
+  text: \n<蔬菜宝宝>去吧，英雄们！你们的旅途在前方等待！
+
+#QUEST complete
+
+#After quest dialogue
+
+#talk to potatogirl
+message_29:
+  text: \n<蔬菜宝宝>去吧，英雄们！你们的旅途在前方等待！
+
+#extra veggie kid VILLAGERS
+
+message_30:
+  text: \n<蔬菜宝宝>雨量现在恰到好处，一分不差！
+
+message_31:
+  text: \n<蔬菜宝宝>啊……\!真……\!舒服……
+
+message_32:
+  text: \n<蔬菜宝宝>现在的降雨量让我很满意。
+
+message_33:
+  text: \n<蔬菜宝宝>现在雨下得稍微小了一点，非常舒服……
+
+message_34:
+  text: \n<蔬菜宝宝>雨现在下得正正好好，你不觉得吗？
+
+message_35:
+  text: \n<蔬菜宝宝>我舒服了。
+
+message_36:
+  text: \n<蔬菜宝宝>这雨真是太舒服了！
+
+message_37:
+  text: \n<蔬菜宝宝>我很舒服。
+
+message_38:
+  text: \n<蔬菜宝宝>如果现在有一个表示舒不舒服的量表，\.1代表非常舒服，10代表非常不舒服的话，\.那我现在差不多是1。
+
+message_39:
+  text: \n<蔬菜宝宝>好诶！
+
+message_40:
+  text: \n<蔬菜宝宝>感觉真棒！
+
+message_41:
+  text: \n<蔬菜宝宝>呀呼！
+
+message_42:
+  text: \n<蔬菜宝宝>呼呀！
+
+message_43:
+  text: \n<蔬菜宝宝>哇耶！
+
+message_44:
+  text: \n<蔬菜宝宝>耶！
+
+message_50:
+  text: 水面闪闪发光。
+
+message_51:
+  text: 你想不想聚精会神地盯着水面看？
+
+message_52:
+  text: 水面释放出黑暗的气息。
+

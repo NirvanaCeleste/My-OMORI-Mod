@@ -1,0 +1,127 @@
+# =========================================================================================
+# Cutscene: Hero's CHARM Tag Skill
+# =========================================================================================
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 没用啊。我连一点凹痕都打不出来！\aub
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 唔……\!等一下……\her
+
+message_32:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 这是芝士对吧？\her
+
+message_33:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 哇哦，你说对了！\!这就是芝士！\kel
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 有了，朋友们。\!听我说。\!这听上去可能有些疯狂……<br>但如果……\!我们一起吃掉这块芝士。\kel
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 如果我们现在开始吃……\!<br>我们说不定几个小时就吃完了！\kel
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: 不过先提个醒。我吃芝士会胀气……\kel
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{\Com[2]呕呃呃，凯！\aub\}
+
+message_38:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 等、等下，凯。没必要这样做。\her
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 我知道我有个完美的解决方案！\her
+
+message_40:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 换我上吧，OMORI。\!<br>我知道怎么解决这个。\her
+
+
+# =========================================================================================
+# Cutscene: Hero's CHARM Tag Skill (Cont.)
+# =========================================================================================
+
+#Trigger: Tag HERO and examine Cheese.
+
+# EMS spirals down from the sky
+
+message_50:
+  text: \}你好呀，朋友们！\!是我，EMS，朴实无华的饥饿仓鼠！\ems
+
+#EMS looks around.
+
+message_51:
+  text: \}哇，这全是给我的吗？这下我可以饱餐一顿了！\!<br>你们是怎么知道我最喜欢芝士的？\ems
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: 我根本用不着猜，EMS！\!<br>一切东西都是你最喜欢的东西。\her
+
+#HERO turns to party.
+
+message_53:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 朋友们，这位是 EMS！\!她是我的好朋友。\her
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: 你知道要做什么吧，EMS！\her
+
+message_55:
+  text: \}当然呀！\! \Com[2]看我瞬间解决！\ems
+
+#EMS begins to devour the cheese.
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 哇……\kel
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 她那小小的身子是怎么装得下的？\aub
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 我尽量不去考虑这个问题。\her
+
+message_59:
+  text: 芝士被吃完了，道路也已经清理完毕。
+
+message_60:
+  text: \}哇哦，真是吃得超爽！\ems
+
+message_61:
+  text: \}下次再需要吃掉巨型芝士的服务的话，你们知道电话该打给谁啦！\ems
+
+message_62:
+  text: \}再见咯，朋友们！\ems
+
+#EMS spirals into the sky.
+

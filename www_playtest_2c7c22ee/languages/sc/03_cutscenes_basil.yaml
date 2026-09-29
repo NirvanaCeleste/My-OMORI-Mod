@@ -1,0 +1,367 @@
+# =========================================================================================
+# Cutscene: FALLEN PHOTO
+# =========================================================================================
+
+#TRIGGER: Enter Basil's House Entrance.
+
+#OMORI and party walk in screen.
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: \Com[2]\SINV[1]说茄子！\SINV[0]\bas
+
+#Screen flashes white
+#BASIL takes a photo of the party
+#BASIL takes out photo
+
+message_1:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 呃，照片有点模糊……\!<br>不过也没事，这样也别有韵味呢。\bas
+
+#BASIL puts away photo
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 你们不介意就好。\bas
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 我们当然不介意啦！我想看看！\aub
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 哦，当、当然没问题。\bas
+
+#BASIL takes out PHOTO ALBUM.
+#AUBREY runs to the side of BASIL.
+#AUBREY jumps.
+
+message_5:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \SINV[1]哇，这张拍得好好看噢！\SINV[0]\aub
+
+#HERO walks up to the side of BASIL.
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 我的发型怎么样？\her
+
+#KEL jumps
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \Com[2]\{给我看看！！我也要看！！\kel
+
+#KEL runs up to the front of BASIL.
+#TRIGGER: OMORI talks to BASIL from behind.
+
+message_8:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: 啊，OMORI！你要不要也来看看照片呢？\bas
+
+#BASIL gave you a GROUP Photo
+#SLIDE: GROUP PHOTO (DREAM)
+
+message_9:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 虽然拍糊了有点可惜，可是照片上的大家都好上镜噢。\!<br>我得把它好好收藏起来！\bas
+
+#BASIL takes out his PHOTO ALBUM.
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \sinv[1]呀——呼——！\sinv[0]\c[4]相册\c[0]里又多一张珍藏耶！\kel
+
+#SLIDE: BASIL'S PHOTO ALBUM (DREAM)
+
+# =========================================================================================
+# Cutscene: Photo Accident
+# =========================================================================================
+
+#TRIGGER: Finish viewing Slide: Basil's PHOTO ALBUM (Dream).
+#KEL walks next to AUBREY.
+
+message_34:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \Com[2]奥布里，让一让啦！我看不到！\kel
+
+#KEL pushes AUBREY out of the way and looks at the photos.
+
+message_35:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \{哎！你别推我呀！\aub\}
+
+#AUBREY pushes KEL back.
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \{你已经看过了，所以轮到我了！！\kel\}
+
+  #KEL pushes AUBREY back.
+
+message_37:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{你给我让开啦，凯！！！\aub\}
+
+message_38:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: 等、等一下！你们不要吵架啦！\bas
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \Com[2]\{我先看！\kel
+
+message_40:
+
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \Com[2]\{不，我先看！！\aub
+
+#AUBREY pushes KEL.
+#KEL pushes AUBREY.
+#AUBREY pushes KEL.
+
+message_41:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: 啊……不要推啦！\!我都要被推倒了！\bas
+
+#BASIL falls over and spills the Photos all over the floor.
+
+#Aubrey and KEL stop pushing to look at BASIL and are surprised.
+#HERO also looks at BASIL and is surprised.
+
+message_42:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: …… …… ……\bas
+
+
+message_43:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 呃……\!哎呀……\kel
+
+#Aubrey jumps
+
+message_44:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 天哪……\!贝瑟尔……\!对不起……\aub
+
+#HERO turns to Basil
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 贝瑟尔，你没事吧？\her
+
+#HERO turns to KEL and AUBREY.
+
+message_46:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 44
+  text: 这下你们闯大祸了吧！\!早就说过了，你们俩得学会怎么好好相处！\her
+
+message_47:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: 对不起……我们不是故意的啦，英雄！<br>\!求你不要跟玛里说……\kel
+
+#BASIL gets up
+
+message_48:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 我、我没事的，不用担心。\!只是场小意外而已……\bas
+
+#HERO helps BASIL pick up his photos.
+
+message_49:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 来，你的相片。\!<br>还好照片看起来没事。<br>\!我们一起把它们放回你的\c[4]相册\c[0]里吧。\her
+
+message_50:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: 谢谢你，英雄！\bas
+
+#BASIL walks toward BASIL's house, and then turns toward party.
+
+message_51:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 我们先进去屋子里吧。\!<br>记得进来之前把脚擦干净哦！\bas
+
+
+# =========================================================================================
+# Cutscene: Fallen Photo
+# =========================================================================================
+
+#TRIGGER: Trigger: Complete Slide: Sorting Basil's PHOTO ALBUM (Dream)
+
+
+message_70:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 好啦，恢复如初。\bas
+
+message_71:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 把你推倒真的很对不起，贝瑟尔。\.<br>\}虽然我觉得凯至少要负一半的责任……\aub
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: 是啊，我保证再也不和奥布里吵架了！\.<br>\}除非她先惹我……\kel
+
+message_73:
+  faceset: MainCharacter_Basil
+  faceindex: 2
+  text: 没事的啦。\!<br>我知道你们只是想看我的\c[4]相册\c[0]而已。\!<br>谢谢你们帮我把相片整理好！\bas
+
+
+#BASIL walks to the dinner table carrying the album.
+#A photo falls from the album.
+
+message_74:
+  faceset: MainCharacter_Basil
+  faceindex: 6
+  text: 唔？\! 真奇怪。\!<br>一定是有张照片没放好。\bas
+
+#BASIL picks up the photo.
+
+message_75:
+  faceset: MainCharacter_Basil
+  faceindex: 3
+  text: 咦？这是什么？\!这张照片是我拍的吗？\bas
+
+
+message_76:
+  faceset: MainCharacter_Basil
+  faceindex: 4
+  text: 这张照片总觉得……\!好熟悉。\bas
+
+
+#BASIL glitches out. Basil's Something silhouette pulses on the floor.
+
+
+message_79:
+  faceset: MainCharacter_Basil
+  faceindex: 5
+  text: 不、不……\!怎么可能……\bas
+
+message_80:
+  faceset: MainCharacter_Basil
+  faceindex: 7
+  text: \fn<OMORI_GAME>玛里……\!她……\bas\^
+
+message_81:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 你准备好把相片放回相册了吗，OMORI？\bas
+
+message_82:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 好耶！那我们这就开始吧！\bas
+
+message_101:
+  faceset: MainCharacter_Basil
+  faceindex: 0
+  text: 噢……没事的。\!<br>放轻松，当成在自己家就好了！\bas
+
+message_102:
+  faceset: MainCharacter_Basil
+  faceindex: 1
+  text: 没问题。\!我在这里等你准备好。\bas
+# Play Basil Something Animation
+# Player wakes up.
+
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \n<凯>喂，别盯着我呀！\!我也不知道照片去哪儿了！
+
+# =========================================================================================
+# Cutscene: Otherworld Ladder
+# =========================================================================================
+
+message_90:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\Com[2]哇，这个梯子好高啊！
+
+message_91:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel我敢打赌，这梯子可以一直通到\{太空\}去！
+
+message_92:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub别傻了，\n[3]。梯子才不可能有\{那么\}高。
+
+message_93:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel如果我们一直爬的话，说不定还会到达一个新的星球呢。\!
+
+message_94:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel我要把它据为己有……
+
+message_95:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{然后给它起名，就叫\c[13]赫克托尔\c[0]星！
+
+message_96:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub哈，你这就厌倦你那个宠物石头啦？
+
+message_97:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel才不是！\!我是为了纪念他才给我的星球起这个名字的。
+
+message_98:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel这样他就知道我还在苦苦地寻找他……
+
+message_99:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her好，好的呢……\!之后再说吧，凯。
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: \her我们现在有更重要的事情要做。
+

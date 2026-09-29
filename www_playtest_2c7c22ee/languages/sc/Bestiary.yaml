@@ -1,0 +1,1780 @@
+# =========================================================================================
+# Bestiary
+# =========================================================================================
+EmptyEnemyName: 《敌人指南！》
+Information:
+
+  19:
+    name: 森林兔兔
+
+    background: {name: battleback_vf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 0}
+    listIndex: 0
+
+    text: |
+      毛绒绒的可爱生物
+      也可能会在毫无预警的
+      情况下袭击人类……
+
+      ——OMORI
+
+
+      我觉得应该会是相当
+      可爱的宠物呢！
+
+      ——奥布里
+
+
+
+  23:
+    name: 森林兔兔？
+
+    background: {name: battleback_vf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 0}
+    listIndex: 1
+
+    text: |
+      普通的森林兔兔，
+      但是上下颠倒了……为什么
+      它要这样子呢？看起来很
+      不方便的样子……
+
+      ——OMORI
+
+
+      它的耳部肌肉一定非常
+      非常强壮吧！！
+
+      ——凯
+
+
+
+  27:
+    name: 迷路的树苗鼹鼠
+
+    background: {name: battleback_vf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_MOLES, index: 0}
+    listIndex: 2
+
+    text: |
+      危险而且带有敌意的丑陋
+      植物生物。它会说自己很
+      聪明，但不要相信它，它
+      一点都不聪明，闻起来还
+      是脏衣服的味道。
+
+      ——OMORI
+
+
+
+  863:
+    name: 巨大强壮树
+
+    background: {name: battleback_vf_default, x: 0, y: 0}
+    position: {x: 160, y: 475}
+    character: {name: DW_NPC_17, index: 2}
+    listIndex: 3
+
+    text: |
+      哇喔！它好大好强壮啊！
+
+      ——凯
+
+
+
+  44:
+    name: 灰尘兔兔
+
+    background: {name: battleback_bookshelf, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: ENEMY_BUNNIES, index: 1}
+    listIndex: 4
+
+    text: |
+      所有兔兔中最能让人打
+      喷嚏的一种，喜欢躲在
+      书架和床底下。看起来
+      有点害羞……
+
+      ——OMORI
+
+
+
+  37:
+    name: 太空兔兔
+
+    background: {name: battleback_ow_cattail, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: ENEMY_BUNNIES, index: 6}
+    listIndex: 5
+
+    text: |
+      一只普通的森林兔兔，
+      只是头上有个泡泡。
+      这样它就能在太空中
+      呼吸了。
+
+      ——OMORI
+
+
+      我猜它一定很喜欢放空
+      自己，呵呵，所以才会
+      在太空，对不对？
+
+      ——英雄
+
+
+
+  45:
+    name: UFO
+
+    background: {name: battleback_ow_cattail, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_1, index: 2}
+    listIndex: 6
+
+    text: |
+      全称是
+      “不明飞行橘”，是一种
+      非常先进的橘子，通常
+      人们会看见它们在广袤
+      的太空中漫无目的地四
+      处飘荡。
+
+      ——OMORI
+
+
+      但是吃下去还是橘子的味道！
+
+      ——凯
+
+
+
+  49:
+    name: 捕蝇草
+
+    background: {name: battleback_ow_outskirts, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_1, index: 3}
+    listIndex: 7
+
+    text: |
+      捕蝇草的外观特征很像
+      随处可见的西瓜。它就
+      是依靠这种演化特征来
+      引诱智力低下的猎物落
+      入它的陷阱。
+
+      ——OMORI
+
+
+      哎，我真的以为这是个
+      西瓜呢！
+
+      ——凯
+
+
+
+  53:
+    name: 虫洞
+
+    background: {name: battleback_ow_outskirts, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_1, index: 4}
+    listIndex: 8
+
+    text: |
+      据说虫洞能够将距离非常
+      遥远的两个地点连在一起
+      实现时空上的穿梭……但
+      这边这个只是洞里有一条
+      虫子而已。
+
+      ——OMORI
+
+
+      我讨厌它扭来扭去的样子……
+
+      ——奥布里
+
+
+
+
+
+  57:
+    name: 混音带
+
+    background: {name: battleback_ow_junkyard, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_1, index: 1}
+    listIndex: 9
+
+    text: |
+      过往时代的遗物……
+      虽然它很快就要退出历史
+      舞台了，但看起来它还是
+      很开心的样子。
+
+      ——OMORI
+
+
+      我过去还有一阵子挺喜欢
+      收集这些东西的！原来它
+      们都跑到这里来了啊……
+
+      ——英雄
+
+
+
+  61:
+    name: 拨号上网
+
+    background: {name: battleback_ow_junkyard, x: 0, y: 0}
+    position: {x: 160, y: 350}
+    character: {name: DW_EN_1, index: 0}
+    listIndex: 10
+
+    text: |
+      一种十分古老的接入通讯
+      网络的形式。使用的时候
+      会发出刺耳的噪音。
+
+      ——OMORI
+
+
+      啊，这种声音真是让我
+      怀念起了过去……
+
+      ——英雄
+
+
+
+  65:
+    name: 毁灭音箱
+
+    background: {name: battleback_ow_junkyard, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_7, index: 1}
+    listIndex: 11
+
+    text: |
+      这是手提音响死后复活的
+      怨灵，它在生前是一种用
+      来大声传送噪音的工具。
+
+      ——OMORI
+
+
+
+
+
+  69:
+    name: 鲨飞机
+
+    background: {name: battleback_ow_junkyard, x: 0, y: 0}
+    position: {x: 200, y: 300}
+    character: {name: DW_EN_9, index: 0}
+    listIndex: 12
+
+    text: |
+      空中的掠食者，能够以
+      马赫速度突袭一无所知
+      的乘客，假如你搭乘上
+      一架鲨飞机，那你永远
+      都不会知道自己最终会
+      去往何方……
+
+      ——OMORI
+
+
+
+  142:
+    name: 虫兔兔
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES_2, index: 2}
+    listIndex: 13
+
+    text: |
+      其实是节肢动物。
+      它喜欢寒冷的天气，以及
+      从陡峭的山坡上滚下来玩。
+      这种爱好实在是太受欢迎，
+      以至于如今它们每年都会
+      举办一届滚山坡比赛。
+
+      ——OMORI
+
+
+
+  146:
+    name: 罕见熊
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 160, y: 450}
+    character: {name: DW_EN_5, index: 0}
+    listIndex: 14
+
+    text: |
+      警告：不要招惹。
+      不要示弱。
+
+      ——OMORI
+
+
+
+  150:
+    name: 盆栽
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 1}
+    listIndex: 15
+
+    text: |
+      警告：不要招惹。
+      被逼急了会爆炸。
+      ——OMORI
+
+      可是它们为什么会爆炸呢？
+      ——凯
+
+      所以究竟是谁把它们
+      栽在这里的啦？
+      ——奥布里
+
+
+
+  158:
+    name: 树苗鼹鼠？
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_MOLES, index: 0}
+    listIndex: 16
+
+    text: |
+      究竟是这只树苗鼹鼠
+      上下颠倒了，还是我
+      们上下颠倒了呢？
+
+      ——OMORI
+
+
+
+  855:
+    name: 幽灵兔兔
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: ENEMY_BUNNIES_2, index: 0}
+    listIndex: 17
+
+    text: |
+      凶恶的兔兔怨灵，渴望着
+      复仇。
+
+      ——OMORI
+
+
+      可它们还是很可爱
+      哎……
+
+      ——奥布里
+
+
+
+  168:
+    name: 霍尔德
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 2}
+    listIndex: 18
+
+    text: |
+      剑术大师。
+      一只钻研战斗技术许多
+      年的树苗鼹鼠，终于获
+      得了令人羡慕的头衔：
+      霍尔德。
+
+      ——OMORI
+
+
+
+  172:
+    name: 玛莎
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 185, y: 450}
+    character: {name: DW_EN_5, index: 4}
+    listIndex: 19
+
+    text: |
+      战斧大师。
+      一只钻研战斗技术许多
+      年的树苗鼹鼠，终于获
+      得了令人羡慕的头衔：
+      玛莎。
+
+      ——OMORI
+
+
+
+  176:
+    name: 泰雷兹
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 180, y: 435}
+    character: {name: DW_EN_5, index: 3}
+    listIndex: 20
+
+    text: |
+      弓箭大师
+      一只钻研战斗技术许多
+      年的树苗鼹鼠，终于获
+      得了令人羡慕的头衔：
+      泰雷兹。
+
+      ——OMORI
+
+
+
+  180:
+    name: 卢修斯
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 5}
+    listIndex: 21
+
+    text: |
+      奥术大师。
+      一只钻研战斗技术许多
+      年的树苗鼹鼠，终于获
+      得了令人羡慕的头衔：
+      卢修斯。
+
+      ——OMORI
+
+
+
+  184:
+    name: 马头
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 400}
+    character: {name: DW_EN_5, index: 6}
+    listIndex: 22
+
+    text: |
+      想要扮成一整匹马的
+      失败尝试的一部分。
+
+      ——OMORI
+
+
+      嗯……至少他们都已经
+      尽力了……
+
+      ——奥布里
+
+
+
+  188:
+    name: 马屁股
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 400}
+    character: {name: DW_EN_3, index: 3}
+    listIndex: 23
+
+    text: |
+      屁一样的装扮。
+
+      ——OMORI
+
+
+      哎呀，何必说那么难听呢！
+
+      ——奥布里
+
+
+
+
+
+
+
+  97:
+    name: 面包兔兔
+
+    background: {name: battleback_oo_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 2}
+    listIndex: 24
+
+    text: |
+      挺可爱的，可能还是纯素的。
+      ——OMORI
+
+      这是纯素的吗？
+      ——凯
+
+      这我不敢说是纯素的。
+      ——英雄
+
+      肯定不是纯素的啦……
+      ——奥布里
+
+
+
+  839:
+    name: 小蛋糕兔兔
+
+    background: {name: battleback_oo_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 4}
+    listIndex: 25
+
+    text: |
+      一只邪恶的小蛋糕寄生虫，
+      将可怜的森林兔兔变成了
+      它的宿主。
+
+      森林兔兔的眼中流露出的
+      是无声的尖叫。
+
+      ——OMORI
+
+
+
+  843:
+    name: 奶昔兔兔
+
+    background: {name: battleback_oo_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 5}
+    listIndex: 26
+
+    text: |
+      一只森林兔兔，背上
+      绑着一杯奶昔。
+
+      ——OMORI
+
+
+
+  847:
+    name: 松饼兔兔
+
+    background: {name: battleback_oo_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 3}
+    listIndex: 27
+
+    text: |
+      一只可爱的森林兔兔，
+      将自己倒下的同胞当
+      成了时尚的帽子。
+
+      ——OMORI
+
+
+
+  851:
+    name: 草小蛇
+
+    background: {name: battleback_excavation_1, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_1, index: 7}
+    listIndex: 28
+
+    text: |
+      全称
+      草莓小短蛇，虽然体型
+      很短，名字却挺长。
+
+      ——OMORI
+
+
+
+  133:
+    name: 纸杯刺猬
+
+    background: {name: battleback_excavation_1, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_2, index: 1}
+    listIndex: 29
+
+    text: |
+      没有通过审批被退回的
+      甜点，被判永远在废土
+      之上流浪。
+
+      ——OMORI
+
+
+      是因为口感太扎吗？
+
+      ——英雄
+
+
+
+
+
+  797:
+    name: 树苗兔兔
+
+    background: {name: battleback_excavation_2, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES_2, index: 1}
+    listIndex: 30
+
+    text: |
+      挺可爱的，应该是纯素吧。
+      ——OMORI
+
+      我100%确定这是纯素的。
+      ——凯
+
+      很确定这是纯素的嗯。
+      ——英雄
+
+      这肯定不是纯素啦……
+      ——奥布里
+
+
+
+  789:
+    name: 香菜
+
+    background: {name: battleback_excavation_2, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_2, index: 2}
+    listIndex: 31
+
+    text: |
+      学名——
+      Coriandrum sativum
+      每100克成分——
+      能量——22.71卡路里
+      维生素K——310微克
+      钾——521毫克
+      铁——1.77毫克
+
+      啊，所以芫荽和香菜
+      是一种东西吗？
+
+      ——凯
+
+
+
+  793:
+    name: 生姜
+
+    background: {name: battleback_excavation_2, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_1, index: 6}
+    listIndex: 32
+
+    text: |
+      学名——
+      Zingiber officinale
+
+      一种开花植物，根茎
+      部分被广泛用为香料
+      以及医药。这是一种
+      多年生草本植物，每
+      年都会长出约一米高
+      的假茎，并会长出短
+      小的叶片。
+
+      ——OMORI
+
+
+
+  785:
+    name: 芹菜
+
+    background: {name: battleback_excavation_2, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_1, index: 5}
+    listIndex: 33
+
+    text: |
+      你知道吗？嚼芹菜燃烧
+      掉的卡路里比吃下去获
+      得的还要多哦！因为你
+      需要用嘴去咀嚼才能够
+      咽下去！
+
+      ——凯
+
+
+      这个大家都知道的，凯……
+
+      ——奥布里
+
+
+
+  772:
+    name: 兔子
+
+    background: {name: battleback_excavation_3, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_2, index: 0}
+    listIndex: 34
+
+    text: |
+      可怕的怪物。
+
+      ——OMORI
+
+
+      真的太吓人了。
+
+      ——奥布里
+
+
+
+  776:
+    name: 鸡
+
+    background: {name: battleback_excavation_3, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_4, index: 0}
+    listIndex: 35
+
+    text: |
+      鸡不可失啊。
+
+      ——英雄
+
+
+      灵鸡一动啦！
+
+      ——凯
+
+
+
+  198:
+    name: 鱼兔兔
+
+    background: {name: battleback_dw_highway, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: ENEMY_BUNNIES_2, index: 3}
+    listIndex: 36
+
+    text: |
+      已经适应了全新环境的
+      森林兔兔。这些兔兔常
+      会集群行动，因为它们
+      不喜欢落单。
+
+      ——OMORI
+
+
+
+  206:
+    name: 贻贝
+
+    background: {name: battleback_dw_highway, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_3, index: 6}
+    listIndex: 37
+
+    text: |
+      肌肉很发达的贻贝。
+      为了能够保持这种宛如
+      岩石般结实的肌肉，它
+      每天都遵照极为严格的
+      健身计划锻炼自己。
+
+      ——OMORI
+
+
+
+  210:
+    name: 反向人鱼
+
+    background: {name: battleback_dw_highway, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_3, index: 5}
+    listIndex: 38
+
+    text: |
+      鱼条一是我望希真。
+
+      ——OMORI
+
+
+
+  214:
+    name: 鲨鱼鳍
+
+    background: {name: battleback_dw_highway, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_3, index: 4}
+    listIndex: 39
+
+    text: |
+      是鲨鱼只有鳍的那一
+      部分。
+
+      ——OMORI
+
+
+
+  218:
+    name: 墨鱼巫贼
+
+    background: {name: battleback_dw_highway, x: 0, y: 0}
+    position: {x: 160, y: 350}
+    character: {name: DW_EN_6, index: 0}
+    listIndex: 40
+
+    text: |
+      这个星球上最可憎的生物。
+      它们没有朋友、从不会有人
+      邀请它们去参加聚会、而且
+      笑话说得都很烂。
+
+      ——OMORI
+
+
+
+  250:
+    name: 史莱姆兔兔
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES_2, index: 4}
+    listIndex: 41
+
+    text: |
+      太黏不太好抱，
+      太黏不太可爱。
+
+      ——OMORI
+
+
+      软泥做的兔……
+      青柠味的兔！
+
+      ——凯
+
+
+
+  254:
+    name: 拟态瓜
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_IMPORTANTOBJ, index: 3}
+    listIndex: 42
+
+    text: |
+      非常明显是陷阱，应该
+      只有智力最为低下的人
+      才会被这样的伪装给欺
+      骗吧。
+
+      ——OMORI
+
+
+      哎呀，真是！我真的以为
+      这是个西瓜呢！！
+
+      ——凯
+
+
+
+  262:
+    name: 鼻涕泡泡
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_6, index: 1}
+    listIndex: 43
+
+    text: |
+      生命短暂的脆弱存在，
+      它的一生稍纵即逝，
+      闻起来是湿漉漉的
+      狗狗的味道。
+
+      ——OMORI
+
+
+
+  258:
+    name: 蠕虫机器人
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 420}
+    character: {name: DW_EN_7, index: 0}
+    listIndex: 44
+
+    text: |
+      有着尖利牙齿的机械
+      蠕虫，最喜欢的食物
+      是胡萝卜。
+
+      ——OMORI
+
+
+
+  266:
+    name: 小白鼠
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_3, index: 7}
+    listIndex: 44
+
+    text: |
+      自称是个科学天才，
+      专门研究理论化学，
+      但它真正热爱的事业
+      其实是当荧幕影星。
+
+      ——OMORI
+
+
+      希望它有朝一日可以
+      一炮蹿红吧！
+
+      ——奥布里
+
+
+
+  270:
+    name: 树苗鼹鼠？？
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_6, index: 2}
+    listIndex: 45
+
+    text: |
+      用所有最强的树苗鼹鼠
+      身上最强的部分所制作
+      出来的怪物。
+
+      ——OMORI
+
+
+
+
+
+  113:
+    name: 切片、芝麻和酸酸
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_NPC_17, index: 5}
+    listIndex: 46
+
+    text: |
+      被神秘力量所复活的
+      面包孩子们的灵魂。
+      它们只会三个一组一
+      起出现，因为它们是
+      很亲密的朋友。
+
+      ——OMORI
+
+
+
+  101:
+    name: 蠕动意面
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 400}
+    character: {name: DW_EN_2, index: 5}
+    listIndex: 47
+
+    text: |
+      首先，我要声明，你下面
+      听到的一切都绝对是真的。
+      去年夏天曾有一次车库大
+      甩卖，我在那里发现了一
+      盘我从没听说过的游戏的
+      卡带，于是我就买了下来。
+      可是当我回家试图打开它
+      的时候，游戏却无法运行。
+      我回头去找甩卖的那家人，
+      结果却发现那栋屋子已经
+      发生火灾烧毁了。：O
+
+
+
+
+
+  105:
+    name: 复制意面
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 400}
+    character: {name: DW_EN_2, index: 5}
+    listIndex: 48
+
+    text: |
+      复制意面就是会自我
+      复制的意面。
+      ——OMORI
+
+      复制意面就是会自我
+      复制的意面。
+      ——凯
+
+      复制意面就是会自我
+      复制的意面。
+      ——奥布里
+
+
+
+  125:
+    name: 活死包
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_2, index: 6}
+    listIndex: 49
+
+    text: |
+      被烘焙到完美的恶魔
+      面包，它唯一的目的
+      就是吞噬生命果酱。
+
+      ——OMORI
+
+
+
+
+      哎呦！
+
+      ——凯
+
+
+
+  129:
+    name: 姜死人
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_2, index: 4}
+    listIndex: 50
+
+    text: |
+      虽然看起来有点悲伤……
+      但这肯定不能算死亡。
+
+      ——OMORI
+
+      你怎么还押起韵来了……
+
+      ——奥布里
+
+
+
+  859:
+    name: 吐司幽灵
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_2, index: 7}
+    listIndex: 51
+
+    text: |
+      一个阴沉的幽灵，成天
+      说些不吉利的话，比如：
+      “地狱空荡荡，活死包在
+      人间。”
+
+      ——OMORI
+
+
+      它看起来和你倒是有点
+      像呢，OMORI！
+
+      ——奥布里
+
+
+
+  109:
+    name: 寂静小狗
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 160, y: 300}
+    character: {name: DW_EN_2, index: 3}
+    listIndex: 52
+
+    text: |
+      从迷失灵魂的哭号之中
+      诞生的古怪存在，它会
+      缓慢地不停尖叫，直到
+      自己死亡。
+
+      ——OMORI
+
+
+
+  79:
+    name: 雪兔兔
+
+    background: {name: battleback_ff_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: ENEMY_BUNNIES, index: 7}
+    listIndex: 53
+
+    text: |
+      生气的时候会朝着你
+      踢雪，能够创造出世
+      界上规模最小的暴风
+      雪……
+
+      ——OMORI
+
+
+      你说，如果把它放到
+      太阳底下，它会化吗？
+
+      ——凯
+
+
+
+  87:
+    name: 雪堆
+
+    background: {name: battleback_ff_xsh, x: 0, y: 0}
+    position: {x: 160, y: 450}
+    character: {name: DW_EN_4, index: 1}
+    listIndex: 54
+
+    text: |
+      因为意外而被诅咒了的
+      雪堆，它时刻质问自己
+      为什么活着。
+
+      ——OMORI
+
+
+
+  83:
+    name: 雪天使
+
+    background: {name: battleback_ff_xsh, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_EN_8, index: 0}
+    listIndex: 55
+
+    text: |
+      雪花球山的守护者……
+      它的眼中似乎有着许多
+      故事。
+
+      传说，雪天使们会在迷
+      路的旅人面前出现，然
+      后和他们一起消失在漫
+      天的大雪中。
+
+      ——OMORI
+
+
+
+
+
+  365:
+    name: 老大
+
+    background: {name: battleback_reckut, x: 0, y: 0}
+    position: {x: 160, y: 450}
+    character: {name: DW_BOSS, index: 0}
+    listIndex: 56
+
+    text: |
+      有些小缺点，可以是
+      敌人……也可以是朋友。
+
+      ——OMORI
+
+
+
+  336:
+    name: 上古树苗
+
+    background: {name: battleback_vf_default, x: 0, y: 0}
+    position: {x: 160, y: 450}
+    character: {name: DW_NPC_15, index: 1}
+    listIndex: 57
+
+    text: |
+      所有树苗鼹鼠们敬爱的
+      爷爷。据说他热爱森林
+      中所有的生命，并且他
+      是森林中所有生命的源
+      头。
+
+      当他没有在忙着维持这
+      片森林的平衡时，他的
+      爱好是在地上坐着。
+
+      ——OMORI
+
+
+
+  340:
+    name: 风筝少年
+
+    background: {name: battleback_vf_kitekid, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: $sprite_vf_kite_kid, index: 0}
+    listIndex: 58
+
+    text: |
+      一个格外纠结风速风向的
+      神秘孩子。通常你都能在
+      飘浮森林看到他在放着自
+      己的风筝，口中喃喃自语
+      地念叨着天气相关的话题。
+
+      ——OMORI
+
+
+
+  344:
+    name: 少年的风筝
+
+    background: {name: battleback_vf_kitekid, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: $npc_kite, index: 0}
+    listIndex: 59
+
+    text: |
+      一个奇怪的风筝，就像是
+      自己拥有生命一般。
+
+      ——OMORI
+
+
+
+  880:
+    name: ？？？
+    conditionalNames:
+    - {name: 冥王星, switches: [[90, true]]}
+    background: {name: battleback_ow_outskirts, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_NPC_15, index: 2}
+    listIndex: 61
+
+    text: |
+      在炫耀肌肉的神秘石头。
+
+      ——OMORI
+
+
+      我喜欢他的肌肉！
+
+      ——凯
+
+    conditionalText:
+
+
+    - switchIds: [15]
+
+      line:
+
+      text: |2
+
+        结果……他是个挺不错
+        的家伙。
+
+        ——OMORI
+
+
+        我很喜欢他！
+
+        ——凯
+
+  370:
+    name: 地球
+
+    background: {name: battleback_ow_outskirts, x: 0, y: 0}
+    position: {x: 160, y: 700}
+    character: {name: DW_EN_7, index: 2}
+    listIndex: 61
+
+    text: |
+      太阳系的第三颗行星，
+      它的表面绝大部分是
+      水和人类。
+
+      ——OMORI
+
+
+
+  388:
+    name: 下载窗口
+
+    background: {name: battleback_ow_download, x: 0, y: 0}
+    position: {x: 160, y: 325}
+    character: {name: DW_NPC_17, index: 4}
+    listIndex: 62
+
+    text: |
+      [错误]
+
+
+
+  379:
+    name: 太空前男友
+
+    background: {name: battleback_ow_xsbf, x: 0, y: 0}
+    position: {x: 150, y: 500}
+    character: {name: DW_NPC_3, index: 5}
+    listIndex: 63
+
+    text: |
+      是太空海盗首领、太空男孩
+      船长的另一个人格，相当凶
+      恶。他会在太空男孩船长生
+      气的时候出现。他已经占领
+      了太阳系所有的行星，可是
+      却占有不了任何人的心……
+
+      ——OMORI
+
+
+
+  424:
+    name: 帝王爬虫
+
+    background: {name: battleback_pf_default, x: 0, y: 0}
+    position: {x: 190, y: 490}
+    character: {name: DW_EN_6, index: 3}
+    listIndex: 64
+
+    text: |
+      这是一种没有智能的寄生虫，
+      它杀死无数树苗鼹鼠，收集
+      它们的空壳用来延长自己的
+      身体。
+
+      ——OMORI
+
+
+
+  451:
+    name: 食肉之王
+
+    background: {name: battleback_sm_default, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_NPC_18, index: 5}
+    listIndex: 65
+
+    text: |
+      树苗鼹鼠的众多天敌
+      之一。食肉之王可以
+      通过钻地来侵入树苗
+      鼹鼠的栖息地。它们
+      最喜欢温热和有嚼劲
+      的树苗鼹鼠。
+
+      ——OMORI
+
+
+
+  442:
+    name: 可疑的鼹鼠
+
+    background: {name: battleback_sm_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_SPRM_3, index: 3}
+    listIndex: 66
+
+    text: |
+      所有树苗鼹鼠里最最不
+      值得信任的一只。绝对
+      不要相信它说的任何话。
+
+      ——奥布里
+
+
+
+
+
+  469:
+    name: 马克西姆斯爵士
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 7}
+    listIndex: 67
+
+    text: |
+      真正的剑术大师。
+      一只钻研战斗技术好几
+      百年的树苗鼹鼠，终于
+      获得了比霍尔德更加高
+      贵的、最为究极的头衔：
+      马克西姆斯。
+
+      ——OMORI
+
+
+
+
+
+  478:
+    name: 马克西姆斯爵士二世
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 7}
+    listIndex: 68
+
+    text: |
+      真正的剑术大师。
+      一只钻研战斗技术好几
+      百年的树苗鼹鼠，终于
+      获得了比霍尔德更加高
+      贵的、最为究极的头衔：
+      马克西姆斯。
+      这是那只鼹鼠的儿子。
+
+      ——OMORI
+
+
+
+  487:
+    name: 马克西姆斯爵士三世
+
+    background: {name: battleback_sw_default, x: 0, y: 0}
+    position: {x: 160, y: 425}
+    character: {name: DW_EN_5, index: 7}
+    listIndex: 69
+
+    text: |
+      真正的剑术大师。
+      一只钻研战斗技术好几
+      百年的树苗鼹鼠，终于
+      获得了比霍尔德更加高
+      贵的、最为究极的头衔：
+      马克西姆斯。
+      这是那只鼹鼠的孙子。
+
+      ——OMORI
+
+
+
+  496:
+    name: 甜心
+
+    background: {name: battleback_sw_sweetheart, x: 0, y: 0}
+    position: {x: 175, y: 500}
+    character: {name: DW_SH_1, index: 1}
+    listIndex: 70
+
+    text: |
+      住在焚火虫森林深处
+      粉红城堡里的癫狂女
+      公爵，全世界的树苗
+      鼹鼠们都很爱戴她。
+      似乎有点喜欢英雄。
+
+      ——OMORI
+
+
+      那个……还是不要再提
+      那件事了，好吗？
+
+      ——英雄
+
+
+
+  409:
+    name: 极恶奇普
+
+    background: {name: battlebacks_dd_default, x: 0, y: 0}
+    position: {x: 170, y: 500}
+    character: {name: DW_NPC_15, index: 6}
+    listIndex: 71
+
+    text: |
+      另一个世界来的生物，
+      是用一盘燕麦曲奇饼
+      干召唤出来的。
+      ——OMORI
+
+      太邪恶了！
+      ——奥布里
+
+      还很卑鄙！
+      ——凯
+
+      简直可以说是极恶！
+      ——英雄
+
+
+
+
+
+  415:
+    name: 不面双胞胎
+
+    background: {name: battlebacks_dd_biscuit_doughie, x: 0, y: 0}
+    position: {x: 210, y: 500}
+    character: {name: DW_NPC_17, index: 3}
+    listIndex: 72
+
+    text: |
+      小饼干和小面团，另
+      一个世界来的不面双
+      胞胎，他们被逼迫使
+      用传送法阵永远烘焙
+      和输送面包。噢噢……
+
+      ——OMORI
+
+
+
+  402:
+    name: 太空前夫
+
+    background: {name: battleback_ff_xsh, x: 0, y: 0}
+    position: {x: 172, y: 550}
+    character: {name: DW_NPC_14, index: 6}
+    listIndex: 73
+
+    text: |
+      刚刚离婚的太空男孩
+      船长。他的灵魂已经
+      超凡入圣、超越时空，
+      进化到了不需要无用
+      的人类情感的程度。
+
+      ——OMORI
+
+
+      可怜的太空男孩船长……
+      没有人应该变成这样……
+
+      ——奥布里
+
+
+
+
+
+  508:
+    name: 鲨赞先生
+
+    background: {name: battlebacks_dw_jawsum, x: -90, y: 0}
+    position: {x: 160, y: 525}
+    character: {name: DW_jawsum, index: 1}
+    listIndex: 74
+
+    text: |
+      一位风投家/企业家/放
+      贷人，拥有深井51%的
+      所有权。他在这个世界
+      上最相信的就是一份签
+      了字的合同。
+
+      ——OMORI
+
+
+      哎，这不是老板吗！
+      我很喜欢他！
+
+      ——凯
+
+
+
+  202:
+    name: 鳄鱼男
+
+    background: {name: battleback_dw_lastresort_interior, x: -90, y: 0}
+    position: {x: 175, y: 500}
+    character: {name: DW_NPC_GATOR, index: 0}
+    listIndex: 75
+
+    text: |
+      深得鲨赞先生信任的
+      忠诚跟班们。很有可
+      能他们全都和鲨赞先
+      生签署过非常有问题
+      的合同。
+
+      哪怕是在同一个房间
+      里，他们似乎也更加
+      喜欢通过对讲机来和
+      彼此交流。
+
+      ——OMORI
+
+
+
+  514:
+    name: 冥王星（扩大后）
+
+    background: {name: battleback_dw_pluto, x: 0, y: 0}
+    position: {x: 162, y: 500}
+    character: {name: DW_NPC_15, index: 2}
+    listIndex: 76
+
+    text: |
+      绚丽到令人震惊的冥王
+      星的扩大版本。整个宇
+      宙和太空中最为强壮的
+      行星。
+
+      ——OMORI
+
+
+
+  541:
+    name: 机械甜心
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_NPC_14, index: 0}
+    listIndex: 77
+
+    text: |
+      一个危险的杀戮机器人，
+      想要摧毁我们所知道的
+      一切生命。我们见到她
+      后还能活着真的很幸运。
+
+      ——OMORI
+
+
+
+  550:
+    name: 异变甜心
+
+    background: {name: battleback_dw_sglair, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_NPC_10, index: 7}
+    listIndex: 78
+
+    text: |
+      史莱姆三姐妹中玛丽娜
+      所创作的失败？实验体。
+      想要与人交流，但只会
+      发出奇怪的噪音。闻起
+      来有草莓的味道。
+
+      ——OMORI
+
+
+
+  559:
+    name: 完美甜心
+
+    background: {name: battleback_dw_perfectheart, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_NPC_14, index: 1}
+    listIndex: 79
+
+    text: |
+      力量深不可测、优雅
+      无人能及的女神。她
+      释放出来的光真的可
+      以让人致盲，有些情
+      况下甚至可能致死。
+
+      ——OMORI
+
+
+
+  877:
+    name: 玛丽娜
+
+    background: {name: battleback_dw_slimegirls, x: 0, y: 0}
+    position: {x: 180, y: 500}
+    character: {name: DW_NPC_10, index: 2}
+    listIndex: 80
+
+    text: |
+      史莱姆三姐妹中的二姐，
+      轻率无谋，脾气也暴躁。
+      喜欢把活着的生物拿去
+      拆解，再把他们重新拼
+      接起来，并且通常不会
+      在事前征求他们的同意……
+
+      ——OMORI
+
+
+
+  878:
+    name: 莫莉
+
+    background: {name: battleback_dw_slimegirls, x: 0, y: 0}
+    position: {x: 185, y: 500}
+    character: {name: DW_NPC_10, index: 1}
+    listIndex: 81
+
+    text: |
+      史莱姆三姐妹中的大姐，
+      机智又狡猾，知道怎么
+      从任何事情中发掘乐趣。
+      她其实对所有科学学科
+      都有极深的造诣，但她
+      平时还是只选择编程，
+      因为这一学科最不需要
+      四处走动。
+
+      好像很喜欢加了芝士的
+      薯片。
+
+      ——OMORI
+
+
+
+  879:
+    name: 美杜莎
+
+    background: {name: battleback_dw_slimegirls, x: 0, y: 0}
+    position: {x: 170, y: 500}
+    character: {name: DW_NPC_10, index: 0}
+    listIndex: 82
+
+    text: |
+      史莱姆三姐妹中的小妹，
+      冷静而务实，平时主要
+      和试管里的液体打交道，
+      因为觉得它们很漂亮。
+
+      她是个化解矛盾困境的
+      专家，因为她的两个姐
+      姐平时动不动就会和对
+      方吵起来。
+
+      ——OMORI
+
+
+
+  577:
+    name: 汉弗莱
+
+    background: {name: battleback_dw_humphrey, x: 0, y: 0}
+    position: {x: 160, y: 500}
+    character: {name: DW_SG_Humphrey, index: 0}
+    listIndex: 83
+
+    text: |
+      极致而原初的恐惧。
+
+      ——OMORI
+
+      还很黏糊糊哦！捏哈哈！
+
+      ——汉弗莱

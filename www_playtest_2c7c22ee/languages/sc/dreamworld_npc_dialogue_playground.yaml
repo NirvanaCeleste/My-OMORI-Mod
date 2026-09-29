@@ -1,0 +1,576 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============FOREST PLAYGROUND========================================
+                        #====NIGHT 1-1====
+
+#Bangs
+#Location: Forest Playground
+message_0:
+  text: \ban跟朋友一起玩太累了，我只要看着他们玩就满足了。
+
+#After Cutscene: Lost Ball
+
+
+
+#Bun
+#Location: Forest Playground
+message_1:
+  text: \bun鼻子是我最好的朋友哦！\!<br>虽然她会说的话不多，但她真的很聪明的！
+
+
+#Daisy
+#Location: Forest Playground
+message_2:
+  text: \dai不、不好意思，拜托你们先不要在这里走来走去的，可以吗……\!<br>我想摘几朵花\}送给一个对我来说很重要的人……
+
+message_3:
+  text: \dai我摘了几朵花，\}打算送给一个对我来说很重要的人……\!希望他会喜欢……
+
+message_4:
+  text: \dai我想给那个人送一束花，但他只对拼图感兴趣……\!如果我能找到\c[4]花朵拼图\c[0]什么的就好了……\!也许那样的话，他就会注意到我了……
+
+#After Flower Puzzle Quest
+
+message_5:
+  text: \dai这是……\c[4]花朵拼图\c[0]？\!给我的吗？\!<br>……\!\}有了这个，说不定内布就会注意到我了！
+
+message_6:
+  text: \dai……
+
+message_7:
+  text: \dai\Com[2]\{啊，我不小心把他的名字给说出来了！\}\}<br>拜托了，请你当作什么都没听到吧……\{
+
+message_8:
+  text: \dai我、我在想，我该什么时候把这个送给他呢……
+
+
+#BROWS
+#Location: Forest Playground
+message_10:
+  text: \n<眉毛>\SINV[2]\Com[2]啊啊啊啊\{啊啊啊啊\{啊啊啊啊啊！！\LECLEAR
+
+
+#Happy
+#Location: Forest Playground
+message_11:
+  text: \hap\SINV[1]跳！\!\}我——\{跳！\!\}我——\{跳！\!\}我——\{跳！\SINV[0]
+#After Cutscene: Lost Ball
+
+#epilgoue
+message_31:
+  text: \hap\SINV[1]转！\!\}我——\{转！\!\}我——\{转！\!\}我——\{转！\SINV[0]
+
+#CHARLENE
+#Location: Forest Playground
+message_12:
+  text: \n<莎琳>\}\}朋友们……\!你、你们好啊……
+
+#LADAO
+#Location: Forest Playground
+message_13:
+  text: \lad我要一路荡到月球去咯！
+
+#NEB
+#Location: Forest Playground
+message_14:
+  text: \neb我假装自己是一个星球。
+
+message_15:
+  text: \neb我喜欢拼图。
+#NOSE
+#Location: Forest Playground
+message_16:
+  text: 鼻子看起来很忙。
+
+#REN
+#Location: Forest Playground
+message_17:
+  text: \ren今天晚上很适合看星星。
+
+#SHAWN
+#Location: Forest Playground
+message_18:
+  text: \shaw\n[1]，你要不要一起来？
+
+message_19:
+  text: \shaw啊，这里的草地躺着真舒服。
+
+#stargaze
+message_20:
+  text: 看着头顶上那些闪闪发亮的星星……<br>\!你觉得，这世界上的一切都与你无关了。
+
+message_21:
+  text: OMORI 习得了\c[1]观察\c[0]！
+
+#JASH IN A BOX
+message_30:
+  text: \n<小丑贾什>\{\{\sinv[1]你看不见我！！
+
+#VAN
+#Location: Forest Playground - Lost Ball
+#[Cutscenes_lostball]
+
+#After lost ball
+message_44:
+  text: \hap\Com[2]刘海，坚持住啊！\!你会没事的！
+message_45:
+  text: \ban眉毛刚刚把我给撞倒了。不过我现在躺在地上不是因为受伤，是因为我觉得这么躺着很舒服。
+message_46:
+  text: \n<阿万>好了好了，眉毛……\!这也不是你的错……
+message_47:
+  text: \n<眉毛>\Com[2]\SINV[2]啊啊\{\Com[2]啊啊啊\{\Com[2]啊啊\{\Com[2]啊啊啊！！\LECLEAR
+
+#After headbutt
+message_48:
+  text: \n<阿万>我和波利又可以一起玩绳球咯！
+
+#BERLY
+#Location: Forest Playground - Lost Ball
+#[Cutscenes_lostball]
+
+# ==============HEADBUTT=======================================
+
+message_60:
+  text: \ber嘿，你们几个！谢谢你们帮我把\c[4]球\c[0]找回来！\!<br>你们看，我现在又可以继续玩球了！
+
+message_61:
+  text: \n<阿万>没错。
+
+message_62:
+  text: \ber嗯，我在想……\!既然你们都好心帮我把球找回来了……\!那我也要大方一点，把我的独家\c[1]技能\c[0]传授给你们！
+
+message_63:
+  text: \ber但是我要先问一个问题……\!<br>你们谁的脑壳最硬呀？
+
+message_64:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel\Com[2]\{呃！\}那肯定就是\n[2]了！
+
+message_65:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub\Com[2]\{你说什么？！
+
+message_66:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel唔哦，冷静点啦！\!我没有\SINV[1]硬\SINV[0]要说你的意思哦……\!懂吧？
+
+message_67:
+  text: \ber哈，\!说得也没错！
+
+message_68:
+  text: \ber好，\n[2]，我的独家\c[1]技能\c[0]就传授给你了。这可是只有像我们这样脑壳够硬的人才能学会的。
+
+message_69:
+  text: \ber看好啦，这就是我的独门绝技……\c[1]头槌\c[0]！\!<br>\!其实很简单的。\!你只要朝着目标冲过去，然后……
+
+message_70:
+  text: \QUAKE[1]\Com[2]\{砰\{\Com[2]——\{——\{\Com[2]！！！\QUAKE[0]\ber
+
+message_71:
+  text: \ber好，轮到你了。
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 8
+  text: \aub看起来会很痛的样子……\!<br>而且我的发型肯定会变得乱糟糟的。\!<br>蝴蝶结也会撞坏。
+
+message_73:
+  text: \ber哎呀，\n[2]！偶尔放纵一点有什么关系嘛！\!<br>头发乱一点又不会怎么样。\!<br>你看，\!\n[4]不就是活生生的例子嘛。
+
+message_74:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 38
+  text: \her没错！
+
+message_75:
+  text: \ber你就试一下嘛。
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub哼！\!好吧……
+
+message_77:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub不过，让我来的话……\!我可是会用尽全力撞过去的哟！
+
+message_78:
+  text: \ber\QUAKE[1]\Com[2]\{砰\{\Com[2]——\{——\{\Com[2]！！！\QUAKE[0]
+
+message_79:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub呜呃……
+
+message_80:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub\SINV[1]我感觉……\!头好晕……\SINV[0]
+
+message_81:
+  text: \ber\Com[2]\{哇哦！干得漂亮！！奥布里！！\}\!<br>我就知道我没看走眼，你还蛮有天分的。
+
+#ADD RAINBOW
+message_82:
+  text: \ber\{\SINV[1]恭喜！！\SINV[0]\}\!<br>我宣布，你满分通过测试啦！
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub\SINV[1]……嗯？\!发生什么了？\SINV[0]
+
+message_84:
+  text: \ber我在此宣布……\!<br>从今天起，你就是货真价实的“头槌家”。
+
+message_85:
+  text: \ber来，这是你的证书，拿好咯。\!拿去给你的朋友们看看吧。\!<br>他们肯定会为你感到骄傲的！
+
+message_86:
+  text: 奥布里习得了\c[1]头槌\c[0]。
+
+message_87:
+  text: 你获得了\c[4]屁股认证书\c[0]。
+
+
+#After Headbutt Quest
+message_88:
+  text: \ber加把劲儿，阿万！\!把头狠狠撞上去！
+
+
+                        #====NIGHT 1-2====
+#BANGS
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#BERLY
+#Location: Forest Playground - Hide and Seek
+#Check Prologue_BeforeHideandSeek.yaml and Prologue_HideandSeek.yaml.
+
+#BROWS
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#BUN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#CHARLENE
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#DAISY
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#HAPPY
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#LADAO
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#NEB
+#Location: Forest Playground
+#NEB: I love puzzles.
+
+#NOSE
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#REN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#SHAWN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#VAN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+
+                        #====NIGHT 2====
+#BANGS
+#Location: Forest Playground
+message_100:
+  text: \ban眉毛不停在我耳边尖叫……
+
+#BERLY
+#Location: Forest Playground - Hide and Seek
+#Same as NIGHT 1-2.
+
+#BROWS
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#BUN
+#Location: Forest Playground
+message_101:
+  text: \bun鼻子，你今天想做些什么呢？
+
+#CHARLENE
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#DAISY
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#HAPPY
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#LADAO
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#NEB
+#Location: Forest Playground
+message_102:
+  text: \neb我……\!喜欢拼图。
+
+#NOSE
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#REN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#SHAWN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#VAN
+#Location: Forest Playground
+message_103:
+  text: \n<阿万>波利可能看起来很冷漠，但也只是看起来是那样而已。\!有时候……你得跟一个人好好相处一段时间，才能了解对方到底是什么样的人。
+
+message_104:
+  text: \n<阿万>你应该能理解的，对吧？
+
+
+                        #====NIGHT 3====
+#BANGS (Bed Tester)
+#Location: Last Resort - Hotel Room
+message_110:
+  text: \ban老板想让我派上用场……但是他意识到我做什么都不行后，就让我来做试睡员……\!<br>嗯……\!啊……\!这张床睡起来的确挺舒服的……
+
+#BERLY (Gator Guy)
+#Location: Last Resort - Jawsum HQ Entrance
+message_111:
+  text: \ber哇哇哇！看看谁来了！\!你们是想进去找老板谈事情吧？\!<br>不好意思，我也不想打击你们，但是我的职责就是守在这里，不能随便放人进去打扰老板！
+message_112:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel\sinv[1]哎呀……\sinv[0]你认真的吗？\!<br>\Com[2]拜托啦，波利！我们俩都认识这么久了！\!<br>你就不能帮我们一个小小……小小的忙吗？
+message_113:
+  text: \ber嘟囔、嘟囔……\!抱歉啦，凯，这是老板的意思，我也没法通融……\!今天可是个重要的日子，他不希望有任何人……\!打扰他。\!<br>毕竟我们还得准备今晚的慈善\c[3]豆腐\c[0]晚宴呢！
+message_114:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel但是，波利……我可是你的老朋友耶！\!<br>我们俩老熟老熟了！<br>\!你忘了吗，我们以前那些美好时光……
+message_115:
+  text: \ber\Com[2]你还是放弃吧！你猜猜为啥他们让我当安保队的头头！\!他们就想找一个比较强硬……\!可以做出艰难抉择的人！\!没错，就是我这种头铁的人！
+message_116:
+  text: \ber你看啊……我这枚徽章！\!闪闪发亮的！
+message_117:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel唔……\!快，凯，快想想办法！
+message_118:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel啊，我知道了！\! \sinv[1]嘿，波利……\!\sinv[0]我们的好朋友 OMORI 也想来这里找工作哦！\!老板从来不会拒绝自愿来这里打白工的人，对吧？
+message_119:
+  text: \ber唔……\!是这样啦。\!但是……
+message_120:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 33
+  text: \kel\com[2]求你了啦，波利！\!\SINV[2]求你了，求你了，求你了，求你了，求你了！\sinv[0]
+message_121:
+  text: \ber啊……\!好吧……\!那这次我就放你们进去吧。\!<br>不过，你得先去买\c[3]瓶装水\c[0]给我喝才行！\!<br>我都要渴死了！
+#[Watch Alarm SFX]
+message_122:
+  text: \ber嘿！\c[3]瓶装水\c[0]买回来了？\!谢啦！欠你们一个人情！\!兄弟们，我们走！听说他们买了披萨，咱们去休息室瞧瞧！
+message_123:
+  text: \n<鳄鱼男>哦耶！免费的披萨！
+message_124:
+  text: \n<鳄鱼男>呃……\!希望披萨饼上没有放菠萝……
+
+#Talk after
+message_107:
+  text: \ber\c[3]瓶装水\c[0]买回来了吗？\!<br>赶紧的！我们真的要渴死了！
+
+#BERLY and GATOR GUYS leave.
+
+message_105:
+  text: \n<鳄鱼男>波利不点头你就不能进去。
+
+message_106:
+  text: \n<鳄鱼男>波利不让那我也不让。
+
+#After Interaction
+#Location: Break Room
+
+message_125:
+  text: 波利在狼吞虎咽地吃东西，没有注意到你。
+
+message_126:
+  text: \n<鳄鱼男>只要是披萨我都喜欢。
+
+message_127:
+  text: \n<鳄鱼男>呃啊……\!有菠萝……
+
+#After Cutscene: Mr. Jawsum's Request
+#Location:
+
+message_128:
+  text: \ber嘿，是你们！\!我听老板说，你们就要离开\c[11]最后度假村\c[0]了……\!<br>不过别忘了，要经常过来找我们玩啊！大家都会很想你们的！
+
+#BROWS (Dealer)
+#Location: Last Resort - Casino Area
+message_129:
+  text: \n<眉毛>\SINV[2]\Com[2]啊啊啊啊啊\{啊啊啊啊\{啊啊啊啊啊！！\LECLEAR
+
+#BUN (Room Service)
+#Location: Last Resort - Hotel Hallway
+message_130:
+  text: \bun唉……\!<br>这里的客人好会给人找麻烦哦。
+
+message_132:
+  text: \bun工作真不是件容易的事……\!<br>希望鼻子一个人也能好好的……
+
+#CHARLENE (Lifeguard)
+#Location: Last Resort - Entrance
+
+message_133:
+  text: \n<莎琳>\}\}那、那个……\!不要在池子里玩水……\!好吗？
+
+#DAISY (Mural Artist)
+#Location: Last Resort - Hotel Hallway
+
+message_134:
+  text: \dai老板跟我说我想画什么就画什么，所以我要在这里画花花！
+
+#HAPPY (Room Service)
+#Location: Last Resort - Hotel Hallway
+message_135:
+  text: \hap\SINV[1]抹……\!\}我——\{抹……\!\}我——\{抹……\!\}我——\{抹……\SINV[0]
+
+#LADAO (Construction Worker)
+#Location: Construction Area
+message_136:
+  text: \lad我要把这里建得高高的，要让它高得能顶到月亮！
+
+#NEB (Architect)
+#Location: Construction Area
+message_137:
+  text: \neb建房子……\!就像拼图一样……\!我喜欢拼图。
+
+#NOSE (Receptionist)
+#Location: Last Resort - Casino Area
+message_138:
+  text: \nos鼻子飞飞！
+
+#REN (Server)
+#Location: Last Resort - Casino Area
+message_139:
+  text: \n<肖恩和小仁>希望你们在\c[11]最后度假村\c[0]玩得开心！\!<br>如果有什么需要，请尽管跟我们说哦！
+
+#VAN (Construction Worker)
+#Location: Construction Area
+message_140:
+  text: \n<阿万>老板之前想让我去安保部门工作的，但是他们都说我的心太软了。
+
+message_141:
+  text: \n<阿万>但是我听说，他们让波利当了安保队的头头！\!<br>大家都说波利又沉着又冷静！
+
+message_151:
+  text: \n<阿万>我好想波利啊……
+
+
+                      #====NIGHT 4 (AFTER CUTSCENE: FEED HUMPHREY 1)====
+
+
+#BANGS
+#Location: Forest Playground
+message_142:
+  text: \ban唉……<br>\!我觉得我好像终于找到了自己真正喜欢的工作……\!<br>我会怀念在\c[11]最后度假村\c[0]里当试睡员的日子的。
+
+#BERLY
+#Location: Forest Playground
+message_143:
+  text: \ber嘟囔、嘟囔……\!我想我还是会继续当一个普通的小孩吧。\!这份工作好玩是好玩，但是我当了安保队的头头以后，都不能像以前一样天天跟阿万玩了，挺没劲的。
+
+#BROWS
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#BUN
+#Location: Forest Playground
+message_144:
+  text: \bun哦，是鼻子！我好想你啊！\!你也很想我，对不对？
+
+#CHARLENE
+#Location: Forest Playground
+message_145:
+  text: \n<莎琳>\}\}你们好啊……\!又见面了……
+
+#DAISY
+#Location: Forest Playground
+message_146:
+  text: \dai画花花是很好玩啦，但是能亲自闻一闻花花的香味就更好啦。
+
+#HAPPY
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#LADAO
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#NEB
+#Location: Forest Playground
+message_147:
+  text: \neb我真的、真的、真的好喜欢拼图。
+
+#NOSE
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#REN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#SHAWN
+#Location: Forest Playground
+#Same as NIGHT 1-1.
+
+#VAN
+#Location: Forest Playground
+message_148:
+  text: \n<阿万>波利当上安保队头头以后也没忘记我，真是太好了。
+message_149:
+  text: \ber说得好像我会忘记你一样！你这傻大个！
+#BERLY headbutts VAN.
+message_150:
+  text: \n<阿万>哎呀，这点也和以前一样呢……
+
+#SW AT TRAIN STATION BLOCK
+
+
+message_200:
+  text: \who\com[2]你们这是在逗我玩吗？！\!我要求你们马上让我去见我的家人！
+
+message_201:
+  text: \n<柠檬贾什>您觉得我像是有闲情雅致逗您玩的人吗？\!冲着我的耳朵大喊大叫也不会让火车提前出发，女士。
+

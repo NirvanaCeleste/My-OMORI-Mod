@@ -1,0 +1,614 @@
+# =========================================================================================
+# ** BASIL ANGSTY TIME
+# =========================================================================================
+
+
+#===========================================================================================
+
+#LOOPING FIELD
+
+message_24:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_25:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>……
+
+#===========================================================================================
+
+#SUSPENSE
+
+message_20:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>这一切的根源，迷失在了这片混乱之中。
+
+
+message_21:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>被你尘封起来的那个真相……\!你无论如何也得找到它。
+
+
+message_22:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>这么做……\!是为了我们两个好。
+
+#===========================================================================================
+
+#SUBCONSCIOUS SPILL
+
+message_0:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>这些房间里……\!尽是零散破碎的东西……\!<br>但至少在这里，我能看清你的真实面目。
+
+
+message_1:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>你在这个世界的上方创造出另一个世界……\!是想隐藏这里，还是想保护这里呢？
+
+
+message_2:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>不管怎样……\!它现在的力量比你更加强大。
+
+
+#===========================================================================================
+
+#NEIGHBORHOOD OF SHADOWS
+
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>在你隐藏真相的时候，我的一部分也随之尘封了起来。
+
+
+message_5:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>这么久以来，他一直在等待某个人去拯救他。
+
+
+message_6:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>那一天……\!你化作虚无时……\!我也被一分为二。\!你认为哪边更痛苦呢？
+
+
+#===========================================================================================
+
+#SAFE IN THE FOREST
+
+message_8:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我好想念你，\n[8]。你一直都愿意听我倾诉一切。
+
+
+message_9:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我的烦恼……我的希望……我的梦想……\!你全部一清二楚。
+
+
+message_10:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>所以，如果你还在的话……\!请让我将话语再次传达给你吧。
+
+message_46:
+  text: 一朵雏菊。
+
+
+#===========================================================================================
+
+#SCRIBBLES
+
+message_11:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>那些因我们而煎熬的朋友们。\!我们还能算是他们的朋友吗？
+
+
+message_12:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>无论我内心如何渴望，一切也无法回到以前的样子了。
+
+
+message_13:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>可是，这一部分的我，为什么还在苦苦坚持着呢？
+
+message_14:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我们还有希望吗，\n[8]？
+
+
+#===========================================================================================
+
+# FISH OUT OF WATER
+
+message_15:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>那个时候……\!我只想挽救仅剩的东西。\!<br>可是，经历了那一切以后……\!你却还是离我而去了，\n[8]……
+
+
+message_16:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我等了好久好久，等着你回来。
+
+
+message_17:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>即使现在终于和你见面了……\!我的脑袋里还是一团乱麻。\!<br>我的内心还在隐隐作痛，我好想捂住脸躲藏起来。
+
+
+message_67:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我有太多、太多的话想对你说……\!可是话到嘴边，又咽了回去。
+
+
+message_66:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我只是……\!为了等你回来，真的等了太久，\n[8]……\!可是……\!<br>你始终都没有回来过。
+
+
+message_68:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我不知道是否该道歉……
+
+
+#===========================================================================================
+
+#TIME
+
+message_18:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>一直以来，你都把真相拒之门外。
+
+
+message_19:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>可是有什么东西使它乘隙而入了。
+
+
+
+message_27:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>而它所造成的空洞……\!会一直蔓延下去。除非，你能找到这一切的根源。
+
+
+message_28:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>看到真相的那个他……
+
+
+message_29:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>你能引领我找到他吗，\n[8]？
+
+
+message_23:
+  text: 一个空鱼缸。
+
+
+
+#PHONE
+message_26:
+  text: \n<妈妈>“\n[8]……\!我们要搬走了。”
+
+
+#===========================================================================================
+#true
+
+message_30:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>\n[8]……\!真相就在这里。
+
+
+message_31:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>你已经逃避了太久了。
+
+
+message_33:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>但这一次，我们可以一起面对。
+
+
+#===========================================================================================
+#True upon talking to red eye basil
+
+message_34:
+  text: \n<贝瑟尔>我……\|我很抱歉。
+
+
+message_35:
+  text: \n<贝瑟尔>你能原谅我吗？\|我最好的朋友……
+
+
+#===========================================================================================
+
+#Neutral
+
+message_36:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>\n[8]……\|你已经逃避真相这么久了……\|你到底还要逃多久呢？
+
+
+message_37:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我不会再让这个循环继续下去了……
+
+
+message_38:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>我……\|我不会让你离开我的，\n[8]……
+
+
+message_39:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>不会再让你离开我了。
+
+
+#===========================================================================================
+
+#Neutral Fight
+
+message_40:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>\n[8]……
+
+
+message_45:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>如果你不肯直面真相的话……\!那就来直面我吧。
+
+
+message_41:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>直面所爱之人因你遭受的苦难……
+
+message_42:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>直面你后知后觉无能为力的痛楚……
+
+message_43:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>直面你安于现状害怕改变的懦弱与自我憎恶……
+
+message_44:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>让这些情绪在此将你吞噬吧……\!直到你的内心被侵蚀殆尽。
+
+#===========================================================================================
+
+#BATTLE TEXT
+#PLAYER STARTS AFRAID BUT CAN STILL "USE" SKILLS
+
+
+message_47:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_48:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_49:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_50:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_51:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_52:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>
+
+message_53:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>\n[8]……\!一直以来，我一遍又一遍地呼唤着你……\!<br>你为什么从来不回应我呢？
+
+message_54:
+  text: >
+    \陌生人：\<\fn<OMORI_GAME>你承诺过，要和我共同面对这一切……\!<br>可是，你最后却留我孤身一人。
+
+message_55:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>既然我们无法一起面对……\!那至少可以一起留在这里。
+
+message_56:
+  text: >
+    \>陌生人：\<\fn<OMORI_GAME>\n[8]……\!我要把你永远困在这里陪着我。
+
+#===========================================================================================
+#AFTER OMORI WINS
+
+#PLAY BASIL LOOP IN THIS MAP
+
+message_57:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>所以，你选择了那样的生存方式啊。\!<br>我很好奇……\!那样真的能被称为“活着”吗？
+
+
+message_58:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text: \n<陌生人>\fn<OMORI_GAME>你走吧。\!我已经没有任何希望了。
+
+
+message_59:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+#BASILS MEMORIES
+
+message_60:
+  text: \n[8]……\!你终于来了。\bas
+
+
+message_61:
+  text: 我一直幻想着你会回来找我……\!<br>可是，或许已经来不及了。\bas
+
+
+message_62:
+  text: \bas那一天的真相，会让你难以接受。
+
+
+message_63:
+  text: \bas当你看到它时……\!你一定要坚强。
+
+
+message_64:
+  text: \bas然后，如果可以的话……
+
+
+message_65:
+  text: \bas请你……\!原谅我……
+
+
+#====
+
+message_69:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_70:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_71:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_72:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_73:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_74:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_75:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_76:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_77:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_78:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_79:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_80:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_81:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_82:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_83:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_84:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_85:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_86:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_87:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_88:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_89:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_90:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_91:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_92:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_93:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_94:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_95:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_96:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_97:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_98:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_99:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_100:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+
+message_101:
+  faceset: MainCharacter_Basil
+  faceindex: 8
+  text:
+
+

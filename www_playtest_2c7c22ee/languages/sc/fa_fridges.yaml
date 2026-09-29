@@ -1,0 +1,100 @@
+# =========================================================================================
+# ** TEMPLATE DIALOGUE
+# =========================================================================================
+
+#FIRST MESSAGE
+
+message_0:
+  text: 你打开了冰箱……
+
+
+#KEL'S HOUSE
+
+message_1:
+  text: 里面装满了包裹着锡纸、保鲜膜，或者放在塑料盒里的食物。\!<br>你看不出来里面都有什么。
+
+
+#CRIS'S HOUSE
+
+message_2:
+  text: 小卷心菜、土豆沙拉，还有很多罐\c[3]香橙乔汽水\c[0]。
+
+
+#MAVERICK'S HOUSE
+
+message_3:
+  text: 面条、鱼，还有苦瓜。
+
+
+#BRENT'S HOUSE
+
+message_4:
+  text: 芝士通心粉、玉米面包、冷冻虾，还有汤。
+
+
+#KIM'S MOM'S HOUSE
+
+message_5:
+  text: 牛油果、鸡蛋、蓝莓，还有柚子。
+
+
+#JOY'S HOUSE
+
+message_6:
+  text: 米饭、四季豆，还有很多饺子。
+
+
+#CHARLIE'S HOUSE
+
+message_7:
+  text: 酸奶、芦笋，还有某种\c[4]药品\c[0]。
+
+
+#VANCE' DAD'S HOUSE
+
+message_8:
+  text: 不知名牌子的汽水和一包一包的番茄酱。
+
+
+#KAREN AND SEAN'S HOUSE
+
+message_9:
+  text: 装满了食物和人造黄油的超市购物袋。
+
+
+#SARAH'S HOUSE
+
+message_10:
+  text: 鸡胸肉、西兰花、棕米饭，还有一个橙子。
+
+
+#AUBREY'S HOUSE (CAN'T GET TO FRIDGE)
+
+message_11:
+  text: 霉菌。
+
+
+#BASIL'S HOUSE
+
+message_12:
+  text: 卷心菜、胡萝卜、蘑菇，还有豆腐……
+
+
+#JESSE'S HOUSE
+
+message_13:
+  text: 烤土豆和从\c[11]吉诺披萨店\c[0]买的\c[3]整张披萨\c[0]！
+
+
+#BEBE'S HOUSE
+
+message_14:
+  text: 生蚝、意面、番茄，还有装在玻璃瓶里的高级饮品。
+
+
+#ARTIST'S HOUSE
+
+message_15:
+  text: 牛奶、茶，还有炸鱼饼。
+
+

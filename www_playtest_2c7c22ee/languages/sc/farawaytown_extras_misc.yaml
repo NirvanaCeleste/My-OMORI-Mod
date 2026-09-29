@@ -1,0 +1,728 @@
+# =========================================================================================
+# FARAWAY TOWN Extra
+# =========================================================================================
+
+#Interacting with PLAYER house door
+
+message_0:
+  text: 没人在家。
+
+#KEL at door
+
+message_1:
+  text: \who\Sinv[1]你好……\!你——好——？\!有人在吗？
+
+message_2:
+  text: 你听见门后传来粗哑的声音。你对这个声音没有印象。
+
+#After Polly Cont. Cutscene
+
+message_3:
+  text: 贝瑟尔在翻看他的\c[4]相册\c[0]。\!<br>他的双手在颤抖……
+
+#Exclamation mark on BASIL
+
+message_4:
+  faceset: MainCharacter_Basil
+  faceindex: 17
+  text: \bas啊！\!你好，\n[8]……
+
+#Pizza Karaoke
+#!!!THIS SCENE IS NO LONGER APPLICABLE!!!*
+
+message_5:
+  text: 这是台卡拉 OK 机器。\!<br>你想要谁来唱歌呢？
+
+message_6:
+  text: 你指着凯。
+
+message_7:
+  text: 你指着奥布里。
+
+message_8:
+  text: 你指着英雄。
+#Pick KEL/Aubrey/Hero when applicable
+
+#Flashback to BASIL and PLAYER burying the key at the stump
+#Shoveling noises
+#!!!THIS SCENE IS NO LONGER APPLICABLE!!!*
+
+message_9:
+  text: \bas呼……\!呼……\!好了……\!结束了。
+
+message_10:
+  text: \bas我们把所有东西都藏好了，没人会发现的……
+
+message_11:
+  text: \bas不、不要一脸惊恐呀，\n[8]……\!<br>至少我们还有彼此嘛……\!<br>我会保护你的！相信我！
+
+message_12:
+  text: \bas一切都会没事的……\!不是吗？
+
+#Rai at GINO'S Pizza
+
+message_13:
+  text: \n<拉伊>我是拉伊！很自豪地说，我是一名音乐鉴赏家。
+
+message_14:
+  text: \n<拉伊>如果你在那边的\c[4]点唱机\c[0]上播放一张 \c[4]CD\c[0] ，我就能告诉你作曲家是谁哦！
+
+message_15:
+  text: \n<拉伊>我是拉伊！很自豪地说，我是一名音乐鉴赏家……\!<br>不仅如此，我还是卡牌鉴赏家哦！
+
+# =========================================================================================
+# FARAWAY TOWN Extra content
+# =========================================================================================
+
+#CHECKING CLOSET AFTER GETTING SMALL KEY
+#!!!THIS SCENE IS NO LONGER APPLICABLE!!!*
+
+message_20:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel你进衣柜干嘛，\n[8]？\!之后再做你的家务嘛。\!<br>来嘛，最后一天了，我们去做点有意义的事情吧！
+
+message_21:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel这可不是去\c[11]蜂玩堂\c[0]的路啊！记得吗，<br>\n[8]，\c[11]蜂玩堂\c[0]在北边的\c[11]小镇广场\c[0]那边！
+
+message_22:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel\n[8]，我们先去\c[11]蜂玩堂\c[0]吧！
+
+message_23:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel这可不是去\c[11]贝瑟尔家\c[0]的路啊！记得吗，\n[8]，<br>他家在我们家斜对面的那条街。
+
+# =========================================================================================
+# HOME ALONE
+# =========================================================================================
+
+#If PLAYER chooses not to answer the door for KEL, he will be locked in his house and forced to do a house chore. You can only do one house chore per day.
+
+# Piano room locked while doing chores
+
+# WASHING DISHES
+
+message_30:
+  text: 你卷起了袖子……
+
+message_31:
+  text: 你要先洗什么呢？
+
+message_32:
+  text: 金属叉子
+
+message_33:
+  text: 金属勺子
+
+message_34:
+  text: 筷子
+
+message_35:
+  text: 烤盘
+
+message_36:
+  text: 煎锅
+
+message_37:
+  text: 锅铲
+
+message_38:
+  text: 小碗[S]
+
+message_39:
+  text: 很大的碗[S]
+
+message_40:
+  text: 漂亮的碗[S]
+
+message_41:
+  text: 豪华的盘子[S]
+
+message_42:
+  text: 酒杯[S]
+
+message_43:
+  text: 玻璃杯[S]
+
+message_44:
+  text: 写着“天底下最好的妈妈”的马克杯[S]
+
+message_45:
+  text: 波点马克杯[S]
+
+message_46:
+  text: 平平无奇的盘子[S]
+
+message_60:
+  text: 你拿起了\v[806]。
+
+message_80:
+  text: ……\!哎呀。\!你把\v[806]摔碎了。
+
+message_90:
+  text: 也许妈妈不会发现的……
+
+#After the washing animation is finished:
+
+message_101:
+  text: 你洗完了\v[806]。
+
+message_102:
+  text: 你现在想要洗什么呢？
+
+#Menu will pop up again, with the previously chosen item missing. The menu listings are randomized every time.
+
+message_91:
+  text: 餐具干干净净，一尘不染。
+
+message_92:
+  text: 脏盘子。
+
+message_93:
+  text: 空水槽。
+
+message_110:
+  text: 你终于洗完了盘子。\!<br>你的指尖皱得像梅子干。
+
+message_121:
+  text: 你想到此为止，不洗盘子了吗？
+
+message_122:
+  text: 你要洗盘子吗？
+
+message_123:
+  text: 你看了看你的待办清单。\!<br>今天你要做的家务是洗盘子。
+
+message_124:
+  text: 盘子都洗干净了。\!<br>你也应该洗洗干净。\!<br>也许是时候去洗澡了。
+
+#IF YOU EXAMINE DISHES WITH HERO
+message_125:
+  faceset: MainCharacter_Basil
+  faceindex: 13
+  text: \her看来你搬走前还有些家务要做啊，\n[8]。
+
+message_126:
+  faceset: MainCharacter_Basil
+  faceindex: 14
+  text: \her别担心，交给我吧！\!反正我每天早上都想不出怎么打发时间。\!<br>你就当成是我送你的临别礼物好啦！
+
+message_127:
+  text: 哇哦……
+
+#  Sweeping
+
+message_130:
+  text: 你拿起了\c[13]妈妈的扫帚\c[0]。\!<br>地上的尘土变得更加明显了。
+
+message_131:
+  text: 你想到此为止，不继续扫地了吗？
+
+message_132:
+  text: 你放下了\c[13]妈妈的扫帚\c[0]。\!<br>你不再关心地上的尘土了。
+
+message_133:
+  text: 地板终于扫干净了。
+
+message_134:
+  text: 你看了看你的待办清单。\!<br>今天你要做的家务是扫地。
+
+message_135:
+  text: 你想现在就开始吗？
+
+message_137:
+  text: ……\!你觉得有点头晕。
+
+message_138:
+  text: ……\| ……\| ……
+
+#  Sorting Items
+
+message_140:
+  text: 太空男孩船长手办[TOY]
+
+message_141:
+  text: 积木块[TOY]
+
+message_142:
+  text: 一袋玻璃弹珠[TOY]
+
+message_143:
+  text: 溜溜球[TOY]
+
+message_144:
+  text: 干掉的模型黏土[TOY]
+
+message_145:
+  text: 弹簧[TOY]
+
+message_146:
+  text: 树苗鼹鼠毛绒玩具[TOY]
+
+message_147:
+  text: 甜心洋娃娃[TOY]
+
+message_148:
+  text: 遥控玩具汽车[TOY]
+
+message_149:
+  text: 玩具汽车[TOY]
+
+message_150:
+  text: 坏掉的风筝[TOY]
+
+message_151:
+  text: 塑料收银台[TOY]
+
+message_152:
+  text: 彩虹木琴[TOY]
+
+message_153:
+  text: 迷你钢琴玩具[TOY]
+
+message_154:
+  text: 金属掷子和小球[TOY]
+
+message_155:
+  text: 小风车[TOY]
+#delete the entry below
+message_156:
+  text: 《太空男孩船长大冒险》漫画[BOOK]
+
+message_157:
+  text: “饥饿的汉弗莱”小说[BOOK]
+#delete the entry below
+message_158:
+  text: “甜心的复仇”漫画[BOOK]
+#delete the entry below
+message_159:
+  text: “恐龙挖挖挖”填色书[BOOK]
+
+message_160:
+  text: “太阳系指南”书本[BOOK]
+
+message_161:
+  text: “钢琴与小提琴二重奏”书本[BOOK]
+
+message_162:
+  text: “食物金字塔”书本[BOOK]
+#delete the entry below
+message_163:
+  text: “哭泣柳娘”书本[BOOK]
+
+message_164:
+  text: “香橙乔的香味贴纸”书本[BOOK]
+
+message_165:
+  text: “宠物石头”攻略书[BOOK]
+#delete the entry below
+message_166:
+  text: “大黄猫”书本[BOOK]
+
+message_167:
+  text: “男孩与风筝”书本[BOOK]
+#delete the entry below
+message_168:
+  text: “森林中的游乐场”书本[BOOK]
+#delete the entry below
+message_169:
+  text: “孤单的稻草人”书本[BOOK]
+
+message_170:
+  text: “豆腐的好处”书本[BOOK]
+
+message_171:
+  text: 一罐过期的香橙乔汽水[TRASH]
+
+message_172:
+  text: 一块拼图[TRASH]
+
+message_173:
+  text: 一块有味道的旧石头[TRASH]
+
+message_174:
+  text: 一个笔盖[TRASH]
+
+message_175:
+  text: 一捆缠在一起的电线[TRASH]
+
+message_180:
+  text: 这个箱子装玩具。
+
+message_181:
+  text: 这个箱子装书。
+
+message_182:
+  text: 这个箱子装垃圾。
+
+message_183:
+  text: 你想把你以前的\v[810]放进这里吗？
+
+message_184:
+  text: 你想把\v[810]放进这里吗？
+
+message_186:
+  text: ……然后捡起了你以前的\v[810]。
+
+message_187:
+  text: 你离开之前放下了手中的\v[810]。
+
+message_188:
+  text: 你离开之前放下了手中的\v[810]。
+
+message_191:
+  text: 你想要继续给物品分类吗？
+
+message_192:
+  text: 你想到此为止，不再给物品分类了吗？
+
+message_200:
+  text: 你把手伸进大硬纸板箱子……
+
+message_201:
+  text: ……然后捡起了\v[810]。
+
+message_202:
+  text: 你想把你以前的\v[810]扔掉吗？
+
+message_203:
+  text: 你想把\v[810]扔掉吗？
+
+message_204:
+  text: 你完美地给自己以前的东西分了类。\! <br>妈妈会很开心的。
+
+message_205:
+  text: 你大概给自己以前的东西分了类。\! <br>有一些东西没有正确归类，但应该还算看得过去。
+
+message_206:
+  text: 你给自己以前的东西分了类。\!<br>你可以做得更好的，但反正也没有太大所谓。
+
+message_207:
+  text: 你给自己以前的东西分了类，但不知怎么的比以前更乱了……\!<br>妈妈之后可能会因为这个训你一顿……
+
+message_136:
+  text: 你已经拿着\v[810]了。
+
+message_185:
+  text: 你看了看你的待办清单。\!<br>今天你要做的家务是给自己以前的物品分类。
+
+message_190:
+  text: 大硬纸板箱子里已经什么都不剩了。
+#EXAMINE MARI'S GRAVE WITH FLOWERS
+
+message_208:
+  text: 你想在玛里的坟墓前留下\c[4]鲜花\c[0]吗？
+
+#YES/NO
+
+message_209:
+  text: 你给玛里留下了\c[4]鲜花\c[0]。
+
+#IF YES, CEMETARY (WITH MARI'S THEME) STARTS PLAYING (Forever)
+
+message_210:
+  text: 你现在不能出去。
+
+message_211:
+  text: 你感觉要吐了……
+
+
+message_236:
+  text: 一份“早日康复”礼物，是金和万斯的爸爸送来的。
+
+message_237:
+  text: “祝你早日康复。”\!<br>“要相信你就是一颗又大又结实的橡胶球，总会触底反弹的！”
+
+message_221:
+  text: 一份“早日康复”礼物，是金和万斯的妈妈送来的。
+
+message_252:
+  text: “早日康复，\n[8]。”\!<br>“希望你跟金和万斯多多交流。”\!<br>“他们需要你这样的好榜样！”
+
+message_222:
+  text: 布伦特家送来的鲜花。
+
+message_238:
+  text: “嘿，\n[8]……希望你一天比一天更有力气。”\!<br>“你整个暑假帮了布伦特很多忙。”\!<br>“他在学校现在成绩很好。”
+
+message_223:
+  text: 乔伊家送来的鲜花。
+
+message_239:
+  text: “你好，\n[8]。祝你早日康复。”\!<br>“谢谢你在暑假给乔伊当家教。”\!<br>“她现在每门课成绩都很好。”
+
+message_224:
+  text: 克里斯家送来的鲜花。
+
+message_240:
+  text: “希望你放轻松一点，\n[8]。”\!<br>“住院生活也没有那么坏。”\!<br>“其实是上天叫你趁机多看点电视啦！”
+
+message_225:
+  text: 贝贝家送来的鲜花。
+
+message_241:
+  text: “\n[8]，谢谢你帮我买\c[4]落地灯\c[0]！”\!<br>“那之后，我就再也没见过我儿子比利。”\!<br>“希望他过得还好……”
+
+message_226:
+  text: 肖恩和卡伦送来的鲜花。
+
+message_242:
+  text: “祝好，\n[8]。”\!<br>“我们已经搬进新家了，你一定要找时间来我们家看看！”
+
+message_227:
+  text: 画家送来的早日康复礼物。
+
+message_243:
+  text: “嗨，\n[8]。希望你慢慢好起来。”\!<br>“早日康复，来我们家玩吧。”\!<br>“我还有几幅创作想问问你的意见呢……”
+
+message_228:
+  text: 莎拉家送来的鲜花。
+
+message_244:
+  text: “嘿，\n[8]。谢谢你拯救我的婚姻。”\!<br>“我相信你很快又会活蹦乱跳的！”
+
+message_229:
+  text: 查琳家送来的鲜花。
+
+message_245:
+  text: “亲爱的 \n[8]……\!谢谢你暑假期间来帮忙。”\!<br>“诚挚地祝你尽早康复！”
+
+message_230:
+  text: 杰西和杰西爸送来的鲜花。
+
+message_246:
+  text: “希望你好好照顾自己，\n[8]。”\!<br>“杰西最近总是找我聊天。”\!<br>“你帮我挑的生日礼物起到作用了！”
+
+message_231:
+  text: 店长送来的鲜花。
+
+message_247:
+  text: “哟，\n[8]……”\!<br>“给你送去一点祝福。希望你早日好起来。”\!<br>“蜂玩堂随时都欢迎你哦！”
+
+message_232:
+  text: 达芙妮和鲍恩送来的早日康复礼物。
+
+message_248:
+  text: “享用这份面包，重拾健康体魄。”\!<br>“然后再和我们一起玩吧……”
+
+message_233:
+  text: 凯和英雄家送来的鲜花……还有奥布里送的花。
+
+message_249:
+  text: “送你一束阳光，愿你早日康复。”\!<br>“我们想你，\n[8]。”
+
+message_234:
+  text: 米西送来的鲜花。
+
+message_250:
+  text: “谢谢你鼓励我继续画画。”\!<br>“希望你早点好起来。”\!<br>“我会一直挂念着你的！”
+
+message_235:
+  text: 万斯、小金、查理、安吉尔，还有……<br>独行侠送来的早日康复礼物。
+
+message_251:
+  text: “早日康复，\n[8]！”\!<br>“等着和你再打一场！”
+
+message_253:
+  text: 一张非常、非常舒服的床……\!<br>但现在不是睡觉的时候。
+
+message_254:
+  text: 一台旧电视。\!你可以听见扬声器里传出低低的嗡嗡声。
+
+message_255:
+  text: 空荡荡的床。
+# =========================================================================================
+# FARAWAY TOWN Extra
+# =========================================================================================
+
+#Interacting with KEL house door (night)
+
+message_220:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel有点晚了，现在不太方便带你见我家人，<br>\!但你想的话我们可以明天再一起玩！<br>\!来吧，\n[8]……我陪你走回家！
+
+# =========================================================================================
+# Neutral Route Sleep Prompt
+# =========================================================================================
+message_404:
+  text: 明天，你就要搬走了。\!<br>你想要做些什么？
+message_405:
+  text: 回到白色空间
+message_406:
+  text: 睡到第二天早晨
+message_407:
+  text: 什么也不做
+# =========================================================================================
+# Naming Player
+# =========================================================================================
+
+message_400:
+  text: 你看到一个男孩在房间里睡觉。\!他叫什么名字？
+message_401:
+  text: 你没有收到新留言。
+message_402:
+  text: 一张很舒服的床。\!你想要上床睡觉吗？
+message_403:
+  text: \n<语音信箱>您有一条新留言。
+
+message_410:
+  text: 男孩的名字是 \v[1] 吗？
+
+message_500:
+  text: 好耶，是一块煎得恰到好处的七分熟牛排。\!你想吃点吗？
+
+message_501:
+  text: 呃啊……\!你感到你的肚子不太舒服……
+
+message_502:
+  text: 你需要装备上\c[13]牛排刀\c[0]。
+
+message_503:
+  text: 你感觉要吐了……
+
+message_504:
+  text: \mar嘿，\n[8]！我是玛里！\!<br>我终于回家了，但我忘带钥匙了……\!<br>你能帮我开门吗？
+
+message_505:
+  text: \mar\n[8]……\!你在吗？\!我……\!我好冷……
+#yes/no choice
+
+message_506:
+  text: 你需要一把\c[13]牛排刀\c[0]。
+
+message_600:
+  faceset: MainCharacters_Faraway
+  faceindex: 16
+  text: \kel等等，\n[8]！\!还有这么多事情要做呢，你现在可不能回家啊！
+
+message_601:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel精神点嘛！今天是全新的一天！
+
+#CEMETARY
+
+message_610:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel玛里……\!感觉那已经是很久以前的事情了。\!<br>我一直都很想念她。\!你一定也是这样吧。
+
+message_612:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel你知道吗……\!玛里过世后……<br>\!英雄……\!英雄真的变得对一切都漠不关心了。<br><br>他不愿起床上学，甚至都不愿意吃东西。<br>\!他不再照顾自己的生活，烘焙和烹饪也都放下了……
+
+message_613:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel他那个样子持续了快一整年。
+
+message_614:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel妈妈和爸爸都不知道该拿他怎么办。\!<br>我们试着帮助他、安慰他，可是……\!不管我们怎么努力都没用。
+
+message_615:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel有一天晚上……\!我过去看他，他整个人裹在毯子里，我就对他说了些话。
+
+message_616:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel我说我们都想念他以前的样子，希望他能快点好起来……\!还有，大家都很担心他之类的……\!玛里不会希望见到他这幅样子，之类的……
+
+message_617:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel我以为我在帮他，但……
+
+message_618:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel但英雄……\!英雄生气了。
+
+message_619:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel他突然坐起身来，冲着我大吼大叫，喊了一大堆。\!他有些话说得还挺伤人的……\!不过，我基本没有往心里去。
+
+message_621:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel他眼睛本来就红红的……\!但他吼得越凶，哭得就越狠。
+
+message_622:
+  faceset: MainCharacters_Faraway
+  faceindex: 19
+  text: \kel我尽力让他冷静下来……\!但不管我说什么，都只是让他变得更加激动。
+
+message_623:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel英雄好像变了个人似的，我从来没有见过他这样……\!真的是吓了我一大跳。\!可能我受了惊吓吧，所以……\!嗯……\!我也哭了起来。
+
+message_624:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel最后，爸爸妈妈跑到房间来，冲过去抱住他，这才让他冷静下来……
+
+message_632:
+  faceset: MainCharacters_Faraway
+  faceindex: 15
+  text: \kel但他们……\!完全无视了我……\!哈哈……
+
+message_625:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel可能就是那一刻，英雄终于回过神来，马上跑过来抱住了我。\!<br>他一遍又一遍地不断向我道歉……
+
+message_626:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel不过……\!至少那天过后，英雄好多了。\!<br>他又重新开始好好照顾自己……\!重新开始在学业上下功夫……\!<br>还参加了好多课外活动。
+
+message_627:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: \kel他本来天生就擅长做很多事情，但他还是超努力的，\!<br>所以我特别为他感到骄傲！
+
+message_628:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: \kel我觉得他可能比起以前还是变得更加内向了一点吧，但是……<br>\!我哥回来了，这点就已经很让我开心了。
+
+message_629:
+  faceset: MainCharacters_Faraway
+  faceindex: 17
+  text: \kel总之，不好意思啦，跟你说了那么多。\!<br>我好像从来没跟别人提过这件事诶。
+
+message_631:
+  faceset: MainCharacters_Faraway
+  faceindex: 18
+  text: \kel明明不是他的错，但……\!英雄还是会为玛里的死而感到自责。
+
+message_611:
+  faceset: MainCharacters_Faraway
+  faceindex: 20
+  text: \kel英雄从来没有来过这里……\!一次也没来过。\!我知道肯定会很伤他的心，但也许他来一下对他有好处。\!我也不知道……
+
+message_620:
+  faceset: MainCharacters_Faraway
+  faceindex: 40
+  text: \her抱歉……\!我觉得我还没有准备好。
+
+#RECYCULTIST HQ
+
+message_630:
+  text: 你被神秘的力量阻止了，不能离开。
+
+message_640:
+  text: 你小睡了一下。\!<br>你应该快点去做家务了。
+

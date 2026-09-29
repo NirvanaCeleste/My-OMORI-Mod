@@ -1,0 +1,299 @@
+# =========================================================================================
+# Cutscene: It's Alive! (Medusa)
+# =========================================================================================
+
+#Trigger: Enter proximity of Medusa's Balcony
+
+#MEDUSA is fiddling with chemicals at the table.
+#SWEETHEART is frustrated.
+
+
+message_0:
+  text: 哦呀，这里的味道可真是刺鼻！\!<br>到底还要等多久啊？<br>我鼻子可是相当敏感的，懂吗！\swh
+
+#MEDUSA turns to SWEETHEART.
+
+message_1:
+  text: 等你闻习惯就好了。\!现在给我安静一点，小妞。我正在工作。\n<美杜莎>
+
+#MEDUSA turns back around.
+
+message_2:
+  text: 好了，大功告成。\n<美杜莎>
+
+#Fluid flows from table chemicals to test tube.
+
+message_3:
+  text: 呃啊……终于好了！\swh
+
+#SWEETHEART gets up and pokes the glass.
+
+message_4:
+  text: 你好呀，我的完美伴侣！\!快醒来吧！\swh
+
+#MEDUSA slaps SWEETHEART out of the way.
+#SWEETHEART is surprised.
+
+message_5:
+  text: 别碰玻璃，你个没教养的！你会把实验毁掉的！\n<美杜莎>
+
+message_6:
+  text: \quake[1]\{\Com[2]你……\!\Com[2]竟然……\!\Com[2]说我！！\swh
+
+#The test tube starts to bubble. SWEETHEART and MEDUSA look at the test tube. The test tube starts going and the screen turns white. The test tube is broken and fluid has become gold.
+
+message_7:
+  text: 发、发生什么了？\swh
+
+#PERFECTHEART descends from the top of the screen and lands in front of MEDUSA and SWEETHEART.
+
+message_8:
+  text: 哎……呀……\!实验结果甚至超出了我的预期。\!好好欣赏吧，小妞。\n<美杜莎>
+
+message_9:
+  text: 实验结果绝对完美。\!看！\!她就是绝对完美的另一个你！\n<美杜莎>
+
+#SWEETHEART examines PERFECTHEART.
+#PERFECTHEART follows SWEETHEART's movements.
+
+message_10:
+  text: 哼……\!我不喜欢她。\swh
+
+message_11:
+  text: 你说什么？我不会听错了吧？\!<br>你所有的要求我都满足了，甚至还额外给她加了功能！\n<美杜莎>
+
+message_12:
+  text: 噢，你个呆瓜。\!没有什么比我更完美……<br>但凭你的智商，恐怕也理解不了吧。\swh
+
+message_13:
+  text: 你充其量就是个骗子。\!<br>这完完全全就是在浪费我的时间！<br>\!气死我了！本小姐走——\swh
+
+message_14:
+  text: \Com[2]噢，我受够了！<br>管你是不是客人，我真是忍无可忍了！\!<br>谁允许你那样满嘴跑火车的？\n<美杜莎>
+
+message_15:
+  text: 现在……我不想浪费我宝贵的精力了，所以恕我失陪……\!我还有更重要的事情要处理。\n<美杜莎>
+
+#MEDUSA walks off.
+
+message_16:
+  text: 你竟然敢比我先走！\! <br>气炸的人是本小姐！\swh
+
+
+# =========================================================================================
+# Cutscene: It lives! (Marina)
+# =========================================================================================
+
+#Trigger: Enter proximity of Marina's Balcony.
+
+#SWEETHEART is nervous.
+#MARINA is moving around checking different gadgets.
+
+message_30:
+  text: 啧，这破地方真恶心……\!<br>你究竟在做什么？\swh
+
+message_31:
+  text: 和你没关系，小姐。<br>你只管坐好放松就行了！\n<玛丽娜>
+
+message_32:
+  text: 唔呃……\!我有点反胃……\swh
+
+#MARINA performs surgery on a slanted panel.
+
+message_33:
+  text: 呃……\!嗯……\!哎呀……\n<玛丽娜>
+
+message_34:
+  text: ……\n<玛丽娜>
+
+message_35:
+  text: 嗯……\!我觉得这样就行。\n<玛丽娜>
+
+message_36:
+  text: 好了，搞定。\!看好了，小姐……<br>完美伴侣，即将登场。\n<玛丽娜>
+
+#Slanted panel turns over.
+
+message_37:
+  text: 向你全新的灵魂伴侣打个招呼吧！\n<玛丽娜>
+
+message_38:
+  text: \}泥……\!泥嚎……\n<异变甜心>
+
+#SWEETHEART turns to MARINA.
+#SWEETHEART is frustrated.
+
+message_39:
+  text: 你在开玩笑吗？！你把我当什么了？\! <br>我比……这个东西……漂亮十倍……<br>不，漂亮百倍！\swh
+
+#SWEETHEART turns to MUTANTHEART.
+
+message_40:
+  text: 真是让人失望透顶！\!\Com[2]气死我了，本小姐走了！\swh
+
+#SWEETHEART storms off.
+#MARINA steps forward.
+
+message_41:
+  text: \{喂，你在搞什么鬼？！\!\}<br>你可不能就这样冲出去，小姐！\n<玛丽娜>
+
+message_42:
+  text: \quake[1]\{\{我钱呢？！？！\n<玛丽娜>
+
+# =========================================================================================
+# Cutscene: She's perfect! (Molly)
+# =========================================================================================
+
+#Trigger: Enter proximity of Molly's Balcony.
+#MOLLY types and presses buttons.
+#SWEETHEART is frustrated.
+
+message_53:
+  text: 还要多久啊？我没这闲工夫等你！\swh
+
+#MOLLY turns to SWEETHEART.
+
+message_54:
+  text: 要有耐心……\!别再嚷嚷了，亲爱的！我需要保持专注。\n<莫莉>
+
+#MOLLY turns back around. MOLLY types and presses buttons.
+
+message_55:
+  text: 现在呢，好了呢？\swh
+
+message_56:
+  text: 快好了，亲爱的。\n<莫莉>
+
+#MOLLY types and presses buttons.
+
+message_57:
+  text: 完成了。\!总算是……\n<莫莉>
+
+#MOLLY's contraption starts shaking.
+#Electrical sparks fly around.
+
+message_58:
+  text: \{\sinv[1]我最伟大的发明完成了！！\n<莫莉>
+
+#ROBOHEART walks out.
+
+message_59:
+  text: 开口说话吧！\!开口说话吧，我美妙的机器人！\n<莫莉>
+
+message_60:
+  text: 6L+Z44CB6L+Z5piv5oiR5LuO5p2l5rKh5pyJ6L+H55qE5oSf6KeJ<br>77yf5oiR55qE5b+D6YeM5aW95pqW44CB5aW96IiS5pyN77yB5oiR<br>5oOz6KaB5LiA5Liq5oul5oqx77yB6LCB5Y+v5Lul5oqx5oqx5oiR<br>77yB5oiR5oCl6ZyA5YWz5oCA5LiO54ix5oSP77yB\n<机械甜心>
+
+message_61:
+  text: …… …… ……\n<莫莉>
+
+message_62:
+  text: 哎呀……\!好吧，听起来不太对。\!<br>肯定是代码哪里出问题了。\n<莫莉>
+
+#MOLLY turns to SWEETHEART.
+
+message_63:
+  text: 都怪你一直催我！\!<br>它本来应该要学会去爱，可现在它只会……\!\quake[1]杀戮！\n<莫莉>
+
+message_64:
+  text: 5LiN77yM5rGC5rGC5L2g77yB6L+Z5Y+q5piv6K+v5Lya77yB5oiR<br>5Y+q5piv5oOz5oiQ5Li65L2g5Lus55qE5pyL5Y+L77yB55Sa6Iez<br>5YWz57O75pu06L+b5LiA5q2l77yB\n<机械甜心>
+
+message_65:
+  text: 哼！\!这也能怪我！她是你造的机器人！\swh
+
+message_66:
+  text: 多亏了你，我找到真爱的希望已经彻底破灭了！\swh
+
+message_67:
+  text: 真是让人失望透顶！\! <br>\{气死我了，本小姐走了！！！\swh
+
+#SWEETHEART storms off.
+#MOLLY turns to follow SWEETHEART.
+
+message_68:
+  text: 啊啦，真是让人头疼的家伙。\n<莫莉>
+
+#MOLLY goes back to her computer.
+
+message_69:
+  text: 好吧，反正她也走了。\n<莫莉>
+
+#MOLLY types and presses buttons.
+
+message_70:
+  text: 5oiR5Zyo6L+Z6YeM5aW95a2k54us4oCm4oCm5oiR5LiA5a6a6KaB<br>5Y675Yir5aSE5a+75om+5oiR55qE54G16a2C5Ly05L6j77yM5LuO<br>5q2k6L+H5LiK5bm456aP55qE55Sf5rS777yBKuWTlCrvvIE=\n<机械甜心>
+
+#ROBOHEART flies off.
+#MOLLY types and presses buttons.
+
+message_71:
+  text: 啊，我都忘了！\!那个女孩……没给我钱！\!<br>必须在她溜走之前抓住她。\n<莫莉>
+
+#MOLLY types and presses buttons.
+
+
+# =========================================================================================
+# Cutscene: Roboheart's Sad End
+# =========================================================================================
+
+#Trigger: Enter proximity of Roboheart.
+
+message_80:
+  text: 5ZOH5Zmi77yM5L2g55yf55qE5b6I5biF44CC\n<机械甜心>
+
+message_81:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: 大家小心！是那个机器人！\!她是个杀戮机器！\her
+
+#ROBOHEART walks forward.
+
+message_82:
+  text: 5L2g5Lya54ix5oiR5ZCX77yf\n<机械甜心>
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \{离我们远点儿，机器人！！\aub
+
+message_84:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 我们得在它杀人之前阻止它。\!<br>你完蛋啦，机器人杀手！\kel
+
+
+# =========================================================================================
+# Cutscene: Roboheart's Sad End (Cont.)
+# =========================================================================================
+
+#Trigger: Defeat Roboheart.
+
+
+message_100:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 呼……真是惊险。\aub
+
+message_101:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: 好在大家没受伤……\!<br>或者……\!死掉……\kel
+
+# =========================================================================================
+# Humphrey
+# =========================================================================================
+
+#Trigger: Finish all Slime Girls Dungeons
+
+message_110:
+  text: \n<汉弗莱>哼嗯……\.怎么回事，怎么如此嘈杂？\!<br>一定是楼下在举办有趣的活动！
+
+#Talk to Humphrey Elevator (No Keycard)
+
+message_111:
+  text: \n<汉弗莱>嗨，我是您的万能通行证，汉弗莱！欢迎来到\c[11]汉弗莱\c[0]，又称\c[11]史莱姆女孩巢穴\c[0]。\!严格来说，我可能更符合你们人类口中的“电梯”。<br>不幸的是，我们是一对一服务，所以请各位在此等候。<br><br>不过……\!如果你可以给我一张\c[4]黏糊糊钥匙卡\c[0]，我说不定可以动用一点关系……\!\quake[1]捏哈哈！\quake[0]
+
+#Get Keycard
+
+message_112:
+  text: 你获得了\c[4]黏糊糊钥匙卡\c[0]！
+

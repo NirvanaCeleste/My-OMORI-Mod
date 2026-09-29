@@ -1,0 +1,339 @@
+# =========================================================================================
+# Cutscene: Halt, Children!
+# =========================================================================================
+
+#Trigger: Go up to Space boyfriends house
+
+message_0:
+  text: \Com[2]站住，孩子们！\!<br>你们现已接近……\spg
+
+message_1:
+  text: 太空海盗的首领……\!<br>太阳系的主宰……\!<br>宇宙的王子大人……\spg
+
+message_2:
+  text: 独一无二、空前绝后的太空男孩船长的——\!呃……\!不对……\!<br>这里是……\!太空……\!男友的家。\spg
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 呜哇，你是说太空海盗的首领就住在这里吗？\!<br>\{这也太酷了吧！！\}\kel
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 我也想成为太空海盗！\kel
+
+message_5:
+  text: 呃，这个嘛……\!我曾经也是……\!这么想的。\spg
+
+message_6:
+  text: 这些天来，太空男友什么事情都没做，所以大部分太空海盗觉得无聊，就开着主飞船走了。\spg
+
+message_7:
+  text: 只剩下我们这些掉队的留在这儿，每天给太空男友打打杂之类的。\spg
+
+message_8:
+  text: 昨天，我和老铁们一整天都在给他清理打扫，帮他丢垃圾。\spg
+
+message_9:
+  text: 唉……\!我不是为了这种生活才跳槽到这儿的啊……\!<br>我又不是保姆！\spg
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 呜哇，真的假的……听起来好惨啊。\!<br>或许我们可以劝劝他？\aub
+
+message_11:
+  text: 噢，我是你们的话我可不会这么做。\!太空男孩船长他——<br>我是说……\!太空男友他的性格，可是冰火二重天呐。\spg
+
+message_12:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: 我们至少应该试试！\!谁知道呢……\!<br>而且，他可能知道贝瑟尔的行踪！\her
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: 又或者，他知道我的宠物石头\c[13]赫克托尔\c[0]在哪里！\kel
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: 是、是啦，那也有可能。\her
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 那我们还等什么呢？我们快去见他吧！\kel
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 抱歉听到你说现在的工作很无聊，先生。\aub
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: 很快就会好起来的，我保证！\aub
+
+message_18:
+  text: 唉……\!谢谢你，小姑娘。\!希望如此吧。\spg
+
+# =========================================================================================
+# Cutscene: Blackletter here
+# =========================================================================================
+
+#message_40:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 48
+#      text: \fn<OMORI_GAME>Whoa...\! Anyone feel that?\her
+
+#message_41:
+#      faceset: MainCharacters_DreamWorld
+#      faceindex: 28
+#      text: Yeah...\! My head was all fuzzy for a second...<br>There must be a MISSING LETTER somewhere in here!\kel
+
+# =========================================================================================
+# Cutscene: Space boyfriend is sick
+# =========================================================================================
+
+#Trigger: Talk to Space boyfriend in bed
+
+
+message_51:
+  text: 咳……\!咳、咳……\sbf
+
+message_52:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 不好了……\!太空男孩船长他——\!<br>我是说，太空男友他看起来气色不太好啊。\her
+
+message_53:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 别担心，看我的！\kel
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \{\{嘿，\Com[2]太空男友！！\kel
+
+message_55:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \{\{\{起床啦！！！\kel
+
+message_56:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 43
+  text: 凯！\her
+
+message_57:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 怎么啦？\kel
+
+message_58:
+  text: \}\quake[1]咳……\!呃啊……\!咳、咳……\!唉……\!<br>我……挚爱的……\!甜心啊……\sbf\quake[0]
+
+message_59:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 噢……他听上去好伤心呀。\!<br>一定有什么方法可以帮帮他。\aub
+
+message_60:
+  text: \}\quake[1]咳、咳……\!咳……\!噢，我的甜心啊……\!<br>天涯海角，你在何方？\sbf\quake[0]
+
+#SPACE PIRATE GUY walks in and walks to SPACE BOYFRIEND.
+
+message_61:
+  text: 完了……又来了……\!<br>太空男友他又陷入忧郁的低潮期了。\spg
+
+message_62:
+  text: 没事，老铁。这一曲会让你精神起来的。\spg
+
+#SPACE PIRATE GUY walks to the CASSETTE PLAYER.
+#SPACE PIRATE GUY is surprised and confused.
+
+message_63:
+  text: 嗯？\!怎么没有音乐？\spg
+
+#SPACE PIRATE GUY starts sweating.
+
+message_64:
+  text: 完了……\!手提音响里的磁带……\!怎么不见了！\!<br>现在他永远都醒不过来了！\!不对，甚至会更糟……\! <br>他会……怒气冲冲地醒来。\spg
+
+message_65:
+  text: 哦不……哦不……\!<br>那盒\c[4]特制混音带\c[0]到底去哪儿了？\spg
+
+#SPACE PIRATE guy has an idea.
+
+message_66:
+  text: 肯定是我们打扫的时候，有人把那盒\c[4]特制混音带\c[0]也给扔掉了！\spg
+
+message_67:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 这有什么大不了的，不过就是盒磁带罢了，不是吗？\kel
+
+message_68:
+  text: 唔，是这样的……\!太空男友只要和甜心分开，<br>他就会特别悲伤，整天卧床不起。\spg
+
+message_69:
+  text: 能让他振作起来的只有那盒\c[4]特制混音带\c[0]了。\!全宇宙仅此一盒。\spg
+
+message_70:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 噢，我懂了……\!太空男友不是真的病了……\!<br>他是……得了相思病……\aub
+
+message_71:
+  text: 唉……\!如果太空男友继续消沉下去，曾经辉煌的太空海盗联盟就要这样永远消失了……\spg
+
+message_72:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 哎呀……\!这……\!就糟糕了呀。\kel
+
+message_73:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 那……我们走吧！\kel
+
+#KEL attempts to leave.
+
+message_74:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 等等！你要去哪里？我们得帮帮他呀！\!<br>失去重要的事物该有多难受，你又不是不知道。\aub
+
+message_75:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 不准你提起\c[13]赫克托尔\c[0]的事！\kel
+
+message_76:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: 我是在说你当时偷走我的\c[13]填充玩偶\c[0]的事！\aub
+
+message_77:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: 嗯？\!我完全没有印象。\kel
+
+message_78:
+  text: 有个\c[11]垃圾场\c[0]离这里不远，但那个地方可大了！\!<br>想要找些什么可是难如登天啊。\spg
+
+message_79:
+  text: \Com[2]咳、咳！\sbf
+
+#Everyone turns to the bed
+
+message_80:
+  text: \quake[1]\}哦……甜心……\!我完美的女神啊……\sbf\quake[0]
+
+message_81:
+  text: \quake[1]\}咳……\!我甜蜜蜜的……\!果酱馅儿的……甜甜圈……\sbf\quake[0]
+
+#AUBREY looks at Space Boyfriend.
+
+message_82:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: 我觉得他情况恶化了……\aub
+
+#HERO looks at Aubrey.
+
+message_83:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 怎么办，OMORI？我们应该帮帮他吗？\aub
+
+#[Nod (Yes) / Shake (No)]
+
+message_84:
+  text: 谢了啊，老铁们……不胜感激。\!<br>来，给你们。\spg
+
+message_85:
+  text: 你获得了\c[4]垃圾场钥匙\c[0]。
+
+message_86:
+  text: 这把钥匙是开\c[11]垃圾场\c[0]大门的。<br>\!那盒\c[4]特制混音带\c[0]一定就在垃圾场的某处。\spg
+
+message_87:
+  text: 从这个秘密通道出去就是太空男友家的后院，<br>然后再走一段路就到垃圾场了。\!挺方便的，对不？\spg
+
+message_88:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub诶，求你了 \n[1]！我觉得他真的需要我们帮忙。\!<br>如果你卧病在床的话，你也会想要别人来帮你的，对吧？
+
+message_89:
+  text: 希望船长他能快点好起来……\spg
+
+
+# =========================================================================================
+# Cutscene: Missing Pluto
+# =========================================================================================
+
+
+message_110:
+  text: 唉……\!瞧瞧我们干的好事儿，兄弟……\spd
+
+message_111:
+  text: 我们得告诉船长说他最喜欢的行星失踪了，<br>希望他到时候不会气得发飙吧。\!<br>你也知道他发起火来有多恐怖。\spd
+
+message_112:
+  text: 伙伴，你不应该再叫他船长了。\!<br>你得称呼他为太空男友，忘了？\spb
+
+message_113:
+  text: 哦对，你说得对……\spd
+
+message_114:
+  text: 呃……\!\{\quake[1]呃啊\{啊啊\{啊啊啊！！\spd\}
+
+message_115:
+  text: 你知道吗，兄弟……\!<br>我有的时候都在想，我们到底还能不能称得上是太空海盗。\spd
+
+message_116:
+  text: 自从那个甜心出现后，我们就没干过什么大事儿！\!<br>我们真该辞职走人的，找一份真正的工作。\spd
+
+message_117:
+  text: 别胡说八道了，伙伴！\!<br>如果我们过的不是太空海盗的生活，那这生活又有什么意义呢？\spb
+
+message_118:
+  text: 我坚信船长他总有一天会清醒过来的，到那时，我们将再度启航。\!<br>我们只要相信他就好了！\spb
+
+message_119:
+  text: 唉……\!谢了，兄弟。\!还好有你一直在我身边支持我。\spd
+
+# =========================================================================================
+# Cutscene: Pluto Behind a Tree
+# =========================================================================================
+
+#BEFORE BATTLE
+
+message_130:
+  text: 这家伙看起来挺吓人的……\!<br>你要打扰他吗？
+
+#BEFORE BATTLE
+
+message_131:
+  text: \who……\!呵。\!不错。
+
+# =========================================================================================
+# Misc
+# =========================================================================================
+
+message_150:
+  text: \quake[1]\}咳……\!咳……\sbf\quake[0]
+
+message_160:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 等等啦，OMORI！\!我们应该先看看太空男孩船长他——\!<br>我是说，太空男友他的情况再走。\aub
+
+message_161:
+  text: 你使用了\c[4]垃圾场钥匙\c[0]。
+

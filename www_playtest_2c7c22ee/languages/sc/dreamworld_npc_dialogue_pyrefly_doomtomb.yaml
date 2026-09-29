@@ -1,0 +1,53 @@
+# =========================================================================================
+# Dreamworld NPC dialogue
+# =========================================================================================
+
+# ==============PYREFLY FOREST / DOUGH DUNGEON========================================
+
+                        #====NIGHT 2====
+
+#BISCUIT & DOUGHIE
+#Location: Dough Dungeon (Boss): Dough Dungeon Misc  yaml
+
+#CANDLIE
+#Location: Pyrefly Forest- Lost Rarebear Quest
+
+#CHIP
+#Location: Dough DUngeon: Dough Dungeon MISC yaml
+
+#DADDY LONGLEGS
+#Location: Pyrefly Forest - Lost Forest. Quest
+
+#DEMONBOY / DEMI
+#Location: Pyrefly Forest: Book to read Quest
+
+#EVIL CHIP
+#Location: Dough DUngeon: Dough Dungeon MISC yaml
+
+#MUSH
+#Location: PYREFLY FOREST: SIDEQUEST : MUSH
+
+#WEEPING WILLOW
+#Location: PYREFLY FOREST: SIDEQUEST : JOKEBOOK
+
+                        #====NIGHT 3====
+
+#BISCUIT & DOUGHIE
+#Location: LAST RESORT (after beating Biscuit and Doughie)
+message_0:
+  text: \n<小面团>我们手上的蚌币已经全没了……
+
+message_1:
+  text: \n<小面团>我们真的玩不来这个……\!你说是吧，小饼干？
+
+message_2:
+  text: \n<小饼干>\sinv[1]噢噢噢……
+
+
+#Candle, Chip, Daddylonglegs, Demonboy, EvilChip, Mush, Weeping WILLOW same as night 2
+
+
+                        #====NIGHT 4====
+#Biscuit and Doughie same as Night 3
+#Candle, Chip, Daddylonglegs, Demonboy, EvilChip, Mush, Weeping WILLOW same as night 2
+

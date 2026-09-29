@@ -1,0 +1,174 @@
+# =========================================================================================
+# Bring boy Home
+# ========================================================================================
+
+#Talk to Pinkbeard
+
+message_0:
+  text: \n<粉胡子>\Com[2]呸！那个臭小子又跑到哪里去了？\!<br>我早就警告过他，那个叫甜心的丫头只会带来麻烦！
+
+message_1:
+  text: \n<粉胡子>你看到我儿子了吗？\!<br>他叫太空男孩船长，但我不太确定他现在自称是啥……\!<br>这个呆瓜一直有点神神经经的……
+
+message_100:
+  text: \n<太空海盗长官>呼……\!呼……\!呼……
+
+message_101:
+  text: \n<粉胡子>太空海盗长官！我最信任的顾问！\!<br>怎么样？\!你找到他了吗？
+
+message_102:
+  text: \n<太空海盗长官>情况不太妙，船长……\!他这次可能是真的一去不回了……\!<br>但……\!我找到了这些。
+
+message_103:
+  text: \n<粉胡子>嗯？这是什么？
+
+message_104:
+  text: \n<粉胡子>\com[2]\c[4]电池\c[0]？\!我叫你去找我儿子……\!<br>\quake[1]结果你给我拿来\c[4]电池\c[0]？！\quake[0]
+
+message_105:
+  text: \n<粉胡子>这可不会帮我找到太空男孩船长啊！
+
+message_106:
+  text: \n<粉胡子>嗯……\!难道会吗？
+
+message_107:
+  text: \n<太空海盗长官>呼……\!抱歉，船长。\!我会继续找的！<br>\!\}就算这小子时常闯祸……
+
+message_108:
+  text: 你获得了\c[4]电池\c[0]！
+
+#Talk to Space ex-husband
+
+message_2:
+  text: \spxh啊，真意外啊。\!是你们啊。\!<br>你好。\!今晚夜色真不错。
+
+message_3:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28     #replace
+  text: \kel呃……\!嘿……\!你是……\!呃……\!你现在是太空前夫船长了，对吧？\!<br>你看起来……\!没那么热了……
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4     #replace
+  text: \aub是啊……\!这上面好冷啊……\!你……\!那个……\!还好吗？
+
+message_5:
+  text: \spxh哦，我吗？\!不要担心，孩子们。\!<br>我的心已经冻住了。\!我很纯粹。\!我冷酷如冰。\!<br>我一无所感。\!我不会再对任何事情有感觉。
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40     #replace
+  text: \her哦不……\!他比上次情况更糟糕了……
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4     #replace
+  text: \aub太空男孩船长……\!来吧……跟我们回家吧。
+
+message_8:
+  text: \spxh太空男孩船长？\!那是谁？\!<br>我一无是处。\!我很纯粹。\!我冷酷如冰。
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5     #replace
+  text: \aub哎……他这样是绝对听不进我们说话的……\!<br>我们该怎么办？
+
+message_10:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17     #replace
+  text: \kel不是很明显吗！？\!<br>我们得让他心中的冰雪融化掉……就和上次一样！\!<br>来吧大伙！我们能做到的！
+
+message_11:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5     #replace
+  text: \aub\Com[2]什，什么！？你确定吗？\!肯定有其他的方法吧……
+
+message_12:
+  text: \spxh啊……\!这份寒冷……\!我完全能够理解……\!<br>它……\!它正在缓慢地侵蚀我的灵魂……<br>\!我正在与寒冰……\!融为一体……
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40     #replace
+  text: \her唔……\!一般来说我是不会同意凯的方案的，<br>但这样下去他会在这上面一个人冻死的！\!<br>有时候你确实需要给他一些严厉的爱……
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18     #replace
+  text: \kel\Com[2]我就爱听这个！\!<br>别担心，太空男孩船长！我们会救你的！
+
+# Defeat Space Ex-HUSBAND
+
+message_15:
+  text: \spxh呜呜……\!呜呜……\!\sinv[1]噢噢噢噢……
+
+message_16:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4     #replace
+  text: \aub太空男孩船长……你感觉怎么样？
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39     #replace
+  text: \her嘿……\!我希望我不是第一个对你说这话的人，但是……\!<br>也许你是时候放下甜心，去享受生命中更美好的一些事情了！
+
+message_18:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19     #replace
+  text: \kel是啊！\!你应该有更重要的事情要担心的……\!比如你的船员们！\!<br>苍天在上，你可是个太空海盗啊！
+
+message_19:
+  text: \spxh我的……\!船员？\!啊……\!对……\!我的船员。\!<br>我差点都忘了……\!我真是太差劲了……\!<br>他们一定超级担心我……\!我应该回去找他们……
+
+message_20:
+  text: \spxh来，拿上这个……\!我……\!呜呜……\!不会再需要它了……
+
+message_21:
+  text: 你获得了\c[13]结婚戒指\c[0]。
+
+message_22:
+  text: \spxh我走了。\!<br>别担心我……我能自己找回家的……\!<br>呜呜……\!我知道回去的路的。
+
+#CUTSCENE: FATHER AND son
+
+message_23:
+  text: \n<粉胡子>\Com[2]儿子！\!你在那儿啊！\!<br>你去哪了，小子！？<br>我可是到处在找你啊！
+
+message_24:
+  text: \spxh噢……\!嗨，老爸……
+
+message_25:
+  text: \n<粉胡子>\Com[2]你记得我怎么跟你说那个叫甜心的小妞的吗？\!<br>我一直都说她配不上你……\!<br>你就听一次你老爹的话吧！
+
+message_26:
+  text: \spxh……\!呜呜……\!我累了……\!能让我去睡吗？
+
+message_27:
+  text: \n<粉胡子>\Com[2]呸！\!闹够了！\!<br>别再在这种人身上浪费感情了，孩子！\!<br>真爱该来的时候就会来的。
+
+message_28:
+  text: \n<粉胡子>至于现在嘛，你还有你的船员……而且还有我呢！
+
+message_29:
+  text: \n<粉胡子>答应我，你不会再改名了，听到不？\!<br>从现在开始你就是太空男孩船长……永远不会变了！
+
+message_30:
+  text: \cap好……\!呜呜……\!抱歉，爸……
+
+#Quest complete
+
+
+message_32:
+  text: 一条塑料鱼被安装在墙上。
+
+message_33:
+  text: 嗯……\!它需要\c[4]电池\c[0]。
+
+message_34:
+  text: 你为塑料鱼安装了\c[4]电池\c[0]。
+
+message_35:
+  text: 这扇暗门紧紧关着。
+
+message_36:
+  text: 你必须让塑料鱼唱完这首歌。
+

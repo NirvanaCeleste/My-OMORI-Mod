@@ -1,0 +1,4292 @@
+# ============================================================================
+# 《未竟之事》第一夜 —— 《音乐会》
+# 作者：NirvanaCeleste
+# ============================================================================
+# 原创。第零夜之后，Sunny 和 Mari 练习，准备那场音乐会。
+# Basil 想让演出成功——彩排、上台、第一个音。
+# 但每一次"成功"，都有一点不对：琴声停了，掌声变安静，
+# 礼堂亮着灯，却安静得像是从来没有人来过。
+# 结局：音乐会没有举行。
+# ============================================================================
+
+defaults:
+  speed: 4
+  mode: sequential
+  allowExit: false
+
+order:
+  - rehearsal
+  - stage
+  - firstnote
+  - ending
+  - confirm
+
+states:
+  - id: s0
+    editable: gA
+    pages:
+      rehearsal:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gA
+            variants:
+              - "“Sunny在琴房里，拉得很流畅。”"
+              - "“Sunny在琴房里，一直练习到很晚。”"
+        text: |
+          那场音乐会，再过七天就要举行了。
+
+          Sunny在琴房里练习。Mari坐在钢琴前，翻着乐谱。
+
+          琴声从二楼传下来，落在走廊上，又落进树屋里。
+
+          Basil站在楼下，听着。
+
+          他听过很多次了。Sunny的琴声，从生涩到流畅，从断断续续到连成一片。
+
+          “会成功的。”Basil想。
+
+          “一定会成功的。”
+
+          他想起Sunny第一次拿到琴的样子。
+
+          那时候，Sunny的眼睛亮了一下。
+
+          **“Sunny在琴房里练习。”**
+      ending:
+        write:
+          origin: [48, 56]
+          speed: 4
+        readonly: true
+        text: |
+          音乐会没有举行。
+
+          琴声停下来的时候，Basil在楼下站了很久。
+
+          他想起那七天。
+
+          每一天，Sunny都在练习。
+
+          每一天，琴声都从二楼传下来。
+
+          可是音乐会……
+
+          音乐会没有举行。
+      confirm:
+        write:
+          origin: [48, 56]
+          speed: 4
+        readonly: true
+        confirm: true
+        doneSwitchId: 2002
+        confirmChoices:
+          - "确定"
+          - "否"
+        text: |
+          书在这里合上了。
+          要合上书吗？
+  - id: s1
+    parent: s0
+    trigger: { sentence: "gA", action: variant, value: 0 }
+    editable: gB
+    pages:
+      rehearsal:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny在琴房里，拉得很流畅。
+
+          Basil在楼下听了一会儿，忽然觉得，这一次一定不一样。
+
+          琴声没有停。
+
+          一直到他走回树屋，琴声还在。
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Sunny站在舞台中央。”"
+              - "“Sunny走到舞台最边上。”"
+        text: |
+          演出那天，Sunny走上舞台。
+
+          台下坐满了人。
+
+          Basil坐在中间，看着Sunny走到舞台中央。
+
+          Sunny站定，鞠了一躬。
+
+          灯光亮起来。
+
+          Mari坐在舞台一侧的钢琴前，朝他点了点头。
+
+          Sunny把琴架到肩上。
+
+          **“Sunny走上舞台。”**
+  - id: s2
+    parent: s0
+    trigger: { sentence: "gA", action: variant, value: 1 }
+    editable: gB
+    pages:
+      rehearsal:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny在琴房里，一直练习到很晚。
+
+          Basil路过琴房门口，看见灯还亮着。
+
+          他轻轻推开门，想让他休息一下。
+
+          Sunny没有抬头。
+
+          琴声没有停。
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Sunny站在舞台中央。”"
+              - "“Sunny走到舞台最边上。”"
+        text: |
+          演出那天，Sunny走上舞台。
+
+          台下坐满了人。
+
+          Basil坐在最前排，看着Sunny。
+
+          Sunny站定，鞠了一躬。
+
+          灯光明晃晃的。
+
+          Mari坐在钢琴前，指尖放在琴键上。
+
+          Sunny把琴架到肩上。
+
+          **“Sunny走上舞台。”**
+  - id: s3
+    parent: s0
+    trigger: { sentence: "gA", action: keep }
+    editable: gB
+    pages:
+      rehearsal:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny在琴房里练习。
+
+          Basil在楼下听。
+
+          琴声断了一下，又续上。
+
+          “没事的。”Basil想。“第一次上台，都会紧张。”
+
+          他靠在树屋的门框上，听着琴声一点一点变稳。
+
+          那七天，他每天都是这样过的。
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Sunny站在舞台中央。”"
+              - "“Sunny走到舞台最边上。”"
+        text: |
+          演出那天，Sunny走上舞台。
+
+          台下坐满了人。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny站定，鞠了一躬。
+
+          Mari坐在钢琴前，看着他。
+
+          Sunny深吸了一口气。
+
+          琴弓搭上琴弦。
+
+          **“Sunny走上舞台。”**
+  - id: s4
+    parent: s0
+    trigger: { sentence: "gA", action: erase }
+    editable: gB
+    pages:
+      rehearsal:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          Sunny在琴房里。
+
+          琴声从二楼传下来。
+
+          Basil在楼下，听了一会儿。
+
+          琴声很好。
+
+          好得像是已经练习了很多年。
+
+          他没有上楼。他没有打扰。
+
+          他站在树屋里，听着。
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gB
+            variants:
+              - "“Sunny站在舞台中央。”"
+              - "“Sunny走到舞台最边上。”"
+        text: |
+          演出那天，Sunny走上舞台。
+
+          台下坐满了人。
+
+          Basil坐在角落里。
+
+          Sunny站定。
+
+          灯光亮起来。
+
+          Mari坐在钢琴前。
+
+          一切都很正常。
+
+          太正常了。
+
+          **“Sunny走上舞台。”**
+  - id: s5
+    parent: s1
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          灯光落在他身上。
+
+          台下的声音慢慢静下来。
+
+          他闭上眼，又睁开。
+
+          Mari的钢琴，轻轻起了一个音。
+
+          **“Sunny拉出第一个音。”**
+  - id: s6
+    parent: s1
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny走到舞台最边上。
+
+          灯光只照亮了一半的舞台。
+
+          他站在光与影的边界。
+
+          Mari的钢琴，轻轻起了一个音。
+
+          Sunny把琴架起来。
+
+          **“Sunny拉出第一个音。”**
+  - id: s7
+    parent: s1
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          台下安静下来。
+
+          Mari的钢琴，起了一个音。
+
+          Sunny深吸一口气。
+
+          琴弓落下。
+
+          **“Sunny拉出第一个音。”**
+  - id: s8
+    parent: s1
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台上。
+
+          那句话没有被写出来。
+
+          琴声还没有响。
+
+          台下的人在等待。
+
+          Mari的手指悬在琴键上。
+
+          Sunny的琴弓悬在弦上。
+
+          一切都在等待。
+
+          **“Sunny拉出第一个音。”**
+  - id: s9
+    parent: s2
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          灯光很亮。
+
+          Mari的钢琴起了一个音。
+
+          Sunny闭上眼。
+
+          **“Sunny拉出第一个音。”**
+  - id: s10
+    parent: s2
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny走到舞台最边上。
+
+          灯光只照亮了一半。
+
+          Mari的钢琴起了一个音。
+
+          Sunny把琴架起来。
+
+          **“Sunny拉出第一个音。”**
+  - id: s11
+    parent: s2
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          台下安静下来。
+
+          Mari的钢琴起了一个音。
+
+          Sunny深吸一口气。
+
+          **“Sunny拉出第一个音。”**
+  - id: s12
+    parent: s2
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台上。
+
+          那句话没有被写出来。
+
+          琴声还没有响。
+
+          Mari的手指悬在琴键上。
+
+          **“Sunny拉出第一个音。”**
+  - id: s13
+    parent: s3
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          灯光落下来。
+
+          Mari的钢琴起了一个音。
+
+          Sunny的琴弓落下。
+
+          **“Sunny拉出第一个音。”**
+  - id: s14
+    parent: s3
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny走到舞台最边上。
+
+          灯光只照亮了一半。
+
+          Mari的钢琴起了一个音。
+
+          Sunny把琴架起来。
+
+          **“Sunny拉出第一个音。”**
+  - id: s15
+    parent: s3
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          台下安静下来。
+
+          Mari的钢琴起了一个音。
+
+          Sunny深吸一口气。
+
+          琴弓落下。
+
+          **“Sunny拉出第一个音。”**
+  - id: s16
+    parent: s3
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台上。
+
+          那句话没有被写出来。
+
+          琴声还没有响。
+
+          Mari的手指悬在琴键上。
+
+          Sunny的琴弓悬在弦上。
+
+          **“Sunny拉出第一个音。”**
+  - id: s17
+    parent: s4
+    trigger: { sentence: "gB", action: variant, value: 0 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          灯光落在他身上。
+
+          Mari的钢琴起了一个音。
+
+          Sunny闭上眼。
+
+          **“Sunny拉出第一个音。”**
+  - id: s18
+    parent: s4
+    trigger: { sentence: "gB", action: variant, value: 1 }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny走到舞台最边上。
+
+          灯光只照亮了一半。
+
+          Mari的钢琴起了一个音。
+
+          Sunny把琴架起来。
+
+          **“Sunny拉出第一个音。”**
+  - id: s19
+    parent: s4
+    trigger: { sentence: "gB", action: keep }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台中央。
+
+          台下安静下来。
+
+          Mari的钢琴起了一个音。
+
+          Sunny深吸一口气。
+
+          琴弓落下。
+
+          **“Sunny拉出第一个音。”**
+  - id: s20
+    parent: s4
+    trigger: { sentence: "gB", action: erase }
+    editable: gC
+    pages:
+      stage:
+        write:
+          origin: [48, 56]
+          speed: 4
+        edits:
+          - id: gC
+            variants:
+              - "“第一个音，很准。”"
+              - "“第一个音，在琴弦上停留了很久。”"
+        text: |
+          Sunny站在舞台上。
+
+          那句话没有被写出来。
+
+          琴声还没有响。
+
+          Mari的手指悬在琴键上。
+
+          Sunny的琴弓悬在弦上。
+
+          **“Sunny拉出第一个音。”**
+  - id: s21
+    parent: s5
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s22
+    parent: s5
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s23
+    parent: s5
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s24
+    parent: s5
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s25
+    parent: s6
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s26
+    parent: s6
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s27
+    parent: s6
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s28
+    parent: s6
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s29
+    parent: s7
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s30
+    parent: s7
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s31
+    parent: s7
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s32
+    parent: s7
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s33
+    parent: s8
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s34
+    parent: s8
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s35
+    parent: s8
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s36
+    parent: s8
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s37
+    parent: s9
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s38
+    parent: s9
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s39
+    parent: s9
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s40
+    parent: s9
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s41
+    parent: s10
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s42
+    parent: s10
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s43
+    parent: s10
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s44
+    parent: s10
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s45
+    parent: s11
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s46
+    parent: s11
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s47
+    parent: s11
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s48
+    parent: s11
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s49
+    parent: s12
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s50
+    parent: s12
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s51
+    parent: s12
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s52
+    parent: s12
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s53
+    parent: s13
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s54
+    parent: s13
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s55
+    parent: s13
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s56
+    parent: s13
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s57
+    parent: s14
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s58
+    parent: s14
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s59
+    parent: s14
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s60
+    parent: s14
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s61
+    parent: s15
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s62
+    parent: s15
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s63
+    parent: s15
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s64
+    parent: s15
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s65
+    parent: s16
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s66
+    parent: s16
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s67
+    parent: s16
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s68
+    parent: s16
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s69
+    parent: s17
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s70
+    parent: s17
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s71
+    parent: s17
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s72
+    parent: s17
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s73
+    parent: s18
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s74
+    parent: s18
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s75
+    parent: s18
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s76
+    parent: s18
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s77
+    parent: s19
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s78
+    parent: s19
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s79
+    parent: s19
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s80
+    parent: s19
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。
+  - id: s81
+    parent: s20
+    trigger: { sentence: "gC", action: variant, value: 0 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，很准。
+
+          Sunny接着拉了下去。
+
+          Mari的钢琴跟上来。
+
+          音乐在礼堂里流开。
+
+          台下的人安静地听着。
+
+          Basil坐在人群里，看着Sunny。
+
+          Sunny没有停。
+
+          他一直拉下去，拉完了一整首。
+
+          最后一个音落下。
+
+          掌声响起来。
+
+          Mari站起来，朝台下鞠躬。
+
+          Sunny也鞠了一躬。
+
+          Basil用力鼓掌。
+
+          音乐会成功了。
+
+          大家都说，这是一场很好的演出。
+
+          Basil走出礼堂，天已经黑了。
+
+          他回头看了一眼。
+
+          礼堂的灯还亮着。
+
+          他忽然觉得，好像少了点什么。
+
+          他想了很久。
+
+          ——琴声。
+
+          散场之后，就没有琴声了。
+
+          礼堂的灯亮着，但是很安静。
+
+          太安静了。
+
+          安静得像是从来没有人来过。
+  - id: s82
+    parent: s20
+    trigger: { sentence: "gC", action: variant, value: 1 }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          第一个音，在琴弦上停留了很久。
+
+          Sunny没有立刻拉下一个音。
+
+          琴声悬在空气里。
+
+          Mari的钢琴，也跟着停了一拍。
+
+          台下很安静。
+
+          Sunny低着头，看着琴弦。
+
+          然后他接着拉了下去。
+
+          音乐响起来。
+
+          一首，两首。
+
+          掌声一阵接一阵。
+
+          音乐会成功了。
+
+          大家都说，Sunny和Mari配合得真好。
+
+          Basil在人群里，笑得眼睛都弯了。
+
+          散场的时候，他走在最后。
+
+          他路过舞台。
+
+          舞台上已经没有人了。
+
+          只有一架钢琴，一把琴凳。
+
+          琴声已经停了。
+
+          Basil站在舞台边，站了一会儿。
+
+          他忽然想：刚才的琴声，真的是从这里传出来的吗？
+
+          礼堂很安静。
+
+          安静得像是从来没有人来过。
+  - id: s83
+    parent: s20
+    trigger: { sentence: "gC", action: keep }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          Sunny拉出第一个音。
+
+          琴声在礼堂里响起来。
+
+          Mari的钢琴跟着进来。
+
+          音乐很稳。
+
+          Basil在台下听着，心里渐渐安定下来。
+
+          “成了。”他想。
+
+          演出很成功。
+
+          掌声很响。
+
+          Sunny和Mari站在一起，朝台下鞠躬。
+
+          Basil看见Mari笑了。
+
+          他很久没见过Mari那样笑了。
+
+          散场之后，Basil帮大家收拾。
+
+          他路过舞台的时候，看见Sunny的琴盒还开着。
+
+          琴已经放进去了。
+
+          他弯腰，把琴盒合上。
+
+          咔哒。
+
+          礼堂安静下来。
+
+          Basil直起身，忽然发现礼堂里只剩下他一个人。
+
+          灯一盏一盏地灭。
+
+          他在黑暗里站了一会儿。
+
+          琴声已经没有了。
+
+          他想起刚才的掌声。
+
+          那么响。
+
+          现在却安静得像是从来没有人来过。
+  - id: s84
+    parent: s20
+    trigger: { sentence: "gC", action: erase }
+    pages:
+      firstnote:
+        write:
+          origin: [48, 56]
+          speed: 4
+        text: |
+          那句话没有被写出来。
+
+          第一个音没有落下来。
+
+          Sunny站在舞台上，琴弓悬在弦上。
+
+          台下的人在等。
+
+          Mari的手指在琴键上。
+
+          一秒。
+
+          两秒。
+
+          Sunny没有拉。
+
+          他放下琴弓。
+
+          台下开始有窃窃私语。
+
+          Sunny低着头。
+
+          Mari站起来，走过去，轻轻拍了拍他的肩。
+
+          “没关系。”Mari说。“下次吧。”
+
+          Basil在台下，看着他们走回后台。
+
+          音乐会没有开始，就结束了。
+
+          他走出礼堂，天还亮着。
+
+          他回头看了一眼。
+
+          礼堂的灯已经关了。
+
+          他站了一会儿。
+
+          他忽然想：如果刚才，Sunny拉出那个音——
+
+          礼堂会不会就不一样了？
+
+          会不会就一直是亮的？
+
+          他站了很久。
+
+          礼堂的门关着。
+
+          里面很安静。
+
+          安静得像是从来没有人来过。

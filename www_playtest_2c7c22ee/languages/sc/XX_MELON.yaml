@@ -1,0 +1,3459 @@
+# -----------------------------------------------
+# - NEW DIALOGUE: 750+
+# -----------------------------------------------
+
+#SM TOWN Door Guard
+
+message_750:
+  text: \n<树苗鼹鼠>呃哼……\!请出示你们的\c[4]演出门票\c[0]。
+
+
+message_751:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub嗯嗯，没问题，树苗鼹鼠先生！\!<br>这是我们的门票！
+
+
+message_752:
+  text: 奥布里伸手从你的口袋中拿出了\c[4]演出门票\c[0]。
+
+
+message_753:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub给你，树苗鼹鼠先生。
+
+
+message_754:
+  text: \n<树苗鼹鼠>哦……\! \com[2]哦呀！\!真是不敢相信我的眼睛……\!这些都是前排门票啊！<br>\!你们……\!你们为了观看这场演出，一定付出了巨大牺牲……<br>\!我对你们深表赞赏。
+
+
+message_755:
+  text: \n<树苗鼹鼠>请原谅我之前叫你们长相奇怪。\!<br>现在再看一眼，你们四只是我见过长相最正常的树苗鼹鼠了。
+
+
+#SM TOWN Ticket Vendor (Before Show)
+
+message_760:
+  text: \n<树苗鼹鼠>请尽情在前排座位享受演出吧，我的正常长相的树苗鼹鼠朋友们！
+
+
+#SM TOWN Ticket Vendor (After Show)
+
+message_761:
+  text: \n<树苗鼹鼠>哇哦！真是劲爆的终演！\!<br>甜心真的就是最棒的！
+
+
+#Blackletter Video Tape
+
+message_762:
+  text: 你获得了未贴标签的磁带。
+
+
+#Watering Plants
+
+message_763:
+  text: OMORI 永久获得了 1 心心。
+
+
+message_764:
+  text: 奥布里永久获得了 1 心心。
+
+
+message_765:
+  text: 凯永久获得了 1 心心。
+
+
+message_766:
+  text: 英雄永久获得了 1 心心。
+
+
+#Molly Entrance Tube
+
+message_767:
+  text: “正在维修”
+
+
+message_778:
+  text: “正在建设中”
+
+
+#Molly Password Puzzle (Before)
+
+message_768:
+  text: 我 ❤ 莫莉
+
+
+message_769:
+  text: PASSWORD
+
+
+message_770:
+  text: 汉弗莱
+
+
+message_771:
+  text: BOOM
+
+
+message_772:
+  text: 机器人
+
+
+message_773:
+  text: 还是算了
+
+
+#Molly Password Puzzle (After)
+
+message_774:
+  text: BOMB
+
+
+message_775:
+  text: BOMO
+
+
+message_776:
+  text: MOMB
+
+
+message_777:
+  text: BOOM
+
+
+# === Night Scares ===
+
+#Fridge
+message_780:
+  text: 里面什么也没有。
+
+
+# === Otherworld Ladder Hector ===
+
+message_801:
+  text: 一块普通的石头。
+
+
+# === SW Garden Statue ===
+
+message_802:
+  text: \n<震撼的雕像>你说，“还是算了”。
+
+
+# === Vast Forest ===
+
+message_803:
+  text: \n<热滴狗>看起来我的长度能完美挡住这条路。
+
+
+# === Mustard Sub ===
+
+message_804:
+  text: 太空海盗们听船长唱歌听入迷了。
+
+
+# === SW Garden Guards ===
+
+message_805:
+  text: \n<至尊者亚历克斯>身为一位至尊精英，我必须隐瞒一个特殊密码词汇……<br>\!但你大概对此一无所知。
+
+
+message_806:
+  text: \n<卓越者布莱恩>你最好止步于此……\!你即将踏足一位甜心卓越精英的领域。<br>\!我会用我的生命守护城堡的智慧。
+
+
+message_807:
+  text: \n<辉煌者卡罗尔>保护神圣的密码是身为辉煌精英的一项艰巨任务。<br>\!或许有一天你们这些年轻的鼹鼠也会背负同样的责任。
+
+
+message_808:
+  text: \n<灾厄者海伦>呃……嗨？\!我现在，呃……正忙着站在这里当一个灾厄精英呢。<br>\!我能，呃……帮到你们吗？
+
+
+# === Sprout Mole Village ===
+
+message_809:
+  text: 你想砍掉圣诞树吗？
+
+
+message_810:
+  text: 你想切断电线吗？
+
+
+# === Last Resort Elevator ===
+
+message_811:
+  text: 你使用了\c[4]炫酷钥匙卡\c[0]。
+
+
+# === Hidden Library ===
+
+message_812:
+  text: 你想把你的\c[4]乐谱\c[0]放上去吗？
+
+
+message_813:
+  text: 所有的字都被涂掉了。
+
+
+message_814:
+  text: OMORI 习得了\c[1]眩晕\c[0]。
+
+
+message_815:
+  text: OMORI 习得了\c[1]致残\c[0]。
+
+
+message_816:
+  text: OMORI 习得了\c[1]窒息\c[0]。
+
+
+# === Otherworld Ladder ===
+
+message_817:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her贝瑟尔肯定就在这附近。
+
+
+# === Doom Tomb ===
+
+message_821:
+  text: '1'
+
+
+message_822:
+  text: '2'
+
+
+message_823:
+  text: '3'
+
+
+message_824:
+  text: '4'
+
+
+message_825:
+  text: '5'
+
+
+message_826:
+  text: '6'
+
+
+message_827:
+  text: '7'
+
+
+message_828:
+  text: '8'
+
+
+message_829:
+  text: '9'
+
+
+message_834:
+  text: '0'
+
+
+# === Slime Girls Lair ===
+
+message_830:
+  text: 你想把你的\c[4]黏糊糊钥匙卡\c[0]给汉弗莱吗？
+
+
+message_831:
+  text: \n<汉弗莱>\sinv[1]哦哦哦哦哦哦……\sinv[0]是\c[4]黏糊糊钥匙卡\c[0]！
+
+message_832:
+  text: \n<汉弗莱>\sinv[1]嚼、嚼！\sinv[0]\!所以……\!你们现在想去下层吗？
+
+message_833:
+  text: \n<汉弗莱>\sinv[1]没问题～\!我马上就到！\quake[1]捏哈哈！\quake[0]
+
+# === BS Clearing ===
+
+message_840:
+  text: 等……等一下……\!求、求你了，\n[8]……\!不要离开我……\!\fn<OMORI_GAME><br>不要再离开我了……\who
+
+
+# === Last Resort Construction ===
+
+message_850:
+  text: 玛里
+
+
+message_851:
+  text: 贝瑟尔
+
+
+# === FA HIGH FIVE ===
+
+message_860:
+  faceset: MainCharacters_Faraway
+  faceindex: 24
+  text: 不过往好的方面想，至少我们拿到贝瑟尔的\c[4]相册\c[0]了……<br>而且只花了半天时间！\!这就是团队合作！<br>\!我们来击个掌吧，\n[8]？\kel
+
+
+message_861:
+  faceset: MainCharacters_Faraway
+  faceindex: 13
+  text: 你知道吗，\n[8]。\!你刚刚还挺帅的……\!就那样跳进湖里救贝瑟尔。\kel
+
+
+message_867:
+  faceset: MainCharacters_Faraway
+  faceindex: 12
+  text: 就算最后是英雄把你俩都救了起来，我觉得你也应该得到些表扬。<br>\!我们来击个掌吧？\kel
+
+
+message_862:
+  faceset: MainCharacters_Faraway
+  faceindex: 14
+  text: 哟，\n[8]。\!谢谢你昨晚让我们在你家过夜……\!也谢谢你走之前的这几天都在陪我玩。\!你真是个好朋友。\!\com[2]来击个掌吧！\kel
+
+
+message_863:
+  text: 你想和凯击掌吗？
+
+
+# === NORTH COAST ===
+
+message_864:
+  faceset: MainCharacter_Mari
+  faceindex: 3
+  text: 镇定下来……\!<br>别害怕。\!它没有你想的那么恐怖。\mar
+
+
+# === SUMMONING ROOM ===
+
+message_865:
+  text: 一个传送门被开启了。
+
+
+# === DINO'S DIG ===
+
+message_866:
+  text: 最佳选择
+
+
+# === MYSTERY POTION ===
+
+message_868:
+  text: 神秘药水的效果消失了……
+
+
+# === SW Servant Quarters ===
+
+message_869:
+  text: 随便选一个
+
+
+# === UWH TOLL ===
+
+message_870:
+  text: \n<收费站鳄鱼男>小鬼们，你们真觉得有三个人就能偷偷溜过去啦，嗯？ \!这不止是一条拼车专用道……\!这可是双重拼车专用道！
+
+
+# === STATIC VOID ===
+
+message_871:
+  text: \n<上古树苗>你们杀了我……
+
+
+# === LAST RESORT HOTEL ===
+
+message_872:
+  text: 玩偶的眼睛被挖了出来。\!你想看看里面吗？
+
+
+# === Mystery Potion ===
+
+message_993:
+  text: 因为某种原因，神秘药水在卫生间无效。
+
+
+message_994:
+  text: 神秘药水对奥布里无效。
+
+
+message_995:
+  text: 神秘药水对凯无效。
+
+
+message_996:
+  text: 神秘药水对英雄无效。
+
+
+message_997:
+  text: 标签上写了神秘药水只在水下有效。
+
+
+message_998:
+  text: 神秘药水的效果消失了……
+
+
+# === NEIGHBOR'S ROOM ===
+
+message_1000:
+  text: 你想加入你的朋友们吗？
+
+
+# -----------------------------------------------
+# - UNSORTED
+# -----------------------------------------------
+
+message_607:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 等一下，OMORI。\!我们应该先去看看贝瑟尔的情况……\her
+
+
+# -----------------------------------------------
+# - PUZZLE ROOMs (4)
+# -----------------------------------------------
+
+#WEBBED PARTY
+
+# message_511:
+#       faceset: MainCharacters_DreamWorld
+#       faceindex: 4
+#       text: Hey, watch it!\aub
+
+# message_512:
+#       faceset: MainCharacters_DreamWorld
+#       faceindex: 28
+#       text: Ow.\kel
+
+# message_513:
+#       faceset: MainCharacters_DreamWorld
+#       faceindex: 40
+#       text: T-there's no rush...\her
+
+# -----------------------------------------------
+# - JUNKYARD III (144)
+# -----------------------------------------------
+
+#KEY
+
+message_343:
+  text: 你获得了\c[4]垃圾场钥匙\c[0]！
+
+
+# -----------------------------------------------
+# - JUNKYARD IV (145)
+# -----------------------------------------------
+
+#FIRST THROW EVENT
+
+message_200:
+  text: \n<稻草扔先生>他们都叫我稻草扔。\!我被固定在这里，哪儿都不能去。\!<br>朝我扔东西……\!就能听到怪声哦！
+
+
+message_201:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel哇哦，好酷！这个游戏根本就是为我量身打造的嘛！
+
+
+message_202:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel让我试试吧，OMORI！求你了！
+
+
+message_203:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel来吧，OMORI！快换我上！
+
+
+message_204:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \aub等等嘛，OMORI，我好想看看会发生什么噢！
+
+
+#SCARETHROW
+
+message_345:
+  text: \n<稻草扔先生>很有趣对吧？\!改天再来玩吧！
+
+
+message_346:
+  text: \n<稻草扔先生>你可以停下了。
+
+
+message_347:
+  text: \n<稻草扔先生>已经开始有些痛了……
+
+
+message_348:
+  text: \n<稻草扔先生>求求你……停下……
+
+
+message_349:
+  text: \n<稻草扔先生>……
+
+
+message_350:
+  text: \n<稻草扔先生>如果你还不停手，我就要向当局举报你了。
+
+
+message_351:
+  text: \n<稻草扔先生>请你停手吧……\!我都在好声好气地求你了。
+
+
+message_352:
+  text: \n<稻草扔先生>停手。\!我说，现在就停手！
+
+
+message_353:
+  text: \n<稻草扔先生>哼……\!看来，不管我说什么你都不会听了。
+
+
+message_354:
+  text: \n<稻草扔先生>唉……\!以前还有人肯听我说话的……\!<br>你们知道吗……在高中的时候，所有人都因为我没有双腿而取笑我。
+
+
+message_355:
+  text: \n<稻草扔先生>他们总是会说什么……\!<br>“哦，快看！是稻草扔，和往常一样站在同样的地方！<br>\!我们用他来打靶练习吧！”
+
+
+message_356:
+  text: \n<稻草扔先生>\sinv[1]噢噢噢噢……\sinv[0]\!那些小孩儿可真坏啊……甚至可以说是歹毒了……
+
+
+message_357:
+  text: \n<稻草扔先生>呵呵……\!而你，只不过是朝我不停扔球罢了！\!<br>我有什么好抱怨的呢？\!<br>和我以前经历过的根本无法相提并论。
+
+
+message_358:
+  text: \n<稻草扔先生>一开始都是小打小闹，可他们越来越大胆。<br>\!从扔\c[5]橡皮筋\c[0]……变成扔\c[13]橡胶球\c[0]……\!再到有个小孩直接朝我扔桌子。
+
+
+message_359:
+  text: \n<稻草扔先生>对……\!你没听错……\!那可是一整张桌子，直接砸到我脑门上！<br>\!当时我经常劝自己……如果那样我都能撑过去，<br>我这辈子还有什么好怕的呢？
+
+
+message_360:
+  text: \n<稻草扔先生>话说回来啊……\!如果我有手的话……我们就可以玩抛接球了。
+
+
+message_361:
+  text: \n<稻草扔先生>来，朝我扔球吧。\!我试试能不能接住。
+
+
+message_362:
+  text: \n<稻草扔先生>可恶……\!球好像从我的指缝穿过去了……\!哈哈……\! <br>别担心……\!我下次会接住的。
+
+
+message_363:
+  text: \n<稻草扔先生>哦！我差点就接住了！\!真的就差一点点……你看到了吗？\!<br>来吧……再试一次。
+
+
+message_364:
+  text: \n<稻草扔先生>哈哈……\!啊，伙计们……真有意思……
+
+
+message_365:
+  text: \n<稻草扔先生>我在想……我会不会其实……连真正的胳膊都没有呢？\!嗯，我很好奇……
+
+
+message_366:
+  text: \n<稻草扔先生>唉……\!要是我能动就好了……
+
+
+message_367:
+  text: \n<稻草扔先生>我可以环游世界……\!与我的爱人找个地方安顿下来……\!然后组建家庭……
+
+
+message_368:
+  text: \n<稻草扔先生>不行……\!这么肆无忌惮地去幻想的话，会很危险的。\!<br>我为什么会被困在这里？\!<br>我难道不值得更好的生活吗？
+
+
+message_369:
+  text: \n<稻草扔先生>为什么命运如此残酷？我到底做错了什么？\!<br>这不公平……\!我讨厌这一切……
+
+
+message_370:
+  text: \n<稻草扔先生>啊……这种感觉是什么？\!我好像在哭。\!我真的在哭吗？\!<br>可是，我没有泪腺，所以我不知道。\!<br>唉……\!把我刚刚说的都忘了吧，好吗？
+
+
+message_371:
+  text: \n<稻草扔先生>他们都叫我稻草扔。\!我被固定在这里，哪儿都不能去。\!<br>朝我扔东西……\!就能听到怪声哦！
+
+
+# -----------------------------------------------
+# - JUNKYARD VI (147)
+# -----------------------------------------------
+
+#COUCH
+
+message_154:
+  text: 这里像是个放松的好地方。\!<br>你想休息一下吗？
+
+
+message_155:
+  text: 是时候动身了吗？
+
+
+message_156:
+  text: 再多待一会儿吧……
+
+
+# -----------------------------------------------
+# - JUNKYARD VIII (149)
+# -----------------------------------------------
+
+#KEY MAGNET, AUBREY SMASH
+
+message_178:
+  text: 一个电力场正阻止你们靠近。
+
+
+#ROSA
+
+message_341:
+  text: \n<？？？>哈……？\!这都什么跟什么啊……
+
+
+# -----------------------------------------------
+# - JUNKYARD IX (150)
+# -----------------------------------------------
+
+#ROSA
+
+message_506:
+  text: \n<罗莎>你们永远也抓不到我，棍子腿们！
+
+
+message_342:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: 快呀，OMORI！追上她！<br>我们需要那个\c[4]特制混音带\c[0]！\kel
+
+
+# -----------------------------------------------
+# - PYREFLY FOREST (156, 158, 160)
+# -----------------------------------------------
+
+#EMPTY TRACK SPACES
+
+message_51:
+  text: 矿车轨道少了一截。
+
+
+message_52:
+  text: 你想把\c[4]木制轨道\c[0]放在这里吗？
+
+
+#ITEM
+
+message_344:
+  text: 你获得了\c[4]火柴盒\c[0]。
+
+
+message_625:
+  text: 你获得了\c[4]木制轨道\c[0]。
+
+
+#CANDLE
+
+message_623:
+  text: 你需要\c[4]火柴盒\c[0]去点亮蜡烛。
+
+
+# -----------------------------------------------
+# - PYREFLY: WILLOW (153)
+# -----------------------------------------------
+
+message_157:
+  text: 月亮笑话
+
+
+message_158:
+  text: 稻草人笑话
+
+
+message_159:
+  text: 自行车笑话
+
+
+message_160:
+  text: 企鹅笑话
+
+
+message_161:
+  text: 芝士笑话
+
+
+message_162:
+  text: 北极笑话
+
+
+message_163:
+  text: 建筑笑话
+
+
+# -----------------------------------------------
+
+message_188:
+  text: 水面闪闪发光。
+
+
+message_189:
+  text: 你想往湖里扔 10 蚌币吗？\$
+
+
+message_190:
+  text: 你没有蚌币了。
+
+
+message_191:
+  text: ……
+
+
+message_192:
+  text: 这里有一本空的\c[4]笑话书\c[0]。\!捡起来吗？
+
+
+message_193:
+  text: 记一点笑话以备不时之需，总归是件好事。\!<br>要是手头有一本\c[4]笑话书\c[0]，就能把笑话记录下来了……
+
+
+message_194:
+  text: 蛋行好事，莫问前程啊！\!<br>你把这个笑话收录进了\c[4]笑话书\c[0]里。
+
+
+# -----------------------------------------------
+# - PYREFLY: VIII (160)
+# -----------------------------------------------
+
+#DEAD MOLE CLUSTER
+
+message_507:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: 这是什么鬼东西？！\!<br>怎么……黏黏的……\!而且闻起来就像烂掉的苹果一样。\kel
+
+
+message_508:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: 这坨东西的另一边我们还没探索呢！<br>\!快来，奥布里！把这玩意儿砸个粉碎！\kel
+
+
+message_509:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: 噢？难道说，你在向我求助吗？凯？\!哎呀，真是稀奇！\aub
+
+
+message_510:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 2
+  text: 好啦，都让开！你们可要看好了哦！\aub
+
+
+message_511:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \Com[2]我要让这坨奇怪的东西见识我的厉害！\aub
+
+
+#special charge up AUBREY SMASH + screen shake, but it does not budge
+#pause
+
+message_512:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel……
+
+
+message_513:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub……
+
+
+message_514:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel好吧……\!这就尴尬了。\!<br>我们还是想想别的办法吧。
+
+
+message_630:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: 嗯……\!你说得有道理……\aub
+
+
+# -----------------------------------------------
+# - PYREFLY: IX (161)
+# -----------------------------------------------
+
+message_800:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \com[2]你要去哪呀，OMORI？！\!不要留我一个人在这里……\aub
+
+
+message_515:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 呃……OMORI？\!你是不是把谁给落下了呀……\kel
+
+
+message_516:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: OMORI……\!你能不能……帮我一把……\her
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: DUNGEON F1 (182)
+# -----------------------------------------------
+
+#Skeleton
+
+message_380:
+  text: \n<骨头>我已经被困在这里太长时间，一块肌肉都动不了了……
+
+
+message_381:
+  text: \n<骨头>……\!嗯？\!你怎么摆出这种表情？
+
+
+#Contestant moles
+
+message_395:
+  text: \n<参赛者>啊啊！我们该怎么办？！\!<br>从未有人能逃出\c[11]地牢\C[0]！
+
+
+#Mole closest to door
+
+message_517:
+  text: \n<粉色？鼹鼠>\com[2]\sinv[1]\{\{救救救救救救救救我们！！
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: TORTURE ROOM (184)
+# -----------------------------------------------
+
+message_518:
+  text: \n<管家鼹鼠>我曾经犯下了一个严重的错误，现在我要遭受恶果。
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: FOYER (172)
+# -----------------------------------------------
+
+#Gathered moles
+
+message_519:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel哇，天哪……\!这里也太多鼹鼠了吧！
+
+
+message_520:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub这么多鼹鼠，我们怎么也挤不过去！\!还是找找看别的出口吧……
+
+
+message_852:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \her唔……或许等会儿就没有这么多鼹鼠了……\!我们应该晚点再来。
+
+
+#'MAXIMUS'
+
+message_244:
+  text: \n<马克西姆斯爵士>站住，冒牌货们！<br>我知道你们是什么……你们绝对不是树苗鼹鼠！\!<br>哼哼！你们一定很好奇我是怎么知道的吧……<br>那当然是因为……我比那些没经验的菜鸟霍尔德和玛莎强多了！<br>我是马克西姆斯爵士……凭借我们一族引以为傲的血脉，我必将走向胜利，将荣耀赋予我的家族！
+
+
+message_245:
+  text: \n<马克西姆斯爵士二世>站住，冒牌货们！我知道你们是什么……你们绝对不是树苗鼹鼠！<br>哼哼！你们一定很好奇我是怎么知道的吧……<br>\!那当然是因为……我就是传说中的那位战士，<br>马克西姆斯爵士的儿子……你们或许击败了我的父亲，但我比他更加强大！\!凭借我们一族引以为傲的血脉，再加上与我并肩作战的父亲，我必将走向胜利！
+
+
+message_246:
+  text: \n<马克西姆斯爵士三世>站住，冒牌货们！我知道你们是什么……你们绝对不是树苗鼹鼠！<br>哼哼！你们一定很好奇我是怎么知道的吧……<br>\!那当然是因为……我就是传说中的那位战士，<br>马克西姆斯爵士二世的儿子，马克西姆斯爵士的孙子……<br>你们或许击败了我的父亲和祖父，但那只会点燃我复仇的怒火。我要让你们血债血偿！<br>凭借我们一族引以为傲的血脉，再加上与我并肩作战的父亲和祖父，我必将走向胜利，为我的家族报仇！
+
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: ART GALLERY (175)
+# -----------------------------------------------
+
+message_522:
+  text: 这尊雕像是由甜心敌人的眼泪结晶制成的。
+
+
+message_391:
+  text: 你成为了艺术品。
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: SERVANT'S QUARTER (180)
+# -----------------------------------------------
+
+#Bottom left room
+
+message_523:
+  text: 树苗鼹鼠盯着甜心的画像，眼神中充满了渴望。
+
+
+message_524:
+  text: \n<管家鼹鼠>真希望她也能把我挂在墙上。
+
+
+#Bottom right room 1
+
+message_525:
+  text: \n<管家鼹鼠>Sors de ma chambre ou j'appellerai les flics!
+
+
+message_526:
+  text: \n<女仆鼹鼠>噢，弗朗索瓦！\!你说的一个词我都听不懂，但你依旧是那么地迷人！
+
+
+#Bottom right room 2
+
+message_527:
+  text: \n<树苗鼹鼠>可恶……\!我究竟是做了什么才落得如此下场？
+
+
+message_528:
+  text: \n<树苗鼹鼠>一只自称玛莎，长得很恐怖的树苗鼹鼠突然把我从家里拽出来，要我来顶替这里某个犯了错误的员工。
+
+
+message_529:
+  text: \n<树苗鼹鼠>那个员工好像是因为叛国罪被扔进了\c[11]地牢\C[0]……\!这里的员工流失率想必很恐怖。
+
+
+#Top left room 1
+
+message_530:
+  text: \n<管家鼹鼠>\com[2]别骗自己了，傻瓜！<br>我才是迎娶甜心的那一只！
+
+
+message_531:
+  text: \n<管家鼹鼠>\com[2]你是不是有妄想症啊，我的双胞胎兄弟！\!<br>迎娶甜心的明明是我！
+
+
+message_532:
+  text: \n<管家鼹鼠>你还是算了吧！胜出者毫无悬念是我！\!真要比较的话，我可远比你潇洒多了！
+
+
+message_533:
+  text: \n<管家鼹鼠>别犯蠢了，兄弟！我们明明长得一模一样！\!我很确定，甜心会倾心于我的……个性！
+
+
+message_534:
+  text: \n<管家鼹鼠>啧啧啧……一派胡言，兄弟！\!当时机成熟，她就会被我这\sinv[1]超超超超级有型\sinv[0]的新胡子折服！
+
+
+message_535:
+  text: \n<管家鼹鼠>哼！你说\sinv[1]超超超超级有型\sinv[0]的胡子？！<br>\!什么胡子？！\!只不过是一对鼻毛而已！
+
+
+message_536:
+  text: \n<管家鼹鼠>亲爱的兄弟……\!\com[2]你真的让我忍无可忍了！\!<br>不过，要解决这一切很简单！
+
+
+message_537:
+  text: \n<管家鼹鼠们>\{\{树苗鼹鼠同胞们！！
+
+
+message_660:
+  text: \n<管家鼹鼠们>\{\{奇怪的生物们！！
+
+
+message_538:
+  text: \n<管家鼹鼠们>你们说，我们中的哪一个才配得上甜心？！
+
+
+message_539:
+  text: \n<管家鼹鼠>哈！我都跟你说了吧？！\!<br>我现在就去向甜心求婚！
+
+
+message_540:
+  text: \n<管家鼹鼠>\com[2]我才不信你们的一派胡言！
+
+
+message_541:
+  text: \n<管家鼹鼠>哈！就如同我所预料的一样！\!<br>我现在就去向甜心求婚！
+
+
+message_542:
+  text: \n<管家鼹鼠>我才不信你们的一派胡言！
+
+
+message_543:
+  text: \n<管家鼹鼠>哦，我真是太不幸了！\!<br>我为我失去的兄弟哀悼。
+
+
+message_544:
+  text: \n<管家鼹鼠>就凭他那长相……<br>他肯定要被送去\c[11]地牢\C[0]的。
+
+
+message_545:
+  text: \n<管家鼹鼠>就像我们已故的三弟一样……
+
+
+message_546:
+  text: \n<管家鼹鼠>真不敢相信我的计划成功了！\!现在这个房间就由我独占了……
+
+
+#Meditating mole
+
+message_547:
+  text: \n<女仆鼹鼠>\sinv[1]嗯……摒除杂念……\!<br>嗯……融入宇宙……\!<br>嗯……返璞归真……
+
+
+message_548:
+  text: \n<女仆鼹鼠>\sinv[1]嗯……再一次成为……\!\c[3]豆腐\c[0]……
+
+
+message_549:
+  text: \n<女仆鼹鼠>\com[2]喂！你看不出来我正在冥想吗？！
+
+
+message_550:
+  text: \n<女仆鼹鼠>你们这帮人真没礼貌！
+
+
+#Table moles
+
+message_551:
+  text: \n<管家鼹鼠>甜心太酷了……\!我想一辈子给她打工！
+
+
+message_552:
+  text: \n<管家鼹鼠>甜心好恐怖……\!我想现在就回家……
+
+
+#Top left room 2
+
+message_553:
+  text: \n<管家鼹鼠>隔壁那两个家伙真是吵死了！我根本睡不着！
+
+
+message_554:
+  text: \n<管家鼹鼠>如果这里有天花板就好了……
+
+
+message_555:
+  text: \n<管家鼹鼠>\sinv[1]呼呼呼呼呼噜噜噜噜噜……
+
+
+#Top right room
+
+message_556:
+  text: \n<女仆鼹鼠>亲爱的日记……\!今天……\!我……\!……\!……
+
+
+message_557:
+  text: \n<女仆鼹鼠>天……\!我今天干了什么来着？
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: BEDROOM (186)
+# -----------------------------------------------
+
+message_558:
+  text: \n<卡斯特拉>呼……\!呼……\!呼……
+
+
+message_901:
+  text: \n<卡斯特拉>哎！你们在这里做什么？！\!一般树苗鼹鼠可不允许进入甜心的寝室……你们懂不懂规矩！
+
+
+message_902:
+  text: \n<卡斯特拉>啊……\!等一下……\!或许你们可以帮到我。
+
+
+message_559:
+  text: \n<卡斯特拉>甜心下令我在她回来之前，把这座雕像从卧室里移出去。但我根本推不动它！
+
+
+message_560:
+  text: \n<卡斯特拉>要是能突然来个什么东西，把这玩意儿砸碎成渣渣就好了……
+
+
+message_561:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel这位女士，您这么说的话……\!<br>在我看来……您可能需要一些拆迁服务……\!而我身边的奥布里，正好是一位拆迁专家！
+
+
+message_903:
+  text: \n<卡斯特拉>奥布里？\!嚯，真是个奇怪的名字啊，对于树苗鼹鼠来说……\!不过话又说回来，甜心最近都取不出新的名字给我们了。
+
+
+message_562:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub等等噢，凯……\!这座雕像不是太空男孩船长吗？\!<br>我觉得破坏掉不太好吧。
+
+
+message_563:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel切……反正他又不会知道！\!而且，太空男孩船长和甜心这一对，早就是过去式了……\!我不是经常说，自己过日子，也要让别人过日子嘛！
+
+
+message_564:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 9
+  text: \aub你才没有经常这么说！\!<br>不过，算了……我就去试试看吧。
+
+
+message_565:
+  text: \n<卡斯特拉>与此同时，我会盯着这座雕像，希望我体内的特异功能觉醒。
+
+
+message_566:
+  text: \n<卡斯特拉>呼……你们真是我的救命恩人！\!<br>哎呀真是，我应该从一开始就把活儿交给专家来干！
+
+
+#AUBREY READYS
+
+message_635:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub好了……\!看好了哦……\!这一次……\!我不会再失败了！
+
+
+#SBF STATUE CRUMBLES
+
+message_636:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub……
+
+
+message_567:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 26
+  text: \kel……
+
+
+message_569:
+  text: \n<卡斯特拉>哎哟喂！\!你真的做到了！
+
+
+message_570:
+  text: \n<卡斯特拉>好了……\!是时候把这里清理干净了！
+
+
+message_308:
+  text: \n<卡斯特拉>哦呀，哦呀……真是令人惊讶！\!<br>原来我只需要把雕像从底部抬起来就行了！
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: THEATER (168)
+# -----------------------------------------------
+
+message_571:
+  text: \n<在逃鼹鼠>\}嘘……\!我不在这里……\!……\!<br>你们什么都没看见。
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: BALLROOM (178)
+# -----------------------------------------------
+
+message_572:
+  text: \n<指挥家鼹鼠>\com[2]不、不、不、不、不、不！\!完全不行啊！\!<br>中间靠左的那个！你管那叫唱歌？！\!<br>我表兄的塑料火烈鸟唱得都比你好！
+
+
+message_573:
+  text: \n<指挥家鼹鼠>还有，后排的，别以为我不知道，副歌的时候你们统统在打瞌睡！\!给我认真点啊，不然甜心就要把我们都扔进\c[11]地牢\C[0]了！
+
+
+message_574:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \n<英雄>咦……\!这些树苗鼹鼠们好像遇到了点麻烦……\!不知道我们能不能帮上忙。
+
+
+message_575:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\com[2]大家好呀！你们需要帮忙吗？\!<br>我们是专业级的帮手，竭诚为您服务！
+
+
+message_576:
+  text: \n<指挥家鼹鼠>哦，谢天谢地！专家们终于来了！
+
+
+message_577:
+  text: \n<指挥家鼹鼠>我们绝对、必须要在甜心的特别演出前把合唱排练好，但是时间上真的赶不及啊！
+
+
+message_578:
+  text: \n<指挥家鼹鼠>主要是……树苗鼹鼠一听音乐就会昏昏欲睡……\!所以您几位也肯定猜到了——我们的合唱团一唱歌就会统统睡着！
+
+
+message_579:
+  text: \n<指挥家鼹鼠>唉……我在担心我们必须要用……\!<br>\quake[1]别的什么……\!\quake[0]方法，来让它们保持清醒才行……
+
+
+message_580:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel啊，我懂了！\!不必担心，我亲爱的树苗鼹鼠兄弟！<br>\!我呀……\!\quake[1]完全理解……\quake[0]\!你刚才的意思！
+
+
+message_900:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her你、你……\!你理解了什么？
+
+
+message_581:
+  text: \n<指挥家鼹鼠>太感谢您了，这样一来我们就能得救了！<br>\!是我小看几位了，您几位不愧是专家啊。
+
+
+message_640:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel放心交给我吧，先生。您就相信我好啦！
+
+
+message_582:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel指挥家鼹鼠先生……\!我准备好了。
+
+
+message_583:
+  text: \n<指挥家鼹鼠>谢谢您，这位伟大的专家！\!<br>我们都欠你一个鼠情。
+
+
+message_584:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel这事儿小菜一碟啦。\!换我上吧！\!我已经\quake[1]完全知道……\quake[0]\!该怎么做了。
+
+
+message_585:
+  text: \n<指挥家鼹鼠>\Com[2]没错、没错、没错、没错、没错、没错！太出色了！\!多亏了您的指导，特别演出一定会精彩绝伦、辉煌夺目！
+
+
+message_586:
+  text: \n<指挥家鼹鼠>不好意思啊，这位专家……\!但是……您好像什么也没有做啊……
+
+
+message_587:
+  text: \n<指挥家鼹鼠>哦……不起作用啊……\!我们的情况已经没救了，是吧……
+
+
+message_588:
+  text: \n<指挥家鼹鼠>啊，我已经感觉到有进步了！
+
+
+message_589:
+  text: \n<指挥家鼹鼠>但……我们还可以精益求精！\!<br>能麻烦您再指导一次吗，专家？
+
+
+message_590:
+  text: \n<指挥家鼹鼠>啊，演出时间就要到了！
+
+
+message_591:
+  text: \n<指挥家鼹鼠>我们的时间只够再排练一次了。\!能麻烦您指导我们最后一次吗？
+
+
+message_592:
+  text: \n<指挥家鼹鼠>我相信您，专家！\!请好好鞭策我们吧！
+
+
+message_593:
+  text: \n<指挥家鼹鼠>非常感谢您抽空指导。\!<br>我们会尽我们所能的。
+
+
+#DANCING MOLES
+
+message_373:
+  text: \n<跳舞的鼹鼠>唉……\!我也想跳舞，但没人来做我的舞伴……
+
+
+message_374:
+  text: \n<跳舞的鼹鼠>……\!你们当中有谁愿意和我跳舞吗？
+
+
+message_375:
+  text: \n<跳舞的鼹鼠>好的！我不会让你失望的！
+
+
+message_376:
+  text: \n<跳舞的鼹鼠>刚刚真是好有趣呀……\!啊……\!这是什么感觉？\!<br>我的心突然跳得好快……
+
+
+message_377:
+  text: \n<跳舞的鼹鼠>谢谢你，嘻嘻……
+
+
+message_378:
+  text: \n<跳舞的鼹鼠>你想再和我跳一支舞吗？
+
+
+message_379:
+  text: \n<跳舞的鼹鼠>耶……
+
+
+message_799:
+  text: \n<跳舞的鼹鼠>唉……\!我到底做错了什么，才会沦落到这样孤独的境地？
+
+
+
+
+# -----------------------------------------------
+# - SWEETHEART'S CASTLE: GARDEN (169)
+# -----------------------------------------------
+
+#First Cutscene
+
+message_594:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\sinv[1]呀——呼！我们终于逃出甜心城堡了！\!\sinv[0]<br>不过，大家都在准备的那个盛大演出到底是什么呢……
+
+
+message_595:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: \aub真奇怪……之前堵在门口的那些树苗鼹鼠呢？\!它们都去哪儿了呀？
+
+
+message_596:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 39
+  text: \n<英雄>这附近肯定有个隐藏出口！\!我们四处找找，看看有没有可疑的地方吧。
+
+
+#Second Cutscene (Statue Laser)
+
+message_309:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: \kel\{\{\quake[1]啊呀！！好痛啊！！\}\}
+
+
+message_310:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 7
+  text: \aub大家都没事吧？！\!发生什么了？！
+
+
+message_650:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel呃……\!那个长得像甜心的灌木丛，居然向我们发射了一道激光！
+
+
+message_311:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \n<英雄>嗯……\!肯定有什么办法能除掉那些家伙……
+
+
+#Third Cutscene (Throw Platform)
+
+message_312:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 25
+  text: \kel好了，甜心……这是你自找的！
+
+
+message_313:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\com[2]\{\{\sinv[1]嘿——呀啊啊啊！！
+
+
+message_314:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 24
+  text: \kel……\!可恶……没打中。
+
+
+message_315:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 14
+  text: \aub哎呀，凯你个笨蛋！\!你这样乱扔，肯定打不中的呀！
+
+
+message_316:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub你就不能好好瞄准一次吗？
+
+
+message_317:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel啥？\!瞄准？\!我还能瞄准的吗？
+
+
+message_318:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 1
+  text: \aub当然啦！\!就算是你也可以好好瞄准的，凯！
+
+
+message_319:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel好吧！那我尽力而为！
+
+
+#Vine Moles
+
+message_597:
+  text: \n<园艺师鼹鼠>这些藤蔓总有一天会害死我的！
+
+
+message_598:
+  text: \n<园艺师鼹鼠>可恶的藤蔓！为什么就是不肯消失掉呢！
+
+
+message_599:
+  text: \n<园艺师鼹鼠>我们每天都在砍这些藤蔓，但根本就砍不完啊。
+
+
+message_600:
+  text: \n<园艺师鼹鼠>我就快能看到藤蔓对面了……还是说只是错觉？
+
+
+message_601:
+  text: \n<园艺师鼹鼠>这些藤蔓就像我一样棘手！
+
+
+message_602:
+  text: \n<花园鼹鼠>马上就能砍完了……我感觉……
+
+
+message_603:
+  text: \n<园艺师鼹鼠>我们每天都在砍掉这些藤蔓……<br>但它们总会长回来！
+
+
+message_604:
+  text: \n<园艺师鼹鼠>砍……砍……砍……
+
+
+message_605:
+  text: \n<园艺师鼹鼠>小心别伤到自己！这些藤蔓可尖锐了！
+
+
+message_606:
+  text: \n<花园鼹鼠>嗯……奇怪……\!我还是什么也看不到……
+
+
+#PUZZLE MOLE 1 (Top Left)
+
+message_0:
+  text: \n<至尊者亚历克斯>想要开启秘密通道，就必须向甜心的雕像说出四个密码。<br><br>我作为被选中的精英，理所当然地被赋予了守护第三个密码的职责！
+
+
+message_1:
+  text: \n<至尊者亚历克斯>嗯？\!你想要知道密码？\!<br>啊……\!抱歉……\!我不能告诉任何人……
+
+
+message_2:
+  text: \n<至尊者亚历克斯>嗯？你非常需要它？\!你说你非常非常需要它？\!<br>你真的非常非常非常需要它？\!你是说，你真的非常非常非常非常非常非常需要它？
+
+
+message_3:
+  text: \n<至尊者亚历克斯>……\!唔……\!唔唔唔……\!<br>看起来我别无选择了……\!<br>但你们必须保证，不会告诉其他人！<br>\Com[2]\{拉钩发誓哦！
+
+
+message_4:
+  text: \n<至尊者亚历克斯>好嘞！\!<br>呼……我还担心你是那种不可信赖的人呢！<br>好了……\!靠近一点……\!<br>\}交付给我的密码是……\!“馅儿”。\!<br>记住了吗？\!你们保证不会告诉其他人哦？
+
+
+message_5:
+  text: \n<至尊者亚历克斯>很抱歉，如果你不知道怎么保守秘密，我是不会把密码告诉你的。
+
+
+#PUZZLE MOLE 2 (Bottom Right)
+
+message_400:
+  text: \n<卓越者布莱恩>想要开启秘密通道，就必须向甜心的雕像说出四个密码。<br><br>我作为被选中的精英，理所当然地被赋予了守护第二个密码的职责！
+
+
+message_6:
+  text: \n<卓越者布莱恩>你说你想知道密码？\!<br>\com[2]呵，悠着点，伙计。\!<br>我不得不说……你作为一只树苗鼹鼠，高得有点可疑了……
+
+
+message_7:
+  text: \n<卓越者布莱恩>\com[2]我怎么能确定你是我们这种伟大又高智商的生物的一员呢？\!你真以为我会把密码泄露给一个有可能是间谍的家伙么？\!哈！\!别逗我笑了！
+
+
+message_8:
+  text: \n<卓越者布莱恩>如果你真的觉得自己是树苗鼹鼠，那就证明给我看吧！\!想要我告诉你密码……就得猜中我现在在想什么！
+
+
+message_9:
+  text: 豆腐
+
+
+message_10:
+  text: 甜心
+
+
+message_151:
+  text: 生存
+
+
+message_152:
+  text: \n<卓越者布莱恩>\com[2]啊哈！\!我就知道你们这群家伙很可疑！
+
+
+message_153:
+  text: \n<卓越者布莱恩>所有人都知道树苗鼹鼠是永生不死的！<br>\!来人，把这帮骗子抓起来！
+
+
+#You are transported to THE DUNGEON cell.
+
+message_401:
+  text: \n<卓越者布莱恩>想要开启秘密通道，就必须向甜心的雕像说出四个密码。<br><br>我作为被选中的精英，理所当然地被赋予了守护第二个密码的职责！
+
+
+message_11:
+  text: \n<卓越者布莱恩>噢……\!嗯姆……\!美味的\c[3]豆腐\c[0]……
+
+
+message_12:
+  text: \n<卓越者布莱恩>噢……\!唔……\!我刚刚是在想\c[3]豆腐\c[0]啦……\!不过……\!<br>你知道吗……你说得对！
+
+
+message_13:
+  text: \n<卓越者布莱恩>我绝对应该去想甜心才对！<br>或许你比我还更像树苗鼹鼠一些！
+
+
+message_14:
+  text: \n<卓越者布莱恩>我竟然怀疑你们不是树苗鼹鼠，真是太抱歉了。\!看来，这世界上长成啥样的树苗鼹鼠都有！<br><br>好了……\!靠近一点……\!<br>\}交付给我的密码是……\!“果冻”。\!<br>记住了吗？\!你们保证不会告诉其他人哦？
+
+
+#PUZZLE MOLE 3 (Bottom Left)
+
+message_402:
+  text: \n<辉煌者卡罗尔>想要开启秘密通道，就必须向甜心的雕像说出四个密码。<br><br>我作为被选中的精英，理所当然地被赋予了守护第一个密码的职责！
+
+
+message_15:
+  text: \n<辉煌者卡罗尔>今天花园里的天气真是好极了，不是吗，兄弟姐妹们？
+
+
+message_16:
+  text: \n<辉煌者卡罗尔>啊！你是说，你想知道密码？\!<br>实在抱歉。\!恐怕我没有权力这么做。
+
+
+message_17:
+  text: \n<辉煌者卡罗尔>不过……\!我估计某样美味的，洁白的，方形的东西可以改变我的主意……
+
+
+#Give puzzle mole a consumable
+
+message_20:
+  text: 给辉煌者卡罗尔一块\c[3]豆腐\c[0]吗？
+
+
+#Give mole TOFU
+message_18:
+  text: \n<辉煌者卡罗尔>噢……\!嗯姆……\!美味又难以抗拒的\c[3]豆腐\c[0]……<br>\!看来，我就说漏嘴这么一次吧……
+
+
+#Give mole anything else
+message_19:
+  text: \n<辉煌者卡罗尔>好了……\!靠近一点……\!<br>\}交付给我的密码是……\!“甜蜜蜜”。\!<br>记住了吗？\!你保证不会告诉其他人哦？
+
+
+message_624:
+  text: 你身上没有\c[3]豆腐\c[0]。
+
+
+# message_20:
+#     text: \n<GUARD MOLE>Ugh... Bleh!\! What did you give me!?\!<br>I cannot break my vows over this gruel!
+
+#PUZZLE MOLE 4 (Top Right) MSG 22 - 23
+
+message_403:
+  text: \n<灾厄者海伦>想要开启秘密通道，就必须向甜心的雕像说出四个密码。<br>我作为被选中的精英，理所当然地被赋予了守护第四个密码的职责！
+
+
+message_21:
+  text: \n<灾厄者海伦>不过，说真的！\!虽然我是应该好好守护这个什么超级秘密的密码啦，但是我跟你讲，这个密码和食物有关，搞得我整天在想吃的你懂不懂……<br>可把我馋坏了啊，我甚至都开始嚼这些草了，因为我实在太饿了！很离谱对吧？！上头至少也该给我们这些守卫派点食物嘛！
+
+
+message_22:
+  text: \n<灾厄者海伦>说到底，“甜甜圈”算什么密码啊？\!不就是那个蓝色怪人给甜心起的这么一个愚蠢昵称吗？<br>\com[2]饶～了我吧！\!这算哪门子的秘密啊！傻子都能猜到好吧！他们俩整天在这儿小情侣牵手散步，不停地互相叫对方名字……<br>还说什么，“你为什么还不向我求婚？”“对不起。我的朋友不同意这段关系……”每次都这样……呃！真是烦透顶！
+
+
+message_23:
+  text: \n<灾厄者海伦>不过那些都无所谓了……\!反正我还是得呆在这儿，像其他三个守卫一样守护什么密码……\!那些家伙根本守不住秘密，迟早丢掉小命！<br>哼！没错！随便你可怜我吧！反正我也不在乎！\!我注定要被困在花园这个孤独的小角落里守护密码，还偏偏是“甜甜圈”这种密码！\!真是无语！
+
+
+#PASSWORD STATUE PART 1
+
+message_24:
+  text: 你盯着雕像的侧面。
+
+
+message_405:
+  text: \n<震撼的雕像>\Com[2]\quake[1]\{\{嘿！！看这里！！
+
+
+message_25:
+  text: 一座震撼人心的甜心雕像向花园投下一道令人不安的阴影。
+
+
+message_26:
+  text: \n<震撼的雕像>\quake[1]\{\{密码是什么？
+
+
+#ADJECTIVE
+
+message_27:
+  text: 神奇
+
+
+message_28:
+  text: 燃烧
+
+
+message_29:
+  text: 浪漫
+
+
+message_30:
+  text: 美丽
+
+
+#NOUN
+
+message_31:
+  text: 星球
+
+
+message_32:
+  text: 火烈鸟
+
+
+message_33:
+  text: 鼹鼠
+
+
+message_34:
+  text: 菠萝
+
+
+#DESCRIPTOR
+
+message_35:
+  text: 吃
+
+
+message_36:
+  text: 尺寸
+
+
+message_37:
+  text: 吸入
+
+
+message_38:
+  text: 召唤
+
+
+#NOUN
+
+message_39:
+  text: 雕像
+
+
+message_40:
+  text: 吐司
+
+
+message_41:
+  text: 鲸鱼
+
+
+message_42:
+  text: 电梯
+
+
+#ANSWERS
+
+message_43:
+  text: 甜蜜蜜
+
+
+message_44:
+  text: 果冻
+
+
+message_45:
+  text: 馅儿
+
+
+message_46:
+  text: 甜甜圈
+
+
+#PASSWORD STATUE PART 2
+
+message_47:
+  text: \n<震撼的雕像>……然后呢？
+
+
+message_48:
+  text: ……\.……\.……\.……\.……\.
+
+
+message_49:
+  text: \n<震撼的雕像>你说，“\v[101]\v[102]\v[103]\v[104]”\c[0]。
+
+
+message_50:
+  text: \n<震撼的雕像>\Com[2]\quake[1]\{\{错误！！！
+
+
+message_404:
+  text: \n<震撼的雕像>\Com[2]\quake[1]\{\{行吧！！！！
+
+
+message_411:
+  text: \n<震撼的雕像>哼……\.……\.……
+
+
+message_412:
+  text: 你盯着雕像的背面。
+
+
+# -----------------------------------------------
+# - SW CASTLE: DUNGEON (183)
+# -----------------------------------------------
+
+#BLOCKING SWITCH
+
+message_173:
+  text: \n<囚犯鼹鼠>嚯呀！\!经历无数次失败后，我终于成功逃出来啦！\!现在我只需要找到出口就能逃出生天了！
+
+
+# -----------------------------------------------
+# - SW CASTLE: SERVANT'S QUARTER (180)
+# -----------------------------------------------
+
+#TOP LEFT ROOM
+
+message_211:
+  text: 树苗鼹鼠
+
+
+message_212:
+  text: 另一只树苗鼹鼠
+
+
+# -----------------------------------------------
+# - TRAIN (328)
+# -----------------------------------------------
+
+message_228:
+  text: 这个人似乎很忙。
+
+
+message_229:
+  text: 吐司。
+
+
+message_230:
+  text: \fn<OMORI_GAME>\who\quake[1]离……\|远点……
+
+
+# -----------------------------------------------
+# - ORANGE OASIS: DINO'S DIG (107 - 110)
+# -----------------------------------------------
+
+#EXCAVATION DINO (107)
+
+message_429:
+  text: 土豆勺子（5）
+
+
+message_430:
+  text: 塑料勺子（10）
+
+
+message_431:
+  text: 木制勺子（15）
+
+
+message_432:
+  text: 银制勺子（20）
+
+
+message_433:
+  text: 金制勺子
+
+
+message_434:
+  text: \n<恐龙迪诺>嘿，你们要去哪？\! \com[2]你们难道不想来一场\sinv[1]冒险\c[0]吗？！
+
+
+message_435:
+  text: 你获得了 1 枚恐龙币。
+
+
+message_436:
+  text: 你获得了 \v[1001] 枚恐龙币。
+
+
+#EXCAVATION DINO (108)
+
+message_439:
+  text: \n<恐龙迪诺>想买一把\c[4]勺子\c[0]吗？\!<br>只会花你 1 枚恐龙币哦！
+
+
+message_441:
+  text: \n<恐龙迪诺>用你的\c[4]S勺子\c[0]挖掘出奇妙的宝藏吧！
+
+
+message_444:
+  text: 你获得了\c[4]土豆勺子\c[0]。
+
+
+#EXCAVATION DINO (108 -> Map Teleport: Trying to Leave)
+
+message_442:
+  text: \n<恐龙迪诺>\com[2]啥？！\!你确定已经挖完了吗？
+
+
+message_443:
+  text: \n<恐龙迪诺>我真的不能理解，不过好吧！
+
+
+#STEG DINO
+
+message_428:
+  text: \n<查德>这是我的祖父。
+
+
+#SHOP DINO
+
+message_413:
+  text: \n<恐龙迪诺>哟！我这里有一些精选商品出售！你有兴趣吗？
+
+
+# message_414:
+#     text: Would you like to trade your eggs in for \v[115] DINO DOLLARS?
+
+# message_415:
+#     text: You now have \v[1020] DINO DOLLARS.
+
+message_416:
+  text: \n<布雷特>你已经有一把\c[4]勺子\c[0]了，兄弟！\!等它坏了再来找我吧，到时候我再帮你。
+
+
+message_417:
+  text: 你获得了\c[4]塑料勺子\c[0]。
+
+
+message_418:
+  text: 你获得了\c[4]木制勺子\c[0]。
+
+
+message_419:
+  text: 你获得了\c[4]银制勺子\c[0]。
+
+
+message_420:
+  text: 你获得了\c[4]金制勺子\c[0]。
+
+
+message_421:
+  text: 你获得了\c[13]安全头盔\c[0]。
+
+
+message_422:
+  text: 你获得了\c[3]恐龙蓝莓\c[0]。
+
+
+message_423:
+  text: 你获得了\c[3]恐龙蜜瓜汽水\c[0]。
+
+
+message_424:
+  text: 你获得了\c[3]恐龙鸡块\c[0]。
+
+
+message_425:
+  text: 你获得了\c[3]恐龙意面\c[0]。
+
+
+message_426:
+  text: 你获得了\c[5]恐龙果酱\c[0]。
+
+
+# message_427:
+#     text: You don't have enough DINO POINTS.
+
+# message_59:
+#     text: Trade DINO EGGS!
+
+message_60:
+  text: 买把勺子吧！
+
+
+message_61:
+  text: 买点恐龙迪诺的东西吧！
+
+
+message_62:
+  text: 你想要买什么？
+
+
+message_63:
+  text: 塑料勺子（1 枚恐龙币）
+
+
+message_64:
+  text: 木制勺子（5 枚恐龙币）
+
+
+message_65:
+  text: 银制勺子（10 枚恐龙币）
+
+
+message_66:
+  text: 金制勺子（15 枚恐龙币）
+
+
+message_67:
+  text: 安全头盔（30 枚恐龙币）
+
+
+message_68:
+  text: 恐龙蓝莓（10 枚恐龙币）
+
+
+message_69:
+  text: 恐龙西瓜（10 枚恐龙币）
+
+
+message_70:
+  text: 恐龙鸡块（10 枚恐龙币）
+
+
+message_71:
+  text: 恐龙意面（10 枚恐龙币）
+
+
+message_72:
+  text: 恐龙果酱（10 枚恐龙币）
+
+
+message_73:
+  text: 还是算了
+
+
+# -----------------------------------------------
+# - DOUGH DUNGEON (343)
+# -----------------------------------------------
+
+#'Summon Placement'
+
+message_76:
+  text: 空气中弥漫着新鲜面包的味道。
+
+
+message_77:
+  text: 你想要献祭\c[3]\v[102]\c[0]吗？
+
+
+message_78:
+  text: 你找到了\c[4]灾难的配方\c[0]。\!拿走它吗？
+
+
+message_383:
+  text: 你想把\c[4]灾难的配方\c[0]放回去吗？
+
+
+message_407:
+  text: 你正拿着\c[4]灾难的配方\c[0]。
+
+
+message_79:
+  text: 你想要献祭\c[4]真正的鼹鼠\c[0]吗？
+
+
+message_298:
+  text: 你把\c[3]\v[102]\c[0]放了上去……但什么也没发生。
+
+
+message_299:
+  text: 你把\c[3]\v[102]\c[0]捡了回来。
+
+
+#SACRIFICE OBJECTS
+
+message_74:
+  text: 你想拿起\c[3]\v[102]\c[0]吗？
+
+
+message_75:
+  text: 你正拿着\c[3]\v[102]\c[0]。
+
+
+message_88:
+  text: 你想把\c[3]\v[102]\c[0]放回原位吗？
+
+
+message_80:
+  text: \n<老奇普>老奇普看到你在盯着那盘燕麦饼。\!老奇普警告你们，为了你们自己好……\!别动它！
+
+
+message_81:
+  text: \n<老奇普>你们听好……\!老奇普已经警告过无数探险家这个墓穴危机四伏的事实。老奇普的告诫救了他们一命！
+
+
+message_82:
+  text: \n<老奇普>你们最好听从老奇普的建议。
+
+
+message_83:
+  text: \n<老奇普>\quake[1]远离……\!那盘……\!\c[3]燕麦饼\c[0]。
+
+
+message_84:
+  text: \n<老奇普>求你了，旅行者们……\!老奇普恳求你们！\别这么做！\!<br>别把你们年轻的生命浪费在这种毫无意义的地方啊！
+
+
+message_85:
+  text: 你无视了老奇普的警告，拿走了\c[3]燕麦饼\c[0]。
+
+
+message_86:
+  text: \n<老奇普>哦！你竟然真的这么做了！\!我的小面团啊，你真的这么做了！\!<br>老奇普都不敢看了！
+
+
+message_87:
+  text: \n<老奇普>嗯……\!老奇普本来想警告你小心极恶奇普……\!但看上去极恶奇普并不是你们的对手。<br>我想只是老奇普太没用了而已。
+
+
+#'PAPA CHIP'
+
+message_179:
+  text: \n<老奇普>\sinv[1]吼吼！\sinv[0]\!老奇普给你们带来了好消息！
+
+
+message_180:
+  text: \n<老奇普>老奇普为了表示好意，老奇普要送给你们你们喜欢的东西！
+
+
+message_521:
+  text: 老奇普给了你\c[3]面包\c[0]！
+
+
+message_181:
+  text: \n<老奇普>我是老奇普！
+
+
+#'NEFARIOUS Chip'
+
+message_406:
+  text: \n<极恶奇普>\com[2]\{\sinv[1]哄、哄、哄、哄、哄！
+
+
+#'ACTUAL MOLE' in DOOM TOMB
+
+message_182:
+  text: \n<真正的鼹鼠>REPLACE
+
+
+message_183:
+  text: \n<真正的鼹鼠>REPLACE
+
+
+message_184:
+  text: \n<真正的鼹鼠>\quake[1]\{\{喂喂喂喂，你想干嘛？！？！
+
+
+message_185:
+  text: \n<真正的鼹鼠>REPLACE
+
+
+message_186:
+  text: \n<真正的鼹鼠>REPLACE
+
+
+message_187:
+  text: \n<真正的鼹鼠>REPLACE
+
+
+#'DOUGHIE & BISCUIT': Pre-Battle - UNUSED
+
+message_213:
+  text: \n<小面团>……
+
+
+message_214:
+  text: \n<小面团>你是幽灵吗？
+
+
+message_215:
+  text: \n<小饼干>嗯，有可能。\!看来我们那些受诅咒的糕点们终于找到我们了。
+
+
+message_216:
+  text: \n<小面团>或许他们是来复仇的？\!这还真是……
+
+
+message_217:
+  text: \n<小饼干>……不幸。
+
+
+#'DOUGHIE & BISCUIT': Post-Battle - UNUSED
+
+message_218:
+  text: \n<小面团>哦，原来你们不是鬼啊。
+
+
+message_219:
+  text: \n<小饼干>呃，这就尴尬了。\!这场心灵冒险还挺有趣的，不过是时候继续前进了。
+
+
+message_220:
+  text: \n<小饼干>到下面见我们，我们会为你们准备逃跑路线。
+
+
+message_221:
+  text: \n<小面团>我为造成的麻烦道歉。
+
+
+#'DOUGHIE & BISCUIT' - UNUSED
+
+message_222:
+  text: \n<小面团>真不知道我为什么认为你们是幽灵。
+
+
+message_223:
+  text: \n<小饼干>烘培很有趣，但我也挺享受战斗的。
+
+
+#'DOUGHIE & BISCUIT': Escape (Doom Entrance: 114) - UNUSED
+
+message_224:
+  text: \n<小面团>后会有期。
+
+
+message_225:
+  text: \n<小饼干>或者后会无期？
+
+
+message_226:
+  text: \n<小面团>无论如何……
+
+
+message_227:
+  text: \n<小饼干>再见了。
+
+
+# -----------------------------------------------
+# - FROZEN FOREST (140)
+# -----------------------------------------------
+
+message_293:
+  text: \n<告示>“一颗冰冻的心或许会融化，但一颗破碎的心却永远成了碎片……”
+
+
+message_294:
+  text: \n<告示>“别来找我……<br>寒冷才是我的归宿……”
+
+
+message_295:
+  text: \n<告示>“这里没有你们想要的东西……快离开！”
+
+
+message_296:
+  text: \n<告示>“走开！让我一个人悲惨下去吧！”
+
+
+message_297:
+  text: \n<告示>“你已经来到这里了吗。<br>我祝你被冻伤，然后死掉。”
+
+
+# -----------------------------------------------
+# - UNDERWATER HIGHWAY: CONSTRUCTION (204) - UNUSED
+# -----------------------------------------------
+
+message_249:
+  text: 这座桥年久失修，但一个[4]工具箱[0]可以帮你修好它。
+
+
+# -----------------------------------------------
+# - UNDERWATER HIGHWAY (203)
+# -----------------------------------------------
+
+#FIRST TOLL
+
+message_384:
+  text: \n<收费站鳄鱼男>这里是拼车专用道，小鬼。<br>等你有了朋友再来吧！
+
+
+message_385:
+  text: \n<收费站鳄鱼男>\{\{\sinv[1]哼哼！
+
+
+message_386:
+  text: \n<收费站鳄鱼男>小鬼们，你们真觉得有两个人就能偷偷溜过去啦，嗯？ \!这不止是一条拼车专用道……\!这可是双重拼车专用道！
+
+
+message_387:
+  text: \n<收费站鳄鱼男>你们必须有四人或以上，否则你们还是爬回原来的地方吧。
+
+
+message_388:
+  text: \n<收费站鳄鱼男>……\!你真的有三个朋友？\!<br>哼……好吧，好吧……你们过去吧。
+
+
+message_389:
+  text: \n<收费站鳄鱼男>希望你们身上带了点蚌币……哼哼……
+
+
+#GATE SNAKES
+
+message_390:
+  text: \n<收费站蛇>\sinv[1]嘶嘶嘶嘶嘶嘶嘶嘶嘶嘶嘶……<br>\sinv[0]（蛇就是这样打呼噜的。）
+
+
+message_165:
+  text: \n<收费站蛇>呼！\!我终于可以休息了……\!把我的身体伸伸伸伸伸伸直可真是太太太太太太累了！
+
+
+message_166:
+  text: \n<收费站蛇>我是蛇蛇蛇蛇蛇，但我没有毒！\!<br>恰恰相反，我还挺友善的！
+
+
+message_167:
+  text: \n<收费站蛇>缓解我的痛苦吧。
+
+
+#TOLL GATE 1, PRIZE WHEEL
+
+message_89:
+  text: \n<收费站鳄鱼男>我们这个收费站要收你……\!我看看啊……\!\v[1012] 蚌币！\!你身上够不够啊？
+
+
+message_90:
+  text: \n<收费站鳄鱼男>你们好呀，小伙伴们！\!很高兴见到你们，哼哼。
+
+
+message_91:
+  text: \n<收费站鳄鱼男>你们这些孩子想进入收费路段，是吧？\!当然……没问题！\!但既然你们都来了，我们一起找点乐子吧。
+
+
+message_92:
+  text: \n<收费站鳄鱼男>来，这儿有个转盘，你转转看？
+
+
+message_93:
+  text: \n<收费站鳄鱼男>\{\sinv[1]转得好啊，伙计！
+
+
+message_94:
+  text: \n<收费站鳄鱼男>一共收您 \v[1012] 蚌币。\!没问题吧？
+
+
+message_95:
+  text: \n<收费站鳄鱼男>\v[1012] 蚌币？！\!\v[1012] 可是不知道那个谁的幸运数字呢！
+
+
+message_96:
+  text: \n<收费站鳄鱼男>碰巧，这也是您过路费的金额。\!<br>准备好付钱了？
+
+
+message_97:
+  text: \n<收费站鳄鱼男>\com[2]\{\{\sinv[1]吼耶，赢家诞生了！！！
+
+
+message_98:
+  text: \n<收费站鳄鱼男>\v[1012] 蚌币就是我的最终价格了！<br>怎么样！心动了吧！\$
+
+
+message_99:
+  text: \n<收费站鳄鱼男>我就想听到这句话！<br>\!哎呀，和你们做生意真是荣幸啊……\!你们这群呆子。
+
+
+message_100:
+  text: \n<收费站鳄鱼男>哼……\!逃跑可不会改变价格哦，小鬼。
+
+
+message_101:
+  text: \n<收费站鳄鱼男>你们先等一下啊……\!<br>我这儿数字加起来不太对啊……\!<br>你们再重新转一次吧。
+
+
+message_102:
+  text: \n<收费站鳄鱼男>为了保险起见，我们不如再转一次？
+
+
+message_103:
+  text: \n<收费站鳄鱼男>哎呀！你们付得起的！<br>\!打个电话给你们家长吧！
+
+
+message_104:
+  text: \n<收费站鳄鱼男>哎呀，真是遗憾……\!轮盘你可以不转，这钱我可不能不赚啊。
+
+
+message_105:
+  text: \n<收费站鳄鱼男>哎呀……\!别这么小气嘛。
+
+
+message_106:
+  text: \n<收费站鳄鱼男>再见再见，再也不见……
+
+
+message_107:
+  text: \n<收费站鳄鱼男>喂喂喂！你们这是想干嘛啊，伙计们？
+
+
+message_108:
+  text: \n<收费站鳄鱼男>通通给我退后……<br>这段路可是收费路段，听清楚没有？\!<br>\com[2]要么交出蚌币，要么滚！
+
+
+#TOLL GATE 2
+
+message_109:
+  text: \n<收费站鳄鱼男>嗯哼，所以你想让我放你们过去，对吗？\!<br>当然可以，这是我的荣幸！\!只收你们 2000 蚌币哦。\$
+
+
+message_110:
+  text: \n<收费站鳄鱼男>你们这些孩子真聪明！才 \v[1001] 蚌币也太划算了，简直就是抢啊！\!<br>\}……\!哈……\!就像从小婴儿手里抢走\c[3]糖果\c[0]一样……
+
+
+message_111:
+  text: \n<收费站鳄鱼男>你是说，你们这些孩子身上连 2000 蚌币都没有？<br>太惨了吧……\!哎哟喂，你们也太倒霉了……
+
+
+message_112:
+  text: \n<收费站鳄鱼男>但是呢！\!你们也不用沮丧！<br>我碰巧有个好办法，能让你们摆脱当下的困境。
+
+
+message_113:
+  text: \n<收费站鳄鱼男>咳咳……\!你们只需要在这张纸上签字……还有这张……还有这张……这几张也签上……\!没想到吧！这样就能把 \v[979] 蚌币轻轻松松拿到手啦！
+
+
+message_114:
+  text: 你想要在这堆纸上签字吗？
+
+
+#[YES/NO]
+
+message_115:
+  text: \n<收费站鳄鱼男>给！\!2000 蚌币！\!看，很简单吧！
+
+
+message_116:
+  text: \n<收费站鳄鱼男>不过，顺带一提……\!我们是有利息的啊。\!<br>时机一到，我们就会上门催款的……
+
+
+message_117:
+  text: \n<收费站鳄鱼男>来嘛！别这么拘谨嘛！
+
+
+message_118:
+  text: \n<收费站鳄鱼男>所以你想让我放你们过去，对吧？\!<br>只收你们 5000 蚌币。\$
+
+
+message_119:
+  text: \n<收费站鳄鱼男>你们就是那些签了贷款的孩子们！\!<br>相信我……你们之后会感谢我的！
+
+
+message_120:
+  text: \n<收费站鳄鱼男>啥，蚌币不够？\!没事的，哥们……<br>人总有缺钱的时候嘛。
+
+
+message_121:
+  text: \n<收费站鳄鱼男>有什么问题吗？\!你说我调高了价格？
+
+
+message_122:
+  text: \n<收费站鳄鱼男>没错，就是我干的。\!怎么了？
+
+
+message_123:
+  text: \n<收费站鳄鱼男>祝你们有个美好的一天！
+
+
+message_124:
+  text: \n<收费站鳄鱼男>我看到你们这帮小孩想爬过闸门！\!<br>快下来！禁止擅自闯入私人领地！
+
+
+message_168:
+  text: \n<收费站鳄鱼男>不错，不错。\!<br>给……这 3000 蚌币是你的了！
+
+
+message_169:
+  text: \n<收费站鳄鱼男>好耶……\!等你有了更多蚌币记得回来啊……
+
+
+message_170:
+  text: \n<收费站鳄鱼男>所以你想让我放你们过去，对吧？\!<br>只收你们 10000 蚌币哦。\$
+
+
+message_171:
+  text: \n<收费站鳄鱼男>我会等着的。
+
+
+message_172:
+  text: \n<收费站鳄鱼男>……
+
+
+#TOLL GATE 3
+
+message_125:
+  text: \n<收费站鳄鱼男>\sinv[1]Zzzzzzzzzzzzzzzzzzzzzzzzzz……
+
+
+message_126:
+  text: \n<收费站鳄鱼男>嗯？这是哪儿？
+
+
+message_127:
+  text: \n<收费站鳄鱼男>啊，坏了！
+
+
+message_128:
+  text: \n<收费站鳄鱼男>老板，您看！我真的没有在睡觉……我只是——
+
+
+message_129:
+  text: \n<收费站鳄鱼男>喔……原来只是群小孩啊……\!<br>你们八成就是想让我打开这个闸门，对吧？
+
+
+message_130:
+  text: \n<收费站鳄鱼男>跟你们说实话吧……我们这几个收费站的价格压根就是在抢劫啊。\!我这里得收你 3000 蚌币，不过如果我是你，我就另寻出路了。<br>所以说，你还想让我打开闸门吗？\$
+
+
+message_131:
+  text: \n<收费站鳄鱼男>真的假的？\!你闲钱这么多啊？
+
+
+message_132:
+  text: \n<收费站鳄鱼男>你肯定钱多到都能在金钱池里游泳了……
+
+
+message_133:
+  text: \n<收费站鳄鱼男>好吧，我把闸门打开了。
+
+
+message_134:
+  text: \n<收费站鳄鱼男>没这么多钱对吧？\!是啊，我也猜到了……<br>掉头离开吧，孩子们。这附近除了鲨鱼也没别的了。
+
+
+message_135:
+  text: \n<收费站鳄鱼男>明智的决定。\!把钱存起来买个酷炫的自行车之类的吧。
+
+
+message_136:
+  text: \n<收费站鳄鱼男>嘿，你们回来了！\!费用和往常一样，3000 蚌币。\$
+
+
+message_137:
+  text: \n<收费站鳄鱼男>现在的孩子啊，真是不得了……
+
+
+message_138:
+  text: \n<收费站鳄鱼男>嘿，别碰那个！<br>它出了什么事都要算在我头上！
+
+
+# -----------------------------------------------
+# - UNDERWATER HIGHWAY: TAXI RIDE (211)
+# -----------------------------------------------
+
+message_139:
+  text: \n<出租车司机>嘿，孩子们！你想去很酷的地方吗？
+
+
+message_140:
+  text: \n<出租车司机>他们管那里叫\c[11]最后度假村\c[0]！\!那是最流行，最热门的地方，是这里未经雕琢的璞玉……\!<br>你们肯定听说过！
+
+
+message_141:
+  text: \n<出租车司机>我只象征性的收 3000 蚌币，我就带你们去那里！<br>来吧……别害羞！\!我不咬人的……\!大概……
+
+
+message_142:
+  text: 这趟出租车收了你很高的费用。\!你没有可以分担费用的朋友真是太糟糕了……
+
+
+message_143:
+  text: \n<出租车司机>嗯嗯……看起来你们手头的钱不太够啊……\!<br>不过没关系……你们有多少我就收多！哈哈！
+
+
+message_144:
+  text: \n<出租车司机>嗯嗯……看起来你们手头的钱不太够啊……\!<br>不过没关系……你们有多少我就收多——
+
+
+message_145:
+  text: \n<出租车司机>哇哦……你们真的一分都没了，嗯？\!<br>你们肯定被骗的很惨啊。\!真同情你们。
+
+
+message_146:
+  text: \n<出租车司机>嘿，孩子们！\!你们想回\c[11]深井\c[0]吗？<br>只会花你 1500 蚌币。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS LAIR: WATER SLIDE (230)
+# -----------------------------------------------
+
+### NO LONGER USED ###
+
+# message_53:
+#     text: Which way do you want to go?
+
+# message_54:
+#     text: Left
+
+# message_55:
+#     text: Right
+
+# message_56:
+#     text: Down
+
+message_292:
+  text: 欢迎来到美杜莎水滑梯！\!<br>按下方向键来更改水道！
+
+
+### NO LONGER USED ###
+
+# -----------------------------------------------
+# - SLIME GIRLS: MARINA (221)
+# -----------------------------------------------
+
+#TUMOR SIGN 1
+
+message_231:
+  text: 展览\!怪异生物\!<br>特异功能\!被砸烂后能迅速恢复
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MARINA (222)
+# -----------------------------------------------
+
+#CHIMERA SIGN
+
+message_626:
+  text: 警告\!不要触碰玻璃
+
+
+#TUMOR SIGN 2
+
+message_164:
+  text: 展览\!怪异生物\!<br>特异功能\!可以变化成一座桥
+
+
+#BUNNY SIGN
+
+message_232:
+  text: 展览\!兔兔们\!<br>特异功能\!软软绵绵
+
+
+#RECEPTION HUMPHREY
+
+message_233:
+  text: \n<接待员汉弗莱>欢迎！\!玛丽娜现在不接见任何人……\!但如果你喜欢我们的展览，可以随时爬进笼子里，静心等待我们下一次的实验。
+
+
+message_234:
+  text: \n<接待员汉弗莱>等尖叫声停下来的时候，就轮到你们了。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MARINA (225)
+# -----------------------------------------------
+
+message_372:
+  text: \n<汉弗莱>我喜欢这个位置！
+
+
+message_621:
+  text: \n<汉弗莱>我听说这里有很多美味的西瓜，所以我把它们全吃光喽！\嗯嗯……真～美味！
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MEDUSA (250)
+# -----------------------------------------------
+
+message_235:
+  text: \n<汉弗莱>是来游泳的吗？\!我也是！
+
+
+message_236:
+  text: \n<汉弗莱>嘿，人类们。
+
+
+message_237:
+  text: \n<汉弗莱>你们知道我们汉弗莱壮实的身体可以抵御瀑布的飞流吗？\!看好了！
+
+
+message_238:
+  text: \n<汉弗莱>哎呀！\!可能除了那家伙以外吧……<br>\!正所谓优胜劣汰，自然选择嘛。
+
+
+message_239:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel噢！\!说起来我有个想法！\!<br>只要让够多的汉弗莱来这里集合——
+
+
+message_905:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 3
+  text: \aub那或许……我们就能用它们搭一座桥，到另一边去！
+
+
+message_906:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 30
+  text: \kel\com[2]嘿！你怎么抢我台词！
+
+
+message_240:
+  text: \n<汉弗莱>我认为美杜莎的实验有着百分之十四乘七加四十四除以十一减二的成功几率！
+
+
+message_241:
+  text: \n<汉弗莱>我学得最烂的就是生物，但这并不能阻挡我！
+
+
+message_242:
+  text: \n<硕鼹鼠>我乃硕鼹鼠。
+
+
+message_243:
+  text: \n<硕鼹鼠>为了报答萍水相逢之情，我祝福你们金玉满堂。
+
+
+message_904:
+  text: \n<硕鼹鼠>我已经功德圆满。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MEDUSA (231)
+# -----------------------------------------------
+
+message_327:
+  text: \n<汉弗莱>我的朋友都去搭桥了，只留下我一个……\!我要自己造出更大的桥，让他们下不了台！
+
+
+message_328:
+  text: \n<汉弗莱>如果你看到有汉弗莱在附近漂流，记得让它来我这。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MEDUSA (230)
+# -----------------------------------------------
+
+message_397:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 呼……\!呼……\!呼……\her
+
+
+message_398:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 大家……\!我们……\!可以去……\!玩点……\!别的吗……\!拜托了……\!\her
+
+
+message_399:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 48
+  text: 也不急……\!只是我……\!感觉……\!呕……\!有点难受……\her
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MOLLY MAIN ROOM (236)
+# -----------------------------------------------
+
+message_147:
+  text: \n<莫莉>\com[539]啊啦，你好呀玛丽娜……\!<br>\com[539]你又来偷我的东西了？<br><br>\com[539]呵，想都别想。\!
+    \com[539]今天我为你准备了\com[539]一些很特别的东西……\sinv[1]呼呼呼～
+
+
+message_149:
+  text: \n<莫莉>\com[539]你也知道，\com[539]我可是个大忙人。\!<br>\com[539]但毕竟……你是我的妹妹。<br><br>\com[539]我可以让你\com[539]进我的房间……\!<br>但首先，\com[539]你得\com[539]解开我的小小礼物。
+
+
+message_150:
+  text: \n<莫莉>\com[539]\com[539]期待与你会面哦，亲爱的……\!\com[539]如果你到时还活着的话！\com[539]
+
+
+#TERMINAL INTERACTION
+
+message_392:
+  text: “类型……谜题”<br>“主题……图案”<br>“难度……简单”
+
+
+message_393:
+  text: “类型……谜题”<br>“主题……记忆”<br>“难度……困难”
+
+
+message_394:
+  text: “类型……谜题”<br>“主题……多项选择题”<br>“难度……中等”
+
+
+message_496:
+  text: 你想激活这个谜题吗？\!<br>在解决这个谜题之前，你不能切换到其他谜题。
+
+
+message_497:
+  text: “类型……谜题”<br>“状态……已解决”
+
+
+#PASSWORD PUZZLE (Bomb Collision)
+
+message_498:
+  text: 你想输入密码吗？
+
+
+message_622:
+  text: \n<广播>你以为你很聪明吗，嗯？
+
+
+message_907:
+  text: 密码是什么？
+
+
+#WIRE PUZZLE (Wire Events)
+
+message_499:
+  text: 你想切断\c[8]红色电线\c[0]吗？
+
+
+message_500:
+  text: 你想切断\c[11]蓝色电线\c[0]吗？
+
+
+message_501:
+  text: 你想切断\c白色电线\c吗？
+
+
+message_502:
+  text: 你想切断\c[3]绿色电线\c[0]吗？
+
+
+#BUTTON PUZZLE (Bomb Collision)
+
+message_503:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: 去吧！\!我们相信你！\aub
+
+
+message_504:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: 没问题的！你三下五除二就能解决！\kel
+
+
+message_505:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 36
+  text: 你能做到的！我们支持你！\her
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MOLLY ROOM RIGHT 2 (238)
+# -----------------------------------------------
+
+#WELCOME HUMPHRIES
+
+message_445:
+  text: \n<接待员汉弗莱>欢迎！\!你们即将进入莫莉的测试中心。这里是她做各种实验和分析的地方！
+
+
+message_477:
+  text: \n<接线员汉弗莱>根据我们的测试，树苗鼹鼠似乎是由\c[3]豆腐\c[0]长成的！\!谁又能想到呢？！
+
+
+message_478:
+  text: \n<接线员汉弗莱>啊……实验结果真是出人意料……\!有了这些知识，我或许就能找到长生不老的办法了！
+
+
+message_479:
+  text: \n<接线员汉弗莱>哦呀！当然啦，这些数字怎么会是对的呢！\!<br>……\!哦……等等……\!我好像真的算错了……\!<br>那当我没说。
+
+
+message_480:
+  text: \n<接线员汉弗莱>我们对于这个世界理解的太少，所以我们研究它……\!但我们的研究却带来了更多疑问！\!<br>这就是个无尽无果的循环！
+
+
+message_481:
+  text: \n<接线员汉弗莱>汉弗莱呼叫汉弗莱……你那边听得到吗？
+
+
+message_482:
+  text: \n<接线员汉弗莱>嗯……\!明白了……\!<br>你试过重启吗？
+
+
+message_483:
+  text: \n<接线员汉弗莱>在这里工作很难做出成果，因为莫莉总是给我们的研究添乱……<br><br>要是能被分配到美杜莎的区域就好了……\!<br>他们就是努力工作尽情享乐的类型……<br>我听说他们甚至还有个水滑梯呢！
+
+message_484:
+  text: \n<接线员汉弗莱>我就这个意思……\!从监控上来看，她正在“工作间”里捣鼓什么东西……\!好的，明白……\!<br>我会继续监视的。
+
+message_485:
+  text: \n<接线员汉弗莱>看上去玛丽娜刚刚对客户大打出手了。\!情况看起来不妙啊……
+
+
+#Teleport Object
+
+message_396:
+  text: \n<树苗鼹鼠>我干啥要报名参加这个呢。
+
+
+#FIRST HUMPHREY (Pattern)
+
+message_446:
+  text: \n<汉弗莱>访客们，你们好啊！\!想看点很酷的东西吗？\!<br>这台机器可以实现远程传送！
+
+
+message_454:
+  text: \n<汉弗莱>有了现代科技的力量，我可以把这个树苗鼹鼠传送到格子的另一侧！\!看好了！
+
+
+message_455:
+  text: \n<汉弗莱>\com[2]怎么回事？！报错了？\!……\!<br>肯定有人乱改了程序。<br><br>唉……\!估计又是莫莉干的……\!<br>她总是这么胡闹……
+
+
+message_456:
+  text: \n<汉弗莱>真是的，莫莉！\!明明今天早上一切都还正常……
+
+
+#SECOND HUMPHREY (Pattern)
+
+message_447:
+  text: \n<汉弗莱>访客们，你们好啊！\!我在指挥这个汉弗莱穿过汉弗莱的实验！\!你们来得正好，我们正要举行最终测试！
+
+
+message_448:
+  text: \n<汉弗莱>准备好了吗大伙？\!按照排练时候的样子来就可以了！
+
+
+message_449:
+  text: \n<汉弗莱>这……这不在计划之中啊……
+
+
+message_451:
+  text: \n<汉弗莱>大家都去哪了？
+
+
+message_457:
+  text: \n<汉弗莱>我们正在测试！
+
+
+message_458:
+  text: \n<汉弗莱>我等不及炫耀我们的研究成果了！
+
+
+message_459:
+  text: \n<汉弗莱>我准备好了！
+
+
+message_460:
+  text: \n<汉弗莱>我真应该最后再看一遍笔记……
+
+
+message_476:
+  text: \n<汉弗莱>准备好被惊艳到吧！
+
+
+#FOURTH HUMPHREY (Pattern)
+
+message_452:
+  text: \n<汉弗莱>啊！访客们，你们好！\!通过夜以继日的努力研究，我终于发明了史上第一台汉弗莱全息投影仪！<br>它们看起来很逼真吧？\!<br>呜呜……\!我真是引以为豪……
+
+
+message_453:
+  text: \n<汉弗莱>莫莉让我站在这，我也不知道为啥！
+
+
+#THIRD HUMPHREY (Pattern)
+
+message_461:
+  text: \n<汉弗莱>嗯嗯……\|哦呀……\|呃……\|哼嗯……\|诶？
+
+
+message_462:
+  text: \n<汉弗莱>嗯？你为什么盯着我看？\!<br>看不出来我在忙吗？
+
+
+message_463:
+  text: \n<汉弗莱>……
+
+
+message_700:
+  text: \n<汉弗莱>话又说回来……我突然有个想法！\!我仔细想了想，你们能不能找个人去那几个金属板上跑跑看呢？\!<br>我想测试点东西。
+
+
+message_701:
+  text: \n<汉弗莱>要不，你们内部讨论一下，然后投票决定？
+
+
+message_702:
+  text: 应该让谁来帮助汉弗莱的实验？
+
+
+message_465:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 好吧……既然这样，OMORI，就交给你了。\!小心一点噢！\!我总有种不好的预感。\aub
+
+
+message_466:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 4
+  text: 嗯？\!让我去吗？\!好吧……但我总有种不好的预感。\aub
+
+
+message_467:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 31
+  text: 啥？！为啥是我去？！\!<br>好吧……但我总有种不好的预感。\kel
+
+
+message_468:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: 交给我吧……\!不过，我总有种不好的预感。\her
+
+
+message_469:
+  text: \n<汉弗莱>快点呀！我可没时间陪你们耗！
+
+
+message_470:
+  text: \n<汉弗莱>\com[2]啊哈！我就知道有个尖刺机关坏掉了……
+
+
+message_471:
+  text: \n<汉弗莱>可惜我手头没有一杯咖啡，不然我现在肯定会啜上一口！
+
+
+message_472:
+  text: \n<汉弗莱>感谢你自愿冒生命危险。
+
+
+message_473:
+  text: \n<汉弗莱>嗯……我还是去修一下吧。
+
+
+message_474:
+  text: \n<汉弗莱>嗯嗯……\|哦呀……\|呃……\|哼嗯……\|诶？
+
+
+message_475:
+  text: “类型……控制台”<br>“状态……损坏”
+
+
+message_174:
+  text: OMORI
+
+
+message_175:
+  text: 奥布里
+
+
+message_176:
+  text: 凯
+
+
+message_177:
+  text: 英雄
+
+
+message_450:
+  text: \n<汉弗莱>喂喂！悠着点，伙计。还没完呢！\!你得把所有的金属板都踩一遍！
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: LOST ROOM 1 (241) UNUSED
+# -----------------------------------------------
+
+message_486:
+  text: \n<博学的汉弗莱>一位智鲸曾经说过……<br>“数清楚你的敌人就能走上通往胜利的道路！”\!或者类似的话……
+
+
+message_608:
+  text: \n<博学的汉弗莱>您需要协助吗？
+
+
+message_609:
+  text: \n<博学的汉弗莱>如果你把注意力转移到这个显示器上，你就能看见四个传送器的位置。计算房间里敌人的数量，你就能知道哪个位置才是正确的！
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: LOST ROOM 4 (247)
+# -----------------------------------------------
+
+message_487:
+  text: \n<博学的汉弗莱>一位智鲸曾经说过……<br>“道路的顺序会引导你走向解答！”\!或者类似的话……
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MOLLY ROOM LEFT 2 (240)
+# -----------------------------------------------
+
+message_329:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel啊，又是这些家伙！\!英雄，大展身手吧！
+
+
+message_330:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \n<英雄>哟，你说得对！
+
+
+message_331:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 49
+  text: \n<英雄>咳咳……\!贵安，输送带机器人爵士。\!我与我的同行者需要您出手相助，改变输送带的方向。\!请问您和您的朋友是否能帮助我们呢？
+
+
+message_332:
+  text: \n<输送带机器人先生>\quake[1]嗞……\!哼……\!有礼貌的人……\quake[0]
+
+
+message_333:
+  text: \n<输送带机器人先生>\quake[1]快……滚……\quake[0]
+
+
+message_334:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 40
+  text: \n<英雄>诶、诶？怎么回事……\!以前明明很管用的……
+
+
+message_335:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 29
+  text: \kel别泄气嘛，英雄！\!可能只是他有哪个齿轮没装好之类的！
+
+
+message_336:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 10
+  text: \aub你还能说得再大声点吗？\!现在他对我们更生气了！
+
+
+message_337:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel喂，你这个废铜烂铁！<Br>快点转一下传送带的方向，知道没？
+
+
+message_338:
+  text: \n<输送带机器人先生>\quake[1]嗞嗞！\!啊……\!嗯……\!没礼貌的人……\!<br>嘿嘿……\!就像莫莉一样……\quake[0]
+
+
+message_339:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 11
+  text: \aub……\!真不敢相信竟然管用了。
+
+
+message_340:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel哈，你懂个啥呀？<br>看来我其实挺擅长的嘛，这个叫魅力的玩意儿！
+
+
+message_382:
+  text: \n<英雄>换我上吧！我知道该怎么做！
+
+
+message_999:
+  text: 所有的输送带机器人都会为你调转方向了。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS: MOLLY ROOM LEFT 1 (239)
+# -----------------------------------------------
+
+message_488:
+  text: \n<汉弗莱>莫莉让我们在背上写字，然后按这个顺序站好！
+
+
+message_489:
+  text: \n<汉弗莱>应该是这个顺序没错吧……
+
+
+message_490:
+  text: \n<汉弗莱>我挺确定你应该和右边那位互换位置……
+
+
+message_491:
+  text: \n<汉弗莱>另外，当我说“右边”时，我是指站在我面前的你的右边……而不是某个坐在屏幕前看着我们的假想观察者的右边。
+
+
+message_492:
+  text: \n<汉弗莱>这肯定又是莫莉出的什么超难谜题……
+
+
+message_493:
+  text: \n<汉弗莱>那姑娘就是太不安分了，整天打打闹闹。如果她专心致志搞研究的话，说不准能为世界带来很多贡献呢！
+
+
+message_494:
+  text: \n<汉弗莱>还好我在写这个“M”之前检查了一遍，<br>不然我差点就又写了个“B”……
+
+
+message_495:
+  text: \n<汉弗莱>那可就完了啊。
+
+
+# -----------------------------------------------
+# - SLIME GIRLS LAIR: MEDUSA (231, 250)
+# -----------------------------------------------
+
+#FLOATIE HUMPHRIES 1
+
+message_57:
+  text: \n<汉弗莱>当然可以啊！我还怕你不找我呢！
+
+
+message_58:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel嘿，汉弗莱！你想不想去瀑布那里加入你的汉弗莱好朋友们呀？
+
+
+message_610:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[13]\i[13]\i[13]
+
+
+message_611:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[13]\i[13]
+
+
+message_612:
+  text: \n<汉弗莱桥\i[14]\i[14]\i[14]\i[14]\i[14]\i[13]
+
+
+message_613:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]
+
+
+#FLOATIE HUMPHRIES 2
+
+message_614:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[13]\i[13]\i[13]\i[13]\i[13]\i[13]
+
+
+message_615:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[13]\i[13]\i[13]\i[13]\i[13]
+
+
+message_616:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[13]\i[13]\i[13]\i[13]
+
+
+message_617:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[14]\i[13]\i[13]\i[13]
+
+
+message_618:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]\i[13]\i[13]
+
+
+message_619:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]\i[13]
+
+
+message_620:
+  text: \n<汉弗莱桥>\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]\i[14]
+
+
+# -----------------------------------------------
+# - RECYCULTIST: RANDOM DIALOGUE (341)
+# -----------------------------------------------
+
+message_250:
+  text: \n<回收教徒>圣垃圾桶乃我的救世主，我不可浪费。
+
+
+message_251:
+  text: \n<回收教徒>他拾遍嫩草地上的垃圾。<br>他引导我往洁净的水边去。
+
+
+message_252:
+  text: \n<回收教徒>他回收我的灵魂。<br>他引导我走清洁的道。
+
+
+message_253:
+  text: \n<回收教徒>愿可生物降解叉子担当我们的罪孽，使我们得到洗涤。
+
+
+message_254:
+  text: \n<回收教徒>愿我们终有一日被循环利用，被送到零垃圾世界那里去。
+
+
+message_255:
+  text: \n<回收教徒>哦，伟大的圣垃圾桶在上，求你洗涤我们，救我们免于垃圾的迫害吧！
+
+
+message_256:
+  text: \n<回收教徒>愿住在我里面的橡胶手套之灵做它的工作，<br>使我更接近天上的圣桶与零垃圾世界。
+
+
+message_257:
+  text: \n<回收教徒>圣垃圾桶多么爱世界，以至于他把那惟一洁净的可生物降解叉子赐给我们；凡信它的人，不可乱扔垃圾，而是度尽零垃圾的年岁……
+
+
+message_258:
+  text: \n<回收教徒>兄弟姐妹们，我们必须接受我们都是垃圾。
+
+
+message_259:
+  text: \n<回收教徒>尽管我们都是垃圾，只要我们保持可生物降解，我们都能得到救赎。
+
+
+# -----------------------------------------------
+# - RECYCULTIST: END PRAYER (341)
+# -----------------------------------------------
+
+message_260:
+  text: \n<回收教徒>以可生物降解叉子之名……\!<br>节能减用，重复使用，回收利用。
+
+
+# -----------------------------------------------
+# - RECYCULTIST: DEFEATED (341)
+# -----------------------------------------------
+
+message_261:
+  text: \n<回收教徒>求圣垃圾桶饶恕我……\!因我乱扔垃圾了……
+
+
+message_262:
+  text: \n<回收教徒>我被垃圾击败了！\!求圣垃圾桶饶恕我！皆因我已变得无用而不洁，一点也不配得零垃圾世界！
+
+
+message_263:
+  text: \n<回收教徒>完了！我把洗手液忘在家里了！
+
+
+message_264:
+  text: \n<回收教徒>我知道他是我们的教主啦，但你不觉得，修建一座这么巨大的垃圾塔本身就是一种亵渎吗？
+
+
+message_265:
+  text: \n<回收教徒>嗅嗅……嗅嗅……\!呕……\!<br>我有点脏了。我要回家洗个澡。
+
+
+message_266:
+  text: \n<回收教徒>哟……\!虽然你大概不在乎……<br>不过，我其实并不信这种东西。
+
+
+message_267:
+  text: \n<回收教徒>我的女朋友非要带我来……\!她被这种循环回收之类的玩意儿冲昏头脑了……
+
+
+message_268:
+  text: \n<回收教徒>可恶……我输了……
+
+
+message_269:
+  text: \n<回收教徒>喂，别对我说三道四的，好吗？！<br>我这么做只是为了大学学分……
+
+
+# -----------------------------------------------
+# - RECYCULTIST: MISC (341)
+# -----------------------------------------------
+
+#Group of RECYCULTISTS
+
+message_281:
+  text: \n<回收教徒>你好好看看我们这儿有多少人，然后颤抖吧！\!你没有忠诚的门徒，所以你是永远也无法击败我们的！
+
+
+message_247:
+  text: \n<回收教徒>即便你还……\!挺有魅力的。
+
+
+message_248:
+  text: \n<回收教徒>等你们人数超过我们再回来吧！\!到那时我们再来一决胜负。
+
+
+message_282:
+  text: \n<回收教徒>哎呀……\!现在你们的人数貌似超过了我们。
+
+
+message_283:
+  text: \n<回收教徒>看来除了投降我们别无选择了……\!嗯，我投降。\!我们走吧。\!有谁想今晚一起来吃烧烤吗？
+
+message_284:
+  text: \n<被转化的？回收教徒>呃，这样的话……\!那我们也走了。
+
+#Block guy
+
+message_285:
+  text: \n<回收教徒>我花了八个小时来建造这个坚不可摧的方块。\!我就看你们怎么过去！
+
+
+message_286:
+  text: \n<回收教徒>噢……
+
+
+#HERO charm
+
+message_287:
+  faceset: MainCharacters_Faraway
+  faceindex: 37
+  text: 你这样的人不适合待在这样的地方……\!在事情变得一发不可收拾之前，我们一起来处理好这个烂摊子，怎么样？\her
+
+
+message_288:
+  text: \n<回收教徒>嗯，你说得挺有道理。
+
+
+message_289:
+  text: \n<回收教徒>我很想加入你们，但你们人数好像已经爆满了……
+
+
+message_290:
+  text: \n<回收教徒>竟要我投效龌龊的塑料使用者？\!绝不！\!<br>……\!除非……\!你能找个更有魅力的人来。
+
+
+message_291:
+  text: \n<回收教徒>我应该思考一下人生……
+
+
+# -----------------------------------------------
+# - RECYCULTIST: BILLY CHALLENGED (341)
+# -----------------------------------------------
+
+message_270:
+  text: \n<回收狂人>你好……\!欢迎来到瓦砾塔的顶层。
+
+
+message_271:
+  text: \n<回收狂人>我……
+
+
+message_272:
+  text: \n<回收狂人>回收狂人……
+
+
+message_273:
+  text: \n<回收狂人>正是唯一被选中，奉圣垃圾桶之名说话的人！
+
+
+message_274:
+  text: \n<回收狂人>昨晚我做了个梦。
+
+
+message_275:
+  text: \n<回收狂人>橡胶手套之灵告诫我，我们已不再适合待在这个世界了。\!我们要谨守天上的圣垃圾桶的律例，建造此塔……
+
+
+message_276:
+  text: \n<回收狂人>以抵达零垃圾世界，一个人类和可生物降解材料和谐共处的应许之地！
+
+
+message_277:
+  text: \n<回收狂人>你们这些孩子一路来到这里……\!但恐怕，你们的旅途就要到此为止了。
+
+
+message_278:
+  text: \n<回收狂人>毕竟，你们不过是一群垃圾……\!<br>一群污秽而愚昧的塑料使用者罢了！
+
+
+message_279:
+  text: \n<回收狂人>愿可生物降解叉子的荣光赐予我力量！
+
+
+message_280:
+  text: \n<回收狂人>准备好被\com[2]回收掉吧！
+
+
+# -----------------------------------------------
+# - RECYCULTIST: BILLY RECYCLED (341)
+# -----------------------------------------------
+
+message_300:
+  text: \n<回收狂人>不……\!这怎么可能？\!你们……\!你们明明只是一群垃圾……
+
+
+message_301:
+  text: \n<回收狂人>难道我们并非注定会抵达零垃圾世界……\!难道圣垃圾桶已抛弃我们？
+
+
+message_302:
+  text: \n<回收狂人>不……\!我一定是理解错了它的旨意。\!圣垃圾桶岂会犯错？
+
+
+message_303:
+  text: \n<回收狂人>犯错的人必是我自己……
+
+
+message_304:
+  text: \n<回收狂人>等等……\!我完全理解了！
+
+
+message_305:
+  text: \n<回收狂人>圣垃圾桶必是想告诉我，零垃圾世界并不存在！\!我们只能尽自己所能让现在的世界变得更好……
+
+
+message_306:
+  text: \n<回收狂人>没错……\!来吧，兄弟姐妹们！\!我们的应许之地并不在天上，它就在我们的脚下啊。
+
+
+message_307:
+  text: \n<回收狂人>我们必须齐心协力，让这个世界变得零垃圾！
+
+
+# -----------------------------------------------
+# - RECYCULTIST: CLEANED TRASH (341)
+# -----------------------------------------------
+
+message_320:
+  text: \n<回收狂人>让我们祈祷……
+
+
+message_321:
+  text: \n<回收教徒>我们在天上的圣垃圾桶啊，你绝无污秽和腐朽。
+
+
+message_322:
+  text: \n<回收教徒>愿你的洁净来临，愿你的旨意奉行在人间，如同在天上的零垃圾世界。
+
+
+message_323:
+  text: \n<回收教徒>求你今天赏给我们日用的手套，求你饶恕我们擅自侵入的罪过，如同我们宽恕别人，清理他们留下的垃圾一样。
+
+
+message_324:
+  text: \n<回收教徒>不要让我们陷于诱惑，但救我们免于乱扔垃圾之人。
+
+
+message_325:
+  text: \n<回收教徒>以可生物降解叉子之名……
+
+
+message_326:
+  text: \n<回收教徒>节能减用，重复使用，回收利用。
+
+

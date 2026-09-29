@@ -1,0 +1,405 @@
+# =========================================================================================
+# PLUTO ON THE RUN
+# =========================================================================================
+
+message_0:
+  text: \n<太空海盗兄弟>\Com[2]\{给我站住！！
+
+message_1:
+  text: \n<太空海盗伙计>我们可算找着你了，冥王星！<br>\{这次你可逃不掉了！！
+
+#PLUTO runs into snaley and knocks him away
+
+message_2:
+  text: \who\}哦，不……\! 我巨大，强壮的手臂和腿要撑不住了。
+
+message_52:
+  text: \who不能就这样结束。<br>我得找个藏身之处！
+
+#PLUTO looks around in a panic and turns to party
+
+message_3:
+  text: \who嘿，你们几个！\} 呼哧……呼哧……\!<br>求……\!求你们助我一臂之力！
+
+message_4:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her哈……哈？哦……呃……那个……\!呃……
+
+message_5:
+  text: \who\{快点儿！我没时间了！！
+
+message_6:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 19
+  text: \kel你需要一个能躲起来的地方是吧，嗯……
+
+#HERO looks around
+#HERO faces away from pluto
+
+message_7:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\{啊哈！有了！！
+
+#HERO turns back to PLUTO
+
+message_8:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel放心吧！我已经完全明白了该怎么做了。
+
+# =========================================================================================
+# PLUTO IN HIDING
+# =========================================================================================
+
+#PLUTO is hiding in a crater with plant
+
+message_9:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel嗯！这样就行啦！
+
+#HERO looks up
+
+message_50:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her该死，他们过来了！
+
+#HERO looks at party
+
+message_51:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her大家，快……快自然点儿！
+
+#PARTY members surround the crater looking up
+
+#SPACE PIRATES walk in
+
+message_10:
+  text: \n<太空海盗伙计>\}呼哧……呼哧……\!该死！又让他给跑了！
+
+#SPACE PIRATE turns to party
+
+message_11:
+  text: \n<太空海盗兄弟>你们几个！见过一个叫冥王星的游荡行星没有？很值钱的那种。\!这家伙走到哪儿都大张旗鼓的，长得又大又圆又灰，还有鼓鼓的肌肉。
+
+message_12:
+  text: \n<太空海盗兄弟>这家伙其实还挺显眼的……\!<br>你们见过吗？
+
+
+message_13:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 0
+  text: \aub呃…………
+
+message_14:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel呃…………
+
+message_15:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her没……没有？也……也不能说我们见过……
+
+message_16:
+  text: \n<太空海盗兄弟>哈？是吗？\! ………………\!或许……这就是没有缘分吧！\!<br>咱们走！接着找！\!<br>总有一天能找到他的！
+
+#SPACE PIRATES leave
+#KEL turns around
+
+message_17:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel\}好啦，这位先生……你现在安全了。\{
+
+#PLUTO pops out of crater, potted plant drops
+#PLUTO laugh
+
+message_18:
+  text: \who\Com[2]\sinv[2]\{嘎哈\{哈哈哈\{哈哈哈！！\}
+
+message_19:
+  text: \who诸位表现出的聪明机敏着实令我钦佩！
+
+message_20:
+  text: \who感激之情无以言表。<br>如若方便，可否将姓名告知在下？
+
+message_21:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her我叫英雄，这是我的朋友们奥布里，凯和OMORI。
+
+message_22:
+  text: \who很好！只有优秀的年轻人才配得上这样优秀的姓名！
+
+message_23:
+  text: \plu在下冥王星，是一颗叛逃行星……\!<br>你们也可以把我当做一位流浪者。\! 今天给你们添了太多麻烦，<br>请收下我最真诚的歉意。
+
+message_24:
+  text: \plu但……\!不管怎么说，我还是坚持认为我此生存在的意义不仅限于当一个花园装饰。
+
+#PLUTO turns up
+#Background below turns into space parallax
+
+message_25:
+  text: \plu我想自由自在地漫游天空，就像鸟儿和星星一样！
+
+message_26:
+  text: \plu如果这让我成为了一颗叛逃行星，那我就当一颗叛逃行星吧。<br>\!他们怎么称呼我我都不介意，<br>只要我能为所欲为就行！
+
+#Background below turns to normal
+#PLUTO turns to party
+
+message_27:
+  text: \plu\Com[2]我的灵魂渴望自由！\!<br>你们……你们能理解我吧？孩子们？
+
+#HERO turns to KEL
+
+message_28:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her哇……哇哦！凯，你是哭了吗？？
+
+message_29:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 23
+  text: \kel\}呜呜……如此真挚的情感……\! 我太感动了……冥王星<br>\!你刚才说得太感人了……
+
+message_30:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 5
+  text: \aub\}呜呜……呜呜……\! 你说得太对了，凯。
+
+#HERO turns to AUBREY
+
+message_31:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her等……等等，奥布里你也？？
+
+
+message_32:
+  text: \plu现在，这一天终于到来了……\!<br>我终于可以自由地追逐毕生的梦想了，那就是——\!<br>成立一家运输公司！
+
+message_33:
+  text: \plu我要叫它“冥王特快”！
+
+#message 18
+
+message_34:
+  text: \plu这梦想实现的一刻！令我的精神无比振奋！\!<br>此前，你为我提供了无私的帮助，现在，我当涌泉相报！
+
+message_35:
+  text: \plu……\! 咳咳！\! 我是“冥王特快”的冥王星。\!<br>现在快假装你刚到我的公交站。
+
+#PLUTO turns around
+
+message_36:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her啊，好的！\! 呃……\! 你好？\! 冥王星？
+
+#PLUTO shake
+#PLUTO turn to party
+
+#message18
+
+message_37:
+  text: \plu\Com[2]\quake[1]\{欢迎来到\Com[2]冥王特快！！！\}
+
+message_38:
+  text: \plu\Com[2]\{今天你们\Com[2]要去\Com[2]哪里呢，<br>\Com[2]年轻的\Com[2]旅行者们？？
+
+message_39:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \her呃啊！
+
+message_40:
+  text: \plu哦，稍微有点过了？<br>\!嗯。\!我低调点试试……\!<br>咱们再来一次！
+
+#PLUTO turns back
+
+message_41:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 47
+  text: \her没事，已经很不错了！<br>能把我们送到营地那边吗？拜托了！
+
+
+message_43:
+  text: \plu你们想去\c[11]异世界\c[0]营地？\!……\! 啊哈，我的第一个委托……\! <br>\sinv[1]多么令人兴奋！
+
+#PLUTO turn facing away
+#PLUTO shake
+
+message_54:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 46
+  text: \kel\}哦，不……又来了……
+
+message_53:
+  text: \plu\Com[2]\sinv[2]\{嘎哈哈哈\{哈哈\{哈哈哈！！\}
+#PLUTO turn to party
+
+message_42:
+  text: \plu前往\c[11]异世界\c[0]营地是吧，马上搞定！
+
+message_49:
+  text: \plu年轻的旅行者们啊，我不会让你们失望的！\!<br>放心交给我吧！
+
+
+# =========================================================================================
+# PLUTO - TAKE OFF
+# =========================================================================================
+
+message_44:
+  text: \plu大家都坐稳了吗？
+
+message_45:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 28
+  text: \kel等……等一下！我还没准备好呢！
+
+message_46:
+  text: \plu3……\! \{2……\! \{1……\! \Com[2]\{\sinv[1]发射！！
+
+# =========================================================================================
+# FLEX
+# =========================================================================================
+
+message_128:
+  text: \plu刚刚这一程很不错吧？
+
+message_129:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 37
+  text: \her环境舒适，音乐令人放松。<br>我肯定会给五星好评的！
+
+message_130:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 27
+  text: \kel\}呼哧……呼哧……\! 说的真好听！\! 我胳膊都麻了……
+
+message_131:
+  text: \plu凯，我不得不说……你刚才拼命坚持住了，做得很好。
+
+message_132:
+  text: \plu你有变强的潜质！\!让我教你一个\c[1]技能\c[0]，或许能在未来帮到你。
+
+message_133:
+  text: \plu咳咳……\!跟着我说。
+
+message_134:
+  text: \plu\Com[2]\{\quake[1]论\c[1]秀肌肉\c[0]，我最拿手！！\}
+
+message_135:
+  text: \plu你试试。
+
+message_136:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 17
+  text: \kel\Com[2]\{论\c[1]秀肌肉\c[0]，\}我\}最……
+
+message_137:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 16
+  text: \kel拿手？
+
+message_138:
+  faceset: MainCharacters_DreamWorld
+  faceindex: 18
+  text: \kel哇哦！这感觉太棒了！我真的充满了力量！
+
+message_139:
+  text: \plu\}嗯……\!还有一些改进的空间。\!但尽管如此……\{
+
+message_140:
+  text: \plu你的身体中肯定蕴含着力量！<br>\!好好记住，学以致用啊。
+
+message_141:
+  text: \plu再见了，孩子们。我们下次再见！
+
+message_142:
+  text: 凯习得了\c[1]秀肌肉\c[0]！
+
+# =========================================================================================
+# AFTER SBF
+# =========================================================================================
+
+#message_60:
+#    text: \pluGreetings, children. I sensed you were in need of a ride, so I decided to wait here and \c[1]FLEX\c[0] in the meantime. How about it?
+
+#message_61:
+#    text: \pluExcellent! Hop aboard!
+
+# =========================================================================================
+# PLUTO'S RIDE
+# =========================================================================================
+
+message_47:
+  text: \plu欢迎！欢迎来到冥王特快！<br>今天，你们的旅途将指引你们走向何方呢？
+
+message_48:
+  text: \plu没问题。\!现在……放轻松，享受这次旅途吧。
+
+message_200:
+  text: \plu你确定要去\v[1000]吗？
+
+message_210:
+  text: \plu你不是说想去\c[11]异世界\c[0]营地吗？\!放轻松，享受这次旅途吧。\!这次我请客！
+
+#YES --> You got it (message 48)
+#NO --> Greetings and welcome... (message 47)
+
+# =========================================================================================
+# SNALEY
+# =========================================================================================
+
+message_100:
+  text: \n<斯纳里>今天天气不错，不是吗？
+
+message_101:
+  text: \n<斯纳里>哦，天哪！\!我挡住你的路了吗？\!<br>太对不起了。\!我马上让开。
+
+# =========================================================================================
+# PLUTO DOCK
+# =========================================================================================
+
+#SFX DING DONG OR SOMETHING
+message_120:
+  text: 欢迎！欢迎来到冥王特快！<br><br>你想在这里等冥王星吗？
+
+#BEFORE CUTSCENE
+message_121:
+  text: 空空如也的站台。
+
+# =========================================================================================
+# LOCATIONS
+# =========================================================================================
+
+message_160:
+  text: 异世界
+
+message_161:
+  text: 橙子绿洲
+
+message_162:
+  text: 辽阔森林
+
+message_163:
+  text: 焚火虫森林
+
+message_164:
+  text: 深井
+
+message_165:
+  text: 雪花球山
+
+#Missing
+message_170:
+  text: 你在这里等冥王星……\!但是他没有出现。
+
