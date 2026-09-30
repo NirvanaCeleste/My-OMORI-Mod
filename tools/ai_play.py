@@ -33,15 +33,15 @@ AIPLAY.loadYaml('languages/sc/00_MOD.yaml')            手动注入任意语言 
 每次 testBook 前无需重置——openBook 内部会重建游戏对象。
 """
 
-def main():
-    open_browser = "--open" in sys.argv
-    class NoCacheHandler(SimpleHTTPRequestHandler):
+class NoCacheHandler(SimpleHTTPRequestHandler):
     """no-store：浏览器对无 Cache-Control 的响应做启发式缓存，改插件后会拿到旧文件（实测踩坑）"""
     def end_headers(self):
         self.send_header("Cache-Control", "no-store, must-revalidate")
         super().end_headers()
 
-handler = functools.partial(NoCacheHandler, directory=PROJ)
+def main():
+    open_browser = "--open" in sys.argv
+    handler = functools.partial(NoCacheHandler, directory=PROJ)
     httpd = ThreadingHTTPServer(("127.0.0.1", PORT), handler)
     print(f"[ai_play] 工程目录: {PROJ}")
     print(f"[ai_play] 入口地址: {URL}   （Ctrl+C 停止服务器）")

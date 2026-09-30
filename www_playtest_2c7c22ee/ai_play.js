@@ -30,6 +30,10 @@
     function frames(n) {
         for (var i = 0; i < n; i++) {
             try {
+                // Scene_Map.updateMain 有真实时间门槛（currentTime >= _currentTime + 16ms），
+                // 同步泵帧永远过不了门槛 → 地图/玩家不更新。每帧归零 _currentTime 骗过门槛。
+                var _sc = SceneManager._scene;
+                if (_sc && _sc._currentTime !== undefined) { _sc._currentTime = 0; }
                 if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) {
                     SceneManager.changeScene();
                 }
