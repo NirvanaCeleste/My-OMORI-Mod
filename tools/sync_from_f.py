@@ -16,7 +16,8 @@ SRC = r"F:\OMORI mod\www_playtest_2c7c22ee"
 DST = r"D:\GLM 工作目录\omori\OMORI mod\www_playtest_2c7c22ee"
 
 SYNC_DIRS = ["data", "maps", "languages", "js/plugins", "img/pictures/Unwritten"]
-SYNC_FILES = ["js/plugins.js", "index.html", "package.json", "editor.json", "Game.rpgproject"]
+SYNC_FILES = ["js/plugins.js", "index.html", "package.json", "editor.json", "Game.rpgproject",
+               "ai_test.html", "ai_play.js", "node_compat.js"]   # 测试环境三件套在工程根
 
 def md5(p):
     h = hashlib.md5()

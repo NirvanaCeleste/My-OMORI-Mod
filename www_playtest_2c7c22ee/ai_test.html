@@ -78,6 +78,7 @@
     <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
     <script type="text/javascript" src="js/libs/js-yaml-browser.js"></script>
     <script type="text/javascript" src="node_compat.js"></script>
+    <script type="text/javascript" src="ai_play.js"></script>
     <script type="text/javascript" src="js/libs/pixi.js"></script>
     <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
     <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
@@ -90,6 +91,24 @@
     <script type="text/javascript" src="js/rpg_sprites.js"></script>
     <script type="text/javascript" src="js/rpg_windows.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
+    <script>
+    // 语言预载（2026-09-30 补）：标题画面 createTitleCommands 在语言数据未就绪时会抛异常
+    // → SceneManager.catchException 停摆主循环。在 main.js 启动前同步加载全部语言。
+    (function () {
+        try {
+            if (window.LanguageManager) {
+                if (typeof LanguageManager.loadAllLanguageFiles === 'function') {
+                    LanguageManager.loadAllLanguageFiles();
+                    window.__log && window.__log('harness', ['语言预载: loadAllLanguageFiles 完成']);
+                } else if (typeof LanguageManager.loadLanguageFiles === 'function') {
+                    LanguageManager.loadLanguageFiles('en');
+                    LanguageManager.loadLanguageFiles('sc');
+                    window.__log && window.__log('harness', ['语言预载: en+sc 完成']);
+                }
+            }
+        } catch (e) { window.__log && window.__log('harness', ['语言预载失败: ' + e.message]); }
+    })();
+    </script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
