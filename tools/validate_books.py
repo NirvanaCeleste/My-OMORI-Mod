@@ -278,10 +278,13 @@ def validate_book(name, path, img_dir):
 def main():
     args = sys.argv[1:]
     check_en = '--en' in args
+    if '--dir' in args:
+        di = args.index('--dir')
+        proj = args[di + 1]
+        args = args[:di] + args[di + 2:]   # --dir 和它的值都不能漏进位置参数
+    else:
+        proj = DEFAULT_PROJ
     args = [a for a in args if not a.startswith('--')]
-    proj = DEFAULT_PROJ
-    if '--dir' in sys.argv:
-        proj = sys.argv[sys.argv.index('--dir') + 1]
     img_dir = os.path.join(proj, 'img', 'pictures')
     sc_dir = os.path.join(proj, 'languages', 'sc')
     if args:
