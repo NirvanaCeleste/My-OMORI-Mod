@@ -33,6 +33,9 @@ playtest 工程，再把本仓库文件覆盖上去。
 # 开关/变量对照表更新
 python tools/switchvar_report.py
 
+# 一键提交（F盘改动回灌D + commit + push）
+python tools/f_commit.py "说明"
+
 # 生成/重新生成地图（示例：探视室）
 python tools/gen_532_visitroom.py
 ```
