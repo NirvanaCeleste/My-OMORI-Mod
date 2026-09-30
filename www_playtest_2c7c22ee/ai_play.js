@@ -30,14 +30,17 @@
     function frames(n) {
         for (var i = 0; i < n; i++) {
             try {
-                // Scene_Map.updateMain 有真实时间门槛（currentTime >= _currentTime + 16ms），
-                // 同步泵帧永远过不了门槛 → 地图/玩家不更新。每帧归零 _currentTime 骗过门槛。
+                // 完整复刻引擎主循环（SceneManager.updateMain 的核心三步）：
+                // 1) Scene_Map.updateMain 有真实时间门槛 → 每帧归零 _currentTime 穿越
                 var _sc = SceneManager._scene;
                 if (_sc && _sc._currentTime !== undefined) { _sc._currentTime = 0; }
+                // 2) changeScene：terminate 旧场景 + create 新场景（引擎自己的交接，不抢跑）
                 if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) {
                     SceneManager.changeScene();
                 }
-                if (SceneManager._scene && SceneManager._scene.update) { SceneManager._scene.update(); }
+                // 3) updateScene：isReady 后自动 start()，start 后才 update()
+                //    （直接调 scene.update() 会跳过 start 链 → 场景卡死，2026-10-01 教训）
+                SceneManager.updateScene();
                 if (window.Input) { Input.update(); }
                 if (window.TouchInput) { TouchInput.update(); }
             } catch (e) {
@@ -244,14 +247,265 @@
     }
 
     // ---------- 导出 ----------
+
+    // ---------- 语言全量同步喂入（目录列表解析） ----------
+    function feedLanguages(lang) {
+        lang = lang || 'sc';
+        var get = function (url) { var x = new XMLHttpRequest(); x.open('GET', url, false); x.send(); return x.responseText; };
+        var html = get('languages/' + lang + '/');
+        var files = [];
+        var re = /href="([^"?\/]+\.yaml)"/g, m;
+        while ((m = re.exec(html)) !== null) { files.push(m[1]); }
+        LanguageManager._data = LanguageManager._data || {};
+        LanguageManager._data[lang] = { text: {} };
+        var fail = 0;
+        for (var i = 0; i < files.length; i++) {
+            try {
+                var doc = (window.jsyaml || window.YAML).load(get('languages/' + lang + '/' + files[i]));
+                if (doc) { LanguageManager._data[lang].text[files[i].replace(/\.yaml$/, '')] = doc; }
+            } catch (e) { fail++; }
+        }
+        LanguageManager._language = lang;
+        L('feedLanguages(' + lang + '): ' + (files.length - fail) + '/' + files.length);
+        return { total: files.length, fail: fail };
+    }
+
+    // ---------- 泵帧直到条件满足（带真实时间让图片/地图异步加载） ----------
+    function pumpUntil(condFn, maxBatches, framesPerBatch, gapMs) {
+        maxBatches = maxBatches || 60; framesPerBatch = framesPerBatch || 15; gapMs = gapMs || 50;
+        var t0 = Date.now();
+        for (var b = 0; b < maxBatches; b++) {
+            frames(framesPerBatch);
+            var v;
+            try { v = condFn(); } catch (e) { v = false; }
+            if (v) { return { ok: true, batches: b, ms: Date.now() - t0 }; }
+            if (gapMs > 0) { var s0 = Date.now(); while (Date.now() - s0 < gapMs) {} }
+        }
+        return { ok: false, batches: maxBatches, ms: Date.now() - t0 };
+    }
+
+    // ---------- 数据补丁（OMORI 不用标准装备/灵气系统） ----------
+    function patchDataForTest() {
+        for (var i = 1; i < $dataClasses.length; i++) {
+            if ($dataClasses[i] && !$dataClasses[i].equipSlots) { $dataClasses[i].equipSlots = [1, 2, 3, 4]; }
+        }
+        var ea = { all: [], friends: [], opponents: [], party: [], troop: [] };
+        for (var j = 1; j < $dataStates.length; j++) {
+            if ($dataStates[j] && !$dataStates[j].aura) { $dataStates[j].aura = JSON.parse(JSON.stringify(ea)); }
+        }
+        L('patchDataForTest: equipSlots + aura 补齐');
+    }
+
+    // ---------- 同步预载地图数据（绕异步 XHR） ----------
+    function forceMapLoad(mapId) {
+        var get = function (url) { var x = new XMLHttpRequest(); x.open('GET', url, false); x.send(); return x.responseText; };
+        $dataMap = JSON.parse(get('data/Map' + mapId + '.json'));
+        DataManager.onLoad($dataMap);
+        DataManager._tempTiledData = JSON.parse(get('maps/Map' + mapId + '.json'));
+        (DataManager._tempTiledData.tilesets || []).forEach(function (ts) {
+            if (ts.source) {
+                try { Object.assign(ts, JSON.parse(get('maps/' + ts.source.replace(/^.*[\/]/, '')))); } catch (e) {}
+            }
+        });
+        DataManager._tiledLoaded = true;
+        DataManager._tilesetToLoad = 0;
+        L('forceMapLoad(' + mapId + ') 完成');
+    }
+
+    // ---------- 完整新游戏流程（v1.2：实测打通 531→516） ----------
+    // 前提：页面已加载 20s+（数据库异步已到）
+    // 全程同步，无需真实等待
+    function newGame() {
+        var report = { steps: [] };
+        try {
+            // ① 语言 + 数据补丁
+            if (!LanguageManager._data || !LanguageManager._data[LanguageManager._language] ||
+                !LanguageManager._data[LanguageManager._language].text ||
+                Object.keys(LanguageManager._data[LanguageManager._language].text).length < 50) {
+                feedLanguages('sc');
+                report.steps.push('语言喂入');
+            }
+            patchDataForTest();
+            report.steps.push('数据补丁');
+
+            // ② 新游戏
+            DataManager.setupNewGame();
+            report.steps.push('setupNewGame');
+
+            // ③ 同步加载 531 + setup + locate
+            forceMapLoad(531);
+            $gameMap.setup(531);
+            $gamePlayer.locate(4, 6);
+            $gamePlayer.setDirection(2);
+            report.steps.push('Map531 setup');
+
+            // ④ INITIALIZE autorun → 解释器跑到 transfer(516)
+            $gameMap.updateStartingEvents();
+            var interp = $gameMap._interpreter;
+            if (!interp.isRunning()) {
+                // 手动启动
+                var evs = $gameMap.events();
+                for (var e = 0; e < evs.length; e++) {
+                    if (evs[e].event().name === 'INITIALIZE') { evs[e].start(); break; }
+                }
+                report.steps.push('INITIALIZE 手动启动');
+            }
+            // 推解释器直到 transferring 或到 516
+            var guard = 0;
+            while ($gameMap._mapId === 531 && guard++ < 100) {
+                if ($gameMessage && $gameMessage.isBusy()) { Input._currentState['ok'] = true; }
+                $gameMap.update(true);
+                Input.update();
+            }
+            Input._currentState['ok'] = false;
+
+            // ⑤ 如果还在 531（解释器卡在 transfer），同步加载 516 + 手动跳
+            if ($gameMap._mapId === 531) {
+                forceMapLoad(516);
+                $gameMap.setup(516);
+                $gamePlayer.locate(12, 7);
+                $gamePlayer.setDirection(2);
+                $gamePlayer._transferring = false;
+                report.steps.push('Map516 手动跳转');
+            } else {
+                report.steps.push('Map516 引擎转移');
+            }
+
+            // ⑥ 强制场景 start（绕 isReady 等图片）
+            var sc = SceneManager._scene;
+            if (sc && !SceneManager._sceneStarted) {
+                sc.start();
+                SceneManager._sceneStarted = true;
+            }
+            AIPLAY.frames(30);
+            report.steps.push('场景启动');
+
+            report.ok = true;
+            report.mapId = $gameMap._mapId;
+            report.mapName = $dataMap ? $dataMap.displayName : '';
+            report.x = $gamePlayer.x;
+            report.y = $gamePlayer.y;
+            L('newGame → Map' + report.mapId + ' (' + report.mapName + ') @(' + report.x + ',' + report.y + ')');
+        } catch (e) {
+            report.ok = false;
+            report.error = e.message;
+            L('newGame 异常: ' + e.message);
+        }
+        return report;
+    }
+
+    // ---------- 旧 bootToTitle 保留但简化 ----------
+    function bootToTitle() {
+        feedLanguages('sc');
+        patchDataForTest();
+        // 泵帧过 boot → splash → 标题
+        AIPLAY.frames(200);
+        var cs = SceneManager._scene;
+        if (cs && cs.constructor.name === 'Scene_SplashScreens') {
+            cs._fadeDuration = 0;
+            if (cs.endSplashes) { cs.endSplashes(); }
+            AIPLAY.frames(60);
+        }
+        var t = pumpUntil(function () {
+            var s = SceneManager._scene;
+            return s && s._titleCommands && s._titleCommands.length > 0;
+        }, 30, 15, 60);
+        var s = SceneManager._scene;
+        return { ok: t.ok, commands: s && s._titleCommands ? s._titleCommands.length : 0 };
+    }
+
+    // ---------- 导出 ----------
+
+    // ---------- 语言全量同步喂入（目录列表解析） ----------
+    function feedLanguages(lang) {
+        lang = lang || 'sc';
+        var get = function (url) { var x = new XMLHttpRequest(); x.open('GET', url, false); x.send(); return x.responseText; };
+        var html = get('languages/' + lang + '/');
+        var files = [];
+        var re = /href="([^"?\/]+\.yaml)"/g, m;
+        while ((m = re.exec(html)) !== null) { files.push(m[1]); }
+        LanguageManager._data = LanguageManager._data || {};
+        LanguageManager._data[lang] = { text: {} };
+        var fail = 0;
+        for (var i = 0; i < files.length; i++) {
+            try {
+                var doc = (window.jsyaml || window.YAML).load(get('languages/' + lang + '/' + files[i]));
+                if (doc) { LanguageManager._data[lang].text[files[i].replace(/\.yaml$/, '')] = doc; }
+            } catch (e) { fail++; }
+        }
+        LanguageManager._language = lang;
+        L('feedLanguages(' + lang + '): ' + (files.length - fail) + '/' + files.length);
+        return { total: files.length, fail: fail };
+    }
+
+    // ---------- 泵帧直到条件满足（带真实时间让图片/地图异步加载） ----------
+    function pumpUntil(condFn, maxBatches, framesPerBatch, gapMs) {
+        maxBatches = maxBatches || 60; framesPerBatch = framesPerBatch || 15; gapMs = gapMs || 50;
+        var t0 = Date.now();
+        for (var b = 0; b < maxBatches; b++) {
+            frames(framesPerBatch);
+            var v;
+            try { v = condFn(); } catch (e) { v = false; }
+            if (v) { return { ok: true, batches: b, ms: Date.now() - t0 }; }
+            if (gapMs > 0) { var s0 = Date.now(); while (Date.now() - s0 < gapMs) {} }
+        }
+        return { ok: false, batches: maxBatches, ms: Date.now() - t0 };
+    }
+
+    // ---------- 标题：喂语言→goto→等命令窗就绪 ----------
+    function bootToTitle() {
+        if (!LanguageManager._data || !LanguageManager._data[LanguageManager._language] ||
+            !LanguageManager._data[LanguageManager._language].text ||
+            Object.keys(LanguageManager._data[LanguageManager._language].text).length < 50) {
+            feedLanguages('sc');
+        }
+        if (window.Galv && Galv.ASPLASH) { Galv.ASPLASH.splashed = true; }
+        if (!DataManager._databaseLoaded) { DataManager.loadDatabase(); frames(60); }
+        var cs = SceneManager._scene;
+        if (!cs || cs.constructor.name !== 'Scene_OmoriTitleScreen') {
+            SceneManager.goto(Scene_OmoriTitleScreen);
+        }
+        var res = pumpUntil(function () {
+            var s = SceneManager._scene;
+            return s && s.constructor.name === 'Scene_OmoriTitleScreen' && s._commandWindow && s._commandWindow._list && s._commandWindow._list.length > 0;
+        }, 80, 15, 50);
+        var s = SceneManager._scene;
+        L('bootToTitle → ' + (res.ok ? 'OK' : '超时') + ' 命令数=' + (s && s._commandWindow ? s._commandWindow._list.length : 0));
+        return { ok: res.ok, commands: s && s._commandWindow ? s._commandWindow._list.map(function (c) { return c.name; }) : [] };
+    }
+
+    // ---------- 新游戏：走标题的 commandNewGame → 531 → autorun → 516 ----------
+    function newGame() {
+        var t = bootToTitle();
+        if (!t.ok) { return { ok: false, stage: 'title', title: t }; }
+        var s = SceneManager._scene;
+        if (typeof s.commandNewGame !== 'function') { return { ok: false, stage: 'no commandNewGame' }; }
+        s.commandNewGame();
+        // 等待进入地图场景（数据异步加载，给真实时间）
+        var res = pumpUntil(function () {
+            var sc = SceneManager._scene;
+            return sc && sc.constructor.name === 'Scene_Map' && $gameMap && $gameMap.isReady() && !$gamePlayer.isTransferring();
+        }, 120, 15, 60);
+        var sc = SceneManager._scene;
+        L('newGame → ' + (res.ok ? 'OK map=' + ($gameMap ? $gameMap._mapId : '?') : '超时'));
+        return { ok: res.ok, stage: SceneManager._scene ? SceneManager._scene.constructor.name : null,
+                 mapId: $gameMap ? $gameMap._mapId : -1, x: $gamePlayer ? $gamePlayer.x : -1, y: $gamePlayer ? $gamePlayer.y : -1,
+                 displayName: $dataMap ? $dataMap.displayName : '' };
+    }
+
+    var __exports_marker = window.AIPLAY;
+
     window.AIPLAY = {
-        version: '1.0',
+        version: '1.2',
         frames: frames, wait: wait,
         tap: tap, taps: taps, walk: walk, interact: interact,
         loadYaml: loadYaml, loadBook: loadBook,
         assemble: assemble, openBook: openBook, gotoMap: gotoMap,
         switches: switches, errors: errors, status: status,
         testBook: testBook, testAllBooks: testAllBooks,
+        feedLanguages: feedLanguages, pumpUntil: pumpUntil,
+        patchDataForTest: patchDataForTest, forceMapLoad: forceMapLoad,
+        bootToTitle: bootToTitle, newGame: newGame,
         log: function (n) { return LOG.slice(-(n || 30)); }
     };
     console.log('[AIPLAY] v1.0 已就绪 | testAllBooks() = 四本书一键回归');
