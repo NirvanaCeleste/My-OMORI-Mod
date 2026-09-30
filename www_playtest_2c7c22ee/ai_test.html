@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unwritten Story — AI Test Harness</title>
+    <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
+    <style>body { background-color: black; margin: 0; }</style>
+</head>
+<body>
+    <!-- AI 自动化验证入口：与 index.html 相同的启动序列，
+         但补上本工程 index.html 缺失的 fpsmeter / js-yaml 库，
+         并先加载 node_compat.js 垫片（require/fs/nw.gui → 浏览器模拟）。
+         仅用于浏览器测试，游戏本体入口仍是 index.html。 -->
+    <script>
+    window.__bootlog = [];
+    window.__log = function (type, args) {
+        try {
+            window.__bootlog.push(type + ': ' + Array.prototype.map.call(args, function (a) {
+                if (a instanceof Error) return a.message + '\n  ' + String(a.stack || '').split('\n').slice(1, 4).join('\n  ');
+                return String(a);
+            }).join(' | '));
+            if (window.__bootlog.length > 200) { window.__bootlog.shift(); }
+        } catch (e) {}
+    };
+    window.addEventListener('error', function (e) {
+        window.__log('onerror', [e.message + ' @ ' + e.filename + ':' + e.lineno]);
+    });
+    window.addEventListener('unhandledrejection', function (e) {
+        window.__log('rejection', [e.reason]);
+    });
+    ['error', 'warn'].forEach(function (k) {
+        var orig = console[k].bind(console);
+        console[k] = function () { window.__log('console.' + k, arguments); orig.apply(null, arguments); };
+    });
+    // 抓引擎崩溃处理器的原始异常（Graphics._printError 只打 stack 首行会丢消息）
+    window.addEventListener('load', function () {
+        if (window.SceneManager) {
+            ['catchException', 'onError'].forEach(function (fn) {
+                if (typeof SceneManager[fn] !== 'function') { return; }
+                var orig = SceneManager[fn];
+                SceneManager[fn] = function (e) {
+                    window.__log('SceneManager.' + fn, [e]);
+                    return orig.call(this, e);
+                };
+            });
+        }
+    });
+    // IAB/无焦点环境下 requestAnimationFrame 可能被暂停（页面可见也不回调）。
+    // 自检：500ms 内没有任何 rAF 回调 → 换成 setTimeout 驱动的 60fps 降级实现，
+    // 并重启游戏主循环的 PIXI ticker（它可能已持有失效的 rAF 请求句柄）。
+    (function () {
+        var nativeRaf = window.requestAnimationFrame.bind(window);
+        var fired = false;
+        nativeRaf(function () { fired = true; });
+        setTimeout(function () {
+            if (fired) { return; }
+            window.__log('harness', ['rAF 未回调，启用 setTimeout 降级驱动']);
+            window.requestAnimationFrame = function (cb) {
+                return setTimeout(function () { cb(performance.now()); }, 16);
+            };
+            try {
+                if (window.SceneManager && SceneManager.ticker) {
+                    SceneManager.ticker.stop();
+                    SceneManager.ticker.start();
+                }
+            } catch (e) { window.__log('harness', ['ticker 重启失败: ' + e.message]); }
+            // GTP 的 isFocus() 检查 window.top.document.hasFocus()，IAB 内嵌环境永远为 false
+            // → 场景更新/输入/渲染全部被静默跳过（"失焦即停"）。测试环境恒返回已聚焦。
+            try {
+                if (window.SceneManager) {
+                    SceneManager.isFocus = function () { return true; };
+                    if (SceneManager._smoothDeltaTime === undefined) { SceneManager._smoothDeltaTime = 1; }
+                }
+            } catch (e) { window.__log('harness', ['isFocus 覆写失败: ' + e.message]); }
+        }, 500);
+    })();
+    </script>
+    <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
+    <script type="text/javascript" src="js/libs/js-yaml-browser.js"></script>
+    <script type="text/javascript" src="node_compat.js"></script>
+    <script type="text/javascript" src="js/libs/pixi.js"></script>
+    <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
+    <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
+    <script type="text/javascript" src="js/libs/lz-string.js"></script>
+    <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
+    <script type="text/javascript" src="js/rpg_core.js"></script>
+    <script type="text/javascript" src="js/rpg_managers.js"></script>
+    <script type="text/javascript" src="js/rpg_objects.js"></script>
+    <script type="text/javascript" src="js/rpg_scenes.js"></script>
+    <script type="text/javascript" src="js/rpg_sprites.js"></script>
+    <script type="text/javascript" src="js/rpg_windows.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
