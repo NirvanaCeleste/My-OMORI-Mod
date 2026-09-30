@@ -153,6 +153,7 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
     //   阶段 3: 白闪 → 置完成开关 → 返回
     //=========================================================================
     function Scene_UnwrittenSeal() { this.initialize.apply(this, arguments); }
+    window.Scene_UnwrittenSeal = Scene_UnwrittenSeal;   // 暴露给测试环境（AIPLAY）
     Scene_UnwrittenSeal.prototype = Object.create(Scene_BaseEX.prototype);
     Scene_UnwrittenSeal.prototype.constructor = Scene_UnwrittenSeal;
 
@@ -164,6 +165,7 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
         this._stamped = 0;
         this._shakePower = 0;
         this._bookSprite = null;
+        this._finishAfter = 0;
     };
 
     Scene_UnwrittenSeal.prototype.create = function() {
@@ -289,6 +291,17 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
         try {
             Scene_BaseEX.prototype.update.call(this);
             this.updateShake();
+            // phase 3：白闪倒计时 → 置开关 → popScene（2026-10-01 修复：
+            // 原实现用 monkey-patch this.update 挂 _finishTick，但引擎/泵帧
+            // 从原型链调 update 时倒计时永不执行 → 演出卡死在白闪）
+            if (this._phase === 3) {
+                this._finishAfter--;
+                if (!isFinite(this._finishAfter) || this._finishAfter <= 0) {
+                    if (Param.doneSwitchId > 0) { $gameSwitches.setValue(Param.doneSwitchId, true); }
+                    this.popScene();
+                }
+                return;
+            }
             if (Input.isTriggered('cancel') || Input.isTriggered('ok')) { this.finish(); return; }
             this._timer++;
             if (this._phase === 0) {
@@ -329,30 +342,18 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
     Scene_UnwrittenSeal.prototype.finish = function() {
         if (this._phase === 3) { return; }
         this._phase = 3;
+        this._finishAfter = 20;   // 必须在任何可能抛异常的操作之前赋值
+                                  // （否则 flash 动画异常时 fa=undefined → NaN 倒计时永不结束）
         var flash = new Sprite(new Bitmap(Graphics.width, Graphics.height));
         flash.bitmap.fillRect(0, 0, Graphics.width, Graphics.height, 'rgba(244, 238, 226, 1)');
         flash.opacity = 0;
         this.addChild(flash);
-        var self = this;
         this.move.startMove({
             obj: flash, properties: ['opacity'],
             from: { opacity: 0 }, to: { opacity: 255 },
             durations: { opacity: 16 }, easing: Object_Movement.easeInCirc
         });
         SoundManager.playSe({ name: 'sys_PA_page_flip', volume: 70, pitch: 80, pan: 0 });
-        this._finishAfter = 20;
-        this._finishTick = function() {
-            self._finishAfter--;
-            if (self._finishAfter > 0) { return; }
-            if (Param.doneSwitchId > 0) { $gameSwitches.setValue(Param.doneSwitchId, true); }
-            self.popScene();
-        };
-        // 在 update 里轮询 _finishTick
-        var _update = this.update;
-        this.update = function() {
-            _update.call(this);
-            if (this._finishTick) { this._finishTick(); }
-        };
     };
 
     console.log('[UnwrittenSeal] v' + _TDS_.UnwrittenSeal.Version + ' 已加载 | 菜单拦截:' +
