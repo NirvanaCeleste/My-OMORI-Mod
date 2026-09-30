@@ -191,9 +191,17 @@ Game_UnwrittenStory.prototype.setKeep = function(pageId, sentenceId, bookId) {
 Game_UnwrittenStory.prototype.pageEditIds = function(page) {
     var ids = [];
     if (!page) { return ids; }
+    var push = function(e) {
+        if (e && e.id !== undefined && ids.indexOf(String(e.id)) < 0) { ids.push(String(e.id)); }
+    };
     var edits = page.edits || [];
-    for (var i = 0; i < edits.length; i++) {
-        if (edits[i].id !== undefined && ids.indexOf(String(edits[i].id)) < 0) { ids.push(String(edits[i].id)); }
+    for (var i = 0; i < edits.length; i++) { push(edits[i]); }
+    // blocks 模式：块内 edits 同样参与（否则 blocks 书永远进不了选句——
+    // AI 回归第二战果：pageEditIds 漏收块内 edits，updateStoryState 找不到解锁页）
+    var blocks = page.blocks || [];
+    for (var b = 0; b < blocks.length; b++) {
+        var bedits = (blocks[b] && blocks[b].edits) || [];
+        for (var j = 0; j < bedits.length; j++) { push(bedits[j]); }
     }
     return ids;
 };
@@ -1486,9 +1494,11 @@ Scene_UnwrittenStory.prototype.createPageBackground = function() {
                     self._bookWindow.createContents();
                     self._bookWindow.setPage(self._pageKey, self._pages[self._pageKey], self._stateIndex);
                     self._bookWindow._dirty = true;
-                    self._footer.move((Graphics.width - w) / 2, Graphics.height - 66, w, 60);
-                    self._footer.createContents();
-                    self.refreshFooter();
+                    if (self._footer) {          // 同上：缓存位图同步回调时 footer 可能未创建
+                        self._footer.move((Graphics.width - w) / 2, Graphics.height - 66, w, 60);
+                        self._footer.createContents();
+                        self.refreshFooter();
+                    }
                 }
                 self._pageBgSprite.bitmap = img;
                 // 等比缩放（不拉伸），居中放置
@@ -1500,11 +1510,17 @@ Scene_UnwrittenStory.prototype.createPageBackground = function() {
                 self._pageBgSprite.visible = true;
                 self._pageBgBaseX = self._pageBgSprite.x;
                 self._pageBgBaseY = self._pageBgSprite.y;
-                // 重新对齐左右箭头
-                self._leftArrow.y = self._bookWindowBaseY + self._bookWindow.height / 2;
-                self._leftArrow.x = self._bookWindowBaseX - 24;
-                self._rightArrow.y = self._bookWindowBaseY + self._bookWindow.height / 2;
-                self._rightArrow.x = self._bookWindowBaseX + self._bookWindow.width + 24;
+                // 重新对齐左右箭头（图片已缓存时本回调会同步触发，
+                // 此时 createPageArrows/createFooterWindow 可能尚未执行 → 判空防御，
+                // 否则同一局第二次开书必崩——AI 自动回归首次实战抓到的真实 bug）
+                if (self._leftArrow) {
+                    self._leftArrow.y = self._bookWindowBaseY + self._bookWindow.height / 2;
+                    self._leftArrow.x = self._bookWindowBaseX - 24;
+                }
+                if (self._rightArrow) {
+                    self._rightArrow.y = self._bookWindowBaseY + self._bookWindow.height / 2;
+                    self._rightArrow.x = self._bookWindowBaseX + self._bookWindow.width + 24;
+                }
             }
         });
     } else {
@@ -1675,6 +1691,7 @@ Scene_UnwrittenStory.prototype.tryShowHint = function() {
     if ($gameSwitches.value(_TDS_.UnwrittenStory.Param.hintSwitchId)) { return; }
     var page = this.currentPage();
     var hasEdit = (page.edits && page.edits.length > 0) ||
+        (page.blocks && page.blocks.some(function(bl) { return bl.edits && bl.edits.length > 0; })) ||
         (page.lines && page.lines.some(function(l) { return l.id !== undefined; }));
     if (!hasEdit) { return; }
     this._hintWindow = new Window_Base(0, 0, 380, 56);
