@@ -45,6 +45,29 @@
             });
         }
     });
+    // 语言自愈（2026-10-01 除根）：本环境自然启动时 LanguageManager._data 常为空，
+    // 标题创建 getTextData 会崩并每帧重试刷屏。轮询补齐 en+sc，一劳永逸。
+    (function () {
+        var tries = 0;
+        var t = setInterval(function () {
+            tries++;
+            if (window.LanguageManager && !window.__langHealed) {
+                var empty = !LanguageManager._data || Object.keys(LanguageManager._data).length === 0;
+                if (empty) {
+                    try {
+                        LanguageManager._data = {};
+                        LanguageManager.loadLanguageFiles('en');
+                        LanguageManager.loadLanguageFiles('sc');
+                        window.__langHealed = true;
+                        window.__log('harness', ['语言自愈: en+sc 已加载']);
+                    } catch (e) { window.__log('harness', ['语言自愈失败: ' + e.message]); }
+                } else {
+                    window.__langHealed = true;
+                }
+            }
+            if (window.__langHealed || tries > 60) { clearInterval(t); }
+        }, 500);
+    })();
     // IAB/无焦点环境下 requestAnimationFrame 可能被暂停（页面可见也不回调）。
     // 自检：500ms 内没有任何 rAF 回调 → 换成 setTimeout 驱动的 60fps 降级实现，
     // 并重启游戏主循环的 PIXI ticker（它可能已持有失效的 rAF 请求句柄）。
