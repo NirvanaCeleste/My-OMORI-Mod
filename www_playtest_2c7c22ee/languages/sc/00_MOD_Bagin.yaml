@@ -123,6 +123,9 @@ message_27:
   text: …………………………………………………………\!<br>不是这样的……\bas
 
 
+message_28:
+  text: 放松。\!量一个血压，马上就好………\!<br>心跳有点快………\n<护士>
+
 message_29:
   faceset: MainCharacters_Faraway
   faceindex: 22
