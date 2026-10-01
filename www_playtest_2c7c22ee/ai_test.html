@@ -64,20 +64,22 @@
         var t = setInterval(function () {
             tries++;
             if (window.LanguageManager && !window.__langHealed) {
-                var empty = !LanguageManager._data || Object.keys(LanguageManager._data).length === 0;
-                if (empty) {
+                // 判定标准必须是 sc.text 里真的有键（loadLanguageFiles 依赖 fs.readdirSync
+                // 在浏览器跑不了 → 之前的"自愈"是死代码，标题崩溃刷屏的真正根源）
+                var healthy = LanguageManager._data && LanguageManager._data.sc &&
+                              LanguageManager._data.sc.text && Object.keys(LanguageManager._data.sc.text).length > 50;
+                if (!healthy && window.AIPLAY && window.AIPLAY.feedLanguages) {
                     try {
-                        LanguageManager._data = {};
-                        LanguageManager.loadLanguageFiles('en');
-                        LanguageManager.loadLanguageFiles('sc');
+                        AIPLAY.feedLanguages('en');
+                        AIPLAY.feedLanguages('sc');
                         window.__langHealed = true;
-                        window.__log('harness', ['语言自愈: en+sc 已加载']);
+                        window.__log('harness', ['语言自愈(v2): XHR+jsyaml 全量喂入完成']);
                     } catch (e) { window.__log('harness', ['语言自愈失败: ' + e.message]); }
-                } else {
+                } else if (healthy) {
                     window.__langHealed = true;
                 }
             }
-            if (window.__langHealed || tries > 60) { clearInterval(t); }
+            if (window.__langHealed || tries > 120) { clearInterval(t); }
         }, 500);
     })();
     // IAB/无焦点环境下 requestAnimationFrame 可能被暂停（页面可见也不回调）。
