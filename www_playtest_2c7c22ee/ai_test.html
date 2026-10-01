@@ -44,6 +44,18 @@
                 };
             });
         }
+        // 引擎错误显示总漏斗（2026-10-01 补）：Loading Error / JS 崩溃屏显都必经
+        // Graphics._makeErrorHtml —— OneLoader console 只挂了 printFullError，会漏
+        // 资源加载错误（如 img/faces/xx.png 不存在），这里一次补全。
+        if (window.Graphics && Graphics._makeErrorHtml && !Graphics._makeErrorHtml.__hooked) {
+            var origHtml = Graphics._makeErrorHtml;
+            var wrapped = function (name, message) {
+                try { window.__log('Graphics.屏显错误', [String(name) + ': ' + String(message)]); } catch (e) {}
+                return origHtml.apply(this, arguments);
+            };
+            wrapped.__hooked = true;
+            Graphics._makeErrorHtml = wrapped;
+        }
     });
     // 语言自愈（2026-10-01 除根）：本环境自然启动时 LanguageManager._data 常为空，
     // 标题创建 getTextData 会崩并每帧重试刷屏。轮询补齐 en+sc，一劳永逸。
