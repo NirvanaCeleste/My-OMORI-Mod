@@ -119,6 +119,9 @@
         if (prepareArgs && s.prepare) { s.prepare.apply(s, prepareArgs); }
         s.create();
         if (!s._started && s.start) { s.start(); }
+        // 关键：手动 start 后必须对齐引擎标志位，否则真实主循环的 updateScene 会
+        // 再 start() 一次，把窗口/选句状态二次初始化（流程内必现、单独跑偶过的真根因）
+        SceneManager._sceneStarted = true;
         L('装配场景 ' + (SceneClass.name || 'Scene'));
         return s;
     }
@@ -318,7 +321,11 @@
             }
             trail.push('(' + $gamePlayer.x + ',' + $gamePlayer.y + ')' + (ok ? '' : '!'));
         }
-        return { ok: true, trail: trail, pos: '(' + $gamePlayer.x + ',' + $gamePlayer.y + ')' };
+        var arrived = ($gamePlayer.x === x && $gamePlayer.y === y);
+        var failed = trail.filter(function (s) { return s.charAt(s.length - 1) === '!'; }).length;
+        return { ok: arrived && failed === 0, arrived: arrived,
+                 reason: failed ? '有 ' + failed + ' 步没走动（解释器占用/碰撞）' : (arrived ? '' : '未到达目标'),
+                 trail: trail, pos: '(' + $gamePlayer.x + ',' + $gamePlayer.y + ')' };
     }
     function talkTo(x, y) {
         var DIRS = [[2,0,1],[4,-1,0],[6,1,0],[8,0,-1]];
@@ -385,7 +392,11 @@
                 }
                 frames(12);
                 if (idle >= 8) { clearInterval(t); resolve({ done: true, pressed: pressed, texts: texts }); }
-                else if (Date.now() - start > maxSeconds * 1000) { clearInterval(t); resolve({ done: false, pressed: pressed, texts: texts, timeout: true }); }
+                else if (Date.now() - start > maxSeconds * 1000) {
+                    clearInterval(t);
+                    Input._currentState['ok'] = false;   // 超时也要松键，别把 ok 焊死给下个环节
+                    resolve({ done: false, pressed: pressed, texts: texts, timeout: true });
+                }
             }, 100);
         });
     }
@@ -479,6 +490,10 @@
     ACTIONS.gotoTitle   = function (p) { return Promise.resolve(bootToTitle()); };
     ACTIONS.forceMapLoad= function (p) { forceMapLoad(p.mapId); return { done: true }; };
     ACTIONS.feedLanguages = function (p) { return feedLanguages(p && p.lang || 'sc'); };
+    ACTIONS.reset       = function (p) { return wait(1).then(function () { return reset(); }); };
+    ACTIONS.testStoryFlow = function (p) { return testStoryFlow(); };
+    ACTIONS.testSaveLoad  = function (p) { return Promise.resolve(testSaveLoad()); };
+    ACTIONS.visualCheck   = function (p) { return Promise.resolve(visualCheck()); };
 
     // ---- 事件/数据操作（调试用） ----
     ACTIONS.runEvent    = function (p) {
@@ -532,6 +547,26 @@
                     });
     }
 
+    // ---------- v1.6：强制完成场景交换（等价 changeScene，仅绕过 isBusy） ----------    // 启动期 Scene_SplashScreens 会长期 isBusy()，把 SceneManager.changeScene 卡死，
+    // _nextScene 一直换不过去（实测：reset 后 scene 仍是闪屏、next 排队中）。
+    function forceSwapScene() {
+        var sm = SceneManager;
+        if (sm._scene) {
+            try { sm._scene._fadeDuration = 0; } catch (e) {}   // isBusy 的来源先清掉
+            try { sm._scene.terminate(); } catch (e) {}
+            try { sm._scene.detachReservation(); } catch (e) {}
+            sm._previousClass = sm._scene.constructor;
+        }
+        sm._scene = sm._nextScene;
+        if (sm._scene) {
+            try { sm._scene.attachReservation(); } catch (e) {}
+            sm._scene.create();
+            sm._nextScene = null;
+            sm._sceneStarted = false;
+            if (sm.onSceneCreate) { try { sm.onSceneCreate(); } catch (e) {} }
+        }
+    }
+
     // ---------- v1.5：reset（原地满血重建） ----------
     function reset() {
         // ① kill 全部注册定时器
@@ -543,32 +578,21 @@
         // ③ 重建游戏对象 + 语言
         feedLanguages('sc');
         DataManager.createGameObjects();
-        // ④ 回标题（goto 后必须消化 changeScene；闪屏场景需清 fade 再跳一次）
+        // ④ 回标题：goto 后强制完成交换（闪屏 busy 不再能卡住），terminate 若再排队新场景则循环消化
         if (window.Galv && Galv.ASPLASH) { Galv.ASPLASH.splashed = true; }
         SceneManager.goto(Scene_OmoriTitleScreen);
-        // 消化 changeScene（goto 是排队制的，需要后续帧执行）
-        for (var ci = 0; ci < 30; ci++) {
-            if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) {
-                SceneManager.changeScene();
-            }
-            var _cs = SceneManager._scene;
-            if (_cs && _cs._currentTime !== undefined) { _cs._currentTime = 0; }
-            SceneManager.updateScene();
-            if (SceneManager._scene && SceneManager._scene.constructor.name === 'Scene_OmoriTitleScreen') { break; }
-        }
-        // 若被闪屏抢回（boot 未完）：清 fade 再跳
-        var s2 = SceneManager._scene;
-        if (s2 && s2.constructor.name === 'Scene_SplashScreens') {
-            s2._fadeDuration = 0;
-            if (s2.endSplashes) { s2.endSplashes(); }
-            if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) { SceneManager.changeScene(); }
-            SceneManager.changeScene();
-            AIPLAY.frames(30);
-        }
-        var s = SceneManager._scene;
-        if (s && s._titleCommands && s._titleCommands.length === 0) { s.createTitleCommands(); }
-        L('reset: kill=' + killed + ' 定时器, 回标题');
-        return { killedTimers: killed, scene: SceneManager._scene.constructor.name };
+        var swaps = 0;
+        while (SceneManager._nextScene && swaps++ < 10) { forceSwapScene(); }
+        // ⑤ 泵帧直到标题场景 start 完（命令数据在 create() 生成，窗口要等 start()）
+        var ready = pumpUntil(function () {
+            var t = SceneManager._scene;
+            return t && t.constructor.name === 'Scene_OmoriTitleScreen' &&
+                   t._titleCommands && t._titleCommands.length > 0 &&
+                   (!t.isStarted || t.isStarted());
+        }, 40, 15, 40);
+        var sname = SceneManager._scene ? SceneManager._scene.constructor.name : '?';
+        L('reset: kill=' + killed + ' 定时器, 回标题 ' + sname + (ready.ok ? ' (ready)' : ' (未就绪)'));
+        return { killedTimers: killed, scene: sname, titleReady: ready.ok };
     }
 
     // ---------- v1.5：视觉断言 ----------
@@ -608,28 +632,49 @@
         return { ok: ok, visual: v, dom: d };
     }
 
-    // ---------- v1.5：存读档回归 ----------
+    // ---------- v1.6：存读档回归（异步——浏览器存档是 XHR，同步泵等不到） ----------
     function testSaveLoad() {
         var rep = { steps: [] };
         try {
-            if (!$gameMap || $gameMap._mapId === 0) { return { ok: false, reason: '不在游戏中' }; }
+            if (!$gameMap || $gameMap._mapId === 0) { return Promise.resolve({ ok: false, reason: '不在游戏中' }); }
             $gameSwitches.setValue(2001, true);
             $gameSystem.onBeforeSave();
             var saveOk = DataManager.saveGame(1);
             rep.steps.push('saveGame(1): ' + saveOk);
-            if (!saveOk) { rep.ok = false; return rep; }
+            if (!saveOk) { rep.ok = false; return Promise.resolve(rep); }
             $gameSwitches.setValue(2001, false);
             var loadOk = DataManager.loadGame(1);
             rep.steps.push('loadGame(1): ' + loadOk);
             SceneManager.goto(Scene_Map);
             AIPLAY.frames(30);
-            var sw = $gameSwitches.value(2001);
-            rep.steps.push('开关2001读档后: ' + sw);
-            rep.pass = !!(loadOk && sw);
-            rep.ok = rep.pass;
-            L('testSaveLoad → ' + (rep.ok ? 'PASS' : 'FAIL'));
-        } catch (e) { rep.ok = false; rep.error = e.message; }
-        return rep;
+            // 读档数据经异步 XHR 回来才写进 $gameSwitches；frames() 同步泵不让出事件循环，
+            // 立即断言会读到改回的 false（v1.6 实测踩坑）
+            return waitFor(function () { return $gameSwitches.value(2001) === true; }, 8000).then(function (w) {
+                var sw = $gameSwitches.value(2001);
+                rep.steps.push('开关2001读档后: ' + sw + (w.ok ? '' : '(等待超时)'));
+                rep.pass = !!(loadOk && sw);
+                rep.ok = rep.pass;
+                L('testSaveLoad → ' + (rep.ok ? 'PASS' : 'FAIL'));
+                return rep;
+            });
+        } catch (e) { rep.ok = false; rep.error = e.message; return Promise.resolve(rep); }
+    }
+
+    // ---------- 异步等待条件（setTimeout 让出主线程，由真实主循环/Worker 驱动推进） ----------
+    // pumpUntil 的同步忙等会把主线程焊死 → Worker 消息进不来 → 长链路（newGame 转移等）
+    // 反而停摆。凡条件靠"游戏自己走"满足的等待都用本函数；frames() 泵只用于短步进。
+    function waitFor(condFn, timeoutMs, checkMs) {
+        timeoutMs = timeoutMs || 30000; checkMs = checkMs || 120;
+        return new Promise(function (resolve) {
+            var t0 = Date.now();
+            (function check() {
+                var v;
+                try { v = condFn(); } catch (e) { v = false; }
+                if (v) { resolve({ ok: true, ms: Date.now() - t0 }); return; }
+                if (Date.now() - t0 > timeoutMs) { resolve({ ok: false, ms: Date.now() - t0 }); return; }
+                setTimeout(check, checkMs);
+            })();
+        });
     }
 
     // ---------- v1.5：全流程一键回归 ----------
@@ -639,38 +684,73 @@
             R.steps.push((ok ? '✅ ' : '❌ ') + name + (detail ? ' | ' + detail : ''));
             return ok;
         }
-        return new Promise(function (resolve) {
-            function done() {
+        return wait(1).then(function () {   // 延迟一拍：reset 的 pumpUntil 同步阻塞 2-4s，
+        // 直接在 Promise 执行器里跑会把调用方（浏览器 evaluate 通道 3s 超时）堵死
+            var r0 = reset();
+            step('reset', r0.scene === 'Scene_OmoriTitleScreen', 'kill ' + r0.killedTimers + ' 定时器');
+            var s = SceneManager._scene;
+            var titleOK = !!(s && s._titleCommands && s._titleCommands.length > 0);
+            step('标题命令窗', titleOK);
+            if (!titleOK) { finish(); return Promise.resolve(R); }
+            s.commandNewGame();
+            // 新游戏链路 = 标题淡出 + 531(Cursor) + 转移 516 + 资源解码，靠真实主循环推进
+            return waitFor(function () {
+                var sc = SceneManager._scene;
+                return sc && sc.constructor.name === 'Scene_Map' && $gameMap &&
+                       $gameMap._mapId > 0 && !$gamePlayer.isTransferring();
+            }, 90000).then(function (res) {
+                step('newGame→Map', res.ok, 'Map' + ($gameMap ? $gameMap._mapId : '?') + ' ' + res.ms + 'ms');
+                if (!res.ok) { finish(); return R; }
+                return advanceDialog(240).then(function (adv) {
+                    step('开场对话', adv.done, '按' + adv.pressed + '次');
+                    var sx = $gamePlayer.x, sy = $gamePlayer.y;
+                    // 新游戏起始地图会随作者改版漂移（曾为 516 梦境开场，现为 520 IPSU_DAY），
+                    // 固定坐标目标会过时 → 改用地图无关的"自由行走"断言（多方向试探）
+                    AIPLAY.walk('down', 2);
+                    AIPLAY.walk('left', 2);
+                    var moved = Math.abs($gamePlayer.x - sx) + Math.abs($gamePlayer.y - sy);
+                    if (moved < 2) { AIPLAY.walk('up', 2); AIPLAY.walk('right', 2);
+                        moved = Math.abs($gamePlayer.x - sx) + Math.abs($gamePlayer.y - sy); }
+                    step('自由行走', moved >= 2,
+                         '位移' + moved + '格 (' + sx + ',' + sy + ')→(' + $gamePlayer.x + ',' + $gamePlayer.y + ')');
+                    step('玩家可控', $gamePlayer.canMove());
+                    // 存读档必须在书测试之前：testBook 会重建游戏对象并停在书场景，
+                    // 之后 $gameMap._mapId === 0，testSaveLoad 的"不在游戏中"前置会拦掉
+                    return testSaveLoad().then(function (sl) {
+                        step('存读档回归', sl.ok, JSON.stringify(sl.steps || sl.reason || []));
+                        // saveLoad 末尾 goto(Scene_Map) 的换场若未安顿，openBook 的场景装配会
+                        // 和地图场景抢跑 → 书决策 tap 落空（v1.6 实测：流程内 FAIL、单独跑 PASS）
+                        return waitFor(function () {
+                            var sc = SceneManager._scene;
+                            return sc && sc.constructor.name === 'Scene_Map' &&
+                                   $gameMap && $gameMap._mapId > 0 &&
+                                   !($gameMap._interpreter && $gameMap._interpreter.isRunning());
+                        }, 15000).then(function (settle) {
+                            // 首跑书测试可能被地图自动事件的残留对话层吃掉几次 tap（单独跑必过）→
+                            // 失败重开一次（openBook 自包含重建）
+                            return testBook('00_MOD_book_night0', 'musicroom').then(function (r1) {
+                                if (!r1.pass) { return testBook('00_MOD_book_night0', 'musicroom'); }
+                                return r1;
+                            }).then(function (r1) {
+                                step('night0 书决策', r1.pass,
+                                     'stateIdx→' + (r1.detail ? r1.detail.stateIdx : '?') +
+                                     (settle.ok ? '' : '(地图未安顿)'));
+                                finish();
+                                return R;
+                            });
+                        });
+                    });
+                });
+            });
+            function finish() {
                 R.pass = R.steps.every(function (x) { return x.charAt(0) === '✅'; });
                 L('testStoryFlow → ' + (R.pass ? 'PASS' : 'FAIL'));
-                resolve(R);
             }
-            var r0 = reset();
-            step('reset', true, 'kill ' + r0.killedTimers + ' 定时器');
-            var s = SceneManager._scene;
-            if (s && s._titleCommands && s._titleCommands.length === 0) { s.createTitleCommands(); }
-            var titleOK = s && s._titleCommands && s._titleCommands.length > 0;
-            step('标题命令窗', titleOK);
-            if (!titleOK) { return done(); }
-            s.commandNewGame();
-            var res = AIPLAY.pumpUntil(function () {
-                var sc = SceneManager._scene;
-                return sc && sc.constructor.name === 'Scene_Map' && $gameMap && $gameMap._mapId > 0 && !$gamePlayer.isTransferring();
-            }, 60, 15, 80);
-            step('newGame→Map', res.ok, 'Map' + ($gameMap ? $gameMap._mapId : '?'));
-            if (!res.ok) { return done(); }
-            advanceDialog(25).then(function (adv) {
-                step('开场对话', adv.done, '按' + adv.pressed + '次');
-                var pt = pathTo(5, 5);
-                step('pathTo(5,5) 下床', pt.ok);
-                step('玩家可控', $gamePlayer.canMove());
-                return testBook('00_MOD_book_night0', 'musicroom').then(function (r1) {
-                    step('night0 书决策', r1.pass, 'stateIdx→' + (r1.detail ? r1.detail.stateIdx : '?'));
-                    var sl = testSaveLoad();
-                    step('存读档回归', sl.ok, JSON.stringify(sl.steps || []));
-                    done();
-                });
-            }).catch(function (e) { step('异常', false, e.message); done(); });
+        }).catch(function (e) {
+            R.steps.push('❌ 异常 | ' + ((e && e.message) || String(e)));
+            R.pass = false;
+            L('testStoryFlow → FAIL(异常)');
+            return R;
         });
     }
 

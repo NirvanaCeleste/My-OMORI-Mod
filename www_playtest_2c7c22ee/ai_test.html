@@ -116,21 +116,133 @@
                     SceneManager.ticker.start();
                 }
             } catch (e) { window.__log('harness', ['ticker 重启失败: ' + e.message]); }
+        }, 500);
+    })();
+    // 主循环看门狗 + isFocus 恒真（2026-10-03 修：rAF 开局正常、页签隐藏后才死掉的场景
+    // 旧兜底救不了；且 isFocus 覆写原来只在 rAF 兜底分支里，失焦时 updateScene 会
+    // 静默跳过 scene.update() → 标题淡出 _fadeDuration=48 永不递减、换场被 busy 卡死）。
+    (function () {
+        var installed = false, ticks = 0, lastTicks = -1, stalled = 0;
+        function installOverrides() {
             // GTP 的 isFocus() 检查 window.top.document.hasFocus()，IAB 内嵌环境永远为 false
             // → 场景更新/输入/渲染全部被静默跳过（"失焦即停"）。测试环境恒返回已聚焦。
             try {
                 if (window.SceneManager) {
                     SceneManager.isFocus = function () { return true; };
                     if (SceneManager._smoothDeltaTime === undefined) { SceneManager._smoothDeltaTime = 1; }
+                    var om = SceneManager.updateMain;
+                    if (om && !om.__counted) {
+                        var wrapped = function () { window.__mainTicks = (window.__mainTicks || 0) + 1; return om.apply(SceneManager, arguments); };
+                        wrapped.__counted = true;
+                        SceneManager.updateMain = wrapped;
+                    }
                 }
-            } catch (e) { window.__log('harness', ['isFocus 覆写失败: ' + e.message]); }
-        }, 500);
+            } catch (e) { window.__log('harness', ['isFocus/updateMain 覆写失败: ' + e.message]); }
+        }
+        function installFallback() {
+            if (installed) { return; }
+            installed = true;
+            window.__log('harness', ['主循环停跳 >2s，启用降级驱动']);
+            window.requestAnimationFrame = function (cb) {
+                return setTimeout(function () { cb(performance.now()); }, 16);
+            };
+            try {
+                if (window.SceneManager && SceneManager.ticker) {
+                    SceneManager.ticker.stop();
+                    SceneManager.ticker.start();
+                }
+            } catch (e) { window.__log('harness', ['ticker 重启失败: ' + e.message]); }
+            // 隐藏页签连 setTimeout/setInterval 都会被整体挂起（rAF 降级也不管用），
+            // Worker 的 postMessage 是唯一不受节流的唤醒源。
+            // updateMain 按真实墙钟累计固定步长 → 与恢复后的 rAF 并行调用无副作用。
+            try {
+                if (!window.__workerDriver && typeof Worker !== 'undefined') {
+                    var blob = new Blob(['setInterval(function(){postMessage(0);},16);'],
+                                        { type: 'application/javascript' });
+                    var w = new Worker(URL.createObjectURL(blob));
+                    w.onmessage = function () {
+                        try {
+                            if (window.SceneManager && SceneManager.updateMain) {
+                                SceneManager.updateMain.call(SceneManager);
+                            }
+                        } catch (e) {}
+                    };
+                    window.__workerDriver = w;
+                    window.__log('harness', ['Worker 驱动器已安装']);
+                }
+            } catch (e) { window.__log('harness', ['Worker 驱动失败: ' + e.message]); }
+        }
+        installOverrides();
+        // Worker 驱动器：启动即装（不依赖停跳检测——隐藏页签下 rAF 降到 1-2fps 时
+        // tick 仍在变，检测器会误判"活着"）。updateMain 按真实墙钟累计固定步长，
+        // 与任何 rAF 并行调用都无副作用。
+        try {
+            if (typeof Worker !== 'undefined' && !window.__workerDriver) {
+                var blob = new Blob(['setInterval(function(){postMessage(0);},16);'],
+                                    { type: 'application/javascript' });
+                var wk = new Worker(URL.createObjectURL(blob));
+                wk.onmessage = function () {
+                    try {
+                        if (window.SceneManager && SceneManager.updateMain) {
+                            SceneManager.updateMain.call(SceneManager);
+                        }
+                    } catch (e) {}
+                };
+                window.__workerDriver = wk;
+                window.__log('harness', ['Worker 驱动器已安装']);
+            }
+        } catch (e) { window.__log('harness', ['Worker 驱动失败: ' + e.message]); }
+        var t = setInterval(function () {
+            installOverrides();                      // 引擎可能中途重定义，反复确保
+            ticks = window.__mainTicks || 0;
+            if (ticks === lastTicks) { stalled++; } else { stalled = 0; }
+            lastTicks = ticks;
+            if (stalled >= 2) { installFallback(); } // 连续 ~2s 无主循环 → 换驱动（只换一次）
+        }, 1000);
+    })();
+    // ?muted=1：测试页签全程静音（用户要求测试不得出声；音量归零 + 守护防新游戏/读档重放）
+    (function () {
+        if (!/[?&]muted=1/.test(location.search)) { return; }
+        function muteAll() {
+            try {
+                if (window.ConfigManager) { ConfigManager.bgmVolume = 0; ConfigManager.bgsVolume = 0; ConfigManager.meVolume = 0; ConfigManager.seVolume = 0; }
+                if (window.WebAudio && WebAudio.setMasterVolume) { WebAudio.setMasterVolume(0); }
+                if (window.AudioManager) { AudioManager.stopBgm(); AudioManager.stopBgs(); }
+            } catch (e) {}
+        }
+        var t = setInterval(muteAll, 2000);
+        window.addEventListener('load', function () { muteAll(); });
+        window.__log('harness', ['静音模式开启 (?muted=1)']);
+    })();
+    // data/*.json HTTP 缓存强刷（2026-10-03）：旧测试服务器不带 no-store 头，
+    // 浏览器对 data/*.json 做启发式缓存 → 引擎启动 XHR 一直复用几天前的旧 System.json
+    // （实测：磁盘 2101 个开关槽，游戏只加载到 2001 → 模组 2001+ 开关静默失效）。
+    // 现服务器已 no-store，但只对"之后首次"的响应生效，救不了已缓存条目 →
+    // 首载异步强刷全部 data json，完成后自动 reload 一次（sessionStorage 标记防循环）。
+    (function () {
+        try {
+            if (sessionStorage.getItem('__dataCacheBusted') === '2') { return; }
+            sessionStorage.setItem('__dataCacheBusted', '1');
+            fetch('data/', { cache: 'reload' }).then(function (r) { return r.text(); }).then(function (html) {
+                var re = /href="([A-Za-z0-9_]+\.json)"/g, m, ps = [];
+                while ((m = re.exec(html)) !== null) {
+                    (function (f) { ps.push(fetch('data/' + f, { cache: 'reload' }).catch(function () {})); })(m[1]);
+                }
+                return Promise.all(ps);
+            }).then(function () {
+                window.__log('harness', ['data/*.json 缓存强刷完成，自动重载']);
+                sessionStorage.setItem('__dataCacheBusted', '2');
+                location.reload();
+            }).catch(function () {
+                sessionStorage.setItem('__dataCacheBusted', '2');
+            });
+        } catch (e) {}
     })();
     </script>
     <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
     <script type="text/javascript" src="js/libs/js-yaml-browser.js"></script>
     <script type="text/javascript" src="node_compat.js"></script>
-    <script type="text/javascript" src="ai_play.js?v=9&seal=3"></script>
+    <script type="text/javascript" src="ai_play.js?v=22&seal=3"></script>
     <script type="text/javascript" src="js/libs/pixi.js"></script>
     <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
     <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
