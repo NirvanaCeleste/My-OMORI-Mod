@@ -21,16 +21,25 @@ await AIPLAY.status()                                  一句话体检（场景/
 await AIPLAY.openBook('00_MOD_book_night0','musicroom') 打开一本书（自动注入+装配+过开场）
 await AIPLAY.testBook('00_MOD_book_night0','musicroom') 自动玩一个修改决策 → {pass, steps}
 await AIPLAY.testAllBooks()                            四本书一键回归 → {allPass, results}
-await AIPLAY.gotoMap(519, 4, 6)                        传送到地图（x,y 可选）
+await AIPLAY.cmd('testStoryFlow')                      全流程回归: 标题→新游戏→行走→存读档→书 → {pass, steps}
+await AIPLAY.cmd('testBattle', {troopId:12, maxTurns:6}) 战斗回归: 进战斗→连击→胜利结算
+                                                       (默认troop12=森林兔兔x1可击杀; troop4=99万血假人)
+await AIPLAY.cmd('battleStatus')                       战斗体检: 阶段/角色/敌人血量/活跃窗口
+await AIPLAY.cmd('explore', {seconds: 90})             自由探索: 随机游走+自动对话+卡死/错误采集
+                                                       → {steps, maps, dialogs, errors, stuck, switchesChanged}
+await AIPLAY.cmd('newGame')                            标题→新游戏→落图（自动 reset+forceSwap）
+await AIPLAY.cmd('gotoMap', {mapId:519, x:4, y:6})     传送到地图
 AIPLAY.walk('down', 3); AIPLAY.interact()              走三格 / 按确定
 AIPLAY.tap('ok'); AIPLAY.taps('ok','ok','ok')          按键（按钮名: ok/cancel/up/down/left/right/shift/menu）
-AIPLAY.frames(60)                                      泵 60 帧
+AIPLAY.frames(60)                                      泵 60 帧（短步进；长等待用 waitFor 语义的 cmd）
 AIPLAY.switches([2001,2002,2003])                      读开关
 AIPLAY.errors(10)                                      最近引擎错误
 AIPLAY.loadYaml('languages/sc/00_MOD.yaml')            手动注入任意语言 yaml
 =========================================================================================
 注意: 游戏的"确定"= Z 键；AIPLAY 用按钮名注入，与键码无关。
 每次 testBook 前无需重置——openBook 内部会重建游戏对象。
+长链路（newGame/进战斗/回合结算）都靠真实主循环推进，别用 pumpUntil 忙等。
+测试页签加 &muted=1 全程静音。
 """
 
 class NoCacheHandler(SimpleHTTPRequestHandler):

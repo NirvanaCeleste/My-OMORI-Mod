@@ -495,6 +495,15 @@
     ACTIONS.testSaveLoad  = function (p) { return Promise.resolve(testSaveLoad()); };
     ACTIONS.visualCheck   = function (p) { return Promise.resolve(visualCheck()); };
 
+    // ---- v1.7 战斗 ----
+    ACTIONS.battle       = function (p) { return battleSetup(p && p.troopId !== undefined ? p.troopId : 12, p || {}); };
+    ACTIONS.battleStatus = function (p) { return Promise.resolve(battleStatus()); };
+    ACTIONS.battleAttack = function (p) { return battleAttackOnce(p && p.target); };
+    ACTIONS.testBattle   = function (p) { return testBattle(p && p.troopId, p && p.maxTurns); };
+
+    // ---- v1.7 探索 ----
+    ACTIONS.explore      = function (p) { return explore(p || {}); };
+
     // ---- 事件/数据操作（调试用） ----
     ACTIONS.runEvent    = function (p) {
         // 直接启动某事件（不经玩家接触）：找事件→start
@@ -984,27 +993,354 @@
 
     // ---------- 新游戏：走标题的 commandNewGame → 531 → autorun → 516 ----------
     function newGame() {
-        var t = bootToTitle();
-        if (!t.ok) { return { ok: false, stage: 'title', title: t }; }
-        var s = SceneManager._scene;
-        if (typeof s.commandNewGame !== 'function') { return { ok: false, stage: 'no commandNewGame' }; }
-        s.commandNewGame();
-        // 等待进入地图场景（数据异步加载，给真实时间）
-        var res = pumpUntil(function () {
-            var sc = SceneManager._scene;
-            return sc && sc.constructor.name === 'Scene_Map' && $gameMap && $gameMap.isReady() && !$gamePlayer.isTransferring();
-        }, 120, 15, 60);
-        var sc = SceneManager._scene;
-        L('newGame → ' + (res.ok ? 'OK map=' + ($gameMap ? $gameMap._mapId : '?') : '超时'));
-        return { ok: res.ok, stage: SceneManager._scene ? SceneManager._scene.constructor.name : null,
-                 mapId: $gameMap ? $gameMap._mapId : -1, x: $gamePlayer ? $gamePlayer.x : -1, y: $gamePlayer ? $gamePlayer.y : -1,
-                 displayName: $dataMap ? $dataMap.displayName : '' };
+        // v1.7：改走 reset 的 forceSwap 链（旧 bootToTitle 的 busy 门换场会被闪屏卡死），
+        // 且长等待改 waitFor（pumpUntil 忙等会饿死 Worker 驱动的真实主循环）；
+        // 返回 Promise（battleSetup/ACTIONS.newGame 都 await 它）
+        return wait(1).then(function () {
+            var t = reset();
+            if (!t.titleReady || t.scene !== 'Scene_OmoriTitleScreen') {
+                return { ok: false, stage: 'title', title: t };
+            }
+            var s = SceneManager._scene;
+            if (typeof s.commandNewGame !== 'function') { return { ok: false, stage: 'no commandNewGame' }; }
+            s.commandNewGame();
+            return waitFor(function () {
+                var sc = SceneManager._scene;
+                // 注意不用 $gameMap.isReady()：Tiled 装配路径下它可能恒 false，
+                // 用 testStoryFlow 已验证的判定（mapId>0 且不在传送中）
+                return sc && sc.constructor.name === 'Scene_Map' && $gameMap &&
+                       $gameMap._mapId > 0 && !$gamePlayer.isTransferring();
+            }, 90000).then(function (res) {
+                L('newGame → ' + (res.ok ? 'OK map=' + ($gameMap ? $gameMap._mapId : '?') : '超时'));
+                return { ok: res.ok, stage: SceneManager._scene ? SceneManager._scene.constructor.name : null,
+                         mapId: $gameMap ? $gameMap._mapId : -1,
+                         x: $gamePlayer ? $gamePlayer.x : -1, y: $gamePlayer ? $gamePlayer.y : -1,
+                         displayName: $dataMap ? $dataMap.displayName : '' };
+            });
+        });
     }
 
     var __exports_marker = window.AIPLAY;
 
+    // ========================================================================
+    // v1.7 战斗自动化
+    // ========================================================================
+    // 窗口直选：按 symbol（或序号）设 index 并触发 handler —— 比 Input 注入稳，
+    // OMORI 自定义窗口链（guard→snacks 等重绑定）也能走通
+    function windowSelect(w, target) {
+        if (!w) { return false; }
+        var list = w._list || [];
+        var idx = -1;
+        if (typeof target === 'string') {
+            for (var i = 0; i < list.length; i++) { if (list[i] && list[i].symbol === target) { idx = i; break; } }
+        } else { idx = target; }
+        if (idx < 0 || idx >= list.length) { return false; }
+        w.select(idx);
+        w.processOk();
+        return true;
+    }
+
+    function battleInScene() {
+        var sc = SceneManager._scene;
+        return !!(sc && sc.constructor.name === 'Scene_Battle');
+    }
+
+    function battleStatus() {
+        var sc = SceneManager._scene;
+        if (!sc || sc.constructor.name !== 'Scene_Battle') {
+            return { inBattle: false, scene: sc ? sc.constructor.name : null };
+        }
+        var actor = BattleManager.actor ? BattleManager.actor() : null;
+        var enemies = [];
+        try {
+            if (window.$gameTroop) {
+                enemies = $gameTroop.aliveMembers().map(function (e) {
+                    return { name: e.originalName ? e.originalName() : String(e.battlerName() || '?'), hp: e.hp };
+                });
+            }
+        } catch (e) {}
+        var actWin = null;
+        ['_partyCommandWindow', '_actorCommandWindow', '_enemyWindow', '_skillListWindow', '_itemListWindow']
+            .forEach(function (k) { if (sc[k] && sc[k].active) { actWin = k; } });
+        return {
+            inBattle: true, phase: BattleManager._phase,
+            actor: actor ? actor.name() : null,
+            actorHp: actor ? (actor.hp + '/' + actor.mhp) : null,
+            enemies: enemies, activeWindow: actWin,
+            busy: BattleManager.isBusy ? BattleManager.isBusy() : null,
+            inputting: BattleManager.isInputting ? BattleManager.isInputting() : null
+        };
+    }
+
+    // 进入战斗（无游戏局时先自动 newGame）
+    function battleSetup(troopId, opts) {
+        opts = opts || {};
+        return wait(1).then(function () {
+            if (!$gameParty || !$gameParty.battleMembers().length ||
+                !$gameMap || $gameMap._mapId === 0) {
+                return newGame();
+            }
+            return { ok: true };
+        }).then(function (g) {
+            if (g && g.ok === false) { return { ok: false, reason: 'newGame 失败: ' + (g.stage || '') }; }
+            if (!$dataTroops[troopId]) { return { ok: false, reason: 'troop ' + troopId + ' 不存在' }; }
+            // 复刻事件指令 Battle Processing 的调用序列
+            BattleManager.setup(troopId, opts.canEscape !== false, !!opts.canLose);
+            SceneManager.push(Scene_Battle);
+            // 引擎的遇敌换场依赖 scene.stop() 链，本工程实测会把
+            // _encounterEffectDuration 置位后无人递减（busy 恒真卡死换场）→
+            // 8s 未自然换成就用 forceSwapScene 强换（与 reset 同机制）
+            return waitFor(battleInScene, 8000).then(function (w) {
+                if (!w.ok && SceneManager._nextScene &&
+                    SceneManager._nextScene.constructor.name === 'Scene_Battle') {
+                    L('battleSetup: 自然换场卡死(encounter效果)，强制交换');
+                    forceSwapScene();
+                }
+                return waitFor(battleInScene, 15000).then(function (w2) {
+                    L('battleSetup troop' + troopId + ' → ' + (w2.ok ? 'OK' : '超时'));
+                    return w2.ok ? { ok: true } : { ok: false, reason: '进入战斗超时(' + w2.ms + 'ms)' };
+                });
+            });
+        });
+    }
+
+    // 攻击一回合：等输入态 → (party窗fight) → attack → 敌目标0 → 等结算回输入态
+    function battleAttackOnce(targetIndex) {
+        var sawAction = false;
+        // OMORI 战斗入场动画很长（实测 ~30s），窗口会先 active 但命令表为空 →
+        // 等待条件必须含"_list 非空"，窗口 45s
+        return waitFor(function () {
+            if (!battleInScene()) { return true; }
+            var sc = SceneManager._scene;
+            // 上一回合的收尾动画可能拖很长（隐藏页签下尤其慢）：时机条阶段主动按 ok 加速
+            if (BattleManager._phase === 'actionList') {
+                Input._currentState['ok'] = !Input._currentState['ok'];
+                frames(3);
+                return false;
+            }
+            if (sc._partyCommandWindow && sc._partyCommandWindow.active) {
+                windowSelect(sc._partyCommandWindow, 'fight');
+                return false;
+            }
+            var aw = sc._actorCommandWindow;
+            return !!(aw && aw.active && aw._list && aw._list.length);
+        }, 90000).then(function () {
+            Input._currentState['ok'] = false;
+            if (!battleInScene()) { return { ok: true, battleOver: true }; }
+            var sc = SceneManager._scene;
+            var aw = sc._actorCommandWindow;
+            if (!aw || !aw.active || !aw._list || !aw._list.length) {
+                return { ok: false, reason: '指令窗未就绪' };
+            }
+            if (!windowSelect(aw, 'actionSkill') && !windowSelect(aw, 'attack')) {
+                // OMORI 的攻击命令 symbol 是 actionSkill（实测 Basil 指令窗：
+                // actionSkill|攻击, skill|..., guard|防守, item|物品）
+                return { ok: false, reason: '指令窗无攻击命令(actionSkill/attack)' };
+            }
+            frames(20);
+            return waitFor(function () {
+                if (!battleInScene()) { return true; }
+                var s2 = SceneManager._scene;
+                // OMORI 攻击后进入 ACTION 时机条阶段（actionList）：主动按 ok 命中时机
+                // （不按会长时间自动 miss，伤害只有 ~10）
+                if (BattleManager._phase === 'actionList') {
+                    Input._currentState['ok'] = !Input._currentState['ok'];
+                    frames(3);
+                    return false;
+                }
+                if (s2._enemyWindow && s2._enemyWindow.active) {
+                    var ew = s2._enemyWindow;
+                    if (ew._list && ew._list.length) { windowSelect(ew, targetIndex || 0); }
+                    else { ew.select(0); ew.processOk(); }   // 激活瞬间列表未建：直接确认默认目标（实测有效）
+                    sawAction = true;
+                    return false;
+                }
+                if (BattleManager.isInputting && !BattleManager.isInputting()) { sawAction = true; return false; }
+                return sawAction && !BattleManager.isBusy();
+            }, 90000).then(function () {
+                Input._currentState['ok'] = false;
+                return { ok: true, battleOver: !battleInScene() };
+            });
+        });
+    }
+
+    // 收尾：胜利结算/失败画面逐个 ok 直到离开战斗场景
+    function battleFinish() {
+        return waitFor(function () {
+            if (!battleInScene()) { return true; }
+            Input._currentState['ok'] = !Input._currentState['ok'];
+            frames(6);
+            return false;
+        }, 20000).then(function (w) {
+            Input._currentState['ok'] = false;
+            return { battleOver: w.ok, scene: SceneManager._scene ? SceneManager._scene.constructor.name : null };
+        });
+    }
+
+    function testBattle(troopId, maxTurns) {
+        // 默认 troop12=森林兔兔x1（HP85，打得死）；troop4 的"TEST NO ATTACK"是 99 万血假人
+        troopId = (troopId === undefined || troopId === null) ? 12 : troopId;
+        maxTurns = maxTurns || 8;
+        var rep = { troopId: troopId, turns: [] };
+        L('testBattle troop' + troopId + ' 开始');
+        return battleSetup(troopId, { canEscape: false, canLose: false }).then(function (s0) {
+            if (!s0.ok) { rep.reason = s0.reason; L('testBattle troop' + troopId + ' → FAIL(进入失败)'); return rep; }
+            function next(n) {
+                var st = battleStatus();
+                if (!st.inBattle) { return Promise.resolve('over'); }
+                if (n > maxTurns) { return Promise.resolve('maxturns'); }
+                return battleAttackOnce(0).then(function (r) {
+                    rep.turns.push({ n: n, ok: r.ok, battleOver: !!r.battleOver, reason: r.reason || '' });
+                    if (!r.ok) { return Promise.resolve('error'); }
+                    if (r.battleOver) { return Promise.resolve('over'); }
+                    return next(n + 1);
+                });
+            }
+            return next(1).then(function (why) {
+                rep.endedBy = why;
+                return battleFinish().then(function (fin) {
+                    rep.finalScene = fin.scene;
+                    rep.statusAfter = battleStatus();
+                    // 通过标准 = 战斗机制全走通（每回合指令都执行成功且正常终局/打满回合）；
+                    // 胜负属于数值内容，不算自动化失败
+                    rep.pass = rep.turns.length > 0 &&
+                               rep.turns.every(function (t) { return t.ok; }) &&
+                               (why === 'over' || why === 'maxturns');
+                    L('testBattle troop' + troopId + ' → ' + (rep.pass ? 'PASS' : 'FAIL') +
+                      ' (' + rep.turns.length + '回合, ' + why + ')');
+                    return rep;
+                });
+            });
+        });
+    }
+
+    // ========================================================================
+    // v1.7 自由探索：随机游走 + 自动对话/选项 + 错误/卡死/开关变化采集
+    //   用途：发现"走到哪会卡死/报错"这类设计者预料外的问题
+    // ========================================================================
+    function explore(opts) {
+        opts = opts || {};
+        var maxMs = ((opts.seconds === undefined) ? 120 : opts.seconds) * 1000;
+        var rep = { startedAt: new Date().toISOString(), maps: [], visited: 0, steps: 0,
+                    blocked: 0, dialogs: 0, choices: 0, interacts: 0, events: [],
+                    errors: [], switchesChanged: {}, stuck: null, endedBy: 'timeout' };
+        function errLines() {
+            return (window.__bootlog || []).filter(function (l) {
+                return l.indexOf('onerror') >= 0 || l.indexOf('catchException') >= 0 ||
+                       l.indexOf('SceneManager.onError') >= 0 || l.indexOf('Graphics.屏显错误') >= 0;
+            });
+        }
+        return wait(1).then(function () {
+            if (!$gameMap || $gameMap._mapId === 0) {
+                return { ok: false, reason: '不在游戏中（先 newGame 或 testStoryFlow）', rep: rep };
+            }
+            var t0 = Date.now();
+            var errBase = errLines().length;
+            var swBase = {};
+            for (var i = 2001; i <= 2100; i++) { swBase[i] = $gameSwitches.value(i); }
+            var visit = {};
+            var tries = {};   // 每个邻格的尝试次数（含撞墙）——只用访问数会被不可走格"永远最吸引"困进角落
+            var maps = {}, events = {};
+            var lastCell = null, sameTicks = 0, eventBusyTicks = 0;
+            var DIRS = { down: 2, left: 4, right: 6, up: 8 };
+            var DIRNAMES = ['down', 'left', 'right', 'up'];
+            function cell() { return $gameMap._mapId + ':' + $gamePlayer.x + ',' + $gamePlayer.y; }
+            return new Promise(function (resolve) {
+                var t = setInterval(function () {
+                    try { tick(); } catch (e) { rep.errors.push('explore异常: ' + e.message); }
+                }, 400);
+                function finish() {
+                    clearInterval(t);
+                    Input._currentState['ok'] = false; Input._currentState['cancel'] = false;
+                    rep.ms = Date.now() - t0;
+                    rep.maps = Object.keys(maps);
+                    rep.events = events;
+                    var swNow = {};
+                    for (var k = 2001; k <= 2100; k++) { swNow[k] = $gameSwitches.value(k); }
+                    for (var k2 in swNow) { if (swNow[k2] !== swBase[k2]) { rep.switchesChanged[k2] = swNow[k2]; } }
+                    rep.errors = rep.errors.concat(errLines().slice(errBase).slice(0, 10));
+                    rep.eventBusyTicks = eventBusyTicks;   // 探索期被事件解释器占用的 tick 数（每tick≈400ms）
+                    L('explore → ' + rep.endedBy + ' (' + rep.steps + '步/' + rep.maps.length + '图/' +
+                      rep.dialogs + '对话/' + rep.interacts + '交互/事件占用' + eventBusyTicks + ')');
+                    resolve({ ok: true, rep: rep });
+                }
+                function tick() {
+                    if (Date.now() - t0 > maxMs) { finish(); return; }
+                    var vc = visualCheck();
+                    if (vc.kind === 'error-overlay') { rep.endedBy = 'error-overlay'; finish(); return; }
+                    var sc = SceneManager._scene;
+                    var cn = sc ? sc.constructor.name : null;
+                    if (cn !== 'Scene_Map') {
+                        if (cn === 'Scene_Battle') { rep.endedBy = 'battle'; finish(); return; }
+                        if (cn === 'Scene_UnwrittenStory') { rep.endedBy = 'book'; finish(); return; }
+                        // 菜单/其他场景：cancel 退出
+                        Input._currentState['cancel'] = !Input._currentState['cancel'];
+                        frames(10);
+                        return;
+                    }
+                    maps[$gameMap._mapId] = true;
+                    if ($gameMap._interpreter && $gameMap._interpreter.isRunning()) {
+                        if ($gameMap._interpreter._eventId) { events['ev' + $gameMap._interpreter._eventId] = true; }
+                        eventBusyTicks++;   // 长期占用=常驻autorun（设计或触发条件未关，报告可见）
+                        if (Math.random() < 0.5) { Input._currentState['ok'] = true; frames(6); Input._currentState['ok'] = false; }
+                        frames(8);
+                        sameTicks = 0;
+                        return;
+                    }
+                    if ($gameMessage && $gameMessage.isBusy()) {
+                        var cw = sc._messageWindow && sc._messageWindow._choiceWindow;
+                        if (cw && cw.active && cw._list && cw._list.length) {
+                            windowSelect(cw, Math.floor(Math.random() * cw._list.length));
+                            rep.choices++;
+                        } else {
+                            Input._currentState['ok'] = true; frames(4); Input._currentState['ok'] = false;
+                            rep.dialogs++;
+                        }
+                        frames(8);
+                        sameTicks = 0;
+                        return;
+                    }
+                    if ($gamePlayer.isTransferring() || $gamePlayer.isMoving()) { frames(10); return; }
+                    var c = cell();
+                    if (c === lastCell) { sameTicks++; } else { lastCell = c; sameTicks = 0; rep.visited++; visit[c] = (visit[c] || 0) + 1; }
+                    if (sameTicks === 25) {   // 先试四向交互脱困
+                        [2, 4, 6, 8].forEach(function (d) { $gamePlayer.setDirection(d); });
+                        Input._currentState['ok'] = true; frames(6); Input._currentState['ok'] = false;
+                        rep.interacts++;
+                    }
+                    if (sameTicks >= 45) {
+                        rep.endedBy = 'stuck';
+                        rep.stuck = { map: $gameMap._mapId, x: $gamePlayer.x, y: $gamePlayer.y, scene: cn };
+                        finish();
+                        return;
+                    }
+                    var r = Math.random();
+                    if (r < 0.6) {
+                        // 偏好尝试次数少的邻格（尝试数含撞墙 → 不可走格会被迅速降权，防止角落陷阱）
+                        var cands = DIRNAMES.map(function (dn) {
+                            var dd = DIRS[dn];
+                            var nx = $gamePlayer.x + (dd === 4 ? -1 : dd === 6 ? 1 : 0);
+                            var ny = $gamePlayer.y + (dd === 2 ? 1 : dd === 8 ? -1 : 0);
+                            var key = $gameMap._mapId + ':' + nx + ',' + ny;
+                            return { d: dn, key: key, w: (tries[key] || 0) + Math.random() * 1.5 };
+                        }).sort(function (a, b) { return a.w - b.w; });
+                        tries[cands[0].key] = (tries[cands[0].key] || 0) + 1;
+                        var sx = $gamePlayer.x, sy = $gamePlayer.y;
+                        walk(cands[0].d, 1);
+                        if ($gamePlayer.x === sx && $gamePlayer.y === sy) { rep.blocked++; } else { rep.steps++; }
+                    } else if (r < 0.85) {
+                        $gamePlayer.setDirection([2, 4, 6, 8][Math.floor(Math.random() * 4)]);
+                        Input._currentState['ok'] = true; frames(6); Input._currentState['ok'] = false;
+                        rep.interacts++;
+                        frames(10);
+                    } else { frames(10); }
+                }
+            });
+        });
+    }
+
     window.AIPLAY = {
-        version: '1.5',
+        version: '1.7',
         frames: frames, wait: wait,
         tap: tap, taps: taps, walk: walk, interact: interact,
         loadYaml: loadYaml, loadBook: loadBook,
@@ -1018,7 +1354,11 @@
         cmd: cmd, seq: seq, actions: ACTIONS,
         reset: reset, visualCheck: visualCheck, assertVisual: assertVisual,
         testSaveLoad: testSaveLoad, testStoryFlow: testStoryFlow,
+        waitFor: waitFor,
+        battleSetup: battleSetup, battleStatus: battleStatus,
+        battleAttackOnce: battleAttackOnce, battleFinish: battleFinish, testBattle: testBattle,
+        explore: explore,
         log: function (n) { return LOG.slice(-(n || 30)); }
     };
-    console.log('[AIPLAY] v1.0 已就绪 | testAllBooks() = 四本书一键回归');
+    console.log('[AIPLAY] v1.7 已就绪 | testAllBooks/testStoryFlow/testBattle/explore');
 })();
