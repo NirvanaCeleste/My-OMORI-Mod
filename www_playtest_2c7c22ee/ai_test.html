@@ -200,19 +200,38 @@
             if (stalled >= 2) { installFallback(); } // 连续 ~2s 无主循环 → 换驱动（只换一次）
         }, 1000);
     })();
-    // ?muted=1：测试页签全程静音（用户要求测试不得出声；音量归零 + 守护防新游戏/读档重放）
+    // ?muted=1：测试页签全程静音（用户要求测试不得出声）。
+    // v2（2026-10-03 根治漏音）：旧实现靠 2s 轮询归零音量，游戏开机 1-3s 的闪屏 BGM
+    // 会漏出来（每开一个新页签响约 2 秒）→ 改为直接空操作化全部播放入口，声音永远无法起始。
     (function () {
         if (!/[?&]muted=1/.test(location.search)) { return; }
         function muteAll() {
             try {
                 if (window.ConfigManager) { ConfigManager.bgmVolume = 0; ConfigManager.bgsVolume = 0; ConfigManager.meVolume = 0; ConfigManager.seVolume = 0; }
                 if (window.WebAudio && WebAudio.setMasterVolume) { WebAudio.setMasterVolume(0); }
-                if (window.AudioManager) { AudioManager.stopBgm(); AudioManager.stopBgs(); }
             } catch (e) {}
         }
-        var t = setInterval(muteAll, 2000);
-        window.addEventListener('load', function () { muteAll(); });
-        window.__log('harness', ['静音模式开启 (?muted=1)']);
+        function neuterAudio() {
+            try {
+                if (window.AudioManager && !AudioManager.__neutered) {
+                    ['playBgm', 'playBgs', 'playMe', 'playSe', 'replayBgm', 'replayBgs'].forEach(function (fn) {
+                        if (typeof AudioManager[fn] === 'function') { AudioManager[fn] = function () {}; }
+                    });
+                    AudioManager.stopBgm(); AudioManager.stopBgs();
+                    AudioManager.__neutered = true;
+                }
+            } catch (e) {}
+        }
+        // 引擎脚本在本内联脚本之后同步加载（rpg_managers 加载前 AudioManager 不存在）→
+        // 100ms 快轮询直到掐掉播放入口（首拍即中，之后空操作化永久生效），40 拍后停
+        var guard = 0;
+        var t = setInterval(function () {
+            muteAll();
+            neuterAudio();
+            if (++guard > 40 || (window.AudioManager && AudioManager.__neutered && guard > 10)) { clearInterval(t); }
+        }, 100);
+        window.addEventListener('load', function () { muteAll(); neuterAudio(); });
+        window.__log('harness', ['静音模式 v2 开启 (?muted=1)：播放入口已空操作化']);
     })();
     // data/*.json HTTP 缓存强刷（2026-10-03）：旧测试服务器不带 no-store 头，
     // 浏览器对 data/*.json 做启发式缓存 → 引擎启动 XHR 一直复用几天前的旧 System.json

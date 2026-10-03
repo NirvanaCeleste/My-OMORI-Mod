@@ -1112,7 +1112,8 @@
         return waitFor(function () {
             if (!battleInScene()) { return true; }
             var sc = SceneManager._scene;
-            // 上一回合的收尾动画可能拖很长（隐藏页签下尤其慢）：时机条阶段主动按 ok 加速
+            // 上一回合的 ACS 追击输入窗口（actionList，120 帧）+ 收尾动画可能拖长（隐藏页签下更慢）；
+            // 窗口会自动超时继续，此处仅等待
             if (BattleManager._phase === 'actionList') {
                 Input._currentState['ok'] = !Input._currentState['ok'];
                 frames(3);
@@ -1141,8 +1142,8 @@
             return waitFor(function () {
                 if (!battleInScene()) { return true; }
                 var s2 = SceneManager._scene;
-                // OMORI 攻击后进入 ACTION 时机条阶段（actionList）：主动按 ok 命中时机
-                // （不按会长时间自动 miss，伤害只有 ~10）
+                // 2026-10-03 纠错：actionList 不是"时机条"，是 ACS 追击的 120 帧方向键输入窗口
+                // （原作无攻击时机判定；不按方向键则窗口结束自动继续）。此处置 ok 无害，等窗口自过。
                 if (BattleManager._phase === 'actionList') {
                     Input._currentState['ok'] = !Input._currentState['ok'];
                     frames(3);
