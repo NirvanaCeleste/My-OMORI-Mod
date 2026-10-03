@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenStory —— 《未竟之事》
-// Version: 1.41 - 阶段一排版/动画分离 + 阶段三事件总线与句子书域隔离
+// Version: 1.42 - yaml改版进度恢复防护 + replayEntries(封存重播数据源)
 //=============================================================================
 // Add to Imported List
 var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
@@ -86,7 +86,7 @@ _TDS_.UnwrittenStory.Param.hintSwitchId    = Number(_TDS_.UnwrittenStory.Param['
 _TDS_.UnwrittenStory.Param.autoPlaySpeed   = Number(_TDS_.UnwrittenStory.Param['autoPlaySpeed'] || 2);
 _TDS_.UnwrittenStory.Param.autoPlayPause   = Number(_TDS_.UnwrittenStory.Param['autoPlayPause'] || 15);
 // 版本号单一来源（头部注释与加载日志共用）
-_TDS_.UnwrittenStory.Version = '1.41';
+_TDS_.UnwrittenStory.Version = '1.42';
 
 //=============================================================================
 // ** 事件总线（阶段三）—— 剧情演出的外挂点
@@ -204,6 +204,83 @@ Game_UnwrittenStory.prototype.pageEditIds = function(page) {
         for (var j = 0; j < bedits.length; j++) { push(bedits[j]); }
     }
     return ids;
+};
+// v1.42 封存重播（replayBook）：按 order 顺序抽取玩家"处理过"的句子，
+// 返回 [{page, id, action, variant, text}]。action: variant/erase/keep；
+// text = 最终呈现文本（变体句/空串/原文），order 沿用书的页序。
+// 供 UnwrittenSeal 在封存演出前重放玩家的真实改写。
+// ★实现注记（2026-10-04 单元测试抓出的坑）：edits 的**定义**分散在树的各个
+// 分支状态页里（如 gA 只在 s0.musicroom 有 variants），叶子合并页里只有纯
+// text —— 所以必须先按"句子 id"建全树定义索引，再按玩家改写记录逐条取，
+// 不能只沿叶子链合并页找 edits。
+Game_UnwrittenStory.prototype.replayEntries = function(bookYaml, langData) {
+    var out = [];
+    var data = null;
+    try { data = langData && langData.text ? langData.text[bookYaml] : null; } catch (e) { data = null; }
+    var states = data ? (data.states || []) : [];
+    if (!states.length) { return out; }
+    // ① 全树 edits 定义索引：id -> {定义, 首现页}
+    var editDefs = {};
+    var pageOfEdit = {};
+    var pageTextOfEdit = {};   // keep 的原文来源：定义所在页的正文 **片段**
+    for (var s = 0; s < states.length; s++) {
+        var pages = states[s].pages || {};
+        for (var pk in pages) {
+            var pg = pages[pk];
+            if (!pg || typeof pg !== 'object') { continue; }
+            var eds = (pg.edits || []).slice();
+            var blocks = pg.blocks || [];
+            var texts = [];   // 与 eds 平行：各 edit 在正文中的 **片段**（keep 的原句）
+            for (var b = 0; b < blocks.length; b++) {
+                texts.push((blocks[b] && blocks[b].text) || '');
+                eds = eds.concat((blocks[b] && blocks[b].edits) || []);
+            }
+            var flat = (pg.blocks && pg.blocks.length) ? null : (pg.text || '');
+            for (var e = 0; e < eds.length; e++) {
+                var ed = eds[e];
+                if (!ed || ed.id === undefined) { continue; }
+                var key = String(ed.id);
+                if (editDefs[key]) { continue; }
+                editDefs[key] = ed;
+                pageOfEdit[key] = pk;
+                // keep 原文：优先 edit.text；否则从正文抓第 e 个 **片段**
+                if (ed.text) { pageTextOfEdit[key] = String(ed.text); }
+                else {
+                    var src = (flat !== null) ? flat : texts.join('\n');
+                    var m = src.match(/\*\*(.+?)\*\*/g) || [];
+                    var idx = Math.min(e, m.length - 1);
+                    pageTextOfEdit[key] = idx >= 0 ? String(m[idx]).replace(/\*\*/g, '') : '';
+                }
+            }
+        }
+    }
+    // ② 全序：书顶层 order → 根状态 order → 定义首现页序兜底
+    var order = (data.order || states[0].order || []).slice();
+    if (!order.length) {
+        for (var k in pageOfEdit) { if (order.indexOf(pageOfEdit[k]) < 0) { order.push(pageOfEdit[k]); } }
+    }
+    // ③ 按玩家改写记录逐条产出（sentenceState 键域 = 书名::句子id，
+    //    与写入侧 setVariant/setKeep/setErased 一致）
+    for (var oi = 0; oi < order.length; oi++) {
+        var pageKey = order[oi];
+        for (var id in editDefs) {
+            if (pageOfEdit[id] !== pageKey) { continue; }
+            var st = this.sentenceState(pageKey, id, bookYaml);
+            if (!st || !st.modified) { continue; }
+            var def = editDefs[id];
+            var action = st.erased ? 'erase' : (st.variant >= 0 ? 'variant' : 'keep');
+            var text = '';
+            if (action === 'variant') {
+                var v = (def.variants || [])[st.variant];
+                text = (v === undefined || v === null) ? '' : String(v);
+            } else if (action === 'keep') {
+                // 原文 = 正文里的 **片段**（gB/gC 的 text 字段为空，2026-10-04 实测）
+                text = pageTextOfEdit[id] || '';
+            }
+            out.push({ page: pageKey, id: id, action: action, variant: st.variant, text: text });
+        }
+    }
+    return out;
 };
 Game_UnwrittenStory.prototype.pageHasUnmodified = function(pageId, page, bookId) {
     var ids = this.pageEditIds(page);
@@ -1381,6 +1458,9 @@ Scene_UnwrittenStory.prototype.create = function() {
     var s0p = this._states[0].pages || {};
     for (var lk in s0p) { if (s0p[lk] && s0p[lk].readonly) { this._lockedPages.push(lk); } }
     this._endingStage = false;
+    // v1.42：yaml 改版后 savedState 可能指向已不存在的页/已删除的状态。
+    // _stateIndex 已安全回根（循环找不到就保持 0）；页指针在 pageOrder 算完后校验。
+    // （原实现在"状态有效但页已被删"时会把玩家落在一个不属于本状态可见集的页上）
     this._pageOrder = this.currentVisibleOrder(this._stateIndex);
     this._pages = this.buildStatePages(this._stateIndex);
     if (this._pageOrder.length === 0) {
@@ -1396,7 +1476,7 @@ Scene_UnwrittenStory.prototype.create = function() {
         this.addChild(err);
         return;
     }
-    // A3：事件没显式指定起始页时，回到上次读到的页
+    // A3：事件没显式指定起始页时，回到上次读到的页（**必须在本状态可见集内**）
     if (this._pageKey === null && savedState && savedState.page &&
         this._pageOrder.indexOf(savedState.page) >= 0) {
         this._pageKey = savedState.page;
@@ -2235,6 +2315,8 @@ Scene_UnwrittenStory.prototype.updateEnding = function() {
             }
         }
         if (switchId) { $gameSwitches.setValue(Number(switchId), true); }
+        // v1.42：记录最近完成的书（UnwrittenSeal 封存重播按此定位'这一夜'的书）
+        _TDS_.UnwrittenStory.lastFinishedBook = this._yamlFile;
         _TDS_.UnwrittenStory.emit('finish', { book: this._yamlFile, switchId: switchId || 0 });
         this.popScene();
     }

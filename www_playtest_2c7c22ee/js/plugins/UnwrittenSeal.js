@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenSeal —— 《未竟之事》封存
-// Version: 1.00
+// Version: 1.02 - 命名空间对齐 + replayBook(封存前重播玩家改写)
 //=============================================================================
 // 把主菜单的"戳刺(STAB)"改造为"封存"：
 //   开关4 开启时（与原版 STAB 显隐逻辑完全一致）：
@@ -67,6 +67,11 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
  * @text 拦截主菜单戳刺
  * @desc true = 菜单走封存演出；false = 保持原版戳刺（公共事件34）
  * @default true
+ *
+ * @param replayBook
+ * @text 演出前重播改写
+ * @desc true = 盖章前逐条重现玩家这一夜的真实改写
+ * @default true
  */
 //=============================================================================
 
@@ -84,19 +89,21 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
         stampCount:     Math.max(1, Number(P['stampCount'] || 5)),
         stampInterval:  Math.max(6, Number(P['stampInterval'] || 22)),
         doneSwitchId:   Number(P['doneSwitchId'] || 0),
-        menuIntercept:  String(P['menuIntercept'] || 'true') === 'true'
+        menuIntercept:  String(P['menuIntercept'] || 'true') === 'true',
+        replayBook:     String(P['replayBook'] === undefined ? 'true' : P['replayBook']) === 'true'
     };
-    _TDS_.UnwrittenSeal.Version = '1.00';
+    _TDS_.UnwrittenSeal.Version = '1.02';
     var Param = _TDS_.UnwrittenSeal.Param;
 
     //=========================================================================
-    // ** 主菜单三处挂钩
+    // ** 主菜单三处挂钩（v1.02：别名统一挂 _TDS_.UnwrittenSeal 命名空间，
+    //    对齐 TDS 插件惯例——后续模组可链式引用原实现）
     //=========================================================================
 
     // 1) 菜单第一项文字：STAB → 封存
-    var _WMC_makeCommandList = Window_MenuCommand.prototype.makeCommandList;
+    _TDS_.UnwrittenSeal.WMC_makeCommandList = Window_MenuCommand.prototype.makeCommandList;
     Window_MenuCommand.prototype.makeCommandList = function() {
-        _WMC_makeCommandList.call(this);
+        _TDS_.UnwrittenSeal.WMC_makeCommandList.call(this);
         if (!Param.menuIntercept || !$gameSwitches.value(4)) { return; }
         for (var i = 0; i < this._list.length; i++) {
             if (this._list[i].symbol === 'talk' && this._list[i].name !== Param.sealLabel) {
@@ -107,9 +114,9 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
     };
 
     // 2) 队伍列表上方的提示文字
-    var _SM_commandTalk = Scene_Menu.prototype.commandTalk;
+    _TDS_.UnwrittenSeal.SM_commandTalk = Scene_Menu.prototype.commandTalk;
     Scene_Menu.prototype.commandTalk = function() {
-        _SM_commandTalk.call(this);
+        _TDS_.UnwrittenSeal.SM_commandTalk.call(this);
         if (!Param.menuIntercept || !$gameSwitches.value(4)) { return; }
         if (this._statusWindow && this._statusWindow.setCursorText) {
             this._statusWindow.setCursorText(Param.promptText);
@@ -117,7 +124,7 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
     };
 
     // 3) 确认选择：不再走原版公共事件34，进入封存演出
-    var _SM_processTag = Scene_Menu.prototype.processTag;
+    _TDS_.UnwrittenSeal.SM_processTag = Scene_Menu.prototype.processTag;
     Scene_Menu.prototype.processTag = function() {
         if (Param.menuIntercept && $gameSwitches.value(4) &&
             this._statusWindow && this._statusWindow.index() === 0) {
@@ -125,15 +132,15 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
             SceneManager.push(Scene_UnwrittenSeal);
             return;
         }
-        _SM_processTag.call(this);
+        _TDS_.UnwrittenSeal.SM_processTag.call(this);
     };
 
     //=========================================================================
     // ** 插件命令
     //=========================================================================
-    var _GI_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+    _TDS_.UnwrittenSeal.GI_pluginCommand = Game_Interpreter.prototype.pluginCommand;
     Game_Interpreter.prototype.pluginCommand = function(command, args) {
-        _GI_pluginCommand.call(this, command, args);
+        _TDS_.UnwrittenSeal.GI_pluginCommand.call(this, command, args);
         if (command !== 'UnwrittenSeal') { return; }
         switch (String(args[0] || '').toUpperCase()) {
             case 'PLAY':
@@ -141,6 +148,10 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
                 break;
             case 'MENU':
                 Param.menuIntercept = String(args[1] || '').toUpperCase() !== 'OFF';
+                break;
+            case 'REPLAY':
+                // v1.02：REPLAY ON/OFF —— 演出前是否重播玩家改写（默认 ON）
+                Param.replayBook = String(args[1] || '').toUpperCase() !== 'OFF';
                 break;
         }
     };
@@ -166,12 +177,49 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
         this._shakePower = 0;
         this._bookSprite = null;
         this._finishAfter = 0;
+        // v1.02 replayBook：演出前重播玩家的真实改写
+        this._replay = null;        // [{page,id,action,variant,text}] 或 null
+        this._replayIndex = 0;
+        this._replaySprite = null;
+        this._replayLines = [];
     };
 
     Scene_UnwrittenSeal.prototype.create = function() {
         Scene_BaseEX.prototype.create.call(this);
         this.createDimmer();
         this.createBook();
+        this.collectReplay();
+    };
+
+    // v1.02 replayBook：从 $gameUnwrittenStory 抽取"这一夜"的改写摘要。
+    // 书名来源 = UnwrittenStory 侧记录的"最近完成的书"（finish 事件写入），
+    // 兜底按夜书完成开关反查。无 UnwrittenStory / 无改写 / REPLAY OFF 时静默跳过。
+    Scene_UnwrittenSeal.prototype.collectReplay = function() {
+        this._replay = null;
+        if (!Param.replayBook) { return; }
+        var US = window._TDS_ && _TDS_.UnwrittenStory;
+        if (!US || !$gameUnwrittenStory || !$gameUnwrittenStory.replayEntries) { return; }
+        // ① 首选：UnwrittenStory 最近 finish 的书（封存紧跟读书，语义最准）
+        var bookYaml = (US.lastFinishedBook !== undefined && US.lastFinishedBook !== null)
+            ? String(US.lastFinishedBook) : null;
+        // ② 兜底：夜书完成开关反查（事件直接 UnwrittenSeal Play 时的保守推断）
+        if (!bookYaml) {
+            var table = this.replayBookTable();
+            var sws = ['2001', '2002', '2003'];
+            for (var i = 0; i < sws.length; i++) {
+                if ($gameSwitches.value(Number(sws[i]))) { bookYaml = table[sws[i]]; break; }
+            }
+        }
+        if (!bookYaml) { return; }
+        var lang = null;
+        try { lang = LanguageManager.languageData(); } catch (e) { lang = null; }
+        this._replay = $gameUnwrittenStory.replayEntries(bookYaml, lang);
+        if (!this._replay || !this._replay.length) { this._replay = null; }
+        this._replayIndex = 0;
+    };
+    // 夜书完成开关 → yaml 名（不带 .yaml 扩展；与 languages 目录文件名一致）
+    Scene_UnwrittenSeal.prototype.replayBookTable = function() {
+        return { '2001': '00_MOD_book_night0', '2002': '00_MOD_book_night1', '2003': '00_MOD_book_night2' };
     };
 
     Scene_UnwrittenSeal.prototype.createDimmer = function() {
@@ -306,8 +354,17 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
             this._timer++;
             if (this._phase === 0) {
                 if (!this.move.isMoving() && this._timer > 40) {
-                    this._phase = 1; this._timer = 0;
+                    // v1.02：有改写记录时先走重播（phase 0.5），否则直接盖章
+                    if (this._replay && this._replay.length) {
+                        this._phase = 10; this._timer = 0;
+                        this.showReplayLine();
+                    } else {
+                        this._phase = 1; this._timer = 0;
+                    }
                 }
+            } else if (this._phase === 10) {
+                // 重播阶段：逐条显示玩家改写（任意 ok/cancel 快进，见上方统一快进）
+                this.updateReplay();
             } else if (this._phase === 1) {
                 if (this._stamped < Param.stampCount &&
                     this._timer >= Param.stampInterval) {
@@ -323,6 +380,103 @@ var _TDS_ = _TDS_ || {}; _TDS_.UnwrittenSeal = _TDS_.UnwrittenSeal || {};
             console.warn('[UnwrittenSeal] 演出异常: ' + e.message);
             this.finish();
         }
+    };
+
+    // ========================================================================
+    // v1.02 replayBook —— 重播玩家的真实改写
+    //   演出语序：改写过的句子逐条浮现于书皮上方，然后淡去下一条。
+    //   erase → 红色删除线文本；variant → 新句；keep → 原句（灰色）。
+    // ========================================================================
+    Scene_UnwrittenSeal.prototype.replayTextFor = function(entry) {
+        var t = String(entry.text === undefined ? '' : entry.text);
+        if (entry.action === 'erase') { return '(那一行消失了)'; }
+        if (!t) { return '(未写下新的句子)'; }
+        return t;
+    };
+
+    Scene_UnwrittenSeal.prototype.replayColor = function(entry) {
+        if (entry.action === 'erase') { return 'rgba(168, 48, 48, 1)'; }
+        if (entry.action === 'variant') { return 'rgba(58, 49, 41, 1)'; }
+        return 'rgba(110, 100, 92, 1)';   // keep：灰
+    };
+
+    Scene_UnwrittenSeal.prototype.showReplayLine = function() {
+        var self = this;
+        var entry = this._replay[this._replayIndex];
+        if (!entry) { return; }
+        // 上一条淡出移除
+        if (this._replaySprite) {
+            var old = this._replaySprite;
+            this.move.startMove({
+                obj: old, properties: ['opacity'],
+                from: { opacity: old.opacity }, to: { opacity: 0 },
+                durations: { opacity: 18 }, easing: Object_Movement.easeInCirc
+            });
+            var self2 = this;
+            // 18 帧后回收（queue 演出队列，不与 move 冲突）
+            this.queue(function() { self2.removeChild(old); });
+        }
+        var bmp = new Bitmap(640, 120);
+        bmp.fontSize = 22;
+        bmp.textColor = this.replayColor(entry);
+        var lines = this.wrapReplayText(this.replayTextFor(entry), 640, bmp);
+        for (var i = 0; i < lines.length; i++) {
+            bmp.drawText(lines[i], 0, i * 30, 640, 30, 'center');
+        }
+        if (entry.action === 'erase') {
+            // 删除线：文字中线画一道红杠
+            var yMid = (lines.length * 30) / 2 - 4;
+            bmp.fillRect(0, yMid, 640, 2, 'rgba(168, 48, 48, 0.9)');
+        }
+        var spr = new Sprite(bmp);
+        spr.anchor.set(0.5, 0.5);
+        spr.x = Graphics.width / 2;
+        spr.y = Graphics.height / 2 - 190;
+        spr.opacity = 0;
+        this.addChild(spr);
+        this._replaySprite = spr;
+        this.move.startMove({
+            obj: spr, properties: ['opacity'],
+            from: { opacity: 0 }, to: { opacity: 255 },
+            durations: { opacity: 20 }, easing: Object_Movement.easeOutCirc
+        });
+        this.queue(function() { self._timer = 0; });   // 每条起播重置节拍
+    };
+
+    Scene_UnwrittenSeal.prototype.updateReplay = function() {
+        var hold = 75;   // 每条停留 ~1.25 秒
+        if (this._timer >= hold) {
+            this._replayIndex++;
+            if (this._replayIndex >= this._replay.length) {
+                // 重播完毕：清场进盖章
+                var self = this;
+                if (this._replaySprite) {
+                    var old = this._replaySprite;
+                    this.move.startMove({
+                        obj: old, properties: ['opacity'],
+                        from: { opacity: old.opacity }, to: { opacity: 0 },
+                        durations: { opacity: 18 }, easing: Object_Movement.easeInCirc
+                    });
+                    this.queue(function() { self.removeChild(old); self._replaySprite = null; });
+                }
+                this._replay = null;
+                this._phase = 1; this._timer = 0;
+            } else {
+                this.showReplayLine();
+            }
+        }
+    };
+
+    // 极简按宽折行（书页重播用，非通用排版）
+    Scene_UnwrittenSeal.prototype.wrapReplayText = function(text, maxW, bmp) {
+        var out = [], line = '';
+        for (var i = 0; i < text.length; i++) {
+            var test = line + text.charAt(i);
+            if (bmp.measureTextWidth(test) > maxW && line) { out.push(line); line = text.charAt(i); }
+            else { line = test; }
+        }
+        if (line) { out.push(line); }
+        return out.length ? out : [''];
     };
 
     // 书皮震颤（盖章冲击，指数衰减；不影响封章与暗幕）
