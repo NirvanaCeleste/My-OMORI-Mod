@@ -42,6 +42,7 @@ class Book:
         self.name, self.path = name, path
         self.errors, self.warns = [], []
         self.stats = {}
+        self.skipped = None
 
     def err(self, msg): self.errors.append(msg)
     def warn(self, msg): self.warns.append(msg)
@@ -134,6 +135,12 @@ def validate_book(name, path, img_dir):
         return book
     states = data.get('states') or []
     if not states:
+        if 'states' not in data and isinstance(data, dict) and data:
+            # 整个文件没有 states 键 → 是普通对话 yaml（如 00_MOD_dream1），
+            # 不是书格式，不适用本校验器（默认 glob 只抓 00_MOD_book_*，
+            # 这里兜底显式传参的情况）
+            book.skipped = '非书格式（无 states 键，普通对话 yaml）—— 不适用书校验'
+            return book
         book.err('states 为空或缺失（A4：进游戏会红字"书数据加载失败"）')
         return book
     order = data.get('order') or []
@@ -297,6 +304,9 @@ def main():
     total_e = total_w = 0
     for name, path in targets:
         b = validate_book(name, path, img_dir)
+        if b.skipped:
+            print(f'== {b.name}: SKIP  {b.skipped}')
+            continue
         mark = 'PASS' if not b.errors else 'FAIL'
         print(f'== {b.name}: {mark}  错误{len(b.errors)} 警告{len(b.warns)}  '
               f'(状态{b.stats.get("states",0)} 树深{b.stats.get("depth",0)} 叶{b.stats.get("leaves",0)} '

@@ -26,6 +26,21 @@
         try { window.__log && window.__log('aiplay', [msg]); } catch (e) {}
     }
 
+    // ---------- 定时器注册表（v1.5：防僵尸循环，reset 可统一 kill） ----------
+    var _timerSeq = 0;
+    var _timers = {};
+    var _origSetInterval = window.setInterval.bind(window);
+    var _origClearInterval = window.clearInterval.bind(window);
+    window.setInterval = function (fn, ms) {
+        var id = _origSetInterval(fn, ms);
+        _timers[id] = fn;
+        return id;
+    };
+    window.clearInterval = function (id) {
+        delete _timers[id];
+        return _origClearInterval(id);
+    };
+
     // ---------- 帧驱动 ----------
     function frames(n) {
         for (var i = 0; i < n; i++) {
@@ -517,6 +532,148 @@
                     });
     }
 
+    // ---------- v1.5：reset（原地满血重建） ----------
+    function reset() {
+        // ① kill 全部注册定时器
+        var killed = 0;
+        for (var id in _timers) { _origClearInterval(Number(id)); delete _timers[id]; killed++; }
+        // ② 清按键
+        ['down','up','left','right','ok','cancel','shift','menu','control'].forEach(function (k) { Input._currentState[k] = false; });
+        Input.update();
+        // ③ 重建游戏对象 + 语言
+        feedLanguages('sc');
+        DataManager.createGameObjects();
+        // ④ 回标题（goto 后必须消化 changeScene；闪屏场景需清 fade 再跳一次）
+        if (window.Galv && Galv.ASPLASH) { Galv.ASPLASH.splashed = true; }
+        SceneManager.goto(Scene_OmoriTitleScreen);
+        // 消化 changeScene（goto 是排队制的，需要后续帧执行）
+        for (var ci = 0; ci < 30; ci++) {
+            if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) {
+                SceneManager.changeScene();
+            }
+            var _cs = SceneManager._scene;
+            if (_cs && _cs._currentTime !== undefined) { _cs._currentTime = 0; }
+            SceneManager.updateScene();
+            if (SceneManager._scene && SceneManager._scene.constructor.name === 'Scene_OmoriTitleScreen') { break; }
+        }
+        // 若被闪屏抢回（boot 未完）：清 fade 再跳
+        var s2 = SceneManager._scene;
+        if (s2 && s2.constructor.name === 'Scene_SplashScreens') {
+            s2._fadeDuration = 0;
+            if (s2.endSplashes) { s2.endSplashes(); }
+            if (SceneManager.isSceneChanging() && !SceneManager.isCurrentSceneBusy()) { SceneManager.changeScene(); }
+            SceneManager.changeScene();
+            AIPLAY.frames(30);
+        }
+        var s = SceneManager._scene;
+        if (s && s._titleCommands && s._titleCommands.length === 0) { s.createTitleCommands(); }
+        L('reset: kill=' + killed + ' 定时器, 回标题');
+        return { killedTimers: killed, scene: SceneManager._scene.constructor.name };
+    }
+
+    // ---------- v1.5：视觉断言 ----------
+    function visualCheck() {
+        try {
+            var canvas = (Graphics && Graphics._canvas) || document.querySelector('canvas');
+            if (!canvas) { return { kind: 'no-canvas' }; }
+            var probe = document.createElement('canvas');
+            probe.width = 64; probe.height = 48;
+            var ctx = probe.getContext('2d');
+            ctx.drawImage(canvas, 0, 0, 64, 48);
+            var data = ctx.getImageData(0, 0, 64, 48).data;
+            var dark = 0, red = 0, total = 64 * 48;
+            for (var i = 0; i < data.length; i += 4) {
+                if (data[i] < 24 && data[i+1] < 24 && data[i+2] < 24) { dark++; }
+                if (data[i] > 150 && data[i+1] < 80 && data[i+2] < 80) { red++; }
+            }
+            var kind = 'normal';
+            if (dark / total > 0.97) { kind = 'black'; }
+            if (red / total > 0.02) { kind = 'error-overlay'; }
+            return { kind: kind, darkRatio: +(dark / total).toFixed(3) };
+        } catch (e) { return { kind: 'probe-error', error: e.message }; }
+    }
+    function domErrorCheck() {
+        var found = [];
+        Array.from(document.body.children).forEach(function (el) {
+            if (el.tagName === 'DIV' && (el.textContent.indexOf('Cannot read') >= 0 ||
+                el.textContent.indexOf('TypeError') >= 0)) { found.push(el.textContent.slice(0, 60)); }
+        });
+        var gerr = Graphics && Graphics._errorPrinter && Graphics._errorPrinter.style.display !== 'none';
+        return { domErrors: found, graphicsErrorVisible: !!gerr };
+    }
+    function assertVisual() {
+        var v = visualCheck();
+        var d = domErrorCheck();
+        var ok = (v.kind === 'normal' || v.kind === 'black') && d.domErrors.length === 0 && !d.graphicsErrorVisible;
+        return { ok: ok, visual: v, dom: d };
+    }
+
+    // ---------- v1.5：存读档回归 ----------
+    function testSaveLoad() {
+        var rep = { steps: [] };
+        try {
+            if (!$gameMap || $gameMap._mapId === 0) { return { ok: false, reason: '不在游戏中' }; }
+            $gameSwitches.setValue(2001, true);
+            $gameSystem.onBeforeSave();
+            var saveOk = DataManager.saveGame(1);
+            rep.steps.push('saveGame(1): ' + saveOk);
+            if (!saveOk) { rep.ok = false; return rep; }
+            $gameSwitches.setValue(2001, false);
+            var loadOk = DataManager.loadGame(1);
+            rep.steps.push('loadGame(1): ' + loadOk);
+            SceneManager.goto(Scene_Map);
+            AIPLAY.frames(30);
+            var sw = $gameSwitches.value(2001);
+            rep.steps.push('开关2001读档后: ' + sw);
+            rep.pass = !!(loadOk && sw);
+            rep.ok = rep.pass;
+            L('testSaveLoad → ' + (rep.ok ? 'PASS' : 'FAIL'));
+        } catch (e) { rep.ok = false; rep.error = e.message; }
+        return rep;
+    }
+
+    // ---------- v1.5：全流程一键回归 ----------
+    function testStoryFlow() {
+        var R = { steps: [], visual: [] };
+        function step(name, ok, detail) {
+            R.steps.push((ok ? '✅ ' : '❌ ') + name + (detail ? ' | ' + detail : ''));
+            return ok;
+        }
+        return new Promise(function (resolve) {
+            function done() {
+                R.pass = R.steps.every(function (x) { return x.charAt(0) === '✅'; });
+                L('testStoryFlow → ' + (R.pass ? 'PASS' : 'FAIL'));
+                resolve(R);
+            }
+            var r0 = reset();
+            step('reset', true, 'kill ' + r0.killedTimers + ' 定时器');
+            var s = SceneManager._scene;
+            if (s && s._titleCommands && s._titleCommands.length === 0) { s.createTitleCommands(); }
+            var titleOK = s && s._titleCommands && s._titleCommands.length > 0;
+            step('标题命令窗', titleOK);
+            if (!titleOK) { return done(); }
+            s.commandNewGame();
+            var res = AIPLAY.pumpUntil(function () {
+                var sc = SceneManager._scene;
+                return sc && sc.constructor.name === 'Scene_Map' && $gameMap && $gameMap._mapId > 0 && !$gamePlayer.isTransferring();
+            }, 60, 15, 80);
+            step('newGame→Map', res.ok, 'Map' + ($gameMap ? $gameMap._mapId : '?'));
+            if (!res.ok) { return done(); }
+            advanceDialog(25).then(function (adv) {
+                step('开场对话', adv.done, '按' + adv.pressed + '次');
+                var pt = pathTo(5, 5);
+                step('pathTo(5,5) 下床', pt.ok);
+                step('玩家可控', $gamePlayer.canMove());
+                return testBook('00_MOD_book_night0', 'musicroom').then(function (r1) {
+                    step('night0 书决策', r1.pass, 'stateIdx→' + (r1.detail ? r1.detail.stateIdx : '?'));
+                    var sl = testSaveLoad();
+                    step('存读档回归', sl.ok, JSON.stringify(sl.steps || []));
+                    done();
+                });
+            }).catch(function (e) { step('异常', false, e.message); done(); });
+        });
+    }
+
     // ---------- 导出 ----------
 
     // ---------- 语言全量同步喂入（目录列表解析） ----------
@@ -767,7 +924,7 @@
     var __exports_marker = window.AIPLAY;
 
     window.AIPLAY = {
-        version: '1.4',
+        version: '1.5',
         frames: frames, wait: wait,
         tap: tap, taps: taps, walk: walk, interact: interact,
         loadYaml: loadYaml, loadBook: loadBook,
@@ -779,6 +936,8 @@
         bootToTitle: bootToTitle, newGame: newGame,
         pathTo: pathTo, talkTo: talkTo, advanceDialog: advanceDialog, clearKeys: clearKeys,
         cmd: cmd, seq: seq, actions: ACTIONS,
+        reset: reset, visualCheck: visualCheck, assertVisual: assertVisual,
+        testSaveLoad: testSaveLoad, testStoryFlow: testStoryFlow,
         log: function (n) { return LOG.slice(-(n || 30)); }
     };
     console.log('[AIPLAY] v1.0 已就绪 | testAllBooks() = 四本书一键回归');

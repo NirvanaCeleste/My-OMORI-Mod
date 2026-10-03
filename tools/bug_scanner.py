@@ -179,19 +179,67 @@ def check_switch_conflicts():
     switches = sysd.get("switches") or []
     variables = sysd.get("variables") or []
     
-    # 扫 mod 地图 + 插件 + 书 yaml 中的开关使用
+    # 只扫 mod 地图（515-549）；1-2000 视为原作/未分配区（与 validate_books 口径一致）
     MOD_ZONE = set(range(2001, 2100))  # 模组已分配区
-    used_switches = set()
+    written = set()   # 模组"写"的开关（121操作/356插件命令/书doneSwitchId）——只有写才会破坏原作状态
+    read_sw = set()   # 模组地图里"读"的开关（111条件/页条件）——克隆事件的原作残留，只记账不判冲突
+    used_variables = set()
     
-    # 从事件 JSON 扫
-    pattern_sw = re.compile(r'"parameters"\s*:\s*\[(\d+),\s*(\d+),\s*[01]\]')
-    for f in glob.glob(os.path.join(PROJ, "data", "Map5*.json")):
+    # 从事件 JSON 结构化解析（替代正则——正则会匹配到移动路由等无关参数）
+    map_files = [f for f in glob.glob(os.path.join(PROJ, "data", "Map*.json"))
+                 if re.search(r'Map(\d+)\.json', f)
+                 and 515 <= int(re.search(r'Map(\d+)\.json', f).group(1)) <= 549]
+    
+    def scan_commands(cmd_list):
+        for cmd in cmd_list:
+            if not isinstance(cmd, dict): continue
+            code = cmd.get("code", 0)
+            p = cmd.get("parameters", [])
+            # code121 = 开关操作 [sw1, sw2, on/off] —— 写
+            if code == 121 and len(p) >= 2:
+                for sw_id in range(int(p[0]), int(p[1]) + 1):
+                    written.add(sw_id)
+            # code122 = 变量操作 [v1, v2, op, operand]
+            elif code == 122 and len(p) >= 2:
+                for v_id in range(int(p[0]), int(p[1]) + 1):
+                    used_variables.add(v_id)
+            # code111 条件分支 [type, id, ...] type 0=开关 1=变量 —— 读
+            elif code == 111 and len(p) >= 2 and p[0] in (0, 1):
+                id_val = int(p[1])
+                if p[0] == 0: read_sw.add(id_val)
+                else: used_variables.add(id_val)
+            # code356 插件命令里的 switch:N —— 写（mod 约定）
+            elif code == 356 and p:
+                for m in re.finditer(r'[Ss]witch\s*:\s*(\d+)', str(p[0])):
+                    written.add(int(m.group(1)))
+    
+    for f in map_files:
         try:
-            content = open(f, encoding="utf-8").read()
-            for m in pattern_sw.finditer(content):
-                sw_id = int(m.group(1))
-                if sw_id > 0:
-                    used_switches.add(sw_id)
+            data = json.load(open(f, encoding="utf-8"))
+        except: continue
+        for ev in (data.get("events") or []):
+            if not ev or not isinstance(ev, dict): continue
+            for pg in (ev.get("pages") or []):
+                if not pg or not isinstance(pg, dict): continue
+                # 页条件里的开关（MV 地图 JSON 的键是单数 condition）—— 读
+                cond = pg.get("condition") or {}
+                for k in ("switch1", "switch2"):
+                    if cond.get(k + "Valid") and cond.get(k + "Id"):
+                        read_sw.add(int(cond[k + "Id"]))
+                scan_commands(pg.get("list") or [])
+
+    # 公共事件：原作公共事件本来就在用原作开关，只扫带模组标记的
+    # （事件名含 MOD，或命令里引用 00_MOD_*/UnwrittenStory/UnwrittenSeal）
+    ce_path = os.path.join(PROJ, "data", "CommonEvents.json")
+    if os.path.exists(ce_path):
+        try:
+            for ev in (json.load(open(ce_path, encoding="utf-8")) or []):
+                if not ev or not isinstance(ev, dict): continue
+                blob = json.dumps(ev.get("list") or [], ensure_ascii=False)
+                is_mod = "MOD" in str(ev.get("name", "")) or any(
+                    mark in blob for mark in ("00_MOD_", "UnwrittenStory", "UnwrittenSeal"))
+                if is_mod:
+                    scan_commands(ev.get("list") or [])
         except: pass
     
     # 从书 yaml 扫
@@ -199,20 +247,35 @@ def check_switch_conflicts():
         try:
             content = open(f, encoding="utf-8").read()
             for m in re.finditer(r'doneSwitchId:\s*(\d+)', content):
-                used_switches.add(int(m.group(1)))
+                written.add(int(m.group(1)))
         except: pass
     
     conflicts = 0
-    for sw_id in sorted(used_switches):
-        if sw_id <= 1000 and sw_id < len(switches) and switches[sw_id - 1]:
-            err("C.开关冲突", f"开关 {sw_id} ('{switches[sw_id - 1]}') 是原作占用的，模组正在使用")
+    # 有意复用的原作开关（经"旧版本-F盘"基线核对确属原作命名，模组沿用其语义；
+    # 登记原因避免误报，新增复用必须在这里写明理由）
+    INTENTIONAL_REUSE = {
+        4:    'EnableStab/UnwrittenSeal 复用原作"戳刺"机制',
+        1702: 'IPSU_Begin——模组 IPSU 线沿用的原作章节标记',
+        1703: 'Basil_something——模组沿用的原作 Basil 状态标记',
+    }
+    for sw_id in sorted(written):
+        if sw_id in INTENTIONAL_REUSE: continue
+        if sw_id < 2000 and sw_id < len(switches) and switches[sw_id - 1]:
+            err("C.开关冲突", f"开关 {sw_id} ('{switches[sw_id - 1]}') 是原作占用的，模组正在写它")
             conflicts += 1
+    reused = [f"{s}({INTENTIONAL_REUSE[s]})" for s in sorted(written) if s in INTENTIONAL_REUSE]
+    if reused:
+        info("C.有意复用", f"模组写原作开关 {len(reused)} 个: " + "; ".join(reused))
     
-    unregistered = [s for s in sorted(used_switches) if s > 1000 and s not in MOD_ZONE]
+    unregistered = [s for s in sorted(written) if s >= 2000 and s not in MOD_ZONE]
     if unregistered:
         warn("C.开关未登记", f"开关 {unregistered} 在模组区但未在 docs/开关变量对照表.md 登记")
     
-    info("C.开关冲突", f"模组使用 {len(used_switches)} 个开关，冲突 {conflicts} 个")
+    orig_reads = sorted(s for s in read_sw if s < 2000)
+    info("C.开关冲突",
+         f"模组写 {len(written)} 个开关（冲突 {conflicts} 个）/ 读 {len(read_sw)} 个"
+         f"（其中 {len(orig_reads)} 个是原作区开关，多为克隆地图的原作页条件残留）"
+         f"/ 变量 {len(used_variables)} 个")
 
 # ============================================================
 # D. 地图转移断裂
