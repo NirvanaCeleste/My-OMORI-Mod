@@ -186,6 +186,13 @@
                         if (window.SceneManager && SceneManager.updateMain) {
                             SceneManager.updateMain.call(SceneManager);
                         }
+                        // 2026-10-04 战斗动画冻结根因：GTP 的 updateManagers（驱动
+                        // ImageManager 请求队列）只在其 update()（PIXI ticker/rAF）里调，
+                        // 隐藏页签 rAF 挂起后请求永不 flush → 战斗新图片永远 pending
+                        // → isReady()=false → 所有动画冻结。这里补上，隐藏页签也能装图。
+                        if (window.SceneManager && SceneManager.updateManagers) {
+                            SceneManager.updateManagers.call(SceneManager);
+                        }
                     } catch (e) {}
                 };
                 window.__workerDriver = wk;
@@ -261,7 +268,7 @@
     <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
     <script type="text/javascript" src="js/libs/js-yaml-browser.js"></script>
     <script type="text/javascript" src="node_compat.js"></script>
-    <script type="text/javascript" src="ai_play.js?v=36&seal=3"></script>
+    <script type="text/javascript" src="ai_play.js?v=37&seal=3"></script>
     <script type="text/javascript" src="js/libs/pixi.js"></script>
     <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
     <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
