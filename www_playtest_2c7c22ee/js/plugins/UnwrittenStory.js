@@ -1,6 +1,6 @@
 //=============================================================================
 // TDS UnwrittenStory —— 《未竟之事》
-// Version: 1.42 - yaml改版进度恢复防护 + replayEntries(封存重播数据源)
+// Version: 1.43 - 书UI质感升级(深夜书房渐晕背景/纸纹书页/中缝/原作键位图标提示条)
 //=============================================================================
 // Add to Imported List
 var Imported = Imported || {} ; Imported.TDS_UnwrittenStory = true;
@@ -86,7 +86,7 @@ _TDS_.UnwrittenStory.Param.hintSwitchId    = Number(_TDS_.UnwrittenStory.Param['
 _TDS_.UnwrittenStory.Param.autoPlaySpeed   = Number(_TDS_.UnwrittenStory.Param['autoPlaySpeed'] || 2);
 _TDS_.UnwrittenStory.Param.autoPlayPause   = Number(_TDS_.UnwrittenStory.Param['autoPlayPause'] || 15);
 // 版本号单一来源（头部注释与加载日志共用）
-_TDS_.UnwrittenStory.Version = '1.42';
+_TDS_.UnwrittenStory.Version = '1.43';
 
 //=============================================================================
 // ** 事件总线（阶段三）—— 剧情演出的外挂点
@@ -1604,8 +1604,39 @@ Scene_UnwrittenStory.prototype.createPageBackground = function() {
             }
         });
     } else {
+        // v1.43 占位页升级：纸纹 + 页缘暗化 + 中缝阴影（在作者提供 pageImage 前也有质感）
         var bmp = new Bitmap(w, h);
-        bmp.fillRect(0, 0, w, h, 'rgba(246, 240, 222, 1)');
+        // ① 纸底色
+        bmp.fillAll('rgba(246, 240, 222, 1)');
+        // ② 纸纹：细密的水平明暗线（模拟纸张纤维，低透明度不抢正文）
+        for (var ty = 0; ty < h; ty += 3) {
+            var tone = (ty % 6 === 0) ? 'rgba(214, 205, 182, 0.35)' : 'rgba(238, 231, 210, 0.30)';
+            bmp.fillRect(0, ty, w, 1, tone);
+        }
+        // ③ 随机纸斑（少量，确定性伪随机——每次开书同一页长一样）
+        for (var s = 0; s < Math.floor(w * h / 22000); s++) {
+            var sx = (s * 137 + 41) % w;
+            var sy = (s * 263 + 89) % h;
+            var ssize = 1 + (s * 31 % 3);
+            bmp.fillRect(sx, sy, ssize, ssize, 'rgba(206, 195, 168, 0.5)');
+        }
+        // ④ 页缘暗化（四周 8px 渐变暗带，模拟纸张厚度）
+        var edge = 8;
+        for (var e = 0; e < edge; e++) {
+            var ea = (0.10 * (1 - e / edge)).toFixed(3);
+            bmp.fillRect(0, e * 0 + e, w, 1, 'rgba(120, 105, 84, ' + ea + ')');           // 上
+            bmp.fillRect(0, h - 1 - e, w, 1, 'rgba(120, 105, 84, ' + ea + ')');           // 下
+            bmp.fillRect(e, 0, 1, h, 'rgba(120, 105, 84, ' + ea + ')');                   // 左
+            bmp.fillRect(w - 1 - e, 0, 1, h, 'rgba(120, 105, 84, ' + ea + ')');           // 右
+        }
+        // ⑤ 中缝：若书比屏宽大不少（摊开双页形态）在中央画竖向渐变阴影
+        if (w >= Graphics.width * 0.7) {
+            var gutter = 26;
+            for (var gi = 0; gi < gutter; gi++) {
+                var ga = 0.16 * (1 - Math.abs(gi - gutter / 2) / (gutter / 2));
+                bmp.fillRect(w / 2 - gutter / 2 + gi, 0, 1, h, 'rgba(96, 82, 62, ' + ga.toFixed(3) + ')');
+            }
+        }
         this._pageBgSprite.bitmap = bmp;
         this._pageBgSprite.visible = true;
     }
@@ -1614,10 +1645,28 @@ Scene_UnwrittenStory.prototype.createPageBackground = function() {
     this.addChildAt(this._pageBgSprite, idx);
 };
 Scene_UnwrittenStory.prototype.createBackground = function() {
-    this._background = new Sprite(new Bitmap(Graphics.width, Graphics.height));
-    this._background.bitmap.fillRect(0, 0, Graphics.width, Graphics.height,
-        _TDS_.UnwrittenStory.Param.backgroundColor);
+    // v1.43 视觉升级：纯黑底换"深夜书房"渐晕——中心暖、四角沉，消除悬浮虚空感
+    var w = Graphics.width, h = Graphics.height;
+    var bmp = new Bitmap(w, h);
+    // 底色：暖深棕（替代纯黑）
+    bmp.fillAll('rgba(24, 20, 26, 1)');
+    // 中央径向暖光（画同心矩形模拟径向渐变，每环透明度递减）
+    var cx = w / 2, cy = h / 2;
+    var maxR = Math.sqrt(cx * cx + cy * cy);
+    var steps = 24;
+    for (var i = steps; i >= 1; i--) {
+        var r = (i / steps) * maxR;
+        var alpha = 0.035 * (1 - i / steps);   // 越靠中心越亮的暖色叠加
+        bmp.fillRect(cx - r, cy - r, r * 2, r * 2, 'rgba(64, 50, 42, ' + alpha.toFixed(3) + ')');
+    }
+    // 四角暗角（用大半径低透明黑环罩出）
+    for (var j = 0; j < 10; j++) {
+        var rr = maxR * (1 - j * 0.05);
+        bmp.fillRect(cx - rr, cy - rr, rr * 2, rr * 2, 'rgba(0, 0, 0, ' + (0.028 * j / 10).toFixed(4) + ')');
+    }
+    this._background = new Sprite(bmp);
     this.addChildAt(this._background, 0);
+    // 背景图参数优先级不变：作者给了图就用图
     var name = _TDS_.UnwrittenStory.Param.backgroundImage || '';
     if (!name) { return; }
     var img = ImageManager.loadPicture(name);
@@ -1890,11 +1939,29 @@ Scene_UnwrittenStory.prototype.currentSubPageNumber = function() {
     return this._pageIndex + 1;
 };
 Scene_UnwrittenStory.prototype.refreshFooter = function() {
-    this._footer.contents.clear();
-    this._footer.changeTextColor(_TDS_.UnwrittenStory.Param.textColor);
-    this._footer.contents.fontSize = 14;
-    this._footer.contents.drawText('←→ 翻页   确定 选句',
-        0, 8, this._footer.contents.width, 18, 'center');
+    // v1.43：提示条重做——键位图标走引擎同款 API（drawAlginedKeyIcon + keyIconRects），
+    // 自动跟随玩家键位设置与手柄/键盘切换，替代打字拼的"←→ 翻页"文字
+    var c = this._footer.contents;
+    c.clear();
+    c.fontSize = 15;
+    c.textColor = 'rgba(210, 200, 180, 1)';   // 淡暖灰融入深底
+    var totalW = 24 + 4 + 24 + 10 + 60 + 28 + 24 + 4 + 110;
+    var x0 = (c.width - totalW) / 2;
+    var baseY = 12;
+    try {
+        // ←→（键码 37/39，"up"态图标 = 未按压样式）
+        c.drawAlginedKeyIcon(37, x0, baseY, 24, 22, 'center', 'keyboardBlack24');
+        c.drawAlginedKeyIcon(39, x0 + 28, baseY, 24, 22, 'center', 'keyboardBlack24');
+        c.drawText('翻页', x0 + 56, baseY - 2, 60, 22);
+        // Z（键码 90）
+        c.drawAlginedKeyIcon(90, x0 + 130, baseY, 24, 22, 'center', 'keyboardBlack24');
+        c.drawText('翻页 / 选句', x0 + 158, baseY - 2, 110, 22);
+    } catch (e) {
+        // 图标系统未就绪：回退文字版
+        c.clear();
+        c.fontSize = 14;
+        c.drawText('←→ 翻页   确定 选句', 0, 8, c.width, 18, 'center');
+    }
 };
 Scene_UnwrittenStory.prototype.currentPage = function() {
     return this._pages[this._pageKey] || {};
